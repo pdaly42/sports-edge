@@ -315,6 +315,7 @@
       <div class="header-title">Sports Edge Dashboard</div>
       <div class="header-subtitle">Daily line analysis · NBA · NFL · MLB</div>
     </div>
+    <span id="model-status" style="font-size:0.72rem;color:#64748b;background:#1e293b;padding:4px 10px;border-radius:12px;">No model loaded</span>
   </div>
   <div class="header-right">
     <div class="header-clock" id="clock">--:--:--</div>
@@ -405,6 +406,7 @@
 // ── State ──
 let apiKey = localStorage.getItem('odds_api_key') || '';
 let allGames = [];
+let modelPredictions = {};  // game_id → prediction object
 let activeSport = 'all';
 const SPORTS = [
   { key: 'basketball_nba', label: 'NBA', emoji: '🏀' },
@@ -416,6 +418,8 @@ const SPORTS = [
 window.addEventListener('DOMContentLoaded', () => {
   updateClock();
   setInterval(updateClock, 1000);
+
+  loadModelPredictions();
 
   if (apiKey) {
     document.getElementById('api-key-input').value = apiKey;
@@ -434,6 +438,24 @@ window.addEventListener('DOMContentLoaded', () => {
 
   document.getElementById('edge-threshold').addEventListener('change', renderGames);
 });
+
+async function loadModelPredictions() {
+  try {
+    const res = await fetch('predictions.json?t=' + Date.now());
+    if (!res.ok) return;
+    const data = await res.json();
+    const today = new Date().toISOString().slice(0, 10);
+    if (data.date !== today) return; // stale — predictions are from a different day
+    modelPredictions = {};
+    (data.games || []).forEach(g => { modelPredictions[g.id] = g; });
+    const count = Object.keys(modelPredictions).length;
+    if (count > 0) {
+      document.getElementById('model-status').textContent = `Model loaded · ${count} games`;
+      document.getElementById('model-status').style.color = '#10b981';
+      renderGames();
+    }
+  } catch(e) { /* predictions.json not present yet */ }
+}
 
 function updateClock() {
   const now = new Date();
@@ -557,17 +579,11 @@ function renderGames() {
 }
 
 function getBestEdge(game) {
-  const book = getBestBook(game);
-  if (!book) return 0;
-  let best = 0;
-  const h2h = book.markets?.find(m => m.key === 'h2h');
-  if (h2h) {
-    const [home, away] = getNoVigProbs(h2h);
-    // Without a model we approximate with the no-vig line vs -110 base
-    // Edge shown is how much the line deviates from 50/50 (a proxy for inefficiency)
-    best = Math.max(best, Math.abs(home - 0.5) > 0.05 ? 0.01 : 0);
-  }
-  return best;
+  const pred = modelPredictions[game.id];
+  if (!pred) return 0;
+  const h = pred.home_edge ?? 0;
+  const a = pred.away_edge ?? 0;
+  return Math.max(h, a);
 }
 
 function getBestBook(game) {
@@ -618,12 +634,21 @@ function renderGameCard(game, threshold) {
 
   const homeTeam = game.home_team;
   const awayTeam = game.away_team;
+  const pred = modelPredictions[game.id];
 
-  // Edge badge — without a trained model we show "NO MODEL" placeholder
-  // Once model is wired in, this becomes real edge
-  const hasEdge = false; // placeholder until Python model output is connected
-  const badgeClass = 'none';
-  const badgeText = book ? '—' : 'NO ODDS';
+  // Edge badge driven by model predictions
+  const bestEdge = pred ? Math.max(pred.home_edge ?? 0, pred.away_edge ?? 0) : null;
+  const hasEdge = bestEdge !== null && bestEdge >= threshold;
+  let badgeClass, badgeText;
+  if (!pred) {
+    badgeClass = 'none'; badgeText = 'NO MODEL';
+  } else if (bestEdge >= 0.05) {
+    badgeClass = 'strong'; badgeText = `EDGE +${(bestEdge*100).toFixed(1)}%`;
+  } else if (bestEdge >= 0.03) {
+    badgeClass = 'moderate'; badgeText = `EDGE +${(bestEdge*100).toFixed(1)}%`;
+  } else {
+    badgeClass = 'none'; badgeText = 'NO EDGE';
+  }
 
   const homeH2H = h2h?.outcomes?.find(o => o.name === homeTeam);
   const awayH2H = h2h?.outcomes?.find(o => o.name === awayTeam);
@@ -661,9 +686,10 @@ function renderGameCard(game, threshold) {
           <tr>
             <th style="text-align:left">Team</th>
             <th>ML</th>
-            <th>No-Vig %</th>
+            <th>Mkt %</th>
+            <th>Model %</th>
+            <th>Edge</th>
             <th>Spread</th>
-            <th>Total</th>
           </tr>
         </thead>
         <tbody>
@@ -671,20 +697,36 @@ function renderGameCard(game, threshold) {
             <td class="team-cell">${awayTeam.split(' ').pop()}</td>
             <td class="odds-val ${awayH2H?.price > 0 ? 'positive' : 'negative'}">${awayH2H ? fmtOdds(awayH2H.price) : '—'}</td>
             <td class="implied-prob">${h2h ? fmtProb(awayProb) : '—'}</td>
-            <td class="odds-val">${awaySpread ? `${awaySpread.point > 0 ? '+' : ''}${awaySpread.point} (${fmtOdds(awaySpread.price)})` : '—'}</td>
-            <td class="odds-val">${overTotal ? `O ${overTotal.point} (${fmtOdds(overTotal.price)})` : '—'}</td>
+            <td style="font-weight:600;color:var(--blue)">${pred ? fmtProb(pred.model_away_prob) : '—'}</td>
+            <td class="edge-val ${pred && pred.away_edge > 0.03 ? 'positive' : pred && pred.away_edge < 0 ? 'negative' : 'neutral'}">
+              ${pred && pred.away_edge !== null ? (pred.away_edge >= 0 ? '+' : '') + (pred.away_edge*100).toFixed(1)+'%' : '—'}
+            </td>
+            <td class="odds-val">${awaySpread ? `${awaySpread.point > 0 ? '+' : ''}${awaySpread.point}` : '—'}</td>
           </tr>
           <tr>
             <td class="team-cell">${homeTeam.split(' ').pop()}</td>
             <td class="odds-val ${homeH2H?.price > 0 ? 'positive' : 'negative'}">${homeH2H ? fmtOdds(homeH2H.price) : '—'}</td>
             <td class="implied-prob">${h2h ? fmtProb(homeProb) : '—'}</td>
-            <td class="odds-val">${homeSpread ? `${homeSpread.point > 0 ? '+' : ''}${homeSpread.point} (${fmtOdds(homeSpread.price)})` : '—'}</td>
-            <td class="odds-val">${underTotal ? `U ${underTotal.point} (${fmtOdds(underTotal.price)})` : '—'}</td>
+            <td style="font-weight:600;color:var(--blue)">${pred ? fmtProb(pred.model_home_prob) : '—'}</td>
+            <td class="edge-val ${pred && pred.home_edge > 0.03 ? 'positive' : pred && pred.home_edge < 0 ? 'negative' : 'neutral'}">
+              ${pred && pred.home_edge !== null ? (pred.home_edge >= 0 ? '+' : '') + (pred.home_edge*100).toFixed(1)+'%' : '—'}
+            </td>
+            <td class="odds-val">${homeSpread ? `${homeSpread.point > 0 ? '+' : ''}${homeSpread.point}` : '—'}</td>
           </tr>
         </tbody>
       </table>
 
-      ${book ? `<div style="margin-top:8px;font-size:0.68rem;color:var(--muted);text-align:right">via ${book.title}</div>` : ''}
+      ${pred?.best_bet ? `
+        <div style="margin-top:10px;padding:8px 10px;background:${pred.best_bet.strength==='strong'?'#dcfce7':'#fef9c3'};border-radius:8px;font-size:0.78rem;">
+          <span style="font-weight:700;color:${pred.best_bet.strength==='strong'?'#15803d':'#854d0e'}">
+            ${pred.best_bet.strength==='strong'?'★ STRONG BET':'◆ MODERATE BET'}
+          </span>
+          &nbsp;${pred.best_bet.team} ${fmtOdds(pred.best_bet.odds)}
+          &nbsp;·&nbsp;EV ${pred.best_bet.ev >= 0 ? '+' : ''}${(pred.best_bet.ev*100).toFixed(1)}%
+          &nbsp;·&nbsp;Kelly ${(pred.best_bet.strength==='strong'?pred.home_kelly:pred.away_kelly ?? 0*100).toFixed(1)}% of bankroll
+        </div>` : ''}
+
+      ${book ? `<div style="margin-top:6px;font-size:0.68rem;color:var(--muted);text-align:right">via ${book.title}</div>` : ''}
     </div>
   </div>`;
 }
