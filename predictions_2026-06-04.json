@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-03T18:34:48.029341+00:00",
+  "generated_at": "2026-06-03T22:35:00.055290+00:00",
   "date": "2026-06-04",
   "games": [
     {
@@ -9,33 +9,33 @@
       "commence_time": "2026-06-04T00:30:00Z",
       "home_team": "San Antonio Spurs",
       "away_team": "New York Knicks",
-      "home_odds": -185,
-      "away_odds": 156,
+      "home_odds": -188,
+      "away_odds": 158,
       "spread": {
         "point": -4.5,
-        "price": -114
+        "price": -115
       },
       "total": {
         "line": 217.5,
-        "over": -108,
-        "under": -112
+        "over": -105,
+        "under": -115
       },
       "model_home_prob": 0.4446,
       "model_away_prob": 0.5554,
-      "home_no_vig_prob": 0.6243,
-      "away_no_vig_prob": 0.3757,
-      "home_edge": -0.1797,
-      "away_edge": 0.1797,
-      "home_ev": -0.3151,
-      "away_ev": 0.4219,
+      "home_no_vig_prob": 0.6274,
+      "away_no_vig_prob": 0.3726,
+      "home_edge": -0.1828,
+      "away_edge": 0.1828,
+      "home_ev": -0.319,
+      "away_ev": 0.433,
       "home_kelly": 0.0,
-      "away_kelly": 0.0676,
+      "away_kelly": 0.0685,
       "best_bet": {
         "side": "away",
         "team": "New York Knicks",
-        "odds": 156,
-        "edge": 0.1797,
-        "ev": 0.4219,
+        "odds": 158,
+        "edge": 0.1828,
+        "ev": 0.433,
         "strength": "strong"
       }
     }
