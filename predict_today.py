@@ -58,8 +58,10 @@ TEAM_MAP = {
 }
 
 
-def fetch_todays_nba_odds(api_key: str) -> list:
-    """Fetch today's NBA games + odds from the-odds-api.com."""
+def fetch_nba_odds(api_key: str, target_date: str) -> list:
+    """Fetch NBA games + odds for a specific date from the-odds-api.com."""
+    date_from = f"{target_date}T00:00:00Z"
+    date_to   = f"{target_date}T23:59:59Z"
     url = "https://api.the-odds-api.com/v4/sports/basketball_nba/odds/"
     params = {
         "apiKey": api_key,
@@ -67,13 +69,13 @@ def fetch_todays_nba_odds(api_key: str) -> list:
         "markets": "h2h,spreads,totals",
         "oddsFormat": "american",
         "bookmakers": "draftkings,fanduel,betmgm,caesars",
+        "commenceTimeFrom": date_from,
+        "commenceTimeTo": date_to,
     }
     resp = requests.get(url, params=params, timeout=15)
     resp.raise_for_status()
     print(f"Odds API requests remaining: {resp.headers.get('x-requests-remaining', '?')}")
-    games = resp.json()
-    today = date.today().isoformat()
-    return [g for g in games if g["commence_time"][:10] == today]
+    return resp.json()
 
 
 def get_team_stats() -> pd.DataFrame:
@@ -175,10 +177,12 @@ def get_total(game: dict) -> dict | None:
     return None
 
 
-def run(api_key: str, output_path: str = "predictions.json") -> None:
-    print("Fetching today's NBA games...")
-    games = fetch_todays_nba_odds(api_key)
-    print(f"Found {len(games)} NBA games today")
+def run(api_key: str, output_path: str = None, target_date: str = None) -> None:
+    target_date = target_date or date.today().isoformat()
+    output_path = output_path or f"predictions_{target_date}.json"
+    print(f"Fetching NBA games for {target_date}...")
+    games = fetch_nba_odds(api_key, target_date)
+    print(f"Found {len(games)} NBA games")
 
     if not games:
         result = {"generated_at": datetime.now(timezone.utc).isoformat(), "games": []}
@@ -296,7 +300,7 @@ def run(api_key: str, output_path: str = "predictions.json") -> None:
 
     result = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
-        "date": date.today().isoformat(),
+        "date": target_date,
         "games": output_games,
     }
     Path(output_path).write_text(json.dumps(result, indent=2))
@@ -310,11 +314,14 @@ def run(api_key: str, output_path: str = "predictions.json") -> None:
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--api-key", default=os.getenv("ODDS_API_KEY", ""))
-    parser.add_argument("--output", default="predictions.json")
+    parser.add_argument("--date", default=None, help="YYYY-MM-DD (defaults to today)")
+    parser.add_argument("--output", default=None, help="Output file path (defaults to predictions_YYYY-MM-DD.json)")
     args = parser.parse_args()
 
     if not args.api_key:
         print("Error: provide --api-key or set ODDS_API_KEY in .env")
         sys.exit(1)
 
-    run(args.api_key, args.output)
+    target_date = args.date or date.today().isoformat()
+    output_path = args.output or f"predictions_{target_date}.json"
+    run(args.api_key, output_path, target_date)

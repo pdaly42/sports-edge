@@ -2,8 +2,14 @@ name: Daily NBA Predictions
 
 on:
   schedule:
-    - cron: '0 14 * * *'
+    - cron: '0 14 * * *'   # 10am ET (today)
+    - cron: '0 2 * * *'    # 10pm ET (tomorrow's slate, for late-night planning)
   workflow_dispatch:
+    inputs:
+      target_date:
+        description: 'Date to predict (YYYY-MM-DD). Defaults to today.'
+        required: false
+        default: ''
 
 permissions:
   contents: write
@@ -30,15 +36,28 @@ jobs:
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
 
-      - name: Generate today's predictions
-        run: python3 predict_today.py --output predictions.json
+      - name: Generate predictions (today)
+        run: |
+          DATE="${{ github.event.inputs.target_date }}"
+          if [ -z "$DATE" ]; then DATE=$(date -u '+%Y-%m-%d'); fi
+          echo "Predicting for $DATE"
+          python3 predict_today.py --date "$DATE"
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
 
-      - name: Commit predictions.json
+      - name: Generate predictions (tomorrow, for planning)
+        if: github.event_name == 'schedule'
+        run: |
+          TOMORROW=$(date -u -d '+1 day' '+%Y-%m-%d' 2>/dev/null || date -u -v+1d '+%Y-%m-%d')
+          echo "Also predicting for $TOMORROW"
+          python3 predict_today.py --date "$TOMORROW" || echo "No odds available yet for $TOMORROW"
+        env:
+          ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+
+      - name: Commit predictions
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add predictions.json data/raw/
-          git diff --staged --quiet || git commit -m "predictions: $(date -u '+%Y-%m-%d')"
+          git add predictions_*.json data/raw/
+          git diff --staged --quiet || git commit -m "predictions: $(date -u '+%Y-%m-%d %H:%M') UTC"
           git push

@@ -16,7 +16,6 @@
       --red: #ef4444;
       --amber: #f59e0b;
       --blue: #3b82f6;
-      --indigo: #6366f1;
       --shadow: 0 1px 3px rgba(0,0,0,0.08);
       --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.1);
     }
@@ -50,173 +49,52 @@
     .header-clock { font-size: 1.2rem; font-weight: 500; font-variant-numeric: tabular-nums; }
     .header-date { font-size: 0.78rem; color: #94a3b8; margin-top: 1px; }
 
-    /* ── API Key Banner ── */
-    #api-banner {
+    /* ── Banner (shared style) ── */
+    .setup-banner {
       background: #1e293b;
       color: #e2e8f0;
-      padding: 12px 32px;
+      padding: 10px 32px;
       display: flex;
       align-items: center;
       gap: 12px;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
+      flex-wrap: wrap;
     }
-    #api-banner.hidden { display: none; }
-    #api-banner a { color: #60a5fa; text-decoration: none; }
-    #api-banner a:hover { text-decoration: underline; }
-    #api-key-input {
+    .setup-banner.hidden { display: none; }
+    .setup-banner a { color: #60a5fa; text-decoration: none; }
+    .setup-banner a:hover { text-decoration: underline; }
+    .banner-input {
       flex: 1;
-      max-width: 340px;
-      padding: 6px 10px;
+      max-width: 320px;
+      padding: 5px 10px;
       border-radius: 6px;
       border: 1px solid #334155;
       background: #0f172a;
       color: white;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       font-family: monospace;
     }
-    #api-key-input::placeholder { color: #64748b; }
-    #save-key-btn {
-      padding: 6px 14px;
+    .banner-input::placeholder { color: #64748b; }
+    .banner-btn {
+      padding: 5px 14px;
       background: #3b82f6;
       color: white;
       border: none;
       border-radius: 6px;
       cursor: pointer;
-      font-size: 0.85rem;
+      font-size: 0.82rem;
       font-weight: 500;
+      white-space: nowrap;
     }
-    #save-key-btn:hover { background: #2563eb; }
-    #key-status { font-size: 0.78rem; color: #10b981; }
+    .banner-btn:hover { background: #2563eb; }
+    .banner-btn.secondary {
+      background: #334155;
+    }
+    .banner-btn.secondary:hover { background: #475569; }
+    .banner-status { font-size: 0.75rem; color: #10b981; }
 
-    /* ── Main Layout ── */
+    /* ── Main ── */
     main { max-width: 1200px; margin: 0 auto; padding: 24px 24px 48px; }
-
-    /* ── Sport Tabs ── */
-    .sport-tabs {
-      display: flex;
-      gap: 8px;
-      margin-bottom: 20px;
-      flex-wrap: wrap;
-    }
-    .sport-tab {
-      padding: 7px 18px;
-      border-radius: 20px;
-      border: 1.5px solid var(--border);
-      background: white;
-      color: var(--muted);
-      font-size: 0.85rem;
-      font-weight: 500;
-      cursor: pointer;
-      transition: all 0.15s;
-    }
-    .sport-tab:hover { border-color: var(--blue); color: var(--blue); }
-    .sport-tab.active { background: var(--header); color: white; border-color: var(--header); }
-
-    /* ── Section Header ── */
-    .section-header {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 14px;
-    }
-    .section-title {
-      font-size: 0.7rem;
-      font-weight: 700;
-      letter-spacing: 0.08em;
-      text-transform: uppercase;
-      color: var(--muted);
-    }
-    .game-count {
-      font-size: 0.75rem;
-      color: var(--muted);
-      background: var(--border);
-      padding: 2px 8px;
-      border-radius: 10px;
-    }
-
-    /* ── Game Cards ── */
-    .games-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
-      gap: 14px;
-    }
-
-    .game-card {
-      background: var(--card);
-      border-radius: 12px;
-      box-shadow: var(--shadow);
-      overflow: hidden;
-      transition: box-shadow 0.15s;
-      border: 1.5px solid transparent;
-    }
-    .game-card:hover { box-shadow: var(--shadow-md); border-color: #bfdbfe; }
-    .game-card.has-edge { border-color: #bbf7d0; }
-
-    .card-header {
-      padding: 10px 14px;
-      background: #f8fafc;
-      border-bottom: 1px solid var(--border);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-    .game-time { font-size: 0.75rem; color: var(--muted); font-weight: 500; }
-    .edge-badge {
-      font-size: 0.68rem;
-      font-weight: 700;
-      padding: 2px 8px;
-      border-radius: 10px;
-      letter-spacing: 0.04em;
-    }
-    .edge-badge.strong { background: #dcfce7; color: #15803d; }
-    .edge-badge.moderate { background: #fef9c3; color: #854d0e; }
-    .edge-badge.none { background: #f1f5f9; color: var(--muted); }
-
-    .card-body { padding: 14px; }
-
-    .matchup {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      margin-bottom: 14px;
-    }
-    .team { text-align: center; flex: 1; }
-    .team-name { font-size: 0.95rem; font-weight: 700; color: var(--text); }
-    .team-record { font-size: 0.7rem; color: var(--muted); margin-top: 1px; }
-    .vs-block { text-align: center; padding: 0 8px; }
-    .vs { font-size: 0.7rem; color: var(--muted); font-weight: 600; }
-    .home-label { font-size: 0.62rem; color: #94a3b8; margin-top: 2px; }
-
-    /* ── Odds Table ── */
-    .odds-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
-    .odds-table th {
-      text-align: center;
-      padding: 4px 6px;
-      color: var(--muted);
-      font-weight: 600;
-      font-size: 0.68rem;
-      letter-spacing: 0.05em;
-      text-transform: uppercase;
-      border-bottom: 1px solid var(--border);
-    }
-    .odds-table td {
-      text-align: center;
-      padding: 6px 6px;
-      border-bottom: 1px solid #f1f5f9;
-    }
-    .odds-table tr:last-child td { border-bottom: none; }
-    .odds-table .team-cell { text-align: left; font-weight: 600; }
-
-    .odds-val { font-variant-numeric: tabular-nums; }
-    .odds-val.positive { color: var(--green); }
-    .odds-val.negative { color: var(--text); }
-    .odds-val.best { font-weight: 700; color: var(--blue); }
-
-    .implied-prob { color: var(--muted); font-size: 0.75rem; }
-    .edge-val { font-weight: 700; }
-    .edge-val.positive { color: var(--green); }
-    .edge-val.negative { color: #cbd5e1; }
-    .edge-val.neutral { color: var(--muted); }
 
     /* ── Summary Bar ── */
     .summary-bar {
@@ -235,25 +113,96 @@
     .summary-value { font-size: 1.5rem; font-weight: 700; color: var(--text); margin-top: 2px; font-variant-numeric: tabular-nums; }
     .summary-sub { font-size: 0.72rem; color: var(--muted); margin-top: 2px; }
 
-    /* ── Loading / Empty ── */
-    .loading-state, .empty-state {
-      text-align: center;
-      padding: 48px 24px;
+    /* ── Date Nav ── */
+    .date-nav {
+      display: flex;
+      align-items: center;
+      gap: 0;
+      background: white;
+      border: 1.5px solid var(--border);
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: var(--shadow);
+    }
+    .date-nav-btn {
+      background: none;
+      border: none;
+      padding: 8px 14px;
+      cursor: pointer;
       color: var(--muted);
+      font-size: 1rem;
+      line-height: 1;
+      transition: background 0.12s, color 0.12s;
+      display: flex;
+      align-items: center;
     }
-    .loading-spinner {
-      width: 32px; height: 32px;
-      border: 3px solid var(--border);
-      border-top-color: var(--blue);
-      border-radius: 50%;
-      animation: spin 0.8s linear infinite;
-      margin: 0 auto 12px;
+    .date-nav-btn:hover:not(:disabled) { background: #f1f5f9; color: var(--text); }
+    .date-nav-btn:disabled { opacity: 0.3; cursor: default; }
+    .date-nav-label {
+      padding: 8px 16px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text);
+      min-width: 130px;
+      text-align: center;
+      border-left: 1px solid var(--border);
+      border-right: 1px solid var(--border);
+      white-space: nowrap;
     }
-    @keyframes spin { to { transform: rotate(360deg); } }
-    .empty-icon { font-size: 2rem; margin-bottom: 8px; }
+    .date-nav-label .date-sub {
+      font-size: 0.68rem;
+      color: var(--muted);
+      font-weight: 400;
+      display: block;
+      margin-top: 1px;
+    }
 
-    /* ── Refresh ── */
-    .refresh-btn {
+    /* ── Controls Row ── */
+    .controls-row {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    /* ── Sport Tabs ── */
+    .sport-tabs { display: flex; gap: 8px; flex-wrap: wrap; }
+    .sport-tab {
+      padding: 7px 18px;
+      border-radius: 20px;
+      border: 1.5px solid var(--border);
+      background: white;
+      color: var(--muted);
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.15s;
+    }
+    .sport-tab:hover { border-color: var(--blue); color: var(--blue); }
+    .sport-tab.active { background: var(--header); color: white; border-color: var(--header); }
+
+    /* ── Right-side controls ── */
+    .controls-right { margin-left: auto; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
+    .book-select {
+      padding: 6px 10px;
+      border: 1.5px solid var(--border);
+      border-radius: 8px;
+      font-size: 0.78rem;
+      color: var(--text);
+      background: white;
+      cursor: pointer;
+    }
+    .threshold-label { font-size: 0.75rem; color: var(--muted); }
+    .threshold-input {
+      width: 56px;
+      padding: 5px 8px;
+      border: 1.5px solid var(--border);
+      border-radius: 6px;
+      font-size: 0.78rem;
+      text-align: center;
+    }
+    .icon-btn {
       background: none;
       border: 1.5px solid var(--border);
       border-radius: 8px;
@@ -264,46 +213,114 @@
       display: flex;
       align-items: center;
       gap: 5px;
+      white-space: nowrap;
     }
-    .refresh-btn:hover { border-color: var(--blue); color: var(--blue); }
-    .refresh-btn.spinning svg { animation: spin 0.8s linear infinite; }
+    .icon-btn:hover { border-color: var(--blue); color: var(--blue); }
+    .icon-btn.spinning svg { animation: spin 0.8s linear infinite; }
+    .icon-btn.run-btn { border-color: #bbf7d0; color: #15803d; background: #f0fdf4; }
+    .icon-btn.run-btn:hover { background: #dcfce7; }
+    .icon-btn.run-btn:disabled { opacity: 0.5; cursor: default; }
+    .last-updated { font-size: 0.72rem; color: var(--muted); }
 
-    .last-updated { font-size: 0.72rem; color: var(--muted); margin-left: auto; }
-
-    .top-controls {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 20px;
+    /* ── Section Header ── */
+    .section-header {
+      display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px;
     }
-
-    /* ── Book selector ── */
-    .book-select {
-      padding: 6px 10px;
-      border: 1.5px solid var(--border);
-      border-radius: 8px;
-      font-size: 0.78rem;
-      color: var(--text);
-      background: white;
-      cursor: pointer;
+    .section-title {
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--muted);
+    }
+    .game-count {
+      font-size: 0.75rem; color: var(--muted); background: var(--border);
+      padding: 2px 8px; border-radius: 10px;
     }
 
-    /* ── Edge threshold ── */
-    .threshold-label { font-size: 0.75rem; color: var(--muted); }
-    .threshold-input {
-      width: 56px;
-      padding: 5px 8px;
-      border: 1.5px solid var(--border);
-      border-radius: 6px;
-      font-size: 0.78rem;
-      text-align: center;
+    /* ── Game Cards ── */
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(340px, 1fr));
+      gap: 14px;
     }
+    .game-card {
+      background: var(--card);
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      overflow: hidden;
+      transition: box-shadow 0.15s;
+      border: 1.5px solid transparent;
+    }
+    .game-card:hover { box-shadow: var(--shadow-md); border-color: #bfdbfe; }
+    .game-card.has-edge { border-color: #bbf7d0; }
+    .card-header {
+      padding: 10px 14px;
+      background: #f8fafc;
+      border-bottom: 1px solid var(--border);
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    .game-time { font-size: 0.75rem; color: var(--muted); font-weight: 500; }
+    .edge-badge {
+      font-size: 0.68rem; font-weight: 700; padding: 2px 8px;
+      border-radius: 10px; letter-spacing: 0.04em;
+    }
+    .edge-badge.strong { background: #dcfce7; color: #15803d; }
+    .edge-badge.moderate { background: #fef9c3; color: #854d0e; }
+    .edge-badge.none { background: #f1f5f9; color: var(--muted); }
+    .card-body { padding: 14px; }
+    .matchup {
+      display: flex; align-items: center; justify-content: space-between; margin-bottom: 14px;
+    }
+    .team { text-align: center; flex: 1; }
+    .team-name { font-size: 0.95rem; font-weight: 700; }
+    .team-record { font-size: 0.7rem; color: var(--muted); margin-top: 1px; }
+    .vs-block { text-align: center; padding: 0 8px; }
+    .vs { font-size: 0.7rem; color: var(--muted); font-weight: 600; }
+    .home-label { font-size: 0.62rem; color: #94a3b8; margin-top: 2px; }
+
+    /* ── Odds Table ── */
+    .odds-table { width: 100%; border-collapse: collapse; font-size: 0.8rem; }
+    .odds-table th {
+      text-align: center; padding: 4px 6px; color: var(--muted);
+      font-weight: 600; font-size: 0.68rem; letter-spacing: 0.05em;
+      text-transform: uppercase; border-bottom: 1px solid var(--border);
+    }
+    .odds-table td { text-align: center; padding: 6px; border-bottom: 1px solid #f1f5f9; }
+    .odds-table tr:last-child td { border-bottom: none; }
+    .odds-table .team-cell { text-align: left; font-weight: 600; }
+    .odds-val { font-variant-numeric: tabular-nums; }
+    .odds-val.positive { color: var(--green); }
+    .implied-prob { color: var(--muted); font-size: 0.75rem; }
+    .edge-val { font-weight: 700; }
+    .edge-val.positive { color: var(--green); }
+    .edge-val.negative { color: #cbd5e1; }
+    .edge-val.neutral { color: var(--muted); }
+
+    /* ── States ── */
+    .loading-state, .empty-state {
+      text-align: center; padding: 48px 24px; color: var(--muted);
+    }
+    .loading-spinner {
+      width: 32px; height: 32px;
+      border: 3px solid var(--border); border-top-color: var(--blue);
+      border-radius: 50%; animation: spin 0.8s linear infinite; margin: 0 auto 12px;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .empty-icon { font-size: 2rem; margin-bottom: 8px; }
+
+    /* ── Toast ── */
+    #toast {
+      position: fixed; bottom: 24px; left: 50%; transform: translateX(-50%);
+      background: #1e293b; color: white; padding: 10px 20px;
+      border-radius: 8px; font-size: 0.82rem; z-index: 999;
+      opacity: 0; transition: opacity 0.2s; pointer-events: none;
+    }
+    #toast.show { opacity: 1; }
 
     @media (max-width: 640px) {
       main { padding: 16px; }
       .summary-bar { grid-template-columns: repeat(2, 1fr); }
       header { padding: 12px 16px; }
-      #api-banner { flex-direction: column; align-items: flex-start; }
+      .setup-banner { flex-direction: column; align-items: flex-start; }
+      .controls-row { gap: 8px; }
     }
   </style>
 </head>
@@ -323,59 +340,92 @@
   </div>
 </header>
 
-<div id="api-banner">
-  <span>🔑 Paste your <a href="https://the-odds-api.com" target="_blank">the-odds-api.com</a> free key to load live odds:</span>
-  <input id="api-key-input" type="text" placeholder="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx" />
-  <button id="save-key-btn" onclick="saveKey()">Connect</button>
-  <span id="key-status"></span>
+<!-- Odds API Key Banner -->
+<div id="odds-banner" class="setup-banner">
+  <span>🔑 <a href="https://the-odds-api.com" target="_blank">the-odds-api.com</a> key:</span>
+  <input id="odds-key-input" class="banner-input" type="text" placeholder="Paste your free API key here" />
+  <button class="banner-btn" onclick="saveOddsKey()">Connect</button>
+  <span id="odds-key-status" class="banner-status"></span>
+  <span style="margin-left:auto;font-size:0.72rem;color:#475569;">500 req/month free</span>
+</div>
+
+<!-- GitHub Token Banner (for manual run) -->
+<div id="gh-banner" class="setup-banner" style="border-top:1px solid #334155;">
+  <span>⚡ GitHub token for manual predictions run:</span>
+  <input id="gh-token-input" class="banner-input" type="password" placeholder="ghp_xxxxxxxxxxxx (needs repo + workflow scope)" />
+  <button class="banner-btn" onclick="saveGhToken()">Save</button>
+  <span id="gh-token-status" class="banner-status"></span>
+  <a href="https://github.com/settings/tokens/new?scopes=repo,workflow&description=sports-edge-dashboard" target="_blank" style="margin-left:auto;font-size:0.72rem;">Create token →</a>
 </div>
 
 <main>
-  <!-- Summary Bar -->
   <div class="summary-bar">
     <div class="summary-card">
-      <div class="summary-label">Games Today</div>
+      <div class="summary-label" id="games-label">Games</div>
       <div class="summary-value" id="stat-games">—</div>
       <div class="summary-sub" id="stat-sports">across all sports</div>
     </div>
     <div class="summary-card">
       <div class="summary-label">Strong Edges (&gt;5%)</div>
-      <div class="summary-value" id="stat-strong" style="color: var(--green);">—</div>
-      <div class="summary-sub">model prob vs no-vig line</div>
+      <div class="summary-value" id="stat-strong" style="color:var(--green)">—</div>
+      <div class="summary-sub">model vs no-vig line</div>
     </div>
     <div class="summary-card">
       <div class="summary-label">Moderate Edges (3–5%)</div>
-      <div class="summary-value" id="stat-moderate" style="color: var(--amber);">—</div>
+      <div class="summary-value" id="stat-moderate" style="color:var(--amber)">—</div>
       <div class="summary-sub">worth monitoring</div>
     </div>
     <div class="summary-card">
-      <div class="summary-label">Requests Left</div>
+      <div class="summary-label">API Requests Left</div>
       <div class="summary-value" id="stat-requests">—</div>
       <div class="summary-sub">free tier: 500/month</div>
     </div>
   </div>
 
-  <!-- Controls -->
-  <div class="top-controls">
+  <!-- Controls Row -->
+  <div class="controls-row">
+
+    <!-- Date Navigation -->
+    <div class="date-nav">
+      <button class="date-nav-btn" id="prev-day-btn" onclick="shiftDay(-1)" title="Previous day">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+      </button>
+      <div class="date-nav-label" id="date-nav-label">
+        Today
+        <span class="date-sub" id="date-nav-sub"></span>
+      </div>
+      <button class="date-nav-btn" id="next-day-btn" onclick="shiftDay(1)" title="Next day">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+      </button>
+    </div>
+
+    <!-- Sport Tabs -->
     <div class="sport-tabs" id="sport-tabs">
-      <button class="sport-tab active" data-sport="all">All Sports</button>
+      <button class="sport-tab active" data-sport="all">All</button>
       <button class="sport-tab" data-sport="basketball_nba">NBA</button>
       <button class="sport-tab" data-sport="americanfootball_nfl">NFL</button>
       <button class="sport-tab" data-sport="baseball_mlb">MLB</button>
     </div>
-    <select class="book-select" id="book-select">
-      <option value="">Best available line</option>
-      <option value="draftkings">DraftKings</option>
-      <option value="fanduel">FanDuel</option>
-      <option value="betmgm">BetMGM</option>
-      <option value="caesars">Caesars</option>
-      <option value="pointsbetus">PointsBet</option>
-    </select>
-    <span class="threshold-label">Min edge %:</span>
-    <input class="threshold-input" id="edge-threshold" type="number" value="3" min="0" max="20" step="0.5" />
-    <div style="margin-left:auto; display:flex; align-items:center; gap:10px;">
+
+    <!-- Right side -->
+    <div class="controls-right">
+      <select class="book-select" id="book-select">
+        <option value="">Best line</option>
+        <option value="draftkings">DraftKings</option>
+        <option value="fanduel">FanDuel</option>
+        <option value="betmgm">BetMGM</option>
+        <option value="caesars">Caesars</option>
+      </select>
+      <span class="threshold-label">Min edge:</span>
+      <input class="threshold-input" id="edge-threshold" type="number" value="3" min="0" max="20" step="0.5" />
       <span class="last-updated" id="last-updated"></span>
-      <button class="refresh-btn" id="refresh-btn" onclick="loadAllGames()">
+      <button class="icon-btn run-btn" id="run-btn" onclick="runPredictions()" title="Trigger GitHub Action to generate model predictions">
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+          <polygon points="5 3 19 12 5 21 5 3"/>
+        </svg>
+        Run Predictions
+      </button>
+      <button class="icon-btn" id="refresh-btn" onclick="loadAllGames()">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
           <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
           <path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
@@ -386,7 +436,6 @@
     </div>
   </div>
 
-  <!-- Games -->
   <div class="section-header">
     <span class="section-title" id="section-title">Today's Games</span>
     <span class="game-count" id="game-count"></span>
@@ -394,38 +443,56 @@
   <div id="games-container">
     <div class="empty-state">
       <div class="empty-icon">🏆</div>
-      <div>Connect your API key above to load today's games and odds.</div>
-      <div style="margin-top:8px; font-size:0.78rem;">
-        Get a free key at <a href="https://the-odds-api.com" target="_blank" style="color:var(--blue);">the-odds-api.com</a> — 500 requests/month free
+      <div>Connect your API key above to load games and odds.</div>
+      <div style="margin-top:8px;font-size:0.78rem;">
+        Get a free key at <a href="https://the-odds-api.com" target="_blank" style="color:var(--blue)">the-odds-api.com</a> — 500 req/month free
       </div>
     </div>
   </div>
 </main>
 
+<div id="toast"></div>
+
 <script>
-// ── State ──
-let apiKey = localStorage.getItem('odds_api_key') || '';
-let allGames = [];
-let modelPredictions = {};  // game_id → prediction object
+// ─────────────────────────────────────────
+// State
+// ─────────────────────────────────────────
+let oddsKey   = localStorage.getItem('odds_api_key') || '';
+let ghToken   = localStorage.getItem('gh_token') || '';
+let allGames  = [];
+let modelPredictions = {};
 let activeSport = 'all';
+let dayOffset = 0;   // 0 = today, 1 = tomorrow, -1 = yesterday
+
 const SPORTS = [
-  { key: 'basketball_nba', label: 'NBA', emoji: '🏀' },
+  { key: 'basketball_nba',       label: 'NBA', emoji: '🏀' },
   { key: 'americanfootball_nfl', label: 'NFL', emoji: '🏈' },
-  { key: 'baseball_mlb', label: 'MLB', emoji: '⚾' },
+  { key: 'baseball_mlb',         label: 'MLB', emoji: '⚾' },
 ];
 
-// ── Init ──
+const GH_OWNER    = 'pdaly42';
+const GH_REPO     = 'sports-edge';
+const GH_WORKFLOW = 'daily_predictions.yml';
+
+// ─────────────────────────────────────────
+// Init
+// ─────────────────────────────────────────
 window.addEventListener('DOMContentLoaded', () => {
   updateClock();
   setInterval(updateClock, 1000);
+  updateDateNav();
 
-  loadModelPredictions();
-
-  if (apiKey) {
-    document.getElementById('api-key-input').value = apiKey;
-    document.getElementById('api-banner').classList.add('hidden');
+  if (oddsKey) {
+    document.getElementById('odds-key-input').value = oddsKey;
+    document.getElementById('odds-banner').classList.add('hidden');
     loadAllGames();
   }
+  if (ghToken) {
+    document.getElementById('gh-token-input').value = '••••••••••••••••';
+    document.getElementById('gh-banner').classList.add('hidden');
+  }
+
+  loadModelPredictions();
 
   document.getElementById('sport-tabs').addEventListener('click', e => {
     const tab = e.target.closest('.sport-tab');
@@ -437,15 +504,94 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   document.getElementById('edge-threshold').addEventListener('change', renderGames);
+  document.getElementById('odds-key-input').addEventListener('keydown', e => { if (e.key === 'Enter') saveOddsKey(); });
+  document.getElementById('gh-token-input').addEventListener('keydown', e => { if (e.key === 'Enter') saveGhToken(); });
 });
 
+// ─────────────────────────────────────────
+// Date helpers
+// ─────────────────────────────────────────
+function getViewDate() {
+  const d = new Date();
+  d.setDate(d.getDate() + dayOffset);
+  return d;
+}
+
+function getViewDateISO() {
+  return getViewDate().toISOString().slice(0, 10);
+}
+
+function updateDateNav() {
+  const d = getViewDate();
+  const today = new Date();
+  const tomorrow = new Date(); tomorrow.setDate(tomorrow.getDate() + 1);
+
+  let label;
+  if (dayOffset === 0) label = 'Today';
+  else if (dayOffset === 1) label = 'Tomorrow';
+  else if (dayOffset === -1) label = 'Yesterday';
+  else label = d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
+
+  const sub = d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
+  document.getElementById('date-nav-label').innerHTML = `${label}<span class="date-sub">${sub}</span>`;
+
+  // Only allow ±2 days from today
+  document.getElementById('prev-day-btn').disabled = dayOffset <= -1;
+  document.getElementById('next-day-btn').disabled = dayOffset >= 2;
+
+  const dateStr = dayOffset === 0 ? "Today's" : dayOffset === 1 ? "Tomorrow's" : label + "'s";
+  const sport = SPORTS.find(s => s.key === activeSport);
+  document.getElementById('section-title').textContent =
+    `${dateStr} Games${sport ? ' · ' + sport.label : ''}`;
+  document.getElementById('games-label').textContent =
+    dayOffset === 0 ? 'Games Today' : dayOffset === 1 ? 'Games Tomorrow' : 'Games';
+}
+
+function shiftDay(delta) {
+  dayOffset += delta;
+  updateDateNav();
+  allGames = [];
+  modelPredictions = {};
+  document.getElementById('model-status').textContent = 'No model loaded';
+  document.getElementById('model-status').style.color = '#64748b';
+  loadModelPredictions();
+  if (oddsKey) loadAllGames();
+  else renderGames();
+}
+
+// ─────────────────────────────────────────
+// Keys / tokens
+// ─────────────────────────────────────────
+function saveOddsKey() {
+  const val = document.getElementById('odds-key-input').value.trim();
+  if (!val) return;
+  oddsKey = val;
+  localStorage.setItem('odds_api_key', val);
+  document.getElementById('odds-key-status').textContent = '✓ Saved';
+  document.getElementById('odds-banner').classList.add('hidden');
+  loadAllGames();
+}
+
+function saveGhToken() {
+  const val = document.getElementById('gh-token-input').value.trim();
+  if (!val || val.startsWith('•')) return;
+  ghToken = val;
+  localStorage.setItem('gh_token', val);
+  document.getElementById('gh-token-status').textContent = '✓ Saved';
+  document.getElementById('gh-banner').classList.add('hidden');
+  toast('GitHub token saved — Run Predictions button is now active');
+}
+
+// ─────────────────────────────────────────
+// Model predictions
+// ─────────────────────────────────────────
 async function loadModelPredictions() {
+  const dateStr = getViewDateISO();
+  const url = `predictions_${dateStr}.json?t=${Date.now()}`;
   try {
-    const res = await fetch('predictions.json?t=' + Date.now());
+    const res = await fetch(url);
     if (!res.ok) return;
     const data = await res.json();
-    const today = new Date().toISOString().slice(0, 10);
-    if (data.date !== today) return; // stale — predictions are from a different day
     modelPredictions = {};
     (data.games || []).forEach(g => { modelPredictions[g.id] = g; });
     const count = Object.keys(modelPredictions).length;
@@ -454,210 +600,218 @@ async function loadModelPredictions() {
       document.getElementById('model-status').style.color = '#10b981';
       renderGames();
     }
-  } catch(e) { /* predictions.json not present yet */ }
+  } catch(e) { /* file not yet generated */ }
 }
 
-function updateClock() {
-  const now = new Date();
-  document.getElementById('clock').textContent = now.toLocaleTimeString('en-US', {
-    hour: '2-digit', minute: '2-digit', second: '2-digit'
-  });
-  document.getElementById('date-display').textContent = now.toLocaleDateString('en-US', {
-    weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'
-  });
+// ─────────────────────────────────────────
+// Manual predictions trigger
+// ─────────────────────────────────────────
+async function runPredictions() {
+  if (!ghToken) {
+    document.getElementById('gh-banner').classList.remove('hidden');
+    toast('Add your GitHub token to enable manual predictions run');
+    return;
+  }
+  const btn = document.getElementById('run-btn');
+  btn.disabled = true;
+  btn.innerHTML = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" style="animation:spin 0.8s linear infinite"><path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/><path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/><path d="M8 16H3v5"/></svg> Running…`;
+
+  const dateStr = getViewDateISO();
+  try {
+    const resp = await fetch(
+      `https://api.github.com/repos/${GH_OWNER}/${GH_REPO}/actions/workflows/${GH_WORKFLOW}/dispatches`,
+      {
+        method: 'POST',
+        headers: {
+          Authorization: `Bearer ${ghToken}`,
+          Accept: 'application/vnd.github+json',
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ ref: 'main', inputs: { target_date: dateStr } }),
+      }
+    );
+
+    if (resp.status === 204) {
+      toast('✓ Predictions job started — check back in ~3 min then refresh');
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.innerHTML = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg> Run Predictions`;
+      }, 5000);
+    } else if (resp.status === 401) {
+      toast('GitHub token invalid or expired — update it above');
+      ghToken = '';
+      localStorage.removeItem('gh_token');
+      document.getElementById('gh-banner').classList.remove('hidden');
+      resetRunBtn();
+    } else {
+      toast(`GitHub error ${resp.status} — check token has repo + workflow scopes`);
+      resetRunBtn();
+    }
+  } catch(e) {
+    toast('Network error triggering workflow');
+    resetRunBtn();
+  }
 }
 
-function saveKey() {
-  const val = document.getElementById('api-key-input').value.trim();
-  if (!val) return;
-  apiKey = val;
-  localStorage.setItem('odds_api_key', val);
-  document.getElementById('key-status').textContent = '✓ Saved';
-  document.getElementById('api-banner').classList.add('hidden');
-  loadAllGames();
+function resetRunBtn() {
+  const btn = document.getElementById('run-btn');
+  btn.disabled = false;
+  btn.innerHTML = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg> Run Predictions`;
 }
 
-// Allow pressing Enter in the key input
-document.getElementById('api-key-input').addEventListener('keydown', e => {
-  if (e.key === 'Enter') saveKey();
-});
-
-// ── Data Fetching ──
+// ─────────────────────────────────────────
+// Odds fetching
+// ─────────────────────────────────────────
 async function loadAllGames() {
-  if (!apiKey) return;
-  const btn = document.getElementById('refresh-btn');
-  btn.classList.add('spinning');
+  if (!oddsKey) return;
+  document.getElementById('refresh-btn').classList.add('spinning');
   showLoading();
-
   allGames = [];
-  const preferredBook = document.getElementById('book-select').value;
-  const markets = 'h2h,spreads,totals';
-  const bookmakers = preferredBook ? preferredBook : 'draftkings,fanduel,betmgm,caesars';
 
-  let totalRequestsLeft = null;
+  const viewDate   = getViewDate();
+  const dateFrom   = new Date(viewDate); dateFrom.setHours(0,0,0,0);
+  const dateTo     = new Date(viewDate); dateTo.setHours(23,59,59,999);
+  const fromISO    = dateFrom.toISOString();
+  const toISO      = dateTo.toISOString();
+
+  const books   = document.getElementById('book-select').value || 'draftkings,fanduel,betmgm,caesars';
+  let reqLeft   = null;
 
   for (const sport of SPORTS) {
     try {
       const url = `https://api.the-odds-api.com/v4/sports/${sport.key}/odds/?` +
-        `apiKey=${apiKey}&regions=us&markets=${markets}&oddsFormat=american&bookmakers=${bookmakers}`;
-      const res = await fetch(url);
+        `apiKey=${oddsKey}&regions=us&markets=h2h,spreads,totals&oddsFormat=american` +
+        `&bookmakers=${books}&commenceTimeFrom=${fromISO}&commenceTimeTo=${toISO}`;
 
-      if (res.status === 401) { showError('Invalid API key. Check your key at the-odds-api.com'); return; }
-      if (res.status === 422) continue; // sport not currently in season
+      const res = await fetch(url);
+      if (res.status === 401) { showError('Invalid API key'); return; }
+      if (res.status === 422 || res.status === 404) continue;
       if (!res.ok) continue;
 
-      const remaining = res.headers.get('x-requests-remaining');
-      if (remaining) totalRequestsLeft = remaining;
+      const rem = res.headers.get('x-requests-remaining');
+      if (rem) reqLeft = rem;
 
       const games = await res.json();
-      const today = new Date().toDateString();
-      const todayGames = games.filter(g => new Date(g.commence_time).toDateString() === today);
-
-      todayGames.forEach(g => {
-        allGames.push({ ...g, sportKey: sport.key, sportLabel: sport.label, sportEmoji: sport.emoji });
-      });
-    } catch(e) {
-      console.error(`Error fetching ${sport.key}:`, e);
-    }
+      games.forEach(g => allGames.push({
+        ...g, sportKey: sport.key, sportLabel: sport.label, sportEmoji: sport.emoji
+      }));
+    } catch(e) { console.error(sport.key, e); }
   }
 
-  if (totalRequestsLeft !== null) {
-    document.getElementById('stat-requests').textContent = totalRequestsLeft;
-  }
-
+  if (reqLeft !== null) document.getElementById('stat-requests').textContent = reqLeft;
   document.getElementById('last-updated').textContent =
     'Updated ' + new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
-
-  btn.classList.remove('spinning');
+  document.getElementById('refresh-btn').classList.remove('spinning');
   renderGames();
 }
 
-// ── Rendering ──
+// ─────────────────────────────────────────
+// Rendering
+// ─────────────────────────────────────────
 function renderGames() {
   const threshold = parseFloat(document.getElementById('edge-threshold').value) / 100;
   const filtered = activeSport === 'all'
     ? allGames
     : allGames.filter(g => g.sportKey === activeSport);
 
-  // Sort: games with edges first, then by time
   filtered.sort((a, b) => {
-    const edgeA = getBestEdge(a);
-    const edgeB = getBestEdge(b);
-    if (edgeB !== edgeA) return edgeB - edgeA;
+    const ea = getBestEdge(a), eb = getBestEdge(b);
+    if (eb !== ea) return eb - ea;
     return new Date(a.commence_time) - new Date(b.commence_time);
   });
 
   document.getElementById('stat-games').textContent = allGames.length;
   document.getElementById('stat-sports').textContent =
-    SPORTS.filter(s => allGames.some(g => g.sportKey === s.key)).map(s => s.label).join(' · ') || 'no games today';
+    SPORTS.filter(s => allGames.some(g => g.sportKey === s.key)).map(s => s.label).join(' · ') || 'no games';
 
-  let strongCount = 0, modCount = 0;
+  let strong = 0, moderate = 0;
   allGames.forEach(g => {
     const e = getBestEdge(g);
-    if (e >= 0.05) strongCount++;
-    else if (e >= 0.03) modCount++;
+    if (e >= 0.05) strong++;
+    else if (e >= 0.03) moderate++;
   });
-  document.getElementById('stat-strong').textContent = strongCount;
-  document.getElementById('stat-moderate').textContent = modCount;
-
-  document.getElementById('game-count').textContent = `${filtered.length} game${filtered.length !== 1 ? 's' : ''}`;
-  document.getElementById('section-title').textContent =
-    activeSport === 'all' ? "Today's Games" :
-    SPORTS.find(s => s.key === activeSport)?.label + ' — Today';
+  document.getElementById('stat-strong').textContent   = strong;
+  document.getElementById('stat-moderate').textContent = moderate;
+  document.getElementById('game-count').textContent    =
+    `${filtered.length} game${filtered.length !== 1 ? 's' : ''}`;
 
   const container = document.getElementById('games-container');
-
   if (filtered.length === 0) {
     container.innerHTML = `<div class="empty-state">
       <div class="empty-icon">📅</div>
-      <div>No games found today for this sport.</div>
+      <div>No games found for this date / sport.</div>
     </div>`;
     return;
   }
-
-  container.innerHTML = `<div class="games-grid">${filtered.map(g => renderGameCard(g, threshold)).join('')}</div>`;
+  container.innerHTML = `<div class="games-grid">${filtered.map(g => renderCard(g, threshold)).join('')}</div>`;
 }
 
 function getBestEdge(game) {
-  const pred = modelPredictions[game.id];
-  if (!pred) return 0;
-  const h = pred.home_edge ?? 0;
-  const a = pred.away_edge ?? 0;
-  return Math.max(h, a);
+  const p = modelPredictions[game.id];
+  if (!p) return 0;
+  return Math.max(p.home_edge ?? 0, p.away_edge ?? 0);
 }
 
 function getBestBook(game) {
-  const preferred = document.getElementById('book-select').value;
-  if (preferred && game.bookmakers) {
-    const found = game.bookmakers.find(b => b.key === preferred);
+  const pref = document.getElementById('book-select').value;
+  if (pref && game.bookmakers) {
+    const found = game.bookmakers.find(b => b.key === pref);
     if (found) return found;
   }
   return game.bookmakers?.[0];
 }
 
-function getNoVigProbs(market) {
-  const outcomes = market.outcomes;
+function noVigProbs(market) {
+  const outcomes = market?.outcomes;
   if (!outcomes || outcomes.length < 2) return [0.5, 0.5];
-  const imp = outcomes.map(o => americanToImplied(o.price));
-  const total = imp.reduce((a, b) => a + b, 0);
-  return imp.map(p => p / total);
+  const imp = outcomes.map(o => americanToImpl(o.price));
+  const tot = imp.reduce((a, b) => a + b, 0);
+  return imp.map(p => p / tot);
 }
 
-function americanToImplied(odds) {
-  return odds > 0 ? 100 / (odds + 100) : Math.abs(odds) / (Math.abs(odds) + 100);
+function americanToImpl(o) {
+  return o > 0 ? 100 / (o + 100) : Math.abs(o) / (Math.abs(o) + 100);
 }
+function fmtOdds(o) { return o > 0 ? `+${o}` : `${o}`; }
+function fmtPct(p)  { return p != null ? (p * 100).toFixed(1) + '%' : '—'; }
 
-function fmtOdds(o) {
-  return o > 0 ? `+${o}` : `${o}`;
-}
+function renderCard(game, threshold) {
+  const book  = getBestBook(game);
+  const h2h   = book?.markets?.find(m => m.key === 'h2h');
+  const sprd  = book?.markets?.find(m => m.key === 'spreads');
+  const total = book?.markets?.find(m => m.key === 'totals');
+  const pred  = modelPredictions[game.id];
 
-function fmtProb(p) {
-  return (p * 100).toFixed(1) + '%';
-}
+  const [awayProb, homeProb] = noVigProbs(h2h);
 
-function renderGameCard(game, threshold) {
-  const book = getBestBook(game);
+  const homeTeam = game.home_team;
+  const awayTeam = game.away_team;
+
+  const homeH2H   = h2h?.outcomes?.find(o => o.name === homeTeam);
+  const awayH2H   = h2h?.outcomes?.find(o => o.name === awayTeam);
+  const homeSprd  = sprd?.outcomes?.find(o => o.name === homeTeam);
+  const awaySprd  = sprd?.outcomes?.find(o => o.name === awayTeam);
+  const overLine  = total?.outcomes?.find(o => o.name === 'Over');
+  const underLine = total?.outcomes?.find(o => o.name === 'Under');
+
+  const bestEdge = pred ? Math.max(pred.home_edge ?? 0, pred.away_edge ?? 0) : null;
+  const hasEdge  = bestEdge !== null && bestEdge >= threshold;
+  let badgeClass, badgeText;
+  if (!pred)               { badgeClass = 'none';     badgeText = 'NO MODEL'; }
+  else if (bestEdge >= 0.05) { badgeClass = 'strong';   badgeText = `EDGE +${(bestEdge*100).toFixed(1)}%`; }
+  else if (bestEdge >= 0.03) { badgeClass = 'moderate'; badgeText = `EDGE +${(bestEdge*100).toFixed(1)}%`; }
+  else                       { badgeClass = 'none';     badgeText = 'NO EDGE'; }
+
   const time = new Date(game.commence_time).toLocaleTimeString('en-US', {
     hour: 'numeric', minute: '2-digit', timeZoneName: 'short'
   });
 
-  const h2h = book?.markets?.find(m => m.key === 'h2h');
-  const spread = book?.markets?.find(m => m.key === 'spreads');
-  const total = book?.markets?.find(m => m.key === 'totals');
-
-  let noVigHome = 0.5, noVigAway = 0.5;
-  if (h2h) {
-    [noVigHome, noVigAway] = getNoVigProbs(h2h);
-    // home is the team listed second in the-odds-api (away is first)
-    // swap if needed — outcomes[0] = away, outcomes[1] = home
-  }
-
-  const homeTeam = game.home_team;
-  const awayTeam = game.away_team;
-  const pred = modelPredictions[game.id];
-
-  // Edge badge driven by model predictions
-  const bestEdge = pred ? Math.max(pred.home_edge ?? 0, pred.away_edge ?? 0) : null;
-  const hasEdge = bestEdge !== null && bestEdge >= threshold;
-  let badgeClass, badgeText;
-  if (!pred) {
-    badgeClass = 'none'; badgeText = 'NO MODEL';
-  } else if (bestEdge >= 0.05) {
-    badgeClass = 'strong'; badgeText = `EDGE +${(bestEdge*100).toFixed(1)}%`;
-  } else if (bestEdge >= 0.03) {
-    badgeClass = 'moderate'; badgeText = `EDGE +${(bestEdge*100).toFixed(1)}%`;
-  } else {
-    badgeClass = 'none'; badgeText = 'NO EDGE';
-  }
-
-  const homeH2H = h2h?.outcomes?.find(o => o.name === homeTeam);
-  const awayH2H = h2h?.outcomes?.find(o => o.name === awayTeam);
-  const homeSpread = spread?.outcomes?.find(o => o.name === homeTeam);
-  const awaySpread = spread?.outcomes?.find(o => o.name === awayTeam);
-  const overTotal = total?.outcomes?.find(o => o.name === 'Over');
-  const underTotal = total?.outcomes?.find(o => o.name === 'Under');
-
-  const [awayProb, homeProb] = h2h ? getNoVigProbs(h2h) : [0.5, 0.5];
+  const edgeRow = (side) => {
+    const edgeVal = pred ? (side === 'home' ? pred.home_edge : pred.away_edge) : null;
+    const cls = edgeVal != null ? (edgeVal > 0.03 ? 'positive' : edgeVal < 0 ? 'negative' : 'neutral') : 'neutral';
+    const txt = edgeVal != null ? (edgeVal >= 0 ? '+' : '') + (edgeVal * 100).toFixed(1) + '%' : '—';
+    return `<td class="edge-val ${cls}">${txt}</td>`;
+  };
 
   return `
   <div class="game-card ${hasEdge ? 'has-edge' : ''}">
@@ -671,10 +825,7 @@ function renderGameCard(game, threshold) {
           <div class="team-name">${awayTeam}</div>
           <div class="team-record">${awayH2H ? fmtOdds(awayH2H.price) : '—'}</div>
         </div>
-        <div class="vs-block">
-          <div class="vs">@</div>
-          <div class="home-label">home →</div>
-        </div>
+        <div class="vs-block"><div class="vs">@</div><div class="home-label">home →</div></div>
         <div class="team">
           <div class="team-name">${homeTeam}</div>
           <div class="team-record">${homeH2H ? fmtOdds(homeH2H.price) : '—'}</div>
@@ -690,28 +841,27 @@ function renderGameCard(game, threshold) {
             <th>Model %</th>
             <th>Edge</th>
             <th>Spread</th>
+            <th>Total</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td class="team-cell">${awayTeam.split(' ').pop()}</td>
-            <td class="odds-val ${awayH2H?.price > 0 ? 'positive' : 'negative'}">${awayH2H ? fmtOdds(awayH2H.price) : '—'}</td>
-            <td class="implied-prob">${h2h ? fmtProb(awayProb) : '—'}</td>
-            <td style="font-weight:600;color:var(--blue)">${pred ? fmtProb(pred.model_away_prob) : '—'}</td>
-            <td class="edge-val ${pred && pred.away_edge > 0.03 ? 'positive' : pred && pred.away_edge < 0 ? 'negative' : 'neutral'}">
-              ${pred && pred.away_edge !== null ? (pred.away_edge >= 0 ? '+' : '') + (pred.away_edge*100).toFixed(1)+'%' : '—'}
-            </td>
-            <td class="odds-val">${awaySpread ? `${awaySpread.point > 0 ? '+' : ''}${awaySpread.point}` : '—'}</td>
+            <td class="odds-val ${(awayH2H?.price ?? -1) > 0 ? 'positive' : ''}">${awayH2H ? fmtOdds(awayH2H.price) : '—'}</td>
+            <td class="implied-prob">${h2h ? fmtPct(awayProb) : '—'}</td>
+            <td style="font-weight:600;color:var(--blue)">${pred ? fmtPct(pred.model_away_prob) : '—'}</td>
+            ${edgeRow('away')}
+            <td class="odds-val">${awaySprd ? `${awaySprd.point > 0 ? '+' : ''}${awaySprd.point}` : '—'}</td>
+            <td class="odds-val">${overLine ? `O${overLine.point}` : '—'}</td>
           </tr>
           <tr>
             <td class="team-cell">${homeTeam.split(' ').pop()}</td>
-            <td class="odds-val ${homeH2H?.price > 0 ? 'positive' : 'negative'}">${homeH2H ? fmtOdds(homeH2H.price) : '—'}</td>
-            <td class="implied-prob">${h2h ? fmtProb(homeProb) : '—'}</td>
-            <td style="font-weight:600;color:var(--blue)">${pred ? fmtProb(pred.model_home_prob) : '—'}</td>
-            <td class="edge-val ${pred && pred.home_edge > 0.03 ? 'positive' : pred && pred.home_edge < 0 ? 'negative' : 'neutral'}">
-              ${pred && pred.home_edge !== null ? (pred.home_edge >= 0 ? '+' : '') + (pred.home_edge*100).toFixed(1)+'%' : '—'}
-            </td>
-            <td class="odds-val">${homeSpread ? `${homeSpread.point > 0 ? '+' : ''}${homeSpread.point}` : '—'}</td>
+            <td class="odds-val ${(homeH2H?.price ?? -1) > 0 ? 'positive' : ''}">${homeH2H ? fmtOdds(homeH2H.price) : '—'}</td>
+            <td class="implied-prob">${h2h ? fmtPct(homeProb) : '—'}</td>
+            <td style="font-weight:600;color:var(--blue)">${pred ? fmtPct(pred.model_home_prob) : '—'}</td>
+            ${edgeRow('home')}
+            <td class="odds-val">${homeSprd ? `${homeSprd.point > 0 ? '+' : ''}${homeSprd.point}` : '—'}</td>
+            <td class="odds-val">${underLine ? `U${underLine.point}` : '—'}</td>
           </tr>
         </tbody>
       </table>
@@ -719,11 +869,10 @@ function renderGameCard(game, threshold) {
       ${pred?.best_bet ? `
         <div style="margin-top:10px;padding:8px 10px;background:${pred.best_bet.strength==='strong'?'#dcfce7':'#fef9c3'};border-radius:8px;font-size:0.78rem;">
           <span style="font-weight:700;color:${pred.best_bet.strength==='strong'?'#15803d':'#854d0e'}">
-            ${pred.best_bet.strength==='strong'?'★ STRONG BET':'◆ MODERATE BET'}
+            ${pred.best_bet.strength === 'strong' ? '★ STRONG BET' : '◆ MODERATE BET'}
           </span>
           &nbsp;${pred.best_bet.team} ${fmtOdds(pred.best_bet.odds)}
           &nbsp;·&nbsp;EV ${pred.best_bet.ev >= 0 ? '+' : ''}${(pred.best_bet.ev*100).toFixed(1)}%
-          &nbsp;·&nbsp;Kelly ${(pred.best_bet.strength==='strong'?pred.home_kelly:pred.away_kelly ?? 0*100).toFixed(1)}% of bankroll
         </div>` : ''}
 
       ${book ? `<div style="margin-top:6px;font-size:0.68rem;color:var(--muted);text-align:right">via ${book.title}</div>` : ''}
@@ -735,21 +884,39 @@ function showLoading() {
   document.getElementById('games-container').innerHTML = `
     <div class="loading-state">
       <div class="loading-spinner"></div>
-      <div>Fetching today's odds...</div>
+      <div>Fetching odds…</div>
     </div>`;
 }
 
 function showError(msg) {
   document.getElementById('games-container').innerHTML = `
     <div class="empty-state" style="color:var(--red)">
-      <div class="empty-icon">⚠️</div>
-      <div>${msg}</div>
+      <div class="empty-icon">⚠️</div><div>${msg}</div>
     </div>`;
   document.getElementById('refresh-btn').classList.remove('spinning');
 }
 
-// Auto-refresh every 10 minutes
-setInterval(() => { if (apiKey) loadAllGames(); }, 10 * 60 * 1000);
+function toast(msg, ms = 4000) {
+  const el = document.getElementById('toast');
+  el.textContent = msg;
+  el.classList.add('show');
+  setTimeout(() => el.classList.remove('show'), ms);
+}
+
+function updateClock() {
+  const now = new Date();
+  document.getElementById('clock').textContent = now.toLocaleTimeString('en-US', {
+    hour: '2-digit', minute: '2-digit', second: '2-digit'
+  });
+  document.getElementById('date-display').textContent = now.toLocaleDateString('en-US', {
+    weekday: 'long', month: 'long', day: 'numeric', year: 'numeric'
+  });
+}
+
+// Auto-refresh odds every 10 min
+setInterval(() => { if (oddsKey) loadAllGames(); }, 10 * 60 * 1000);
+// Poll for new predictions every 3 min (picks up after workflow finishes)
+setInterval(() => loadModelPredictions(), 3 * 60 * 1000);
 </script>
 </body>
 </html>
