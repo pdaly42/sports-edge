@@ -333,6 +333,9 @@
       <div class="header-subtitle">Daily line analysis · NBA · NFL · MLB</div>
     </div>
     <span id="model-status" style="font-size:0.72rem;color:#64748b;background:#1e293b;padding:4px 10px;border-radius:12px;">No model loaded</span>
+    <button onclick="toggleSettings()" title="API Keys &amp; Settings" style="background:none;border:1px solid #334155;border-radius:6px;padding:5px 10px;color:#94a3b8;cursor:pointer;font-size:0.75rem;display:flex;align-items:center;gap:5px;">
+      ⚙ Keys
+    </button>
   </div>
   <div class="header-right">
     <div class="header-clock" id="clock">--:--:--</div>
@@ -562,6 +565,19 @@ function shiftDay(delta) {
 // ─────────────────────────────────────────
 // Keys / tokens
 // ─────────────────────────────────────────
+function toggleSettings() {
+  const oddsBanner = document.getElementById('odds-banner');
+  const ghBanner   = document.getElementById('gh-banner');
+  const hidden = oddsBanner.classList.contains('hidden') && ghBanner.classList.contains('hidden');
+  if (hidden) {
+    oddsBanner.classList.remove('hidden');
+    ghBanner.classList.remove('hidden');
+  } else {
+    if (oddsKey) oddsBanner.classList.add('hidden');
+    if (ghToken) ghBanner.classList.add('hidden');
+  }
+}
+
 function saveOddsKey() {
   const val = document.getElementById('odds-key-input').value.trim();
   if (!val) return;
