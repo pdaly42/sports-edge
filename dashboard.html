@@ -684,20 +684,17 @@ async function loadAllGames() {
   showLoading();
   allGames = [];
 
-  const viewDate   = getViewDate();
-  const dateFrom   = new Date(viewDate); dateFrom.setHours(0,0,0,0);
-  const dateTo     = new Date(viewDate); dateTo.setHours(23,59,59,999);
-  const fromISO    = dateFrom.toISOString();
-  const toISO      = dateTo.toISOString();
+  const viewDate = getViewDate();
+  const viewDateStr = viewDate.toDateString(); // local date string for client-side filtering
 
-  const books   = document.getElementById('book-select').value || 'draftkings,fanduel,betmgm,caesars';
-  let reqLeft   = null;
+  const books = document.getElementById('book-select').value || 'draftkings,fanduel,betmgm,caesars';
+  let reqLeft = null;
 
   for (const sport of SPORTS) {
     try {
       const url = `https://api.the-odds-api.com/v4/sports/${sport.key}/odds/?` +
         `apiKey=${oddsKey}&regions=us&markets=h2h,spreads,totals&oddsFormat=american` +
-        `&bookmakers=${books}&commenceTimeFrom=${fromISO}&commenceTimeTo=${toISO}`;
+        `&bookmakers=${books}`;
 
       const res = await fetch(url);
       if (res.status === 401) { showError('Invalid API key'); return; }
@@ -708,7 +705,9 @@ async function loadAllGames() {
       if (rem) reqLeft = rem;
 
       const games = await res.json();
-      games.forEach(g => allGames.push({
+      // Filter client-side to the selected day (matches local timezone)
+      const dayGames = games.filter(g => new Date(g.commence_time).toDateString() === viewDateStr);
+      dayGames.forEach(g => allGames.push({
         ...g, sportKey: sport.key, sportLabel: sport.label, sportEmoji: sport.emoji
       }));
     } catch(e) { console.error(sport.key, e); }
