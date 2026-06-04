@@ -275,12 +275,19 @@ def predict_mlb(api_key: str, target_date: str) -> list:
         return []
 
     from data.mlb_fetcher import build_team_game_log
+    from data.mlb_pitcher_stats import get_probable_pitcher_stats, pitcher_stats_or_median
+
+    # Team rolling stats
     stats = build_team_game_log(list(range(2023, 2026)))
     latest = stats.sort_values("date").groupby("team").last().reset_index()
 
     stat_cols = [c for c in latest.columns if any(
         c.startswith(p) for p in ["win_pct", "runs_for_avg", "runs_against_avg", "run_diff_avg"]
     )] + ["days_rest"]
+
+    # Today's probable pitchers from MLB Stats API (free, no key)
+    print("  Fetching probable pitchers from MLB Stats API...")
+    pitcher_stats = get_probable_pitcher_stats(target_date)
 
     bundle = load_model(sport="mlb", model_type="xgb")
     results = []
@@ -299,29 +306,48 @@ def predict_mlb(api_key: str, target_date: str) -> list:
             if not h_row.empty and not a_row.empty:
                 h, a = h_row.iloc[0], a_row.iloc[0]
                 feat = {"game_id": game["id"]}
+
+                # Team rolling stats
                 for c in stat_cols:
                     feat[f"home_{c}"] = h.get(c, np.nan)
                     feat[f"away_{c}"] = a.get(c, np.nan)
                 for w in [5, 10, 20]:
-                    feat[f"win_pct_diff_{w}g"]  = h.get(f"win_pct_{w}g", np.nan)  - a.get(f"win_pct_{w}g", np.nan)
-                    feat[f"run_diff_diff_{w}g"]  = h.get(f"run_diff_avg_{w}g", np.nan) - a.get(f"run_diff_avg_{w}g", np.nan)
+                    feat[f"win_pct_diff_{w}g"] = h.get(f"win_pct_{w}g", np.nan) - a.get(f"win_pct_{w}g", np.nan)
+                    feat[f"run_diff_diff_{w}g"] = h.get(f"run_diff_avg_{w}g", np.nan) - a.get(f"run_diff_avg_{w}g", np.nan)
                 feat["rest_advantage"] = h.get("days_rest", 0) - a.get("days_rest", 0)
+
+                # Starting pitcher stats
+                home_p = pitcher_stats_or_median(pitcher_stats.get(home_api))
+                away_p = pitcher_stats_or_median(pitcher_stats.get(away_api))
+                for col in ["era", "whip", "k_per_9", "k_bb_ratio", "innings_pitched"]:
+                    feat[f"home_starter_{col}"] = home_p[col]
+                    feat[f"away_starter_{col}"] = away_p[col]
+                feat["starter_era_diff"]  = home_p["era"]    - away_p["era"]
+                feat["starter_whip_diff"] = home_p["whip"]   - away_p["whip"]
+                feat["starter_k9_diff"]   = home_p["k_per_9"]- away_p["k_per_9"]
 
                 aligned = align_features(feat, bundle)
                 if aligned is not None:
                     prob_home = predict_proba(bundle, aligned)[0]
             else:
-                print(f"  Missing stats: {home_api} or {away_api}")
+                print(f"  Missing team stats: {home_api} or {away_api}")
         else:
             print(f"  Unknown team mapping: {home_api} or {away_api}")
+
+        # Add pitcher names to prediction output for display in dashboard
+        home_pitcher_name = pitcher_stats.get(home_api, {}).get("name", "TBD")
+        away_pitcher_name = pitcher_stats.get(away_api, {}).get("name", "TBD")
 
         pred = build_game_prediction(
             game, prob_home,
             best_line(game, "home"), best_line(game, "away"),
             "baseball_mlb", "MLB"
         )
+        pred["home_pitcher"] = home_pitcher_name
+        pred["away_pitcher"] = away_pitcher_name
         results.append(pred)
-        print(f"  {away_api} @ {home_api}: model={pred['model_home_prob']} edge={pred['home_edge']}")
+        print(f"  {away_api}({away_pitcher_name}) @ {home_api}({home_pitcher_name}): "
+              f"model={pred['model_home_prob']} edge={pred['home_edge']}")
 
     return results
 

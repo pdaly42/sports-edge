@@ -72,7 +72,12 @@ def fetch_team_season(team: str, season: int) -> pd.DataFrame:
     """
     cache_path = MLB_RAW / f"{team}_{season}.csv"
     if cache_path.exists():
-        return pd.read_csv(cache_path, parse_dates=["date"])
+        df = pd.read_csv(cache_path, parse_dates=["date"])
+        # If cached before pitcher columns were added, re-fetch
+        if "win_pitcher" not in df.columns:
+            cache_path.unlink()
+        else:
+            return df
 
     print(f"    Fetching {team} {season}...")
     time.sleep(2.5)  # respectful throttle for Baseball Reference
@@ -106,6 +111,9 @@ def fetch_team_season(team: str, season: int) -> pd.DataFrame:
             "runs_against":  float(r["RA"]),
             "is_home":       is_home,
             "win":           win,
+            # Pitcher who got the decision — last name only from BRef
+            "win_pitcher":   str(r.get("Win", "")).strip(),
+            "loss_pitcher":  str(r.get("Loss", "")).strip(),
         })
 
     df = pd.DataFrame(rows)
@@ -149,12 +157,19 @@ def build_team_game_log(seasons: list) -> pd.DataFrame:
 def build_matchup_features(seasons: list) -> pd.DataFrame:
     """
     Flatten the team log into one row per game with both teams' stats side by side.
+    Includes starting pitcher stats (ERA, WHIP, K/9, K/BB) sourced from BRef season data.
     Home team perspective — target: home_win (1 = home team won).
     """
+    from data.mlb_pitcher_stats import build_season_pitcher_lookup, lookup_pitcher, pitcher_stats_or_median
+
     log = build_team_game_log(seasons)
     if log.empty:
         print("No data fetched.")
         return pd.DataFrame()
+
+    # Build pitcher lookup once for all seasons
+    print("  Loading pitcher season stats...")
+    pitcher_lookup = build_season_pitcher_lookup(seasons)
 
     home_log = log[log["is_home"] == 1].copy()
     away_log = log[log["is_home"] == 0].copy()
@@ -163,16 +178,22 @@ def build_matchup_features(seasons: list) -> pd.DataFrame:
         c.startswith(p) for p in ["win_pct", "runs_for_avg", "runs_against_avg", "run_diff_avg"]
     )] + ["days_rest"]
 
-    home_feats = home_log[["date", "team", "opponent", "win", "season"] + stat_cols].copy()
-    home_feats.columns = (["date", "home_team", "away_team", "home_win", "season"]
-                          + [f"home_{c}" for c in stat_cols])
+    pitcher_base_cols = ["win_pitcher", "loss_pitcher"]
 
-    away_feats = away_log[["date", "team"] + stat_cols].copy()
-    away_feats.columns = ["date", "away_team"] + [f"away_{c}" for c in stat_cols]
+    home_feats = home_log[["date", "team", "opponent", "win", "season"]
+                           + stat_cols + pitcher_base_cols].copy()
+    home_feats.columns = (["date", "home_team", "away_team", "home_win", "season"]
+                          + [f"home_{c}" for c in stat_cols]
+                          + ["home_win_pitcher", "home_loss_pitcher"])
+
+    away_feats = away_log[["date", "team"] + stat_cols + pitcher_base_cols].copy()
+    away_feats.columns = (["date", "away_team"]
+                          + [f"away_{c}" for c in stat_cols]
+                          + ["away_win_pitcher", "away_loss_pitcher"])
 
     matchups = home_feats.merge(away_feats, on=["date", "away_team"])
 
-    # Differential features — how much better is home vs away right now
+    # Differential team stats
     for window in [5, 10, 20]:
         matchups[f"win_pct_diff_{window}g"]  = (
             matchups[f"home_win_pct_{window}g"]      - matchups[f"away_win_pct_{window}g"])
@@ -181,9 +202,54 @@ def build_matchup_features(seasons: list) -> pd.DataFrame:
 
     matchups["rest_advantage"] = matchups["home_days_rest"] - matchups["away_days_rest"]
 
-    cache_path = MLB_RAW / "matchups.csv"
+    # ── Add pitcher features ──────────────────────────────────────
+    # The Win pitcher is the home team's starter when home won (and vice versa)
+    # The Loss pitcher is the home team's starter when home lost
+    pitcher_cols = ["era", "whip", "k_per_9", "k_bb_ratio", "innings_pitched"]
+
+    for side in ("home", "away"):
+        for col in pitcher_cols:
+            matchups[f"{side}_starter_{col}"] = np.nan
+
+    matched = 0
+    for idx, row in matchups.iterrows():
+        season = int(row["season"])
+        sdict  = pitcher_lookup.get(season, {})
+
+        # Identify which pitcher name corresponds to home vs away starter
+        if row["home_win"] == 1:
+            home_p_name = row["home_win_pitcher"]
+            away_p_name = row["home_loss_pitcher"]
+        else:
+            home_p_name = row["home_loss_pitcher"]
+            away_p_name = row["home_win_pitcher"]
+
+        for side, p_name, team in [
+            ("home", home_p_name, row["home_team"]),
+            ("away", away_p_name, row["away_team"]),
+        ]:
+            raw_stats = lookup_pitcher(sdict, p_name, team)
+            stats = pitcher_stats_or_median(raw_stats)
+            for col in pitcher_cols:
+                matchups.at[idx, f"{side}_starter_{col}"] = stats[col]
+            if raw_stats:
+                matched += 1
+
+    total = len(matchups) * 2
+    print(f"  Pitcher stats matched: {matched}/{total} ({100*matched//total}%)")
+
+    # Differential pitcher features
+    matchups["starter_era_diff"]    = matchups["home_starter_era"]    - matchups["away_starter_era"]
+    matchups["starter_whip_diff"]   = matchups["home_starter_whip"]   - matchups["away_starter_whip"]
+    matchups["starter_k9_diff"]     = matchups["home_starter_k_per_9"]- matchups["away_starter_k_per_9"]
+
+    # Drop the raw pitcher name columns — not useful as model features
+    matchups.drop(columns=["home_win_pitcher","home_loss_pitcher",
+                            "away_win_pitcher","away_loss_pitcher"], inplace=True)
+
+    cache_path = MLB_RAW / "matchups_with_pitchers.csv"
     matchups.to_csv(cache_path, index=False)
-    print(f"Built {len(matchups)} MLB matchup rows across {len(seasons)} seasons")
+    print(f"Built {len(matchups)} MLB matchup rows with pitcher features")
     return matchups
 
 

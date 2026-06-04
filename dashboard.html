@@ -857,11 +857,13 @@ function renderCard(game, threshold) {
         <div class="team">
           <div class="team-name">${awayTeam}</div>
           <div class="team-record">${awayH2H ? fmtOdds(awayH2H.price) : '—'}</div>
+          ${pred?.away_pitcher ? `<div style="font-size:0.68rem;color:var(--muted);margin-top:2px">🧤 ${pred.away_pitcher}</div>` : ''}
         </div>
         <div class="vs-block"><div class="vs">@</div><div class="home-label">home →</div></div>
         <div class="team">
           <div class="team-name">${homeTeam}</div>
           <div class="team-record">${homeH2H ? fmtOdds(homeH2H.price) : '—'}</div>
+          ${pred?.home_pitcher ? `<div style="font-size:0.68rem;color:var(--muted);margin-top:2px">🧤 ${pred.home_pitcher}</div>` : ''}
         </div>
       </div>
 
