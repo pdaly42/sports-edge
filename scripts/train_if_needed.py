@@ -36,6 +36,19 @@ def train_mlb():
     train(train_df, sport='mlb', model_type='xgb')
     print("MLB model trained.")
 
+def train_soccer():
+    model_path = Path('models/soccer_wc_model.pkl')
+    if model_path.exists():
+        print("Soccer model already exists, skipping")
+        return
+    print("Training Soccer/World Cup model...")
+    from data.soccer_fetcher import build_matchup_features
+    from models.soccer_trainer import train_soccer as _train
+    df = build_matchup_features()
+    _train(df, sport="soccer_wc")
+    print("Soccer model trained.")
+
 if __name__ == "__main__":
     train_nba()
     train_mlb()
+    train_soccer()

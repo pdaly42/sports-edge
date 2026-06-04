@@ -1,0 +1,781 @@
+date,tournament,home_team,away_team,home_score,away_score,result,neutral,goal_diff
+2002-05-31,World Cup,France,Senegal,0,1,-1,True,1
+2002-06-01,World Cup,Republic of Ireland,Cameroon,1,1,0,True,0
+2002-06-01,World Cup,Uruguay,Denmark,1,2,-1,True,1
+2002-06-01,World Cup,Germany,Saudi Arabia,8,0,1,True,8
+2002-06-02,World Cup,Argentina,Nigeria,1,0,1,True,1
+2002-06-02,World Cup,Paraguay,South Africa,2,2,0,True,0
+2002-06-02,World Cup,England,Sweden,1,1,0,True,0
+2002-06-02,World Cup,Spain,Slovenia,3,1,1,True,2
+2002-06-03,World Cup,Croatia,Mexico,0,1,-1,True,1
+2002-06-03,World Cup,Brazil,Türkiye,2,1,1,True,1
+2002-06-03,World Cup,Italy,Ecuador,2,0,1,True,2
+2002-06-04,World Cup,South Korea,Poland,2,0,1,True,2
+2002-06-04,World Cup,China,Costa Rica,0,2,-1,True,2
+2002-06-04,World Cup,Japan,Belgium,2,2,0,True,0
+2002-06-05,World Cup,Russia,Tunisia,2,0,1,True,2
+2002-06-05,World Cup,United States,Portugal,3,2,1,True,1
+2002-06-05,World Cup,Germany,Republic of Ireland,1,1,0,True,0
+2002-06-06,World Cup,Denmark,Senegal,1,1,0,True,0
+2002-06-06,World Cup,Cameroon,Saudi Arabia,1,0,1,True,1
+2002-06-06,World Cup,France,Uruguay,0,0,0,True,0
+2002-06-07,World Cup,Argentina,England,0,1,-1,True,1
+2002-06-07,World Cup,Sweden,Nigeria,2,1,1,True,1
+2002-06-07,World Cup,Spain,Paraguay,3,1,1,True,2
+2002-06-08,World Cup,Brazil,China,4,0,1,True,4
+2002-06-08,World Cup,Italy,Croatia,1,2,-1,True,1
+2002-06-08,World Cup,South Africa,Slovenia,1,0,1,True,1
+2002-06-09,World Cup,Mexico,Ecuador,2,1,1,True,1
+2002-06-09,World Cup,Costa Rica,Türkiye,1,1,0,True,0
+2002-06-09,World Cup,Japan,Russia,1,0,1,True,1
+2002-06-10,World Cup,South Korea,United States,1,1,0,True,0
+2002-06-10,World Cup,Tunisia,Belgium,1,1,0,True,0
+2002-06-10,World Cup,Portugal,Poland,4,0,1,True,4
+2002-06-11,World Cup,Denmark,France,2,0,1,True,2
+2002-06-11,World Cup,Senegal,Uruguay,3,3,0,True,0
+2002-06-11,World Cup,Cameroon,Germany,0,2,-1,True,2
+2002-06-11,World Cup,Saudi Arabia,Republic of Ireland,0,3,-1,True,3
+2002-06-12,World Cup,South Africa,Spain,2,3,-1,True,1
+2002-06-12,World Cup,Slovenia,Paraguay,1,3,-1,True,2
+2002-06-12,World Cup,Nigeria,England,0,0,0,True,0
+2002-06-12,World Cup,Sweden,Argentina,1,1,0,True,0
+2002-06-13,World Cup,Costa Rica,Brazil,2,5,-1,True,3
+2002-06-13,World Cup,Türkiye,China,3,0,1,True,3
+2002-06-13,World Cup,Ecuador,Croatia,1,0,1,True,1
+2002-06-13,World Cup,Mexico,Italy,1,1,0,True,0
+2002-06-14,World Cup,South Korea,Portugal,1,0,1,True,1
+2002-06-14,World Cup,Belgium,Russia,3,2,1,True,1
+2002-06-14,World Cup,Japan,Tunisia,2,0,1,True,2
+2002-06-14,World Cup,Poland,United States,3,1,1,True,2
+2002-06-15,World Cup,Denmark,England,0,3,-1,True,3
+2002-06-15,World Cup,Germany,Paraguay,1,0,1,True,1
+2002-06-16,World Cup,Sweden,Senegal,1,2,-1,True,1
+2002-06-16,World Cup,Spain,Republic of Ireland,1,1,0,True,0
+2002-06-17,World Cup,Mexico,United States,0,2,-1,True,2
+2002-06-17,World Cup,Brazil,Belgium,2,0,1,True,2
+2002-06-18,World Cup,Japan,Türkiye,0,1,-1,True,1
+2002-06-18,World Cup,South Korea,Italy,2,1,1,True,1
+2002-06-21,World Cup,Brazil,England,2,1,1,True,1
+2002-06-21,World Cup,Germany,United States,1,0,1,True,1
+2002-06-22,World Cup,South Korea,Spain,0,0,0,True,0
+2002-06-22,World Cup,Senegal,Türkiye,0,1,-1,True,1
+2002-06-25,World Cup,South Korea,Germany,0,1,-1,True,1
+2002-06-26,World Cup,Brazil,Türkiye,1,0,1,True,1
+2002-06-29,World Cup,South Korea,Türkiye,2,3,-1,True,1
+2002-06-30,World Cup,Germany,Brazil,0,2,-1,True,2
+2006-06-09,World Cup,Germany,Costa Rica,4,2,1,True,2
+2006-06-09,World Cup,Poland,Ecuador,0,2,-1,True,2
+2006-06-10,World Cup,England,Paraguay,1,0,1,True,1
+2006-06-10,World Cup,Trinidad and Tobago,Sweden,0,0,0,True,0
+2006-06-10,World Cup,Argentina,Ivory Coast,2,1,1,True,1
+2006-06-11,World Cup,Serbia & Montenegro,Netherlands,0,1,-1,True,1
+2006-06-11,World Cup,Mexico,Iran,3,1,1,True,2
+2006-06-11,World Cup,Angola,Portugal,0,1,-1,True,1
+2006-06-12,World Cup,Italy,Ghana,2,0,1,True,2
+2006-06-12,World Cup,United States,Czechia,0,3,-1,True,3
+2006-06-12,World Cup,Australia,Japan,3,1,1,True,2
+2006-06-13,World Cup,South Korea,Togo,2,1,1,True,1
+2006-06-13,World Cup,France,Switzerland,0,0,0,True,0
+2006-06-13,World Cup,Brazil,Croatia,1,0,1,True,1
+2006-06-14,World Cup,Spain,Ukraine,4,0,1,True,4
+2006-06-14,World Cup,Tunisia,Saudi Arabia,2,2,0,True,0
+2006-06-14,World Cup,Germany,Poland,1,0,1,True,1
+2006-06-15,World Cup,Ecuador,Costa Rica,3,0,1,True,3
+2006-06-15,World Cup,England,Trinidad and Tobago,2,0,1,True,2
+2006-06-15,World Cup,Sweden,Paraguay,1,0,1,True,1
+2006-06-16,World Cup,Mexico,Angola,0,0,0,True,0
+2006-06-16,World Cup,Netherlands,Ivory Coast,2,1,1,True,1
+2006-06-16,World Cup,Argentina,Serbia & Montenegro,6,0,1,True,6
+2006-06-17,World Cup,Portugal,Iran,2,0,1,True,2
+2006-06-17,World Cup,Czechia,Ghana,0,2,-1,True,2
+2006-06-17,World Cup,Italy,United States,1,1,0,True,0
+2006-06-18,World Cup,Japan,Croatia,0,0,0,True,0
+2006-06-18,World Cup,Brazil,Australia,2,0,1,True,2
+2006-06-18,World Cup,France,South Korea,1,1,0,True,0
+2006-06-19,World Cup,Togo,Switzerland,0,2,-1,True,2
+2006-06-19,World Cup,Saudi Arabia,Ukraine,0,4,-1,True,4
+2006-06-19,World Cup,Spain,Tunisia,3,1,1,True,2
+2006-06-20,World Cup,Sweden,England,2,2,0,True,0
+2006-06-20,World Cup,Paraguay,Trinidad and Tobago,2,0,1,True,2
+2006-06-20,World Cup,Ecuador,Germany,0,3,-1,True,3
+2006-06-20,World Cup,Costa Rica,Poland,1,2,-1,True,1
+2006-06-21,World Cup,Iran,Angola,1,1,0,True,0
+2006-06-21,World Cup,Portugal,Mexico,2,1,1,True,1
+2006-06-21,World Cup,Ivory Coast,Serbia & Montenegro,3,2,1,True,1
+2006-06-21,World Cup,Netherlands,Argentina,0,0,0,True,0
+2006-06-22,World Cup,Czechia,Italy,0,2,-1,True,2
+2006-06-22,World Cup,Ghana,United States,2,1,1,True,1
+2006-06-22,World Cup,Croatia,Australia,2,2,0,True,0
+2006-06-22,World Cup,Japan,Brazil,1,4,-1,True,3
+2006-06-23,World Cup,Togo,France,0,2,-1,True,2
+2006-06-23,World Cup,Switzerland,South Korea,2,0,1,True,2
+2006-06-23,World Cup,Ukraine,Tunisia,1,0,1,True,1
+2006-06-23,World Cup,Saudi Arabia,Spain,0,1,-1,True,1
+2006-06-24,World Cup,Germany,Sweden,2,0,1,True,2
+2006-06-24,World Cup,Argentina,Mexico,2,1,1,True,1
+2006-06-25,World Cup,England,Ecuador,1,0,1,True,1
+2006-06-25,World Cup,Portugal,Netherlands,1,0,1,True,1
+2006-06-26,World Cup,Italy,Australia,1,0,1,True,1
+2006-06-26,World Cup,Switzerland,Ukraine,0,0,0,True,0
+2006-06-27,World Cup,Brazil,Ghana,3,0,1,True,3
+2006-06-27,World Cup,Spain,France,1,3,-1,True,2
+2006-06-30,World Cup,Italy,Ukraine,3,0,1,True,3
+2006-06-30,World Cup,Germany,Argentina,1,1,0,True,0
+2006-07-01,World Cup,England,Portugal,0,0,0,True,0
+2006-07-01,World Cup,Brazil,France,0,1,-1,True,1
+2006-07-04,World Cup,Germany,Italy,0,2,-1,True,2
+2006-07-05,World Cup,Portugal,France,0,1,-1,True,1
+2006-07-08,World Cup,Germany,Portugal,3,1,1,True,2
+2006-07-09,World Cup,Italy,France,1,1,0,True,0
+2010-06-11,World Cup,South Africa,Mexico,1,1,0,True,0
+2010-06-11,World Cup,Uruguay,France,0,0,0,True,0
+2010-06-12,World Cup,Argentina,Nigeria,1,0,1,True,1
+2010-06-12,World Cup,England,United States,1,1,0,True,0
+2010-06-12,World Cup,South Korea,Greece,2,0,1,True,2
+2010-06-13,World Cup,Algeria,Slovenia,0,1,-1,True,1
+2010-06-13,World Cup,Serbia,Ghana,0,1,-1,True,1
+2010-06-13,World Cup,Germany,Australia,4,0,1,True,4
+2010-06-14,World Cup,Netherlands,Denmark,2,0,1,True,2
+2010-06-14,World Cup,Japan,Cameroon,1,0,1,True,1
+2010-06-14,World Cup,Italy,Paraguay,1,1,0,True,0
+2010-06-15,World Cup,Brazil,North Korea,2,1,1,True,1
+2010-06-15,World Cup,New Zealand,Slovakia,1,1,0,True,0
+2010-06-15,World Cup,Ivory Coast,Portugal,0,0,0,True,0
+2010-06-16,World Cup,Spain,Switzerland,0,1,-1,True,1
+2010-06-16,World Cup,South Africa,Uruguay,0,3,-1,True,3
+2010-06-16,World Cup,Honduras,Chile,0,1,-1,True,1
+2010-06-17,World Cup,Greece,Nigeria,2,1,1,True,1
+2010-06-17,World Cup,France,Mexico,0,2,-1,True,2
+2010-06-17,World Cup,Argentina,South Korea,4,1,1,True,3
+2010-06-18,World Cup,Germany,Serbia,0,1,-1,True,1
+2010-06-18,World Cup,Slovenia,United States,2,2,0,True,0
+2010-06-18,World Cup,England,Algeria,0,0,0,True,0
+2010-06-19,World Cup,Netherlands,Japan,1,0,1,True,1
+2010-06-19,World Cup,Ghana,Australia,1,1,0,True,0
+2010-06-19,World Cup,Cameroon,Denmark,1,2,-1,True,1
+2010-06-20,World Cup,Slovakia,Paraguay,0,2,-1,True,2
+2010-06-20,World Cup,Italy,New Zealand,1,1,0,True,0
+2010-06-20,World Cup,Brazil,Ivory Coast,3,1,1,True,2
+2010-06-21,World Cup,Spain,Honduras,2,0,1,True,2
+2010-06-21,World Cup,Chile,Switzerland,1,0,1,True,1
+2010-06-21,World Cup,Portugal,North Korea,7,0,1,True,7
+2010-06-22,World Cup,France,South Africa,1,2,-1,True,1
+2010-06-22,World Cup,Mexico,Uruguay,0,1,-1,True,1
+2010-06-22,World Cup,Greece,Argentina,0,2,-1,True,2
+2010-06-22,World Cup,Nigeria,South Korea,2,2,0,True,0
+2010-06-23,World Cup,Slovenia,England,0,1,-1,True,1
+2010-06-23,World Cup,United States,Algeria,1,0,1,True,1
+2010-06-23,World Cup,Australia,Serbia,2,1,1,True,1
+2010-06-23,World Cup,Ghana,Germany,0,1,-1,True,1
+2010-06-24,World Cup,Denmark,Japan,1,3,-1,True,2
+2010-06-24,World Cup,Slovakia,Italy,3,2,1,True,1
+2010-06-24,World Cup,Paraguay,New Zealand,0,0,0,True,0
+2010-06-24,World Cup,Cameroon,Netherlands,1,2,-1,True,1
+2010-06-25,World Cup,North Korea,Ivory Coast,0,3,-1,True,3
+2010-06-25,World Cup,Portugal,Brazil,0,0,0,True,0
+2010-06-25,World Cup,Chile,Spain,1,2,-1,True,1
+2010-06-25,World Cup,Switzerland,Honduras,0,0,0,True,0
+2010-06-26,World Cup,Uruguay,South Korea,2,1,1,True,1
+2010-06-26,World Cup,United States,Ghana,1,2,-1,True,1
+2010-06-27,World Cup,Argentina,Mexico,3,1,1,True,2
+2010-06-27,World Cup,Germany,England,4,1,1,True,3
+2010-06-28,World Cup,Brazil,Chile,3,0,1,True,3
+2010-06-28,World Cup,Netherlands,Slovakia,2,1,1,True,1
+2010-06-29,World Cup,Paraguay,Japan,0,0,0,True,0
+2010-06-29,World Cup,Spain,Portugal,1,0,1,True,1
+2010-07-02,World Cup,Netherlands,Brazil,2,1,1,True,1
+2010-07-02,World Cup,Uruguay,Ghana,1,1,0,True,0
+2010-07-03,World Cup,Argentina,Germany,0,4,-1,True,4
+2010-07-03,World Cup,Paraguay,Spain,0,1,-1,True,1
+2010-07-06,World Cup,Uruguay,Netherlands,2,3,-1,True,1
+2010-07-07,World Cup,Germany,Spain,0,1,-1,True,1
+2010-07-10,World Cup,Uruguay,Germany,2,3,-1,True,1
+2010-07-11,World Cup,Netherlands,Spain,0,1,-1,True,1
+2012-06-08,UEFA Euro,Russia,Czechia,4,1,1,True,3
+2012-06-08,UEFA Euro,Poland,Greece,1,1,0,True,0
+2012-06-09,UEFA Euro,Germany,Portugal,1,0,1,True,1
+2012-06-09,UEFA Euro,Netherlands,Denmark,0,1,-1,True,1
+2012-06-10,UEFA Euro,Spain,Italy,1,1,0,True,0
+2012-06-10,UEFA Euro,Republic of Ireland,Croatia,1,3,-1,True,2
+2012-06-11,UEFA Euro,France,England,1,1,0,True,0
+2012-06-11,UEFA Euro,Ukraine,Sweden,2,1,1,True,1
+2012-06-12,UEFA Euro,Greece,Czechia,1,2,-1,True,1
+2012-06-12,UEFA Euro,Poland,Russia,1,1,0,True,0
+2012-06-13,UEFA Euro,Denmark,Portugal,2,3,-1,True,1
+2012-06-13,UEFA Euro,Netherlands,Germany,1,2,-1,True,1
+2012-06-14,UEFA Euro,Italy,Croatia,1,1,0,True,0
+2012-06-14,UEFA Euro,Spain,Republic of Ireland,4,0,1,True,4
+2012-06-15,UEFA Euro,Ukraine,France,0,2,-1,True,2
+2012-06-15,UEFA Euro,Sweden,England,2,3,-1,True,1
+2012-06-16,UEFA Euro,Poland,Czechia,1,0,1,True,1
+2012-06-16,UEFA Euro,Greece,Russia,1,0,1,True,1
+2012-06-17,UEFA Euro,Portugal,Netherlands,2,1,1,True,1
+2012-06-17,UEFA Euro,Denmark,Germany,1,2,-1,True,1
+2012-06-18,UEFA Euro,Italy,Republic of Ireland,2,0,1,True,2
+2012-06-18,UEFA Euro,Croatia,Spain,0,1,-1,True,1
+2012-06-19,UEFA Euro,Ukraine,England,1,0,1,True,1
+2012-06-19,UEFA Euro,Sweden,France,2,0,1,True,2
+2012-06-21,UEFA Euro,Czechia,Portugal,0,1,-1,True,1
+2012-06-22,UEFA Euro,Germany,Greece,4,2,1,True,2
+2012-06-23,UEFA Euro,Spain,France,2,0,1,True,2
+2012-06-24,UEFA Euro,England,Italy,0,0,0,True,0
+2012-06-27,UEFA Euro,Portugal,Spain,0,0,0,True,0
+2012-06-28,UEFA Euro,Germany,Italy,1,2,-1,True,1
+2012-07-01,UEFA Euro,Spain,Italy,4,0,1,True,4
+2014-06-12,World Cup,Brazil,Croatia,3,1,1,True,2
+2014-06-13,World Cup,Mexico,Cameroon,1,0,1,True,1
+2014-06-13,World Cup,Spain,Netherlands,1,5,-1,True,4
+2014-06-13,World Cup,Chile,Australia,3,1,1,True,2
+2014-06-14,World Cup,Uruguay,Costa Rica,1,3,-1,True,2
+2014-06-14,World Cup,Colombia,Greece,3,0,1,True,3
+2014-06-14,World Cup,England,Italy,1,2,-1,True,1
+2014-06-15,World Cup,Ivory Coast,Japan,2,1,1,True,1
+2014-06-15,World Cup,Switzerland,Ecuador,2,1,1,True,1
+2014-06-15,World Cup,France,Honduras,3,0,1,True,3
+2014-06-15,World Cup,Argentina,Bosnia-Herzegovina,2,1,1,True,1
+2014-06-16,World Cup,Germany,Portugal,4,0,1,True,4
+2014-06-16,World Cup,Iran,Nigeria,0,0,0,True,0
+2014-06-16,World Cup,Ghana,United States,1,2,-1,True,1
+2014-06-17,World Cup,Russia,South Korea,1,1,0,True,0
+2014-06-17,World Cup,Belgium,Algeria,2,1,1,True,1
+2014-06-17,World Cup,Brazil,Mexico,0,0,0,True,0
+2014-06-18,World Cup,Australia,Netherlands,2,3,-1,True,1
+2014-06-18,World Cup,Spain,Chile,0,2,-1,True,2
+2014-06-18,World Cup,Cameroon,Croatia,0,4,-1,True,4
+2014-06-19,World Cup,Japan,Greece,0,0,0,True,0
+2014-06-19,World Cup,Uruguay,England,2,1,1,True,1
+2014-06-19,World Cup,Colombia,Ivory Coast,2,1,1,True,1
+2014-06-20,World Cup,Italy,Costa Rica,0,1,-1,True,1
+2014-06-20,World Cup,Switzerland,France,2,5,-1,True,3
+2014-06-20,World Cup,Honduras,Ecuador,1,2,-1,True,1
+2014-06-21,World Cup,Argentina,Iran,1,0,1,True,1
+2014-06-21,World Cup,Nigeria,Bosnia-Herzegovina,1,0,1,True,1
+2014-06-21,World Cup,Germany,Ghana,2,2,0,True,0
+2014-06-22,World Cup,United States,Portugal,2,2,0,True,0
+2014-06-22,World Cup,South Korea,Algeria,2,4,-1,True,2
+2014-06-22,World Cup,Belgium,Russia,1,0,1,True,1
+2014-06-23,World Cup,Cameroon,Brazil,1,4,-1,True,3
+2014-06-23,World Cup,Netherlands,Chile,2,0,1,True,2
+2014-06-23,World Cup,Australia,Spain,0,3,-1,True,3
+2014-06-23,World Cup,Croatia,Mexico,1,3,-1,True,2
+2014-06-24,World Cup,Greece,Ivory Coast,2,1,1,True,1
+2014-06-24,World Cup,Costa Rica,England,0,0,0,True,0
+2014-06-24,World Cup,Japan,Colombia,1,4,-1,True,3
+2014-06-24,World Cup,Italy,Uruguay,0,1,-1,True,1
+2014-06-25,World Cup,Bosnia-Herzegovina,Iran,3,1,1,True,2
+2014-06-25,World Cup,Nigeria,Argentina,2,3,-1,True,1
+2014-06-25,World Cup,Ecuador,France,0,0,0,True,0
+2014-06-25,World Cup,Honduras,Switzerland,0,3,-1,True,3
+2014-06-26,World Cup,Portugal,Ghana,2,1,1,True,1
+2014-06-26,World Cup,United States,Germany,0,1,-1,True,1
+2014-06-26,World Cup,Algeria,Russia,1,1,0,True,0
+2014-06-26,World Cup,South Korea,Belgium,0,1,-1,True,1
+2014-06-28,World Cup,Brazil,Chile,1,1,0,True,0
+2014-06-28,World Cup,Colombia,Uruguay,2,0,1,True,2
+2014-06-29,World Cup,Netherlands,Mexico,2,1,1,True,1
+2014-06-29,World Cup,Costa Rica,Greece,1,1,0,True,0
+2014-06-30,World Cup,France,Nigeria,2,0,1,True,2
+2014-06-30,World Cup,Germany,Algeria,2,1,1,True,1
+2014-07-01,World Cup,Argentina,Switzerland,1,0,1,True,1
+2014-07-01,World Cup,Belgium,United States,2,1,1,True,1
+2014-07-04,World Cup,France,Germany,0,1,-1,True,1
+2014-07-04,World Cup,Brazil,Colombia,2,1,1,True,1
+2014-07-05,World Cup,Argentina,Belgium,1,0,1,True,1
+2014-07-05,World Cup,Netherlands,Costa Rica,0,0,0,True,0
+2014-07-08,World Cup,Brazil,Germany,1,7,-1,True,6
+2014-07-09,World Cup,Netherlands,Argentina,0,0,0,True,0
+2014-07-12,World Cup,Brazil,Netherlands,0,3,-1,True,3
+2014-07-13,World Cup,Germany,Argentina,1,0,1,True,1
+2016-06-10,UEFA Euro,France,Romania,2,1,1,True,1
+2016-06-11,UEFA Euro,Albania,Switzerland,0,1,-1,True,1
+2016-06-11,UEFA Euro,Wales,Slovakia,2,1,1,True,1
+2016-06-11,UEFA Euro,England,Russia,1,1,0,True,0
+2016-06-12,UEFA Euro,Türkiye,Croatia,0,1,-1,True,1
+2016-06-12,UEFA Euro,Poland,Northern Ireland,1,0,1,True,1
+2016-06-12,UEFA Euro,Germany,Ukraine,2,0,1,True,2
+2016-06-13,UEFA Euro,Spain,Czechia,1,0,1,True,1
+2016-06-13,UEFA Euro,Republic of Ireland,Sweden,1,1,0,True,0
+2016-06-13,UEFA Euro,Belgium,Italy,0,2,-1,True,2
+2016-06-14,UEFA Euro,Austria,Hungary,0,2,-1,True,2
+2016-06-14,UEFA Euro,Portugal,Iceland,1,1,0,True,0
+2016-06-15,UEFA Euro,Russia,Slovakia,1,2,-1,True,1
+2016-06-15,UEFA Euro,France,Albania,2,0,1,True,2
+2016-06-15,UEFA Euro,Romania,Switzerland,1,1,0,True,0
+2016-06-16,UEFA Euro,Ukraine,Northern Ireland,0,2,-1,True,2
+2016-06-16,UEFA Euro,England,Wales,2,1,1,True,1
+2016-06-16,UEFA Euro,Germany,Poland,0,0,0,True,0
+2016-06-17,UEFA Euro,Czechia,Croatia,2,2,0,True,0
+2016-06-17,UEFA Euro,Spain,Türkiye,3,0,1,True,3
+2016-06-17,UEFA Euro,Italy,Sweden,1,0,1,True,1
+2016-06-18,UEFA Euro,Belgium,Republic of Ireland,3,0,1,True,3
+2016-06-18,UEFA Euro,Iceland,Hungary,1,1,0,True,0
+2016-06-18,UEFA Euro,Portugal,Austria,0,0,0,True,0
+2016-06-19,UEFA Euro,Switzerland,France,0,0,0,True,0
+2016-06-19,UEFA Euro,Romania,Albania,0,1,-1,True,1
+2016-06-20,UEFA Euro,Slovakia,England,0,0,0,True,0
+2016-06-20,UEFA Euro,Russia,Wales,0,3,-1,True,3
+2016-06-21,UEFA Euro,Northern Ireland,Germany,0,1,-1,True,1
+2016-06-21,UEFA Euro,Czechia,Türkiye,0,2,-1,True,2
+2016-06-21,UEFA Euro,Ukraine,Poland,0,1,-1,True,1
+2016-06-21,UEFA Euro,Croatia,Spain,2,1,1,True,1
+2016-06-22,UEFA Euro,Hungary,Portugal,3,3,0,True,0
+2016-06-22,UEFA Euro,Iceland,Austria,2,1,1,True,1
+2016-06-22,UEFA Euro,Italy,Republic of Ireland,0,1,-1,True,1
+2016-06-22,UEFA Euro,Sweden,Belgium,0,1,-1,True,1
+2016-06-25,UEFA Euro,Switzerland,Poland,1,1,0,True,0
+2016-06-25,UEFA Euro,Wales,Northern Ireland,1,0,1,True,1
+2016-06-25,UEFA Euro,Croatia,Portugal,0,1,-1,True,1
+2016-06-26,UEFA Euro,Hungary,Belgium,0,4,-1,True,4
+2016-06-26,UEFA Euro,Germany,Slovakia,3,0,1,True,3
+2016-06-26,UEFA Euro,France,Republic of Ireland,2,1,1,True,1
+2016-06-27,UEFA Euro,England,Iceland,1,2,-1,True,1
+2016-06-27,UEFA Euro,Italy,Spain,2,0,1,True,2
+2016-06-30,UEFA Euro,Poland,Portugal,1,1,0,True,0
+2016-07-01,UEFA Euro,Wales,Belgium,3,1,1,True,2
+2016-07-02,UEFA Euro,Germany,Italy,1,1,0,True,0
+2016-07-03,UEFA Euro,France,Iceland,5,2,1,True,3
+2016-07-06,UEFA Euro,Portugal,Wales,2,0,1,True,2
+2016-07-07,UEFA Euro,Germany,France,0,2,-1,True,2
+2016-07-10,UEFA Euro,Portugal,France,1,0,1,True,1
+2018-06-14,World Cup,Russia,Saudi Arabia,5,0,1,True,5
+2018-06-15,World Cup,Egypt,Uruguay,0,1,-1,True,1
+2018-06-15,World Cup,Morocco,Iran,0,1,-1,True,1
+2018-06-15,World Cup,Portugal,Spain,3,3,0,True,0
+2018-06-16,World Cup,Peru,Denmark,0,1,-1,True,1
+2018-06-16,World Cup,France,Australia,2,1,1,True,1
+2018-06-16,World Cup,Croatia,Nigeria,2,0,1,True,2
+2018-06-16,World Cup,Argentina,Iceland,1,1,0,True,0
+2018-06-17,World Cup,Costa Rica,Serbia,0,1,-1,True,1
+2018-06-17,World Cup,Germany,Mexico,0,1,-1,True,1
+2018-06-17,World Cup,Brazil,Switzerland,1,1,0,True,0
+2018-06-18,World Cup,Sweden,South Korea,1,0,1,True,1
+2018-06-18,World Cup,Belgium,Panama,3,0,1,True,3
+2018-06-18,World Cup,Tunisia,England,1,2,-1,True,1
+2018-06-19,World Cup,Russia,Egypt,3,1,1,True,2
+2018-06-19,World Cup,Colombia,Japan,1,2,-1,True,1
+2018-06-19,World Cup,Poland,Senegal,1,2,-1,True,1
+2018-06-20,World Cup,Uruguay,Saudi Arabia,1,0,1,True,1
+2018-06-20,World Cup,Iran,Spain,0,1,-1,True,1
+2018-06-20,World Cup,Portugal,Morocco,1,0,1,True,1
+2018-06-21,World Cup,Denmark,Australia,1,1,0,True,0
+2018-06-21,World Cup,France,Peru,1,0,1,True,1
+2018-06-21,World Cup,Argentina,Croatia,0,3,-1,True,3
+2018-06-22,World Cup,Nigeria,Iceland,2,0,1,True,2
+2018-06-22,World Cup,Serbia,Switzerland,1,2,-1,True,1
+2018-06-22,World Cup,Brazil,Costa Rica,2,0,1,True,2
+2018-06-23,World Cup,South Korea,Mexico,1,2,-1,True,1
+2018-06-23,World Cup,Germany,Sweden,2,1,1,True,1
+2018-06-23,World Cup,Belgium,Tunisia,5,2,1,True,3
+2018-06-24,World Cup,Japan,Senegal,2,2,0,True,0
+2018-06-24,World Cup,Poland,Colombia,0,3,-1,True,3
+2018-06-24,World Cup,England,Panama,6,1,1,True,5
+2018-06-25,World Cup,Saudi Arabia,Egypt,2,1,1,True,1
+2018-06-25,World Cup,Uruguay,Russia,3,0,1,True,3
+2018-06-25,World Cup,Iran,Portugal,1,1,0,True,0
+2018-06-25,World Cup,Spain,Morocco,2,2,0,True,0
+2018-06-26,World Cup,Nigeria,Argentina,1,2,-1,True,1
+2018-06-26,World Cup,Iceland,Croatia,1,2,-1,True,1
+2018-06-26,World Cup,Australia,Peru,0,2,-1,True,2
+2018-06-26,World Cup,Denmark,France,0,0,0,True,0
+2018-06-27,World Cup,Mexico,Sweden,0,3,-1,True,3
+2018-06-27,World Cup,South Korea,Germany,2,0,1,True,2
+2018-06-27,World Cup,Serbia,Brazil,0,2,-1,True,2
+2018-06-27,World Cup,Switzerland,Costa Rica,2,2,0,True,0
+2018-06-28,World Cup,Senegal,Colombia,0,1,-1,True,1
+2018-06-28,World Cup,Panama,Tunisia,1,2,-1,True,1
+2018-06-28,World Cup,England,Belgium,0,1,-1,True,1
+2018-06-28,World Cup,Japan,Poland,0,1,-1,True,1
+2018-06-30,World Cup,France,Argentina,4,3,1,True,1
+2018-06-30,World Cup,Uruguay,Portugal,2,1,1,True,1
+2018-07-01,World Cup,Croatia,Denmark,1,1,0,True,0
+2018-07-01,World Cup,Spain,Russia,1,1,0,True,0
+2018-07-02,World Cup,Belgium,Japan,3,2,1,True,1
+2018-07-02,World Cup,Brazil,Mexico,2,0,1,True,2
+2018-07-03,World Cup,Sweden,Switzerland,1,0,1,True,1
+2018-07-03,World Cup,Colombia,England,1,1,0,True,0
+2018-07-06,World Cup,Uruguay,France,0,2,-1,True,2
+2018-07-06,World Cup,Brazil,Belgium,1,2,-1,True,1
+2018-07-07,World Cup,Russia,Croatia,2,2,0,True,0
+2018-07-07,World Cup,Sweden,England,0,2,-1,True,2
+2018-07-10,World Cup,France,Belgium,1,0,1,True,1
+2018-07-11,World Cup,Croatia,England,2,1,1,True,1
+2018-07-14,World Cup,Belgium,England,2,0,1,True,2
+2018-07-15,World Cup,France,Croatia,4,2,1,True,2
+2019-06-21,AFCON,Egypt,Zimbabwe,1,0,1,True,1
+2019-06-22,AFCON,Nigeria,Burundi,1,0,1,True,1
+2019-06-22,AFCON,Congo DR,Uganda,0,2,-1,True,2
+2019-06-22,AFCON,Guinea,Madagascar,2,2,0,True,0
+2019-06-23,AFCON,Morocco,Namibia,1,0,1,True,1
+2019-06-23,AFCON,Senegal,Tanzania,2,0,1,True,2
+2019-06-23,AFCON,Algeria,Kenya,2,0,1,True,2
+2019-06-24,AFCON,Tunisia,Angola,1,1,0,True,0
+2019-06-24,AFCON,Ivory Coast,South Africa,1,0,1,True,1
+2019-06-24,AFCON,Mali,Mauritania,4,1,1,True,3
+2019-06-25,AFCON,Cameroon,Guinea-Bissau,2,0,1,True,2
+2019-06-25,AFCON,Ghana,Benin,2,2,0,True,0
+2019-06-26,AFCON,Nigeria,Guinea,1,0,1,True,1
+2019-06-26,AFCON,Uganda,Zimbabwe,1,1,0,True,0
+2019-06-26,AFCON,Egypt,Congo DR,2,0,1,True,2
+2019-06-27,AFCON,Madagascar,Burundi,1,0,1,True,1
+2019-06-27,AFCON,Senegal,Algeria,0,1,-1,True,1
+2019-06-27,AFCON,Kenya,Tanzania,3,2,1,True,1
+2019-06-28,AFCON,South Africa,Namibia,1,0,1,True,1
+2019-06-28,AFCON,Morocco,Ivory Coast,1,0,1,True,1
+2019-06-28,AFCON,Tunisia,Mali,1,1,0,True,0
+2019-06-29,AFCON,Benin,Guinea-Bissau,0,0,0,True,0
+2019-06-29,AFCON,Cameroon,Ghana,0,0,0,True,0
+2019-06-29,AFCON,Mauritania,Angola,0,0,0,True,0
+2019-06-30,AFCON,Uganda,Egypt,0,2,-1,True,2
+2019-06-30,AFCON,Zimbabwe,Congo DR,0,4,-1,True,4
+2019-06-30,AFCON,Madagascar,Nigeria,2,0,1,True,2
+2019-06-30,AFCON,Burundi,Guinea,0,2,-1,True,2
+2019-07-01,AFCON,Namibia,Ivory Coast,1,4,-1,True,3
+2019-07-01,AFCON,South Africa,Morocco,0,1,-1,True,1
+2019-07-01,AFCON,Kenya,Senegal,0,3,-1,True,3
+2019-07-01,AFCON,Tanzania,Algeria,0,3,-1,True,3
+2019-07-02,AFCON,Angola,Mali,0,1,-1,True,1
+2019-07-02,AFCON,Mauritania,Tunisia,0,0,0,True,0
+2019-07-02,AFCON,Guinea-Bissau,Ghana,0,2,-1,True,2
+2019-07-02,AFCON,Benin,Cameroon,0,0,0,True,0
+2019-07-05,AFCON,Uganda,Senegal,0,1,-1,True,1
+2019-07-05,AFCON,Morocco,Benin,1,1,0,True,0
+2019-07-06,AFCON,Egypt,South Africa,0,1,-1,True,1
+2019-07-06,AFCON,Nigeria,Cameroon,3,2,1,True,1
+2019-07-07,AFCON,Madagascar,Congo DR,2,2,0,True,0
+2019-07-07,AFCON,Algeria,Guinea,3,0,1,True,3
+2019-07-08,AFCON,Ghana,Tunisia,1,1,0,True,0
+2019-07-08,AFCON,Mali,Ivory Coast,0,1,-1,True,1
+2019-07-10,AFCON,Nigeria,South Africa,2,1,1,True,1
+2019-07-10,AFCON,Senegal,Benin,1,0,1,True,1
+2019-07-11,AFCON,Madagascar,Tunisia,0,3,-1,True,3
+2019-07-11,AFCON,Ivory Coast,Algeria,1,1,0,True,0
+2019-07-14,AFCON,Algeria,Nigeria,2,1,1,True,1
+2019-07-14,AFCON,Senegal,Tunisia,1,0,1,True,1
+2019-07-17,AFCON,Tunisia,Nigeria,0,1,-1,True,1
+2019-07-19,AFCON,Senegal,Algeria,0,1,-1,True,1
+2021-06-11,UEFA Euro,Türkiye,Italy,0,3,-1,True,3
+2021-06-12,UEFA Euro,Wales,Switzerland,1,1,0,True,0
+2021-06-12,UEFA Euro,Belgium,Russia,3,0,1,True,3
+2021-06-12,UEFA Euro,Denmark,Finland,0,1,-1,True,1
+2021-06-13,UEFA Euro,Netherlands,Ukraine,3,2,1,True,1
+2021-06-13,UEFA Euro,Austria,North Macedonia,3,1,1,True,2
+2021-06-13,UEFA Euro,England,Croatia,1,0,1,True,1
+2021-06-14,UEFA Euro,Spain,Sweden,0,0,0,True,0
+2021-06-14,UEFA Euro,Poland,Slovakia,1,2,-1,True,1
+2021-06-14,UEFA Euro,Scotland,Czechia,0,2,-1,True,2
+2021-06-15,UEFA Euro,Hungary,Portugal,0,3,-1,True,3
+2021-06-15,UEFA Euro,France,Germany,1,0,1,True,1
+2021-06-16,UEFA Euro,Italy,Switzerland,3,0,1,True,3
+2021-06-16,UEFA Euro,Türkiye,Wales,0,2,-1,True,2
+2021-06-16,UEFA Euro,Finland,Russia,0,1,-1,True,1
+2021-06-17,UEFA Euro,Netherlands,Austria,2,0,1,True,2
+2021-06-17,UEFA Euro,Denmark,Belgium,1,2,-1,True,1
+2021-06-17,UEFA Euro,Ukraine,North Macedonia,2,1,1,True,1
+2021-06-18,UEFA Euro,England,Scotland,0,0,0,True,0
+2021-06-18,UEFA Euro,Croatia,Czechia,1,1,0,True,0
+2021-06-18,UEFA Euro,Sweden,Slovakia,1,0,1,True,1
+2021-06-19,UEFA Euro,Spain,Poland,1,1,0,True,0
+2021-06-19,UEFA Euro,Hungary,France,1,1,0,True,0
+2021-06-19,UEFA Euro,Portugal,Germany,2,4,-1,True,2
+2021-06-20,UEFA Euro,Switzerland,Türkiye,3,1,1,True,2
+2021-06-20,UEFA Euro,Italy,Wales,1,0,1,True,1
+2021-06-21,UEFA Euro,Finland,Belgium,0,2,-1,True,2
+2021-06-21,UEFA Euro,Russia,Denmark,1,4,-1,True,3
+2021-06-21,UEFA Euro,Ukraine,Austria,0,1,-1,True,1
+2021-06-21,UEFA Euro,North Macedonia,Netherlands,0,3,-1,True,3
+2021-06-22,UEFA Euro,Czechia,England,0,1,-1,True,1
+2021-06-22,UEFA Euro,Croatia,Scotland,3,1,1,True,2
+2021-06-23,UEFA Euro,Portugal,France,2,2,0,True,0
+2021-06-23,UEFA Euro,Germany,Hungary,2,2,0,True,0
+2021-06-23,UEFA Euro,Sweden,Poland,3,2,1,True,1
+2021-06-23,UEFA Euro,Slovakia,Spain,0,5,-1,True,5
+2021-06-26,UEFA Euro,Italy,Austria,2,1,1,True,1
+2021-06-26,UEFA Euro,Wales,Denmark,0,4,-1,True,4
+2021-06-27,UEFA Euro,Belgium,Portugal,1,0,1,True,1
+2021-06-27,UEFA Euro,Netherlands,Czechia,0,2,-1,True,2
+2021-06-28,UEFA Euro,France,Switzerland,3,3,0,True,0
+2021-06-28,UEFA Euro,Croatia,Spain,3,5,-1,True,2
+2021-06-29,UEFA Euro,England,Germany,2,0,1,True,2
+2021-06-29,UEFA Euro,Sweden,Ukraine,1,2,-1,True,1
+2021-07-02,UEFA Euro,Switzerland,Spain,1,1,0,True,0
+2021-07-02,UEFA Euro,Belgium,Italy,1,2,-1,True,1
+2021-07-03,UEFA Euro,Czechia,Denmark,1,2,-1,True,1
+2021-07-03,UEFA Euro,Ukraine,England,0,4,-1,True,4
+2021-07-06,UEFA Euro,Italy,Spain,1,1,0,True,0
+2021-07-07,UEFA Euro,England,Denmark,2,1,1,True,1
+2021-07-11,UEFA Euro,Italy,England,1,1,0,True,0
+2022-01-09,AFCON,Cameroon,Burkina Faso,2,1,1,True,1
+2022-01-09,AFCON,Ethiopia,Cape Verde,0,1,-1,True,1
+2022-01-10,AFCON,Guinea,Malawi,1,0,1,True,1
+2022-01-10,AFCON,Morocco,Ghana,1,0,1,True,1
+2022-01-10,AFCON,Comoros,Gabon,0,1,-1,True,1
+2022-01-10,AFCON,Senegal,Zimbabwe,1,0,1,True,1
+2022-01-11,AFCON,Sudan,Guinea-Bissau,0,0,0,True,0
+2022-01-11,AFCON,Nigeria,Egypt,1,0,1,True,1
+2022-01-11,AFCON,Algeria,Sierra Leone,0,0,0,True,0
+2022-01-12,AFCON,Equatorial Guinea,Ivory Coast,0,1,-1,True,1
+2022-01-12,AFCON,Mauritania,Gambia,0,1,-1,True,1
+2022-01-12,AFCON,Tunisia,Mali,0,1,-1,True,1
+2022-01-13,AFCON,Cameroon,Ethiopia,4,1,1,True,3
+2022-01-13,AFCON,Cape Verde,Burkina Faso,0,1,-1,True,1
+2022-01-14,AFCON,Senegal,Guinea,0,0,0,True,0
+2022-01-14,AFCON,Malawi,Zimbabwe,2,1,1,True,1
+2022-01-14,AFCON,Morocco,Comoros,2,0,1,True,2
+2022-01-14,AFCON,Gabon,Ghana,1,1,0,True,0
+2022-01-15,AFCON,Nigeria,Sudan,3,1,1,True,2
+2022-01-15,AFCON,Guinea-Bissau,Egypt,0,1,-1,True,1
+2022-01-16,AFCON,Ivory Coast,Sierra Leone,2,2,0,True,0
+2022-01-16,AFCON,Tunisia,Mauritania,4,0,1,True,4
+2022-01-16,AFCON,Algeria,Equatorial Guinea,0,1,-1,True,1
+2022-01-16,AFCON,Gambia,Mali,1,1,0,True,0
+2022-01-17,AFCON,Burkina Faso,Ethiopia,1,1,0,True,0
+2022-01-17,AFCON,Cape Verde,Cameroon,1,1,0,True,0
+2022-01-18,AFCON,Malawi,Senegal,0,0,0,True,0
+2022-01-18,AFCON,Ghana,Comoros,2,3,-1,True,1
+2022-01-18,AFCON,Gabon,Morocco,2,2,0,True,0
+2022-01-18,AFCON,Zimbabwe,Guinea,2,1,1,True,1
+2022-01-19,AFCON,Guinea-Bissau,Nigeria,0,2,-1,True,2
+2022-01-19,AFCON,Egypt,Sudan,1,0,1,True,1
+2022-01-20,AFCON,Mali,Mauritania,2,0,1,True,2
+2022-01-20,AFCON,Gambia,Tunisia,1,0,1,True,1
+2022-01-20,AFCON,Sierra Leone,Equatorial Guinea,0,1,-1,True,1
+2022-01-20,AFCON,Ivory Coast,Algeria,3,1,1,True,2
+2022-01-23,AFCON,Nigeria,Tunisia,0,1,-1,True,1
+2022-01-23,AFCON,Burkina Faso,Gabon,1,1,0,True,0
+2022-01-24,AFCON,Cameroon,Comoros,2,1,1,True,1
+2022-01-24,AFCON,Guinea,Gambia,0,1,-1,True,1
+2022-01-25,AFCON,Morocco,Malawi,2,1,1,True,1
+2022-01-25,AFCON,Senegal,Cape Verde,2,0,1,True,2
+2022-01-26,AFCON,Ivory Coast,Egypt,0,0,0,True,0
+2022-01-26,AFCON,Mali,Equatorial Guinea,0,0,0,True,0
+2022-01-29,AFCON,Gambia,Cameroon,0,2,-1,True,2
+2022-01-29,AFCON,Burkina Faso,Tunisia,1,0,1,True,1
+2022-01-30,AFCON,Egypt,Morocco,2,1,1,True,1
+2022-01-30,AFCON,Senegal,Equatorial Guinea,3,1,1,True,2
+2022-02-02,AFCON,Burkina Faso,Senegal,1,3,-1,True,2
+2022-02-03,AFCON,Cameroon,Egypt,0,0,0,True,0
+2022-02-05,AFCON,Burkina Faso,Cameroon,3,3,0,True,0
+2022-02-06,AFCON,Senegal,Egypt,0,0,0,True,0
+2022-11-20,World Cup,Qatar,Ecuador,0,2,-1,True,2
+2022-11-21,World Cup,Senegal,Netherlands,0,2,-1,True,2
+2022-11-21,World Cup,United States,Wales,1,1,0,True,0
+2022-11-21,World Cup,England,Iran,6,2,1,True,4
+2022-11-22,World Cup,Argentina,Saudi Arabia,1,2,-1,True,1
+2022-11-22,World Cup,Denmark,Tunisia,0,0,0,True,0
+2022-11-22,World Cup,Mexico,Poland,0,0,0,True,0
+2022-11-22,World Cup,France,Australia,4,1,1,True,3
+2022-11-23,World Cup,Morocco,Croatia,0,0,0,True,0
+2022-11-23,World Cup,Germany,Japan,1,2,-1,True,1
+2022-11-23,World Cup,Spain,Costa Rica,7,0,1,True,7
+2022-11-23,World Cup,Belgium,Canada,1,0,1,True,1
+2022-11-24,World Cup,Brazil,Serbia,2,0,1,True,2
+2022-11-24,World Cup,Switzerland,Cameroon,1,0,1,True,1
+2022-11-24,World Cup,Uruguay,South Korea,0,0,0,True,0
+2022-11-24,World Cup,Portugal,Ghana,3,2,1,True,1
+2022-11-25,World Cup,Qatar,Senegal,1,3,-1,True,2
+2022-11-25,World Cup,England,United States,0,0,0,True,0
+2022-11-25,World Cup,Wales,Iran,0,2,-1,True,2
+2022-11-25,World Cup,Netherlands,Ecuador,1,1,0,True,0
+2022-11-26,World Cup,Poland,Saudi Arabia,2,0,1,True,2
+2022-11-26,World Cup,France,Denmark,2,1,1,True,1
+2022-11-26,World Cup,Argentina,Mexico,2,0,1,True,2
+2022-11-26,World Cup,Tunisia,Australia,0,1,-1,True,1
+2022-11-27,World Cup,Japan,Costa Rica,0,1,-1,True,1
+2022-11-27,World Cup,Belgium,Morocco,0,2,-1,True,2
+2022-11-27,World Cup,Croatia,Canada,4,1,1,True,3
+2022-11-27,World Cup,Spain,Germany,1,1,0,True,0
+2022-11-28,World Cup,Brazil,Switzerland,1,0,1,True,1
+2022-11-28,World Cup,Cameroon,Serbia,3,3,0,True,0
+2022-11-28,World Cup,South Korea,Ghana,2,3,-1,True,1
+2022-11-28,World Cup,Portugal,Uruguay,2,0,1,True,2
+2022-11-29,World Cup,Netherlands,Qatar,2,0,1,True,2
+2022-11-29,World Cup,Iran,United States,0,1,-1,True,1
+2022-11-29,World Cup,Wales,England,0,3,-1,True,3
+2022-11-29,World Cup,Ecuador,Senegal,1,2,-1,True,1
+2022-11-30,World Cup,Australia,Denmark,1,0,1,True,1
+2022-11-30,World Cup,Tunisia,France,1,0,1,True,1
+2022-11-30,World Cup,Poland,Argentina,0,2,-1,True,2
+2022-11-30,World Cup,Saudi Arabia,Mexico,1,2,-1,True,1
+2022-12-01,World Cup,Croatia,Belgium,0,0,0,True,0
+2022-12-01,World Cup,Costa Rica,Germany,2,4,-1,True,2
+2022-12-01,World Cup,Japan,Spain,2,1,1,True,1
+2022-12-01,World Cup,Canada,Morocco,1,2,-1,True,1
+2022-12-02,World Cup,South Korea,Portugal,2,1,1,True,1
+2022-12-02,World Cup,Ghana,Uruguay,0,2,-1,True,2
+2022-12-02,World Cup,Cameroon,Brazil,1,0,1,True,1
+2022-12-02,World Cup,Serbia,Switzerland,2,3,-1,True,1
+2022-12-03,World Cup,Netherlands,United States,3,1,1,True,2
+2022-12-03,World Cup,Argentina,Australia,2,1,1,True,1
+2022-12-04,World Cup,France,Poland,3,1,1,True,2
+2022-12-04,World Cup,England,Senegal,3,0,1,True,3
+2022-12-05,World Cup,Japan,Croatia,1,1,0,True,0
+2022-12-05,World Cup,Brazil,South Korea,4,1,1,True,3
+2022-12-06,World Cup,Portugal,Switzerland,6,1,1,True,5
+2022-12-06,World Cup,Morocco,Spain,0,0,0,True,0
+2022-12-09,World Cup,Netherlands,Argentina,2,2,0,True,0
+2022-12-09,World Cup,Croatia,Brazil,1,1,0,True,0
+2022-12-10,World Cup,England,France,1,2,-1,True,1
+2022-12-10,World Cup,Morocco,Portugal,1,0,1,True,1
+2022-12-13,World Cup,Argentina,Croatia,3,0,1,True,3
+2022-12-14,World Cup,France,Morocco,2,0,1,True,2
+2022-12-17,World Cup,Croatia,Morocco,2,1,1,True,1
+2022-12-18,World Cup,Argentina,France,3,3,0,True,0
+2023-06-14,Nations League,Netherlands,Croatia,2,4,-1,True,2
+2023-06-15,Nations League,Spain,Italy,2,1,1,True,1
+2023-06-18,Nations League,Netherlands,Italy,2,3,-1,True,1
+2023-06-18,Nations League,Croatia,Spain,0,0,0,True,0
+2024-01-13,AFCON,Ivory Coast,Guinea-Bissau,2,0,1,True,2
+2024-01-14,AFCON,Ghana,Cape Verde,1,2,-1,True,1
+2024-01-14,AFCON,Egypt,Mozambique,2,2,0,True,0
+2024-01-14,AFCON,Nigeria,Equatorial Guinea,1,1,0,True,0
+2024-01-15,AFCON,Cameroon,Guinea,1,1,0,True,0
+2024-01-15,AFCON,Algeria,Angola,1,1,0,True,0
+2024-01-15,AFCON,Senegal,Gambia,3,0,1,True,3
+2024-01-16,AFCON,Burkina Faso,Mauritania,1,0,1,True,1
+2024-01-16,AFCON,Tunisia,Namibia,0,1,-1,True,1
+2024-01-16,AFCON,Mali,South Africa,2,0,1,True,2
+2024-01-17,AFCON,Morocco,Tanzania,3,0,1,True,3
+2024-01-17,AFCON,Congo DR,Zambia,1,1,0,True,0
+2024-01-18,AFCON,Equatorial Guinea,Guinea-Bissau,4,2,1,True,2
+2024-01-18,AFCON,Ivory Coast,Nigeria,0,1,-1,True,1
+2024-01-18,AFCON,Egypt,Ghana,2,2,0,True,0
+2024-01-19,AFCON,Guinea,Gambia,1,0,1,True,1
+2024-01-19,AFCON,Cape Verde,Mozambique,3,0,1,True,3
+2024-01-19,AFCON,Senegal,Cameroon,3,1,1,True,2
+2024-01-20,AFCON,Algeria,Burkina Faso,2,2,0,True,0
+2024-01-20,AFCON,Mauritania,Angola,2,3,-1,True,1
+2024-01-20,AFCON,Tunisia,Mali,1,1,0,True,0
+2024-01-21,AFCON,Morocco,Congo DR,1,1,0,True,0
+2024-01-21,AFCON,Zambia,Tanzania,1,1,0,True,0
+2024-01-21,AFCON,South Africa,Namibia,4,0,1,True,4
+2024-01-22,AFCON,Equatorial Guinea,Ivory Coast,4,0,1,True,4
+2024-01-22,AFCON,Guinea-Bissau,Nigeria,0,1,-1,True,1
+2024-01-22,AFCON,Cape Verde,Egypt,2,2,0,True,0
+2024-01-22,AFCON,Mozambique,Ghana,2,2,0,True,0
+2024-01-23,AFCON,Mauritania,Algeria,1,0,1,True,1
+2024-01-23,AFCON,Angola,Burkina Faso,2,0,1,True,2
+2024-01-23,AFCON,Guinea,Senegal,0,2,-1,True,2
+2024-01-23,AFCON,Gambia,Cameroon,2,3,-1,True,1
+2024-01-24,AFCON,Namibia,Mali,0,0,0,True,0
+2024-01-24,AFCON,Tanzania,Congo DR,0,0,0,True,0
+2024-01-24,AFCON,Zambia,Morocco,0,1,-1,True,1
+2024-01-24,AFCON,South Africa,Tunisia,0,0,0,True,0
+2024-01-27,AFCON,Nigeria,Cameroon,2,0,1,True,2
+2024-01-27,AFCON,Angola,Namibia,3,0,1,True,3
+2024-01-28,AFCON,Egypt,Congo DR,1,1,0,True,0
+2024-01-28,AFCON,Equatorial Guinea,Guinea,0,1,-1,True,1
+2024-01-29,AFCON,Senegal,Ivory Coast,1,1,0,True,0
+2024-01-29,AFCON,Cape Verde,Mauritania,1,0,1,True,1
+2024-01-30,AFCON,Morocco,South Africa,0,2,-1,True,2
+2024-01-30,AFCON,Mali,Burkina Faso,2,1,1,True,1
+2024-02-02,AFCON,Nigeria,Angola,1,0,1,True,1
+2024-02-02,AFCON,Congo DR,Guinea,3,1,1,True,2
+2024-02-03,AFCON,Cape Verde,South Africa,0,0,0,True,0
+2024-02-03,AFCON,Mali,Ivory Coast,1,2,-1,True,1
+2024-02-07,AFCON,Ivory Coast,Congo DR,1,0,1,True,1
+2024-02-07,AFCON,Nigeria,South Africa,1,1,0,True,0
+2024-02-10,AFCON,South Africa,Congo DR,0,0,0,True,0
+2024-02-11,AFCON,Nigeria,Ivory Coast,1,2,-1,True,1
+2024-06-14,UEFA Euro,Germany,Scotland,5,1,1,True,4
+2024-06-15,UEFA Euro,Hungary,Switzerland,1,3,-1,True,2
+2024-06-15,UEFA Euro,Spain,Croatia,3,0,1,True,3
+2024-06-15,UEFA Euro,Italy,Albania,2,1,1,True,1
+2024-06-16,UEFA Euro,Poland,Netherlands,1,2,-1,True,1
+2024-06-16,UEFA Euro,Slovenia,Denmark,1,1,0,True,0
+2024-06-16,UEFA Euro,Serbia,England,0,1,-1,True,1
+2024-06-17,UEFA Euro,Romania,Ukraine,3,0,1,True,3
+2024-06-17,UEFA Euro,Belgium,Slovakia,0,1,-1,True,1
+2024-06-17,UEFA Euro,Austria,France,0,1,-1,True,1
+2024-06-18,UEFA Euro,Türkiye,Georgia,3,1,1,True,2
+2024-06-18,UEFA Euro,Portugal,Czechia,2,1,1,True,1
+2024-06-19,UEFA Euro,Scotland,Switzerland,1,1,0,True,0
+2024-06-19,UEFA Euro,Croatia,Albania,2,2,0,True,0
+2024-06-19,UEFA Euro,Germany,Hungary,2,0,1,True,2
+2024-06-20,UEFA Euro,Slovenia,Serbia,1,1,0,True,0
+2024-06-20,UEFA Euro,Spain,Italy,1,0,1,True,1
+2024-06-20,UEFA Euro,Denmark,England,1,1,0,True,0
+2024-06-21,UEFA Euro,Netherlands,France,0,0,0,True,0
+2024-06-21,UEFA Euro,Slovakia,Ukraine,1,2,-1,True,1
+2024-06-21,UEFA Euro,Poland,Austria,1,3,-1,True,2
+2024-06-22,UEFA Euro,Belgium,Romania,2,0,1,True,2
+2024-06-22,UEFA Euro,Türkiye,Portugal,0,3,-1,True,3
+2024-06-22,UEFA Euro,Georgia,Czechia,1,1,0,True,0
+2024-06-23,UEFA Euro,Switzerland,Germany,1,1,0,True,0
+2024-06-23,UEFA Euro,Scotland,Hungary,0,1,-1,True,1
+2024-06-24,UEFA Euro,Albania,Spain,0,1,-1,True,1
+2024-06-24,UEFA Euro,Croatia,Italy,1,1,0,True,0
+2024-06-25,UEFA Euro,Denmark,Serbia,0,0,0,True,0
+2024-06-25,UEFA Euro,France,Poland,1,1,0,True,0
+2024-06-25,UEFA Euro,Netherlands,Austria,2,3,-1,True,1
+2024-06-25,UEFA Euro,England,Slovenia,0,0,0,True,0
+2024-06-26,UEFA Euro,Slovakia,Romania,1,1,0,True,0
+2024-06-26,UEFA Euro,Georgia,Portugal,2,0,1,True,2
+2024-06-26,UEFA Euro,Czechia,Türkiye,1,2,-1,True,1
+2024-06-26,UEFA Euro,Ukraine,Belgium,0,0,0,True,0
+2024-06-29,UEFA Euro,Germany,Denmark,2,0,1,True,2
+2024-06-29,UEFA Euro,Switzerland,Italy,2,0,1,True,2
+2024-06-30,UEFA Euro,Spain,Georgia,4,1,1,True,3
+2024-06-30,UEFA Euro,England,Slovakia,2,1,1,True,1
+2024-07-01,UEFA Euro,France,Belgium,1,0,1,True,1
+2024-07-01,UEFA Euro,Portugal,Slovenia,0,0,0,True,0
+2024-07-02,UEFA Euro,Austria,Türkiye,1,2,-1,True,1
+2024-07-02,UEFA Euro,Romania,Netherlands,0,3,-1,True,3
+2024-07-05,UEFA Euro,Portugal,France,0,0,0,True,0
+2024-07-05,UEFA Euro,Spain,Germany,2,1,1,True,1
+2024-07-06,UEFA Euro,Netherlands,Türkiye,2,1,1,True,1
+2024-07-06,UEFA Euro,England,Switzerland,1,1,0,True,0
+2024-07-09,UEFA Euro,Spain,France,2,1,1,True,1
+2024-07-10,UEFA Euro,Netherlands,England,1,2,-1,True,1
+2024-07-14,UEFA Euro,Spain,England,2,1,1,True,1
+2024-10-10,Nations League,Norway,Slovenia,3,0,1,True,3
+2024-10-10,Nations League,Israel,France,1,4,-1,True,3
+2024-10-10,Nations League,Gibraltar,San Marino,1,0,1,True,1
+2024-10-10,Nations League,Finland,Republic of Ireland,1,2,-1,True,1
+2024-10-10,Nations League,Italy,Belgium,2,2,0,True,0
+2024-10-10,Nations League,England,Greece,1,2,-1,True,1
+2024-10-10,Nations League,Austria,Kazakhstan,4,0,1,True,4
+2024-10-10,Nations League,Moldova,Andorra,2,0,1,True,2
+2024-10-10,Nations League,Latvia,North Macedonia,0,3,-1,True,3
+2024-10-10,Nations League,Faroe Islands,Armenia,2,2,0,True,0
+2024-10-11,Nations League,Türkiye,Montenegro,1,0,1,True,1
+2024-10-11,Nations League,Estonia,Azerbaijan,3,1,1,True,2
+2024-10-11,Nations League,Bosnia-Herzegovina,Germany,1,2,-1,True,1
+2024-10-11,Nations League,Czechia,Albania,2,0,1,True,2
+2024-10-11,Nations League,Hungary,Netherlands,1,1,0,True,0
+2024-10-11,Nations League,Iceland,Wales,2,2,0,True,0
+2024-10-11,Nations League,Slovakia,Sweden,2,2,0,True,0
+2024-10-11,Nations League,Ukraine,Georgia,1,0,1,True,1
+2024-10-12,Nations League,Spain,Denmark,1,0,1,True,1
+2024-10-12,Nations League,Serbia,Switzerland,2,0,1,True,2
+2024-10-12,Nations League,Poland,Portugal,1,3,-1,True,2
+2024-10-12,Nations League,Cyprus,Romania,0,3,-1,True,3
+2024-10-12,Nations League,Croatia,Scotland,2,1,1,True,1
+2024-10-12,Nations League,Bulgaria,Luxembourg,0,0,0,True,0
+2024-10-12,Nations League,Lithuania,Kosovo,1,2,-1,True,1
+2024-10-12,Nations League,Belarus,Northern Ireland,0,0,0,True,0
+2024-10-13,Nations League,Faroe Islands,Latvia,1,1,0,True,0
+2024-10-13,Nations League,Kazakhstan,Slovenia,0,1,-1,True,1
+2024-10-13,Nations League,Armenia,North Macedonia,0,2,-1,True,2
+2024-10-13,Nations League,Finland,England,1,3,-1,True,2
+2024-10-13,Nations League,Liechtenstein,Gibraltar,0,0,0,True,0
+2024-10-13,Nations League,Malta,Moldova,1,0,1,True,1
+2024-10-13,Nations League,Austria,Norway,5,1,1,True,4
+2024-10-13,Nations League,Greece,Republic of Ireland,2,0,1,True,2
+2024-10-14,Nations League,Italy,Israel,4,1,1,True,3
+2024-10-14,Nations League,Iceland,Türkiye,2,4,-1,True,2
+2024-10-14,Nations League,Germany,Netherlands,1,0,1,True,1
+2024-10-14,Nations League,Estonia,Sweden,0,3,-1,True,3
+2024-10-14,Nations League,Azerbaijan,Slovakia,1,3,-1,True,2
+2024-10-14,Nations League,Belgium,France,1,2,-1,True,1
+2024-10-14,Nations League,Georgia,Albania,0,1,-1,True,1
+2024-10-14,Nations League,Ukraine,Czechia,1,1,0,True,0
+2024-10-14,Nations League,Bosnia-Herzegovina,Hungary,0,2,-1,True,2
+2024-10-14,Nations League,Wales,Montenegro,1,0,1,True,1
+2024-10-15,Nations League,Poland,Croatia,3,3,0,True,0
+2024-10-15,Nations League,Scotland,Portugal,0,0,0,True,0
+2024-10-15,Nations League,Northern Ireland,Bulgaria,5,0,1,True,5
+2024-10-15,Nations League,Spain,Serbia,3,0,1,True,3
+2024-10-15,Nations League,Kosovo,Cyprus,3,0,1,True,3
+2024-10-15,Nations League,Belarus,Luxembourg,1,1,0,True,0
+2024-10-15,Nations League,Lithuania,Romania,1,2,-1,True,1
+2024-10-15,Nations League,Switzerland,Denmark,2,2,0,True,0

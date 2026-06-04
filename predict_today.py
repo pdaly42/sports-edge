@@ -353,6 +353,178 @@ def predict_mlb(api_key: str, target_date: str) -> list:
 
 
 # ─────────────────────────────────────────────────────────────
+# Soccer / World Cup  (3-way: home win / draw / away win)
+# ─────────────────────────────────────────────────────────────
+
+SOCCER_ODDS_TO_ESPN = {
+    "United States": "USA",
+    "South Korea": "Korea Republic",
+    "Czech Republic": "Czechia",
+    "Ivory Coast": "Côte d'Ivoire",
+    "Iran": "IR Iran",
+    "DR Congo": "DR Congo",
+    "Trinidad & Tobago": "Trinidad and Tobago",
+    "Bosnia & Herzegovina": "Bosnia-Herzegovina",
+}
+
+
+def no_vig_3way(h2h_market: dict) -> tuple:
+    """Remove vig from a 3-outcome soccer market. Returns (home_p, draw_p, away_p)."""
+    outcomes = h2h_market.get("outcomes", [])
+    if len(outcomes) < 3:
+        return None, None, None
+    raw = {o["name"]: americanToImpl_py(o["price"]) for o in outcomes}
+    total = sum(raw.values())
+    return (
+        raw.get(list(raw.keys())[0], 0) / total,
+        raw.get("Draw", 0) / total,
+        raw.get(list(raw.keys())[-1], 0) / total,
+    )
+
+
+def americanToImpl_py(odds: float) -> float:
+    return 100 / (odds + 100) if odds > 0 else abs(odds) / (abs(odds) + 100)
+
+
+def get_soccer_h2h(game: dict) -> dict:
+    for book in game.get("bookmakers", []):
+        m = next((x for x in book["markets"] if x["key"] == "h2h"), None)
+        if m and len(m["outcomes"]) == 3:
+            return m
+    return {}
+
+
+def predict_soccer(api_key: str, target_date: str) -> list:
+    print("\n── Soccer / World Cup ──")
+    games = fetch_odds(api_key, "soccer_fifa_world_cup", target_date)
+    print(f"  {len(games)} WC games on {target_date}")
+    if not games:
+        return []
+
+    import json
+    from models.soccer_trainer import load_soccer_model, predict_soccer_proba
+    from data.soccer_fetcher import ODDS_TO_ESPN, get_current_team_form
+
+    # Load ELO ratings
+    elo_path = Path("data/raw/soccer/current_elo.json")
+    elo = json.loads(elo_path.read_text()) if elo_path.exists() else {}
+
+    # Load team form
+    all_teams = [t for g in games for t in [g["home_team"], g["away_team"]]]
+    espn_teams = [SOCCER_ODDS_TO_ESPN.get(t, t) for t in all_teams]
+    form = get_current_team_form(espn_teams)
+
+    bundle = load_soccer_model(sport="soccer_wc")
+    results = []
+
+    for game in games:
+        home_api = game["home_team"]
+        away_api = game["away_team"]
+        home_espn = SOCCER_ODDS_TO_ESPN.get(home_api, home_api)
+        away_espn = SOCCER_ODDS_TO_ESPN.get(away_api, away_api)
+
+        home_elo = elo.get(home_espn, elo.get(home_api, 1750))
+        away_elo = elo.get(away_espn, elo.get(away_api, 1750))
+
+        home_form = form.get(home_espn, form.get(home_api, {}))
+        away_form = form.get(away_espn, form.get(away_api, {}))
+
+        feat = {
+            "elo_diff":            home_elo - away_elo,
+            "home_elo_pre":        home_elo,
+            "away_elo_pre":        away_elo,
+            "home_win_pct_10g":    home_form.get("win_pct_10g", 0.45),
+            "away_win_pct_10g":    away_form.get("win_pct_10g", 0.45),
+            "home_gf_avg_10g":     home_form.get("gf_avg_10g", 1.2),
+            "away_gf_avg_10g":     away_form.get("gf_avg_10g", 1.2),
+            "home_ga_avg_10g":     home_form.get("ga_avg_10g", 1.2),
+            "away_ga_avg_10g":     away_form.get("ga_avg_10g", 1.2),
+            "home_gd_avg_10g":     home_form.get("gd_avg_10g", 0.0),
+            "away_gd_avg_10g":     away_form.get("gd_avg_10g", 0.0),
+            "win_pct_diff_10g":    home_form.get("win_pct_10g", 0.45) - away_form.get("win_pct_10g", 0.45),
+            "gd_diff_10g":         home_form.get("gd_avg_10g", 0.0)  - away_form.get("gd_avg_10g", 0.0),
+        }
+
+        feat_df = pd.DataFrame([feat])
+        probs = predict_soccer_proba(bundle, feat_df)[0]
+        # probs: [P(away_win), P(draw), P(home_win)]
+        p_away, p_draw, p_home = float(probs[0]), float(probs[1]), float(probs[2])
+
+        # Market no-vig probabilities
+        h2h = get_soccer_h2h(game)
+        mkt_home, mkt_draw, mkt_away = None, None, None
+        home_odds = away_odds = draw_odds = None
+        if h2h:
+            outcomes = h2h.get("outcomes", [])
+            for o in outcomes:
+                if o["name"] == home_api:
+                    home_odds = o["price"]
+                elif o["name"] == away_api:
+                    away_odds = o["price"]
+                elif o["name"] == "Draw":
+                    draw_odds = o["price"]
+            if home_odds and away_odds and draw_odds:
+                impl = [americanToImpl_py(home_odds),
+                        americanToImpl_py(draw_odds),
+                        americanToImpl_py(away_odds)]
+                tot = sum(impl)
+                mkt_home = impl[0] / tot
+                mkt_draw = impl[1] / tot
+                mkt_away = impl[2] / tot
+
+        # Compute edges and EV for all 3 outcomes
+        def edge_ev(model_p, mkt_p, odds):
+            if mkt_p is None or odds is None:
+                return None, None
+            ev = model_p * (abs(odds)/100 if odds < 0 else odds/100) - (1 - model_p)
+            return round(model_p - mkt_p, 4), round(ev, 4)
+
+        h_edge, h_ev = edge_ev(p_home, mkt_home, home_odds)
+        d_edge, d_ev = edge_ev(p_draw, mkt_draw, draw_odds)
+        a_edge, a_ev = edge_ev(p_away, mkt_away, away_odds)
+
+        # Best bet across all 3 outcomes
+        best_bet = None
+        edges = [
+            ("home", p_home, home_odds, h_edge, h_ev, home_api),
+            ("draw", p_draw, draw_odds, d_edge, d_ev, "Draw"),
+            ("away", p_away, away_odds, a_edge, a_ev, away_api),
+        ]
+        best = max(edges, key=lambda x: x[3] or -999)
+        if best[3] is not None and best[3] >= 0.03:
+            best_bet = {
+                "side": best[0], "team": best[5], "odds": best[2],
+                "edge": best[3], "ev": best[4],
+                "strength": "strong" if best[3] >= 0.05 else "moderate",
+            }
+
+        pred = {
+            "id": game["id"], "sport": "soccer_fifa_world_cup",
+            "sport_label": "World Cup",
+            "commence_time": game["commence_time"],
+            "home_team": home_api, "away_team": away_api,
+            "home_odds": home_odds, "away_odds": away_odds, "draw_odds": draw_odds,
+            "spread": get_spread(game, "home"), "total": get_total(game),
+            "model_home_prob": round(p_home, 4),
+            "model_draw_prob": round(p_draw, 4),
+            "model_away_prob": round(p_away, 4),
+            "home_no_vig_prob": round(mkt_home, 4) if mkt_home else None,
+            "draw_no_vig_prob": round(mkt_draw, 4) if mkt_draw else None,
+            "away_no_vig_prob": round(mkt_away, 4) if mkt_away else None,
+            "home_edge": h_edge, "draw_edge": d_edge, "away_edge": a_edge,
+            "home_ev": h_ev, "draw_ev": d_ev, "away_ev": a_ev,
+            "home_elo": round(home_elo), "away_elo": round(away_elo),
+            "best_bet": best_bet,
+        }
+        results.append(pred)
+        print(f"  {away_api}({round(away_elo)}) @ {home_api}({round(home_elo)}): "
+              f"H{p_home:.0%}/D{p_draw:.0%}/A{p_away:.0%} "
+              f"best_edge={best[3]}")
+
+    return results
+
+
+# ─────────────────────────────────────────────────────────────
 # Main
 # ─────────────────────────────────────────────────────────────
 
@@ -369,6 +541,8 @@ def run(api_key: str, output_path: str = None, target_date: str = None,
         all_games += predict_nba(api_key, target_date)
     if "mlb" in sports:
         all_games += predict_mlb(api_key, target_date)
+    if "soccer" in sports:
+        all_games += predict_soccer(api_key, target_date)
 
     result = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
@@ -395,7 +569,7 @@ if __name__ == "__main__":
         print("Error: provide --api-key or set ODDS_API_KEY in .env")
         sys.exit(1)
 
-    sports = [args.sport] if args.sport else ["nba", "mlb"]
+    sports = [args.sport] if args.sport else ["nba", "mlb", "soccer"]
     target_date = args.date or date.today().isoformat()
     output_path = args.output or f"predictions_{target_date}.json"
     run(args.api_key, output_path, target_date, sports)
