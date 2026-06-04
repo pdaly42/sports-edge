@@ -467,6 +467,10 @@ let modelPredictions = {};
 let activeSport = 'all';
 let dayOffset = 0;   // 0 = today, 1 = tomorrow, -1 = yesterday
 
+// Cache: keyed by date string → array of games. Prevents re-fetching when
+// switching sport tabs or re-rendering — one fetch per date per session.
+const gamesCache = {};
+
 const SPORTS = [
   { key: 'basketball_nba',       label: 'NBA', emoji: '🏀' },
   { key: 'americanfootball_nfl', label: 'NFL', emoji: '🏈' },
@@ -553,13 +557,22 @@ function updateDateNav() {
 function shiftDay(delta) {
   dayOffset += delta;
   updateDateNav();
-  allGames = [];
   modelPredictions = {};
   document.getElementById('model-status').textContent = 'No model loaded';
   document.getElementById('model-status').style.color = '#64748b';
   loadModelPredictions();
-  if (oddsKey) loadAllGames();
-  else renderGames();
+
+  const cacheKey = getViewDateISO();
+  if (gamesCache[cacheKey]) {
+    // Serve from cache — no API call needed
+    allGames = gamesCache[cacheKey];
+    renderGames();
+  } else if (oddsKey) {
+    loadAllGames();
+  } else {
+    allGames = [];
+    renderGames();
+  }
 }
 
 // ─────────────────────────────────────────
@@ -585,7 +598,9 @@ function saveOddsKey() {
   localStorage.setItem('odds_api_key', val);
   document.getElementById('odds-key-status').textContent = '✓ Saved';
   document.getElementById('odds-banner').classList.add('hidden');
-  loadAllGames();
+  // Only fetch if we don't already have data for this date
+  const cacheKey = getViewDateISO();
+  if (!gamesCache[cacheKey]) loadAllGames();
 }
 
 function saveGhToken() {
@@ -717,6 +732,9 @@ async function loadAllGames() {
   document.getElementById('last-updated').textContent =
     'Updated ' + new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
   document.getElementById('refresh-btn').classList.remove('spinning');
+
+  // Store in cache so date/sport switches don't re-fetch
+  gamesCache[getViewDateISO()] = [...allGames];
   renderGames();
 }
 
@@ -928,9 +946,18 @@ function updateClock() {
   });
 }
 
-// Auto-refresh odds every 10 min
-setInterval(() => { if (oddsKey) loadAllGames(); }, 10 * 60 * 1000);
-// Poll for new predictions every 3 min (picks up after workflow finishes)
+// Auto-refresh odds once per hour — 3 sports × 6/hr × 24hr = 432 calls/day
+// at 10 min. At 60 min = 72 calls/day, well within 500/month free tier.
+// Use the Refresh button for on-demand updates.
+setInterval(() => {
+  if (oddsKey) {
+    // Bust cache for current date so the hourly refresh actually re-fetches
+    delete gamesCache[getViewDateISO()];
+    loadAllGames();
+  }
+}, 60 * 60 * 1000);
+
+// Poll for new predictions every 3 min — these hit GitHub Pages (free/unlimited)
 setInterval(() => loadModelPredictions(), 3 * 60 * 1000);
 </script>
 </body>
