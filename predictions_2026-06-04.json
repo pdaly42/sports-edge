@@ -1,4 +1,116 @@
 {
-  "generated_at": "2026-06-04T12:34:49.007283+00:00",
-  "games": []
+  "generated_at": "2026-06-04T21:07:04.630953+00:00",
+  "date": "2026-06-04",
+  "games": [
+    {
+      "id": "21eff9bb5b8451ea2abb9e638ed600e3",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-06-04T18:11:00Z",
+      "home_team": "Milwaukee Brewers",
+      "away_team": "San Francisco Giants",
+      "home_odds": 3300,
+      "away_odds": -10000,
+      "spread": {
+        "point": 5.5,
+        "price": 200
+      },
+      "total": {
+        "line": 18.5,
+        "over": -132,
+        "under": 100
+      },
+      "model_home_prob": 0.5326,
+      "model_away_prob": 0.4674,
+      "home_no_vig_prob": 0.0288,
+      "away_no_vig_prob": 0.9712,
+      "home_edge": 0.5037,
+      "away_edge": -0.5037,
+      "home_ev": 17.1081,
+      "away_ev": -0.5279,
+      "home_kelly": 0.1296,
+      "away_kelly": 0.0,
+      "best_bet": {
+        "side": "home",
+        "team": "Milwaukee Brewers",
+        "odds": 3300,
+        "edge": 0.5037,
+        "ev": 17.1081,
+        "strength": "strong"
+      },
+      "home_pitcher": "Coleman Crow",
+      "away_pitcher": "Adrian Houser"
+    },
+    {
+      "id": "5dfa37c10be5e8b012bf4fe64b302fa3",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-06-04T23:15:00Z",
+      "home_team": "Atlanta Braves",
+      "away_team": "Toronto Blue Jays",
+      "home_odds": -250,
+      "away_odds": 220,
+      "spread": {
+        "point": -1.5,
+        "price": -113
+      },
+      "total": {
+        "line": 7.5,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.5782,
+      "model_away_prob": 0.4218,
+      "home_no_vig_prob": 0.6957,
+      "away_no_vig_prob": 0.3043,
+      "home_edge": -0.1175,
+      "away_edge": 0.1175,
+      "home_ev": -0.1906,
+      "away_ev": 0.3499,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0398,
+      "best_bet": {
+        "side": "away",
+        "team": "Toronto Blue Jays",
+        "odds": 220,
+        "edge": 0.1175,
+        "ev": 0.3499,
+        "strength": "strong"
+      },
+      "home_pitcher": "Chris Sale",
+      "away_pitcher": "Mason Fluharty"
+    },
+    {
+      "id": "77284803e3bb753f121e4c2b4a20ea8e",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-06-04T23:41:00Z",
+      "home_team": "Minnesota Twins",
+      "away_team": "Kansas City Royals",
+      "home_odds": -102,
+      "away_odds": -115,
+      "spread": {
+        "point": 1.5,
+        "price": -166
+      },
+      "total": {
+        "line": 9.0,
+        "over": -120,
+        "under": -102
+      },
+      "model_home_prob": 0.5129,
+      "model_away_prob": 0.4871,
+      "home_no_vig_prob": 0.4856,
+      "away_no_vig_prob": 0.5144,
+      "home_edge": 0.0273,
+      "away_edge": -0.0273,
+      "home_ev": 0.0157,
+      "away_ev": -0.0893,
+      "home_kelly": 0.004,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Andrew Morris",
+      "away_pitcher": "Seth Lugo"
+    }
+  ]
 }
