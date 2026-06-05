@@ -28,22 +28,43 @@ from utils.odds import remove_vig, expected_value, kelly_fraction as kelly_calc
 # ─────────────────────────────────────────────────────────────
 
 def fetch_odds(api_key: str, sport_key: str, target_date: str) -> list:
-    """Fetch all games + odds for a sport/date from the-odds-api.com."""
+    """
+    Fetch all games + odds for a sport/date from the-odds-api.com.
+    Returns empty list (instead of raising) on quota exhaustion or auth failure
+    so the pipeline can still write model probabilities without odds.
+    """
+    if not api_key:
+        print(f"  {sport_key}: no API key — skipping odds fetch")
+        return []
+
     url = f"https://api.the-odds-api.com/v4/sports/{sport_key}/odds/"
     params = {
-        "apiKey":    api_key,
-        "regions":   "us",
-        "markets":   "h2h,spreads,totals",
+        "apiKey":     api_key,
+        "regions":    "us",
+        "markets":    "h2h,spreads,totals",
         "oddsFormat": "american",
         "bookmakers": "draftkings,fanduel,betmgm,caesars",
     }
-    resp = requests.get(url, params=params, timeout=15)
+    try:
+        resp = requests.get(url, params=params, timeout=15)
+    except Exception as e:
+        print(f"  {sport_key}: network error — {e}")
+        return []
+
+    if resp.status_code == 401:
+        print(f"  {sport_key}: odds API quota exhausted or key invalid (401) — skipping odds")
+        return []
+    if resp.status_code == 429:
+        print(f"  {sport_key}: odds API rate limited (429) — skipping odds")
+        return []
     if resp.status_code == 422:
         print(f"  {sport_key}: not in season")
         return []
-    resp.raise_for_status()
+    if not resp.ok:
+        print(f"  {sport_key}: odds API error {resp.status_code} — skipping odds")
+        return []
+
     print(f"  Requests remaining: {resp.headers.get('x-requests-remaining', '?')}")
-    # Filter to target date in local time
     all_games = resp.json()
     return [g for g in all_games if g["commence_time"][:10] == target_date]
 
@@ -94,7 +115,53 @@ def get_total(game: dict) -> dict | None:
     return None
 
 
-def build_game_prediction(game: dict, model_home_prob: float | None,
+ESPN_SPORT_MAP = {
+    "basketball_nba":        "basketball/nba",
+    "baseball_mlb":          "baseball/mlb",
+    "americanfootball_nfl":  "football/nfl",
+    "soccer_fifa_world_cup": "soccer/fifa.world",
+}
+
+def fetch_games_from_espn(sport_key: str, target_date: str) -> list:
+    """
+    Fallback game source when odds API is unavailable.
+    Returns minimal game dicts (no bookmakers/odds) using ESPN's free API.
+    """
+    espn_path = ESPN_SPORT_MAP.get(sport_key)
+    if not espn_path:
+        return []
+
+    date_str = target_date.replace("-", "")  # YYYYMMDD
+    url = f"https://site.api.espn.com/apis/site/v2/sports/{espn_path}/scoreboard?dates={date_str}"
+    try:
+        resp = requests.get(url, timeout=10)
+        if not resp.ok:
+            return []
+        events = resp.json().get("events", [])
+    except Exception:
+        return []
+
+    games = []
+    for ev in events:
+        try:
+            comp  = ev["competitions"][0]
+            teams = comp["competitors"]
+            home  = next((t for t in teams if t.get("homeAway") == "home"), teams[0])
+            away  = next((t for t in teams if t.get("homeAway") == "away"), teams[1])
+            games.append({
+                "id":             ev["id"],
+                "commence_time":  ev["date"],
+                "home_team":      home["team"]["displayName"],
+                "away_team":      away["team"]["displayName"],
+                "bookmakers":     [],   # no odds available
+            })
+        except Exception:
+            continue
+    print(f"  {sport_key}: loaded {len(games)} games from ESPN (no odds)")
+    return games
+
+
+def build_game_prediction(game: dict, model_home_prob,
                            home_odds: float | None, away_odds: float | None,
                            sport: str, sport_label: str) -> dict:
     """Assemble the full prediction dict for one game."""
@@ -191,6 +258,8 @@ NBA_TEAM_MAP = {
 def predict_nba(api_key: str, target_date: str) -> list:
     print("\n── NBA ──")
     games = fetch_odds(api_key, "basketball_nba", target_date)
+    if not games:
+        games = fetch_games_from_espn("basketball_nba", target_date)
     print(f"  {len(games)} games on {target_date}")
     if not games:
         return []
@@ -270,6 +339,8 @@ MLB_TEAM_MAP = {
 def predict_mlb(api_key: str, target_date: str) -> list:
     print("\n── MLB ──")
     games = fetch_odds(api_key, "baseball_mlb", target_date)
+    if not games:
+        games = fetch_games_from_espn("baseball_mlb", target_date)
     print(f"  {len(games)} games on {target_date}")
     if not games:
         return []
@@ -397,6 +468,8 @@ def get_soccer_h2h(game: dict) -> dict:
 def predict_soccer(api_key: str, target_date: str) -> list:
     print("\n── Soccer / World Cup ──")
     games = fetch_odds(api_key, "soccer_fifa_world_cup", target_date)
+    if not games:
+        games = fetch_games_from_espn("soccer_fifa_world_cup", target_date)
     print(f"  {len(games)} WC games on {target_date}")
     if not games:
         return []
