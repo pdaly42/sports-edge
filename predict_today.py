@@ -351,16 +351,19 @@ def predict_mlb(api_key: str, target_date: str) -> list:
     # Team rolling stats
     stats = build_team_game_log(list(range(2023, 2026)))
     latest = stats.sort_values("date").groupby("team").last().reset_index()
+    print(f"  [DEBUG] latest teams: {len(latest)}  columns: {list(latest.columns)[:5]}")
 
     stat_cols = [c for c in latest.columns if any(
         c.startswith(p) for p in ["win_pct", "runs_for_avg", "runs_against_avg", "run_diff_avg"]
     )] + ["days_rest"]
+    print(f"  [DEBUG] stat_cols ({len(stat_cols)}): {stat_cols[:5]}")
 
     # Today's probable pitchers from MLB Stats API (free, no key)
     print("  Fetching probable pitchers from MLB Stats API...")
     pitcher_stats = get_probable_pitcher_stats(target_date)
 
     bundle = load_model(sport="mlb", model_type="xgb")
+    print(f"  [DEBUG] bundle features ({len(bundle['features'])}): {bundle['features']}")
     results = []
 
     for game in games:
@@ -397,11 +400,18 @@ def predict_mlb(api_key: str, target_date: str) -> list:
                 feat["starter_whip_diff"] = home_p["whip"]   - away_p["whip"]
                 feat["starter_k9_diff"]   = home_p["k_per_9"]- away_p["k_per_9"]
 
+                feat_df = pd.DataFrame([feat])
+                available = [c for c in bundle["features"] if c in feat_df.columns]
+                if len(available) < len(bundle["features"]) * 0.7:
+                    print(f"  [DEBUG] {away_api}@{home_api}: only {len(available)}/{len(bundle['features'])} features — missing: {[c for c in bundle['features'] if c not in feat_df.columns]}")
+
                 aligned = align_features(feat, bundle)
                 if aligned is not None:
                     prob_home = predict_proba(bundle, aligned)[0]
+                else:
+                    print(f"  [DEBUG] {away_api}@{home_api}: align_features returned None")
             else:
-                print(f"  Missing team stats: {home_api} or {away_api}")
+                print(f"  Missing team stats: {home_api}({home_br} empty={h_row.empty}) or {away_api}({away_br} empty={a_row.empty})")
         else:
             print(f"  Unknown team mapping: {home_api} or {away_api}")
 
