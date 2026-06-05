@@ -345,8 +345,8 @@
 
 <!-- Odds API Key Banner -->
 <div id="odds-banner" class="setup-banner">
-  <span>🔑 <a href="https://the-odds-api.com" target="_blank">the-odds-api.com</a> key:</span>
-  <input id="odds-key-input" class="banner-input" type="text" placeholder="Paste your free API key here" />
+  <span>🔑 <a href="https://the-odds-api.com" target="_blank">the-odds-api.com</a> key <span style="color:#64748b">(optional — games load from ESPN without it)</span>:</span>
+  <input id="odds-key-input" class="banner-input" type="text" placeholder="Paste key for live odds overlay" />
   <button class="banner-btn" onclick="saveOddsKey()">Connect</button>
   <span id="odds-key-status" class="banner-status"></span>
   <span style="margin-left:auto;font-size:0.72rem;color:#475569;">500 req/month free</span>
@@ -379,9 +379,9 @@
       <div class="summary-sub">worth monitoring</div>
     </div>
     <div class="summary-card">
-      <div class="summary-label">API Requests Left</div>
+      <div class="summary-label">Odds API Requests Left</div>
       <div class="summary-value" id="stat-requests">—</div>
-      <div class="summary-sub">free tier: 500/month</div>
+      <div class="summary-sub">500/month · games always load</div>
     </div>
   </div>
 
@@ -494,8 +494,9 @@ window.addEventListener('DOMContentLoaded', () => {
   if (oddsKey) {
     document.getElementById('odds-key-input').value = oddsKey;
     document.getElementById('odds-banner').classList.add('hidden');
-    loadAllGames();
   }
+  // Load games from ESPN immediately — no key needed
+  loadAllGames();
   if (ghToken) {
     document.getElementById('gh-token-input').value = '••••••••••••••••';
     document.getElementById('gh-banner').classList.add('hidden');
@@ -600,9 +601,9 @@ function saveOddsKey() {
   localStorage.setItem('odds_api_key', val);
   document.getElementById('odds-key-status').textContent = '✓ Saved';
   document.getElementById('odds-banner').classList.add('hidden');
-  // Only fetch if we don't already have data for this date
-  const cacheKey = getViewDateISO();
-  if (!gamesCache[cacheKey]) loadAllGames();
+  // Bust cache so odds get loaded on next refresh
+  delete gamesCache[getViewDateISO()];
+  loadAllGames();
 }
 
 function saveGhToken() {
@@ -693,51 +694,166 @@ function resetRunBtn() {
 }
 
 // ─────────────────────────────────────────
-// Odds fetching
+// ESPN sport config (free, no key, no limits)
+// ─────────────────────────────────────────
+const ESPN_BASE = 'https://site.api.espn.com/apis/site/v2/sports';
+const ESPN_SPORTS = [
+  { key: 'basketball_nba',        espn: 'basketball/nba',    label: 'NBA', emoji: '🏀' },
+  { key: 'baseball_mlb',          espn: 'baseball/mlb',      label: 'MLB', emoji: '⚾' },
+  { key: 'americanfootball_nfl',  espn: 'football/nfl',      label: 'NFL', emoji: '🏈' },
+  { key: 'soccer_fifa_world_cup', espn: 'soccer/fifa.world', label: 'World Cup', emoji: '⚽' },
+];
+
+// ESPN team displayName → odds API team name (only needed for mismatches)
+const ESPN_TO_ODDS = {
+  'Los Angeles Lakers': 'Los Angeles Lakers',
+  'LA Clippers': 'Los Angeles Clippers',
+  'USA': 'United States',
+  'Korea Republic': 'South Korea',
+  'IR Iran': 'Iran',
+};
+
+function normalizeTeamName(name) {
+  return (ESPN_TO_ODDS[name] || name).toLowerCase().trim();
+}
+
+async function fetchESPNGames(espnPath, dateStr) {
+  // dateStr: YYYYMMDD
+  try {
+    const r = await fetch(`${ESPN_BASE}/${espnPath}/scoreboard?dates=${dateStr}`);
+    if (!r.ok) return [];
+    const data = await r.json();
+    return data.events || [];
+  } catch(e) { return []; }
+}
+
+function parseESPNEvent(event, sport) {
+  try {
+    const comp  = event.competitions[0];
+    const teams = comp.competitors;
+    const home  = teams.find(t => t.homeAway === 'home') || teams[0];
+    const away  = teams.find(t => t.homeAway === 'away') || teams[1];
+    return {
+      id:             event.id,                           // ESPN id
+      espn_id:        event.id,
+      home_team:      home.team.displayName,
+      away_team:      away.team.displayName,
+      commence_time:  event.date,
+      status:         comp.status?.type?.name || '',
+      completed:      comp.status?.type?.completed || false,
+      home_score:     home.score || null,
+      away_score:     away.score || null,
+      sportKey:       sport.key,
+      sportLabel:     sport.label,
+      sportEmoji:     sport.emoji,
+      bookmakers:     [],  // filled in by odds overlay if available
+      _source:        'espn',
+    };
+  } catch(e) { return null; }
+}
+
+// ─────────────────────────────────────────
+// Main game loader — ESPN primary, odds overlay
 // ─────────────────────────────────────────
 async function loadAllGames() {
-  if (!oddsKey) return;
   document.getElementById('refresh-btn').classList.add('spinning');
   showLoading();
   allGames = [];
 
-  const viewDate = getViewDate();
-  const viewDateStr = viewDate.toDateString(); // local date string for client-side filtering
+  const dateStr = getViewDateISO().replace(/-/g, '');   // YYYYMMDD for ESPN
 
+  // ── Step 1: Load games from ESPN (always free) ──
+  let espnCount = 0;
+  for (const sport of ESPN_SPORTS) {
+    const events = await fetchESPNGames(sport.espn, dateStr);
+    for (const ev of events) {
+      const g = parseESPNEvent(ev, sport);
+      if (g) { allGames.push(g); espnCount++; }
+    }
+  }
+
+  document.getElementById('last-updated').textContent =
+    'Updated ' + new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
+
+  // Match predictions to ESPN games by team name (before odds overlay)
+  mergeModelPredictionsToGames();
+
+  // ── Step 2: Layer in odds from the-odds-api (only if key present + quota) ──
+  if (oddsKey) {
+    await overlayOdds();
+  } else {
+    document.getElementById('stat-requests').textContent = 'n/a';
+    showOddsSource('ESPN · no odds key');
+  }
+
+  document.getElementById('refresh-btn').classList.remove('spinning');
+  gamesCache[getViewDateISO()] = [...allGames];
+  renderGames();
+}
+
+function mergeModelPredictionsToGames() {
+  // predictions.json uses odds API game IDs, but we now load from ESPN.
+  // Match by normalizing home+away team names.
+  const predsByTeams = {};
+  for (const [id, pred] of Object.entries(modelPredictions)) {
+    const key = normalizeTeamName(pred.home_team) + '|' + normalizeTeamName(pred.away_team);
+    predsByTeams[key] = { ...pred, id };
+  }
+  for (const game of allGames) {
+    const key = normalizeTeamName(game.home_team) + '|' + normalizeTeamName(game.away_team);
+    const pred = predsByTeams[key];
+    if (pred) {
+      game.id = pred.id;   // adopt odds API id so modelPredictions[game.id] works in render
+    }
+  }
+}
+
+async function overlayOdds() {
+  const viewDateStr = getViewDate().toDateString();
   const books = document.getElementById('book-select').value || 'draftkings,fanduel,betmgm,caesars';
   let reqLeft = null;
+  let oddsLoaded = 0;
 
   for (const sport of SPORTS) {
     try {
       const url = `https://api.the-odds-api.com/v4/sports/${sport.key}/odds/?` +
-        `apiKey=${oddsKey}&regions=us&markets=h2h,spreads,totals&oddsFormat=american` +
-        `&bookmakers=${books}`;
-
+        `apiKey=${oddsKey}&regions=us&markets=h2h,spreads,totals&oddsFormat=american&bookmakers=${books}`;
       const res = await fetch(url);
-      if (res.status === 401) { showError('Invalid API key'); return; }
-      if (res.status === 422 || res.status === 404) continue;
+      if (res.status === 401) { toast('Odds API key invalid'); return; }
+      if (res.status === 429) { toast('Odds API quota reached — showing games from ESPN without odds'); return; }
       if (!res.ok) continue;
 
       const rem = res.headers.get('x-requests-remaining');
       if (rem) reqLeft = rem;
 
-      const games = await res.json();
-      // Filter client-side to the selected day (matches local timezone)
-      const dayGames = games.filter(g => new Date(g.commence_time).toDateString() === viewDateStr);
-      dayGames.forEach(g => allGames.push({
-        ...g, sportKey: sport.key, sportLabel: sport.label, sportEmoji: sport.emoji
-      }));
+      const oddsGames = await res.json();
+      const todayOdds = oddsGames.filter(g => new Date(g.commence_time).toDateString() === viewDateStr);
+
+      // Match odds to ESPN games by team name and inject bookmakers
+      for (const og of todayOdds) {
+        const key = normalizeTeamName(og.home_team) + '|' + normalizeTeamName(og.away_team);
+        const espnGame = allGames.find(g =>
+          normalizeTeamName(g.home_team) + '|' + normalizeTeamName(g.away_team) === key
+        );
+        if (espnGame) {
+          espnGame.bookmakers = og.bookmakers;
+          espnGame.id = og.id;   // use odds API id for prediction matching
+          oddsLoaded++;
+        }
+      }
     } catch(e) { console.error(sport.key, e); }
   }
 
   if (reqLeft !== null) document.getElementById('stat-requests').textContent = reqLeft;
-  document.getElementById('last-updated').textContent =
-    'Updated ' + new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
-  document.getElementById('refresh-btn').classList.remove('spinning');
+  const src = oddsLoaded > 0
+    ? `ESPN · odds via ${document.getElementById('book-select').value || 'DK/FD/BetMGM'}`
+    : 'ESPN · no odds available';
+  showOddsSource(src);
+}
 
-  // Store in cache so date/sport switches don't re-fetch
-  gamesCache[getViewDateISO()] = [...allGames];
-  renderGames();
+function showOddsSource(text) {
+  document.getElementById('last-updated').textContent = text + ' · ' +
+    new Date().toLocaleTimeString('en-US', { hour: '2-digit', minute: '2-digit' });
 }
 
 // ─────────────────────────────────────────
