@@ -315,6 +315,38 @@
     }
     #toast.show { opacity: 1; }
 
+    /* ── Justification expand/collapse ── */
+    .why-toggle {
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      margin-top: 8px;
+      cursor: pointer;
+      font-size: 0.72rem;
+      color: var(--muted);
+      user-select: none;
+      width: fit-content;
+    }
+    .why-toggle:hover { color: var(--blue); }
+    .why-arrow {
+      font-size: 0.6rem;
+      transition: transform 0.15s;
+      display: inline-block;
+    }
+    .why-body {
+      display: none;
+      margin-top: 6px;
+      padding: 8px 10px;
+      background: #f8fafc;
+      border-left: 3px solid var(--blue);
+      border-radius: 0 6px 6px 0;
+      font-size: 0.76rem;
+      color: var(--text);
+      line-height: 1.5;
+    }
+    .why-body.open { display: block; }
+    .why-arrow.open { transform: rotate(90deg); }
+
     @media (max-width: 640px) {
       main { padding: 16px; }
       .summary-bar { grid-template-columns: repeat(2, 1fr); }
@@ -925,7 +957,16 @@ function noVigProbs(market) {
 function americanToImpl(o) {
   return o > 0 ? 100 / (o + 100) : Math.abs(o) / (Math.abs(o) + 100);
 }
+function probToAmerican(p) {
+  if (p == null || p <= 0 || p >= 1) return null;
+  return p >= 0.5 ? Math.round(-(p / (1 - p)) * 100) : Math.round(((1 - p) / p) * 100);
+}
 function fmtOdds(o) { return o > 0 ? `+${o}` : `${o}`; }
+function fmtFairOdds(p) {
+  const o = probToAmerican(p);
+  if (o == null) return '—';
+  return `<span style="font-weight:600;color:var(--indigo)">${fmtOdds(o)}</span>`;
+}
 function fmtPct(p)  { return p != null ? (p * 100).toFixed(1) + '%' : '—'; }
 
 function renderCard(game, threshold) {
@@ -1028,7 +1069,8 @@ function renderCard(game, threshold) {
           </span>
           &nbsp;${pred.best_bet.team} ${fmtOdds(pred.best_bet.odds)}
           &nbsp;·&nbsp;EV ${pred.best_bet.ev >= 0 ? '+' : ''}${(pred.best_bet.ev*100).toFixed(1)}%
-        </div>` : ''}
+        </div>
+        ${pred.justification ? whyToggle(pred.justification) : ''}` : ''}
 
       ${book ? `<div style="margin-top:6px;font-size:0.68rem;color:var(--muted);text-align:right">via ${book.title}</div>` : ''}
     </div>
@@ -1189,11 +1231,30 @@ function renderSoccerCard(game, threshold) {
           </span>
           &nbsp;${pred.best_bet.team} ${pred.best_bet.odds?fmtOdds(pred.best_bet.odds):''}
           &nbsp;·&nbsp;EV ${pred.best_bet.ev>=0?'+':''}${pred.best_bet.ev!=null?(pred.best_bet.ev*100).toFixed(1)+'%':'—'}
-        </div>` : ''}
+        </div>
+        ${pred.justification ? whyToggle(pred.justification) : ''}` : ''}
 
       ${book ? `<div style="margin-top:6px;font-size:0.68rem;color:var(--muted);text-align:right">via ${book.title}</div>` : ''}
     </div>
   </div>`;
+}
+
+// ── Justification toggle helper ──
+let _whyId = 0;
+function whyToggle(text) {
+  const id = 'why-' + (++_whyId);
+  return `
+    <div class="why-toggle" onclick="toggleWhy('${id}')">
+      <span class="why-arrow" id="${id}-arrow">▶</span>
+      <span>Why is there an edge?</span>
+    </div>
+    <div class="why-body" id="${id}">${text}</div>`;
+}
+function toggleWhy(id) {
+  const body  = document.getElementById(id);
+  const arrow = document.getElementById(id + '-arrow');
+  body.classList.toggle('open');
+  arrow.classList.toggle('open');
 }
 
 // Auto-refresh odds once per hour — 3 sports × 6/hr × 24hr = 432 calls/day

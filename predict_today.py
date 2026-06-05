@@ -162,6 +162,94 @@ def fetch_games_from_espn(sport_key: str, target_date: str) -> list:
     return games
 
 
+def generate_justification(home: str, away: str, feat: dict,
+                            model_home_prob: float, best_bet: dict,
+                            sport: str, extra: dict = None) -> str:
+    """
+    Generate a 1-2 sentence human-readable justification for why the model
+    sees an edge. Pulls the most important feature drivers from feat dict.
+    Only called when best_bet is not None (i.e., edge >= 3%).
+    extra: sport-specific data (e.g. pitcher names/ERA for MLB, ELO for soccer)
+    """
+    if best_bet is None:
+        return ""
+
+    side      = best_bet["side"]
+    edge_pct  = round(best_bet["edge"] * 100, 1)
+    fav_team  = home if side == "home" else away
+    dog_team  = away if side == "home" else home
+    prefix    = "home" if side == "home" else "away"
+    opp_pfx   = "away" if side == "home" else "home"
+
+    parts = []
+
+    if sport in ("basketball_nba", "baseball_mlb"):
+        # Recent form (win %)
+        wp_fav  = feat.get(f"{prefix}_win_pct_10g")
+        wp_dog  = feat.get(f"{opp_pfx}_win_pct_10g")
+        if wp_fav is not None and wp_dog is not None and str(wp_fav) != "nan":
+            w_fav = round(wp_fav * 10)
+            w_dog = round(wp_dog * 10)
+            parts.append(f"{fav_team} are {w_fav}-{10-w_fav} in their last 10 ({dog_team} {w_dog}-{10-w_dog})")
+
+        # Run/point differential
+        diff_key = f"{prefix}_point_diff_avg_10g" if sport == "basketball_nba" else f"{prefix}_run_diff_avg_10g"
+        opp_diff_key = f"{opp_pfx}_point_diff_avg_10g" if sport == "basketball_nba" else f"{opp_pfx}_run_diff_avg_10g"
+        d_fav = feat.get(diff_key)
+        d_dog = feat.get(opp_diff_key)
+        unit  = "point" if sport == "basketball_nba" else "run"
+        if d_fav is not None and str(d_fav) != "nan" and d_dog is not None:
+            parts.append(f"{fav_team}'s avg {unit} differential is {d_fav:+.1f} vs {dog_team}'s {d_dog:+.1f} over the last 10 games")
+
+        # Rest advantage (if meaningful)
+        rest = feat.get("rest_advantage", 0) or 0
+        if side == "away":
+            rest = -rest
+        if abs(rest) >= 1:
+            rested = fav_team if rest > 0 else dog_team
+            tired  = dog_team if rest > 0 else fav_team
+            parts.append(f"{rested} have a {abs(int(rest))}-day rest edge over {tired}")
+
+        # MLB pitcher matchup
+        if sport == "baseball_mlb" and extra:
+            h_pitcher = extra.get("home_pitcher")
+            a_pitcher = extra.get("away_pitcher")
+            h_era     = extra.get("home_era")
+            a_era     = extra.get("away_era")
+            fav_p     = h_pitcher if side == "home" else a_pitcher
+            dog_p     = a_pitcher if side == "home" else h_pitcher
+            fav_era   = h_era     if side == "home" else a_era
+            dog_era   = a_era     if side == "home" else h_era
+            if fav_p and dog_p and fav_era and dog_era:
+                era_diff = round(dog_era - fav_era, 2)
+                if era_diff >= 0.5:
+                    parts.append(f"{fav_p} (ERA {fav_era}) has a meaningful ERA advantage over {dog_p} (ERA {dog_era})")
+
+    elif sport == "soccer_fifa_world_cup":
+        # ELO advantage
+        h_elo = feat.get("home_elo_pre")
+        a_elo = feat.get("away_elo_pre")
+        fav_elo = h_elo if side == "home" else a_elo
+        dog_elo = a_elo if side == "home" else h_elo
+        if fav_elo and dog_elo:
+            elo_gap = round(fav_elo - dog_elo)
+            if elo_gap > 30:
+                parts.append(f"{fav_team} hold a {elo_gap}-point ELO advantage ({round(fav_elo)} vs {round(dog_elo)})")
+
+        # Recent form
+        wp_fav = feat.get(f"{'home' if side=='home' else 'away'}_win_pct_10g")
+        wp_dog = feat.get(f"{'away' if side=='home' else 'home'}_win_pct_10g")
+        if wp_fav is not None and str(wp_fav) != "nan":
+            w_fav = round(wp_fav * 10)
+            parts.append(f"{fav_team} have won {w_fav} of their last 10 internationals")
+
+    # Market vs model summary
+    mkt_implied = round((1 - best_bet["edge"] - best_bet.get("ev", 0) / (1 / best_bet["edge"] - 1 if best_bet["edge"] < 1 else 1)) * 100, 1) if parts else None
+    parts.append(f"Model prices {fav_team} at {round(model_home_prob*100 if side=='home' else (1-model_home_prob)*100, 1)}% — a +{edge_pct}% edge over the market line")
+
+    return ". ".join(parts[:3]) + "."
+
+
 def build_game_prediction(game: dict, model_home_prob,
                            home_odds: float | None, away_odds: float | None,
                            sport: str, sport_label: str) -> dict:
@@ -314,6 +402,11 @@ def predict_nba(api_key: str, target_date: str) -> list:
             best_line(game, "home"), best_line(game, "away"),
             "basketball_nba", "NBA"
         )
+        if pred.get("best_bet") and feat:
+            pred["justification"] = generate_justification(
+                home_api, away_api, feat, float(prob_home),
+                pred["best_bet"], "basketball_nba"
+            )
         results.append(pred)
         print(f"  {away_api} @ {home_api}: model={pred['model_home_prob']} edge={pred['home_edge']}")
 
@@ -423,6 +516,17 @@ def predict_mlb(api_key: str, target_date: str) -> list:
         )
         pred["home_pitcher"] = home_pitcher_name
         pred["away_pitcher"] = away_pitcher_name
+        if pred.get("best_bet") and feat:
+            home_era = pitcher_stats.get(home_api, {}).get("era")
+            away_era = pitcher_stats.get(away_api, {}).get("era")
+            pred["justification"] = generate_justification(
+                home_api, away_api, feat, float(prob_home),
+                pred["best_bet"], "baseball_mlb",
+                extra={
+                    "home_pitcher": home_pitcher_name, "away_pitcher": away_pitcher_name,
+                    "home_era": home_era, "away_era": away_era,
+                }
+            )
         results.append(pred)
         print(f"  {away_api}({away_pitcher_name}) @ {home_api}({home_pitcher_name}): "
               f"model={pred['model_home_prob']} edge={pred['home_edge']}")
@@ -596,6 +700,12 @@ def predict_soccer(api_key: str, target_date: str) -> list:
             "home_elo": round(home_elo), "away_elo": round(away_elo),
             "best_bet": best_bet,
         }
+        if best_bet:
+            side_prob = p_home if best_bet["side"]=="home" else (p_draw if best_bet["side"]=="draw" else p_away)
+            pred["justification"] = generate_justification(
+                home_api, away_api, feat, side_prob,
+                best_bet, "soccer_fifa_world_cup"
+            )
         results.append(pred)
         print(f"  {away_api}({round(away_elo)}) @ {home_api}({round(home_elo)}): "
               f"H{p_home:.0%}/D{p_draw:.0%}/A{p_away:.0%} "
