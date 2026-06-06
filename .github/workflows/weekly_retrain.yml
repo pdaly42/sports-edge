@@ -1,0 +1,43 @@
+name: Weekly Model Retrain
+
+on:
+  schedule:
+    - cron: '0 8 * * 1'   # Every Monday 8am UTC (4am ET)
+  workflow_dispatch: {}    # Allow manual trigger
+
+permissions:
+  contents: write
+
+jobs:
+  retrain:
+    runs-on: ubuntu-latest
+    env:
+      FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Delete stale model files to force full retrain
+        run: |
+          rm -f models/mlb_xgb_model.pkl
+          rm -f models/nba_xgb_model.pkl
+          echo "Stale models removed — will retrain with all data through current season"
+
+      - name: Retrain models with current season data
+        run: python3 scripts/train_if_needed.py
+
+      - name: Commit updated models
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add models/mlb_xgb_model.pkl models/nba_xgb_model.pkl
+          git diff --staged --quiet || git commit -m "retrain: weekly model update $(date -u '+%Y-%m-%d')"
+          git push

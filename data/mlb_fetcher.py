@@ -151,6 +151,15 @@ def build_team_game_log(seasons: list) -> pd.DataFrame:
         log[f"run_diff_avg_{window}g"]     = rolling_avg(log, "run_diff",     window)
 
     log["days_rest"] = days_rest(log)
+
+    # Cumulative season stats (shifted — no current-game leakage)
+    g = log.groupby(["team", "season"])
+    games_before      = g.cumcount()                                # 0 = first game
+    wins_before       = g["win"].cumsum().shift(1).fillna(0)
+    run_diff_before   = g["run_diff"].cumsum().shift(1).fillna(0)
+    log["season_win_pct"]       = (wins_before / games_before.clip(lower=1)).where(games_before > 0, 0.5)
+    log["season_run_diff_avg"]  = (run_diff_before / games_before.clip(lower=1)).where(games_before > 0, 0.0)
+
     return log
 
 
@@ -175,7 +184,8 @@ def build_matchup_features(seasons: list) -> pd.DataFrame:
     away_log = log[log["is_home"] == 0].copy()
 
     stat_cols = [c for c in log.columns if any(
-        c.startswith(p) for p in ["win_pct", "runs_for_avg", "runs_against_avg", "run_diff_avg"]
+        c.startswith(p) for p in ["win_pct", "runs_for_avg", "runs_against_avg", "run_diff_avg",
+                                   "season_win_pct", "season_run_diff_avg"]
     )] + ["days_rest"]
 
     pitcher_base_cols = ["win_pitcher", "loss_pitcher"]
@@ -201,6 +211,10 @@ def build_matchup_features(seasons: list) -> pd.DataFrame:
             matchups[f"home_run_diff_avg_{window}g"] - matchups[f"away_run_diff_avg_{window}g"])
 
     matchups["rest_advantage"] = matchups["home_days_rest"] - matchups["away_days_rest"]
+
+    # Season-level differential features
+    matchups["season_win_pct_diff"]      = matchups["home_season_win_pct"]      - matchups["away_season_win_pct"]
+    matchups["season_run_diff_avg_diff"] = matchups["home_season_run_diff_avg"] - matchups["away_season_run_diff_avg"]
 
     # ── Add pitcher features ──────────────────────────────────────
     # The Win pitcher is the home team's starter when home won (and vice versa)

@@ -22,6 +22,7 @@ MODELS_DIR.mkdir(parents=True, exist_ok=True)
 FEATURE_PATTERNS = [
     "win_pct_diff",
     "point_diff_diff",
+    "run_diff_diff",
     "rest_advantage",
     "home_win_pct",
     "away_win_pct",
@@ -33,6 +34,21 @@ FEATURE_PATTERNS = [
     "away_pts_against",
     "home_days_rest",
     "away_days_rest",
+    "home_season_win_pct",
+    "away_season_win_pct",
+    "home_season_run_diff_avg",
+    "away_season_run_diff_avg",
+    "season_win_pct_diff",
+    "season_run_diff_avg_diff",
+    "home_starter_era",
+    "away_starter_era",
+    "home_starter_whip",
+    "away_starter_whip",
+    "home_starter_k_per_9",
+    "away_starter_k_per_9",
+    "starter_era_diff",
+    "starter_whip_diff",
+    "starter_k9_diff",
 ]
 
 

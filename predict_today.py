@@ -504,7 +504,8 @@ def predict_mlb(api_key: str, target_date: str) -> list:
     stats = build_team_game_log(list(range(2023, 2026)))
     latest = stats.sort_values("date").groupby("team").last().reset_index()
     stat_cols = [c for c in latest.columns if any(
-        c.startswith(p) for p in ["win_pct", "runs_for_avg", "runs_against_avg", "run_diff_avg"]
+        c.startswith(p) for p in ["win_pct", "runs_for_avg", "runs_against_avg", "run_diff_avg",
+                                   "season_win_pct", "season_run_diff_avg"]
     )] + ["days_rest"]
 
     # Today's probable pitchers from MLB Stats API (free, no key)
@@ -540,6 +541,8 @@ def predict_mlb(api_key: str, target_date: str) -> list:
                     feat[f"win_pct_diff_{w}g"] = h.get(f"win_pct_{w}g", np.nan) - a.get(f"win_pct_{w}g", np.nan)
                     feat[f"run_diff_diff_{w}g"] = h.get(f"run_diff_avg_{w}g", np.nan) - a.get(f"run_diff_avg_{w}g", np.nan)
                 feat["rest_advantage"] = h.get("days_rest", 0) - a.get("days_rest", 0)
+                feat["season_win_pct_diff"]      = h.get("season_win_pct", 0.5) - a.get("season_win_pct", 0.5)
+                feat["season_run_diff_avg_diff"] = h.get("season_run_diff_avg", 0.0) - a.get("season_run_diff_avg", 0.0)
 
                 # Starting pitcher stats
                 home_p = pitcher_stats_or_median(pitcher_stats.get(home_api))
