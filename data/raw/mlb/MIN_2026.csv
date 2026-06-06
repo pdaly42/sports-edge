@@ -1,0 +1,66 @@
+date,season,team,opponent,runs_for,runs_against,is_home,win,win_pitcher,loss_pitcher,run_diff
+2026-03-26,2026,MIN,BAL,1.0,2.0,0,0,Rogers,Funderburk,-1.0
+2026-03-28,2026,MIN,BAL,4.0,1.0,0,1,Banda,Bradish,3.0
+2026-03-29,2026,MIN,BAL,6.0,8.0,0,0,Garcia,Abel,-2.0
+2026-03-30,2026,MIN,KCR,1.0,3.0,0,0,Bubic,Woods Richardson,-2.0
+2026-04-01,2026,MIN,KCR,9.0,13.0,0,0,Cameron,Ryan,-4.0
+2026-04-02,2026,MIN,KCR,5.0,1.0,0,1,Bradley,Ragans,4.0
+2026-04-03,2026,MIN,TBR,10.0,4.0,1,1,Funderburk,Kelly,6.0
+2026-04-04,2026,MIN,TBR,1.0,7.0,1,0,Matz,Abel,-6.0
+2026-04-05,2026,MIN,TBR,1.0,4.0,1,0,Baker,Topa,-3.0
+2026-04-06,2026,MIN,DET,7.0,3.0,1,1,Ryan,Mize,4.0
+2026-04-07,2026,MIN,DET,4.0,2.0,1,1,Bradley,Skubal,2.0
+2026-04-08,2026,MIN,DET,8.0,6.0,1,1,Ober,Valdez,2.0
+2026-04-09,2026,MIN,DET,3.0,1.0,1,1,Acton,Vest,2.0
+2026-04-10,2026,MIN,TOR,4.0,10.0,0,0,Mantiply,Woods Richardson,-6.0
+2026-04-11,2026,MIN,TOR,7.0,4.0,0,1,Ryan,Lauer,3.0
+2026-04-12,2026,MIN,TOR,8.0,2.0,0,1,Bradley,Scherzer,6.0
+2026-04-13,2026,MIN,BOS,13.0,6.0,1,1,Ober,Crochet,7.0
+2026-04-14,2026,MIN,BOS,6.0,0.0,1,1,Abel,Gray,6.0
+2026-04-15,2026,MIN,BOS,5.0,9.0,1,0,Early,Woods Richardson,-4.0
+2026-04-17,2026,MIN,CIN,1.0,2.0,1,0,Williamson,Ryan,-1.0
+2026-04-18,2026,MIN,CIN,4.0,5.0,1,0,Nicolas,Sands,-1.0
+2026-04-19,2026,MIN,CIN,4.0,7.0,1,0,Pagán,Acton,-3.0
+2026-04-21,2026,MIN,NYM,5.0,3.0,0,1,Sands,Williams,2.0
+2026-04-22,2026,MIN,NYM,2.0,3.0,0,0,Weaver,Rogers,-1.0
+2026-04-23,2026,MIN,NYM,8.0,10.0,0,0,Williams,Morris,-2.0
+2026-04-24,2026,MIN,TBR,2.0,6.0,0,0,Rasmussen,Bradley,-4.0
+2026-04-25,2026,MIN,TBR,1.0,6.0,0,0,McClanahan,Ober,-5.0
+2026-04-26,2026,MIN,TBR,2.0,4.0,0,0,Scholtens,Woods Richardson,-2.0
+2026-04-27,2026,MIN,SEA,11.0,4.0,1,1,Prielipp,Castillo,7.0
+2026-04-28,2026,MIN,SEA,1.0,7.0,1,0,Bazardo,Ryan,-6.0
+2026-04-29,2026,MIN,SEA,3.0,5.0,1,0,Criswell,Orze,-2.0
+2026-04-30,2026,MIN,TOR,7.0,1.0,1,1,Ober,Gausman,6.0
+2026-05-01,2026,MIN,TOR,3.0,7.0,1,0,Corbin,Woods Richardson,-4.0
+2026-05-02,2026,MIN,TOR,4.0,11.0,1,0,Cease,Garcia,-7.0
+2026-05-03,2026,MIN,TOR,4.0,3.0,1,1,Morris,Yesavage,1.0
+2026-05-05,2026,MIN,WSN,11.0,3.0,0,1,Bradley,Cavalli,8.0
+2026-05-06,2026,MIN,WSN,2.0,15.0,0,0,Mikolas,Ober,-13.0
+2026-05-07,2026,MIN,WSN,5.0,7.0,0,0,Poulin,Klein,-2.0
+2026-05-08,2026,MIN,CLE,4.0,6.0,0,0,Messick,Prielipp,-2.0
+2026-05-09,2026,MIN,CLE,2.0,1.0,0,1,Orze,Pallette,1.0
+2026-05-10,2026,MIN,CLE,5.0,4.0,0,1,Rojas,Williams,1.0
+2026-05-12,2026,MIN,MIA,3.0,0.0,1,1,Ober,Pérez,3.0
+2026-05-13,2026,MIN,MIA,5.0,9.0,1,0,Meyer,Woods Richardson,-4.0
+2026-05-14,2026,MIN,MIA,9.0,1.0,1,1,Matthews,Garrett,8.0
+2026-05-15,2026,MIN,MIL,2.0,3.0,1,0,Ashby,Morris,-1.0
+2026-05-16,2026,MIN,MIL,1.0,2.0,1,0,Henderson,Prielipp,-1.0
+2026-05-17,2026,MIN,MIL,5.0,4.0,1,1,Ober,Anderson,1.0
+2026-05-18,2026,MIN,HOU,6.0,3.0,1,1,Orze,Imai,3.0
+2026-05-19,2026,MIN,HOU,1.0,2.0,1,0,Alexander,Matthews,-1.0
+2026-05-20,2026,MIN,HOU,4.0,1.0,1,1,Ryan,Burrows,3.0
+2026-05-22,2026,MIN,BOS,8.0,6.0,0,1,Adams,Slaten,2.0
+2026-05-23,2026,MIN,BOS,4.0,2.0,0,1,Bradley,Morán,2.0
+2026-05-24,2026,MIN,BOS,6.0,5.0,0,1,Ober,Guerrero,1.0
+2026-05-25,2026,MIN,CHW,1.0,3.0,0,0,Kay,Matthews,-2.0
+2026-05-26,2026,MIN,CHW,5.0,3.0,0,1,Rogers,Davis,2.0
+2026-05-27,2026,MIN,CHW,2.0,15.0,0,0,Sandlin,Prielipp,-13.0
+2026-05-28,2026,MIN,CHW,2.0,6.0,0,0,Martin,Woods Richardson,-4.0
+2026-05-29,2026,MIN,PIT,5.0,6.0,0,0,Soto,Rogers,-1.0
+2026-05-30,2026,MIN,PIT,9.0,10.0,0,0,Ramírez,Ober,-1.0
+2026-05-31,2026,MIN,PIT,3.0,9.0,0,0,Ashcraft,Matthews,-6.0
+2026-06-01,2026,MIN,CHW,9.0,6.0,1,1,Ryan,Sandlin,3.0
+2026-06-02,2026,MIN,CHW,6.0,4.0,1,1,Prielipp,Martin,2.0
+2026-06-03,2026,MIN,CHW,0.0,8.0,1,0,Fedde,Bradley,-8.0
+2026-06-04,2026,MIN,KCR,6.0,8.0,1,0,Strahm,Rogers,-2.0
+2026-06-05,2026,MIN,KCR,5.0,3.0,1,1,Matthews,Wacha,2.0
