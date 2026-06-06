@@ -22,6 +22,7 @@ from pathlib import Path
 
 from config.settings import RAW_DIR
 from models.trainer import load_model, predict_proba
+from data.bovada_odds import fetch_bovada_odds
 from utils.odds import remove_vig, expected_value, kelly_fraction as kelly_calc
 
 # ─────────────────────────────────────────────────────────────
@@ -30,44 +31,43 @@ from utils.odds import remove_vig, expected_value, kelly_fraction as kelly_calc
 
 def fetch_odds(api_key: str, sport_key: str, target_date: str) -> list:
     """
-    Fetch all games + odds for a sport/date from the-odds-api.com.
-    Returns empty list (instead of raising) on quota exhaustion or auth failure
-    so the pipeline can still write model probabilities without odds.
+    Fetch all games + odds for a sport/date.
+    Tries the-odds-api.com first; falls back to Bovada (free, no key) on quota
+    exhaustion, auth failure, or missing key.
     """
-    if not api_key:
-        print(f"  {sport_key}: no API key — skipping odds fetch")
-        return []
+    if api_key:
+        url = f"https://api.the-odds-api.com/v4/sports/{sport_key}/odds/"
+        params = {
+            "apiKey":     api_key,
+            "regions":    "us",
+            "markets":    "h2h,spreads,totals",
+            "oddsFormat": "american",
+            "bookmakers": "draftkings,fanduel,betmgm,caesars",
+        }
+        try:
+            resp = requests.get(url, params=params, timeout=15)
+        except Exception as e:
+            print(f"  {sport_key}: network error — {e}")
+            resp = None
 
-    url = f"https://api.the-odds-api.com/v4/sports/{sport_key}/odds/"
-    params = {
-        "apiKey":     api_key,
-        "regions":    "us",
-        "markets":    "h2h,spreads,totals",
-        "oddsFormat": "american",
-        "bookmakers": "draftkings,fanduel,betmgm,caesars",
-    }
-    try:
-        resp = requests.get(url, params=params, timeout=15)
-    except Exception as e:
-        print(f"  {sport_key}: network error — {e}")
-        return []
+        if resp is not None and resp.ok:
+            print(f"  Requests remaining: {resp.headers.get('x-requests-remaining', '?')}")
+            all_games = resp.json()
+            return [g for g in all_games if g["commence_time"][:10] == target_date]
 
-    if resp.status_code == 401:
-        print(f"  {sport_key}: odds API quota exhausted or key invalid (401) — skipping odds")
-        return []
-    if resp.status_code == 429:
-        print(f"  {sport_key}: odds API rate limited (429) — skipping odds")
-        return []
-    if resp.status_code == 422:
-        print(f"  {sport_key}: not in season")
-        return []
-    if not resp.ok:
-        print(f"  {sport_key}: odds API error {resp.status_code} — skipping odds")
-        return []
+        if resp is not None:
+            code = resp.status_code
+            if code == 422:
+                print(f"  {sport_key}: not in season")
+                return []
+            print(f"  {sport_key}: odds API returned {code} — falling back to Bovada")
+    else:
+        print(f"  {sport_key}: no API key — using Bovada (free)")
 
-    print(f"  Requests remaining: {resp.headers.get('x-requests-remaining', '?')}")
-    all_games = resp.json()
-    return [g for g in all_games if g["commence_time"][:10] == target_date]
+    games = fetch_bovada_odds(sport_key, target_date)
+    if not games:
+        print(f"  {sport_key}: Bovada returned no games for {target_date}")
+    return games
 
 
 def best_line(game: dict, side: str) -> float | None:

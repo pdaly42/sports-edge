@@ -824,8 +824,9 @@ async function loadAllGames() {
 }
 
 function mergeModelPredictionsToGames() {
-  // predictions.json uses odds API game IDs, but we now load from ESPN.
-  // Match by normalizing home+away team names.
+  // Match predictions to ESPN games by team name, then inject Bovada odds from
+  // the predictions JSON as a synthetic bookmaker so the odds table renders
+  // without needing an odds API key.
   const predsByTeams = {};
   for (const [id, pred] of Object.entries(modelPredictions)) {
     const key = normalizeTeamName(pred.home_team) + '|' + normalizeTeamName(pred.away_team);
@@ -834,8 +835,33 @@ function mergeModelPredictionsToGames() {
   for (const game of allGames) {
     const key = normalizeTeamName(game.home_team) + '|' + normalizeTeamName(game.away_team);
     const pred = predsByTeams[key];
-    if (pred) {
-      game.id = pred.id;   // adopt odds API id so modelPredictions[game.id] works in render
+    if (!pred) continue;
+    game.id = pred.id;
+
+    // Only inject if no real bookmaker data is present
+    if (game.bookmakers && game.bookmakers.length > 0) continue;
+
+    const markets = [];
+    if (pred.home_odds != null && pred.away_odds != null) {
+      markets.push({ key: 'h2h', outcomes: [
+        { name: game.home_team, price: pred.home_odds },
+        { name: game.away_team, price: pred.away_odds },
+      ]});
+    }
+    if (pred.spread?.point != null) {
+      markets.push({ key: 'spreads', outcomes: [
+        { name: game.home_team, price: pred.spread.price, point: pred.spread.point },
+        { name: game.away_team, price: pred.spread.price > 0 ? -(pred.spread.price) : Math.abs(pred.spread.price), point: -pred.spread.point },
+      ]});
+    }
+    if (pred.total?.line != null) {
+      markets.push({ key: 'totals', outcomes: [
+        { name: 'Over',  price: pred.total.over,  point: pred.total.line },
+        { name: 'Under', price: pred.total.under, point: pred.total.line },
+      ]});
+    }
+    if (markets.length > 0) {
+      game.bookmakers = [{ key: 'bovada', title: 'Bovada', markets }];
     }
   }
 }
