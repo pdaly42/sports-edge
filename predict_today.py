@@ -162,6 +162,37 @@ def fetch_games_from_espn(sport_key: str, target_date: str) -> list:
     return games
 
 
+def fetch_mlb_team_records() -> dict:
+    """
+    Fetch live MLB standings from the MLB Stats API.
+    Returns dict keyed by full team name → {wins, losses, last10_w, last10_l}.
+    """
+    url = "https://statsapi.mlb.com/api/v1/standings?leagueId=103,104&season=2026&standingsTypes=regularSeason"
+    try:
+        r = requests.get(url, timeout=10)
+        if not r.ok:
+            return {}
+        records = {}
+        for division in r.json().get("records", []):
+            for t in division.get("teamRecords", []):
+                name = t["team"]["name"]
+                last10 = next(
+                    (s for s in t.get("records", {}).get("splitRecords", []) if s["type"] == "lastTen"),
+                    None
+                )
+                records[name] = {
+                    "wins":     t["wins"],
+                    "losses":   t["losses"],
+                    "last10_w": last10["wins"]   if last10 else None,
+                    "last10_l": last10["losses"] if last10 else None,
+                }
+        print(f"  Fetched live records for {len(records)} MLB teams")
+        return records
+    except Exception as e:
+        print(f"  Could not fetch MLB standings: {e}")
+        return {}
+
+
 def generate_justification(home: str, away: str, feat: dict,
                             model_home_prob: float, best_bet: dict,
                             sport: str, extra: dict = None) -> str:
@@ -184,13 +215,33 @@ def generate_justification(home: str, away: str, feat: dict,
     parts = []
 
     if sport in ("basketball_nba", "baseball_mlb"):
-        # Recent form (win %)
-        wp_fav  = feat.get(f"{prefix}_win_pct_10g")
-        wp_dog  = feat.get(f"{opp_pfx}_win_pct_10g")
-        if wp_fav is not None and wp_dog is not None and str(wp_fav) != "nan":
-            w_fav = round(wp_fav * 10)
-            w_dog = round(wp_dog * 10)
-            parts.append(f"{fav_team} are {w_fav}-{10-w_fav} in their last 10 ({dog_team} {w_dog}-{10-w_dog})")
+
+        # Live recent form from standings API
+        if extra:
+            team_records = extra.get("team_records", {})
+            # Standings API uses short names (e.g. "Royals"); match by substring
+            def _lookup_rec(full_name):
+                if full_name in team_records:
+                    return team_records[full_name]
+                for short, rec in team_records.items():
+                    if short in full_name:
+                        return rec
+                return None
+            fav_rec = _lookup_rec(fav_team)
+            dog_rec = _lookup_rec(dog_team)
+            if fav_rec and dog_rec:
+                fav_l10_w = fav_rec.get("last10_w")
+                fav_l10_l = fav_rec.get("last10_l")
+                dog_l10_w = dog_rec.get("last10_w")
+                dog_l10_l = dog_rec.get("last10_l")
+                fav_season = f"{fav_rec['wins']}-{fav_rec['losses']}"
+                dog_season = f"{dog_rec['wins']}-{dog_rec['losses']}"
+                if fav_l10_w is not None and dog_l10_w is not None:
+                    parts.append(
+                        f"{fav_team} are {fav_l10_w}-{fav_l10_l} in their last 10 "
+                        f"({dog_team} {dog_l10_w}-{dog_l10_l}); "
+                        f"season records {fav_season} vs {dog_season}"
+                    )
 
         # Run/point differential
         diff_key = f"{prefix}_point_diff_avg_10g" if sport == "basketball_nba" else f"{prefix}_run_diff_avg_10g"
@@ -460,6 +511,9 @@ def predict_mlb(api_key: str, target_date: str) -> list:
     print("  Fetching probable pitchers from MLB Stats API...")
     pitcher_stats = get_probable_pitcher_stats(target_date)
 
+    # Live team records and last-10 from MLB Stats API
+    team_records = fetch_mlb_team_records()
+
     bundle = load_model(sport="mlb", model_type="xgb")
     results = []
 
@@ -523,8 +577,9 @@ def predict_mlb(api_key: str, target_date: str) -> list:
                 home_api, away_api, feat, float(prob_home),
                 pred["best_bet"], "baseball_mlb",
                 extra={
-                    "home_pitcher": home_pitcher_name, "away_pitcher": away_pitcher_name,
-                    "home_era": home_era, "away_era": away_era,
+                    "home_pitcher":  home_pitcher_name, "away_pitcher": away_pitcher_name,
+                    "home_era":      home_era,          "away_era":     away_era,
+                    "team_records":  team_records,
                 }
             )
         results.append(pred)

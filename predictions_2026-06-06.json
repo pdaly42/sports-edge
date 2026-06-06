@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-06T12:39:52.138011+00:00",
+  "generated_at": "2026-06-06T12:56:10.762151+00:00",
   "date": "2026-06-06",
   "games": [
     {
@@ -9,8 +9,8 @@
       "commence_time": "2026-06-06T17:10:00+00:00",
       "home_team": "Detroit Tigers",
       "away_team": "Seattle Mariners",
-      "home_odds": 113,
-      "away_odds": -135,
+      "home_odds": 114,
+      "away_odds": -136,
       "spread": {
         "point": 1.5,
         "price": -145
@@ -22,25 +22,25 @@
       },
       "model_home_prob": 0.4936,
       "model_away_prob": 0.5064,
-      "home_no_vig_prob": 0.4497,
-      "away_no_vig_prob": 0.5503,
-      "home_edge": 0.0439,
-      "away_edge": -0.0439,
-      "home_ev": 0.0514,
-      "away_ev": -0.1185,
-      "home_kelly": 0.0114,
+      "home_no_vig_prob": 0.4478,
+      "away_no_vig_prob": 0.5522,
+      "home_edge": 0.0458,
+      "away_edge": -0.0458,
+      "home_ev": 0.0563,
+      "away_ev": -0.1212,
+      "home_kelly": 0.0123,
       "away_kelly": 0.0,
       "best_bet": {
         "side": "home",
         "team": "Detroit Tigers",
-        "odds": 113,
-        "edge": 0.0439,
-        "ev": 0.0514,
+        "odds": 114,
+        "edge": 0.0458,
+        "ev": 0.0563,
         "strength": "moderate"
       },
       "home_pitcher": "Keider Montero",
       "away_pitcher": "Bryce Miller",
-      "justification": "Detroit Tigers are 1-9 in their last 10 (Seattle Mariners 8-2). Detroit Tigers's avg run differential is -2.8 vs Seattle Mariners's +2.8 over the last 10 games. Model prices Detroit Tigers at 49.4% \u2014 a +4.4% edge over the market line."
+      "justification": "Detroit Tigers are 5-5 in their last 10 (Seattle Mariners 8-2); season records 26-38 vs 33-31. Detroit Tigers's avg run differential is -2.8 vs Seattle Mariners's +2.8 over the last 10 games. Model prices Detroit Tigers at 49.4% \u2014 a +4.6% edge over the market line."
     },
     {
       "id": "bovada_baseball_mlb_Kansas_City_Royals_Minnesota_Twins",
@@ -80,7 +80,7 @@
       },
       "home_pitcher": "Joe Ryan",
       "away_pitcher": "Luinder Avila",
-      "justification": "Kansas City Royals are 5-5 in their last 10 (Minnesota Twins 4-6). Kansas City Royals's avg run differential is +1.7 vs Minnesota Twins's +0.2 over the last 10 games. Model prices Kansas City Royals at 50.1% \u2014 a +8.4% edge over the market line."
+      "justification": "Kansas City Royals are 3-7 in their last 10 (Minnesota Twins 3-7); season records 25-39 vs 30-35. Kansas City Royals's avg run differential is +1.7 vs Minnesota Twins's +0.2 over the last 10 games. Model prices Kansas City Royals at 50.1% \u2014 a +8.4% edge over the market line."
     },
     {
       "id": "bovada_baseball_mlb_Cincinnati_Reds_St._Louis_Cardinals",
@@ -128,9 +128,9 @@
         "price": 145
       },
       "total": {
-        "line": 8.5,
-        "over": 105,
-        "under": -125
+        "line": 7.5,
+        "over": -115,
+        "under": -105
       },
       "model_home_prob": 0.5523,
       "model_away_prob": 0.4477,
@@ -185,8 +185,8 @@
       "commence_time": "2026-06-06T20:05:00+00:00",
       "home_team": "Philadelphia Phillies",
       "away_team": "Chicago White Sox",
-      "home_odds": -135,
-      "away_odds": 113,
+      "home_odds": -134,
+      "away_odds": 112,
       "spread": {
         "point": -1.5,
         "price": 150
@@ -198,25 +198,25 @@
       },
       "model_home_prob": 0.5071,
       "model_away_prob": 0.4929,
-      "home_no_vig_prob": 0.5503,
-      "away_no_vig_prob": 0.4497,
-      "home_edge": -0.0432,
-      "away_edge": 0.0432,
-      "home_ev": -0.1173,
-      "away_ev": 0.0499,
+      "home_no_vig_prob": 0.5483,
+      "away_no_vig_prob": 0.4517,
+      "home_edge": -0.0412,
+      "away_edge": 0.0412,
+      "home_ev": -0.1145,
+      "away_ev": 0.0449,
       "home_kelly": 0.0,
-      "away_kelly": 0.011,
+      "away_kelly": 0.01,
       "best_bet": {
         "side": "away",
         "team": "Chicago White Sox",
-        "odds": 113,
-        "edge": 0.0432,
-        "ev": 0.0499,
+        "odds": 112,
+        "edge": 0.0412,
+        "ev": 0.0449,
         "strength": "moderate"
       },
       "home_pitcher": "Andrew Painter",
       "away_pitcher": "Brandon Eisert",
-      "justification": "Chicago White Sox are 2-8 in their last 10 (Philadelphia Phillies 6-4). Chicago White Sox's avg run differential is -1.9 vs Philadelphia Phillies's +0.9 over the last 10 games. Brandon Eisert (ERA 3.55) has a meaningful ERA advantage over Andrew Painter (ERA 5.74)."
+      "justification": "Chicago White Sox are 6-4 in their last 10 (Philadelphia Phillies 8-2); season records 33-30 vs 34-29. Chicago White Sox's avg run differential is -1.9 vs Philadelphia Phillies's +0.9 over the last 10 games. Brandon Eisert (ERA 3.55) has a meaningful ERA advantage over Andrew Painter (ERA 5.74)."
     },
     {
       "id": "bovada_baseball_mlb_Athletics_Houston_Astros",
@@ -256,7 +256,7 @@
       },
       "home_pitcher": "Tatsuya Imai",
       "away_pitcher": "TBD",
-      "justification": "Houston Astros are 4-6 in their last 10 (Athletics 4-6). Houston Astros's avg run differential is -0.8 vs Athletics's -2.3 over the last 10 games. Model prices Houston Astros at 55.2% \u2014 a +5.2% edge over the market line."
+      "justification": "Houston Astros are 5-5 in their last 10 (Athletics 3-7); season records 29-36 vs 30-33. Houston Astros's avg run differential is -0.8 vs Athletics's -2.3 over the last 10 games. Model prices Houston Astros at 55.2% \u2014 a +5.2% edge over the market line."
     },
     {
       "id": "bovada_baseball_mlb_Pittsburgh_Pirates_Atlanta_Braves",
@@ -265,11 +265,11 @@
       "commence_time": "2026-06-06T20:10:00+00:00",
       "home_team": "Atlanta Braves",
       "away_team": "Pittsburgh Pirates",
-      "home_odds": -119,
-      "away_odds": -101,
+      "home_odds": -114,
+      "away_odds": -106,
       "spread": {
         "point": -1.5,
-        "price": 175
+        "price": 180
       },
       "total": {
         "line": 8.0,
@@ -278,13 +278,13 @@
       },
       "model_home_prob": 0.5355,
       "model_away_prob": 0.4645,
-      "home_no_vig_prob": 0.5195,
-      "away_no_vig_prob": 0.4805,
-      "home_edge": 0.016,
-      "away_edge": -0.016,
-      "home_ev": -0.0145,
-      "away_ev": -0.0756,
-      "home_kelly": 0.0,
+      "home_no_vig_prob": 0.5087,
+      "away_no_vig_prob": 0.4913,
+      "home_edge": 0.0268,
+      "away_edge": -0.0268,
+      "home_ev": 0.0052,
+      "away_ev": -0.0973,
+      "home_kelly": 0.0015,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Spencer Strider",
@@ -297,11 +297,11 @@
       "commence_time": "2026-06-06T20:10:00+00:00",
       "home_team": "Miami Marlins",
       "away_team": "Tampa Bay Rays",
-      "home_odds": 126,
-      "away_odds": -150,
+      "home_odds": 121,
+      "away_odds": -144,
       "spread": {
         "point": 1.5,
-        "price": -135
+        "price": -140
       },
       "total": {
         "line": 8.0,
@@ -310,25 +310,25 @@
       },
       "model_home_prob": 0.6186,
       "model_away_prob": 0.3814,
-      "home_no_vig_prob": 0.4244,
-      "away_no_vig_prob": 0.5756,
-      "home_edge": 0.1942,
-      "away_edge": -0.1942,
-      "home_ev": 0.398,
-      "away_ev": -0.3643,
-      "home_kelly": 0.079,
+      "home_no_vig_prob": 0.434,
+      "away_no_vig_prob": 0.566,
+      "home_edge": 0.1846,
+      "away_edge": -0.1846,
+      "home_ev": 0.3671,
+      "away_ev": -0.3537,
+      "home_kelly": 0.0758,
       "away_kelly": 0.0,
       "best_bet": {
         "side": "home",
         "team": "Miami Marlins",
-        "odds": 126,
-        "edge": 0.1942,
-        "ev": 0.398,
+        "odds": 121,
+        "edge": 0.1846,
+        "ev": 0.3671,
         "strength": "strong"
       },
       "home_pitcher": "Lake Bachar",
       "away_pitcher": "Shane McClanahan",
-      "justification": "Miami Marlins are 8-2 in their last 10 (Tampa Bay Rays 4-6). Miami Marlins's avg run differential is +0.6 vs Tampa Bay Rays's -0.4 over the last 10 games. Model prices Miami Marlins at 61.9% \u2014 a +19.4% edge over the market line."
+      "justification": "Miami Marlins are 4-6 in their last 10 (Tampa Bay Rays 3-7); season records 29-35 vs 37-23. Miami Marlins's avg run differential is +0.6 vs Tampa Bay Rays's -0.4 over the last 10 games. Model prices Miami Marlins at 61.9% \u2014 a +18.5% edge over the market line."
     },
     {
       "id": "bovada_baseball_mlb_Washington_Nationals_Arizona_Diamondbacks",
@@ -368,7 +368,7 @@
       },
       "home_pitcher": "Eduardo Rodriguez",
       "away_pitcher": "Zack Littell",
-      "justification": "Washington Nationals are 4-6 in their last 10 (Arizona Diamondbacks 5-5). Washington Nationals's avg run differential is -2.2 vs Arizona Diamondbacks's -0.5 over the last 10 games. Model prices Washington Nationals at 45.5% \u2014 a +4.8% edge over the market line."
+      "justification": "Washington Nationals's avg run differential is -2.2 vs Arizona Diamondbacks's -0.5 over the last 10 games. Model prices Washington Nationals at 45.5% \u2014 a +4.8% edge over the market line."
     },
     {
       "id": "bovada_baseball_mlb_Boston_Red_Sox_New_York_Yankees",
@@ -440,7 +440,7 @@
       },
       "home_pitcher": "Jack Leiter",
       "away_pitcher": "Tanner Bibee",
-      "justification": "Cleveland Guardians are 7-3 in their last 10 (Texas Rangers 2-8). Cleveland Guardians's avg run differential is +1.0 vs Texas Rangers's -1.3 over the last 10 games. Model prices Cleveland Guardians at 52.4% \u2014 a +3.9% edge over the market line."
+      "justification": "Cleveland Guardians are 4-6 in their last 10 (Texas Rangers 7-3); season records 36-29 vs 31-32. Cleveland Guardians's avg run differential is +1.0 vs Texas Rangers's -1.3 over the last 10 games. Model prices Cleveland Guardians at 52.4% \u2014 a +3.9% edge over the market line."
     }
   ]
 }
