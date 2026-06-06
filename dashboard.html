@@ -664,6 +664,7 @@ async function loadModelPredictions() {
     if (count > 0) {
       document.getElementById('model-status').textContent = `Model loaded · ${count} games`;
       document.getElementById('model-status').style.color = '#10b981';
+      mergeModelPredictionsToGames();
       renderGames();
     }
   } catch(e) { /* file not yet generated */ }
