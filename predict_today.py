@@ -353,15 +353,17 @@ def build_game_prediction(game: dict, model_home_prob,
             out["away_kelly"] = round(kelly_calc(prob_a, away_odds) * 0.25, 4)
 
             best_edge = max(h_edge, a_edge)
-            if best_edge >= 0.03:
-                side = "home" if h_edge >= a_edge else "away"
+            side = "home" if h_edge >= a_edge else "away"
+            side_prob = prob_h if side == "home" else prob_a
+            # Require meaningful edge AND cap model confidence to guard against overfit
+            if best_edge >= 0.08 and side_prob <= 0.70:
                 out["best_bet"] = {
                     "side":     side,
                     "team":     game["home_team"] if side == "home" else game["away_team"],
                     "odds":     home_odds if side == "home" else away_odds,
                     "edge":     round(best_edge, 4),
                     "ev":       out["home_ev"] if side == "home" else out["away_ev"],
-                    "strength": "strong" if best_edge >= 0.05 else "moderate",
+                    "strength": "strong" if best_edge >= 0.12 else "moderate",
                 }
     return out
 
@@ -792,6 +794,15 @@ def run(api_key: str, output_path: str = None, target_date: str = None,
     if "soccer" in sports:
         all_games += predict_soccer(api_key, target_date)
 
+    # Cap at 3 best bets per day — keep the highest-EV plays, clear the rest
+    MAX_BEST_BETS = 3
+    flagged = [g for g in all_games if g.get("best_bet")]
+    flagged.sort(key=lambda g: g["best_bet"]["ev"], reverse=True)
+    keep_ids = {id(g) for g in flagged[:MAX_BEST_BETS]}
+    for g in all_games:
+        if g.get("best_bet") and id(g) not in keep_ids:
+            g["best_bet"] = None
+
     result = {
         "generated_at": datetime.now(timezone.utc).isoformat(),
         "date":         target_date,
@@ -802,7 +813,7 @@ def run(api_key: str, output_path: str = None, target_date: str = None,
     strong   = sum(1 for g in all_games if g.get("best_bet") and g["best_bet"]["strength"] == "strong")
     moderate = sum(1 for g in all_games if g.get("best_bet") and g["best_bet"]["strength"] == "moderate")
     print(f"\nWrote {len(all_games)} predictions to {output_path}")
-    print(f"Strong edges: {strong}  |  Moderate edges: {moderate}")
+    print(f"Strong edges: {strong}  |  Moderate edges: {moderate} (capped at {MAX_BEST_BETS} total)")
 
 
 if __name__ == "__main__":
