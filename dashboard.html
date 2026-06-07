@@ -65,26 +65,46 @@
       background: white; padding: 2px 10px; border-radius: 10px;
       box-shadow: var(--shadow);
     }
-    .yesterday-group { margin-bottom: 16px; }
+    .yesterday-group { margin-bottom: 8px; }
     .yesterday-group:last-child { margin-bottom: 0; }
-    .yesterday-group-header {
-      display: flex; align-items: center; gap: 10px; margin-bottom: 8px;
+    .yesterday-group-toggle {
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 14px;
+      background: white; border-radius: 10px; box-shadow: var(--shadow);
+      cursor: pointer; user-select: none;
+      border: 1.5px solid transparent;
+      transition: border-color 0.15s, box-shadow 0.15s;
     }
+    .yesterday-group-toggle:hover { border-color: #bfdbfe; box-shadow: var(--shadow-md); }
+    .yesterday-group-toggle.open  { border-radius: 10px 10px 0 0; border-color: var(--border); }
+    .yesterday-group-chevron {
+      font-size: 0.6rem; color: var(--muted);
+      transition: transform 0.2s; margin-left: auto;
+    }
+    .yesterday-group-chevron.open { transform: rotate(90deg); }
     .yesterday-group-label {
-      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.07em;
-      text-transform: uppercase; color: var(--muted);
+      font-size: 0.72rem; font-weight: 700; letter-spacing: 0.05em;
+      text-transform: uppercase; color: var(--text); flex: 1;
     }
     .yesterday-group-badge {
-      font-size: 0.68rem; font-weight: 700; padding: 1px 8px;
-      border-radius: 8px;
+      font-size: 0.7rem; font-weight: 700; padding: 2px 10px;
+      border-radius: 8px; white-space: nowrap;
     }
-    .yesterday-group-badge.strong  { background: #dcfce7; color: #15803d; }
+    .yesterday-group-badge.strong   { background: #dcfce7; color: #15803d; }
     .yesterday-group-badge.moderate { background: #fef9c3; color: #854d0e; }
-    .yesterday-group-badge.none    { background: #f1f5f9; color: var(--muted); }
+    .yesterday-group-badge.none     { background: #f1f5f9; color: var(--muted); }
+    .yesterday-group-body {
+      display: none;
+      padding: 10px;
+      background: white;
+      border: 1.5px solid var(--border); border-top: none;
+      border-radius: 0 0 10px 10px;
+    }
+    .yesterday-group-body.open { display: block; }
     .yesterday-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
-      gap: 10px;
+      grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+      gap: 8px;
     }
     .result-card {
       background: white;
@@ -1192,6 +1212,15 @@ function whyToggle(text) {
     </div>
     <div class="why-body" id="${id}">${text}</div>`;
 }
+function toggleYesterdayGroup(id) {
+  const body    = document.getElementById(id);
+  const toggle  = body.previousElementSibling;
+  const chevron = toggle.querySelector('.yesterday-group-chevron');
+  body.classList.toggle('open');
+  toggle.classList.toggle('open');
+  chevron.classList.toggle('open');
+}
+
 function toggleWhy(id) {
   const body  = document.getElementById(id);
   const arrow = document.getElementById(id + '-arrow');
@@ -1338,19 +1367,26 @@ async function loadYesterdayResults() {
     return { correct: c, wrong: w };
   }
 
+  let _groupId = 0;
   function renderGroup(label, tier, items) {
     if (items.length === 0) return '';
     const { correct, wrong } = groupRecord(items);
     const total = correct + wrong;
     const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
-    const recStr = total > 0 ? `${correct}–${wrong} (${pct}%)` : 'No picks';
+    const recStr = total > 0 ? `${correct}–${wrong} (${pct}%)` : `${items.length} game${items.length !== 1 ? 's' : ''} · no picks`;
+    const id = 'yg-' + (++_groupId);
+    // Strong edge groups open by default; others collapsed
+    const openByDefault = tier === 'strong';
     return `
       <div class="yesterday-group">
-        <div class="yesterday-group-header">
+        <div class="yesterday-group-toggle${openByDefault ? ' open' : ''}" onclick="toggleYesterdayGroup('${id}')">
           <span class="yesterday-group-label">${label}</span>
           <span class="yesterday-group-badge ${tier}">${recStr}</span>
+          <span class="yesterday-group-chevron${openByDefault ? ' open' : ''}">▶</span>
         </div>
-        <div class="yesterday-grid">${items.map(i => i.card).join('')}</div>
+        <div class="yesterday-group-body${openByDefault ? ' open' : ''}" id="${id}">
+          <div class="yesterday-grid">${items.map(i => i.card).join('')}</div>
+        </div>
       </div>`;
   }
 
