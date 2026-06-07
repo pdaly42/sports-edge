@@ -429,7 +429,6 @@
   <div class="yesterday-section">
     <div class="yesterday-header">
       <span class="yesterday-title">Yesterday's Results</span>
-      <span class="yesterday-record" id="yesterday-record-badge"></span>
     </div>
     <div class="yesterday-grid" id="yesterday-grid">
       <div style="color:var(--muted);font-size:0.82rem;">Loading yesterday's scores…</div>
@@ -464,11 +463,7 @@
       <input class="tb-input" id="edge-threshold" type="number" value="3" min="0" max="20" step="0.5" />
     </div>
 
-    <div class="tb-cell grow">
-      <span class="tb-meta" id="last-updated"></span>
-    </div>
-
-    <button class="tb-btn primary" id="run-btn" onclick="runPredictions()" title="Run model predictions">
+    <button class="tb-btn primary" id="run-btn" onclick="runPredictions()" title="Run model predictions" style="margin-left:auto;">
       <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
       Run Predictions
     </button>
@@ -479,6 +474,7 @@
         <path d="M8 16H3v5"/>
       </svg>
       Refresh
+      <span id="last-updated" style="font-size:0.68rem;color:var(--muted);margin-left:4px;"></span>
     </button>
   </div>
 
