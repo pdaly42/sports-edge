@@ -210,26 +210,31 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      margin-bottom: 20px;
+      margin-bottom: 8px;
       flex-wrap: wrap;
     }
 
-    /* ── Sport Tabs ── */
-    .sport-tabs { display: flex; gap: 8px; flex-wrap: wrap; }
-    .sport-tab {
-      padding: 7px 18px;
-      border-radius: 20px;
+    /* ── Sport Select ── */
+    .sport-select {
+      padding: 6px 10px;
       border: 1.5px solid var(--border);
-      background: white;
-      color: var(--muted);
-      font-size: 0.85rem;
+      border-radius: 8px;
+      font-size: 0.82rem;
       font-weight: 500;
+      color: var(--text);
+      background: white;
       cursor: pointer;
-      transition: all 0.15s;
     }
-    .sport-tab:hover { border-color: var(--blue); color: var(--blue); }
-    .sport-tab.active { background: var(--header); color: white; border-color: var(--header); }
+    .sport-select:focus { outline: none; border-color: var(--blue); }
 
+    /* ── Controls rows ── */
+    .controls-row-2 {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
     /* ── Right-side controls ── */
     .controls-right { margin-left: auto; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
     .book-select {
@@ -457,10 +462,8 @@
     </div>
   </div>
 
-  <!-- Controls Row -->
+  <!-- Row 1: Date nav + Sport picker -->
   <div class="controls-row">
-
-    <!-- Date Navigation -->
     <div class="date-nav">
       <button class="date-nav-btn" id="prev-day-btn" onclick="shiftDay(-1)" title="Previous day">
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
@@ -474,26 +477,27 @@
       </button>
     </div>
 
-    <!-- Sport Tabs -->
-    <div class="sport-tabs" id="sport-tabs">
-      <button class="sport-tab active" data-sport="all">All</button>
-      <button class="sport-tab" data-sport="basketball_nba">NBA</button>
-      <button class="sport-tab" data-sport="americanfootball_nfl">NFL</button>
-      <button class="sport-tab" data-sport="baseball_mlb">MLB</button>
-      <button class="sport-tab" data-sport="soccer_fifa_world_cup">⚽ World Cup</button>
-    </div>
+    <select class="sport-select" id="sport-select">
+      <option value="all">All Sports</option>
+      <option value="basketball_nba">NBA</option>
+      <option value="americanfootball_nfl">NFL</option>
+      <option value="baseball_mlb">MLB</option>
+      <option value="soccer_fifa_world_cup">⚽ World Cup</option>
+    </select>
+  </div>
 
-    <!-- Right side -->
+  <!-- Row 2: Filters + actions -->
+  <div class="controls-row-2">
+    <select class="book-select" id="book-select">
+      <option value="">Best line</option>
+      <option value="draftkings">DraftKings</option>
+      <option value="fanduel">FanDuel</option>
+      <option value="betmgm">BetMGM</option>
+      <option value="caesars">Caesars</option>
+    </select>
+    <span class="threshold-label">Min edge:</span>
+    <input class="threshold-input" id="edge-threshold" type="number" value="3" min="0" max="20" step="0.5" />
     <div class="controls-right">
-      <select class="book-select" id="book-select">
-        <option value="">Best line</option>
-        <option value="draftkings">DraftKings</option>
-        <option value="fanduel">FanDuel</option>
-        <option value="betmgm">BetMGM</option>
-        <option value="caesars">Caesars</option>
-      </select>
-      <span class="threshold-label">Min edge:</span>
-      <input class="threshold-input" id="edge-threshold" type="number" value="3" min="0" max="20" step="0.5" />
       <span class="last-updated" id="last-updated"></span>
       <button class="icon-btn run-btn" id="run-btn" onclick="runPredictions()" title="Trigger GitHub Action to generate model predictions">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
@@ -564,12 +568,8 @@ window.addEventListener('DOMContentLoaded', () => {
   loadModelPredictions();
   loadYesterdayResults();
 
-  document.getElementById('sport-tabs').addEventListener('click', e => {
-    const tab = e.target.closest('.sport-tab');
-    if (!tab) return;
-    document.querySelectorAll('.sport-tab').forEach(t => t.classList.remove('active'));
-    tab.classList.add('active');
-    activeSport = tab.dataset.sport;
+  document.getElementById('sport-select').addEventListener('change', e => {
+    activeSport = e.target.value;
     renderGames();
   });
 
