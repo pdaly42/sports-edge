@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T17:57:52.041791+00:00",
+  "generated_at": "2026-06-07T21:23:56.278936+00:00",
   "date": "2026-06-08",
   "games": [
     {
@@ -32,30 +32,166 @@
       "commence_time": "2026-06-08T00:30:00+00:00",
       "home_team": "Chicago Cubs",
       "away_team": "San Francisco Giants",
-      "home_odds": -125,
-      "away_odds": 105,
+      "home_odds": -123,
+      "away_odds": 103,
       "spread": {
         "point": -1.5,
         "price": 170
       },
       "total": {
         "line": 8.0,
-        "over": -110,
-        "under": -110
+        "over": -105,
+        "under": -115
       },
       "model_home_prob": 0.5716,
       "model_away_prob": 0.4284,
-      "home_no_vig_prob": 0.5325,
-      "away_no_vig_prob": 0.4675,
-      "home_edge": 0.0391,
-      "away_edge": -0.0391,
-      "home_ev": 0.0289,
-      "away_ev": -0.1218,
-      "home_kelly": 0.009,
+      "home_no_vig_prob": 0.5282,
+      "away_no_vig_prob": 0.4718,
+      "home_edge": 0.0434,
+      "away_edge": -0.0434,
+      "home_ev": 0.0363,
+      "away_ev": -0.1303,
+      "home_kelly": 0.0112,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "TBD",
-      "away_pitcher": "TBD"
+      "away_pitcher": "Logan Webb"
+    },
+    {
+      "id": "bovada_baseball_mlb_Seattle_Mariners_Baltimore_Orioles",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-06-08T22:35:00+00:00",
+      "home_team": "Baltimore Orioles",
+      "away_team": "Seattle Mariners",
+      "home_odds": 107,
+      "away_odds": -128,
+      "spread": {
+        "point": 1.5,
+        "price": -160
+      },
+      "total": {
+        "line": 9.0,
+        "over": 100,
+        "under": -120
+      },
+      "model_home_prob": 0.4193,
+      "model_away_prob": 0.5807,
+      "home_no_vig_prob": 0.4625,
+      "away_no_vig_prob": 0.5375,
+      "home_edge": -0.0432,
+      "away_edge": 0.0432,
+      "home_ev": -0.132,
+      "away_ev": 0.0344,
+      "home_kelly": 0.0,
+      "away_kelly": 0.011,
+      "best_bet": null,
+      "home_pitcher": "TBD",
+      "away_pitcher": "Emerson Hancock"
+    },
+    {
+      "id": "bovada_baseball_mlb_Boston_Red_Sox_Tampa_Bay_Rays",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-06-08T22:40:00+00:00",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "Boston Red Sox",
+      "home_odds": -103,
+      "away_odds": -117,
+      "spread": {
+        "point": 1.5,
+        "price": -175
+      },
+      "total": {
+        "line": 7.5,
+        "over": -120,
+        "under": 100
+      },
+      "model_home_prob": 0.3344,
+      "model_away_prob": 0.6656,
+      "home_no_vig_prob": 0.4848,
+      "away_no_vig_prob": 0.5152,
+      "home_edge": -0.1504,
+      "away_edge": 0.1504,
+      "home_ev": -0.3409,
+      "away_ev": 0.2345,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0686,
+      "best_bet": {
+        "side": "away",
+        "team": "Boston Red Sox",
+        "odds": -117,
+        "edge": 0.1504,
+        "ev": 0.2345,
+        "strength": "strong"
+      },
+      "home_pitcher": "Ian Seymour",
+      "away_pitcher": "Connelly Early",
+      "justification": "Boston Red Sox are 5-5 in their last 10 (Tampa Bay Rays 3-7); season records 27-36 vs 37-25. Boston Red Sox's avg run differential is +0.6 vs Tampa Bay Rays's -0.4 over the last 10 games. Connelly Early (ERA 3.26) has a meaningful ERA advantage over Ian Seymour (ERA 5.23)."
+    },
+    {
+      "id": "bovada_baseball_mlb_New_York_Yankees_Cleveland_Guardians",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-06-08T22:40:00+00:00",
+      "home_team": "Cleveland Guardians",
+      "away_team": "New York Yankees",
+      "home_odds": -114,
+      "away_odds": -106,
+      "spread": {
+        "point": 1.5,
+        "price": -195
+      },
+      "total": {
+        "line": 8.0,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.5365,
+      "model_away_prob": 0.4635,
+      "home_no_vig_prob": 0.5087,
+      "away_no_vig_prob": 0.4913,
+      "home_edge": 0.0278,
+      "away_edge": -0.0278,
+      "home_ev": 0.0071,
+      "away_ev": -0.0992,
+      "home_kelly": 0.002,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Gavin Williams",
+      "away_pitcher": "Will Warren"
+    },
+    {
+      "id": "bovada_baseball_mlb_Philadelphia_Phillies_Toronto_Blue_Jays",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-06-08T23:07:00+00:00",
+      "home_team": "Toronto Blue Jays",
+      "away_team": "Philadelphia Phillies",
+      "home_odds": 148,
+      "away_odds": -180,
+      "spread": {
+        "point": 1.5,
+        "price": -120
+      },
+      "total": {
+        "line": 7.5,
+        "over": 100,
+        "under": -120
+      },
+      "model_home_prob": 0.3863,
+      "model_away_prob": 0.6137,
+      "home_no_vig_prob": 0.3855,
+      "away_no_vig_prob": 0.6145,
+      "home_edge": 0.0008,
+      "away_edge": -0.0008,
+      "home_ev": -0.042,
+      "away_ev": -0.0454,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Patrick Corbin",
+      "away_pitcher": "Cristopher S\u00e1nchez"
     }
   ]
 }
