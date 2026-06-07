@@ -1375,8 +1375,8 @@ async function loadYesterdayResults() {
     const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
     const recStr = total > 0 ? `${correct}–${wrong} (${pct}%)` : `${items.length} game${items.length !== 1 ? 's' : ''} · no picks`;
     const id = 'yg-' + (++_groupId);
-    // Strong edge groups open by default; others collapsed
-    const openByDefault = tier === 'strong';
+    // All groups start collapsed
+    const openByDefault = false;
     return `
       <div class="yesterday-group">
         <div class="yesterday-group-toggle${openByDefault ? ' open' : ''}" onclick="toggleYesterdayGroup('${id}')">
