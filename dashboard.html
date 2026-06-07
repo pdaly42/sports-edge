@@ -136,6 +136,10 @@
     .summary-label { font-size: 0.68rem; font-weight: 600; text-transform: uppercase; letter-spacing: 0.06em; color: var(--muted); }
     .summary-value { font-size: 1.5rem; font-weight: 700; color: var(--text); margin-top: 2px; font-variant-numeric: tabular-nums; }
     .summary-sub { font-size: 0.72rem; color: var(--muted); margin-top: 2px; }
+    .lifetime-record {
+      font-size: 0.68rem; font-weight: 600; color: var(--muted);
+      margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--border);
+    }
 
     /* ── Date Nav ── */
     .date-nav {
@@ -406,12 +410,14 @@
     <div class="summary-card">
       <div class="summary-label">Strong Edges (&gt;5%)</div>
       <div class="summary-value" id="stat-strong" style="color:var(--green)">—</div>
-      <div class="summary-sub">model vs no-vig line</div>
+      <div class="summary-sub">today · model vs no-vig line</div>
+      <div class="lifetime-record" id="ltd-strong">—</div>
     </div>
     <div class="summary-card">
       <div class="summary-label">Moderate Edges (3–5%)</div>
       <div class="summary-value" id="stat-moderate" style="color:var(--amber)">—</div>
-      <div class="summary-sub">worth monitoring</div>
+      <div class="summary-sub">today · worth monitoring</div>
+      <div class="lifetime-record" id="ltd-moderate">—</div>
     </div>
     <div class="summary-card">
       <div class="summary-label">Yesterday's Record</div>
@@ -1197,6 +1203,57 @@ function toggleWhy(id) {
 setInterval(() => loadModelPredictions(), 3 * 60 * 1000);
 
 // ─────────────────────────────────────────
+// Lifetime Record (persisted in localStorage)
+// ─────────────────────────────────────────
+function getLifetimeRecord() {
+  try {
+    return JSON.parse(localStorage.getItem('sports_edge_lifetime') || 'null') || {
+      strong:   { correct: 0, wrong: 0 },
+      moderate: { correct: 0, wrong: 0 },
+      recorded: []   // ISO date strings already folded in
+    };
+  } catch(e) {
+    return { strong: { correct: 0, wrong: 0 }, moderate: { correct: 0, wrong: 0 }, recorded: [] };
+  }
+}
+
+function saveLifetimeRecord(rec) {
+  localStorage.setItem('sports_edge_lifetime', JSON.stringify(rec));
+}
+
+function recordDayResults(dateISO, strongCorrect, strongWrong, modCorrect, modWrong) {
+  const rec = getLifetimeRecord();
+  if (rec.recorded.includes(dateISO)) return; // already counted
+  rec.strong.correct   += strongCorrect;
+  rec.strong.wrong     += strongWrong;
+  rec.moderate.correct += modCorrect;
+  rec.moderate.wrong   += modWrong;
+  rec.recorded.push(dateISO);
+  saveLifetimeRecord(rec);
+  renderLifetimeRecord(rec);
+}
+
+function renderLifetimeRecord(rec) {
+  if (!rec) rec = getLifetimeRecord();
+
+  function fmt(tier) {
+    const { correct, wrong } = rec[tier];
+    const total = correct + wrong;
+    if (total === 0) return 'LTD: no results yet';
+    const pct = Math.round((correct / total) * 100);
+    return `LTD: ${correct}–${wrong} (${pct}%)`;
+  }
+
+  const strongEl = document.getElementById('ltd-strong');
+  const modEl    = document.getElementById('ltd-moderate');
+  if (strongEl) strongEl.textContent = fmt('strong');
+  if (modEl)    modEl.textContent    = fmt('moderate');
+}
+
+// Render on load from whatever is already stored
+renderLifetimeRecord();
+
+// ─────────────────────────────────────────
 // Yesterday's Results
 // ─────────────────────────────────────────
 async function loadYesterdayResults() {
@@ -1317,6 +1374,11 @@ async function loadYesterdayResults() {
     renderGroup('★ Strong Edge (≥5%)', 'strong', groups.strong) +
     renderGroup('◆ Moderate Edge (3–5%)', 'moderate', groups.moderate) +
     renderGroup('No Edge / No Pick', 'none', groups.none);
+
+  // Fold yesterday's edge results into the lifetime record (idempotent — skips if already recorded)
+  const { correct: sc, wrong: sw } = groupRecord(groups.strong);
+  const { correct: mc, wrong: mw } = groupRecord(groups.moderate);
+  recordDayResults(dateISO, sc, sw, mc, mw);
 
   const total = totalCorrect + totalWrong;
   const pct   = total > 0 ? Math.round((totalCorrect / total) * 100) : 0;
