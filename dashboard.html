@@ -49,49 +49,73 @@
     .header-clock { font-size: 1.2rem; font-weight: 500; font-variant-numeric: tabular-nums; }
     .header-date { font-size: 0.78rem; color: #94a3b8; margin-top: 1px; }
 
-    /* ── Banner (shared style) ── */
-    .setup-banner {
-      background: #1e293b;
-      color: #e2e8f0;
-      padding: 10px 32px;
-      display: flex;
-      align-items: center;
-      gap: 12px;
+    /* ── Yesterday Results ── */
+    .yesterday-section {
+      margin-bottom: 24px;
+    }
+    .yesterday-header {
+      display: flex; align-items: center; justify-content: space-between; margin-bottom: 10px;
+    }
+    .yesterday-title {
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; color: var(--muted);
+    }
+    .yesterday-record {
+      font-size: 0.75rem; font-weight: 600; color: var(--text);
+      background: white; padding: 2px 10px; border-radius: 10px;
+      box-shadow: var(--shadow);
+    }
+    .yesterday-group { margin-bottom: 16px; }
+    .yesterday-group:last-child { margin-bottom: 0; }
+    .yesterday-group-header {
+      display: flex; align-items: center; gap: 10px; margin-bottom: 8px;
+    }
+    .yesterday-group-label {
+      font-size: 0.68rem; font-weight: 700; letter-spacing: 0.07em;
+      text-transform: uppercase; color: var(--muted);
+    }
+    .yesterday-group-badge {
+      font-size: 0.68rem; font-weight: 700; padding: 1px 8px;
+      border-radius: 8px;
+    }
+    .yesterday-group-badge.strong  { background: #dcfce7; color: #15803d; }
+    .yesterday-group-badge.moderate { background: #fef9c3; color: #854d0e; }
+    .yesterday-group-badge.none    { background: #f1f5f9; color: var(--muted); }
+    .yesterday-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 10px;
+    }
+    .result-card {
+      background: white;
+      border-radius: 10px;
+      padding: 12px 14px;
+      box-shadow: var(--shadow);
+      border-left: 3px solid var(--border);
       font-size: 0.82rem;
-      flex-wrap: wrap;
     }
-    .setup-banner.hidden { display: none; }
-    .setup-banner a { color: #60a5fa; text-decoration: none; }
-    .setup-banner a:hover { text-decoration: underline; }
-    .banner-input {
-      flex: 1;
-      max-width: 320px;
-      padding: 5px 10px;
-      border-radius: 6px;
-      border: 1px solid #334155;
-      background: #0f172a;
-      color: white;
-      font-size: 0.82rem;
-      font-family: monospace;
+    .result-card.correct  { border-left-color: var(--green); }
+    .result-card.wrong    { border-left-color: var(--red); }
+    .result-card.no-pred  { border-left-color: var(--border); }
+    .result-teams {
+      display: flex; justify-content: space-between; align-items: center;
+      font-weight: 600; margin-bottom: 4px;
     }
-    .banner-input::placeholder { color: #64748b; }
-    .banner-btn {
-      padding: 5px 14px;
-      background: #3b82f6;
-      color: white;
-      border: none;
-      border-radius: 6px;
-      cursor: pointer;
-      font-size: 0.82rem;
-      font-weight: 500;
-      white-space: nowrap;
+    .result-score {
+      font-size: 1rem; font-weight: 700; font-variant-numeric: tabular-nums;
+      color: var(--text);
     }
-    .banner-btn:hover { background: #2563eb; }
-    .banner-btn.secondary {
-      background: #334155;
+    .result-meta {
+      display: flex; justify-content: space-between; align-items: center;
+      font-size: 0.72rem; color: var(--muted); margin-top: 4px;
     }
-    .banner-btn.secondary:hover { background: #475569; }
-    .banner-status { font-size: 0.75rem; color: #10b981; }
+    .result-outcome {
+      font-size: 0.7rem; font-weight: 700; padding: 1px 7px;
+      border-radius: 8px; letter-spacing: 0.04em;
+    }
+    .result-outcome.correct { background: #dcfce7; color: #15803d; }
+    .result-outcome.wrong   { background: #fee2e2; color: #b91c1c; }
+    .result-outcome.no-pred { background: #f1f5f9; color: var(--muted); }
 
     /* ── Main ── */
     main { max-width: 1200px; margin: 0 auto; padding: 24px 24px 48px; }
@@ -365,33 +389,12 @@
       <div class="header-subtitle">Daily line analysis · NBA · NFL · MLB</div>
     </div>
     <span id="model-status" style="font-size:0.72rem;color:#64748b;background:#1e293b;padding:4px 10px;border-radius:12px;">No model loaded</span>
-    <button onclick="toggleSettings()" title="API Keys &amp; Settings" style="background:none;border:1px solid #334155;border-radius:6px;padding:5px 10px;color:#94a3b8;cursor:pointer;font-size:0.75rem;display:flex;align-items:center;gap:5px;">
-      ⚙ Keys
-    </button>
   </div>
   <div class="header-right">
     <div class="header-clock" id="clock">--:--:--</div>
     <div class="header-date" id="date-display"></div>
   </div>
 </header>
-
-<!-- Odds API Key Banner -->
-<div id="odds-banner" class="setup-banner">
-  <span>🔑 <a href="https://the-odds-api.com" target="_blank">the-odds-api.com</a> key <span style="color:#64748b">(optional — games load from ESPN without it)</span>:</span>
-  <input id="odds-key-input" class="banner-input" type="text" placeholder="Paste key for live odds overlay" />
-  <button class="banner-btn" onclick="saveOddsKey()">Connect</button>
-  <span id="odds-key-status" class="banner-status"></span>
-  <span style="margin-left:auto;font-size:0.72rem;color:#475569;">500 req/month free</span>
-</div>
-
-<!-- GitHub Token Banner (for manual run) -->
-<div id="gh-banner" class="setup-banner" style="border-top:1px solid #334155;">
-  <span>⚡ GitHub token for manual predictions run:</span>
-  <input id="gh-token-input" class="banner-input" type="password" placeholder="ghp_xxxxxxxxxxxx (needs repo + workflow scope)" />
-  <button class="banner-btn" onclick="saveGhToken()">Save</button>
-  <span id="gh-token-status" class="banner-status"></span>
-  <a href="https://github.com/settings/tokens/new?scopes=repo,workflow&description=sports-edge-dashboard" target="_blank" style="margin-left:auto;font-size:0.72rem;">Create token →</a>
-</div>
 
 <main>
   <div class="summary-bar">
@@ -411,9 +414,20 @@
       <div class="summary-sub">worth monitoring</div>
     </div>
     <div class="summary-card">
-      <div class="summary-label">Odds API Requests Left</div>
-      <div class="summary-value" id="stat-requests">—</div>
-      <div class="summary-sub">500/month · games always load</div>
+      <div class="summary-label">Yesterday's Record</div>
+      <div class="summary-value" id="stat-record">—</div>
+      <div class="summary-sub" id="stat-record-sub">model vs actual results</div>
+    </div>
+  </div>
+
+  <!-- Yesterday's Results -->
+  <div class="yesterday-section">
+    <div class="yesterday-header">
+      <span class="yesterday-title">Yesterday's Results</span>
+      <span class="yesterday-record" id="yesterday-record-badge"></span>
+    </div>
+    <div class="yesterday-grid" id="yesterday-grid">
+      <div style="color:var(--muted);font-size:0.82rem;">Loading yesterday's scores…</div>
     </div>
   </div>
 
@@ -479,10 +493,7 @@
   <div id="games-container">
     <div class="empty-state">
       <div class="empty-icon">🏆</div>
-      <div>Connect your API key above to load games and odds.</div>
-      <div style="margin-top:8px;font-size:0.78rem;">
-        Get a free key at <a href="https://the-odds-api.com" target="_blank" style="color:var(--blue)">the-odds-api.com</a> — 500 req/month free
-      </div>
+      <div>No games found for this date.</div>
     </div>
   </div>
 </main>
@@ -493,7 +504,6 @@
 // ─────────────────────────────────────────
 // State
 // ─────────────────────────────────────────
-let oddsKey   = localStorage.getItem('odds_api_key') || '';
 let ghToken   = localStorage.getItem('gh_token') || '';
 let allGames  = [];
 let modelPredictions = {};
@@ -523,18 +533,10 @@ window.addEventListener('DOMContentLoaded', () => {
   setInterval(updateClock, 1000);
   updateDateNav();
 
-  if (oddsKey) {
-    document.getElementById('odds-key-input').value = oddsKey;
-    document.getElementById('odds-banner').classList.add('hidden');
-  }
   // Load games from ESPN immediately — no key needed
   loadAllGames();
-  if (ghToken) {
-    document.getElementById('gh-token-input').value = '••••••••••••••••';
-    document.getElementById('gh-banner').classList.add('hidden');
-  }
-
   loadModelPredictions();
+  loadYesterdayResults();
 
   document.getElementById('sport-tabs').addEventListener('click', e => {
     const tab = e.target.closest('.sport-tab');
@@ -546,8 +548,6 @@ window.addEventListener('DOMContentLoaded', () => {
   });
 
   document.getElementById('edge-threshold').addEventListener('change', renderGames);
-  document.getElementById('odds-key-input').addEventListener('keydown', e => { if (e.key === 'Enter') saveOddsKey(); });
-  document.getElementById('gh-token-input').addEventListener('keydown', e => { if (e.key === 'Enter') saveGhToken(); });
 });
 
 // ─────────────────────────────────────────
@@ -599,54 +599,13 @@ function shiftDay(delta) {
 
   const cacheKey = getViewDateISO();
   if (gamesCache[cacheKey]) {
-    // Serve from cache — no API call needed
     allGames = gamesCache[cacheKey];
     renderGames();
-  } else if (oddsKey) {
+  } else {
     loadAllGames();
-  } else {
-    allGames = [];
-    renderGames();
   }
 }
 
-// ─────────────────────────────────────────
-// Keys / tokens
-// ─────────────────────────────────────────
-function toggleSettings() {
-  const oddsBanner = document.getElementById('odds-banner');
-  const ghBanner   = document.getElementById('gh-banner');
-  const hidden = oddsBanner.classList.contains('hidden') && ghBanner.classList.contains('hidden');
-  if (hidden) {
-    oddsBanner.classList.remove('hidden');
-    ghBanner.classList.remove('hidden');
-  } else {
-    if (oddsKey) oddsBanner.classList.add('hidden');
-    if (ghToken) ghBanner.classList.add('hidden');
-  }
-}
-
-function saveOddsKey() {
-  const val = document.getElementById('odds-key-input').value.trim();
-  if (!val) return;
-  oddsKey = val;
-  localStorage.setItem('odds_api_key', val);
-  document.getElementById('odds-key-status').textContent = '✓ Saved';
-  document.getElementById('odds-banner').classList.add('hidden');
-  // Bust cache so odds get loaded on next refresh
-  delete gamesCache[getViewDateISO()];
-  loadAllGames();
-}
-
-function saveGhToken() {
-  const val = document.getElementById('gh-token-input').value.trim();
-  if (!val || val.startsWith('•')) return;
-  ghToken = val;
-  localStorage.setItem('gh_token', val);
-  document.getElementById('gh-token-status').textContent = '✓ Saved';
-  document.getElementById('gh-banner').classList.add('hidden');
-  toast('GitHub token saved — Run Predictions button is now active');
-}
 
 // ─────────────────────────────────────────
 // Model predictions
@@ -675,8 +634,7 @@ async function loadModelPredictions() {
 // ─────────────────────────────────────────
 async function runPredictions() {
   if (!ghToken) {
-    document.getElementById('gh-banner').classList.remove('hidden');
-    toast('Add your GitHub token to enable manual predictions run');
+    toast('No GitHub token found — set gh_token in localStorage to enable');
     return;
   }
   const btn = document.getElementById('run-btn');
@@ -705,10 +663,9 @@ async function runPredictions() {
         btn.innerHTML = `<svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg> Run Predictions`;
       }, 5000);
     } else if (resp.status === 401) {
-      toast('GitHub token invalid or expired — update it above');
+      toast('GitHub token invalid or expired — update gh_token in localStorage');
       ghToken = '';
       localStorage.removeItem('gh_token');
-      document.getElementById('gh-banner').classList.remove('hidden');
       resetRunBtn();
     } else {
       toast(`GitHub error ${resp.status} — check token has repo + workflow scopes`);
@@ -811,13 +768,7 @@ async function loadAllGames() {
   // Match predictions to ESPN games by team name (before odds overlay)
   mergeModelPredictionsToGames();
 
-  // ── Step 2: Layer in odds from the-odds-api (only if key present + quota) ──
-  if (oddsKey) {
-    await overlayOdds();
-  } else {
-    document.getElementById('stat-requests').textContent = 'n/a';
-    showOddsSource('ESPN · no odds key');
-  }
+  showOddsSource('ESPN');
 
   document.getElementById('refresh-btn').classList.remove('spinning');
   gamesCache[getViewDateISO()] = [...allGames];
@@ -867,48 +818,6 @@ function mergeModelPredictionsToGames() {
   }
 }
 
-async function overlayOdds() {
-  const viewDateStr = getViewDate().toDateString();
-  const books = document.getElementById('book-select').value || 'draftkings,fanduel,betmgm,caesars';
-  let reqLeft = null;
-  let oddsLoaded = 0;
-
-  for (const sport of SPORTS) {
-    try {
-      const url = `https://api.the-odds-api.com/v4/sports/${sport.key}/odds/?` +
-        `apiKey=${oddsKey}&regions=us&markets=h2h,spreads,totals&oddsFormat=american&bookmakers=${books}`;
-      const res = await fetch(url);
-      if (res.status === 401) { toast('Odds API key invalid'); return; }
-      if (res.status === 429) { toast('Odds API quota reached — showing games from ESPN without odds'); return; }
-      if (!res.ok) continue;
-
-      const rem = res.headers.get('x-requests-remaining');
-      if (rem) reqLeft = rem;
-
-      const oddsGames = await res.json();
-      const todayOdds = oddsGames.filter(g => new Date(g.commence_time).toDateString() === viewDateStr);
-
-      // Match odds to ESPN games by team name and inject bookmakers
-      for (const og of todayOdds) {
-        const key = normalizeTeamName(og.home_team) + '|' + normalizeTeamName(og.away_team);
-        const espnGame = allGames.find(g =>
-          normalizeTeamName(g.home_team) + '|' + normalizeTeamName(g.away_team) === key
-        );
-        if (espnGame) {
-          espnGame.bookmakers = og.bookmakers;
-          espnGame.id = og.id;   // use odds API id for prediction matching
-          oddsLoaded++;
-        }
-      }
-    } catch(e) { console.error(sport.key, e); }
-  }
-
-  if (reqLeft !== null) document.getElementById('stat-requests').textContent = reqLeft;
-  const src = oddsLoaded > 0
-    ? `ESPN · odds via ${document.getElementById('book-select').value || 'DK/FD/BetMGM'}`
-    : 'ESPN · no odds available';
-  showOddsSource(src);
-}
 
 function showOddsSource(text) {
   document.getElementById('last-updated').textContent = text + ' · ' +
@@ -1284,19 +1193,141 @@ function toggleWhy(id) {
   arrow.classList.toggle('open');
 }
 
-// Auto-refresh odds once per hour — 3 sports × 6/hr × 24hr = 432 calls/day
-// at 10 min. At 60 min = 72 calls/day, well within 500/month free tier.
-// Use the Refresh button for on-demand updates.
-setInterval(() => {
-  if (oddsKey) {
-    // Bust cache for current date so the hourly refresh actually re-fetches
-    delete gamesCache[getViewDateISO()];
-    loadAllGames();
-  }
-}, 60 * 60 * 1000);
-
 // Poll for new predictions every 3 min — these hit GitHub Pages (free/unlimited)
 setInterval(() => loadModelPredictions(), 3 * 60 * 1000);
+
+// ─────────────────────────────────────────
+// Yesterday's Results
+// ─────────────────────────────────────────
+async function loadYesterdayResults() {
+  const yesterday = new Date();
+  yesterday.setDate(yesterday.getDate() - 1);
+  const dateISO = yesterday.toISOString().slice(0, 10);
+  const dateStr = dateISO.replace(/-/g, ''); // YYYYMMDD for ESPN
+
+  // Fetch yesterday's games from ESPN
+  const games = [];
+  for (const sport of ESPN_SPORTS) {
+    const events = await fetchESPNGames(sport.espn, dateStr);
+    for (const ev of events) {
+      const g = parseESPNEvent(ev, sport);
+      if (g && g.completed) games.push(g);
+    }
+  }
+
+  // Fetch yesterday's model predictions
+  let preds = {};
+  try {
+    const res = await fetch(`predictions_${dateISO}.json?t=${Date.now()}`);
+    if (res.ok) {
+      const data = await res.json();
+      (data.games || []).forEach(g => { preds[g.id] = g; });
+    }
+  } catch(e) { /* no predictions file */ }
+
+  // Match predictions to games by team name
+  const predsByTeams = {};
+  for (const [id, pred] of Object.entries(preds)) {
+    const key = normalizeTeamName(pred.home_team) + '|' + normalizeTeamName(pred.away_team);
+    predsByTeams[key] = { ...pred, id };
+  }
+
+  // Classify each game by edge tier and outcome
+  const groups = { strong: [], moderate: [], none: [] };
+
+  for (const game of games) {
+    const key = normalizeTeamName(game.home_team) + '|' + normalizeTeamName(game.away_team);
+    const pred = predsByTeams[key];
+
+    const homeScore = parseInt(game.home_score);
+    const awayScore = parseInt(game.away_score);
+    const actualWinner = homeScore > awayScore ? game.home_team : game.away_team;
+
+    let outcomeClass = 'no-pred', outcomeLabel = 'NO PICK';
+    let tier = 'none';
+
+    if (pred) {
+      const bestEdge = Math.max(pred.home_edge ?? 0, pred.away_edge ?? 0);
+      if (bestEdge >= 0.05)      tier = 'strong';
+      else if (bestEdge >= 0.03) tier = 'moderate';
+
+      const homeProb = pred.model_home_prob ?? 0;
+      const awayProb = pred.model_away_prob ?? 0;
+      const predicted = homeProb >= awayProb ? game.home_team : game.away_team;
+      const hit = predicted === actualWinner;
+      outcomeClass = hit ? 'correct' : 'wrong';
+      outcomeLabel = hit ? 'CORRECT' : 'WRONG';
+    }
+
+    const time = new Date(game.commence_time).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+    const card = `
+      <div class="result-card ${outcomeClass}">
+        <div class="result-teams">
+          <span>${game.away_team.split(' ').pop()}</span>
+          <span class="result-score">${game.away_score} – ${game.home_score}</span>
+          <span>${game.home_team.split(' ').pop()}</span>
+        </div>
+        <div class="result-meta">
+          <span>${game.sportEmoji} ${game.sportLabel} · ${time}</span>
+          <span class="result-outcome ${outcomeClass}">${outcomeLabel}</span>
+        </div>
+      </div>`;
+    groups[tier].push({ card, outcomeClass });
+  }
+
+  function groupRecord(items) {
+    const c = items.filter(i => i.outcomeClass === 'correct').length;
+    const w = items.filter(i => i.outcomeClass === 'wrong').length;
+    return { correct: c, wrong: w };
+  }
+
+  function renderGroup(label, tier, items) {
+    if (items.length === 0) return '';
+    const { correct, wrong } = groupRecord(items);
+    const total = correct + wrong;
+    const pct = total > 0 ? Math.round((correct / total) * 100) : 0;
+    const recStr = total > 0 ? `${correct}–${wrong} (${pct}%)` : 'No picks';
+    return `
+      <div class="yesterday-group">
+        <div class="yesterday-group-header">
+          <span class="yesterday-group-label">${label}</span>
+          <span class="yesterday-group-badge ${tier}">${recStr}</span>
+        </div>
+        <div class="yesterday-grid">${items.map(i => i.card).join('')}</div>
+      </div>`;
+  }
+
+  const allPicked = [...groups.strong, ...groups.moderate];
+  const totalCorrect = allPicked.filter(i => i.outcomeClass === 'correct').length;
+  const totalWrong   = allPicked.filter(i => i.outcomeClass === 'wrong').length;
+
+  const container = document.getElementById('yesterday-grid');
+  const badge     = document.getElementById('yesterday-record-badge');
+  const statRecord    = document.getElementById('stat-record');
+  const statRecordSub = document.getElementById('stat-record-sub');
+
+  if (games.length === 0) {
+    container.innerHTML = '<div style="color:var(--muted);font-size:0.82rem;">No completed games yesterday.</div>';
+    badge.textContent = '';
+    statRecord.textContent = '—';
+    return;
+  }
+
+  container.innerHTML =
+    renderGroup('★ Strong Edge (≥5%)', 'strong', groups.strong) +
+    renderGroup('◆ Moderate Edge (3–5%)', 'moderate', groups.moderate) +
+    renderGroup('No Edge / No Pick', 'none', groups.none);
+
+  const total = totalCorrect + totalWrong;
+  const pct   = total > 0 ? Math.round((totalCorrect / total) * 100) : 0;
+  const recordStr = total > 0 ? `${totalCorrect}–${totalWrong}` : '—';
+  badge.textContent = total > 0 ? `${recordStr} (${pct}%) on edge picks` : 'No edge picks';
+  statRecord.textContent = recordStr;
+  statRecord.style.color = pct >= 55 ? 'var(--green)' : pct < 45 && total > 0 ? 'var(--red)' : 'var(--text)';
+  statRecordSub.textContent = total > 0
+    ? `${pct}% on edge picks · ${yesterday.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`
+    : `no edge picks · ${yesterday.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`;
+}
 </script>
 </body>
 </html>
