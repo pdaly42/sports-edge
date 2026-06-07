@@ -210,7 +210,7 @@
       display: flex;
       align-items: center;
       gap: 10px;
-      margin-bottom: 8px;
+      margin-bottom: 20px;
       flex-wrap: wrap;
     }
 
@@ -227,25 +227,8 @@
     }
     .sport-select:focus { outline: none; border-color: var(--blue); }
 
-    /* ── Controls rows ── */
-    .controls-row-2 {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-      margin-bottom: 20px;
-      flex-wrap: wrap;
-    }
     /* ── Right-side controls ── */
     .controls-right { margin-left: auto; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-    .book-select {
-      padding: 6px 10px;
-      border: 1.5px solid var(--border);
-      border-radius: 8px;
-      font-size: 0.78rem;
-      color: var(--text);
-      background: white;
-      cursor: pointer;
-    }
     .threshold-label { font-size: 0.75rem; color: var(--muted); }
     .threshold-input {
       width: 56px;
@@ -462,7 +445,7 @@
     </div>
   </div>
 
-  <!-- Row 1: Date nav + Sport picker -->
+  <!-- Controls Row: Date nav + Sport picker + Edge + Actions -->
   <div class="controls-row">
     <div class="date-nav">
       <button class="date-nav-btn" id="prev-day-btn" onclick="shiftDay(-1)" title="Previous day">
@@ -484,19 +467,10 @@
       <option value="baseball_mlb">MLB</option>
       <option value="soccer_fifa_world_cup">⚽ World Cup</option>
     </select>
-  </div>
 
-  <!-- Row 2: Filters + actions -->
-  <div class="controls-row-2">
-    <select class="book-select" id="book-select">
-      <option value="">Best line</option>
-      <option value="draftkings">DraftKings</option>
-      <option value="fanduel">FanDuel</option>
-      <option value="betmgm">BetMGM</option>
-      <option value="caesars">Caesars</option>
-    </select>
     <span class="threshold-label">Min edge:</span>
     <input class="threshold-input" id="edge-threshold" type="number" value="3" min="0" max="20" step="0.5" />
+
     <div class="controls-right">
       <span class="last-updated" id="last-updated"></span>
       <button class="icon-btn run-btn" id="run-btn" onclick="runPredictions()" title="Trigger GitHub Action to generate model predictions">
