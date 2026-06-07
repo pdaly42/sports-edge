@@ -1353,13 +1353,11 @@ async function loadYesterdayResults() {
   const totalWrong   = allPicked.filter(i => i.outcomeClass === 'wrong').length;
 
   const container = document.getElementById('yesterday-grid');
-  const badge     = document.getElementById('yesterday-record-badge');
   const statRecord    = document.getElementById('stat-record');
   const statRecordSub = document.getElementById('stat-record-sub');
 
   if (games.length === 0) {
     container.innerHTML = '<div style="color:var(--muted);font-size:0.82rem;">No completed games yesterday.</div>';
-    badge.textContent = '';
     statRecord.textContent = '—';
     return;
   }
@@ -1377,7 +1375,6 @@ async function loadYesterdayResults() {
   const total = totalCorrect + totalWrong;
   const pct   = total > 0 ? Math.round((totalCorrect / total) * 100) : 0;
   const recordStr = total > 0 ? `${totalCorrect}–${totalWrong}` : '—';
-  badge.textContent = total > 0 ? `${recordStr} (${pct}%) on edge picks` : 'No edge picks';
   statRecord.textContent = recordStr;
   statRecord.style.color = pct >= 55 ? 'var(--green)' : pct < 45 && total > 0 ? 'var(--red)' : 'var(--text)';
   statRecordSub.textContent = total > 0
