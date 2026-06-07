@@ -161,95 +161,93 @@
       margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--border);
     }
 
-    /* ── Date Nav buttons (now live inside controls-row pill) ── */
-    .date-nav-btn {
-      background: none;
-      border: none;
-      cursor: pointer;
-      color: var(--muted);
-      line-height: 1;
-      transition: background 0.12s, color 0.12s;
+    /* ── Toolbar ── */
+    .toolbar {
       display: flex;
-      align-items: center;
-      flex-shrink: 0;
-    }
-    .date-nav-btn:hover:not(:disabled) { background: #f1f5f9; color: var(--text); }
-    .date-nav-btn:disabled { opacity: 0.3; cursor: default; }
-
-    /* ── Controls Row ── */
-    .controls-row {
-      display: flex;
-      align-items: center;
-      gap: 0;
-      margin-bottom: 20px;
+      align-items: stretch;
+      height: 46px;
       background: white;
       border-radius: 12px;
+      border: 1.5px solid var(--border);
       box-shadow: var(--shadow);
-      border: 1.5px solid var(--border);
       overflow: hidden;
-      height: 44px;
+      margin-bottom: 20px;
     }
-    .controls-divider {
-      width: 1px;
-      background: var(--border);
-      align-self: stretch;
-      flex-shrink: 0;
-    }
-    .controls-segment {
+    .tb-cell {
       display: flex;
       align-items: center;
+      justify-content: center;
+      padding: 0 14px;
       gap: 6px;
-      padding: 0 14px;
-      height: 100%;
+      border-right: 1px solid var(--border);
+      flex-shrink: 0;
+      white-space: nowrap;
+    }
+    .tb-cell:last-child { border-right: none; }
+    .tb-cell.grow { flex: 1; justify-content: flex-start; }
+    .tb-cell.push { margin-left: auto; border-left: 1px solid var(--border); border-right: none; padding: 0; }
+
+    /* date nav arrow buttons */
+    .tb-arrow {
+      display: flex; align-items: center; justify-content: center;
+      width: 38px; height: 100%;
+      background: none; border: none; border-right: 1px solid var(--border);
+      cursor: pointer; color: var(--muted);
+      transition: background 0.12s, color 0.12s;
       flex-shrink: 0;
     }
-    .controls-segment.grow { flex: 1; }
+    .tb-arrow:last-of-type { border-right: none; border-left: 1px solid var(--border); }
+    .tb-arrow:hover:not(:disabled) { background: #f1f5f9; color: var(--text); }
+    .tb-arrow:disabled { opacity: 0.3; cursor: default; }
 
-    /* ── Sport Select ── */
-    .sport-select {
-      padding: 0;
-      border: none;
-      font-size: 0.82rem;
-      font-weight: 500;
-      color: var(--text);
-      background: transparent;
-      cursor: pointer;
-      outline: none;
+    .tb-date {
+      display: flex; flex-direction: column; align-items: center; justify-content: center;
+      padding: 0 16px;
+      border-right: 1px solid var(--border);
+      min-width: 120px;
     }
+    .tb-date-main { font-size: 0.85rem; font-weight: 600; color: var(--text); }
+    .tb-date-sub  { font-size: 0.68rem; color: var(--muted); margin-top: 1px; }
 
-    /* ── Right-side controls ── */
-    .controls-right { margin-left: auto; display: flex; align-items: center; gap: 0; height: 100%; }
-    .threshold-label { font-size: 0.75rem; color: var(--muted); white-space: nowrap; }
-    .threshold-input {
-      width: 48px;
-      padding: 2px 6px;
-      border: 1.5px solid var(--border);
-      border-radius: 6px;
-      font-size: 0.78rem;
-      text-align: center;
+    /* selects & inputs inside toolbar */
+    .tb-select {
+      border: none; background: transparent; font-size: 0.82rem;
+      font-weight: 500; color: var(--text); cursor: pointer; outline: none;
     }
-    .icon-btn {
-      background: none;
-      border: none;
-      border-left: 1.5px solid var(--border);
-      border-radius: 0;
-      padding: 0 14px;
-      height: 100%;
-      font-size: 0.78rem;
-      color: var(--muted);
-      cursor: pointer;
-      display: flex;
-      align-items: center;
-      gap: 5px;
-      white-space: nowrap;
+    .tb-label { font-size: 0.75rem; color: var(--muted); }
+    .tb-input {
+      width: 46px; padding: 3px 6px;
+      border: 1.5px solid var(--border); border-radius: 6px;
+      font-size: 0.78rem; text-align: center; outline: none;
+    }
+    .tb-meta { font-size: 0.72rem; color: var(--muted); }
+
+    /* action buttons inside toolbar */
+    .tb-btn {
+      display: flex; align-items: center; gap: 5px;
+      height: 100%; padding: 0 16px;
+      background: none; border: none; border-left: 1px solid var(--border);
+      font-size: 0.78rem; color: var(--muted); cursor: pointer; white-space: nowrap;
       transition: background 0.12s, color 0.12s;
     }
-    .icon-btn:hover { background: #f8fafc; color: var(--text); }
-    .icon-btn.spinning svg { animation: spin 0.8s linear infinite; }
-    .icon-btn.run-btn { color: #15803d; background: #f0fdf4; }
-    .icon-btn.run-btn:hover { background: #dcfce7; }
-    .icon-btn.run-btn:disabled { opacity: 0.5; cursor: default; }
+    .tb-btn:hover { background: #f8fafc; color: var(--text); }
+    .tb-btn.primary { color: #15803d; background: #f0fdf4; }
+    .tb-btn.primary:hover { background: #dcfce7; }
+    .tb-btn.primary:disabled { opacity: 0.5; cursor: default; }
+    .tb-btn.spinning svg { animation: spin 0.8s linear infinite; }
+
+    /* keep icon-btn for any other usage */
+    .icon-btn {
+      background: none; border: 1.5px solid var(--border); border-radius: 8px;
+      padding: 6px 12px; font-size: 0.78rem; color: var(--muted);
+      cursor: pointer; display: flex; align-items: center; gap: 5px; white-space: nowrap;
+    }
     .last-updated { font-size: 0.72rem; color: var(--muted); white-space: nowrap; }
+    .threshold-label { font-size: 0.75rem; color: var(--muted); white-space: nowrap; }
+    .threshold-input {
+      width: 48px; padding: 2px 6px; border: 1.5px solid var(--border);
+      border-radius: 6px; font-size: 0.78rem; text-align: center;
+    }
 
     /* ── Section Header ── */
     .section-header {
@@ -438,27 +436,21 @@
     </div>
   </div>
 
-  <!-- Controls Row: unified pill toolbar -->
-  <div class="controls-row">
-    <!-- Date nav -->
-    <button class="date-nav-btn" id="prev-day-btn" onclick="shiftDay(-1)" title="Previous day" style="border:none;border-radius:0;height:100%;padding:0 12px;">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+  <!-- Toolbar -->
+  <div class="toolbar">
+    <button class="tb-arrow" id="prev-day-btn" onclick="shiftDay(-1)" title="Previous day">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
     </button>
-    <div class="controls-segment" style="min-width:130px;justify-content:center;border-right:1.5px solid var(--border);border-left:1.5px solid var(--border);">
-      <div id="date-nav-label" style="font-size:0.85rem;font-weight:600;color:var(--text);text-align:center;line-height:1.2;">
-        Today
-        <span style="display:block;font-size:0.68rem;color:var(--muted);font-weight:400;" id="date-nav-sub"></span>
-      </div>
+    <div class="tb-date">
+      <span class="tb-date-main" id="date-nav-label">Today</span>
+      <span class="tb-date-sub" id="date-nav-sub"></span>
     </div>
-    <button class="date-nav-btn" id="next-day-btn" onclick="shiftDay(1)" title="Next day" style="border:none;border-radius:0;height:100%;padding:0 12px;">
-      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+    <button class="tb-arrow" id="next-day-btn" onclick="shiftDay(1)" title="Next day">
+      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
     </button>
 
-    <div class="controls-divider"></div>
-
-    <!-- Sport picker -->
-    <div class="controls-segment">
-      <select class="sport-select" id="sport-select">
+    <div class="tb-cell">
+      <select class="tb-select" id="sport-select">
         <option value="all">All Sports</option>
         <option value="basketball_nba">NBA</option>
         <option value="americanfootball_nfl">NFL</option>
@@ -467,34 +459,27 @@
       </select>
     </div>
 
-    <div class="controls-divider"></div>
-
-    <!-- Min edge -->
-    <div class="controls-segment">
-      <span class="threshold-label">Min edge:</span>
-      <input class="threshold-input" id="edge-threshold" type="number" value="3" min="0" max="20" step="0.5" />
+    <div class="tb-cell">
+      <span class="tb-label">Min edge:</span>
+      <input class="tb-input" id="edge-threshold" type="number" value="3" min="0" max="20" step="0.5" />
     </div>
 
-    <!-- Right actions pushed to end -->
-    <div class="controls-right">
-      <div class="controls-segment" style="padding:0 14px;">
-        <span class="last-updated" id="last-updated"></span>
-      </div>
-      <button class="icon-btn run-btn" id="run-btn" onclick="runPredictions()" title="Trigger GitHub Action to generate model predictions">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-          <polygon points="5 3 19 12 5 21 5 3"/>
-        </svg>
-        Run Predictions
-      </button>
-      <button class="icon-btn" id="refresh-btn" onclick="loadAllGames()">
-        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-          <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
-          <path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
-          <path d="M8 16H3v5"/>
-        </svg>
-        Refresh
-      </button>
+    <div class="tb-cell grow">
+      <span class="tb-meta" id="last-updated"></span>
     </div>
+
+    <button class="tb-btn primary" id="run-btn" onclick="runPredictions()" title="Run model predictions">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polygon points="5 3 19 12 5 21 5 3"/></svg>
+      Run Predictions
+    </button>
+    <button class="tb-btn" id="refresh-btn" onclick="loadAllGames()">
+      <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+        <path d="M3 12a9 9 0 0 1 9-9 9.75 9.75 0 0 1 6.74 2.74L21 8"/>
+        <path d="M21 3v5h-5"/><path d="M21 12a9 9 0 0 1-9 9 9.75 9.75 0 0 1-6.74-2.74L3 16"/>
+        <path d="M8 16H3v5"/>
+      </svg>
+      Refresh
+    </button>
   </div>
 
   <div class="section-header">
@@ -582,7 +567,8 @@ function updateDateNav() {
   else label = d.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' });
 
   const sub = d.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' });
-  document.getElementById('date-nav-label').innerHTML = `${label}<span class="date-sub">${sub}</span>`;
+  document.getElementById('date-nav-label').textContent = label;
+  document.getElementById('date-nav-sub').textContent = sub;
 
   // Only allow ±2 days from today
   document.getElementById('prev-day-btn').disabled = dayOffset <= -1;
