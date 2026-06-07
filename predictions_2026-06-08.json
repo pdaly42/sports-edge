@@ -1,0 +1,61 @@
+{
+  "generated_at": "2026-06-07T10:39:11.584733+00:00",
+  "date": "2026-06-08",
+  "games": [
+    {
+      "id": "401859965",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-06-09T00:30Z",
+      "home_team": "New York Knicks",
+      "away_team": "San Antonio Spurs",
+      "home_odds": null,
+      "away_odds": null,
+      "spread": null,
+      "total": null,
+      "model_home_prob": 0.6266,
+      "model_away_prob": 0.3734,
+      "home_no_vig_prob": null,
+      "away_no_vig_prob": null,
+      "home_edge": null,
+      "away_edge": null,
+      "home_ev": null,
+      "away_ev": null,
+      "home_kelly": null,
+      "away_kelly": null,
+      "best_bet": null
+    },
+    {
+      "id": "bovada_baseball_mlb_San_Francisco_Giants_Chicago_Cubs",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-06-08T00:30:00+00:00",
+      "home_team": "Chicago Cubs",
+      "away_team": "San Francisco Giants",
+      "home_odds": -119,
+      "away_odds": -101,
+      "spread": {
+        "point": 1.5,
+        "price": -195
+      },
+      "total": {
+        "line": 8.0,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.5716,
+      "model_away_prob": 0.4284,
+      "home_no_vig_prob": 0.5195,
+      "away_no_vig_prob": 0.4805,
+      "home_edge": 0.0521,
+      "away_edge": -0.0521,
+      "home_ev": 0.0519,
+      "away_ev": -0.1474,
+      "home_kelly": 0.0155,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "TBD",
+      "away_pitcher": "TBD"
+    }
+  ]
+}
