@@ -910,7 +910,7 @@ function renderCard(game, threshold) {
   const bestEdge = pred ? Math.max(pred.home_edge ?? 0, pred.away_edge ?? 0) : null;
   const hasEdge  = bestEdge !== null && bestEdge >= threshold;
   let badgeClass, badgeText;
-  if (!pred)               { badgeClass = 'none';     badgeText = 'NO MODEL'; }
+  if (!pred)               { badgeClass = 'none';     badgeText = 'ODDS PENDING'; }
   else if (bestEdge >= 0.05) { badgeClass = 'strong';   badgeText = `EDGE +${(bestEdge*100).toFixed(1)}%`; }
   else if (bestEdge >= 0.03) { badgeClass = 'moderate'; badgeText = `EDGE +${(bestEdge*100).toFixed(1)}%`; }
   else                       { badgeClass = 'none';     badgeText = 'NO EDGE'; }
@@ -1044,7 +1044,7 @@ function renderSoccerCard(game, threshold) {
   const bestEdge = pred ? Math.max(pred.home_edge??0, pred.draw_edge??0, pred.away_edge??0) : null;
   const hasEdge  = bestEdge !== null && bestEdge >= threshold;
   let badgeClass, badgeText;
-  if (!pred)               { badgeClass='none';     badgeText='NO MODEL'; }
+  if (!pred)               { badgeClass='none';     badgeText='ODDS PENDING'; }
   else if (bestEdge>=0.05) { badgeClass='strong';   badgeText=`EDGE +${(bestEdge*100).toFixed(1)}%`; }
   else if (bestEdge>=0.03) { badgeClass='moderate'; badgeText=`EDGE +${(bestEdge*100).toFixed(1)}%`; }
   else                     { badgeClass='none';     badgeText='NO EDGE'; }
