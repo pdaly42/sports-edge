@@ -161,78 +161,68 @@
       margin-top: 6px; padding-top: 6px; border-top: 1px solid var(--border);
     }
 
-    /* ── Date Nav ── */
-    .date-nav {
-      display: flex;
-      align-items: center;
-      gap: 0;
-      background: white;
-      border: 1.5px solid var(--border);
-      border-radius: 10px;
-      overflow: hidden;
-      box-shadow: var(--shadow);
-    }
+    /* ── Date Nav buttons (now live inside controls-row pill) ── */
     .date-nav-btn {
       background: none;
       border: none;
-      padding: 8px 14px;
       cursor: pointer;
       color: var(--muted);
-      font-size: 1rem;
       line-height: 1;
       transition: background 0.12s, color 0.12s;
       display: flex;
       align-items: center;
+      flex-shrink: 0;
     }
     .date-nav-btn:hover:not(:disabled) { background: #f1f5f9; color: var(--text); }
     .date-nav-btn:disabled { opacity: 0.3; cursor: default; }
-    .date-nav-label {
-      padding: 8px 16px;
-      font-size: 0.85rem;
-      font-weight: 600;
-      color: var(--text);
-      min-width: 130px;
-      text-align: center;
-      border-left: 1px solid var(--border);
-      border-right: 1px solid var(--border);
-      white-space: nowrap;
-    }
-    .date-nav-label .date-sub {
-      font-size: 0.68rem;
-      color: var(--muted);
-      font-weight: 400;
-      display: block;
-      margin-top: 1px;
-    }
 
     /* ── Controls Row ── */
     .controls-row {
       display: flex;
       align-items: center;
-      gap: 10px;
+      gap: 0;
       margin-bottom: 20px;
-      flex-wrap: wrap;
+      background: white;
+      border-radius: 12px;
+      box-shadow: var(--shadow);
+      border: 1.5px solid var(--border);
+      overflow: hidden;
+      height: 44px;
     }
+    .controls-divider {
+      width: 1px;
+      background: var(--border);
+      align-self: stretch;
+      flex-shrink: 0;
+    }
+    .controls-segment {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      padding: 0 14px;
+      height: 100%;
+      flex-shrink: 0;
+    }
+    .controls-segment.grow { flex: 1; }
 
     /* ── Sport Select ── */
     .sport-select {
-      padding: 6px 10px;
-      border: 1.5px solid var(--border);
-      border-radius: 8px;
+      padding: 0;
+      border: none;
       font-size: 0.82rem;
       font-weight: 500;
       color: var(--text);
-      background: white;
+      background: transparent;
       cursor: pointer;
+      outline: none;
     }
-    .sport-select:focus { outline: none; border-color: var(--blue); }
 
     /* ── Right-side controls ── */
-    .controls-right { margin-left: auto; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-    .threshold-label { font-size: 0.75rem; color: var(--muted); }
+    .controls-right { margin-left: auto; display: flex; align-items: center; gap: 0; height: 100%; }
+    .threshold-label { font-size: 0.75rem; color: var(--muted); white-space: nowrap; }
     .threshold-input {
-      width: 56px;
-      padding: 5px 8px;
+      width: 48px;
+      padding: 2px 6px;
       border: 1.5px solid var(--border);
       border-radius: 6px;
       font-size: 0.78rem;
@@ -240,9 +230,11 @@
     }
     .icon-btn {
       background: none;
-      border: 1.5px solid var(--border);
-      border-radius: 8px;
-      padding: 6px 12px;
+      border: none;
+      border-left: 1.5px solid var(--border);
+      border-radius: 0;
+      padding: 0 14px;
+      height: 100%;
       font-size: 0.78rem;
       color: var(--muted);
       cursor: pointer;
@@ -250,13 +242,14 @@
       align-items: center;
       gap: 5px;
       white-space: nowrap;
+      transition: background 0.12s, color 0.12s;
     }
-    .icon-btn:hover { border-color: var(--blue); color: var(--blue); }
+    .icon-btn:hover { background: #f8fafc; color: var(--text); }
     .icon-btn.spinning svg { animation: spin 0.8s linear infinite; }
-    .icon-btn.run-btn { border-color: #bbf7d0; color: #15803d; background: #f0fdf4; }
+    .icon-btn.run-btn { color: #15803d; background: #f0fdf4; }
     .icon-btn.run-btn:hover { background: #dcfce7; }
     .icon-btn.run-btn:disabled { opacity: 0.5; cursor: default; }
-    .last-updated { font-size: 0.72rem; color: var(--muted); }
+    .last-updated { font-size: 0.72rem; color: var(--muted); white-space: nowrap; }
 
     /* ── Section Header ── */
     .section-header {
@@ -388,7 +381,7 @@
       .summary-bar { grid-template-columns: repeat(2, 1fr); }
       header { padding: 12px 16px; }
       .setup-banner { flex-direction: column; align-items: flex-start; }
-      .controls-row { gap: 8px; }
+      .controls-row { overflow-x: auto; }
     }
   </style>
 </head>
@@ -445,34 +438,48 @@
     </div>
   </div>
 
-  <!-- Controls Row: Date nav + Sport picker + Edge + Actions -->
+  <!-- Controls Row: unified pill toolbar -->
   <div class="controls-row">
-    <div class="date-nav">
-      <button class="date-nav-btn" id="prev-day-btn" onclick="shiftDay(-1)" title="Previous day">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
-      </button>
-      <div class="date-nav-label" id="date-nav-label">
+    <!-- Date nav -->
+    <button class="date-nav-btn" id="prev-day-btn" onclick="shiftDay(-1)" title="Previous day" style="border:none;border-radius:0;height:100%;padding:0 12px;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <div class="controls-segment" style="min-width:130px;justify-content:center;border-right:1.5px solid var(--border);border-left:1.5px solid var(--border);">
+      <div id="date-nav-label" style="font-size:0.85rem;font-weight:600;color:var(--text);text-align:center;line-height:1.2;">
         Today
-        <span class="date-sub" id="date-nav-sub"></span>
+        <span style="display:block;font-size:0.68rem;color:var(--muted);font-weight:400;" id="date-nav-sub"></span>
       </div>
-      <button class="date-nav-btn" id="next-day-btn" onclick="shiftDay(1)" title="Next day">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
-      </button>
+    </div>
+    <button class="date-nav-btn" id="next-day-btn" onclick="shiftDay(1)" title="Next day" style="border:none;border-radius:0;height:100%;padding:0 12px;">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+
+    <div class="controls-divider"></div>
+
+    <!-- Sport picker -->
+    <div class="controls-segment">
+      <select class="sport-select" id="sport-select">
+        <option value="all">All Sports</option>
+        <option value="basketball_nba">NBA</option>
+        <option value="americanfootball_nfl">NFL</option>
+        <option value="baseball_mlb">MLB</option>
+        <option value="soccer_fifa_world_cup">⚽ World Cup</option>
+      </select>
     </div>
 
-    <select class="sport-select" id="sport-select">
-      <option value="all">All Sports</option>
-      <option value="basketball_nba">NBA</option>
-      <option value="americanfootball_nfl">NFL</option>
-      <option value="baseball_mlb">MLB</option>
-      <option value="soccer_fifa_world_cup">⚽ World Cup</option>
-    </select>
+    <div class="controls-divider"></div>
 
-    <span class="threshold-label">Min edge:</span>
-    <input class="threshold-input" id="edge-threshold" type="number" value="3" min="0" max="20" step="0.5" />
+    <!-- Min edge -->
+    <div class="controls-segment">
+      <span class="threshold-label">Min edge:</span>
+      <input class="threshold-input" id="edge-threshold" type="number" value="3" min="0" max="20" step="0.5" />
+    </div>
 
+    <!-- Right actions pushed to end -->
     <div class="controls-right">
-      <span class="last-updated" id="last-updated"></span>
+      <div class="controls-segment" style="padding:0 14px;">
+        <span class="last-updated" id="last-updated"></span>
+      </div>
       <button class="icon-btn run-btn" id="run-btn" onclick="runPredictions()" title="Trigger GitHub Action to generate model predictions">
         <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
           <polygon points="5 3 19 12 5 21 5 3"/>
