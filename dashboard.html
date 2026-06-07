@@ -874,11 +874,6 @@ function getBestEdge(game) {
 }
 
 function getBestBook(game) {
-  const pref = document.getElementById('book-select').value;
-  if (pref && game.bookmakers) {
-    const found = game.bookmakers.find(b => b.key === pref);
-    if (found) return found;
-  }
   return game.bookmakers?.[0];
 }
 
