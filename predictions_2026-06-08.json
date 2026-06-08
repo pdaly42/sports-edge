@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-07T23:14:12.327964+00:00",
+  "generated_at": "2026-06-08T00:15:36.994862+00:00",
   "date": "2026-06-08",
   "games": [
     {
@@ -32,26 +32,26 @@
       "commence_time": "2026-06-08T00:30:00+00:00",
       "home_team": "Chicago Cubs",
       "away_team": "San Francisco Giants",
-      "home_odds": -130,
-      "away_odds": 108,
+      "home_odds": -128,
+      "away_odds": 107,
       "spread": {
         "point": -1.5,
         "price": 165
       },
       "total": {
-        "line": 8.5,
-        "over": 100,
-        "under": -120
+        "line": 8.0,
+        "over": -115,
+        "under": -105
       },
       "model_home_prob": 0.5716,
       "model_away_prob": 0.4284,
-      "home_no_vig_prob": 0.5404,
-      "away_no_vig_prob": 0.4596,
-      "home_edge": 0.0312,
-      "away_edge": -0.0312,
-      "home_ev": 0.0113,
-      "away_ev": -0.1089,
-      "home_kelly": 0.0037,
+      "home_no_vig_prob": 0.5375,
+      "away_no_vig_prob": 0.4625,
+      "home_edge": 0.0341,
+      "away_edge": -0.0341,
+      "home_ev": 0.0182,
+      "away_ev": -0.1132,
+      "home_kelly": 0.0058,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "TBD",
@@ -144,8 +144,8 @@
       },
       "total": {
         "line": 7.5,
-        "over": -125,
-        "under": 105
+        "over": -120,
+        "under": 100
       },
       "model_home_prob": 0.5365,
       "model_away_prob": 0.4635,
