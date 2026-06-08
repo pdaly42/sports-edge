@@ -499,6 +499,7 @@ let ghToken   = localStorage.getItem('gh_token') || '';
 let allGames  = [];
 let modelPredictions = {};
 let activeSport = 'all';
+let _loadingGames = false;  // guard against concurrent loadAllGames calls
 let dayOffset = 0;   // 0 = today, 1 = tomorrow, -1 = yesterday
 
 // Cache: keyed by date string → array of games. Prevents re-fetching when
@@ -734,6 +735,8 @@ function parseESPNEvent(event, sport) {
 // Main game loader — ESPN primary, odds overlay
 // ─────────────────────────────────────────
 async function loadAllGames() {
+  if (_loadingGames) return;   // prevent concurrent double-load
+  _loadingGames = true;
   document.getElementById('refresh-btn').classList.add('spinning');
   showLoading();
   allGames = [];
@@ -756,9 +759,19 @@ async function loadAllGames() {
   // Match predictions to ESPN games by team name (before odds overlay)
   mergeModelPredictionsToGames();
 
+  // Dedup by ESPN ID as a safety net against any double-push
+  const seen = new Set();
+  allGames = allGames.filter(g => {
+    const key = g.espn_id || g.id;
+    if (seen.has(key)) return false;
+    seen.add(key);
+    return true;
+  });
+
   showOddsSource('ESPN');
 
   document.getElementById('refresh-btn').classList.remove('spinning');
+  _loadingGames = false;
   gamesCache[getViewDateISO()] = [...allGames];
   renderGames();
 }

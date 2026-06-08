@@ -595,6 +595,369 @@ def predict_mlb(api_key: str, target_date: str) -> list:
 
 
 # ─────────────────────────────────────────────────────────────
+# NFL
+# ─────────────────────────────────────────────────────────────
+
+# nfl_data_py uses 2-3 letter abbreviations; map from the-odds-api full names
+NFL_TEAM_MAP = {
+    "Arizona Cardinals":   "ARI", "Atlanta Falcons":      "ATL",
+    "Baltimore Ravens":    "BAL", "Buffalo Bills":        "BUF",
+    "Carolina Panthers":   "CAR", "Chicago Bears":        "CHI",
+    "Cincinnati Bengals":  "CIN", "Cleveland Browns":     "CLE",
+    "Dallas Cowboys":      "DAL", "Denver Broncos":       "DEN",
+    "Detroit Lions":       "DET", "Green Bay Packers":    "GB",
+    "Houston Texans":      "HOU", "Indianapolis Colts":   "IND",
+    "Jacksonville Jaguars":"JAX", "Kansas City Chiefs":   "KC",
+    "Las Vegas Raiders":   "LV",  "Los Angeles Chargers": "LAC",
+    "Los Angeles Rams":    "LA",  "Miami Dolphins":       "MIA",
+    "Minnesota Vikings":   "MIN", "New England Patriots": "NE",
+    "New Orleans Saints":  "NO",  "New York Giants":      "NYG",
+    "New York Jets":       "NYJ", "Philadelphia Eagles":  "PHI",
+    "Pittsburgh Steelers": "PIT", "San Francisco 49ers":  "SF",
+    "Seattle Seahawks":    "SEA", "Tampa Bay Buccaneers": "TB",
+    "Tennessee Titans":    "TEN", "Washington Commanders":"WAS",
+}
+
+
+def _best_ou_bet(line: float, predicted: float, p_over: float, p_under: float,
+                 over_odds, under_odds, edge_over, edge_under) -> dict | None:
+    """Flag an O/U best bet when edge >= 4% and predicted total is >= 3 pts from line."""
+    if abs(predicted - line) < 3.0:
+        return None
+    candidates = []
+    if edge_over  is not None and edge_over  >= 0.04:
+        candidates.append(("over",  p_over,  over_odds,  edge_over))
+    if edge_under is not None and edge_under >= 0.04:
+        candidates.append(("under", p_under, under_odds, edge_under))
+    if not candidates:
+        return None
+    side, prob, odds, edge = max(candidates, key=lambda x: x[3])
+    return {
+        "side":     side,
+        "odds":     odds,
+        "edge":     round(edge, 4),
+        "strength": "strong" if edge >= 0.07 else "moderate",
+    }
+
+
+def _get_nfl_current_week(target_date: str) -> tuple[int, int]:
+    """
+    Return (season, week) for a given date by loading the NFL schedule.
+    Falls back to current calendar year and week 1 if not determinable.
+    """
+    try:
+        import nfl_data_py as nfl
+        target_dt = pd.to_datetime(target_date)
+        current_year = target_dt.year
+        # NFL season year: regular season runs Sep–Jan, so Jan belongs to prior season
+        season = current_year if target_dt.month >= 8 else current_year - 1
+        sched = nfl.import_schedules([season])
+        sched = sched[sched["game_type"] == "REG"].copy()
+        sched["gameday"] = pd.to_datetime(sched["gameday"])
+        # Find the week whose games are closest to target_date
+        week_dates = sched.groupby("week")["gameday"].min().reset_index()
+        week_dates["delta"] = (week_dates["gameday"] - target_dt).abs()
+        week = int(week_dates.loc[week_dates["delta"].idxmin(), "week"])
+        return season, week
+    except Exception:
+        return pd.Timestamp.now().year, 1
+
+
+def predict_nfl(api_key: str, target_date: str) -> list:
+    print("\n── NFL ──")
+    games = fetch_odds(api_key, "americanfootball_nfl", target_date)
+    if not games:
+        games = fetch_games_from_espn("americanfootball_nfl", target_date)
+    print(f"  {len(games)} games on {target_date}")
+    if not games:
+        return []
+
+    from data.nfl_fetcher import get_current_team_stats
+    from data.nfl_qb_stats import get_current_qb_stats
+    from data.nfl_injuries import get_current_injury_scores
+
+    try:
+        bundle = load_model(sport="nfl", model_type="xgb")
+    except FileNotFoundError:
+        print("  NFL model not found — run scripts/train_if_needed.py first")
+        return []
+
+    try:
+        totals_bundle = load_model(sport="nfl", model_type="totals")
+    except FileNotFoundError:
+        totals_bundle = None
+        print("  NFL totals model not found — over/under predictions disabled")
+
+    # Team rolling stats
+    stats = get_current_team_stats()
+    roll_cols = [c for c in stats.columns if any(
+        c.startswith(p) for p in
+        ["win_pct_", "pts_for_avg_", "pts_against_avg_", "point_diff_avg_",
+         "season_win_pct", "season_point_diff_avg"]
+    )]
+
+    # Current QB stats
+    print("  Fetching current QB stats...")
+    qb_stats = get_current_qb_stats()
+    qb_roll_cols = [c for c in qb_stats.columns if any(
+        c.startswith(p) for p in ["qb_epa_per_att_", "qb_comp_pct_", "qb_ypa_", "qb_td_int_ratio_"]
+    )]
+
+    # Current injury report
+    season, week = _get_nfl_current_week(target_date)
+    print(f"  Fetching injury report for {season} week {week}...")
+    try:
+        injury_scores = get_current_injury_scores(season, week)
+    except Exception as e:
+        print(f"  Injury data unavailable (offseason or error): {e}")
+        injury_scores = {}
+
+    results = []
+    for game in games:
+        home_api  = game["home_team"]
+        away_api  = game["away_team"]
+        home_abbr = NFL_TEAM_MAP.get(home_api)
+        away_abbr = NFL_TEAM_MAP.get(away_api)
+
+        prob_home = None
+        feat = {}
+        if home_abbr and away_abbr:
+            h_row = stats[stats["team"] == home_abbr]
+            a_row = stats[stats["team"] == away_abbr]
+
+            if not h_row.empty and not a_row.empty:
+                h, a = h_row.iloc[0], a_row.iloc[0]
+                feat = {"game_id": game["id"]}
+
+                # Team rolling stats
+                for c in roll_cols:
+                    feat[f"home_{c}"] = h.get(c, np.nan)
+                    feat[f"away_{c}"] = a.get(c, np.nan)
+                for window in [4, 8, 16]:
+                    feat[f"win_pct_diff_{window}g"] = (
+                        h.get(f"win_pct_{window}g", np.nan) - a.get(f"win_pct_{window}g", np.nan)
+                    )
+                    feat[f"point_diff_diff_{window}g"] = (
+                        h.get(f"point_diff_avg_{window}g", np.nan) - a.get(f"point_diff_avg_{window}g", np.nan)
+                    )
+                feat["rest_advantage"]             = h.get("rest", 7)  - a.get("rest", 7)
+                feat["home_rest"]                  = h.get("rest", 7)
+                feat["away_rest"]                  = a.get("rest", 7)
+                feat["season_win_pct_diff"]         = h.get("season_win_pct", 0.5) - a.get("season_win_pct", 0.5)
+                feat["season_point_diff_avg_diff"]  = h.get("season_point_diff_avg", 0.0) - a.get("season_point_diff_avg", 0.0)
+
+                # QB rolling stats
+                h_qb = qb_stats[qb_stats["team"] == home_abbr]
+                a_qb = qb_stats[qb_stats["team"] == away_abbr]
+                hq = h_qb.iloc[0] if not h_qb.empty else {}
+                aq = a_qb.iloc[0] if not a_qb.empty else {}
+                for c in qb_roll_cols:
+                    feat[f"home_{c}"] = hq.get(c, 0.0) if hasattr(hq, "get") else 0.0
+                    feat[f"away_{c}"] = aq.get(c, 0.0) if hasattr(aq, "get") else 0.0
+                for c in qb_roll_cols:
+                    feat[f"qb_{c.replace('qb_','')}_diff"] = feat[f"home_{c}"] - feat[f"away_{c}"]
+
+                # Injury scores (0 if team not on report = healthy)
+                h_inj = injury_scores.get(home_abbr, {"injury_score": 0.0, "qb_injury_impact": 0.0})
+                a_inj = injury_scores.get(away_abbr, {"injury_score": 0.0, "qb_injury_impact": 0.0})
+                feat["home_injury_score"]      = h_inj["injury_score"]
+                feat["away_injury_score"]      = a_inj["injury_score"]
+                feat["home_qb_injury_impact"]  = h_inj["qb_injury_impact"]
+                feat["away_qb_injury_impact"]  = a_inj["qb_injury_impact"]
+                feat["injury_score_diff"]      = a_inj["injury_score"]     - h_inj["injury_score"]
+                feat["qb_injury_impact_diff"]  = a_inj["qb_injury_impact"] - h_inj["qb_injury_impact"]
+
+                # Totals features — combined (sum) versions of scoring/QB/injury
+                h_stats = h  # alias for readability
+                a_stats = a
+                for window in [4, 8, 16]:
+                    for stat in ["pts_for_avg", "pts_against_avg", "point_diff_avg"]:
+                        hv = h_stats.get(f"{stat}_{window}g", np.nan)
+                        av = a_stats.get(f"{stat}_{window}g", np.nan)
+                        feat[f"home_{stat}_{window}g"] = hv
+                        feat[f"away_{stat}_{window}g"] = av
+                        if stat in ("pts_for_avg", "pts_against_avg"):
+                            feat[f"combined_{stat}_{window}g"] = (hv or 0) + (av or 0)
+                    feat[f"home_game_total_avg_{window}g"] = (
+                        (h_stats.get(f"pts_for_avg_{window}g", 0) or 0)
+                        + (h_stats.get(f"pts_against_avg_{window}g", 0) or 0)
+                    )
+                    feat[f"away_game_total_avg_{window}g"] = (
+                        (a_stats.get(f"pts_for_avg_{window}g", 0) or 0)
+                        + (a_stats.get(f"pts_against_avg_{window}g", 0) or 0)
+                    )
+                feat["combined_season_pts_for"] = (
+                    h_stats.get("season_point_diff_avg", 0.0) or 0.0
+                ) + (a_stats.get("season_point_diff_avg", 0.0) or 0.0)
+                feat["combined_rest"] = feat["home_rest"] + feat["away_rest"]
+                for qb_col in qb_roll_cols:
+                    hv = feat.get(f"home_{qb_col}", 0.0) or 0.0
+                    av = feat.get(f"away_{qb_col}", 0.0) or 0.0
+                    feat[f"combined_{qb_col}"] = hv + av
+                feat["combined_injury_score"]     = feat["home_injury_score"]     + feat["away_injury_score"]
+                feat["combined_qb_injury_impact"] = feat["home_qb_injury_impact"] + feat["away_qb_injury_impact"]
+
+                aligned = align_features(feat, bundle)
+                if aligned is not None:
+                    prob_home = predict_proba(bundle, aligned)[0]
+            else:
+                print(f"  Missing stats: {home_api} ({home_abbr}) or {away_api} ({away_abbr})")
+        else:
+            print(f"  Unknown team mapping: {home_api} or {away_api}")
+
+        pred = build_game_prediction(
+            game, prob_home,
+            best_line(game, "home"), best_line(game, "away"),
+            "americanfootball_nfl", "NFL"
+        )
+        if pred.get("best_bet") and feat and prob_home is not None:
+            pred["justification"] = _nfl_justification(
+                home_api, away_api, feat, float(prob_home), pred["best_bet"],
+                home_abbr=home_abbr, away_abbr=away_abbr,
+                injury_scores=injury_scores, qb_stats=qb_stats,
+            )
+        # Surface injury data for dashboard
+        pred["home_injury_score"]     = feat.get("home_injury_score", 0.0)
+        pred["away_injury_score"]     = feat.get("away_injury_score", 0.0)
+        pred["home_qb_injury_impact"] = feat.get("home_qb_injury_impact", 0.0)
+        pred["away_qb_injury_impact"] = feat.get("away_qb_injury_impact", 0.0)
+
+        # ── Over/Under prediction ─────────────────────────────────────────────
+        if totals_bundle and feat:
+            from models.trainer import predict_total, over_under_probs
+            market_total = pred.get("total")
+            totals_aligned = align_features(feat, totals_bundle)
+            if totals_aligned is not None:
+                predicted_total = float(predict_total(totals_bundle, totals_aligned)[0])
+                pred["model_predicted_total"] = round(predicted_total, 1)
+                if market_total and market_total.get("line"):
+                    line = market_total["line"]
+                    rmse = totals_bundle["rmse"]
+                    p_over, p_under = over_under_probs(predicted_total, line, rmse)
+                    over_odds  = market_total.get("over")
+                    under_odds = market_total.get("under")
+
+                    def _ou_no_vig(o_odds, u_odds):
+                        if o_odds is None or u_odds is None:
+                            return None, None
+                        from utils.odds import remove_vig
+                        return remove_vig(o_odds, u_odds)
+
+                    mkt_over_nv, mkt_under_nv = _ou_no_vig(over_odds, under_odds)
+
+                    ou_edge_over  = round(p_over  - mkt_over_nv,  4) if mkt_over_nv  else None
+                    ou_edge_under = round(p_under - mkt_under_nv, 4) if mkt_under_nv else None
+
+                    def _ou_ev(model_p, odds):
+                        if odds is None:
+                            return None
+                        payout = abs(odds)/100 if odds < 0 else odds/100
+                        return round(model_p * payout - (1 - model_p), 4)
+
+                    pred["totals"] = {
+                        "market_line":   line,
+                        "predicted_total": round(predicted_total, 1),
+                        "p_over":        round(p_over,  4),
+                        "p_under":       round(p_under, 4),
+                        "market_over_nv":  round(mkt_over_nv,  4) if mkt_over_nv  else None,
+                        "market_under_nv": round(mkt_under_nv, 4) if mkt_under_nv else None,
+                        "over_edge":     ou_edge_over,
+                        "under_edge":    ou_edge_under,
+                        "over_ev":       _ou_ev(p_over,  over_odds),
+                        "under_ev":      _ou_ev(p_under, under_odds),
+                        "best_ou_bet":   _best_ou_bet(
+                            line, predicted_total, p_over, p_under,
+                            over_odds, under_odds, ou_edge_over, ou_edge_under
+                        ),
+                    }
+                else:
+                    pred["totals"] = {"predicted_total": round(predicted_total, 1)}
+
+        results.append(pred)
+        tot_str = ""
+        if pred.get("totals") and pred["totals"].get("market_line"):
+            t = pred["totals"]
+            tot_str = f" | O/U {t['market_line']} → model={t['predicted_total']} over={t['p_over']:.0%}"
+        print(
+            f"  {away_api} @ {home_api}: model={pred['model_home_prob']} "
+            f"edge={pred['home_edge']}{tot_str}"
+        )
+
+    return results
+
+
+def _nfl_justification(home: str, away: str, feat: dict,
+                        model_home_prob: float, best_bet: dict,
+                        home_abbr: str = None, away_abbr: str = None,
+                        injury_scores: dict = None, qb_stats=None) -> str:
+    """1-3 sentence justification for an NFL best bet, including QB and injury context."""
+    if best_bet is None:
+        return ""
+    side      = best_bet["side"]
+    edge_pct  = round(best_bet["edge"] * 100, 1)
+    fav_team  = home if side == "home" else away
+    dog_team  = away if side == "home" else home
+    pfx       = "home" if side == "home" else "away"
+    opp_pfx   = "away" if side == "home" else "home"
+    fav_abbr  = home_abbr if side == "home" else away_abbr
+    dog_abbr  = away_abbr if side == "home" else home_abbr
+
+    parts = []
+
+    # QB injury — mention first since it's highest-impact
+    if injury_scores and fav_abbr and dog_abbr:
+        fav_inj = injury_scores.get(fav_abbr, {})
+        dog_inj = injury_scores.get(dog_abbr, {})
+        dog_qb_impact = dog_inj.get("qb_injury_impact", 0.0)
+        fav_qb_impact = fav_inj.get("qb_injury_impact", 0.0)
+        if dog_qb_impact >= 0.5:
+            parts.append(f"{dog_team}'s QB is listed as Out or Doubtful (impact score {dog_qb_impact:.2f}), significantly hurting their outlook")
+        elif dog_qb_impact >= 0.2:
+            parts.append(f"{dog_team}'s QB is questionable (injury impact {dog_qb_impact:.2f})")
+        if fav_qb_impact >= 0.5:
+            parts.append(f"Note: {fav_team}'s QB is also injured (impact {fav_qb_impact:.2f}) — edge may be reduced")
+
+    # QB efficiency edge (EPA per attempt is most predictive)
+    h_epa = feat.get("home_qb_epa_per_att_4w", 0.0) or 0.0
+    a_epa = feat.get("away_qb_epa_per_att_4w", 0.0) or 0.0
+    fav_epa = h_epa if side == "home" else a_epa
+    dog_epa = a_epa if side == "home" else h_epa
+    if abs(fav_epa - dog_epa) >= 0.05 and fav_epa != 0.0:
+        parts.append(
+            f"{fav_team}'s QB has a {fav_epa:+.3f} EPA/attempt advantage over {dog_team} ({dog_epa:+.3f}) over the last 4 weeks"
+        )
+
+    # Recent point differential
+    d_fav = feat.get(f"{pfx}_point_diff_avg_8g")
+    d_dog = feat.get(f"{opp_pfx}_point_diff_avg_8g")
+    if d_fav is not None and str(d_fav) != "nan" and d_dog is not None and not parts:
+        parts.append(
+            f"{fav_team}'s avg point differential over last 8 games is {d_fav:+.1f} vs {d_dog:+.1f}"
+        )
+
+    # Rest/bye week edge
+    rest = feat.get("rest_advantage", 0) or 0
+    if side == "away":
+        rest = -rest
+    if abs(rest) >= 7:
+        rested = fav_team if rest > 0 else dog_team
+        parts.append(f"{rested} have a significant rest advantage ({abs(int(rest))} extra days — likely a bye week)")
+
+    # Non-QB injury load on the opponent
+    if injury_scores and dog_abbr:
+        dog_non_qb = injury_scores.get(dog_abbr, {}).get("injury_score", 0.0)
+        if dog_non_qb >= 1.0:
+            parts.append(f"{dog_team} are dealing with significant non-QB injuries (score {dog_non_qb:.1f})")
+
+    parts.append(
+        f"Model prices {fav_team} at "
+        f"{round(model_home_prob*100 if side=='home' else (1-model_home_prob)*100, 1)}% "
+        f"— a +{edge_pct}% edge over the market"
+    )
+    return ". ".join(parts[:3]) + "."
+
+
+# ─────────────────────────────────────────────────────────────
 # Soccer / World Cup  (3-way: home win / draw / away win)
 # ─────────────────────────────────────────────────────────────
 
@@ -782,7 +1145,7 @@ def run(api_key: str, output_path: str = None, target_date: str = None,
         sports: list = None) -> None:
     target_date = target_date or date.today().isoformat()
     output_path = output_path or f"predictions_{target_date}.json"
-    sports = sports or ["nba", "mlb"]
+    sports = sports or ["nba", "mlb", "nfl"]
 
     print(f"Running predictions for {target_date} — sports: {sports}")
     all_games = []
@@ -791,6 +1154,8 @@ def run(api_key: str, output_path: str = None, target_date: str = None,
         all_games += predict_nba(api_key, target_date)
     if "mlb" in sports:
         all_games += predict_mlb(api_key, target_date)
+    if "nfl" in sports:
+        all_games += predict_nfl(api_key, target_date)
     if "soccer" in sports:
         all_games += predict_soccer(api_key, target_date)
 
@@ -827,7 +1192,7 @@ if __name__ == "__main__":
     if not args.api_key:
         print("Warning: no ODDS_API_KEY — will use ESPN for game list, no odds data")
 
-    sports = [args.sport] if args.sport else ["nba", "mlb", "soccer"]
+    sports = [args.sport] if args.sport else ["nba", "mlb", "nfl", "soccer"]
     target_date = args.date or date.today().isoformat()
     output_path = args.output or f"predictions_{target_date}.json"
 
