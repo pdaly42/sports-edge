@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T00:15:36.994862+00:00",
+  "generated_at": "2026-06-08T10:23:44.823893+00:00",
   "date": "2026-06-08",
   "games": [
     {
@@ -24,38 +24,6 @@
       "home_kelly": null,
       "away_kelly": null,
       "best_bet": null
-    },
-    {
-      "id": "bovada_baseball_mlb_San_Francisco_Giants_Chicago_Cubs",
-      "sport": "baseball_mlb",
-      "sport_label": "MLB",
-      "commence_time": "2026-06-08T00:30:00+00:00",
-      "home_team": "Chicago Cubs",
-      "away_team": "San Francisco Giants",
-      "home_odds": -128,
-      "away_odds": 107,
-      "spread": {
-        "point": -1.5,
-        "price": 165
-      },
-      "total": {
-        "line": 8.0,
-        "over": -115,
-        "under": -105
-      },
-      "model_home_prob": 0.5716,
-      "model_away_prob": 0.4284,
-      "home_no_vig_prob": 0.5375,
-      "away_no_vig_prob": 0.4625,
-      "home_edge": 0.0341,
-      "away_edge": -0.0341,
-      "home_ev": 0.0182,
-      "away_ev": -0.1132,
-      "home_kelly": 0.0058,
-      "away_kelly": 0.0,
-      "best_bet": null,
-      "home_pitcher": "TBD",
-      "away_pitcher": "Logan Webb"
     },
     {
       "id": "bovada_baseball_mlb_Seattle_Mariners_Baltimore_Orioles",
@@ -96,11 +64,11 @@
       "commence_time": "2026-06-08T22:40:00+00:00",
       "home_team": "Tampa Bay Rays",
       "away_team": "Boston Red Sox",
-      "home_odds": -103,
-      "away_odds": -117,
+      "home_odds": 102,
+      "away_odds": -122,
       "spread": {
         "point": 1.5,
-        "price": -175
+        "price": -170
       },
       "total": {
         "line": 7.5,
@@ -109,20 +77,20 @@
       },
       "model_home_prob": 0.3344,
       "model_away_prob": 0.6656,
-      "home_no_vig_prob": 0.4848,
-      "away_no_vig_prob": 0.5152,
-      "home_edge": -0.1504,
-      "away_edge": 0.1504,
-      "home_ev": -0.3409,
-      "away_ev": 0.2345,
+      "home_no_vig_prob": 0.4739,
+      "away_no_vig_prob": 0.5261,
+      "home_edge": -0.1395,
+      "away_edge": 0.1395,
+      "home_ev": -0.3245,
+      "away_ev": 0.2112,
       "home_kelly": 0.0,
-      "away_kelly": 0.0686,
+      "away_kelly": 0.0644,
       "best_bet": {
         "side": "away",
         "team": "Boston Red Sox",
-        "odds": -117,
-        "edge": 0.1504,
-        "ev": 0.2345,
+        "odds": -122,
+        "edge": 0.1395,
+        "ev": 0.2112,
         "strength": "strong"
       },
       "home_pitcher": "Ian Seymour",
@@ -136,26 +104,26 @@
       "commence_time": "2026-06-08T22:40:00+00:00",
       "home_team": "Cleveland Guardians",
       "away_team": "New York Yankees",
-      "home_odds": -114,
-      "away_odds": -106,
+      "home_odds": -117,
+      "away_odds": -103,
       "spread": {
         "point": 1.5,
-        "price": -200
+        "price": -195
       },
       "total": {
         "line": 7.5,
-        "over": -120,
-        "under": 100
+        "over": -115,
+        "under": -105
       },
       "model_home_prob": 0.5365,
       "model_away_prob": 0.4635,
-      "home_no_vig_prob": 0.5087,
-      "away_no_vig_prob": 0.4913,
-      "home_edge": 0.0278,
-      "away_edge": -0.0278,
-      "home_ev": 0.0071,
-      "away_ev": -0.0992,
-      "home_kelly": 0.002,
+      "home_no_vig_prob": 0.5152,
+      "away_no_vig_prob": 0.4848,
+      "home_edge": 0.0213,
+      "away_edge": -0.0213,
+      "home_ev": -0.005,
+      "away_ev": -0.0865,
+      "home_kelly": 0.0,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Gavin Williams",
@@ -168,25 +136,25 @@
       "commence_time": "2026-06-08T23:07:00+00:00",
       "home_team": "Toronto Blue Jays",
       "away_team": "Philadelphia Phillies",
-      "home_odds": 148,
-      "away_odds": -180,
+      "home_odds": 153,
+      "away_odds": -185,
       "spread": {
         "point": 1.5,
         "price": -120
       },
       "total": {
         "line": 7.5,
-        "over": 100,
-        "under": -120
+        "over": 105,
+        "under": -125
       },
       "model_home_prob": 0.3863,
       "model_away_prob": 0.6137,
-      "home_no_vig_prob": 0.3855,
-      "away_no_vig_prob": 0.6145,
-      "home_edge": 0.0008,
-      "away_edge": -0.0008,
-      "home_ev": -0.042,
-      "away_ev": -0.0454,
+      "home_no_vig_prob": 0.3785,
+      "away_no_vig_prob": 0.6215,
+      "home_edge": 0.0078,
+      "away_edge": -0.0078,
+      "home_ev": -0.0227,
+      "away_ev": -0.0546,
       "home_kelly": 0.0,
       "away_kelly": 0.0,
       "best_bet": null,
