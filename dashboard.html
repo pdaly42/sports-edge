@@ -833,7 +833,7 @@ function renderGames() {
 
   let strong = 0, moderate = 0;
   allGames.forEach(g => {
-    const bb = g.pred?.best_bet;
+    const bb = modelPredictions[g.id]?.best_bet;
     if (!bb) return;
     if (bb.strength === 'strong')   strong++;
     else if (bb.strength === 'moderate') moderate++;
