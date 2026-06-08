@@ -24,6 +24,21 @@ from config.settings import MODELS_DIR
 MODELS_DIR.mkdir(parents=True, exist_ok=True)
 
 
+class PlattCalibrated:
+    """
+    Thin wrapper that applies Platt (sigmoid) scaling to a pre-fitted base model.
+    Defined at module level so joblib/pickle can serialize it.
+    """
+    def __init__(self, base, platt):
+        self._base  = base
+        self._platt = platt
+
+    def predict_proba(self, X):
+        raw = self._base.predict_proba(X)[:, 1].reshape(-1, 1)
+        p   = self._platt.predict_proba(raw)[:, 1]
+        return np.column_stack([1 - p, p])
+
+
 FEATURE_PATTERNS = [
     "win_pct_diff",
     "point_diff_diff",
@@ -227,18 +242,7 @@ def train(
     raw_cal_probs = base_final.predict_proba(X_cal_s)[:, 1].reshape(-1, 1)
     platt = LogisticRegression(C=1.0, max_iter=1000)
     platt.fit(raw_cal_probs, y_cal)
-
-    class _PlattCalibrated:
-        """Thin wrapper so predict_proba works the same as CalibratedClassifierCV."""
-        def __init__(self, base, platt):
-            self._base  = base
-            self._platt = platt
-        def predict_proba(self, X):
-            raw = self._base.predict_proba(X)[:, 1].reshape(-1, 1)
-            p   = self._platt.predict_proba(raw)[:, 1]
-            return np.column_stack([1 - p, p])
-
-    calibrated_model = _PlattCalibrated(base_final, platt)
+    calibrated_model = PlattCalibrated(base_final, platt)
 
     # ── Calibration diagnostics on the held-out set ────────────────────────
     probs_raw = base_final.predict_proba(X_cal_s)[:, 1]
