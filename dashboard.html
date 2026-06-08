@@ -407,13 +407,13 @@
       <div class="summary-sub" id="stat-sports">across all sports</div>
     </div>
     <div class="summary-card">
-      <div class="summary-label">Strong Edges (&gt;5%)</div>
+      <div class="summary-label">Strong Picks</div>
       <div class="summary-value" id="stat-strong" style="color:var(--green)">—</div>
       <div class="summary-sub">today · model vs no-vig line</div>
       <div class="lifetime-record" id="ltd-strong">—</div>
     </div>
     <div class="summary-card">
-      <div class="summary-label">Moderate Edges (3–5%)</div>
+      <div class="summary-label">Moderate Picks</div>
       <div class="summary-value" id="stat-moderate" style="color:var(--amber)">—</div>
       <div class="summary-sub">today · worth monitoring</div>
       <div class="lifetime-record" id="ltd-moderate">—</div>
@@ -833,9 +833,10 @@ function renderGames() {
 
   let strong = 0, moderate = 0;
   allGames.forEach(g => {
-    const e = getBestEdge(g);
-    if (e >= 0.05) strong++;
-    else if (e >= 0.03) moderate++;
+    const bb = g.pred?.best_bet;
+    if (!bb) return;
+    if (bb.strength === 'strong')   strong++;
+    else if (bb.strength === 'moderate') moderate++;
   });
   document.getElementById('stat-strong').textContent   = strong;
   document.getElementById('stat-moderate').textContent = moderate;
@@ -909,11 +910,12 @@ function renderCard(game, threshold) {
 
   const bestEdge = pred ? Math.max(pred.home_edge ?? 0, pred.away_edge ?? 0) : null;
   const hasEdge  = bestEdge !== null && bestEdge >= threshold;
+  const bb = pred?.best_bet;
   let badgeClass, badgeText;
-  if (!pred)               { badgeClass = 'none';     badgeText = 'ODDS PENDING'; }
-  else if (bestEdge >= 0.05) { badgeClass = 'strong';   badgeText = `EDGE +${(bestEdge*100).toFixed(1)}%`; }
-  else if (bestEdge >= 0.03) { badgeClass = 'moderate'; badgeText = `EDGE +${(bestEdge*100).toFixed(1)}%`; }
-  else                       { badgeClass = 'none';     badgeText = 'NO EDGE'; }
+  if (!pred)                         { badgeClass = 'none';     badgeText = 'ODDS PENDING'; }
+  else if (bb?.strength === 'strong')   { badgeClass = 'strong';   badgeText = `EDGE +${(bb.edge*100).toFixed(1)}%`; }
+  else if (bb?.strength === 'moderate') { badgeClass = 'moderate'; badgeText = `EDGE +${(bb.edge*100).toFixed(1)}%`; }
+  else                               { badgeClass = 'none';     badgeText = 'NO EDGE'; }
 
   const time = new Date(game.commence_time).toLocaleTimeString('en-US', {
     hour: 'numeric', minute: '2-digit', timeZoneName: 'short'
@@ -1043,11 +1045,12 @@ function renderSoccerCard(game, threshold) {
 
   const bestEdge = pred ? Math.max(pred.home_edge??0, pred.draw_edge??0, pred.away_edge??0) : null;
   const hasEdge  = bestEdge !== null && bestEdge >= threshold;
+  const bb = pred?.best_bet;
   let badgeClass, badgeText;
-  if (!pred)               { badgeClass='none';     badgeText='ODDS PENDING'; }
-  else if (bestEdge>=0.05) { badgeClass='strong';   badgeText=`EDGE +${(bestEdge*100).toFixed(1)}%`; }
-  else if (bestEdge>=0.03) { badgeClass='moderate'; badgeText=`EDGE +${(bestEdge*100).toFixed(1)}%`; }
-  else                     { badgeClass='none';     badgeText='NO EDGE'; }
+  if (!pred)                            { badgeClass='none';     badgeText='ODDS PENDING'; }
+  else if (bb?.strength === 'strong')   { badgeClass='strong';   badgeText=`EDGE +${(bb.edge*100).toFixed(1)}%`; }
+  else if (bb?.strength === 'moderate') { badgeClass='moderate'; badgeText=`EDGE +${(bb.edge*100).toFixed(1)}%`; }
+  else                                  { badgeClass='none';     badgeText='NO EDGE'; }
 
   const eloLine = pred
     ? `<span style="font-size:0.68rem;color:var(--muted)">ELO ${pred.home_elo} vs ${pred.away_elo}</span>`
