@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-08T21:24:36.562120+00:00",
+  "generated_at": "2026-06-08T23:25:51.333165+00:00",
   "date": "2026-06-08",
   "games": [
     {
@@ -13,8 +13,8 @@
       "away_odds": null,
       "spread": null,
       "total": null,
-      "model_home_prob": 0.6266,
-      "model_away_prob": 0.3734,
+      "model_home_prob": 0.7468,
+      "model_away_prob": 0.2532,
       "home_no_vig_prob": null,
       "away_no_vig_prob": null,
       "home_edge": null,
@@ -32,38 +32,30 @@
       "commence_time": "2026-06-08T22:35:00+00:00",
       "home_team": "Baltimore Orioles",
       "away_team": "Seattle Mariners",
-      "home_odds": 106,
-      "away_odds": -126,
+      "home_odds": -120,
+      "away_odds": -110,
       "spread": {
         "point": 1.5,
-        "price": -150
+        "price": -205
       },
       "total": {
-        "line": 9.5,
-        "over": -105,
-        "under": -115
+        "line": 6.5,
+        "over": -125,
+        "under": -105
       },
-      "model_home_prob": 0.3672,
-      "model_away_prob": 0.6328,
-      "home_no_vig_prob": 0.4654,
-      "away_no_vig_prob": 0.5346,
-      "home_edge": -0.0982,
-      "away_edge": 0.0982,
-      "home_ev": -0.2436,
-      "away_ev": 0.135,
+      "model_home_prob": 0.4854,
+      "model_away_prob": 0.5146,
+      "home_no_vig_prob": 0.5101,
+      "away_no_vig_prob": 0.4899,
+      "home_edge": -0.0247,
+      "away_edge": 0.0247,
+      "home_ev": -0.1101,
+      "away_ev": -0.0176,
       "home_kelly": 0.0,
-      "away_kelly": 0.0425,
-      "best_bet": {
-        "side": "away",
-        "team": "Seattle Mariners",
-        "odds": -126,
-        "edge": 0.0982,
-        "ev": 0.135,
-        "strength": "moderate"
-      },
+      "away_kelly": 0.0,
+      "best_bet": null,
       "home_pitcher": "Trey Gibson",
-      "away_pitcher": "Emerson Hancock",
-      "justification": "Seattle Mariners are 7-3 in their last 10 (Baltimore Orioles 5-5); season records 34-32 vs 31-35. Seattle Mariners's avg run differential is +2.8 vs Baltimore Orioles's -1.4 over the last 10 games. Emerson Hancock (ERA 2.8) has a meaningful ERA advantage over Trey Gibson (ERA 3.65)."
+      "away_pitcher": "Emerson Hancock"
     },
     {
       "id": "bovada_baseball_mlb_Boston_Red_Sox_Tampa_Bay_Rays",
@@ -72,38 +64,38 @@
       "commence_time": "2026-06-08T22:40:00+00:00",
       "home_team": "Tampa Bay Rays",
       "away_team": "Boston Red Sox",
-      "home_odds": -107,
-      "away_odds": -113,
+      "home_odds": -205,
+      "away_odds": 155,
       "spread": {
-        "point": 1.5,
-        "price": -180
+        "point": -1.5,
+        "price": 110
       },
       "total": {
-        "line": 8.0,
-        "over": -105,
-        "under": -115
+        "line": 7.5,
+        "over": 100,
+        "under": -130
       },
-      "model_home_prob": 0.3344,
-      "model_away_prob": 0.6656,
-      "home_no_vig_prob": 0.4935,
-      "away_no_vig_prob": 0.5065,
-      "home_edge": -0.1591,
-      "away_edge": 0.1591,
-      "home_ev": -0.3531,
-      "away_ev": 0.2546,
+      "model_home_prob": 0.3904,
+      "model_away_prob": 0.6096,
+      "home_no_vig_prob": 0.6315,
+      "away_no_vig_prob": 0.3685,
+      "home_edge": -0.2411,
+      "away_edge": 0.2411,
+      "home_ev": -0.4192,
+      "away_ev": 0.5545,
       "home_kelly": 0.0,
-      "away_kelly": 0.0719,
+      "away_kelly": 0.0894,
       "best_bet": {
         "side": "away",
         "team": "Boston Red Sox",
-        "odds": -113,
-        "edge": 0.1591,
-        "ev": 0.2546,
+        "odds": 155,
+        "edge": 0.2411,
+        "ev": 0.5545,
         "strength": "strong"
       },
       "home_pitcher": "Ian Seymour",
       "away_pitcher": "Connelly Early",
-      "justification": "Boston Red Sox are 5-5 in their last 10 (Tampa Bay Rays 3-7); season records 27-36 vs 37-25. Boston Red Sox's avg run differential is +0.6 vs Tampa Bay Rays's -0.4 over the last 10 games. Connelly Early (ERA 3.26) has a meaningful ERA advantage over Ian Seymour (ERA 5.23)."
+      "justification": "Boston Red Sox are 5-5 in their last 10 (Tampa Bay Rays 3-7); season records 27-36 vs 37-25. Boston Red Sox's avg run differential is +0.6 vs Tampa Bay Rays's -0.4 over the last 10 games. Connelly Early (ERA 3.29) has a meaningful ERA advantage over Ian Seymour (ERA 5.13)."
     },
     {
       "id": "bovada_baseball_mlb_New_York_Yankees_Cleveland_Guardians",
@@ -112,30 +104,38 @@
       "commence_time": "2026-06-08T22:40:00+00:00",
       "home_team": "Cleveland Guardians",
       "away_team": "New York Yankees",
-      "home_odds": -126,
-      "away_odds": 106,
+      "home_odds": 225,
+      "away_odds": -310,
       "spread": {
-        "point": -1.5,
-        "price": 165
+        "point": 2.5,
+        "price": -155
       },
       "total": {
-        "line": 8.0,
-        "over": 105,
-        "under": -125
+        "line": 7.5,
+        "over": -135,
+        "under": 105
       },
-      "model_home_prob": 0.5365,
-      "model_away_prob": 0.4635,
-      "home_no_vig_prob": 0.5346,
-      "away_no_vig_prob": 0.4654,
-      "home_edge": 0.0019,
-      "away_edge": -0.0019,
-      "home_ev": -0.0377,
-      "away_ev": -0.0452,
-      "home_kelly": 0.0,
+      "model_home_prob": 0.5143,
+      "model_away_prob": 0.4857,
+      "home_no_vig_prob": 0.2892,
+      "away_no_vig_prob": 0.7108,
+      "home_edge": 0.2251,
+      "away_edge": -0.2251,
+      "home_ev": 0.6715,
+      "away_ev": -0.3576,
+      "home_kelly": 0.0746,
       "away_kelly": 0.0,
-      "best_bet": null,
+      "best_bet": {
+        "side": "home",
+        "team": "Cleveland Guardians",
+        "odds": 225,
+        "edge": 0.2251,
+        "ev": 0.6715,
+        "strength": "strong"
+      },
       "home_pitcher": "Gavin Williams",
-      "away_pitcher": "Will Warren"
+      "away_pitcher": "Will Warren",
+      "justification": "Cleveland Guardians are 5-5 in their last 10 (New York Yankees 6-4); season records 37-30 vs 38-26. Cleveland Guardians's avg run differential is +1.0 vs New York Yankees's +3.6 over the last 10 games. Model prices Cleveland Guardians at 51.4% \u2014 a +22.5% edge over the market line."
     },
     {
       "id": "bovada_baseball_mlb_Philadelphia_Phillies_Toronto_Blue_Jays",
@@ -144,30 +144,38 @@
       "commence_time": "2026-06-08T23:07:00+00:00",
       "home_team": "Toronto Blue Jays",
       "away_team": "Philadelphia Phillies",
-      "home_odds": 146,
-      "away_odds": -178,
+      "home_odds": 120,
+      "away_odds": -155,
       "spread": {
         "point": 1.5,
-        "price": -120
+        "price": -135
       },
       "total": {
-        "line": 7.5,
-        "over": -105,
-        "under": -115
+        "line": 6.5,
+        "over": -125,
+        "under": -105
       },
-      "model_home_prob": 0.3863,
-      "model_away_prob": 0.6137,
-      "home_no_vig_prob": 0.3883,
-      "away_no_vig_prob": 0.6117,
-      "home_edge": -0.002,
-      "away_edge": 0.002,
-      "home_ev": -0.0497,
-      "away_ev": -0.0415,
+      "model_home_prob": 0.3333,
+      "model_away_prob": 0.6667,
+      "home_no_vig_prob": 0.4279,
+      "away_no_vig_prob": 0.5721,
+      "home_edge": -0.0946,
+      "away_edge": 0.0946,
+      "home_ev": -0.2667,
+      "away_ev": 0.0968,
       "home_kelly": 0.0,
-      "away_kelly": 0.0,
-      "best_bet": null,
+      "away_kelly": 0.0375,
+      "best_bet": {
+        "side": "away",
+        "team": "Philadelphia Phillies",
+        "odds": -155,
+        "edge": 0.0946,
+        "ev": 0.0968,
+        "strength": "moderate"
+      },
       "home_pitcher": "Patrick Corbin",
-      "away_pitcher": "Cristopher S\u00e1nchez"
+      "away_pitcher": "Cristopher S\u00e1nchez",
+      "justification": "Philadelphia Phillies are 7-3 in their last 10 (Toronto Blue Jays 5-5); season records 35-30 vs 32-34. Philadelphia Phillies's avg run differential is +0.9 vs Toronto Blue Jays's -2.3 over the last 10 games. Cristopher S\u00e1nchez (ERA 1.44) has a meaningful ERA advantage over Patrick Corbin (ERA 3.9)."
     }
   ]
 }
