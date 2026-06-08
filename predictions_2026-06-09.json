@@ -1,0 +1,188 @@
+{
+  "generated_at": "2026-06-08T15:02:28.504647+00:00",
+  "date": "2026-06-09",
+  "games": [
+    {
+      "id": "bovada_basketball_nba_San_Antonio_Spurs_New_York_Knicks",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-06-09T00:40:00+00:00",
+      "home_team": "New York Knicks",
+      "away_team": "San Antonio Spurs",
+      "home_odds": -125,
+      "away_odds": 105,
+      "spread": {
+        "point": -1.5,
+        "price": -115
+      },
+      "total": {
+        "line": 216.0,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.6266,
+      "model_away_prob": 0.3734,
+      "home_no_vig_prob": 0.5325,
+      "away_no_vig_prob": 0.4675,
+      "home_edge": 0.0941,
+      "away_edge": -0.0941,
+      "home_ev": 0.1279,
+      "away_ev": -0.2345,
+      "home_kelly": 0.04,
+      "away_kelly": 0.0,
+      "best_bet": {
+        "side": "home",
+        "team": "New York Knicks",
+        "odds": -125,
+        "edge": 0.0941,
+        "ev": 0.1279,
+        "strength": "moderate"
+      },
+      "justification": "New York Knicks's avg point differential is +0.6 vs San Antonio Spurs's -9.7 over the last 10 games. New York Knicks have a 1-day rest edge over San Antonio Spurs. Model prices New York Knicks at 62.7% \u2014 a +9.4% edge over the market line."
+    },
+    {
+      "id": "bovada_baseball_mlb_Houston_Astros_Los_Angeles_Angels",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-06-09T01:38:00+00:00",
+      "home_team": "Los Angeles Angels",
+      "away_team": "Houston Astros",
+      "home_odds": 110,
+      "away_odds": -132,
+      "spread": {
+        "point": 1.5,
+        "price": -145
+      },
+      "total": {
+        "line": 9.0,
+        "over": -115,
+        "under": -105
+      },
+      "model_home_prob": 0.5313,
+      "model_away_prob": 0.4687,
+      "home_no_vig_prob": 0.4556,
+      "away_no_vig_prob": 0.5444,
+      "home_edge": 0.0757,
+      "away_edge": -0.0757,
+      "home_ev": 0.1157,
+      "away_ev": -0.1762,
+      "home_kelly": 0.0263,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Walbert Ure\u00f1a",
+      "away_pitcher": "Kai-Wei Teng"
+    },
+    {
+      "id": "bovada_baseball_mlb_Cincinnati_Reds_San_Diego_Padres",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-06-09T01:40:00+00:00",
+      "home_team": "San Diego Padres",
+      "away_team": "Cincinnati Reds",
+      "home_odds": -136,
+      "away_odds": 114,
+      "spread": {
+        "point": -1.5,
+        "price": 160
+      },
+      "total": {
+        "line": 7.5,
+        "over": -120,
+        "under": 100
+      },
+      "model_home_prob": 0.2353,
+      "model_away_prob": 0.7647,
+      "home_no_vig_prob": 0.5522,
+      "away_no_vig_prob": 0.4478,
+      "home_edge": -0.3169,
+      "away_edge": 0.3169,
+      "home_ev": -0.5917,
+      "away_ev": 0.6365,
+      "home_kelly": 0.0,
+      "away_kelly": 0.1396,
+      "best_bet": null,
+      "home_pitcher": "Lucas Giolito",
+      "away_pitcher": "Chase Burns"
+    },
+    {
+      "id": "bovada_baseball_mlb_Washington_Nationals_San_Francisco_Giants",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-06-09T01:45:00+00:00",
+      "home_team": "San Francisco Giants",
+      "away_team": "Washington Nationals",
+      "home_odds": -149,
+      "away_odds": 125,
+      "spread": {
+        "point": -1.5,
+        "price": 140
+      },
+      "total": {
+        "line": 8.0,
+        "over": -115,
+        "under": -105
+      },
+      "model_home_prob": 0.361,
+      "model_away_prob": 0.639,
+      "home_no_vig_prob": 0.5738,
+      "away_no_vig_prob": 0.4262,
+      "home_edge": -0.2128,
+      "away_edge": 0.2128,
+      "home_ev": -0.3967,
+      "away_ev": 0.4378,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0876,
+      "best_bet": {
+        "side": "away",
+        "team": "Washington Nationals",
+        "odds": 125,
+        "edge": 0.2128,
+        "ev": 0.4378,
+        "strength": "strong"
+      },
+      "home_pitcher": "Adrian Houser",
+      "away_pitcher": "Andrew Alvarez",
+      "justification": "Washington Nationals are 4-6 in their last 10 (San Francisco Giants 5-5); season records 33-33 vs 27-39. Washington Nationals's avg run differential is -2.2 vs San Francisco Giants's +0.1 over the last 10 games. Andrew Alvarez (ERA 3.54) has a meaningful ERA advantage over Adrian Houser (ERA 5.49)."
+    },
+    {
+      "id": "bovada_baseball_mlb_Milwaukee_Brewers_Athletics",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-06-09T02:05:00+00:00",
+      "home_team": "Athletics",
+      "away_team": "Milwaukee Brewers",
+      "home_odds": 127,
+      "away_odds": -152,
+      "spread": {
+        "point": 1.5,
+        "price": -115
+      },
+      "total": {
+        "line": 11.0,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.6204,
+      "model_away_prob": 0.3796,
+      "home_no_vig_prob": 0.4221,
+      "away_no_vig_prob": 0.5779,
+      "home_edge": 0.1983,
+      "away_edge": -0.1983,
+      "home_ev": 0.4083,
+      "away_ev": -0.3707,
+      "home_kelly": 0.0804,
+      "away_kelly": 0.0,
+      "best_bet": {
+        "side": "home",
+        "team": "Athletics",
+        "odds": 127,
+        "edge": 0.1983,
+        "ev": 0.4083,
+        "strength": "strong"
+      },
+      "home_pitcher": "J.T. Ginn",
+      "away_pitcher": "Robert Gasser",
+      "justification": "Athletics are 4-6 in their last 10 (Milwaukee Brewers 7-3); season records 31-34 vs 40-23. Athletics's avg run differential is -2.3 vs Milwaukee Brewers's +0.0 over the last 10 games. J.T. Ginn (ERA 2.74) has a meaningful ERA advantage over Robert Gasser (ERA 4.73)."
+    }
+  ]
+}
