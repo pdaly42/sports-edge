@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-11T15:06:18.301424+00:00",
+  "generated_at": "2026-06-11T21:37:17.602923+00:00",
   "date": "2026-06-12",
   "games": [
     {
@@ -13,8 +13,8 @@
       "away_odds": null,
       "spread": null,
       "total": null,
-      "model_home_prob": 0.4524,
-      "model_away_prob": 0.5476,
+      "model_home_prob": 0.4802,
+      "model_away_prob": 0.5198,
       "home_no_vig_prob": null,
       "away_no_vig_prob": null,
       "home_edge": null,
@@ -24,7 +24,7 @@
       "home_kelly": null,
       "away_kelly": null,
       "best_bet": null,
-      "home_pitcher": "TBD",
+      "home_pitcher": "Braxton Ashcraft",
       "away_pitcher": "Sandy Alcantara"
     },
     {
@@ -63,8 +63,8 @@
       "away_odds": null,
       "spread": null,
       "total": null,
-      "model_home_prob": 0.6283,
-      "model_away_prob": 0.3717,
+      "model_home_prob": 0.5819,
+      "model_away_prob": 0.4181,
       "home_no_vig_prob": null,
       "away_no_vig_prob": null,
       "home_edge": null,
@@ -74,7 +74,7 @@
       "home_kelly": null,
       "away_kelly": null,
       "best_bet": null,
-      "home_pitcher": "TBD",
+      "home_pitcher": "Shane Baz",
       "away_pitcher": "Griffin Canning"
     },
     {
@@ -113,8 +113,8 @@
       "away_odds": null,
       "spread": null,
       "total": null,
-      "model_home_prob": 0.5568,
-      "model_away_prob": 0.4432,
+      "model_home_prob": 0.5829,
+      "model_away_prob": 0.4171,
       "home_no_vig_prob": null,
       "away_no_vig_prob": null,
       "home_edge": null,
@@ -125,7 +125,7 @@
       "away_kelly": null,
       "best_bet": null,
       "home_pitcher": "Nolan McLean",
-      "away_pitcher": "TBD"
+      "away_pitcher": "Spencer Strider"
     },
     {
       "id": "401815721",
@@ -163,8 +163,8 @@
       "away_odds": null,
       "spread": null,
       "total": null,
-      "model_home_prob": 0.5395,
-      "model_away_prob": 0.4605,
+      "model_home_prob": 0.6302,
+      "model_away_prob": 0.3698,
       "home_no_vig_prob": null,
       "away_no_vig_prob": null,
       "home_edge": null,
@@ -175,7 +175,7 @@
       "away_kelly": null,
       "best_bet": null,
       "home_pitcher": "Sonny Gray",
-      "away_pitcher": "TBD"
+      "away_pitcher": "Jack Leiter"
     },
     {
       "id": "401815723",
@@ -213,8 +213,8 @@
       "away_odds": null,
       "spread": null,
       "total": null,
-      "model_home_prob": 0.469,
-      "model_away_prob": 0.531,
+      "model_home_prob": 0.4463,
+      "model_away_prob": 0.5537,
       "home_no_vig_prob": null,
       "away_no_vig_prob": null,
       "home_edge": null,
@@ -225,7 +225,7 @@
       "away_kelly": null,
       "best_bet": null,
       "home_pitcher": "TBD",
-      "away_pitcher": "TBD"
+      "away_pitcher": "Roki Sasaki"
     },
     {
       "id": "401815729",
@@ -263,8 +263,8 @@
       "away_odds": null,
       "spread": null,
       "total": null,
-      "model_home_prob": 0.5956,
-      "model_away_prob": 0.4044,
+      "model_home_prob": 0.5482,
+      "model_away_prob": 0.4518,
       "home_no_vig_prob": null,
       "away_no_vig_prob": null,
       "home_edge": null,
@@ -274,7 +274,7 @@
       "home_kelly": null,
       "away_kelly": null,
       "best_bet": null,
-      "home_pitcher": "TBD",
+      "home_pitcher": "Luinder Avila",
       "away_pitcher": "Tatsuya Imai"
     },
     {
@@ -288,8 +288,8 @@
       "away_odds": null,
       "spread": null,
       "total": null,
-      "model_home_prob": 0.6051,
-      "model_away_prob": 0.3949,
+      "model_home_prob": 0.6671,
+      "model_away_prob": 0.3329,
       "home_no_vig_prob": null,
       "away_no_vig_prob": null,
       "home_edge": null,
@@ -299,7 +299,7 @@
       "home_kelly": null,
       "away_kelly": null,
       "best_bet": null,
-      "home_pitcher": "TBD",
+      "home_pitcher": "Joe Ryan",
       "away_pitcher": "Kyle Leahy"
     },
     {
@@ -363,8 +363,8 @@
       "away_odds": null,
       "spread": null,
       "total": null,
-      "model_home_prob": 0.583,
-      "model_away_prob": 0.417,
+      "model_home_prob": 0.5808,
+      "model_away_prob": 0.4192,
       "home_no_vig_prob": null,
       "away_no_vig_prob": null,
       "home_edge": null,
@@ -374,7 +374,7 @@
       "home_kelly": null,
       "away_kelly": null,
       "best_bet": null,
-      "home_pitcher": "TBD",
+      "home_pitcher": "Landen Roupp",
       "away_pitcher": "TBD"
     },
     {
