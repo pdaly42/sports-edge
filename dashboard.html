@@ -1305,15 +1305,11 @@ async function loadYesterdayResults() {
     let outcomeClass = 'no-pred', outcomeLabel = 'NO PICK';
     let tier = 'none';
 
-    if (pred) {
-      const bestEdge = Math.max(pred.home_edge ?? 0, pred.away_edge ?? 0);
-      if (bestEdge >= 0.05)      tier = 'strong';
-      else if (bestEdge >= 0.03) tier = 'moderate';
-
-      const homeProb = pred.model_home_prob ?? 0;
-      const awayProb = pred.model_away_prob ?? 0;
-      const predicted = homeProb >= awayProb ? game.home_team : game.away_team;
-      const hit = predicted === actualWinner;
+    if (pred?.best_bet) {
+      // Only count games that were actually recommended picks
+      tier = pred.best_bet.strength === 'strong' ? 'strong' : 'moderate';
+      const predictedTeam = pred.best_bet.side === 'home' ? game.home_team : game.away_team;
+      const hit = normalizeTeamName(predictedTeam) === normalizeTeamName(actualWinner);
       outcomeClass = hit ? 'correct' : 'wrong';
       outcomeLabel = hit ? 'CORRECT' : 'WRONG';
     }
