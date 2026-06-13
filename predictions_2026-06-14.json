@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-13T11:01:43.920148+00:00",
+  "generated_at": "2026-06-13T18:55:13.468798+00:00",
   "date": "2026-06-14",
   "games": [
     {
@@ -12,11 +12,11 @@
       "home_odds": -195,
       "away_odds": 165,
       "spread": {
-        "point": -5.0,
-        "price": -115
+        "point": -5.5,
+        "price": -110
       },
       "total": {
-        "line": 215.5,
+        "line": 216.0,
         "over": -110,
         "under": -110
       },
@@ -39,33 +39,33 @@
       "commence_time": "2026-06-14T02:05:00+00:00",
       "home_team": "San Francisco Giants",
       "away_team": "Chicago Cubs",
-      "home_odds": 104,
-      "away_odds": -124,
+      "home_odds": -104,
+      "away_odds": -116,
       "spread": {
         "point": 1.5,
-        "price": -165
+        "price": -175
       },
       "total": {
         "line": 8.0,
-        "over": -105,
-        "under": -115
+        "over": 100,
+        "under": -120
       },
       "model_home_prob": 0.6512,
       "model_away_prob": 0.3488,
-      "home_no_vig_prob": 0.4696,
-      "away_no_vig_prob": 0.5304,
-      "home_edge": 0.1816,
-      "away_edge": -0.1816,
-      "home_ev": 0.3284,
-      "away_ev": -0.3699,
-      "home_kelly": 0.079,
+      "home_no_vig_prob": 0.487,
+      "away_no_vig_prob": 0.513,
+      "home_edge": 0.1642,
+      "away_edge": -0.1642,
+      "home_ev": 0.2774,
+      "away_ev": -0.3505,
+      "home_kelly": 0.0721,
       "away_kelly": 0.0,
       "best_bet": {
         "side": "home",
         "team": "San Francisco Giants",
-        "odds": 104,
-        "edge": 0.1816,
-        "ev": 0.3284,
+        "odds": -104,
+        "edge": 0.1642,
+        "ev": 0.2774,
         "strength": "strong"
       },
       "home_pitcher": "Logan Webb",
@@ -79,30 +79,62 @@
       "commence_time": "2026-06-14T02:05:00+00:00",
       "home_team": "Athletics",
       "away_team": "Colorado Rockies",
-      "home_odds": -175,
-      "away_odds": 144,
+      "home_odds": -157,
+      "away_odds": 131,
       "spread": {
         "point": -1.5,
-        "price": 105
+        "price": 115
       },
       "total": {
-        "line": 14.0,
+        "line": 14.5,
         "over": -115,
         "under": -105
       },
       "model_home_prob": 0.5745,
       "model_away_prob": 0.4255,
-      "home_no_vig_prob": 0.6083,
-      "away_no_vig_prob": 0.3917,
-      "home_edge": -0.0338,
-      "away_edge": 0.0338,
-      "home_ev": -0.0972,
-      "away_ev": 0.0382,
+      "home_no_vig_prob": 0.5853,
+      "away_no_vig_prob": 0.4147,
+      "home_edge": -0.0108,
+      "away_edge": 0.0108,
+      "home_ev": -0.0596,
+      "away_ev": -0.0171,
       "home_kelly": 0.0,
-      "away_kelly": 0.0066,
+      "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Jeffrey Springs",
       "away_pitcher": "Tomoyuki Sugano"
+    },
+    {
+      "id": "bovada_baseball_mlb_Tampa_Bay_Rays_Los_Angeles_Angels",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-06-14T02:07:00+00:00",
+      "home_team": "Los Angeles Angels",
+      "away_team": "Tampa Bay Rays",
+      "home_odds": -104,
+      "away_odds": -116,
+      "spread": {
+        "point": 1.5,
+        "price": -175
+      },
+      "total": {
+        "line": 8.0,
+        "over": -115,
+        "under": -105
+      },
+      "model_home_prob": 0.4356,
+      "model_away_prob": 0.5644,
+      "home_no_vig_prob": 0.487,
+      "away_no_vig_prob": 0.513,
+      "home_edge": -0.0514,
+      "away_edge": 0.0514,
+      "home_ev": -0.1456,
+      "away_ev": 0.051,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0148,
+      "best_bet": null,
+      "home_pitcher": "Grayson Rodriguez",
+      "away_pitcher": "TBD"
     },
     {
       "id": "760421",
