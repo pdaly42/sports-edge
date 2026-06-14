@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-14T11:36:26.821475+00:00",
+  "generated_at": "2026-06-14T18:53:24.742228+00:00",
   "date": "2026-06-15",
   "games": [
     {
@@ -13,8 +13,8 @@
       "away_odds": null,
       "spread": null,
       "total": null,
-      "model_home_prob": 0.571,
-      "model_away_prob": 0.429,
+      "model_home_prob": 0.7651,
+      "model_away_prob": 0.2349,
       "home_no_vig_prob": null,
       "away_no_vig_prob": null,
       "home_edge": null,
@@ -24,8 +24,8 @@
       "home_kelly": null,
       "away_kelly": null,
       "best_bet": null,
-      "home_pitcher": "TBD",
-      "away_pitcher": "TBD"
+      "home_pitcher": "Zack Wheeler",
+      "away_pitcher": "Ryan Gusto"
     },
     {
       "id": "401815764",
@@ -38,8 +38,8 @@
       "away_odds": null,
       "spread": null,
       "total": null,
-      "model_home_prob": 0.5925,
-      "model_away_prob": 0.4075,
+      "model_home_prob": 0.5907,
+      "model_away_prob": 0.4093,
       "home_no_vig_prob": null,
       "away_no_vig_prob": null,
       "home_edge": null,
@@ -49,7 +49,7 @@
       "home_kelly": null,
       "away_kelly": null,
       "best_bet": null,
-      "home_pitcher": "TBD",
+      "home_pitcher": "Andrew Alvarez",
       "away_pitcher": "TBD"
     },
     {
@@ -163,8 +163,8 @@
       "away_odds": null,
       "spread": null,
       "total": null,
-      "model_home_prob": 0.514,
-      "model_away_prob": 0.486,
+      "model_home_prob": 0.5234,
+      "model_away_prob": 0.4766,
       "home_no_vig_prob": null,
       "away_no_vig_prob": null,
       "home_edge": null,
@@ -174,7 +174,7 @@
       "home_kelly": null,
       "away_kelly": null,
       "best_bet": null,
-      "home_pitcher": "TBD",
+      "home_pitcher": "Kai-Wei Teng",
       "away_pitcher": "Troy Melton"
     },
     {
@@ -188,8 +188,8 @@
       "away_odds": null,
       "spread": null,
       "total": null,
-      "model_home_prob": 0.6171,
-      "model_away_prob": 0.3829,
+      "model_home_prob": 0.3937,
+      "model_away_prob": 0.6063,
       "home_no_vig_prob": null,
       "away_no_vig_prob": null,
       "home_edge": null,
@@ -199,8 +199,8 @@
       "home_kelly": null,
       "away_kelly": null,
       "best_bet": null,
-      "home_pitcher": "TBD",
-      "away_pitcher": "TBD"
+      "home_pitcher": "Ryne Nelson",
+      "away_pitcher": "Walbert Ure\u00f1a"
     },
     {
       "id": "401815772",
@@ -213,8 +213,8 @@
       "away_odds": null,
       "spread": null,
       "total": null,
-      "model_home_prob": 0.5999,
-      "model_away_prob": 0.4001,
+      "model_home_prob": 0.6773,
+      "model_away_prob": 0.3227,
       "home_no_vig_prob": null,
       "away_no_vig_prob": null,
       "home_edge": null,
@@ -224,8 +224,8 @@
       "home_kelly": null,
       "away_kelly": null,
       "best_bet": null,
-      "home_pitcher": "TBD",
-      "away_pitcher": "TBD"
+      "home_pitcher": "J.T. Ginn",
+      "away_pitcher": "Jared Jones"
     },
     {
       "id": "401815773",
@@ -238,8 +238,8 @@
       "away_odds": null,
       "spread": null,
       "total": null,
-      "model_home_prob": 0.6266,
-      "model_away_prob": 0.3734,
+      "model_home_prob": 0.496,
+      "model_away_prob": 0.504,
       "home_no_vig_prob": null,
       "away_no_vig_prob": null,
       "home_edge": null,
@@ -249,7 +249,7 @@
       "home_kelly": null,
       "away_kelly": null,
       "best_bet": null,
-      "home_pitcher": "TBD",
+      "home_pitcher": "Eric Lauer",
       "away_pitcher": "TBD"
     },
     {
