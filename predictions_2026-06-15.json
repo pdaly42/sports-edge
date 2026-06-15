@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-15T18:51:21.572490+00:00",
+  "generated_at": "2026-06-15T22:31:35.825193+00:00",
   "date": "2026-06-15",
   "games": [
     {
@@ -9,11 +9,11 @@
       "commence_time": "2026-06-15T22:40:00+00:00",
       "home_team": "Philadelphia Phillies",
       "away_team": "Miami Marlins",
-      "home_odds": -193,
-      "away_odds": 158,
+      "home_odds": -200,
+      "away_odds": 165,
       "spread": {
         "point": -1.5,
-        "price": 105
+        "price": 100
       },
       "total": {
         "line": 8.0,
@@ -22,13 +22,13 @@
       },
       "model_home_prob": 0.7651,
       "model_away_prob": 0.2349,
-      "home_no_vig_prob": 0.6296,
-      "away_no_vig_prob": 0.3704,
-      "home_edge": 0.1355,
-      "away_edge": -0.1355,
-      "home_ev": 0.1615,
-      "away_ev": -0.394,
-      "home_kelly": 0.0779,
+      "home_no_vig_prob": 0.6386,
+      "away_no_vig_prob": 0.3614,
+      "home_edge": 0.1265,
+      "away_edge": -0.1265,
+      "home_ev": 0.1477,
+      "away_ev": -0.3775,
+      "home_kelly": 0.0738,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Zack Wheeler",
@@ -41,34 +41,34 @@
       "commence_time": "2026-06-15T22:45:00+00:00",
       "home_team": "Washington Nationals",
       "away_team": "Kansas City Royals",
-      "home_odds": -133,
-      "away_odds": 111,
+      "home_odds": -138,
+      "away_odds": 115,
       "spread": {
         "point": -1.5,
-        "price": 160
+        "price": 155
       },
       "total": {
         "line": 9.5,
-        "over": -105,
-        "under": -115
+        "over": -110,
+        "under": -110
       },
       "model_home_prob": 0.6728,
       "model_away_prob": 0.3272,
-      "home_no_vig_prob": 0.5464,
-      "away_no_vig_prob": 0.4536,
-      "home_edge": 0.1264,
-      "away_edge": -0.1264,
-      "home_ev": 0.1787,
-      "away_ev": -0.3096,
-      "home_kelly": 0.0594,
+      "home_no_vig_prob": 0.5549,
+      "away_no_vig_prob": 0.4451,
+      "home_edge": 0.1179,
+      "away_edge": -0.1179,
+      "home_ev": 0.1603,
+      "away_ev": -0.2965,
+      "home_kelly": 0.0553,
       "away_kelly": 0.0,
       "best_bet": {
         "side": "home",
         "team": "Washington Nationals",
-        "odds": -133,
-        "edge": 0.1264,
-        "ev": 0.1787,
-        "strength": "strong"
+        "odds": -138,
+        "edge": 0.1179,
+        "ev": 0.1603,
+        "strength": "moderate"
       },
       "home_pitcher": "Andrew Alvarez",
       "away_pitcher": "Mitch Spence",
@@ -81,33 +81,33 @@
       "commence_time": "2026-06-15T23:10:00+00:00",
       "home_team": "Cincinnati Reds",
       "away_team": "New York Mets",
-      "home_odds": -138,
-      "away_odds": 115,
+      "home_odds": -139,
+      "away_odds": 116,
       "spread": {
         "point": -1.5,
-        "price": 160
+        "price": 145
       },
       "total": {
         "line": 8.5,
-        "over": 100,
-        "under": -120
+        "over": -120,
+        "under": 100
       },
       "model_home_prob": 0.6621,
       "model_away_prob": 0.3379,
-      "home_no_vig_prob": 0.5549,
-      "away_no_vig_prob": 0.4451,
-      "home_edge": 0.1072,
-      "away_edge": -0.1072,
-      "home_ev": 0.1419,
-      "away_ev": -0.2735,
-      "home_kelly": 0.0489,
+      "home_no_vig_prob": 0.5568,
+      "away_no_vig_prob": 0.4432,
+      "home_edge": 0.1053,
+      "away_edge": -0.1053,
+      "home_ev": 0.1384,
+      "away_ev": -0.2701,
+      "home_kelly": 0.0481,
       "away_kelly": 0.0,
       "best_bet": {
         "side": "home",
         "team": "Cincinnati Reds",
-        "odds": -138,
-        "edge": 0.1072,
-        "ev": 0.1419,
+        "odds": -139,
+        "edge": 0.1053,
+        "ev": 0.1384,
         "strength": "moderate"
       },
       "home_pitcher": "Chase Burns",
@@ -121,30 +121,38 @@
       "commence_time": "2026-06-15T23:45:00+00:00",
       "home_team": "St. Louis Cardinals",
       "away_team": "San Diego Padres",
-      "home_odds": -158,
-      "away_odds": 132,
+      "home_odds": -163,
+      "away_odds": 137,
       "spread": {
         "point": -1.5,
-        "price": 135
+        "price": 125
       },
       "total": {
         "line": 8.5,
         "over": -110,
         "under": -110
       },
-      "model_home_prob": 0.5225,
-      "model_away_prob": 0.4775,
-      "home_no_vig_prob": 0.5869,
-      "away_no_vig_prob": 0.4131,
-      "home_edge": -0.0644,
-      "away_edge": 0.0644,
-      "home_ev": -0.1468,
-      "away_ev": 0.1078,
+      "model_home_prob": 0.3503,
+      "model_away_prob": 0.6497,
+      "home_no_vig_prob": 0.595,
+      "away_no_vig_prob": 0.405,
+      "home_edge": -0.2447,
+      "away_edge": 0.2447,
+      "home_ev": -0.4348,
+      "away_ev": 0.5398,
       "home_kelly": 0.0,
-      "away_kelly": 0.0204,
-      "best_bet": null,
+      "away_kelly": 0.0985,
+      "best_bet": {
+        "side": "away",
+        "team": "San Diego Padres",
+        "odds": 137,
+        "edge": 0.2447,
+        "ev": 0.5398,
+        "strength": "strong"
+      },
       "home_pitcher": "Dustin May",
-      "away_pitcher": "TBD"
+      "away_pitcher": "Wandy Peralta",
+      "justification": "San Diego Padres are 5-5 in their last 10 (St. Louis Cardinals 7-3); season records 37-33 vs 38-31. San Diego Padres's avg run differential is +0.6 vs St. Louis Cardinals's -0.7 over the last 10 games. Wandy Peralta (ERA 2.18) has a meaningful ERA advantage over Dustin May (ERA 4.21)."
     },
     {
       "id": "760428",
