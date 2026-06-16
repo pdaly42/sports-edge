@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-16T13:00:24.577105+00:00",
+  "generated_at": "2026-06-16T15:00:04.884739+00:00",
   "date": "2026-06-16",
   "games": [
     {
@@ -49,26 +49,26 @@
       "commence_time": "2026-06-16T22:45:00+00:00",
       "home_team": "Washington Nationals",
       "away_team": "Kansas City Royals",
-      "home_odds": -138,
-      "away_odds": 115,
+      "home_odds": -142,
+      "away_odds": 119,
       "spread": {
         "point": -1.5,
-        "price": 155
+        "price": 150
       },
       "total": {
-        "line": 9.0,
-        "over": 100,
-        "under": -120
+        "line": 8.5,
+        "over": -120,
+        "under": 100
       },
       "model_home_prob": 0.611,
       "model_away_prob": 0.389,
-      "home_no_vig_prob": 0.5549,
-      "away_no_vig_prob": 0.4451,
-      "home_edge": 0.0561,
-      "away_edge": -0.0561,
-      "home_ev": 0.0538,
-      "away_ev": -0.1637,
-      "home_kelly": 0.0185,
+      "home_no_vig_prob": 0.5624,
+      "away_no_vig_prob": 0.4376,
+      "home_edge": 0.0486,
+      "away_edge": -0.0486,
+      "home_ev": 0.0413,
+      "away_ev": -0.1481,
+      "home_kelly": 0.0147,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Foster Griffin",
@@ -81,8 +81,8 @@
       "commence_time": "2026-06-16T22:45:00+00:00",
       "home_team": "Boston Red Sox",
       "away_team": "Toronto Blue Jays",
-      "home_odds": 104,
-      "away_odds": -124,
+      "home_odds": 102,
+      "away_odds": -122,
       "spread": {
         "point": 1.5,
         "price": -165
@@ -92,27 +92,19 @@
         "over": -105,
         "under": -115
       },
-      "model_home_prob": 0.6465,
-      "model_away_prob": 0.3535,
-      "home_no_vig_prob": 0.4696,
-      "away_no_vig_prob": 0.5304,
-      "home_edge": 0.1769,
-      "away_edge": -0.1769,
-      "home_ev": 0.3189,
-      "away_ev": -0.3614,
-      "home_kelly": 0.0766,
+      "model_home_prob": 0.5407,
+      "model_away_prob": 0.4593,
+      "home_no_vig_prob": 0.4739,
+      "away_no_vig_prob": 0.5261,
+      "home_edge": 0.0668,
+      "away_edge": -0.0668,
+      "home_ev": 0.0922,
+      "away_ev": -0.1642,
+      "home_kelly": 0.0226,
       "away_kelly": 0.0,
-      "best_bet": {
-        "side": "home",
-        "team": "Boston Red Sox",
-        "odds": 104,
-        "edge": 0.1769,
-        "ev": 0.3189,
-        "strength": "strong"
-      },
+      "best_bet": null,
       "home_pitcher": "Payton Tolle",
-      "away_pitcher": "TBD",
-      "justification": "Boston Red Sox are 4-6 in their last 10 (Toronto Blue Jays 5-5); season records 29-40 vs 34-38. Boston Red Sox's avg run differential is +0.6 vs Toronto Blue Jays's -2.3 over the last 10 games. Model prices Boston Red Sox at 64.6% \u2014 a +17.7% edge over the market line."
+      "away_pitcher": "Dylan Cease"
     },
     {
       "id": "bovada_baseball_mlb_Chicago_White_Sox_New_York_Yankees",
@@ -161,8 +153,8 @@
       },
       "total": {
         "line": 10.0,
-        "over": -105,
-        "under": -115
+        "over": 100,
+        "under": -120
       },
       "model_home_prob": 0.6537,
       "model_away_prob": 0.3463,
@@ -193,11 +185,11 @@
       "commence_time": "2026-06-16T23:15:00+00:00",
       "home_team": "Atlanta Braves",
       "away_team": "San Francisco Giants",
-      "home_odds": -168,
-      "away_odds": 140,
+      "home_odds": -170,
+      "away_odds": 141,
       "spread": {
         "point": -1.5,
-        "price": 125
+        "price": 120
       },
       "total": {
         "line": 9.0,
@@ -206,14 +198,14 @@
       },
       "model_home_prob": 0.5748,
       "model_away_prob": 0.4252,
-      "home_no_vig_prob": 0.6007,
-      "away_no_vig_prob": 0.3993,
-      "home_edge": -0.0259,
-      "away_edge": 0.0259,
-      "home_ev": -0.0831,
-      "away_ev": 0.0205,
+      "home_no_vig_prob": 0.6028,
+      "away_no_vig_prob": 0.3972,
+      "home_edge": -0.028,
+      "away_edge": 0.028,
+      "home_ev": -0.0871,
+      "away_ev": 0.0247,
       "home_kelly": 0.0,
-      "away_kelly": 0.0037,
+      "away_kelly": 0.0044,
       "best_bet": null,
       "home_pitcher": "Grant Holmes",
       "away_pitcher": "Adrian Houser"
@@ -225,27 +217,27 @@
       "commence_time": "2026-06-16T23:40:00+00:00",
       "home_team": "Milwaukee Brewers",
       "away_team": "Cleveland Guardians",
-      "home_odds": -157,
-      "away_odds": 131,
+      "home_odds": -154,
+      "away_odds": 129,
       "spread": {
         "point": -1.5,
         "price": 140
       },
       "total": {
-        "line": 8.5,
-        "over": -105,
-        "under": -115
+        "line": 8.0,
+        "over": -120,
+        "under": 100
       },
       "model_home_prob": 0.5153,
       "model_away_prob": 0.4847,
-      "home_no_vig_prob": 0.5853,
-      "away_no_vig_prob": 0.4147,
-      "home_edge": -0.07,
-      "away_edge": 0.07,
-      "home_ev": -0.1565,
-      "away_ev": 0.1197,
+      "home_no_vig_prob": 0.5813,
+      "away_no_vig_prob": 0.4187,
+      "home_edge": -0.066,
+      "away_edge": 0.066,
+      "home_ev": -0.1501,
+      "away_ev": 0.11,
       "home_kelly": 0.0,
-      "away_kelly": 0.0228,
+      "away_kelly": 0.0213,
       "best_bet": null,
       "home_pitcher": "Robert Gasser",
       "away_pitcher": "Slade Cecconi"
@@ -257,8 +249,8 @@
       "commence_time": "2026-06-16T23:45:00+00:00",
       "home_team": "St. Louis Cardinals",
       "away_team": "San Diego Padres",
-      "home_odds": -115,
-      "away_odds": -105,
+      "home_odds": -116,
+      "away_odds": -104,
       "spread": {
         "point": -1.5,
         "price": 185
@@ -270,14 +262,14 @@
       },
       "model_home_prob": 0.4465,
       "model_away_prob": 0.5535,
-      "home_no_vig_prob": 0.5108,
-      "away_no_vig_prob": 0.4892,
-      "home_edge": -0.0643,
-      "away_edge": 0.0643,
-      "home_ev": -0.1652,
-      "away_ev": 0.0806,
+      "home_no_vig_prob": 0.513,
+      "away_no_vig_prob": 0.487,
+      "home_edge": -0.0665,
+      "away_edge": 0.0665,
+      "home_ev": -0.1686,
+      "away_ev": 0.0857,
       "home_kelly": 0.0,
-      "away_kelly": 0.0212,
+      "away_kelly": 0.0223,
       "best_bet": null,
       "home_pitcher": "Andre Pallante",
       "away_pitcher": "Michael King"
