@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-18T13:54:25.656778+00:00",
+  "generated_at": "2026-06-18T21:36:01.116605+00:00",
   "date": "2026-06-19",
   "games": [
     {
@@ -9,38 +9,38 @@
       "commence_time": "2026-06-19T01:40:00+00:00",
       "home_team": "Athletics",
       "away_team": "Los Angeles Angels",
-      "home_odds": -141,
-      "away_odds": 118,
+      "home_odds": -161,
+      "away_odds": 135,
       "spread": {
         "point": -1.5,
-        "price": 145
+        "price": 120
       },
       "total": {
-        "line": 10.5,
+        "line": 10.0,
         "over": -110,
         "under": -110
       },
       "model_home_prob": 0.4656,
       "model_away_prob": 0.5344,
-      "home_no_vig_prob": 0.5605,
-      "away_no_vig_prob": 0.4395,
-      "home_edge": -0.0949,
-      "away_edge": 0.0949,
-      "home_ev": -0.2042,
-      "away_ev": 0.165,
+      "home_no_vig_prob": 0.5918,
+      "away_no_vig_prob": 0.4082,
+      "home_edge": -0.1262,
+      "away_edge": 0.1262,
+      "home_ev": -0.2452,
+      "away_ev": 0.2558,
       "home_kelly": 0.0,
-      "away_kelly": 0.035,
+      "away_kelly": 0.0474,
       "best_bet": {
         "side": "away",
         "team": "Los Angeles Angels",
-        "odds": 118,
-        "edge": 0.0949,
-        "ev": 0.165,
-        "strength": "moderate"
+        "odds": 135,
+        "edge": 0.1262,
+        "ev": 0.2558,
+        "strength": "strong"
       },
       "home_pitcher": "Jeffrey Springs",
       "away_pitcher": "TBD",
-      "justification": "Los Angeles Angels are 6-4 in their last 10 (Athletics 6-4); season records 30-45 vs 36-38. Los Angeles Angels's avg run differential is -2.4 vs Athletics's -2.3 over the last 10 games. Model prices Los Angeles Angels at 53.4% \u2014 a +9.5% edge over the market line."
+      "justification": "Los Angeles Angels are 6-4 in their last 10 (Athletics 6-4); season records 30-45 vs 36-38. Los Angeles Angels's avg run differential is -2.4 vs Athletics's -2.3 over the last 10 games. Model prices Los Angeles Angels at 53.4% \u2014 a +12.6% edge over the market line."
     },
     {
       "id": "760442",

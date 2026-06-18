@@ -1,47 +1,7 @@
 {
-  "generated_at": "2026-06-18T21:12:29.156045+00:00",
+  "generated_at": "2026-06-18T21:35:52.733311+00:00",
   "date": "2026-06-18",
   "games": [
-    {
-      "id": "bovada_baseball_mlb_Cleveland_Guardians_Milwaukee_Brewers",
-      "sport": "baseball_mlb",
-      "sport_label": "MLB",
-      "commence_time": "2026-06-18T18:10:00+00:00",
-      "home_team": "Milwaukee Brewers",
-      "away_team": "Cleveland Guardians",
-      "home_odds": 1000,
-      "away_odds": -2500,
-      "spread": {
-        "point": 2.0,
-        "price": 130
-      },
-      "total": {
-        "line": 6.5,
-        "over": 100,
-        "under": -130
-      },
-      "model_home_prob": 0.4967,
-      "model_away_prob": 0.5033,
-      "home_no_vig_prob": 0.0864,
-      "away_no_vig_prob": 0.9136,
-      "home_edge": 0.4103,
-      "away_edge": -0.4103,
-      "home_ev": 4.4637,
-      "away_ev": -0.4766,
-      "home_kelly": 0.1116,
-      "away_kelly": 0.0,
-      "best_bet": {
-        "side": "home",
-        "team": "Milwaukee Brewers",
-        "odds": 1000,
-        "edge": 0.4103,
-        "ev": 4.4637,
-        "strength": "strong"
-      },
-      "home_pitcher": "Shane Drohan",
-      "away_pitcher": "Parker Messick",
-      "justification": "Milwaukee Brewers are 7-3 in their last 10 (Cleveland Guardians 3-7); season records 45-26 vs 39-35. Milwaukee Brewers's avg run differential is +0.0 vs Cleveland Guardians's +1.0 over the last 10 games. Model prices Milwaukee Brewers at 49.7% \u2014 a +41.0% edge over the market line."
-    },
     {
       "id": "bovada_baseball_mlb_Minnesota_Twins_Texas_Rangers",
       "sport": "baseball_mlb",
@@ -52,13 +12,13 @@
       "home_odds": 1200,
       "away_odds": -3300,
       "spread": {
-        "point": 5.0,
-        "price": -115
+        "point": 6.5,
+        "price": 280
       },
       "total": {
-        "line": 10.5,
-        "over": 115,
-        "under": -150
+        "line": 11.5,
+        "over": 280,
+        "under": -410
       },
       "model_home_prob": 0.3768,
       "model_away_prob": 0.6232,
@@ -89,38 +49,38 @@
       "commence_time": "2026-06-18T20:10:00+00:00",
       "home_team": "Seattle Mariners",
       "away_team": "Baltimore Orioles",
-      "home_odds": -1100,
-      "away_odds": 600,
+      "home_odds": -1200,
+      "away_odds": 650,
       "spread": {
         "point": -3.0,
-        "price": -135
+        "price": 105
       },
       "total": {
-        "line": 7.0,
-        "over": -135,
-        "under": 105
+        "line": 5.5,
+        "over": -125,
+        "under": -105
       },
-      "model_home_prob": 0.6285,
-      "model_away_prob": 0.3715,
-      "home_no_vig_prob": 0.8652,
-      "away_no_vig_prob": 0.1348,
-      "home_edge": -0.2367,
-      "away_edge": 0.2367,
-      "home_ev": -0.3144,
-      "away_ev": 1.6005,
+      "model_home_prob": 0.642,
+      "model_away_prob": 0.358,
+      "home_no_vig_prob": 0.8738,
+      "away_no_vig_prob": 0.1262,
+      "home_edge": -0.2318,
+      "away_edge": 0.2318,
+      "home_ev": -0.3045,
+      "away_ev": 1.685,
       "home_kelly": 0.0,
-      "away_kelly": 0.0667,
+      "away_kelly": 0.0648,
       "best_bet": {
         "side": "away",
         "team": "Baltimore Orioles",
-        "odds": 600,
-        "edge": 0.2367,
-        "ev": 1.6005,
+        "odds": 650,
+        "edge": 0.2318,
+        "ev": 1.685,
         "strength": "strong"
       },
       "home_pitcher": "Bryan Woo",
       "away_pitcher": "Shane Baz",
-      "justification": "Baltimore Orioles are 4-6 in their last 10 (Seattle Mariners 4-6); season records 35-40 vs 38-37. Baltimore Orioles's avg run differential is -1.4 vs Seattle Mariners's +2.8 over the last 10 games. Model prices Baltimore Orioles at 37.1% \u2014 a +23.7% edge over the market line."
+      "justification": "Baltimore Orioles are 4-6 in their last 10 (Seattle Mariners 4-6); season records 35-40 vs 38-37. Baltimore Orioles's avg run differential is -1.4 vs Seattle Mariners's +2.8 over the last 10 games. Model prices Baltimore Orioles at 35.8% \u2014 a +23.2% edge over the market line."
     },
     {
       "id": "bovada_baseball_mlb_New_York_Mets_Philadelphia_Phillies",
@@ -133,12 +93,12 @@
       "away_odds": 102,
       "spread": {
         "point": -1.5,
-        "price": 165
+        "price": 160
       },
       "total": {
         "line": 10.0,
-        "over": -105,
-        "under": -115
+        "over": -110,
+        "under": -110
       },
       "model_home_prob": 0.5356,
       "model_away_prob": 0.4644,
@@ -161,8 +121,8 @@
       "commence_time": "2026-06-18T23:05:00+00:00",
       "home_team": "New York Yankees",
       "away_team": "Chicago White Sox",
-      "home_odds": -172,
-      "away_odds": 142,
+      "home_odds": -174,
+      "away_odds": 143,
       "spread": {
         "point": -1.5,
         "price": 115
@@ -174,15 +134,22 @@
       },
       "model_home_prob": 0.4696,
       "model_away_prob": 0.5304,
-      "home_no_vig_prob": 0.6048,
-      "away_no_vig_prob": 0.3952,
-      "home_edge": -0.1352,
-      "away_edge": 0.1352,
-      "home_ev": -0.2574,
-      "away_ev": 0.2836,
+      "home_no_vig_prob": 0.6068,
+      "away_no_vig_prob": 0.3932,
+      "home_edge": -0.1372,
+      "away_edge": 0.1372,
+      "home_ev": -0.2605,
+      "away_ev": 0.2889,
       "home_kelly": 0.0,
-      "away_kelly": 0.0499,
-      "best_bet": null,
+      "away_kelly": 0.0505,
+      "best_bet": {
+        "side": "away",
+        "team": "Chicago White Sox",
+        "odds": 143,
+        "edge": 0.1372,
+        "ev": 0.2889,
+        "strength": "strong"
+      },
       "home_pitcher": "Ryan Weathers",
       "away_pitcher": "Bryan Hudson",
       "justification": "Chicago White Sox are 5-5 in their last 10 (New York Yankees 8-2); season records 38-34 vs 45-27. Chicago White Sox's avg run differential is -1.9 vs New York Yankees's +3.6 over the last 10 games. Bryan Hudson (ERA 2.45) has a meaningful ERA advantage over Ryan Weathers (ERA 4.36)."
@@ -202,8 +169,8 @@
       },
       "total": {
         "line": 9.0,
-        "over": 100,
-        "under": -120
+        "over": -110,
+        "under": -110
       },
       "model_home_prob": 0.6162,
       "model_away_prob": 0.3838,
