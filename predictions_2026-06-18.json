@@ -1,39 +1,7 @@
 {
-  "generated_at": "2026-06-18T13:54:18.170479+00:00",
+  "generated_at": "2026-06-18T21:12:29.156045+00:00",
   "date": "2026-06-18",
   "games": [
-    {
-      "id": "bovada_baseball_mlb_Toronto_Blue_Jays_Boston_Red_Sox",
-      "sport": "baseball_mlb",
-      "sport_label": "MLB",
-      "commence_time": "2026-06-18T17:35:00+00:00",
-      "home_team": "Boston Red Sox",
-      "away_team": "Toronto Blue Jays",
-      "home_odds": -126,
-      "away_odds": 106,
-      "spread": {
-        "point": -1.5,
-        "price": 170
-      },
-      "total": {
-        "line": 9.0,
-        "over": -115,
-        "under": -105
-      },
-      "model_home_prob": 0.5518,
-      "model_away_prob": 0.4482,
-      "home_no_vig_prob": 0.5346,
-      "away_no_vig_prob": 0.4654,
-      "home_edge": 0.0172,
-      "away_edge": -0.0172,
-      "home_ev": -0.0103,
-      "away_ev": -0.0767,
-      "home_kelly": 0.0,
-      "away_kelly": 0.0,
-      "best_bet": null,
-      "home_pitcher": "Sonny Gray",
-      "away_pitcher": "Trey Yesavage"
-    },
     {
       "id": "bovada_baseball_mlb_Cleveland_Guardians_Milwaukee_Brewers",
       "sport": "baseball_mlb",
@@ -41,38 +9,38 @@
       "commence_time": "2026-06-18T18:10:00+00:00",
       "home_team": "Milwaukee Brewers",
       "away_team": "Cleveland Guardians",
-      "home_odds": -154,
-      "away_odds": 129,
+      "home_odds": 1000,
+      "away_odds": -2500,
       "spread": {
-        "point": -1.5,
-        "price": 150
+        "point": 2.0,
+        "price": 130
       },
       "total": {
-        "line": 7.5,
-        "over": -105,
-        "under": -115
+        "line": 6.5,
+        "over": 100,
+        "under": -130
       },
-      "model_home_prob": 0.4565,
-      "model_away_prob": 0.5435,
-      "home_no_vig_prob": 0.5813,
-      "away_no_vig_prob": 0.4187,
-      "home_edge": -0.1248,
-      "away_edge": 0.1248,
-      "home_ev": -0.2471,
-      "away_ev": 0.2446,
-      "home_kelly": 0.0,
-      "away_kelly": 0.0474,
+      "model_home_prob": 0.4967,
+      "model_away_prob": 0.5033,
+      "home_no_vig_prob": 0.0864,
+      "away_no_vig_prob": 0.9136,
+      "home_edge": 0.4103,
+      "away_edge": -0.4103,
+      "home_ev": 4.4637,
+      "away_ev": -0.4766,
+      "home_kelly": 0.1116,
+      "away_kelly": 0.0,
       "best_bet": {
-        "side": "away",
-        "team": "Cleveland Guardians",
-        "odds": 129,
-        "edge": 0.1248,
-        "ev": 0.2446,
+        "side": "home",
+        "team": "Milwaukee Brewers",
+        "odds": 1000,
+        "edge": 0.4103,
+        "ev": 4.4637,
         "strength": "strong"
       },
       "home_pitcher": "Shane Drohan",
       "away_pitcher": "Parker Messick",
-      "justification": "Cleveland Guardians are 3-7 in their last 10 (Milwaukee Brewers 7-3); season records 39-35 vs 45-26. Cleveland Guardians's avg run differential is +1.0 vs Milwaukee Brewers's +0.0 over the last 10 games. Parker Messick (ERA 2.68) has a meaningful ERA advantage over Shane Drohan (ERA 3.59)."
+      "justification": "Milwaukee Brewers are 7-3 in their last 10 (Cleveland Guardians 3-7); season records 45-26 vs 39-35. Milwaukee Brewers's avg run differential is +0.0 vs Cleveland Guardians's +1.0 over the last 10 games. Model prices Milwaukee Brewers at 49.7% \u2014 a +41.0% edge over the market line."
     },
     {
       "id": "bovada_baseball_mlb_Minnesota_Twins_Texas_Rangers",
@@ -81,30 +49,38 @@
       "commence_time": "2026-06-18T18:35:00+00:00",
       "home_team": "Texas Rangers",
       "away_team": "Minnesota Twins",
-      "home_odds": 108,
-      "away_odds": -130,
+      "home_odds": 1200,
+      "away_odds": -3300,
       "spread": {
-        "point": 1.5,
-        "price": -160
+        "point": 5.0,
+        "price": -115
       },
       "total": {
-        "line": 7.5,
-        "over": -110,
-        "under": -110
+        "line": 10.5,
+        "over": 115,
+        "under": -150
       },
-      "model_home_prob": 0.452,
-      "model_away_prob": 0.548,
-      "home_no_vig_prob": 0.4596,
-      "away_no_vig_prob": 0.5404,
-      "home_edge": -0.0076,
-      "away_edge": 0.0076,
-      "home_ev": -0.0598,
-      "away_ev": -0.0305,
-      "home_kelly": 0.0,
+      "model_home_prob": 0.3768,
+      "model_away_prob": 0.6232,
+      "home_no_vig_prob": 0.0734,
+      "away_no_vig_prob": 0.9266,
+      "home_edge": 0.3034,
+      "away_edge": -0.3034,
+      "home_ev": 3.8984,
+      "away_ev": -0.3579,
+      "home_kelly": 0.0812,
       "away_kelly": 0.0,
-      "best_bet": null,
+      "best_bet": {
+        "side": "home",
+        "team": "Texas Rangers",
+        "odds": 1200,
+        "edge": 0.3034,
+        "ev": 3.8984,
+        "strength": "strong"
+      },
       "home_pitcher": "Jack Leiter",
-      "away_pitcher": "Joe Ryan"
+      "away_pitcher": "Joe Ryan",
+      "justification": "Texas Rangers are 4-6 in their last 10 (Minnesota Twins 5-5); season records 35-38 vs 35-40. Texas Rangers's avg run differential is -1.3 vs Minnesota Twins's +0.2 over the last 10 games. Model prices Texas Rangers at 37.7% \u2014 a +30.3% edge over the market line."
     },
     {
       "id": "bovada_baseball_mlb_Baltimore_Orioles_Seattle_Mariners",
@@ -113,30 +89,38 @@
       "commence_time": "2026-06-18T20:10:00+00:00",
       "home_team": "Seattle Mariners",
       "away_team": "Baltimore Orioles",
-      "home_odds": -145,
-      "away_odds": 122,
+      "home_odds": -1100,
+      "away_odds": 600,
       "spread": {
-        "point": -1.5,
-        "price": 150
+        "point": -3.0,
+        "price": -135
       },
       "total": {
-        "line": 7.5,
-        "over": -115,
-        "under": -105
+        "line": 7.0,
+        "over": -135,
+        "under": 105
       },
-      "model_home_prob": 0.5742,
-      "model_away_prob": 0.4258,
-      "home_no_vig_prob": 0.5678,
-      "away_no_vig_prob": 0.4322,
-      "home_edge": 0.0064,
-      "away_edge": -0.0064,
-      "home_ev": -0.0298,
-      "away_ev": -0.0547,
+      "model_home_prob": 0.6285,
+      "model_away_prob": 0.3715,
+      "home_no_vig_prob": 0.8652,
+      "away_no_vig_prob": 0.1348,
+      "home_edge": -0.2367,
+      "away_edge": 0.2367,
+      "home_ev": -0.3144,
+      "away_ev": 1.6005,
       "home_kelly": 0.0,
-      "away_kelly": 0.0,
-      "best_bet": null,
+      "away_kelly": 0.0667,
+      "best_bet": {
+        "side": "away",
+        "team": "Baltimore Orioles",
+        "odds": 600,
+        "edge": 0.2367,
+        "ev": 1.6005,
+        "strength": "strong"
+      },
       "home_pitcher": "Bryan Woo",
-      "away_pitcher": "Shane Baz"
+      "away_pitcher": "Shane Baz",
+      "justification": "Baltimore Orioles are 4-6 in their last 10 (Seattle Mariners 4-6); season records 35-40 vs 38-37. Baltimore Orioles's avg run differential is -1.4 vs Seattle Mariners's +2.8 over the last 10 games. Model prices Baltimore Orioles at 37.1% \u2014 a +23.7% edge over the market line."
     },
     {
       "id": "bovada_baseball_mlb_New_York_Mets_Philadelphia_Phillies",
@@ -145,25 +129,25 @@
       "commence_time": "2026-06-18T22:40:00+00:00",
       "home_team": "Philadelphia Phillies",
       "away_team": "New York Mets",
-      "home_odds": -123,
-      "away_odds": 103,
+      "home_odds": -122,
+      "away_odds": 102,
       "spread": {
         "point": -1.5,
-        "price": 155
+        "price": 165
       },
       "total": {
-        "line": 9.5,
-        "over": -110,
-        "under": -110
+        "line": 10.0,
+        "over": -105,
+        "under": -115
       },
       "model_home_prob": 0.5356,
       "model_away_prob": 0.4644,
-      "home_no_vig_prob": 0.5282,
-      "away_no_vig_prob": 0.4718,
-      "home_edge": 0.0074,
-      "away_edge": -0.0074,
-      "home_ev": -0.029,
-      "away_ev": -0.0573,
+      "home_no_vig_prob": 0.5261,
+      "away_no_vig_prob": 0.4739,
+      "home_edge": 0.0095,
+      "away_edge": -0.0095,
+      "home_ev": -0.0254,
+      "away_ev": -0.0619,
       "home_kelly": 0.0,
       "away_kelly": 0.0,
       "best_bet": null,
@@ -177,62 +161,31 @@
       "commence_time": "2026-06-18T23:05:00+00:00",
       "home_team": "New York Yankees",
       "away_team": "Chicago White Sox",
-      "home_odds": -161,
-      "away_odds": 135,
+      "home_odds": -172,
+      "away_odds": 142,
       "spread": {
         "point": -1.5,
-        "price": 130
+        "price": 115
       },
       "total": {
-        "line": 9.5,
+        "line": 10.0,
         "over": -115,
         "under": -105
       },
-      "model_home_prob": 0.5946,
-      "model_away_prob": 0.4054,
-      "home_no_vig_prob": 0.5918,
-      "away_no_vig_prob": 0.4082,
-      "home_edge": 0.0028,
-      "away_edge": -0.0028,
-      "home_ev": -0.0361,
-      "away_ev": -0.0473,
+      "model_home_prob": 0.4696,
+      "model_away_prob": 0.5304,
+      "home_no_vig_prob": 0.6048,
+      "away_no_vig_prob": 0.3952,
+      "home_edge": -0.1352,
+      "away_edge": 0.1352,
+      "home_ev": -0.2574,
+      "away_ev": 0.2836,
       "home_kelly": 0.0,
-      "away_kelly": 0.0,
+      "away_kelly": 0.0499,
       "best_bet": null,
       "home_pitcher": "Ryan Weathers",
-      "away_pitcher": "Sean Burke"
-    },
-    {
-      "id": "bovada_baseball_mlb_San_Francisco_Giants_Atlanta_Braves",
-      "sport": "baseball_mlb",
-      "sport_label": "MLB",
-      "commence_time": "2026-06-18T23:15:00+00:00",
-      "home_team": "Atlanta Braves",
-      "away_team": "San Francisco Giants",
-      "home_odds": -148,
-      "away_odds": 124,
-      "spread": {
-        "point": -1.5,
-        "price": 145
-      },
-      "total": {
-        "line": 8.0,
-        "over": -105,
-        "under": -115
-      },
-      "model_home_prob": 0.6351,
-      "model_away_prob": 0.3649,
-      "home_no_vig_prob": 0.5721,
-      "away_no_vig_prob": 0.4279,
-      "home_edge": 0.063,
-      "away_edge": -0.063,
-      "home_ev": 0.0642,
-      "away_ev": -0.1826,
-      "home_kelly": 0.0238,
-      "away_kelly": 0.0,
-      "best_bet": null,
-      "home_pitcher": "Mart\u00edn P\u00e9rez",
-      "away_pitcher": "Landen Roupp"
+      "away_pitcher": "Bryan Hudson",
+      "justification": "Chicago White Sox are 5-5 in their last 10 (New York Yankees 8-2); season records 38-34 vs 45-27. Chicago White Sox's avg run differential is -1.9 vs New York Yankees's +3.6 over the last 10 games. Bryan Hudson (ERA 2.45) has a meaningful ERA advantage over Ryan Weathers (ERA 4.36)."
     },
     {
       "id": "bovada_baseball_mlb_St._Louis_Cardinals_Kansas_City_Royals",
@@ -241,8 +194,8 @@
       "commence_time": "2026-06-18T23:40:00+00:00",
       "home_team": "Kansas City Royals",
       "away_team": "St. Louis Cardinals",
-      "home_odds": -118,
-      "away_odds": -102,
+      "home_odds": -114,
+      "away_odds": -106,
       "spread": {
         "point": -1.5,
         "price": 175
@@ -254,22 +207,15 @@
       },
       "model_home_prob": 0.6162,
       "model_away_prob": 0.3838,
-      "home_no_vig_prob": 0.5174,
-      "away_no_vig_prob": 0.4826,
-      "home_edge": 0.0988,
-      "away_edge": -0.0988,
-      "home_ev": 0.1384,
-      "away_ev": -0.2399,
-      "home_kelly": 0.0408,
+      "home_no_vig_prob": 0.5087,
+      "away_no_vig_prob": 0.4913,
+      "home_edge": 0.1075,
+      "away_edge": -0.1075,
+      "home_ev": 0.1567,
+      "away_ev": -0.2541,
+      "home_kelly": 0.0447,
       "away_kelly": 0.0,
-      "best_bet": {
-        "side": "home",
-        "team": "Kansas City Royals",
-        "odds": -118,
-        "edge": 0.0988,
-        "ev": 0.1384,
-        "strength": "moderate"
-      },
+      "best_bet": null,
       "home_pitcher": "Noah Cameron",
       "away_pitcher": "Matthew Liberatore",
       "justification": "Kansas City Royals are 4-6 in their last 10 (St. Louis Cardinals 6-4); season records 30-45 vs 40-32. Kansas City Royals's avg run differential is +1.7 vs St. Louis Cardinals's -0.7 over the last 10 games. Noah Cameron (ERA 4.11) has a meaningful ERA advantage over Matthew Liberatore (ERA 4.71)."
