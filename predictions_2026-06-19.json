@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-19T13:57:39.471624+00:00",
+  "generated_at": "2026-06-19T20:21:01.426368+00:00",
   "date": "2026-06-19",
   "games": [
     {
@@ -9,38 +9,38 @@
       "commence_time": "2026-06-19T18:20:00+00:00",
       "home_team": "Chicago Cubs",
       "away_team": "Toronto Blue Jays",
-      "home_odds": -125,
-      "away_odds": 105,
+      "home_odds": -5000,
+      "away_odds": 1400,
       "spread": {
-        "point": -1.5,
-        "price": 180
+        "point": -6.0,
+        "price": 100
       },
       "total": {
-        "line": 7.0,
-        "over": -120,
+        "line": 10.5,
+        "over": -130,
         "under": 100
       },
-      "model_home_prob": 0.6682,
-      "model_away_prob": 0.3318,
-      "home_no_vig_prob": 0.5325,
-      "away_no_vig_prob": 0.4675,
-      "home_edge": 0.1357,
-      "away_edge": -0.1357,
-      "home_ev": 0.2028,
-      "away_ev": -0.3198,
-      "home_kelly": 0.0634,
-      "away_kelly": 0.0,
+      "model_home_prob": 0.6748,
+      "model_away_prob": 0.3252,
+      "home_no_vig_prob": 0.9363,
+      "away_no_vig_prob": 0.0637,
+      "home_edge": -0.2615,
+      "away_edge": 0.2615,
+      "home_ev": -0.3117,
+      "away_ev": 3.878,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0692,
       "best_bet": {
-        "side": "home",
-        "team": "Chicago Cubs",
-        "odds": -125,
-        "edge": 0.1357,
-        "ev": 0.2028,
+        "side": "away",
+        "team": "Toronto Blue Jays",
+        "odds": 1400,
+        "edge": 0.2615,
+        "ev": 3.878,
         "strength": "strong"
       },
       "home_pitcher": "Ben Brown",
       "away_pitcher": "Kevin Gausman",
-      "justification": "Chicago Cubs are 5-5 in their last 10 (Toronto Blue Jays 6-4); season records 39-36 vs 37-38. Chicago Cubs's avg run differential is +1.2 vs Toronto Blue Jays's -2.3 over the last 10 games. Ben Brown (ERA 1.74) has a meaningful ERA advantage over Kevin Gausman (ERA 3.41)."
+      "justification": "Toronto Blue Jays are 6-4 in their last 10 (Chicago Cubs 5-5); season records 37-38 vs 39-36. Toronto Blue Jays's avg run differential is -2.3 vs Chicago Cubs's +1.2 over the last 10 games. Model prices Toronto Blue Jays at 32.5% \u2014 a +26.2% edge over the market line."
     },
     {
       "id": "bovada_baseball_mlb_Chicago_White_Sox_Detroit_Tigers",
@@ -49,30 +49,30 @@
       "commence_time": "2026-06-19T22:40:00+00:00",
       "home_team": "Detroit Tigers",
       "away_team": "Chicago White Sox",
-      "home_odds": -225,
-      "away_odds": 185,
+      "home_odds": -204,
+      "away_odds": 167,
       "spread": {
         "point": -1.5,
-        "price": 100
+        "price": 105
       },
       "total": {
-        "line": 7.5,
-        "over": -115,
-        "under": -105
+        "line": 8.0,
+        "over": -120,
+        "under": 100
       },
       "model_home_prob": 0.7284,
       "model_away_prob": 0.2716,
-      "home_no_vig_prob": 0.6636,
-      "away_no_vig_prob": 0.3364,
-      "home_edge": 0.0648,
-      "away_edge": -0.0648,
-      "home_ev": 0.0521,
-      "away_ev": -0.2259,
-      "home_kelly": 0.0293,
+      "home_no_vig_prob": 0.6418,
+      "away_no_vig_prob": 0.3582,
+      "home_edge": 0.0866,
+      "away_edge": -0.0866,
+      "home_ev": 0.0855,
+      "away_ev": -0.2748,
+      "home_kelly": 0.0436,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Tarik Skubal",
-      "away_pitcher": "Erick Fedde"
+      "away_pitcher": "Brandon Eisert"
     },
     {
       "id": "bovada_baseball_mlb_Cincinnati_Reds_New_York_Yankees",
@@ -81,27 +81,27 @@
       "commence_time": "2026-06-19T23:05:00+00:00",
       "home_team": "New York Yankees",
       "away_team": "Cincinnati Reds",
-      "home_odds": -270,
-      "away_odds": 220,
+      "home_odds": -280,
+      "away_odds": 225,
       "spread": {
         "point": -1.5,
-        "price": -120
+        "price": -130
       },
       "total": {
-        "line": 8.5,
-        "over": -120,
-        "under": 100
+        "line": 9.0,
+        "over": -110,
+        "under": -110
       },
       "model_home_prob": 0.6385,
       "model_away_prob": 0.3615,
-      "home_no_vig_prob": 0.7002,
-      "away_no_vig_prob": 0.2998,
-      "home_edge": -0.0617,
-      "away_edge": 0.0617,
-      "home_ev": -0.125,
-      "away_ev": 0.1568,
+      "home_no_vig_prob": 0.7054,
+      "away_no_vig_prob": 0.2946,
+      "home_edge": -0.0669,
+      "away_edge": 0.0669,
+      "home_ev": -0.1335,
+      "away_ev": 0.1749,
       "home_kelly": 0.0,
-      "away_kelly": 0.0178,
+      "away_kelly": 0.0194,
       "best_bet": null,
       "home_pitcher": "Cam Schlittler",
       "away_pitcher": "Rhett Lowder"
@@ -113,29 +113,29 @@
       "commence_time": "2026-06-19T23:10:00+00:00",
       "home_team": "Miami Marlins",
       "away_team": "San Francisco Giants",
-      "home_odds": -117,
-      "away_odds": -103,
+      "home_odds": -120,
+      "away_odds": 100,
       "spread": {
         "point": -1.5,
         "price": 175
       },
       "total": {
         "line": 8.0,
-        "over": -120,
-        "under": 100
+        "over": -110,
+        "under": -110
       },
-      "model_home_prob": 0.5779,
-      "model_away_prob": 0.4221,
-      "home_no_vig_prob": 0.5152,
-      "away_no_vig_prob": 0.4848,
-      "home_edge": 0.0627,
-      "away_edge": -0.0627,
-      "home_ev": 0.0718,
-      "away_ev": -0.1681,
-      "home_kelly": 0.021,
+      "model_home_prob": 0.7284,
+      "model_away_prob": 0.2716,
+      "home_no_vig_prob": 0.5217,
+      "away_no_vig_prob": 0.4783,
+      "home_edge": 0.2067,
+      "away_edge": -0.2067,
+      "home_ev": 0.3354,
+      "away_ev": -0.4568,
+      "home_kelly": 0.1006,
       "away_kelly": 0.0,
       "best_bet": null,
-      "home_pitcher": "TBD",
+      "home_pitcher": "Lake Bachar",
       "away_pitcher": "Landen Roupp"
     },
     {
@@ -145,30 +145,30 @@
       "commence_time": "2026-06-19T23:10:00+00:00",
       "home_team": "Tampa Bay Rays",
       "away_team": "Washington Nationals",
-      "home_odds": -126,
-      "away_odds": 106,
+      "home_odds": -155,
+      "away_odds": 130,
       "spread": {
         "point": -1.5,
-        "price": 170
+        "price": 145
       },
       "total": {
-        "line": 7.5,
-        "over": -115,
-        "under": -105
+        "line": 8.5,
+        "over": 100,
+        "under": -120
       },
-      "model_home_prob": 0.5539,
-      "model_away_prob": 0.4461,
-      "home_no_vig_prob": 0.5346,
-      "away_no_vig_prob": 0.4654,
-      "home_edge": 0.0193,
-      "away_edge": -0.0193,
-      "home_ev": -0.0065,
-      "away_ev": -0.081,
+      "model_home_prob": 0.5707,
+      "model_away_prob": 0.4293,
+      "home_no_vig_prob": 0.583,
+      "away_no_vig_prob": 0.417,
+      "home_edge": -0.0123,
+      "away_edge": 0.0123,
+      "home_ev": -0.0611,
+      "away_ev": -0.0126,
       "home_kelly": 0.0,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Griffin Jax",
-      "away_pitcher": "Cade Cavalli"
+      "away_pitcher": "PJ Poulin"
     },
     {
       "id": "bovada_baseball_mlb_Milwaukee_Brewers_Atlanta_Braves",
@@ -177,25 +177,25 @@
       "commence_time": "2026-06-19T23:15:00+00:00",
       "home_team": "Atlanta Braves",
       "away_team": "Milwaukee Brewers",
-      "home_odds": 138,
-      "away_odds": -164,
+      "home_odds": 139,
+      "away_odds": -165,
       "spread": {
         "point": 1.5,
         "price": -125
       },
       "total": {
-        "line": 7.5,
-        "over": -110,
-        "under": -110
+        "line": 7.0,
+        "over": -120,
+        "under": 100
       },
       "model_home_prob": 0.3803,
       "model_away_prob": 0.6197,
-      "home_no_vig_prob": 0.4035,
-      "away_no_vig_prob": 0.5965,
-      "home_edge": -0.0232,
-      "away_edge": 0.0232,
-      "home_ev": -0.0949,
-      "away_ev": -0.0024,
+      "home_no_vig_prob": 0.4019,
+      "away_no_vig_prob": 0.5981,
+      "home_edge": -0.0216,
+      "away_edge": 0.0216,
+      "home_ev": -0.0911,
+      "away_ev": -0.0047,
       "home_kelly": 0.0,
       "away_kelly": 0.0,
       "best_bet": null,
