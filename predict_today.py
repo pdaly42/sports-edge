@@ -1145,7 +1145,8 @@ def run(api_key: str, output_path: str = None, target_date: str = None,
         sports: list = None) -> None:
     target_date = target_date or date.today().isoformat()
     output_path = output_path or f"predictions_{target_date}.json"
-    sports = sports or ["nba", "mlb", "nfl"]
+    # NBA and NFL are out of season — re-enable when seasons resume
+    sports = sports or ["mlb", "soccer"]
 
     print(f"Running predictions for {target_date} — sports: {sports}")
     all_games = []
