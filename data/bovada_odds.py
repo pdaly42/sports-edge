@@ -176,12 +176,19 @@ def fetch_bovada_odds(sport_key: str, target_date: str) -> list:
         if r.status_code != 200:
             print(f"  Bovada {sport_key}: HTTP {r.status_code}")
             return []
+        # Check if we got JSON or a block page (Cloudflare/bot detection)
+        content_type = r.headers.get("content-type", "")
+        if "json" not in content_type:
+            print(f"  Bovada {sport_key}: unexpected content-type '{content_type}' — likely blocked (first 200 chars: {r.text[:200]!r})")
+            return []
         data = r.json()
     except Exception as e:
         print(f"  Bovada {sport_key}: {e}")
         return []
 
     events = [e for league in data for e in league.get("events", [])]
+    all_dates = sorted({str(__import__('datetime').datetime.fromtimestamp(e.get('startTime',0)/1000, tz=__import__('datetime').timezone.utc).date()) for e in events})
+    print(f"  Bovada {sport_key}: {len(events)} total events across dates {all_dates}")
     games = []
     for ev in events:
         g = _parse_game(ev, sport_key, target_date)
