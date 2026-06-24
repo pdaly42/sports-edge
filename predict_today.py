@@ -126,6 +126,7 @@ ESPN_LEAGUE_MAP = {
     "basketball_nba":        "basketball/leagues/nba",
     "baseball_mlb":          "baseball/leagues/mlb",
     "americanfootball_nfl":  "football/leagues/nfl",
+    "soccer_fifa_world_cup": "soccer/leagues/fifa.world",
 }
 
 def fetch_espn_odds(sport_key: str, target_date: str) -> list:
