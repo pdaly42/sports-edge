@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-24T21:16:57.657204+00:00",
+  "generated_at": "2026-06-24T21:27:50.861150+00:00",
   "date": "2026-06-24",
   "games": [
     {
@@ -60,27 +60,27 @@
         "over": -120,
         "under": -110
       },
-      "model_home_prob": 0.65,
-      "model_away_prob": 0.35,
+      "model_home_prob": 0.6507,
+      "model_away_prob": 0.3493,
       "home_no_vig_prob": 0.1972,
       "away_no_vig_prob": 0.8028,
-      "home_edge": 0.4528,
-      "away_edge": -0.4528,
-      "home_ev": 2.0875,
-      "away_ev": -0.5917,
-      "home_kelly": 0.1392,
+      "home_edge": 0.4535,
+      "away_edge": -0.4535,
+      "home_ev": 2.0908,
+      "away_ev": -0.5925,
+      "home_kelly": 0.1394,
       "away_kelly": 0.0,
       "best_bet": {
         "side": "home",
         "team": "Los Angeles Angels",
         "odds": 375,
-        "edge": 0.4528,
-        "ev": 2.0875,
+        "edge": 0.4535,
+        "ev": 2.0908,
         "strength": "strong"
       },
       "home_pitcher": "Jos\u00e9 Soriano",
       "away_pitcher": "Trey Gibson",
-      "justification": "Los Angeles Angels are 4-6 in their last 10 (Baltimore Orioles 4-6); season records 33-48 vs 38-43. Los Angeles Angels's avg run differential is -2.4 vs Baltimore Orioles's -1.4 over the last 10 games. Jos\u00e9 Soriano (ERA 3.41) has a meaningful ERA advantage over Trey Gibson (ERA 5.83)."
+      "justification": "Los Angeles Angels are 4-6 in their last 10 (Baltimore Orioles 4-6); season records 33-48 vs 38-43. Los Angeles Angels's avg run differential is -2.4 vs Baltimore Orioles's -1.4 over the last 10 games. Jos\u00e9 Soriano (ERA 3.41) has a meaningful ERA advantage over Trey Gibson (ERA 5.7)."
     },
     {
       "id": "bovada_baseball_mlb_Cleveland_Guardians_Chicago_White_Sox",
@@ -100,14 +100,14 @@
         "over": -110,
         "under": -120
       },
-      "model_home_prob": 0.4972,
-      "model_away_prob": 0.5028,
+      "model_home_prob": 0.4955,
+      "model_away_prob": 0.5045,
       "home_no_vig_prob": 0.5,
       "away_no_vig_prob": 0.5,
-      "home_edge": -0.0028,
-      "away_edge": 0.0028,
-      "home_ev": -0.0705,
-      "away_ev": -0.06,
+      "home_edge": -0.0045,
+      "away_edge": 0.0045,
+      "home_ev": -0.0736,
+      "away_ev": -0.0568,
       "home_kelly": 0.0,
       "away_kelly": 0.0,
       "best_bet": null,
