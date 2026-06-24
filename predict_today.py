@@ -22,7 +22,6 @@ from pathlib import Path
 
 from config.settings import RAW_DIR
 from models.trainer import load_model, predict_proba
-from data.bovada_odds import fetch_bovada_odds
 from utils.odds import remove_vig, expected_value, kelly_fraction as kelly_calc
 
 # ─────────────────────────────────────────────────────────────
@@ -60,14 +59,9 @@ def fetch_odds(api_key: str, sport_key: str, target_date: str) -> list:
             if code == 422:
                 print(f"  {sport_key}: not in season")
                 return []
-            print(f"  {sport_key}: odds API returned {code} — falling back to Bovada")
+            print(f"  {sport_key}: odds API returned {code} — falling back to ESPN")
     else:
-        print(f"  {sport_key}: no API key — using Bovada (free)")
-
-    games = fetch_bovada_odds(sport_key, target_date)
-    if games:
-        return games
-    print(f"  {sport_key}: Bovada returned no games — falling back to ESPN odds")
+        print(f"  {sport_key}: no API key — using ESPN odds")
 
     games = fetch_espn_odds(sport_key, target_date)
     if not games:
