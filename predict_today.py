@@ -65,8 +65,13 @@ def fetch_odds(api_key: str, sport_key: str, target_date: str) -> list:
         print(f"  {sport_key}: no API key — using Bovada (free)")
 
     games = fetch_bovada_odds(sport_key, target_date)
+    if games:
+        return games
+    print(f"  {sport_key}: Bovada returned no games — falling back to ESPN odds")
+
+    games = fetch_espn_odds(sport_key, target_date)
     if not games:
-        print(f"  {sport_key}: Bovada returned no games for {target_date}")
+        print(f"  {sport_key}: ESPN odds unavailable — games will show without odds")
     return games
 
 
@@ -123,10 +128,121 @@ ESPN_SPORT_MAP = {
     "soccer_fifa_world_cup": "soccer/fifa.world",
 }
 
+ESPN_LEAGUE_MAP = {
+    "basketball_nba":        "basketball/leagues/nba",
+    "baseball_mlb":          "baseball/leagues/mlb",
+    "americanfootball_nfl":  "football/leagues/nfl",
+}
+
+def fetch_espn_odds(sport_key: str, target_date: str) -> list:
+    """
+    Fetch odds from ESPN's free internal API (DraftKings lines).
+    Used as a fallback when the-odds-api.com quota is exhausted and Bovada is blocked.
+    Returns game dicts in the same bookmakers format as the-odds-api.com.
+    """
+    league_path = ESPN_LEAGUE_MAP.get(sport_key)
+    if not league_path:
+        return []
+
+    date_str = target_date.replace("-", "")
+    events_url = f"https://sports.core.api.espn.com/v2/sports/{league_path}/events?dates={date_str}&limit=50"
+    try:
+        resp = requests.get(events_url, timeout=10)
+        if not resp.ok:
+            return []
+        event_refs = [item["$ref"] for item in resp.json().get("items", [])]
+    except Exception as e:
+        print(f"  ESPN odds {sport_key}: {e}")
+        return []
+
+    games = []
+    for ref in event_refs:
+        try:
+            ev = requests.get(ref, timeout=10).json()
+            comp = ev.get("competitions", [{}])[0]
+            competitors = comp.get("competitors", [])
+            home = next((t for t in competitors if t.get("homeAway") == "home"), None)
+            away = next((t for t in competitors if t.get("homeAway") == "away"), None)
+            if not home or not away:
+                continue
+
+            home_team = home["team"]["displayName"]
+            away_team = away["team"]["displayName"]
+            event_id  = ev["id"]
+            start     = ev["date"]
+
+            # Only include games on the target date
+            if start[:10] != target_date:
+                continue
+
+            # Fetch odds for this event
+            odds_url = f"https://sports.core.api.espn.com/v2/sports/{league_path}/events/{event_id}/competitions/{event_id}/odds"
+            odds_resp = requests.get(odds_url, timeout=10)
+            if not odds_resp.ok:
+                continue
+            odds_items = odds_resp.json().get("items", [])
+            if not odds_items:
+                continue
+
+            # Use first provider (DraftKings)
+            o = odds_items[0]
+            away_ml = o.get("awayTeamOdds", {}).get("moneyLine")
+            home_ml = o.get("homeTeamOdds", {}).get("moneyLine")
+            over_under = o.get("overUnder")
+            over_odds  = o.get("overOdds")
+            under_odds = o.get("underOdds")
+            spread_val = o.get("spread")  # from home perspective
+
+            if away_ml is None or home_ml is None:
+                continue
+
+            markets = [{
+                "key": "h2h",
+                "outcomes": [
+                    {"name": away_team, "price": int(away_ml)},
+                    {"name": home_team, "price": int(home_ml)},
+                ],
+            }]
+            if spread_val is not None:
+                markets.append({
+                    "key": "spreads",
+                    "outcomes": [
+                        {"name": away_team, "price": -110, "point":  round(spread_val, 1)},
+                        {"name": home_team, "price": -110, "point": -round(spread_val, 1)},
+                    ],
+                })
+            if over_under and over_odds and under_odds:
+                markets.append({
+                    "key": "totals",
+                    "outcomes": [
+                        {"name": "Over",  "price": int(over_odds),  "point": over_under},
+                        {"name": "Under", "price": int(under_odds), "point": over_under},
+                    ],
+                })
+
+            games.append({
+                "id":            f"espn_{sport_key}_{away_team}_{home_team}".replace(" ", "_"),
+                "sport_key":     sport_key,
+                "commence_time": start,
+                "home_team":     home_team,
+                "away_team":     away_team,
+                "bookmakers": [{
+                    "key":     "draftkings",
+                    "title":   "DraftKings (via ESPN)",
+                    "markets": markets,
+                }],
+            })
+        except Exception:
+            continue
+
+    print(f"  ESPN odds {sport_key}: {len(games)} games on {target_date}")
+    return games
+
+
 def fetch_games_from_espn(sport_key: str, target_date: str) -> list:
     """
-    Fallback game source when odds API is unavailable.
-    Returns minimal game dicts (no bookmakers/odds) using ESPN's free API.
+    Last-resort game source when all odds APIs are unavailable.
+    Returns minimal game dicts (no bookmakers/odds) using ESPN's free scoreboard API.
     """
     espn_path = ESPN_SPORT_MAP.get(sport_key)
     if not espn_path:
