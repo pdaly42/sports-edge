@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-06-25T21:19:59.547038+00:00",
+  "generated_at": "2026-06-25T21:46:43.373839+00:00",
   "date": "2026-06-25",
   "games": [
     {
@@ -63,8 +63,8 @@
       "away_odds": null,
       "spread": null,
       "total": null,
-      "model_home_prob": 0.6117,
-      "model_away_prob": 0.3883,
+      "model_home_prob": 0.6436,
+      "model_away_prob": 0.3564,
       "home_no_vig_prob": null,
       "away_no_vig_prob": null,
       "home_edge": null,
