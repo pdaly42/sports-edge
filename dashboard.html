@@ -374,6 +374,22 @@
     .why-body.open { display: block; }
     .why-arrow.open { transform: rotate(90deg); }
 
+    /* ── No-odds banner ── */
+    .no-odds-banner {
+      display: none;
+      align-items: center;
+      gap: 10px;
+      padding: 10px 16px;
+      margin-bottom: 16px;
+      background: #fef9c3;
+      border: 1.5px solid #fde68a;
+      border-radius: 10px;
+      font-size: 0.8rem;
+      color: #854d0e;
+    }
+    .no-odds-banner.show { display: flex; }
+    .no-odds-banner strong { font-weight: 700; }
+
     @media (max-width: 640px) {
       main { padding: 16px; }
       .summary-bar { grid-template-columns: repeat(2, 1fr); }
@@ -423,6 +439,12 @@
       <div class="summary-value" id="stat-record">—</div>
       <div class="summary-sub" id="stat-record-sub">model vs actual results</div>
     </div>
+  </div>
+
+  <!-- No-odds warning banner -->
+  <div class="no-odds-banner" id="no-odds-banner">
+    <span>⚠️</span>
+    <span><strong>Odds unavailable</strong> — The model ran but could not fetch betting lines today. Game probabilities are shown but no edge picks can be computed. Try refreshing later or check the odds API status.</span>
   </div>
 
   <!-- Yesterday's Results -->
@@ -584,6 +606,7 @@ function shiftDay(delta) {
   modelPredictions = {};
   document.getElementById('model-status').textContent = 'No model loaded';
   document.getElementById('model-status').style.color = '#64748b';
+  document.getElementById('no-odds-banner').classList.remove('show');
   loadModelPredictions();
 
   const cacheKey = getViewDateISO();
@@ -609,9 +632,19 @@ async function loadModelPredictions() {
     modelPredictions = {};
     (data.games || []).forEach(g => { modelPredictions[g.id] = g; });
     const count = Object.keys(modelPredictions).length;
+
+    const banner = document.getElementById('no-odds-banner');
+    const oddsAvailable = data.odds_available !== false; // default true for old files without the flag
+    banner.classList.toggle('show', count > 0 && !oddsAvailable);
+
     if (count > 0) {
-      document.getElementById('model-status').textContent = `Model loaded · ${count} games`;
-      document.getElementById('model-status').style.color = '#10b981';
+      if (!oddsAvailable) {
+        document.getElementById('model-status').textContent = `Model loaded · no odds · ${count} games`;
+        document.getElementById('model-status').style.color = '#f59e0b';
+      } else {
+        document.getElementById('model-status').textContent = `Model loaded · ${count} games`;
+        document.getElementById('model-status').style.color = '#10b981';
+      }
       mergeModelPredictionsToGames();
       renderGames();
     }

@@ -35,7 +35,12 @@ class PlattCalibrated:
 
     def predict_proba(self, X):
         raw = self._base.predict_proba(X)[:, 1].reshape(-1, 1)
-        p   = self._platt.predict_proba(raw)[:, 1]
+        # Use decision_function + sigmoid instead of predict_proba to avoid
+        # sklearn version skew: older pickled LogisticRegression objects may
+        # lack the 'multi_class' attribute that newer sklearn predict_proba
+        # code paths try to access.
+        logit = self._platt.decision_function(raw)
+        p = 1.0 / (1.0 + np.exp(-logit))
         return np.column_stack([1 - p, p])
 
 

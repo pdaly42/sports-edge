@@ -132,46 +132,49 @@ ESPN_LEAGUE_MAP = {
 def fetch_espn_odds(sport_key: str, target_date: str) -> list:
     """
     Fetch odds from ESPN's free internal API (DraftKings lines).
-    Used as a fallback when the-odds-api.com quota is exhausted and Bovada is blocked.
-    Returns game dicts in the same bookmakers format as the-odds-api.com.
+    Uses the public scoreboard API for game/team info (stable, embedded team names)
+    and the core odds API for betting lines.
     """
     league_path = ESPN_LEAGUE_MAP.get(sport_key)
-    if not league_path:
+    espn_path   = ESPN_SPORT_MAP.get(sport_key)
+    if not league_path or not espn_path:
         return []
 
     date_str = target_date.replace("-", "")
-    events_url = f"https://sports.core.api.espn.com/v2/sports/{league_path}/events?dates={date_str}&limit=50"
+
+    # Step 1: get games with embedded team names from the scoreboard API.
+    # The core API events endpoint now returns $ref stubs for teams instead of
+    # embedded displayName, so we use the simpler scoreboard API instead.
+    scoreboard_url = f"https://site.api.espn.com/apis/site/v2/sports/{espn_path}/scoreboard?dates={date_str}"
     try:
-        resp = requests.get(events_url, timeout=10)
+        resp = requests.get(scoreboard_url, timeout=10)
         if not resp.ok:
             return []
-        event_refs = [item["$ref"] for item in resp.json().get("items", [])]
+        events = resp.json().get("events", [])
     except Exception as e:
-        print(f"  ESPN odds {sport_key}: {e}")
+        print(f"  ESPN odds {sport_key}: scoreboard error — {e}")
         return []
 
     games = []
-    for ref in event_refs:
+    for ev in events:
         try:
-            ev = requests.get(ref, timeout=10).json()
-            comp = ev.get("competitions", [{}])[0]
-            competitors = comp.get("competitors", [])
-            home = next((t for t in competitors if t.get("homeAway") == "home"), None)
-            away = next((t for t in competitors if t.get("homeAway") == "away"), None)
-            if not home or not away:
-                continue
-
-            home_team = home["team"]["displayName"]
-            away_team = away["team"]["displayName"]
-            event_id  = ev["id"]
-            start     = ev["date"]
-
-            # Only include games on the target date
+            event_id = ev["id"]
+            start    = ev["date"]
             if start[:10] != target_date:
                 continue
 
-            # Fetch odds for this event
-            odds_url = f"https://sports.core.api.espn.com/v2/sports/{league_path}/events/{event_id}/competitions/{event_id}/odds"
+            comp  = ev["competitions"][0]
+            teams = comp["competitors"]
+            home  = next((t for t in teams if t.get("homeAway") == "home"), teams[0])
+            away  = next((t for t in teams if t.get("homeAway") == "away"), teams[1])
+            home_team = home["team"]["displayName"]
+            away_team = away["team"]["displayName"]
+
+            # Step 2: fetch betting lines from the core odds API using the event_id.
+            odds_url = (
+                f"https://sports.core.api.espn.com/v2/sports/{league_path}"
+                f"/events/{event_id}/competitions/{event_id}/odds"
+            )
             odds_resp = requests.get(odds_url, timeout=10)
             if not odds_resp.ok:
                 continue
@@ -179,25 +182,26 @@ def fetch_espn_odds(sport_key: str, target_date: str) -> list:
             if not odds_items:
                 continue
 
-            # Use first provider (DraftKings)
-            o = odds_items[0]
-            away_ml = o.get("awayTeamOdds", {}).get("moneyLine")
-            home_ml = o.get("homeTeamOdds", {}).get("moneyLine")
+            o          = odds_items[0]
+            away_ml    = o.get("awayTeamOdds", {}).get("moneyLine")
+            home_ml    = o.get("homeTeamOdds", {}).get("moneyLine")
+            draw_ml    = o.get("drawOdds", {}).get("moneyLine")
             over_under = o.get("overUnder")
             over_odds  = o.get("overOdds")
             under_odds = o.get("underOdds")
-            spread_val = o.get("spread")  # from home perspective
+            spread_val = o.get("spread")
 
             if away_ml is None or home_ml is None:
                 continue
 
-            markets = [{
-                "key": "h2h",
-                "outcomes": [
-                    {"name": away_team, "price": int(away_ml)},
-                    {"name": home_team, "price": int(home_ml)},
-                ],
-            }]
+            h2h_outcomes = [
+                {"name": away_team, "price": int(away_ml)},
+                {"name": home_team, "price": int(home_ml)},
+            ]
+            if draw_ml is not None:
+                h2h_outcomes.append({"name": "Draw", "price": int(draw_ml)})
+
+            markets = [{"key": "h2h", "outcomes": h2h_outcomes}]
             if spread_val is not None:
                 markets.append({
                     "key": "spreads",
@@ -216,7 +220,7 @@ def fetch_espn_odds(sport_key: str, target_date: str) -> list:
                 })
 
             games.append({
-                "id":            f"espn_{sport_key}_{away_team}_{home_team}".replace(" ", "_"),
+                "id":            event_id,
                 "sport_key":     sport_key,
                 "commence_time": start,
                 "home_team":     home_team,
@@ -466,8 +470,9 @@ def build_game_prediction(game: dict, model_home_prob,
             best_edge = max(h_edge, a_edge)
             side = "home" if h_edge >= a_edge else "away"
             side_prob = prob_h if side == "home" else prob_a
-            # Require meaningful edge AND cap model confidence to guard against overfit
-            if best_edge >= 0.08 and side_prob <= 0.70:
+            # Require meaningful edge, cap model confidence, and reject implausibly large
+            # edges (>30%) which signal a model/data error rather than a real opportunity.
+            if best_edge >= 0.08 and side_prob <= 0.70 and best_edge <= 0.30:
                 out["best_bet"] = {
                     "side":     side,
                     "team":     game["home_team"] if side == "home" else game["away_team"],
@@ -544,6 +549,7 @@ def predict_nba(api_key: str, target_date: str) -> list:
         a_row = latest[latest["team"] == away_br]
 
         prob_home = None
+        feat = {}
         if not h_row.empty and not a_row.empty:
             h, a = h_row.iloc[0], a_row.iloc[0]
             feat = {"game_id": game["id"]}
@@ -1209,7 +1215,7 @@ def predict_soccer(api_key: str, target_date: str) -> list:
             ("away", p_away, away_odds, a_edge, a_ev, away_api),
         ]
         best = max(edges, key=lambda x: x[3] or -999)
-        if best[3] is not None and best[3] >= 0.03:
+        if best[3] is not None and 0.03 <= best[3] <= 0.20:
             best_bet = {
                 "side": best[0], "team": best[5], "odds": best[2],
                 "edge": best[3], "ev": best[4],
@@ -1280,10 +1286,13 @@ def run(api_key: str, output_path: str = None, target_date: str = None,
         if g.get("best_bet") and id(g) not in keep_ids:
             g["best_bet"] = None
 
+    odds_available = any(g.get("home_odds") is not None for g in all_games)
+
     result = {
-        "generated_at": datetime.now(timezone.utc).isoformat(),
-        "date":         target_date,
-        "games":        all_games,
+        "generated_at":   datetime.now(timezone.utc).isoformat(),
+        "date":           target_date,
+        "odds_available": odds_available,
+        "games":          all_games,
     }
     Path(output_path).write_text(json.dumps(result, indent=2))
 
