@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-01T11:10:20.743815+00:00",
+  "generated_at": "2026-07-01T17:49:00.534927+00:00",
   "date": "2026-07-01",
   "odds_available": true,
   "games": [
@@ -10,30 +10,31 @@
       "commence_time": "2026-07-01T16:36:00Z",
       "home_team": "Baltimore Orioles",
       "away_team": "Chicago White Sox",
-      "home_odds": -136,
-      "away_odds": 120,
+      "home_odds": -102,
+      "away_odds": -108,
       "spread": {
-        "point": -1.5,
-        "price": 142
+        "point": 1.5,
+        "price": -230
       },
       "total": {
-        "line": 10.0,
-        "over": -108,
-        "under": -112
+        "line": 5.5,
+        "over": -128,
+        "under": -104
       },
-      "model_home_prob": 0.6177,
-      "model_away_prob": 0.3823,
-      "home_no_vig_prob": 0.559,
-      "away_no_vig_prob": 0.441,
-      "home_edge": 0.0587,
-      "away_edge": -0.0587,
-      "home_ev": 0.0719,
-      "away_ev": -0.1589,
-      "home_kelly": 0.0244,
+      "model_home_prob": 0.598,
+      "model_away_prob": 0.402,
+      "home_no_vig_prob": 0.493,
+      "away_no_vig_prob": 0.507,
+      "home_edge": 0.105,
+      "away_edge": -0.105,
+      "home_ev": 0.1843,
+      "away_ev": -0.2258,
+      "home_kelly": 0.047,
       "away_kelly": 0.0,
       "best_bet": null,
-      "home_pitcher": "TBD",
-      "away_pitcher": "Noah Schultz"
+      "home_pitcher": "Dean Kremer",
+      "away_pitcher": "Noah Schultz",
+      "justification": "Baltimore Orioles are 4-6 in their last 10 (Chicago White Sox 6-4); season records 39-48 vs 45-39. Baltimore Orioles's avg run differential is -1.4 vs Chicago White Sox's -1.9 over the last 10 games. Dean Kremer (ERA 3.52) has a meaningful ERA advantage over Noah Schultz (ERA 5.27)."
     },
     {
       "id": "f59c1e3050cb7baeab3f1b997ee3a895",
@@ -42,30 +43,38 @@
       "commence_time": "2026-07-01T17:11:00Z",
       "home_team": "Cleveland Guardians",
       "away_team": "Texas Rangers",
-      "home_odds": -110,
-      "away_odds": -106,
+      "home_odds": -401,
+      "away_odds": 325,
       "spread": {
-        "point": 1.5,
-        "price": -192
+        "point": -2.5,
+        "price": -114
       },
       "total": {
-        "line": 8.0,
-        "over": -114,
-        "under": -106
+        "line": 8.5,
+        "over": -106,
+        "under": -125
       },
-      "model_home_prob": 0.547,
-      "model_away_prob": 0.453,
-      "home_no_vig_prob": 0.5045,
-      "away_no_vig_prob": 0.4955,
-      "home_edge": 0.0425,
-      "away_edge": -0.0425,
-      "home_ev": 0.0443,
-      "away_ev": -0.1196,
-      "home_kelly": 0.0122,
-      "away_kelly": 0.0,
-      "best_bet": null,
+      "model_home_prob": 0.5338,
+      "model_away_prob": 0.4662,
+      "home_no_vig_prob": 0.7728,
+      "away_no_vig_prob": 0.2272,
+      "home_edge": -0.239,
+      "away_edge": 0.239,
+      "home_ev": -0.3331,
+      "away_ev": 0.9813,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0755,
+      "best_bet": {
+        "side": "away",
+        "team": "Texas Rangers",
+        "odds": 325,
+        "edge": 0.239,
+        "ev": 0.9813,
+        "strength": "strong"
+      },
       "home_pitcher": "Joey Cantillo",
-      "away_pitcher": "MacKenzie Gore"
+      "away_pitcher": "MacKenzie Gore",
+      "justification": "Texas Rangers are 8-2 in their last 10 (Cleveland Guardians 4-6); season records 44-42 vs 44-42. Texas Rangers's avg run differential is -1.3 vs Cleveland Guardians's +1.0 over the last 10 games. Model prices Texas Rangers at 46.6% \u2014 a +23.9% edge over the market line."
     },
     {
       "id": "53f6cd5e0c90cba30f35638b85a72ef6",
@@ -74,64 +83,78 @@
       "commence_time": "2026-07-01T17:36:00Z",
       "home_team": "Boston Red Sox",
       "away_team": "Washington Nationals",
-      "home_odds": -144,
-      "away_odds": 125,
+      "home_odds": 120,
+      "away_odds": -138,
       "spread": {
-        "point": -1.5,
-        "price": 146
+        "point": 1.5,
+        "price": -138
       },
       "total": {
-        "line": 9.5,
-        "over": -120,
-        "under": -102
+        "line": 11.5,
+        "over": -108,
+        "under": -122
       },
-      "model_home_prob": 0.6804,
-      "model_away_prob": 0.3196,
-      "home_no_vig_prob": 0.5704,
-      "away_no_vig_prob": 0.4296,
-      "home_edge": 0.11,
-      "away_edge": -0.11,
-      "home_ev": 0.1529,
-      "away_ev": -0.2809,
-      "home_kelly": 0.055,
+      "model_home_prob": 0.578,
+      "model_away_prob": 0.422,
+      "home_no_vig_prob": 0.4394,
+      "away_no_vig_prob": 0.5606,
+      "home_edge": 0.1386,
+      "away_edge": -0.1386,
+      "home_ev": 0.2716,
+      "away_ev": -0.2722,
+      "home_kelly": 0.0566,
       "away_kelly": 0.0,
-      "best_bet": null,
+      "best_bet": {
+        "side": "home",
+        "team": "Boston Red Sox",
+        "odds": 120,
+        "edge": 0.1386,
+        "ev": 0.2716,
+        "strength": "strong"
+      },
       "home_pitcher": "Payton Tolle",
-      "away_pitcher": "Andrew Alvarez",
-      "justification": "Boston Red Sox are 6-4 in their last 10 (Washington Nationals 4-6); season records 37-47 vs 44-43. Boston Red Sox's avg run differential is +0.6 vs Washington Nationals's -2.2 over the last 10 games. Payton Tolle (ERA 2.78) has a meaningful ERA advantage over Andrew Alvarez (ERA 3.44)."
+      "away_pitcher": "Brad Lord",
+      "justification": "Boston Red Sox are 6-4 in their last 10 (Washington Nationals 4-6); season records 37-47 vs 44-43. Boston Red Sox's avg run differential is +0.6 vs Washington Nationals's -2.2 over the last 10 games. Model prices Boston Red Sox at 57.8% \u2014 a +13.9% edge over the market line."
     },
     {
       "id": "afdb817faca36038ccfa594672010b63",
       "sport": "baseball_mlb",
       "sport_label": "MLB",
-      "commence_time": "2026-07-01T17:36:00Z",
+      "commence_time": "2026-07-01T17:39:00Z",
       "home_team": "New York Yankees",
       "away_team": "Detroit Tigers",
-      "home_odds": -140,
-      "away_odds": 120,
+      "home_odds": -170,
+      "away_odds": 145,
       "spread": {
         "point": -1.5,
-        "price": 136
+        "price": 124
       },
       "total": {
-        "line": 9.5,
-        "over": -115,
-        "under": -105
+        "line": 8.5,
+        "over": -138,
+        "under": 104
       },
-      "model_home_prob": 0.4537,
-      "model_away_prob": 0.5463,
-      "home_no_vig_prob": 0.562,
-      "away_no_vig_prob": 0.438,
-      "home_edge": -0.1083,
-      "away_edge": 0.1083,
-      "home_ev": -0.2222,
-      "away_ev": 0.2019,
+      "model_home_prob": 0.4511,
+      "model_away_prob": 0.5489,
+      "home_no_vig_prob": 0.6067,
+      "away_no_vig_prob": 0.3933,
+      "home_edge": -0.1556,
+      "away_edge": 0.1556,
+      "home_ev": -0.2835,
+      "away_ev": 0.3448,
       "home_kelly": 0.0,
-      "away_kelly": 0.0421,
-      "best_bet": null,
+      "away_kelly": 0.0594,
+      "best_bet": {
+        "side": "away",
+        "team": "Detroit Tigers",
+        "odds": 145,
+        "edge": 0.1556,
+        "ev": 0.3448,
+        "strength": "strong"
+      },
       "home_pitcher": "Will Warren",
       "away_pitcher": "Troy Melton",
-      "justification": "Detroit Tigers are 5-5 in their last 10 (New York Yankees 2-8); season records 37-49 vs 48-37. Detroit Tigers's avg run differential is -2.8 vs New York Yankees's +3.6 over the last 10 games. Troy Melton (ERA 2.39) has a meaningful ERA advantage over Will Warren (ERA 3.75)."
+      "justification": "Detroit Tigers are 5-5 in their last 10 (New York Yankees 2-8); season records 37-49 vs 48-37. Detroit Tigers's avg run differential is -2.8 vs New York Yankees's +3.6 over the last 10 games. Troy Melton (ERA 2.37) has a meaningful ERA advantage over Will Warren (ERA 3.71)."
     },
     {
       "id": "51cf948cf7f0602d670ed6a922636887",
@@ -141,26 +164,26 @@
       "home_team": "Chicago Cubs",
       "away_team": "San Diego Padres",
       "home_odds": -120,
-      "away_odds": 105,
+      "away_odds": 108,
       "spread": {
-        "point": 1.5,
-        "price": -182
+        "point": -1.5,
+        "price": 150
       },
       "total": {
-        "line": 11.5,
-        "over": -122,
-        "under": 100
+        "line": 12.0,
+        "over": -112,
+        "under": -108
       },
       "model_home_prob": 0.5017,
       "model_away_prob": 0.4983,
-      "home_no_vig_prob": 0.5279,
-      "away_no_vig_prob": 0.4721,
-      "home_edge": -0.0262,
-      "away_edge": 0.0262,
+      "home_no_vig_prob": 0.5315,
+      "away_no_vig_prob": 0.4685,
+      "home_edge": -0.0298,
+      "away_edge": 0.0298,
       "home_ev": -0.0802,
-      "away_ev": 0.0215,
+      "away_ev": 0.0365,
       "home_kelly": 0.0,
-      "away_kelly": 0.0051,
+      "away_kelly": 0.0084,
       "best_bet": null,
       "home_pitcher": "Colin Rea",
       "away_pitcher": "Walker Buehler"
@@ -172,35 +195,28 @@
       "commence_time": "2026-07-01T19:08:00Z",
       "home_team": "Toronto Blue Jays",
       "away_team": "New York Mets",
-      "home_odds": -102,
-      "away_odds": -115,
+      "home_odds": -110,
+      "away_odds": -105,
       "spread": {
         "point": 1.5,
-        "price": -176
+        "price": -188
       },
       "total": {
         "line": 8.5,
-        "over": -124,
-        "under": 102
+        "over": -120,
+        "under": -102
       },
       "model_home_prob": 0.6397,
       "model_away_prob": 0.3603,
-      "home_no_vig_prob": 0.4856,
-      "away_no_vig_prob": 0.5144,
-      "home_edge": 0.1541,
-      "away_edge": -0.1541,
-      "home_ev": 0.2669,
-      "away_ev": -0.3264,
-      "home_kelly": 0.068,
+      "home_no_vig_prob": 0.5056,
+      "away_no_vig_prob": 0.4944,
+      "home_edge": 0.1341,
+      "away_edge": -0.1341,
+      "home_ev": 0.2212,
+      "away_ev": -0.2966,
+      "home_kelly": 0.0608,
       "away_kelly": 0.0,
-      "best_bet": {
-        "side": "home",
-        "team": "Toronto Blue Jays",
-        "odds": -102,
-        "edge": 0.1541,
-        "ev": 0.2669,
-        "strength": "strong"
-      },
+      "best_bet": null,
       "home_pitcher": "Braydon Fisher",
       "away_pitcher": "Freddy Peralta",
       "justification": "Toronto Blue Jays are 3-7 in their last 10 (New York Mets 2-8); season records 40-46 vs 36-50. Toronto Blue Jays's avg run differential is -2.3 vs New York Mets's +0.4 over the last 10 games. Braydon Fisher (ERA 3.48) has a meaningful ERA advantage over Freddy Peralta (ERA 4.53)."
@@ -212,11 +228,11 @@
       "commence_time": "2026-07-01T22:41:00Z",
       "home_team": "Philadelphia Phillies",
       "away_team": "Pittsburgh Pirates",
-      "home_odds": -136,
-      "away_odds": 119,
+      "home_odds": -142,
+      "away_odds": 120,
       "spread": {
         "point": -1.5,
-        "price": 146
+        "price": 160
       },
       "total": {
         "line": 8.0,
@@ -225,13 +241,13 @@
       },
       "model_home_prob": 0.7146,
       "model_away_prob": 0.2854,
-      "home_no_vig_prob": 0.5579,
-      "away_no_vig_prob": 0.4421,
-      "home_edge": 0.1567,
-      "away_edge": -0.1567,
-      "home_ev": 0.24,
-      "away_ev": -0.375,
-      "home_kelly": 0.0816,
+      "home_no_vig_prob": 0.5635,
+      "away_no_vig_prob": 0.4365,
+      "home_edge": 0.1511,
+      "away_edge": -0.1511,
+      "home_ev": 0.2178,
+      "away_ev": -0.3721,
+      "home_kelly": 0.0773,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Zack Wheeler",
@@ -248,12 +264,12 @@
       "away_odds": 116,
       "spread": {
         "point": -1.5,
-        "price": 142
+        "price": 146
       },
       "total": {
         "line": 9.0,
-        "over": -108,
-        "under": -112
+        "over": -120,
+        "under": -102
       },
       "model_home_prob": 0.5109,
       "model_away_prob": 0.4891,
@@ -280,12 +296,12 @@
       "away_odds": -132,
       "spread": {
         "point": 1.5,
-        "price": -142
+        "price": -134
       },
       "total": {
         "line": 10.5,
-        "over": -102,
-        "under": -120
+        "over": -108,
+        "under": -112
       },
       "model_home_prob": 0.4797,
       "model_away_prob": 0.5203,
@@ -308,38 +324,31 @@
       "commence_time": "2026-07-01T16:00:00Z",
       "home_team": "England",
       "away_team": "DR Congo",
-      "home_odds": -325,
-      "away_odds": 950,
-      "draw_odds": 425,
+      "home_odds": 135,
+      "away_odds": 1350,
+      "draw_odds": -135,
       "spread": null,
       "total": {
         "line": 2.5,
-        "over": 105,
-        "under": -135
+        "over": -105,
+        "under": -115
       },
       "model_home_prob": 0.5256,
       "model_draw_prob": 0.3342,
       "model_away_prob": 0.1402,
-      "home_no_vig_prob": 0.728,
-      "draw_no_vig_prob": 0.1813,
-      "away_no_vig_prob": 0.0907,
-      "home_edge": -0.2024,
-      "draw_edge": 0.1529,
-      "away_edge": 0.0495,
-      "home_ev": 1.2337,
-      "draw_ev": 0.7546,
-      "away_ev": 0.4722,
+      "home_no_vig_prob": 0.3981,
+      "draw_no_vig_prob": 0.5374,
+      "away_no_vig_prob": 0.0645,
+      "home_edge": 0.1275,
+      "draw_edge": -0.2032,
+      "away_edge": 0.0757,
+      "home_ev": 0.2351,
+      "draw_ev": -0.2146,
+      "away_ev": 1.0331,
       "home_elo": 2056,
       "away_elo": 1750,
-      "best_bet": {
-        "side": "draw",
-        "team": "Draw",
-        "odds": 425,
-        "edge": 0.1529,
-        "ev": 0.7546,
-        "strength": "strong"
-      },
-      "justification": "DR Congo have won 4 of their last 10 internationals. Model prices DR Congo at 66.6% \u2014 a +15.3% edge over the market line."
+      "best_bet": null,
+      "justification": "England hold a 306-point ELO advantage (2056 vs 1750). England have won 5 of their last 10 internationals. Model prices England at 52.6% \u2014 a +12.8% edge over the market line."
     },
     {
       "id": "658ac8cbf214ca3cc150109b4ddc1e74",
@@ -348,38 +357,31 @@
       "commence_time": "2026-07-01T20:00:00Z",
       "home_team": "Belgium",
       "away_team": "Senegal",
-      "home_odds": 115,
+      "home_odds": 110,
       "away_odds": 270,
       "draw_odds": 220,
       "spread": null,
       "total": {
         "line": 2.5,
-        "over": -102,
-        "under": -120
+        "over": -120,
+        "under": -102
       },
       "model_home_prob": 0.3026,
       "model_draw_prob": 0.3941,
       "model_away_prob": 0.3033,
-      "home_no_vig_prob": 0.4439,
-      "draw_no_vig_prob": 0.2982,
-      "away_no_vig_prob": 0.2579,
-      "home_edge": -0.1413,
-      "draw_edge": 0.0959,
-      "away_edge": 0.0453,
-      "home_ev": -0.3494,
+      "home_no_vig_prob": 0.4497,
+      "draw_no_vig_prob": 0.2951,
+      "away_no_vig_prob": 0.2552,
+      "home_edge": -0.1471,
+      "draw_edge": 0.099,
+      "away_edge": 0.048,
+      "home_ev": -0.3645,
       "draw_ev": 0.2612,
       "away_ev": 0.1221,
       "home_elo": 2005,
       "away_elo": 1999,
-      "best_bet": {
-        "side": "draw",
-        "team": "Draw",
-        "odds": 220,
-        "edge": 0.0959,
-        "ev": 0.2612,
-        "strength": "strong"
-      },
-      "justification": "Senegal have won 6 of their last 10 internationals. Model prices Senegal at 60.6% \u2014 a +9.6% edge over the market line."
+      "best_bet": null,
+      "justification": "Senegal have won 6 of their last 10 internationals. Model prices Senegal at 60.6% \u2014 a +9.9% edge over the market line."
     }
   ]
 }
