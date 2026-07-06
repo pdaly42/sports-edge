@@ -1,0 +1,223 @@
+{
+  "generated_at": "2026-07-06T14:03:05.870475+00:00",
+  "date": "2026-07-06",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "caea4c3449e9f30ffe2c708a884e3296",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-06T18:11:00Z",
+      "home_team": "Kansas City Royals",
+      "away_team": "Philadelphia Phillies",
+      "home_odds": 184,
+      "away_odds": -219,
+      "spread": {
+        "point": 1.5,
+        "price": 112
+      },
+      "total": {
+        "line": 8.0,
+        "over": -115,
+        "under": -105
+      },
+      "model_home_prob": 0.2961,
+      "model_away_prob": 0.7039,
+      "home_no_vig_prob": 0.339,
+      "away_no_vig_prob": 0.661,
+      "home_edge": -0.0429,
+      "away_edge": 0.0429,
+      "home_ev": -0.1591,
+      "away_ev": 0.0253,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0139,
+      "best_bet": null,
+      "home_pitcher": "Noah Cameron",
+      "away_pitcher": "Cristopher S\u00e1nchez"
+    },
+    {
+      "id": "8708f0b1ad493caa280c8d963be2dc0b",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-06T22:41:00Z",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "New York Yankees",
+      "home_odds": -115,
+      "away_odds": -102,
+      "spread": {
+        "point": 1.5,
+        "price": -188
+      },
+      "total": {
+        "line": 7.5,
+        "over": -102,
+        "under": -120
+      },
+      "model_home_prob": 0.404,
+      "model_away_prob": 0.596,
+      "home_no_vig_prob": 0.5144,
+      "away_no_vig_prob": 0.4856,
+      "home_edge": -0.1104,
+      "away_edge": 0.1104,
+      "home_ev": -0.2447,
+      "away_ev": 0.1803,
+      "home_kelly": 0.0,
+      "away_kelly": 0.046,
+      "best_bet": {
+        "side": "away",
+        "team": "New York Yankees",
+        "odds": -102,
+        "edge": 0.1104,
+        "ev": 0.1803,
+        "strength": "moderate"
+      },
+      "home_pitcher": "Griffin Jax",
+      "away_pitcher": "Cam Schlittler",
+      "justification": "New York Yankees are 1-9 in their last 10 (Tampa Bay Rays 8-2); season records 49-40 vs 52-35. New York Yankees's avg run differential is +3.6 vs Tampa Bay Rays's -0.4 over the last 10 games. Cam Schlittler (ERA 2.08) has a meaningful ERA advantage over Griffin Jax (ERA 3.45)."
+    },
+    {
+      "id": "14986526f62254742f296b0eda680507",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-06T22:46:00Z",
+      "home_team": "Washington Nationals",
+      "away_team": "Houston Astros",
+      "home_odds": -120,
+      "away_odds": 102,
+      "spread": {
+        "point": 1.5,
+        "price": -196
+      },
+      "total": {
+        "line": 9.5,
+        "over": -120,
+        "under": -102
+      },
+      "model_home_prob": 0.5455,
+      "model_away_prob": 0.4545,
+      "home_no_vig_prob": 0.5242,
+      "away_no_vig_prob": 0.4758,
+      "home_edge": 0.0213,
+      "away_edge": -0.0213,
+      "home_ev": 0.0001,
+      "away_ev": -0.0819,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Miles Mikolas",
+      "away_pitcher": "Mike Burrows"
+    },
+    {
+      "id": "ceda0420b6aec99d07f85f99472f8c68",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-06T23:16:00Z",
+      "home_team": "Atlanta Braves",
+      "away_team": "New York Mets",
+      "home_odds": -132,
+      "away_odds": 115,
+      "spread": {
+        "point": -1.5,
+        "price": 150
+      },
+      "total": {
+        "line": 9.0,
+        "over": -108,
+        "under": -112
+      },
+      "model_home_prob": 0.5889,
+      "model_away_prob": 0.4111,
+      "home_no_vig_prob": 0.5502,
+      "away_no_vig_prob": 0.4498,
+      "home_edge": 0.0387,
+      "away_edge": -0.0387,
+      "home_ev": 0.035,
+      "away_ev": -0.1161,
+      "home_kelly": 0.0116,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Reynaldo L\u00f3pez",
+      "away_pitcher": "Freddy Peralta"
+    },
+    {
+      "id": "e5295ada7ac0d16be6bf67d6a4a2923b",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-06T23:46:00Z",
+      "home_team": "St. Louis Cardinals",
+      "away_team": "Milwaukee Brewers",
+      "home_odds": -102,
+      "away_odds": -110,
+      "spread": {
+        "point": 1.5,
+        "price": -182
+      },
+      "total": {
+        "line": 8.0,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.3403,
+      "model_away_prob": 0.6597,
+      "home_no_vig_prob": 0.4908,
+      "away_no_vig_prob": 0.5092,
+      "home_edge": -0.1505,
+      "away_edge": 0.1505,
+      "home_ev": -0.3261,
+      "away_ev": 0.2594,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0713,
+      "best_bet": {
+        "side": "away",
+        "team": "Milwaukee Brewers",
+        "odds": -110,
+        "edge": 0.1505,
+        "ev": 0.2594,
+        "strength": "strong"
+      },
+      "home_pitcher": "Dustin May",
+      "away_pitcher": "Shane Drohan",
+      "justification": "Milwaukee Brewers are 6-4 in their last 10 (St. Louis Cardinals 5-5); season records 55-33 vs 47-40. Milwaukee Brewers's avg run differential is +0.0 vs St. Louis Cardinals's -0.7 over the last 10 games. Shane Drohan (ERA 3.12) has a meaningful ERA advantage over Dustin May (ERA 4.8)."
+    },
+    {
+      "id": "16ed3adcf661b3a9bea39871a2d204df",
+      "sport": "soccer_fifa_world_cup",
+      "sport_label": "World Cup",
+      "commence_time": "2026-07-06T19:00:00Z",
+      "home_team": "Portugal",
+      "away_team": "Spain",
+      "home_odds": 320,
+      "away_odds": -110,
+      "draw_odds": 250,
+      "spread": null,
+      "total": {
+        "line": 2.5,
+        "over": -125,
+        "under": 100
+      },
+      "model_home_prob": 0.2304,
+      "model_draw_prob": 0.4045,
+      "model_away_prob": 0.3651,
+      "home_no_vig_prob": 0.2273,
+      "draw_no_vig_prob": 0.2727,
+      "away_no_vig_prob": 0.5,
+      "home_edge": 0.0031,
+      "draw_edge": 0.1318,
+      "away_edge": -0.1349,
+      "home_ev": -0.0324,
+      "draw_ev": 0.4159,
+      "away_ev": -0.2334,
+      "home_elo": 2011,
+      "away_elo": 2210,
+      "best_bet": {
+        "side": "draw",
+        "team": "Draw",
+        "odds": 250,
+        "edge": 0.1318,
+        "ev": 0.4159,
+        "strength": "strong"
+      },
+      "justification": "Spain hold a 199-point ELO advantage (2210 vs 2011). Spain have won 7 of their last 10 internationals. Model prices Spain at 59.5% \u2014 a +13.2% edge over the market line."
+    }
+  ]
+}
