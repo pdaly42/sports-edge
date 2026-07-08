@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-08T15:35:14.249290+00:00",
+  "generated_at": "2026-07-08T17:23:15.448426+00:00",
   "date": "2026-07-08",
   "odds_available": true,
   "games": [
@@ -10,7 +10,7 @@
       "commence_time": "2026-07-08T19:46:00Z",
       "home_team": "San Francisco Giants",
       "away_team": "Toronto Blue Jays",
-      "home_odds": 101,
+      "home_odds": 105,
       "away_odds": -118,
       "spread": {
         "point": 1.5,
@@ -23,25 +23,17 @@
       },
       "model_home_prob": 0.3989,
       "model_away_prob": 0.6011,
-      "home_no_vig_prob": 0.4789,
-      "away_no_vig_prob": 0.5211,
-      "home_edge": -0.08,
-      "away_edge": 0.08,
-      "home_ev": -0.1982,
+      "home_no_vig_prob": 0.474,
+      "away_no_vig_prob": 0.526,
+      "home_edge": -0.0751,
+      "away_edge": 0.0751,
+      "home_ev": -0.1823,
       "away_ev": 0.1105,
       "home_kelly": 0.0,
       "away_kelly": 0.0326,
-      "best_bet": {
-        "side": "away",
-        "team": "Toronto Blue Jays",
-        "odds": -118,
-        "edge": 0.08,
-        "ev": 0.1105,
-        "strength": "moderate"
-      },
+      "best_bet": null,
       "home_pitcher": "Logan Webb",
-      "away_pitcher": "Dylan Cease",
-      "justification": "Toronto Blue Jays are 4-6 in their last 10 (San Francisco Giants 5-5); season records 43-49 vs 38-53. Toronto Blue Jays's avg run differential is -2.3 vs San Francisco Giants's +0.1 over the last 10 games. Dylan Cease (ERA 2.79) has a meaningful ERA advantage over Logan Webb (ERA 3.66)."
+      "away_pitcher": "Dylan Cease"
     },
     {
       "id": "fbdf2c9598b2ee82ae2cd6b9934f9b67",
@@ -54,7 +46,7 @@
       "away_odds": 108,
       "spread": {
         "point": -1.5,
-        "price": 155
+        "price": 152
       },
       "total": {
         "line": 10.0,
@@ -114,24 +106,24 @@
       "commence_time": "2026-07-08T22:41:00Z",
       "home_team": "Pittsburgh Pirates",
       "away_team": "Atlanta Braves",
-      "home_odds": -120,
+      "home_odds": -118,
       "away_odds": 102,
       "spread": {
         "point": 1.5,
         "price": -200
       },
       "total": {
-        "line": 9.0,
-        "over": -122,
-        "under": 100
+        "line": 9.5,
+        "over": 100,
+        "under": -122
       },
       "model_home_prob": 0.4243,
       "model_away_prob": 0.5757,
-      "home_no_vig_prob": 0.5242,
-      "away_no_vig_prob": 0.4758,
-      "home_edge": -0.0999,
-      "away_edge": 0.0999,
-      "home_ev": -0.2221,
+      "home_no_vig_prob": 0.5223,
+      "away_no_vig_prob": 0.4777,
+      "home_edge": -0.098,
+      "away_edge": 0.098,
+      "home_ev": -0.2161,
       "away_ev": 0.1629,
       "home_kelly": 0.0,
       "away_kelly": 0.0399,
@@ -139,7 +131,7 @@
         "side": "away",
         "team": "Atlanta Braves",
         "odds": 102,
-        "edge": 0.0999,
+        "edge": 0.098,
         "ev": 0.1629,
         "strength": "moderate"
       },
@@ -186,26 +178,26 @@
       "commence_time": "2026-07-08T22:41:00Z",
       "home_team": "Tampa Bay Rays",
       "away_team": "New York Yankees",
-      "home_odds": -120,
-      "away_odds": 102,
+      "home_odds": -118,
+      "away_odds": 100,
       "spread": {
         "point": 1.5,
-        "price": -225
+        "price": -220
       },
       "total": {
-        "line": 7.0,
-        "over": -122,
-        "under": 100
+        "line": 7.5,
+        "over": 100,
+        "under": -122
       },
       "model_home_prob": 0.568,
       "model_away_prob": 0.432,
-      "home_no_vig_prob": 0.5242,
-      "away_no_vig_prob": 0.4758,
-      "home_edge": 0.0438,
-      "away_edge": -0.0438,
-      "home_ev": 0.0413,
-      "away_ev": -0.1274,
-      "home_kelly": 0.0124,
+      "home_no_vig_prob": 0.5198,
+      "away_no_vig_prob": 0.4802,
+      "home_edge": 0.0482,
+      "away_edge": -0.0482,
+      "home_ev": 0.0494,
+      "away_ev": -0.136,
+      "home_kelly": 0.0146,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Shane McClanahan",
@@ -286,7 +278,7 @@
       "away_odds": 150,
       "spread": {
         "point": -1.5,
-        "price": 125
+        "price": 120
       },
       "total": {
         "line": 9.0,
@@ -318,7 +310,7 @@
       "away_odds": -102,
       "spread": {
         "point": 1.5,
-        "price": -188
+        "price": -184
       },
       "total": {
         "line": 8.0,
@@ -346,11 +338,11 @@
       "commence_time": "2026-07-08T23:41:00Z",
       "home_team": "Minnesota Twins",
       "away_team": "Cleveland Guardians",
-      "home_odds": -130,
-      "away_odds": 110,
+      "home_odds": -120,
+      "away_odds": 102,
       "spread": {
-        "point": -1.5,
-        "price": 155
+        "point": 1.5,
+        "price": -205
       },
       "total": {
         "line": 8.5,
@@ -359,20 +351,20 @@
       },
       "model_home_prob": 0.4358,
       "model_away_prob": 0.5642,
-      "home_no_vig_prob": 0.5427,
-      "away_no_vig_prob": 0.4573,
-      "home_edge": -0.1069,
-      "away_edge": 0.1069,
-      "home_ev": -0.229,
-      "away_ev": 0.1848,
+      "home_no_vig_prob": 0.5242,
+      "away_no_vig_prob": 0.4758,
+      "home_edge": -0.0884,
+      "away_edge": 0.0884,
+      "home_ev": -0.201,
+      "away_ev": 0.1397,
       "home_kelly": 0.0,
-      "away_kelly": 0.042,
+      "away_kelly": 0.0342,
       "best_bet": {
         "side": "away",
         "team": "Cleveland Guardians",
-        "odds": 110,
-        "edge": 0.1069,
-        "ev": 0.1848,
+        "odds": 102,
+        "edge": 0.0884,
+        "ev": 0.1397,
         "strength": "moderate"
       },
       "home_pitcher": "Connor Prielipp",
@@ -386,11 +378,11 @@
       "commence_time": "2026-07-08T23:46:00Z",
       "home_team": "St. Louis Cardinals",
       "away_team": "Milwaukee Brewers",
-      "home_odds": 126,
-      "away_odds": -148,
+      "home_odds": 128,
+      "away_odds": -149,
       "spread": {
         "point": 1.5,
-        "price": -138
+        "price": -134
       },
       "total": {
         "line": 8.0,
@@ -399,12 +391,12 @@
       },
       "model_home_prob": 0.4152,
       "model_away_prob": 0.5848,
-      "home_no_vig_prob": 0.4258,
-      "away_no_vig_prob": 0.5742,
-      "home_edge": -0.0106,
-      "away_edge": 0.0106,
-      "home_ev": -0.0616,
-      "away_ev": -0.0201,
+      "home_no_vig_prob": 0.423,
+      "away_no_vig_prob": 0.577,
+      "home_edge": -0.0078,
+      "away_edge": 0.0078,
+      "home_ev": -0.0533,
+      "away_ev": -0.0227,
       "home_kelly": 0.0,
       "away_kelly": 0.0,
       "best_bet": null,
