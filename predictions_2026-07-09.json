@@ -1,0 +1,383 @@
+{
+  "generated_at": "2026-07-09T17:50:44.112982+00:00",
+  "date": "2026-07-09",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "2b3ca3496277938aa74f87f24a2c064c",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-09T16:36:00Z",
+      "home_team": "Pittsburgh Pirates",
+      "away_team": "Atlanta Braves",
+      "home_odds": 310,
+      "away_odds": -190,
+      "spread": {
+        "point": 2.5,
+        "price": 102
+      },
+      "total": {
+        "line": 12.5,
+        "over": -144,
+        "under": 108
+      },
+      "model_home_prob": 0.4441,
+      "model_away_prob": 0.5559,
+      "home_no_vig_prob": 0.2713,
+      "away_no_vig_prob": 0.7287,
+      "home_edge": 0.1728,
+      "away_edge": -0.1728,
+      "home_ev": 0.8208,
+      "away_ev": -0.1515,
+      "home_kelly": 0.0662,
+      "away_kelly": 0.0,
+      "best_bet": {
+        "side": "home",
+        "team": "Pittsburgh Pirates",
+        "odds": 310,
+        "edge": 0.1728,
+        "ev": 0.8208,
+        "strength": "strong"
+      },
+      "home_pitcher": "Mitch Keller",
+      "away_pitcher": "Bryce Elder",
+      "justification": "Pittsburgh Pirates are 6-4 in their last 10 (Atlanta Braves 4-6); season records 47-46 vs 53-38. Pittsburgh Pirates's avg run differential is +0.9 vs Atlanta Braves's +3.2 over the last 10 games. Model prices Pittsburgh Pirates at 44.4% \u2014 a +17.3% edge over the market line."
+    },
+    {
+      "id": "be3485a7acdabede1a849330fcc226dc",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-09T17:10:21Z",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "New York Yankees",
+      "home_odds": 100,
+      "away_odds": 140,
+      "spread": {
+        "point": 1.5,
+        "price": -219
+      },
+      "total": {
+        "line": 8.5,
+        "over": -116,
+        "under": -112
+      },
+      "model_home_prob": 0.4892,
+      "model_away_prob": 0.5108,
+      "home_no_vig_prob": 0.5455,
+      "away_no_vig_prob": 0.4545,
+      "home_edge": -0.0563,
+      "away_edge": 0.0563,
+      "home_ev": -0.0216,
+      "away_ev": 0.2259,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0403,
+      "best_bet": null,
+      "home_pitcher": "Drew Rasmussen",
+      "away_pitcher": "Paul Blackburn"
+    },
+    {
+      "id": "4690bcfaacd780fc44c057a6a7a4cc46",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-09T17:11:00Z",
+      "home_team": "New York Mets",
+      "away_team": "Kansas City Royals",
+      "home_odds": -160,
+      "away_odds": 138,
+      "spread": {
+        "point": -1.5,
+        "price": 146
+      },
+      "total": {
+        "line": 8.5,
+        "over": -102,
+        "under": -130
+      },
+      "model_home_prob": 0.4615,
+      "model_away_prob": 0.5385,
+      "home_no_vig_prob": 0.5943,
+      "away_no_vig_prob": 0.4057,
+      "home_edge": -0.1328,
+      "away_edge": 0.1328,
+      "home_ev": -0.2501,
+      "away_ev": 0.2816,
+      "home_kelly": 0.0,
+      "away_kelly": 0.051,
+      "best_bet": {
+        "side": "away",
+        "team": "Kansas City Royals",
+        "odds": 138,
+        "edge": 0.1328,
+        "ev": 0.2816,
+        "strength": "strong"
+      },
+      "home_pitcher": "Sean Manaea",
+      "away_pitcher": "Michael Wacha",
+      "justification": "Kansas City Royals are 4-6 in their last 10 (New York Mets 4-6); season records 38-55 vs 39-54. Kansas City Royals's avg run differential is +1.7 vs New York Mets's +0.4 over the last 10 games. Michael Wacha (ERA 3.47) has a meaningful ERA advantage over Sean Manaea (ERA 4.76)."
+    },
+    {
+      "id": "9f1eb41cd2972a08e88069d6c5b4bb6c",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-09T17:36:00Z",
+      "home_team": "Baltimore Orioles",
+      "away_team": "Chicago Cubs",
+      "home_odds": -150,
+      "away_odds": 122,
+      "spread": {
+        "point": -1.5,
+        "price": 140
+      },
+      "total": {
+        "line": 8.5,
+        "over": -138,
+        "under": 104
+      },
+      "model_home_prob": 0.5375,
+      "model_away_prob": 0.4625,
+      "home_no_vig_prob": 0.5712,
+      "away_no_vig_prob": 0.4288,
+      "home_edge": -0.0337,
+      "away_edge": 0.0337,
+      "home_ev": -0.1042,
+      "away_ev": 0.0268,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0055,
+      "best_bet": null,
+      "home_pitcher": "Trevor Rogers",
+      "away_pitcher": "David Peterson"
+    },
+    {
+      "id": "a3b9b93cdd33f60538713d337711afe2",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-09T17:41:00Z",
+      "home_team": "Minnesota Twins",
+      "away_team": "Cleveland Guardians",
+      "home_odds": -115,
+      "away_odds": 100,
+      "spread": {
+        "point": -1.5,
+        "price": 182
+      },
+      "total": {
+        "line": 7.5,
+        "over": -130,
+        "under": -102
+      },
+      "model_home_prob": 0.4458,
+      "model_away_prob": 0.5542,
+      "home_no_vig_prob": 0.5169,
+      "away_no_vig_prob": 0.4831,
+      "home_edge": -0.0711,
+      "away_edge": 0.0711,
+      "home_ev": -0.1665,
+      "away_ev": 0.1084,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0271,
+      "best_bet": null,
+      "home_pitcher": "Bailey Ober",
+      "away_pitcher": "Gavin Williams"
+    },
+    {
+      "id": "2c1eb8ab560fe810d23f21a2acf7cbe6",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-09T18:11:00Z",
+      "home_team": "Chicago White Sox",
+      "away_team": "Boston Red Sox",
+      "home_odds": -112,
+      "away_odds": -104,
+      "spread": {
+        "point": 1.5,
+        "price": -182
+      },
+      "total": {
+        "line": 9.0,
+        "over": -106,
+        "under": -114
+      },
+      "model_home_prob": 0.4967,
+      "model_away_prob": 0.5033,
+      "home_no_vig_prob": 0.5089,
+      "away_no_vig_prob": 0.4911,
+      "home_edge": -0.0122,
+      "away_edge": 0.0122,
+      "home_ev": -0.0598,
+      "away_ev": -0.0128,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Anthony Kay",
+      "away_pitcher": "TBD"
+    },
+    {
+      "id": "673121d56b103f8d38738980fbffafef",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-09T22:41:00Z",
+      "home_team": "Detroit Tigers",
+      "away_team": "Athletics",
+      "home_odds": -125,
+      "away_odds": 110,
+      "spread": {
+        "point": -1.5,
+        "price": 155
+      },
+      "total": {
+        "line": 9.0,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.6766,
+      "model_away_prob": 0.3234,
+      "home_no_vig_prob": 0.5385,
+      "away_no_vig_prob": 0.4615,
+      "home_edge": 0.1381,
+      "away_edge": -0.1381,
+      "home_ev": 0.2179,
+      "away_ev": -0.3209,
+      "home_kelly": 0.0681,
+      "away_kelly": 0.0,
+      "best_bet": {
+        "side": "home",
+        "team": "Detroit Tigers",
+        "odds": -125,
+        "edge": 0.1381,
+        "ev": 0.2179,
+        "strength": "strong"
+      },
+      "home_pitcher": "Framber Valdez",
+      "away_pitcher": "Jack Perkins",
+      "justification": "Detroit Tigers are 7-3 in their last 10 (Athletics 1-9); season records 42-50 vs 41-51. Detroit Tigers's avg run differential is -2.8 vs Athletics's -2.3 over the last 10 games. Framber Valdez (ERA 4.29) has a meaningful ERA advantage over Jack Perkins (ERA 6.75)."
+    },
+    {
+      "id": "83cf12bed561626b784721179f647eb2",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-09T22:41:00Z",
+      "home_team": "Miami Marlins",
+      "away_team": "Seattle Mariners",
+      "home_odds": 112,
+      "away_odds": -125,
+      "spread": {
+        "point": 1.5,
+        "price": -154
+      },
+      "total": {
+        "line": 8.0,
+        "over": -115,
+        "under": -105
+      },
+      "model_home_prob": 0.2758,
+      "model_away_prob": 0.7242,
+      "home_no_vig_prob": 0.4592,
+      "away_no_vig_prob": 0.5408,
+      "home_edge": -0.1834,
+      "away_edge": 0.1834,
+      "home_ev": -0.4153,
+      "away_ev": 0.3036,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0949,
+      "best_bet": null,
+      "home_pitcher": "Janson Junk",
+      "away_pitcher": "Bryce Miller"
+    },
+    {
+      "id": "6bfe03bb9d1e3ada87b6238cd7203d64",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-09T23:11:00Z",
+      "home_team": "Cincinnati Reds",
+      "away_team": "Philadelphia Phillies",
+      "home_odds": 138,
+      "away_odds": -160,
+      "spread": {
+        "point": 1.5,
+        "price": -118
+      },
+      "total": {
+        "line": 9.5,
+        "over": -102,
+        "under": -120
+      },
+      "model_home_prob": 0.3782,
+      "model_away_prob": 0.6218,
+      "home_no_vig_prob": 0.4057,
+      "away_no_vig_prob": 0.5943,
+      "home_edge": -0.0275,
+      "away_edge": 0.0275,
+      "home_ev": -0.0999,
+      "away_ev": 0.0104,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0042,
+      "best_bet": null,
+      "home_pitcher": "Brady Singer",
+      "away_pitcher": "Jes\u00fas Luzardo"
+    },
+    {
+      "id": "cea3285cc6f53d314e7111cbd078141b",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-09T23:46:00Z",
+      "home_team": "St. Louis Cardinals",
+      "away_team": "Milwaukee Brewers",
+      "home_odds": 115,
+      "away_odds": -132,
+      "spread": {
+        "point": 1.5,
+        "price": -152
+      },
+      "total": {
+        "line": 8.5,
+        "over": -108,
+        "under": -112
+      },
+      "model_home_prob": 0.4055,
+      "model_away_prob": 0.5945,
+      "home_no_vig_prob": 0.4498,
+      "away_no_vig_prob": 0.5502,
+      "home_edge": -0.0443,
+      "away_edge": 0.0443,
+      "home_ev": -0.1282,
+      "away_ev": 0.0449,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0148,
+      "best_bet": null,
+      "home_pitcher": "Andre Pallante",
+      "away_pitcher": "Logan Henderson"
+    },
+    {
+      "id": "b6e926d7f026782b9cab2fa02b823d92",
+      "sport": "soccer_fifa_world_cup",
+      "sport_label": "World Cup",
+      "commence_time": "2026-07-09T20:00:00Z",
+      "home_team": "France",
+      "away_team": "Morocco",
+      "home_odds": -175,
+      "away_odds": 475,
+      "draw_odds": 290,
+      "spread": null,
+      "total": {
+        "line": 2.5,
+        "over": -102,
+        "under": -125
+      },
+      "model_home_prob": 0.5744,
+      "model_draw_prob": 0.2553,
+      "model_away_prob": 0.1703,
+      "home_no_vig_prob": 0.5966,
+      "draw_no_vig_prob": 0.2404,
+      "away_no_vig_prob": 0.163,
+      "home_edge": -0.0222,
+      "draw_edge": 0.0149,
+      "away_edge": 0.0073,
+      "home_ev": 0.5795,
+      "draw_ev": -0.0043,
+      "away_ev": -0.0206,
+      "home_elo": 2161,
+      "away_elo": 1941,
+      "best_bet": null
+    }
+  ]
+}
