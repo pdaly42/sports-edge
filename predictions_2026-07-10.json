@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-10T10:55:15.436613+00:00",
+  "generated_at": "2026-07-10T17:43:26.072213+00:00",
   "date": "2026-07-10",
   "odds_available": true,
   "games": [
@@ -10,11 +10,11 @@
       "commence_time": "2026-07-10T22:41:00Z",
       "home_team": "Detroit Tigers",
       "away_team": "Philadelphia Phillies",
-      "home_odds": -120,
-      "away_odds": 105,
+      "home_odds": -115,
+      "away_odds": 102,
       "spread": {
         "point": 1.5,
-        "price": -200
+        "price": -205
       },
       "total": {
         "line": 8.5,
@@ -23,17 +23,18 @@
       },
       "model_home_prob": 0.6008,
       "model_away_prob": 0.3992,
-      "home_no_vig_prob": 0.5279,
-      "away_no_vig_prob": 0.4721,
-      "home_edge": 0.0729,
-      "away_edge": -0.0729,
-      "home_ev": 0.1015,
-      "away_ev": -0.1816,
-      "home_kelly": 0.0304,
+      "home_no_vig_prob": 0.5193,
+      "away_no_vig_prob": 0.4807,
+      "home_edge": 0.0815,
+      "away_edge": -0.0815,
+      "home_ev": 0.1232,
+      "away_ev": -0.1936,
+      "home_kelly": 0.0354,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Jack Flaherty",
-      "away_pitcher": "Aaron Nola"
+      "away_pitcher": "Aaron Nola",
+      "justification": "Detroit Tigers are 8-2 in their last 10 (Philadelphia Phillies 5-5); season records 43-50 vs 52-42. Detroit Tigers's avg run differential is -2.8 vs Philadelphia Phillies's +0.9 over the last 10 games. Jack Flaherty (ERA 4.6) has a meaningful ERA advantage over Aaron Nola (ERA 5.87)."
     },
     {
       "id": "f308816130f3007f771929f15d62862c",
@@ -42,11 +43,11 @@
       "commence_time": "2026-07-10T22:41:00Z",
       "home_team": "Pittsburgh Pirates",
       "away_team": "Milwaukee Brewers",
-      "home_odds": -130,
-      "away_odds": 110,
+      "home_odds": -124,
+      "away_odds": 106,
       "spread": {
-        "point": -1.5,
-        "price": 158
+        "point": 1.5,
+        "price": -205
       },
       "total": {
         "line": 8.0,
@@ -55,13 +56,13 @@
       },
       "model_home_prob": 0.6374,
       "model_away_prob": 0.3626,
-      "home_no_vig_prob": 0.5427,
-      "away_no_vig_prob": 0.4573,
-      "home_edge": 0.0947,
-      "away_edge": -0.0947,
-      "home_ev": 0.1277,
-      "away_ev": -0.2385,
-      "home_kelly": 0.0415,
+      "home_no_vig_prob": 0.5328,
+      "away_no_vig_prob": 0.4672,
+      "home_edge": 0.1046,
+      "away_edge": -0.1046,
+      "home_ev": 0.1514,
+      "away_ev": -0.253,
+      "home_kelly": 0.0469,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Braxton Ashcraft",
@@ -82,9 +83,9 @@
         "price": -120
       },
       "total": {
-        "line": 9.5,
-        "over": -124,
-        "under": 102
+        "line": 10.0,
+        "over": -110,
+        "under": -110
       },
       "model_home_prob": 0.4642,
       "model_away_prob": 0.5358,
@@ -107,26 +108,26 @@
       "commence_time": "2026-07-10T23:06:00Z",
       "home_team": "Baltimore Orioles",
       "away_team": "Kansas City Royals",
-      "home_odds": -152,
+      "home_odds": -150,
       "away_odds": 129,
       "spread": {
         "point": -1.5,
         "price": 134
       },
       "total": {
-        "line": 9.5,
-        "over": -122,
-        "under": 100
+        "line": 10.5,
+        "over": -102,
+        "under": -120
       },
       "model_home_prob": 0.6147,
       "model_away_prob": 0.3853,
-      "home_no_vig_prob": 0.5801,
-      "away_no_vig_prob": 0.4199,
-      "home_edge": 0.0346,
-      "away_edge": -0.0346,
-      "home_ev": 0.0191,
+      "home_no_vig_prob": 0.5788,
+      "away_no_vig_prob": 0.4212,
+      "home_edge": 0.0359,
+      "away_edge": -0.0359,
+      "home_ev": 0.0245,
       "away_ev": -0.1177,
-      "home_kelly": 0.0073,
+      "home_kelly": 0.0092,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Brandon Young",
@@ -171,34 +172,34 @@
       "commence_time": "2026-07-10T23:11:00Z",
       "home_team": "Miami Marlins",
       "away_team": "Cleveland Guardians",
-      "home_odds": -118,
-      "away_odds": 100,
+      "home_odds": -120,
+      "away_odds": 102,
       "spread": {
         "point": 1.5,
-        "price": -205
+        "price": -196
       },
       "total": {
         "line": 7.5,
-        "over": 100,
-        "under": -122
+        "over": 102,
+        "under": -124
       },
       "model_home_prob": 0.4028,
       "model_away_prob": 0.5972,
-      "home_no_vig_prob": 0.5198,
-      "away_no_vig_prob": 0.4802,
-      "home_edge": -0.117,
-      "away_edge": 0.117,
-      "home_ev": -0.2558,
-      "away_ev": 0.1944,
+      "home_no_vig_prob": 0.5242,
+      "away_no_vig_prob": 0.4758,
+      "home_edge": -0.1214,
+      "away_edge": 0.1214,
+      "home_ev": -0.2615,
+      "away_ev": 0.2063,
       "home_kelly": 0.0,
-      "away_kelly": 0.0486,
+      "away_kelly": 0.0506,
       "best_bet": {
         "side": "away",
         "team": "Cleveland Guardians",
-        "odds": 100,
-        "edge": 0.117,
-        "ev": 0.1944,
-        "strength": "moderate"
+        "odds": 102,
+        "edge": 0.1214,
+        "ev": 0.2063,
+        "strength": "strong"
       },
       "home_pitcher": "Sandy Alcantara",
       "away_pitcher": "Parker Messick",
@@ -215,12 +216,12 @@
       "away_odds": 100,
       "spread": {
         "point": 1.5,
-        "price": -192
+        "price": -188
       },
       "total": {
         "line": 8.0,
-        "over": -110,
-        "under": -110
+        "over": -118,
+        "under": -104
       },
       "model_home_prob": 0.6716,
       "model_away_prob": 0.3284,
@@ -251,33 +252,33 @@
       "commence_time": "2026-07-10T23:16:00Z",
       "home_team": "New York Mets",
       "away_team": "Boston Red Sox",
-      "home_odds": -125,
-      "away_odds": 108,
+      "home_odds": -142,
+      "away_odds": 125,
       "spread": {
         "point": -1.5,
-        "price": 176
+        "price": 152
       },
       "total": {
         "line": 7.5,
-        "over": -118,
-        "under": -104
+        "over": -114,
+        "under": -106
       },
       "model_home_prob": 0.3912,
       "model_away_prob": 0.6088,
-      "home_no_vig_prob": 0.5361,
-      "away_no_vig_prob": 0.4639,
-      "home_edge": -0.1449,
-      "away_edge": 0.1449,
-      "home_ev": -0.2958,
-      "away_ev": 0.2663,
+      "home_no_vig_prob": 0.569,
+      "away_no_vig_prob": 0.431,
+      "home_edge": -0.1778,
+      "away_edge": 0.1778,
+      "home_ev": -0.3333,
+      "away_ev": 0.3698,
       "home_kelly": 0.0,
-      "away_kelly": 0.0616,
+      "away_kelly": 0.074,
       "best_bet": {
         "side": "away",
         "team": "Boston Red Sox",
-        "odds": 108,
-        "edge": 0.1449,
-        "ev": 0.2663,
+        "odds": 125,
+        "edge": 0.1778,
+        "ev": 0.3698,
         "strength": "strong"
       },
       "home_pitcher": "Nolan McLean",
@@ -291,26 +292,26 @@
       "commence_time": "2026-07-10T23:41:00Z",
       "home_team": "Chicago White Sox",
       "away_team": "Athletics",
-      "home_odds": -166,
-      "away_odds": 140,
+      "home_odds": -154,
+      "away_odds": 130,
       "spread": {
         "point": -1.5,
-        "price": 118
+        "price": 128
       },
       "total": {
         "line": 9.0,
-        "over": -105,
-        "under": -115
+        "over": -108,
+        "under": -112
       },
       "model_home_prob": 0.7026,
       "model_away_prob": 0.2974,
-      "home_no_vig_prob": 0.5996,
-      "away_no_vig_prob": 0.4004,
-      "home_edge": 0.103,
-      "away_edge": -0.103,
-      "home_ev": 0.1259,
-      "away_ev": -0.2862,
-      "home_kelly": 0.0522,
+      "home_no_vig_prob": 0.5824,
+      "away_no_vig_prob": 0.4176,
+      "home_edge": 0.1202,
+      "away_edge": -0.1202,
+      "home_ev": 0.1588,
+      "away_ev": -0.316,
+      "home_kelly": 0.0612,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Sean Burke",
@@ -323,27 +324,27 @@
       "commence_time": "2026-07-10T19:00:00Z",
       "home_team": "Spain",
       "away_team": "Belgium",
-      "home_odds": -160,
-      "away_odds": 425,
-      "draw_odds": 290,
+      "home_odds": -175,
+      "away_odds": 450,
+      "draw_odds": 300,
       "spread": null,
       "total": {
         "line": 2.5,
-        "over": -130,
-        "under": 100
+        "over": -125,
+        "under": 115
       },
       "model_home_prob": 0.3066,
       "model_draw_prob": 0.3124,
       "model_away_prob": 0.381,
-      "home_no_vig_prob": 0.5793,
-      "draw_no_vig_prob": 0.2414,
-      "away_no_vig_prob": 0.1793,
-      "home_edge": -0.2727,
-      "draw_edge": 0.071,
-      "away_edge": 0.2017,
-      "home_ev": -0.2027,
-      "draw_ev": 0.2182,
-      "away_ev": 1.0002,
+      "home_no_vig_prob": 0.5957,
+      "draw_no_vig_prob": 0.234,
+      "away_no_vig_prob": 0.1702,
+      "home_edge": -0.2891,
+      "draw_edge": 0.0783,
+      "away_edge": 0.2108,
+      "home_ev": -0.1567,
+      "draw_ev": 0.2495,
+      "away_ev": 1.0954,
       "home_elo": 2210,
       "away_elo": 2005,
       "best_bet": null
