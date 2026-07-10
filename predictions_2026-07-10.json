@@ -1,0 +1,352 @@
+{
+  "generated_at": "2026-07-10T10:55:15.436613+00:00",
+  "date": "2026-07-10",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "895dfbfbbb57ff9ecc3cb430a9c69076",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-10T22:41:00Z",
+      "home_team": "Detroit Tigers",
+      "away_team": "Philadelphia Phillies",
+      "home_odds": -120,
+      "away_odds": 105,
+      "spread": {
+        "point": 1.5,
+        "price": -200
+      },
+      "total": {
+        "line": 8.5,
+        "over": -124,
+        "under": 102
+      },
+      "model_home_prob": 0.6008,
+      "model_away_prob": 0.3992,
+      "home_no_vig_prob": 0.5279,
+      "away_no_vig_prob": 0.4721,
+      "home_edge": 0.0729,
+      "away_edge": -0.0729,
+      "home_ev": 0.1015,
+      "away_ev": -0.1816,
+      "home_kelly": 0.0304,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Jack Flaherty",
+      "away_pitcher": "Aaron Nola"
+    },
+    {
+      "id": "f308816130f3007f771929f15d62862c",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-10T22:41:00Z",
+      "home_team": "Pittsburgh Pirates",
+      "away_team": "Milwaukee Brewers",
+      "home_odds": -130,
+      "away_odds": 110,
+      "spread": {
+        "point": -1.5,
+        "price": 158
+      },
+      "total": {
+        "line": 8.0,
+        "over": -115,
+        "under": -105
+      },
+      "model_home_prob": 0.6374,
+      "model_away_prob": 0.3626,
+      "home_no_vig_prob": 0.5427,
+      "away_no_vig_prob": 0.4573,
+      "home_edge": 0.0947,
+      "away_edge": -0.0947,
+      "home_ev": 0.1277,
+      "away_ev": -0.2385,
+      "home_kelly": 0.0415,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Braxton Ashcraft",
+      "away_pitcher": "Brandon Sproat",
+      "justification": "Pittsburgh Pirates are 5-5 in their last 10 (Milwaukee Brewers 7-3); season records 47-47 vs 59-34. Pittsburgh Pirates's avg run differential is +0.9 vs Milwaukee Brewers's +0.0 over the last 10 games. Braxton Ashcraft (ERA 3.24) has a meaningful ERA advantage over Brandon Sproat (ERA 5.13)."
+    },
+    {
+      "id": "250b0373676b10f51ed1c59c93714245",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-10T22:46:00Z",
+      "home_team": "Washington Nationals",
+      "away_team": "New York Yankees",
+      "home_odds": 135,
+      "away_odds": -158,
+      "spread": {
+        "point": 1.5,
+        "price": -120
+      },
+      "total": {
+        "line": 9.5,
+        "over": -124,
+        "under": 102
+      },
+      "model_home_prob": 0.4642,
+      "model_away_prob": 0.5358,
+      "home_no_vig_prob": 0.41,
+      "away_no_vig_prob": 0.59,
+      "home_edge": 0.0542,
+      "away_edge": -0.0542,
+      "home_ev": 0.0909,
+      "away_ev": -0.1251,
+      "home_kelly": 0.0168,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Carson Palmquist",
+      "away_pitcher": "Ryan Weathers"
+    },
+    {
+      "id": "b11bed54d0340b0a1865d2f8d41bb050",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-10T23:06:00Z",
+      "home_team": "Baltimore Orioles",
+      "away_team": "Kansas City Royals",
+      "home_odds": -152,
+      "away_odds": 129,
+      "spread": {
+        "point": -1.5,
+        "price": 134
+      },
+      "total": {
+        "line": 9.5,
+        "over": -122,
+        "under": 100
+      },
+      "model_home_prob": 0.6147,
+      "model_away_prob": 0.3853,
+      "home_no_vig_prob": 0.5801,
+      "away_no_vig_prob": 0.4199,
+      "home_edge": 0.0346,
+      "away_edge": -0.0346,
+      "home_ev": 0.0191,
+      "away_ev": -0.1177,
+      "home_kelly": 0.0073,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Brandon Young",
+      "away_pitcher": "Luinder Avila"
+    },
+    {
+      "id": "55c7996867831d050e3a904c541089d8",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-10T23:11:00Z",
+      "home_team": "Cincinnati Reds",
+      "away_team": "Chicago Cubs",
+      "home_odds": -105,
+      "away_odds": -110,
+      "spread": {
+        "point": 1.5,
+        "price": -170
+      },
+      "total": {
+        "line": 9.5,
+        "over": -104,
+        "under": -118
+      },
+      "model_home_prob": 0.2972,
+      "model_away_prob": 0.7028,
+      "home_no_vig_prob": 0.4944,
+      "away_no_vig_prob": 0.5056,
+      "home_edge": -0.1972,
+      "away_edge": 0.1972,
+      "home_ev": -0.4198,
+      "away_ev": 0.3417,
+      "home_kelly": 0.0,
+      "away_kelly": 0.094,
+      "best_bet": null,
+      "home_pitcher": "Hunter Greene",
+      "away_pitcher": "Shota Imanaga"
+    },
+    {
+      "id": "e1b31472ec00cc3475d077ee22298ef8",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-10T23:11:00Z",
+      "home_team": "Miami Marlins",
+      "away_team": "Cleveland Guardians",
+      "home_odds": -118,
+      "away_odds": 100,
+      "spread": {
+        "point": 1.5,
+        "price": -205
+      },
+      "total": {
+        "line": 7.5,
+        "over": 100,
+        "under": -122
+      },
+      "model_home_prob": 0.4028,
+      "model_away_prob": 0.5972,
+      "home_no_vig_prob": 0.5198,
+      "away_no_vig_prob": 0.4802,
+      "home_edge": -0.117,
+      "away_edge": 0.117,
+      "home_ev": -0.2558,
+      "away_ev": 0.1944,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0486,
+      "best_bet": {
+        "side": "away",
+        "team": "Cleveland Guardians",
+        "odds": 100,
+        "edge": 0.117,
+        "ev": 0.1944,
+        "strength": "moderate"
+      },
+      "home_pitcher": "Sandy Alcantara",
+      "away_pitcher": "Parker Messick",
+      "justification": "Cleveland Guardians are 4-6 in their last 10 (Miami Marlins 8-2); season records 48-46 vs 52-42. Cleveland Guardians's avg run differential is +1.0 vs Miami Marlins's +0.6 over the last 10 games. Parker Messick (ERA 2.8) has a meaningful ERA advantage over Sandy Alcantara (ERA 4.0)."
+    },
+    {
+      "id": "781ce9e5ac0cd1e3339085c1fb7d7b39",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-10T23:11:00Z",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "Seattle Mariners",
+      "home_odds": -116,
+      "away_odds": 100,
+      "spread": {
+        "point": 1.5,
+        "price": -192
+      },
+      "total": {
+        "line": 8.0,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.6716,
+      "model_away_prob": 0.3284,
+      "home_no_vig_prob": 0.5179,
+      "away_no_vig_prob": 0.4821,
+      "home_edge": 0.1537,
+      "away_edge": -0.1537,
+      "home_ev": 0.2506,
+      "away_ev": -0.3432,
+      "home_kelly": 0.0727,
+      "away_kelly": 0.0,
+      "best_bet": {
+        "side": "home",
+        "team": "Tampa Bay Rays",
+        "odds": -116,
+        "edge": 0.1537,
+        "ev": 0.2506,
+        "strength": "strong"
+      },
+      "home_pitcher": "Nick Martinez",
+      "away_pitcher": "Luis Castillo",
+      "justification": "Tampa Bay Rays are 6-4 in their last 10 (Seattle Mariners 5-5); season records 54-37 vs 47-47. Tampa Bay Rays's avg run differential is -0.4 vs Seattle Mariners's +2.8 over the last 10 games. Nick Martinez (ERA 2.61) has a meaningful ERA advantage over Luis Castillo (ERA 4.79)."
+    },
+    {
+      "id": "76ab48541c0690199e815574c469d162",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-10T23:16:00Z",
+      "home_team": "New York Mets",
+      "away_team": "Boston Red Sox",
+      "home_odds": -125,
+      "away_odds": 108,
+      "spread": {
+        "point": -1.5,
+        "price": 176
+      },
+      "total": {
+        "line": 7.5,
+        "over": -118,
+        "under": -104
+      },
+      "model_home_prob": 0.3912,
+      "model_away_prob": 0.6088,
+      "home_no_vig_prob": 0.5361,
+      "away_no_vig_prob": 0.4639,
+      "home_edge": -0.1449,
+      "away_edge": 0.1449,
+      "home_ev": -0.2958,
+      "away_ev": 0.2663,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0616,
+      "best_bet": {
+        "side": "away",
+        "team": "Boston Red Sox",
+        "odds": 108,
+        "edge": 0.1449,
+        "ev": 0.2663,
+        "strength": "strong"
+      },
+      "home_pitcher": "Nolan McLean",
+      "away_pitcher": "Sonny Gray",
+      "justification": "Boston Red Sox are 8-2 in their last 10 (New York Mets 5-5); season records 43-48 vs 40-54. Boston Red Sox's avg run differential is +0.6 vs New York Mets's +0.4 over the last 10 games. Sonny Gray (ERA 2.61) has a meaningful ERA advantage over Nolan McLean (ERA 3.73)."
+    },
+    {
+      "id": "c710eb874e3d11ac6f032fbc186f2e5f",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-10T23:41:00Z",
+      "home_team": "Chicago White Sox",
+      "away_team": "Athletics",
+      "home_odds": -166,
+      "away_odds": 140,
+      "spread": {
+        "point": -1.5,
+        "price": 118
+      },
+      "total": {
+        "line": 9.0,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.7026,
+      "model_away_prob": 0.2974,
+      "home_no_vig_prob": 0.5996,
+      "away_no_vig_prob": 0.4004,
+      "home_edge": 0.103,
+      "away_edge": -0.103,
+      "home_ev": 0.1259,
+      "away_ev": -0.2862,
+      "home_kelly": 0.0522,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Sean Burke",
+      "away_pitcher": "Jacob Lopez"
+    },
+    {
+      "id": "fca257de4583bd4bc592e8b2a8f24ad7",
+      "sport": "soccer_fifa_world_cup",
+      "sport_label": "World Cup",
+      "commence_time": "2026-07-10T19:00:00Z",
+      "home_team": "Spain",
+      "away_team": "Belgium",
+      "home_odds": -160,
+      "away_odds": 425,
+      "draw_odds": 290,
+      "spread": null,
+      "total": {
+        "line": 2.5,
+        "over": -130,
+        "under": 100
+      },
+      "model_home_prob": 0.3066,
+      "model_draw_prob": 0.3124,
+      "model_away_prob": 0.381,
+      "home_no_vig_prob": 0.5793,
+      "draw_no_vig_prob": 0.2414,
+      "away_no_vig_prob": 0.1793,
+      "home_edge": -0.2727,
+      "draw_edge": 0.071,
+      "away_edge": 0.2017,
+      "home_ev": -0.2027,
+      "draw_ev": 0.2182,
+      "away_ev": 1.0002,
+      "home_elo": 2210,
+      "away_elo": 2005,
+      "best_bet": null
+    }
+  ]
+}
