@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-11T13:30:37.344394+00:00",
+  "generated_at": "2026-07-11T16:47:31.709943+00:00",
   "date": "2026-07-11",
   "odds_available": true,
   "games": [
@@ -7,38 +7,31 @@
       "id": "1ff6b7060ccd99869ddc9396d067920c",
       "sport": "baseball_mlb",
       "sport_label": "MLB",
-      "commence_time": "2026-07-11T16:06:00Z",
+      "commence_time": "2026-07-11T16:07:00Z",
       "home_team": "Pittsburgh Pirates",
       "away_team": "Milwaukee Brewers",
-      "home_odds": -108,
-      "away_odds": -105,
+      "home_odds": -120,
+      "away_odds": -102,
       "spread": {
-        "point": 1.5,
-        "price": -176
+        "point": -1.5,
+        "price": 182
       },
       "total": {
-        "line": 8.5,
-        "over": -114,
-        "under": -106
+        "line": 10.5,
+        "over": -132,
+        "under": 100
       },
       "model_home_prob": 0.3663,
       "model_away_prob": 0.6337,
-      "home_no_vig_prob": 0.5034,
-      "away_no_vig_prob": 0.4966,
-      "home_edge": -0.1371,
-      "away_edge": 0.1371,
-      "home_ev": -0.2945,
-      "away_ev": 0.2372,
+      "home_no_vig_prob": 0.5193,
+      "away_no_vig_prob": 0.4807,
+      "home_edge": -0.153,
+      "away_edge": 0.153,
+      "home_ev": -0.3284,
+      "away_ev": 0.255,
       "home_kelly": 0.0,
-      "away_kelly": 0.0623,
-      "best_bet": {
-        "side": "away",
-        "team": "Milwaukee Brewers",
-        "odds": -105,
-        "edge": 0.1371,
-        "ev": 0.2372,
-        "strength": "strong"
-      },
+      "away_kelly": 0.065,
+      "best_bet": null,
       "home_pitcher": "Bubba Chandler",
       "away_pitcher": "Shane Drohan",
       "justification": "Milwaukee Brewers are 7-3 in their last 10 (Pittsburgh Pirates 5-5); season records 59-34 vs 47-47. Milwaukee Brewers's avg run differential is +0.0 vs Pittsburgh Pirates's +0.9 over the last 10 games. Shane Drohan (ERA 2.97) has a meaningful ERA advantage over Bubba Chandler (ERA 4.82)."
@@ -50,26 +43,26 @@
       "commence_time": "2026-07-11T18:11:00Z",
       "home_team": "Chicago White Sox",
       "away_team": "Athletics",
-      "home_odds": -108,
-      "away_odds": -108,
+      "home_odds": -117,
+      "away_odds": 106,
       "spread": {
-        "point": 1.5,
-        "price": -178
+        "point": -1.5,
+        "price": 164
       },
       "total": {
         "line": 8.5,
-        "over": -120,
-        "under": -102
+        "over": -118,
+        "under": -104
       },
       "model_home_prob": 0.6297,
       "model_away_prob": 0.3703,
-      "home_no_vig_prob": 0.5,
-      "away_no_vig_prob": 0.5,
-      "home_edge": 0.1297,
-      "away_edge": -0.1297,
-      "home_ev": 0.2128,
-      "away_ev": -0.2868,
-      "home_kelly": 0.0574,
+      "home_no_vig_prob": 0.5262,
+      "away_no_vig_prob": 0.4738,
+      "home_edge": 0.1035,
+      "away_edge": -0.1035,
+      "home_ev": 0.1679,
+      "away_ev": -0.2372,
+      "home_kelly": 0.0491,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Bryan Hudson",
@@ -83,26 +76,26 @@
       "commence_time": "2026-07-11T18:11:00Z",
       "home_team": "Minnesota Twins",
       "away_team": "Los Angeles Angels",
-      "home_odds": -175,
-      "away_odds": 152,
+      "home_odds": -172,
+      "away_odds": 145,
       "spread": {
         "point": -1.5,
         "price": 116
       },
       "total": {
         "line": 9.0,
-        "over": -105,
-        "under": -115
+        "over": -108,
+        "under": -112
       },
       "model_home_prob": 0.7259,
       "model_away_prob": 0.2741,
-      "home_no_vig_prob": 0.6159,
-      "away_no_vig_prob": 0.3841,
-      "home_edge": 0.11,
-      "away_edge": -0.11,
-      "home_ev": 0.1407,
-      "away_ev": -0.3093,
-      "home_kelly": 0.0616,
+      "home_no_vig_prob": 0.6077,
+      "away_no_vig_prob": 0.3923,
+      "home_edge": 0.1182,
+      "away_edge": -0.1182,
+      "home_ev": 0.1479,
+      "away_ev": -0.3285,
+      "home_kelly": 0.0636,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Joe Ryan",
@@ -115,30 +108,38 @@
       "commence_time": "2026-07-11T20:05:00Z",
       "home_team": "Washington Nationals",
       "away_team": "New York Yankees",
-      "home_odds": 165,
-      "away_odds": -194,
+      "home_odds": 168,
+      "away_odds": -198,
       "spread": {
         "point": 1.5,
-        "price": -102
+        "price": -104
       },
       "total": {
         "line": 9.0,
         "over": -110,
         "under": -110
       },
-      "model_home_prob": 0.4116,
-      "model_away_prob": 0.5884,
-      "home_no_vig_prob": 0.3638,
-      "away_no_vig_prob": 0.6362,
-      "home_edge": 0.0478,
-      "away_edge": -0.0478,
-      "home_ev": 0.0907,
-      "away_ev": -0.1083,
-      "home_kelly": 0.0137,
+      "model_home_prob": 0.6076,
+      "model_away_prob": 0.3924,
+      "home_no_vig_prob": 0.3596,
+      "away_no_vig_prob": 0.6404,
+      "home_edge": 0.248,
+      "away_edge": -0.248,
+      "home_ev": 0.6284,
+      "away_ev": -0.4094,
+      "home_kelly": 0.0935,
       "away_kelly": 0.0,
-      "best_bet": null,
-      "home_pitcher": "Miles Mikolas",
-      "away_pitcher": "Cam Schlittler"
+      "best_bet": {
+        "side": "home",
+        "team": "Washington Nationals",
+        "odds": 168,
+        "edge": 0.248,
+        "ev": 0.6284,
+        "strength": "strong"
+      },
+      "home_pitcher": "PJ Poulin",
+      "away_pitcher": "Cam Schlittler",
+      "justification": "Washington Nationals are 5-5 in their last 10 (New York Yankees 4-6); season records 48-47 vs 52-42. Washington Nationals's avg run differential is -2.2 vs New York Yankees's +3.6 over the last 10 games. Model prices Washington Nationals at 60.8% \u2014 a +24.8% edge over the market line."
     },
     {
       "id": "def5adac76d2258bb7ff1a427e09f8a8",
@@ -147,26 +148,26 @@
       "commence_time": "2026-07-11T20:06:00Z",
       "home_team": "San Francisco Giants",
       "away_team": "Colorado Rockies",
-      "home_odds": -149,
-      "away_odds": 130,
+      "home_odds": -146,
+      "away_odds": 125,
       "spread": {
         "point": -1.5,
-        "price": 138
+        "price": 140
       },
       "total": {
         "line": 8.5,
-        "over": -114,
-        "under": -106
+        "over": -118,
+        "under": -104
       },
       "model_home_prob": 0.7029,
       "model_away_prob": 0.2971,
-      "home_no_vig_prob": 0.5792,
-      "away_no_vig_prob": 0.4208,
-      "home_edge": 0.1237,
-      "away_edge": -0.1237,
-      "home_ev": 0.1746,
-      "away_ev": -0.3167,
-      "home_kelly": 0.0651,
+      "home_no_vig_prob": 0.5718,
+      "away_no_vig_prob": 0.4282,
+      "home_edge": 0.1311,
+      "away_edge": -0.1311,
+      "home_ev": 0.1843,
+      "away_ev": -0.3315,
+      "home_kelly": 0.0673,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Tyler Mahle",
@@ -183,7 +184,7 @@
       "away_odds": -130,
       "spread": {
         "point": 1.5,
-        "price": -152
+        "price": -146
       },
       "total": {
         "line": 9.0,
@@ -219,23 +220,23 @@
         "price": 146
       },
       "total": {
-        "line": 8.5,
-        "over": -104,
-        "under": -118
+        "line": 8.0,
+        "over": 100,
+        "under": -122
       },
-      "model_home_prob": 0.514,
-      "model_away_prob": 0.486,
+      "model_home_prob": 0.2727,
+      "model_away_prob": 0.7273,
       "home_no_vig_prob": 0.5872,
       "away_no_vig_prob": 0.4128,
-      "home_edge": -0.0732,
-      "away_edge": 0.0732,
-      "home_ev": -0.1544,
-      "away_ev": 0.1372,
+      "home_edge": -0.3145,
+      "away_edge": 0.3145,
+      "home_ev": -0.5514,
+      "away_ev": 0.7019,
       "home_kelly": 0.0,
-      "away_kelly": 0.0256,
+      "away_kelly": 0.1309,
       "best_bet": null,
       "home_pitcher": "Freddy Peralta",
-      "away_pitcher": "TBD"
+      "away_pitcher": "Eduardo Rivera"
     },
     {
       "id": "b552ecd25e0e2e615532c65ff294144f",
@@ -248,7 +249,7 @@
       "away_odds": 130,
       "spread": {
         "point": -1.5,
-        "price": 132
+        "price": 134
       },
       "total": {
         "line": 7.5,
@@ -277,25 +278,25 @@
       "commence_time": "2026-07-11T20:11:00Z",
       "home_team": "Tampa Bay Rays",
       "away_team": "Seattle Mariners",
-      "home_odds": -108,
-      "away_odds": -105,
+      "home_odds": -112,
+      "away_odds": -104,
       "spread": {
         "point": 1.5,
-        "price": -184
+        "price": -200
       },
       "total": {
-        "line": 7.5,
-        "over": 100,
-        "under": -122
+        "line": 7.0,
+        "over": -115,
+        "under": -105
       },
       "model_home_prob": 0.4959,
       "model_away_prob": 0.5041,
-      "home_no_vig_prob": 0.5034,
-      "away_no_vig_prob": 0.4966,
-      "home_edge": -0.0075,
-      "away_edge": 0.0075,
-      "home_ev": -0.0449,
-      "away_ev": -0.0158,
+      "home_no_vig_prob": 0.5089,
+      "away_no_vig_prob": 0.4911,
+      "home_edge": -0.013,
+      "away_edge": 0.013,
+      "home_ev": -0.0613,
+      "away_ev": -0.0112,
       "home_kelly": 0.0,
       "away_kelly": 0.0,
       "best_bet": null,
@@ -309,38 +310,38 @@
       "commence_time": "2026-07-11T22:11:00Z",
       "home_team": "Detroit Tigers",
       "away_team": "Philadelphia Phillies",
-      "home_odds": 114,
-      "away_odds": -134,
+      "home_odds": 120,
+      "away_odds": -142,
       "spread": {
         "point": 1.5,
-        "price": -154
+        "price": -142
       },
       "total": {
         "line": 7.5,
-        "over": 100,
-        "under": -122
+        "over": -114,
+        "under": -106
       },
       "model_home_prob": 0.6195,
       "model_away_prob": 0.3805,
-      "home_no_vig_prob": 0.4493,
-      "away_no_vig_prob": 0.5507,
-      "home_edge": 0.1702,
-      "away_edge": -0.1702,
-      "home_ev": 0.3257,
-      "away_ev": -0.3355,
-      "home_kelly": 0.0714,
+      "home_no_vig_prob": 0.4365,
+      "away_no_vig_prob": 0.5635,
+      "home_edge": 0.183,
+      "away_edge": -0.183,
+      "home_ev": 0.3629,
+      "away_ev": -0.3515,
+      "home_kelly": 0.0756,
       "away_kelly": 0.0,
       "best_bet": {
         "side": "home",
         "team": "Detroit Tigers",
-        "odds": 114,
-        "edge": 0.1702,
-        "ev": 0.3257,
+        "odds": 120,
+        "edge": 0.183,
+        "ev": 0.3629,
         "strength": "strong"
       },
       "home_pitcher": "Casey Mize",
       "away_pitcher": "Cristopher S\u00e1nchez",
-      "justification": "Detroit Tigers are 9-1 in their last 10 (Philadelphia Phillies 5-5); season records 44-50 vs 52-43. Detroit Tigers's avg run differential is -2.8 vs Philadelphia Phillies's +0.9 over the last 10 games. Model prices Detroit Tigers at 61.9% \u2014 a +17.0% edge over the market line."
+      "justification": "Detroit Tigers are 9-1 in their last 10 (Philadelphia Phillies 5-5); season records 44-50 vs 52-43. Detroit Tigers's avg run differential is -2.8 vs Philadelphia Phillies's +0.9 over the last 10 games. Model prices Detroit Tigers at 61.9% \u2014 a +18.3% edge over the market line."
     },
     {
       "id": "09d58ac97a07ac9cc6bc658cf72f08a3",
@@ -350,10 +351,10 @@
       "home_team": "Baltimore Orioles",
       "away_team": "Kansas City Royals",
       "home_odds": -155,
-      "away_odds": 135,
+      "away_odds": 134,
       "spread": {
         "point": -1.5,
-        "price": 132
+        "price": 130
       },
       "total": {
         "line": 9.0,
@@ -362,14 +363,14 @@
       },
       "model_home_prob": 0.5699,
       "model_away_prob": 0.4301,
-      "home_no_vig_prob": 0.5882,
-      "away_no_vig_prob": 0.4118,
-      "home_edge": -0.0183,
-      "away_edge": 0.0183,
+      "home_no_vig_prob": 0.5872,
+      "away_no_vig_prob": 0.4128,
+      "home_edge": -0.0173,
+      "away_edge": 0.0173,
       "home_ev": -0.0624,
-      "away_ev": 0.0107,
+      "away_ev": 0.0064,
       "home_kelly": 0.0,
-      "away_kelly": 0.002,
+      "away_kelly": 0.0012,
       "best_bet": null,
       "home_pitcher": "Kyle Bradish",
       "away_pitcher": "Noah Cameron"
@@ -389,8 +390,8 @@
       },
       "total": {
         "line": 8.5,
-        "over": -106,
-        "under": -114
+        "over": -108,
+        "under": -112
       },
       "model_home_prob": 0.5489,
       "model_away_prob": 0.4511,
@@ -413,27 +414,27 @@
       "commence_time": "2026-07-11T23:11:00Z",
       "home_team": "Cincinnati Reds",
       "away_team": "Chicago Cubs",
-      "home_odds": 100,
-      "away_odds": -115,
+      "home_odds": -112,
+      "away_odds": -104,
       "spread": {
         "point": 1.5,
-        "price": -154
+        "price": -176
       },
       "total": {
         "line": 10.0,
-        "over": -112,
-        "under": -108
+        "over": -105,
+        "under": -115
       },
       "model_home_prob": 0.4845,
       "model_away_prob": 0.5155,
-      "home_no_vig_prob": 0.4831,
-      "away_no_vig_prob": 0.5169,
-      "home_edge": 0.0014,
-      "away_edge": -0.0014,
-      "home_ev": -0.031,
-      "away_ev": -0.0362,
+      "home_no_vig_prob": 0.5089,
+      "away_no_vig_prob": 0.4911,
+      "home_edge": -0.0244,
+      "away_edge": 0.0244,
+      "home_ev": -0.0829,
+      "away_ev": 0.0112,
       "home_kelly": 0.0,
-      "away_kelly": 0.0,
+      "away_kelly": 0.0029,
       "best_bet": null,
       "home_pitcher": "Nick Lodolo",
       "away_pitcher": "Javier Assad"
@@ -445,11 +446,11 @@
       "commence_time": "2026-07-11T23:15:00Z",
       "home_team": "St. Louis Cardinals",
       "away_team": "Atlanta Braves",
-      "home_odds": 101,
-      "away_odds": -116,
+      "home_odds": -110,
+      "away_odds": -104,
       "spread": {
         "point": 1.5,
-        "price": -172
+        "price": -194
       },
       "total": {
         "line": 8.5,
@@ -458,17 +459,18 @@
       },
       "model_home_prob": 0.407,
       "model_away_prob": 0.593,
-      "home_no_vig_prob": 0.4809,
-      "away_no_vig_prob": 0.5191,
-      "home_edge": -0.0739,
-      "away_edge": 0.0739,
-      "home_ev": -0.1819,
-      "away_ev": 0.1042,
+      "home_no_vig_prob": 0.5068,
+      "away_no_vig_prob": 0.4932,
+      "home_edge": -0.0998,
+      "away_edge": 0.0998,
+      "home_ev": -0.223,
+      "away_ev": 0.1632,
       "home_kelly": 0.0,
-      "away_kelly": 0.0302,
+      "away_kelly": 0.0424,
       "best_bet": null,
       "home_pitcher": "Matthew Liberatore",
-      "away_pitcher": "Reynaldo L\u00f3pez"
+      "away_pitcher": "Reynaldo L\u00f3pez",
+      "justification": "Atlanta Braves are 5-5 in their last 10 (St. Louis Cardinals 5-5); season records 54-39 vs 49-44. Atlanta Braves's avg run differential is +3.2 vs St. Louis Cardinals's -0.7 over the last 10 games. Reynaldo L\u00f3pez (ERA 3.18) has a meaningful ERA advantage over Matthew Liberatore (ERA 5.34)."
     },
     {
       "id": "e66e4478b739fa0657a7a11235e1fcee",
