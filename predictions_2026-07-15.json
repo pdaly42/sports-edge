@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-07-15T17:09:31.366966+00:00",
+  "date": "2026-07-15",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "ced22494ae0bbb8cc4f7108bf6f493df",
+      "sport": "soccer_fifa_world_cup",
+      "sport_label": "World Cup",
+      "commence_time": "2026-07-15T19:00:00Z",
+      "home_team": "England",
+      "away_team": "Argentina",
+      "home_odds": 165,
+      "away_odds": 205,
+      "draw_odds": 185,
+      "spread": null,
+      "total": {
+        "line": 2.5,
+        "over": 150,
+        "under": -165
+      },
+      "model_home_prob": 0.4781,
+      "model_draw_prob": 0.3052,
+      "model_away_prob": 0.2167,
+      "home_no_vig_prob": 0.3573,
+      "draw_no_vig_prob": 0.3322,
+      "away_no_vig_prob": 0.3105,
+      "home_edge": 0.1208,
+      "draw_edge": -0.027,
+      "away_edge": -0.0938,
+      "home_ev": 0.267,
+      "draw_ev": -0.1301,
+      "away_ev": -0.3392,
+      "home_elo": 2056,
+      "away_elo": 2114,
+      "best_bet": {
+        "side": "home",
+        "team": "England",
+        "odds": 165,
+        "edge": 0.1208,
+        "ev": 0.267,
+        "strength": "strong"
+      },
+      "justification": "England have won 5 of their last 10 internationals. Model prices England at 47.8% \u2014 a +12.1% edge over the market line."
+    }
+  ]
+}
