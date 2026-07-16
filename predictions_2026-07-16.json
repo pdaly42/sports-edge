@@ -1,0 +1,47 @@
+{
+  "generated_at": "2026-07-16T17:08:01.901853+00:00",
+  "date": "2026-07-16",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "7ad2e88701ead09625333188a5b653b2",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-16T23:11:00Z",
+      "home_team": "Philadelphia Phillies",
+      "away_team": "New York Mets",
+      "home_odds": -130,
+      "away_odds": 110,
+      "spread": {
+        "point": -1.5,
+        "price": 150
+      },
+      "total": {
+        "line": 9.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.4485,
+      "model_away_prob": 0.5515,
+      "home_no_vig_prob": 0.5427,
+      "away_no_vig_prob": 0.4573,
+      "home_edge": -0.0942,
+      "away_edge": 0.0942,
+      "home_ev": -0.2065,
+      "away_ev": 0.1582,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0359,
+      "best_bet": {
+        "side": "away",
+        "team": "New York Mets",
+        "odds": 110,
+        "edge": 0.0942,
+        "ev": 0.1582,
+        "strength": "moderate"
+      },
+      "home_pitcher": "Aaron Nola",
+      "away_pitcher": "Christian Scott",
+      "justification": "New York Mets are 4-6 in their last 10 (Philadelphia Phillies 5-5); season records 40-57 vs 54-43. New York Mets's avg run differential is +0.4 vs Philadelphia Phillies's +0.9 over the last 10 games. Christian Scott (ERA 3.17) has a meaningful ERA advantage over Aaron Nola (ERA 5.75)."
+    }
+  ]
+}
