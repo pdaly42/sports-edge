@@ -1,0 +1,287 @@
+{
+  "generated_at": "2026-07-21T17:09:27.383732+00:00",
+  "date": "2026-07-21",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "0423e391e6f8cfd58c7f2f1c72d0aec7",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-21T22:41:00Z",
+      "home_team": "Cleveland Guardians",
+      "away_team": "Minnesota Twins",
+      "home_odds": -148,
+      "away_odds": 126,
+      "spread": {
+        "point": -1.5,
+        "price": 134
+      },
+      "total": {
+        "line": 8.0,
+        "over": -118,
+        "under": -104
+      },
+      "model_home_prob": 0.6274,
+      "model_away_prob": 0.3726,
+      "home_no_vig_prob": 0.5742,
+      "away_no_vig_prob": 0.4258,
+      "home_edge": 0.0532,
+      "away_edge": -0.0532,
+      "home_ev": 0.0513,
+      "away_ev": -0.1579,
+      "home_kelly": 0.019,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Parker Messick",
+      "away_pitcher": "Kendry Rojas"
+    },
+    {
+      "id": "41aa20c582aac0979e875a6e5a86b79b",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-21T22:41:00Z",
+      "home_team": "Philadelphia Phillies",
+      "away_team": "Los Angeles Dodgers",
+      "home_odds": -120,
+      "away_odds": 108,
+      "spread": {
+        "point": -1.5,
+        "price": 162
+      },
+      "total": {
+        "line": 9.0,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.5835,
+      "model_away_prob": 0.4165,
+      "home_no_vig_prob": 0.5315,
+      "away_no_vig_prob": 0.4685,
+      "home_edge": 0.052,
+      "away_edge": -0.052,
+      "home_ev": 0.0698,
+      "away_ev": -0.1337,
+      "home_kelly": 0.0209,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Zack Wheeler",
+      "away_pitcher": "Justin Wrobleski"
+    },
+    {
+      "id": "4b39d95fa5e27f227c44ec3a8f68aaf4",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-21T23:06:00Z",
+      "home_team": "New York Yankees",
+      "away_team": "Pittsburgh Pirates",
+      "home_odds": -135,
+      "away_odds": 118,
+      "spread": {
+        "point": -1.5,
+        "price": 146
+      },
+      "total": {
+        "line": 9.5,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.6671,
+      "model_away_prob": 0.3329,
+      "home_no_vig_prob": 0.556,
+      "away_no_vig_prob": 0.444,
+      "home_edge": 0.1111,
+      "away_edge": -0.1111,
+      "home_ev": 0.1612,
+      "away_ev": -0.2743,
+      "home_kelly": 0.0544,
+      "away_kelly": 0.0,
+      "best_bet": {
+        "side": "home",
+        "team": "New York Yankees",
+        "odds": -135,
+        "edge": 0.1111,
+        "ev": 0.1612,
+        "strength": "moderate"
+      },
+      "home_pitcher": "Will Warren",
+      "away_pitcher": "Bubba Chandler",
+      "justification": "New York Yankees are 6-4 in their last 10 (Pittsburgh Pirates 6-4); season records 56-44 vs 52-49. New York Yankees's avg run differential is +3.6 vs Pittsburgh Pirates's +0.9 over the last 10 games. Will Warren (ERA 4.03) has a meaningful ERA advantage over Bubba Chandler (ERA 4.77)."
+    },
+    {
+      "id": "267dae014ac02839048da8da0bf226c3",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-21T23:08:00Z",
+      "home_team": "Toronto Blue Jays",
+      "away_team": "Tampa Bay Rays",
+      "home_odds": -106,
+      "away_odds": -110,
+      "spread": {
+        "point": 1.5,
+        "price": -178
+      },
+      "total": {
+        "line": 7.5,
+        "over": -114,
+        "under": -106
+      },
+      "model_home_prob": 0.5285,
+      "model_away_prob": 0.4715,
+      "home_no_vig_prob": 0.4955,
+      "away_no_vig_prob": 0.5045,
+      "home_edge": 0.033,
+      "away_edge": -0.033,
+      "home_ev": 0.0271,
+      "away_ev": -0.0999,
+      "home_kelly": 0.0072,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Kevin Gausman",
+      "away_pitcher": "Drew Rasmussen"
+    },
+    {
+      "id": "ded163387935cca0e01c3281ff323291",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-21T23:11:00Z",
+      "home_team": "Boston Red Sox",
+      "away_team": "Baltimore Orioles",
+      "home_odds": -108,
+      "away_odds": 100,
+      "spread": {
+        "point": 1.5,
+        "price": -194
+      },
+      "total": {
+        "line": 8.5,
+        "over": -120,
+        "under": -102
+      },
+      "model_home_prob": 0.6859,
+      "model_away_prob": 0.3141,
+      "home_no_vig_prob": 0.5094,
+      "away_no_vig_prob": 0.4906,
+      "home_edge": 0.1765,
+      "away_edge": -0.1765,
+      "home_ev": 0.321,
+      "away_ev": -0.3718,
+      "home_kelly": 0.0867,
+      "away_kelly": 0.0,
+      "best_bet": {
+        "side": "home",
+        "team": "Boston Red Sox",
+        "odds": -108,
+        "edge": 0.1765,
+        "ev": 0.321,
+        "strength": "strong"
+      },
+      "home_pitcher": "Eduardo Rivera",
+      "away_pitcher": "Kyle Bradish",
+      "justification": "Boston Red Sox are 10-0 in their last 10 (Baltimore Orioles 7-3); season records 51-48 vs 49-52. Boston Red Sox's avg run differential is +0.6 vs Baltimore Orioles's -1.4 over the last 10 games. Eduardo Rivera (ERA 2.89) has a meaningful ERA advantage over Kyle Bradish (ERA 3.61)."
+    },
+    {
+      "id": "ebe684b6aa76271158a53ba859a81432",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-21T23:16:00Z",
+      "home_team": "Atlanta Braves",
+      "away_team": "San Diego Padres",
+      "home_odds": -142,
+      "away_odds": 122,
+      "spread": {
+        "point": -1.5,
+        "price": 138
+      },
+      "total": {
+        "line": 9.0,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.5723,
+      "model_away_prob": 0.4277,
+      "home_no_vig_prob": 0.5657,
+      "away_no_vig_prob": 0.4343,
+      "home_edge": 0.0066,
+      "away_edge": -0.0066,
+      "home_ev": -0.0247,
+      "away_ev": -0.0505,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Reynaldo L\u00f3pez",
+      "away_pitcher": "Walker Buehler"
+    },
+    {
+      "id": "a33e389530d74f9495e5d0108d6b038b",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-21T23:41:00Z",
+      "home_team": "Kansas City Royals",
+      "away_team": "San Francisco Giants",
+      "home_odds": -104,
+      "away_odds": -112,
+      "spread": {
+        "point": 1.5,
+        "price": -176
+      },
+      "total": {
+        "line": 9.5,
+        "over": -102,
+        "under": -120
+      },
+      "model_home_prob": 0.4975,
+      "model_away_prob": 0.5025,
+      "home_no_vig_prob": 0.4911,
+      "away_no_vig_prob": 0.5089,
+      "home_edge": 0.0064,
+      "away_edge": -0.0064,
+      "home_ev": -0.0241,
+      "away_ev": -0.0488,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Luinder Avila",
+      "away_pitcher": "Tyler Mahle"
+    },
+    {
+      "id": "aac7942aa7683280dcbfe7dcfc16d44e",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-21T23:41:00Z",
+      "home_team": "Milwaukee Brewers",
+      "away_team": "New York Mets",
+      "home_odds": -134,
+      "away_odds": 114,
+      "spread": {
+        "point": -1.5,
+        "price": 150
+      },
+      "total": {
+        "line": 8.5,
+        "over": -122,
+        "under": 100
+      },
+      "model_home_prob": 0.4026,
+      "model_away_prob": 0.5974,
+      "home_no_vig_prob": 0.5507,
+      "away_no_vig_prob": 0.4493,
+      "home_edge": -0.1481,
+      "away_edge": 0.1481,
+      "home_ev": -0.297,
+      "away_ev": 0.2784,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0611,
+      "best_bet": {
+        "side": "away",
+        "team": "New York Mets",
+        "odds": 114,
+        "edge": 0.1481,
+        "ev": 0.2784,
+        "strength": "strong"
+      },
+      "home_pitcher": "Brandon Sproat",
+      "away_pitcher": "Zac Thornton",
+      "justification": "New York Mets are 4-6 in their last 10 (Milwaukee Brewers 6-4); season records 42-59 vs 63-37. New York Mets's avg run differential is +0.4 vs Milwaukee Brewers's +0.0 over the last 10 games. Zac Thornton (ERA 2.6) has a meaningful ERA advantage over Brandon Sproat (ERA 5.16)."
+    }
+  ]
+}
