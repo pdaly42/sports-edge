@@ -1,0 +1,183 @@
+{
+  "generated_at": "2026-07-23T17:12:43.356990+00:00",
+  "date": "2026-07-23",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "22fc220be6958e93fba4354054d8fd16",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-23T16:16:00Z",
+      "home_team": "Atlanta Braves",
+      "away_team": "San Diego Padres",
+      "home_odds": 154,
+      "away_odds": -170,
+      "spread": {
+        "point": 1.5,
+        "price": -132
+      },
+      "total": {
+        "line": 8.5,
+        "over": -144,
+        "under": 108
+      },
+      "model_home_prob": 0.6129,
+      "model_away_prob": 0.3871,
+      "home_no_vig_prob": 0.3847,
+      "away_no_vig_prob": 0.6153,
+      "home_edge": 0.2282,
+      "away_edge": -0.2282,
+      "home_ev": 0.5568,
+      "away_ev": -0.3852,
+      "home_kelly": 0.0904,
+      "away_kelly": 0.0,
+      "best_bet": {
+        "side": "home",
+        "team": "Atlanta Braves",
+        "odds": 154,
+        "edge": 0.2282,
+        "ev": 0.5568,
+        "strength": "strong"
+      },
+      "home_pitcher": "Chris Sale",
+      "away_pitcher": "Kyle Hart",
+      "justification": "Atlanta Braves are 6-4 in their last 10 (San Diego Padres 4-6); season records 59-42 vs 50-52. Atlanta Braves's avg run differential is +3.2 vs San Diego Padres's +0.6 over the last 10 games. Chris Sale (ERA 2.24) has a meaningful ERA advantage over Kyle Hart (ERA 5.5)."
+    },
+    {
+      "id": "5c7e77b42c0db49ce882d3c9473d74c1",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-23T17:11:00Z",
+      "home_team": "Cleveland Guardians",
+      "away_team": "Minnesota Twins",
+      "home_odds": -155,
+      "away_odds": 125,
+      "spread": {
+        "point": -1.5,
+        "price": 148
+      },
+      "total": {
+        "line": 7.5,
+        "over": -102,
+        "under": -130
+      },
+      "model_home_prob": 0.6284,
+      "model_away_prob": 0.3716,
+      "home_no_vig_prob": 0.5776,
+      "away_no_vig_prob": 0.4224,
+      "home_edge": 0.0508,
+      "away_edge": -0.0508,
+      "home_ev": 0.0338,
+      "away_ev": -0.1639,
+      "home_kelly": 0.0131,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Gavin Williams",
+      "away_pitcher": "Taj Bradley"
+    },
+    {
+      "id": "36ba7a8a8c46e8cc308c1dd037995889",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-23T19:08:00Z",
+      "home_team": "Toronto Blue Jays",
+      "away_team": "Tampa Bay Rays",
+      "home_odds": -102,
+      "away_odds": -110,
+      "spread": {
+        "point": 1.5,
+        "price": -178
+      },
+      "total": {
+        "line": 8.5,
+        "over": -112,
+        "under": -108
+      },
+      "model_home_prob": 0.4925,
+      "model_away_prob": 0.5075,
+      "home_no_vig_prob": 0.4908,
+      "away_no_vig_prob": 0.5092,
+      "home_edge": 0.0017,
+      "away_edge": -0.0017,
+      "home_ev": -0.0247,
+      "away_ev": -0.0311,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Shane Bieber",
+      "away_pitcher": "Casey Legumina"
+    },
+    {
+      "id": "8e2411581a27c6dccd9eae0b233fe64c",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-23T21:16:00Z",
+      "home_team": "St. Louis Cardinals",
+      "away_team": "Arizona Diamondbacks",
+      "home_odds": -120,
+      "away_odds": 106,
+      "spread": {
+        "point": -1.5,
+        "price": 168
+      },
+      "total": {
+        "line": 7.5,
+        "over": -104,
+        "under": -118
+      },
+      "model_home_prob": 0.649,
+      "model_away_prob": 0.351,
+      "home_no_vig_prob": 0.5291,
+      "away_no_vig_prob": 0.4709,
+      "home_edge": 0.1199,
+      "away_edge": -0.1199,
+      "home_ev": 0.1898,
+      "away_ev": -0.2769,
+      "home_kelly": 0.057,
+      "away_kelly": 0.0,
+      "best_bet": {
+        "side": "home",
+        "team": "St. Louis Cardinals",
+        "odds": -120,
+        "edge": 0.1199,
+        "ev": 0.1898,
+        "strength": "moderate"
+      },
+      "home_pitcher": "Michael McGreevy",
+      "away_pitcher": "Brandon Pfaadt",
+      "justification": "St. Louis Cardinals's avg run differential is -0.7 vs Arizona Diamondbacks's -0.5 over the last 10 games. Michael McGreevy (ERA 2.92) has a meaningful ERA advantage over Brandon Pfaadt (ERA 4.58). Model prices St. Louis Cardinals at 64.9% \u2014 a +12.0% edge over the market line."
+    },
+    {
+      "id": "38d3052ec454022a14314b324e0ff5f3",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-23T22:41:00Z",
+      "home_team": "Detroit Tigers",
+      "away_team": "Kansas City Royals",
+      "home_odds": -224,
+      "away_odds": 188,
+      "spread": {
+        "point": -1.5,
+        "price": -102
+      },
+      "total": {
+        "line": 8.5,
+        "over": -108,
+        "under": -112
+      },
+      "model_home_prob": 0.654,
+      "model_away_prob": 0.346,
+      "home_no_vig_prob": 0.6657,
+      "away_no_vig_prob": 0.3343,
+      "home_edge": -0.0117,
+      "away_edge": 0.0117,
+      "home_ev": -0.054,
+      "away_ev": -0.0035,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Troy Melton",
+      "away_pitcher": "Randy Dobnak"
+    }
+  ]
+}
