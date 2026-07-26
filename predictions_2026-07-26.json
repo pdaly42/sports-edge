@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-07-26T13:54:33.183819+00:00",
+  "generated_at": "2026-07-26T16:52:12.394231+00:00",
   "date": "2026-07-26",
   "odds_available": true,
   "games": [
@@ -10,27 +10,27 @@
       "commence_time": "2026-07-26T16:16:00Z",
       "home_team": "Tampa Bay Rays",
       "away_team": "Cleveland Guardians",
-      "home_odds": -126,
-      "away_odds": 108,
+      "home_odds": -124,
+      "away_odds": 118,
       "spread": {
         "point": -1.5,
-        "price": 176
+        "price": 198
       },
       "total": {
-        "line": 7.0,
-        "over": -108,
-        "under": -112
+        "line": 4.5,
+        "over": -106,
+        "under": -125
       },
-      "model_home_prob": 0.4849,
-      "model_away_prob": 0.5151,
-      "home_no_vig_prob": 0.537,
-      "away_no_vig_prob": 0.463,
-      "home_edge": -0.0521,
-      "away_edge": 0.0521,
-      "home_ev": -0.1303,
-      "away_ev": 0.0714,
+      "model_home_prob": 0.4842,
+      "model_away_prob": 0.5158,
+      "home_no_vig_prob": 0.5469,
+      "away_no_vig_prob": 0.4531,
+      "home_edge": -0.0627,
+      "away_edge": 0.0627,
+      "home_ev": -0.1253,
+      "away_ev": 0.1244,
       "home_kelly": 0.0,
-      "away_kelly": 0.0165,
+      "away_kelly": 0.0264,
       "best_bet": null,
       "home_pitcher": "Drew Rasmussen",
       "away_pitcher": "Parker Messick"
@@ -43,37 +43,37 @@
       "home_team": "Washington Nationals",
       "away_team": "Arizona Diamondbacks",
       "home_odds": 100,
-      "away_odds": -117,
+      "away_odds": -115,
       "spread": {
         "point": 1.5,
         "price": -156
       },
       "total": {
         "line": 10.0,
-        "over": -118,
-        "under": -104
+        "over": -114,
+        "under": -106
       },
       "model_home_prob": 0.3202,
       "model_away_prob": 0.6798,
-      "home_no_vig_prob": 0.4812,
-      "away_no_vig_prob": 0.5188,
-      "home_edge": -0.161,
-      "away_edge": 0.161,
+      "home_no_vig_prob": 0.4831,
+      "away_no_vig_prob": 0.5169,
+      "home_edge": -0.1629,
+      "away_edge": 0.1629,
       "home_ev": -0.3596,
-      "away_ev": 0.2608,
+      "away_ev": 0.2709,
       "home_kelly": 0.0,
-      "away_kelly": 0.0763,
+      "away_kelly": 0.0779,
       "best_bet": {
         "side": "away",
         "team": "Arizona Diamondbacks",
-        "odds": -117,
-        "edge": 0.161,
-        "ev": 0.2608,
+        "odds": -115,
+        "edge": 0.1629,
+        "ev": 0.2709,
         "strength": "strong"
       },
       "home_pitcher": "Miles Mikolas",
       "away_pitcher": "Kohl Drake",
-      "justification": "Arizona Diamondbacks's avg run differential is -0.5 vs Washington Nationals's -2.2 over the last 10 games. Kohl Drake (ERA 1.8) has a meaningful ERA advantage over Miles Mikolas (ERA 5.6). Model prices Arizona Diamondbacks at 68.0% \u2014 a +16.1% edge over the market line."
+      "justification": "Arizona Diamondbacks's avg run differential is -0.5 vs Washington Nationals's -2.2 over the last 10 games. Kohl Drake (ERA 1.8) has a meaningful ERA advantage over Miles Mikolas (ERA 5.6). Model prices Arizona Diamondbacks at 68.0% \u2014 a +16.3% edge over the market line."
     },
     {
       "id": "ce049001315d997fa2641116b7a1ede0",
@@ -82,11 +82,11 @@
       "commence_time": "2026-07-26T17:36:00Z",
       "home_team": "Baltimore Orioles",
       "away_team": "Atlanta Braves",
-      "home_odds": -108,
-      "away_odds": -108,
+      "home_odds": -106,
+      "away_odds": -110,
       "spread": {
         "point": 1.5,
-        "price": -182
+        "price": -166
       },
       "total": {
         "line": 8.5,
@@ -95,13 +95,13 @@
       },
       "model_home_prob": 0.5646,
       "model_away_prob": 0.4354,
-      "home_no_vig_prob": 0.5,
-      "away_no_vig_prob": 0.5,
-      "home_edge": 0.0646,
-      "away_edge": -0.0646,
-      "home_ev": 0.0874,
-      "away_ev": -0.1615,
-      "home_kelly": 0.0236,
+      "home_no_vig_prob": 0.4955,
+      "away_no_vig_prob": 0.5045,
+      "home_edge": 0.0691,
+      "away_edge": -0.0691,
+      "home_ev": 0.0972,
+      "away_ev": -0.1688,
+      "home_kelly": 0.0258,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Shane Baz",
@@ -114,38 +114,30 @@
       "commence_time": "2026-07-26T17:36:00Z",
       "home_team": "Boston Red Sox",
       "away_team": "Toronto Blue Jays",
-      "home_odds": -136,
-      "away_odds": 116,
+      "home_odds": -142,
+      "away_odds": 122,
       "spread": {
         "point": -1.5,
-        "price": 152
+        "price": 150
       },
       "total": {
         "line": 7.5,
-        "over": -120,
-        "under": -102
+        "over": -112,
+        "under": -108
       },
       "model_home_prob": 0.6372,
       "model_away_prob": 0.3628,
-      "home_no_vig_prob": 0.5545,
-      "away_no_vig_prob": 0.4455,
-      "home_edge": 0.0827,
-      "away_edge": -0.0827,
-      "home_ev": 0.1057,
-      "away_ev": -0.2164,
-      "home_kelly": 0.0359,
+      "home_no_vig_prob": 0.5657,
+      "away_no_vig_prob": 0.4343,
+      "home_edge": 0.0715,
+      "away_edge": -0.0715,
+      "home_ev": 0.0859,
+      "away_ev": -0.1946,
+      "home_kelly": 0.0305,
       "away_kelly": 0.0,
-      "best_bet": {
-        "side": "home",
-        "team": "Boston Red Sox",
-        "odds": -136,
-        "edge": 0.0827,
-        "ev": 0.1057,
-        "strength": "moderate"
-      },
+      "best_bet": null,
       "home_pitcher": "Ranger Suarez",
-      "away_pitcher": "Kevin Gausman",
-      "justification": "Boston Red Sox are 8-2 in their last 10 (Toronto Blue Jays 3-7); season records 53-50 vs 48-57. Boston Red Sox's avg run differential is +0.6 vs Toronto Blue Jays's -2.3 over the last 10 games. Ranger Suarez (ERA 3.15) has a meaningful ERA advantage over Kevin Gausman (ERA 4.51)."
+      "away_pitcher": "Kevin Gausman"
     },
     {
       "id": "458f1aad594ae5477de447c6d836a79d",
@@ -154,24 +146,24 @@
       "commence_time": "2026-07-26T17:36:00Z",
       "home_team": "Pittsburgh Pirates",
       "away_team": "Chicago Cubs",
-      "home_odds": -131,
+      "home_odds": -130,
       "away_odds": 112,
       "spread": {
         "point": -1.5,
-        "price": 160
+        "price": 155
       },
       "total": {
-        "line": 8.5,
-        "over": -124,
-        "under": 102
+        "line": 9.0,
+        "over": -104,
+        "under": -118
       },
       "model_home_prob": 0.5524,
       "model_away_prob": 0.4476,
-      "home_no_vig_prob": 0.5459,
-      "away_no_vig_prob": 0.4541,
-      "home_edge": 0.0065,
-      "away_edge": -0.0065,
-      "home_ev": -0.0259,
+      "home_no_vig_prob": 0.5451,
+      "away_no_vig_prob": 0.4549,
+      "home_edge": 0.0073,
+      "away_edge": -0.0073,
+      "home_ev": -0.0227,
       "away_ev": -0.0511,
       "home_kelly": 0.0,
       "away_kelly": 0.0,
@@ -190,12 +182,12 @@
       "away_odds": 160,
       "spread": {
         "point": -1.5,
-        "price": 106
+        "price": 108
       },
       "total": {
-        "line": 9.5,
-        "over": 102,
-        "under": -124
+        "line": 9.0,
+        "over": -106,
+        "under": -114
       },
       "model_home_prob": 0.6318,
       "model_away_prob": 0.3682,
@@ -218,26 +210,26 @@
       "commence_time": "2026-07-26T17:41:00Z",
       "home_team": "New York Mets",
       "away_team": "Los Angeles Dodgers",
-      "home_odds": 142,
-      "away_odds": -156,
+      "home_odds": 126,
+      "away_odds": -148,
       "spread": {
         "point": 1.5,
-        "price": -122
+        "price": -128
       },
       "total": {
-        "line": 9.0,
-        "over": -110,
-        "under": -110
+        "line": 8.5,
+        "over": -122,
+        "under": 100
       },
       "model_home_prob": 0.4423,
       "model_away_prob": 0.5577,
-      "home_no_vig_prob": 0.4041,
-      "away_no_vig_prob": 0.5959,
-      "home_edge": 0.0382,
-      "away_edge": -0.0382,
-      "home_ev": 0.0704,
-      "away_ev": -0.0848,
-      "home_kelly": 0.0124,
+      "home_no_vig_prob": 0.4258,
+      "away_no_vig_prob": 0.5742,
+      "home_edge": 0.0165,
+      "away_edge": -0.0165,
+      "home_ev": -0.0004,
+      "away_ev": -0.0655,
+      "home_kelly": 0.0,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Freddy Peralta",
@@ -250,27 +242,27 @@
       "commence_time": "2026-07-26T17:41:00Z",
       "home_team": "Miami Marlins",
       "away_team": "San Diego Padres",
-      "home_odds": -126,
-      "away_odds": 110,
+      "home_odds": -120,
+      "away_odds": 106,
       "spread": {
-        "point": -1.5,
-        "price": 162
+        "point": 1.5,
+        "price": -205
       },
       "total": {
         "line": 8.5,
-        "over": -122,
-        "under": 100
+        "over": -115,
+        "under": -105
       },
       "model_home_prob": 0.506,
       "model_away_prob": 0.494,
-      "home_no_vig_prob": 0.5393,
-      "away_no_vig_prob": 0.4607,
-      "home_edge": -0.0333,
-      "away_edge": 0.0333,
-      "home_ev": -0.0924,
-      "away_ev": 0.0374,
+      "home_no_vig_prob": 0.5291,
+      "away_no_vig_prob": 0.4709,
+      "home_edge": -0.0231,
+      "away_edge": 0.0231,
+      "home_ev": -0.0723,
+      "away_ev": 0.0176,
       "home_kelly": 0.0,
-      "away_kelly": 0.0085,
+      "away_kelly": 0.0042,
       "best_bet": null,
       "home_pitcher": "Janson Junk",
       "away_pitcher": "Walker Buehler"
@@ -282,24 +274,24 @@
       "commence_time": "2026-07-26T18:11:00Z",
       "home_team": "Minnesota Twins",
       "away_team": "Athletics",
-      "home_odds": -152,
+      "home_odds": -156,
       "away_odds": 135,
       "spread": {
         "point": -1.5,
-        "price": 134
+        "price": 126
       },
       "total": {
         "line": 10.0,
-        "over": -106,
-        "under": -114
+        "over": -105,
+        "under": -115
       },
       "model_home_prob": 0.6014,
       "model_away_prob": 0.3986,
-      "home_no_vig_prob": 0.5863,
-      "away_no_vig_prob": 0.4137,
-      "home_edge": 0.0151,
-      "away_edge": -0.0151,
-      "home_ev": -0.0029,
+      "home_no_vig_prob": 0.5888,
+      "away_no_vig_prob": 0.4112,
+      "home_edge": 0.0126,
+      "away_edge": -0.0126,
+      "home_ev": -0.0131,
       "away_ev": -0.0633,
       "home_kelly": 0.0,
       "away_kelly": 0.0,
@@ -315,31 +307,31 @@
       "home_team": "Chicago White Sox",
       "away_team": "Houston Astros",
       "home_odds": -110,
-      "away_odds": -106,
+      "away_odds": -105,
       "spread": {
         "point": 1.5,
-        "price": -166
+        "price": -184
       },
       "total": {
-        "line": 9.5,
-        "over": 100,
-        "under": -122
+        "line": 9.0,
+        "over": -114,
+        "under": -106
       },
       "model_home_prob": 0.6345,
       "model_away_prob": 0.3655,
-      "home_no_vig_prob": 0.5045,
-      "away_no_vig_prob": 0.4955,
-      "home_edge": 0.13,
-      "away_edge": -0.13,
+      "home_no_vig_prob": 0.5056,
+      "away_no_vig_prob": 0.4944,
+      "home_edge": 0.1289,
+      "away_edge": -0.1289,
       "home_ev": 0.2113,
-      "away_ev": -0.2897,
+      "away_ev": -0.2864,
       "home_kelly": 0.0581,
       "away_kelly": 0.0,
       "best_bet": {
         "side": "home",
         "team": "Chicago White Sox",
         "odds": -110,
-        "edge": 0.13,
+        "edge": 0.1289,
         "ev": 0.2113,
         "strength": "strong"
       },
@@ -354,26 +346,26 @@
       "commence_time": "2026-07-26T18:11:00Z",
       "home_team": "Milwaukee Brewers",
       "away_team": "Colorado Rockies",
-      "home_odds": -335,
-      "away_odds": 275,
+      "home_odds": -350,
+      "away_odds": 290,
       "spread": {
         "point": -1.5,
-        "price": -152
+        "price": -162
       },
       "total": {
-        "line": 7.5,
-        "over": -118,
-        "under": -104
+        "line": 8.0,
+        "over": -106,
+        "under": -114
       },
       "model_home_prob": 0.7956,
       "model_away_prob": 0.2044,
-      "home_no_vig_prob": 0.7428,
-      "away_no_vig_prob": 0.2572,
-      "home_edge": 0.0528,
-      "away_edge": -0.0528,
-      "home_ev": 0.0331,
-      "away_ev": -0.2335,
-      "home_kelly": 0.0277,
+      "home_no_vig_prob": 0.7521,
+      "away_no_vig_prob": 0.2479,
+      "home_edge": 0.0435,
+      "away_edge": -0.0435,
+      "home_ev": 0.0229,
+      "away_ev": -0.2028,
+      "home_kelly": 0.02,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Jacob Misiorowski",
@@ -387,24 +379,24 @@
       "home_team": "St. Louis Cardinals",
       "away_team": "Cincinnati Reds",
       "home_odds": -134,
-      "away_odds": 114,
+      "away_odds": 116,
       "spread": {
         "point": -1.5,
-        "price": 158
+        "price": 160
       },
       "total": {
         "line": 8.5,
-        "over": -118,
-        "under": -104
+        "over": -115,
+        "under": -105
       },
       "model_home_prob": 0.5422,
       "model_away_prob": 0.4578,
-      "home_no_vig_prob": 0.5507,
-      "away_no_vig_prob": 0.4493,
-      "home_edge": -0.0085,
-      "away_edge": 0.0085,
+      "home_no_vig_prob": 0.553,
+      "away_no_vig_prob": 0.447,
+      "home_edge": -0.0108,
+      "away_edge": 0.0108,
       "home_ev": -0.0532,
-      "away_ev": -0.0203,
+      "away_ev": -0.0112,
       "home_kelly": 0.0,
       "away_kelly": 0.0,
       "best_bet": null,
@@ -419,10 +411,10 @@
       "home_team": "Texas Rangers",
       "away_team": "Seattle Mariners",
       "home_odds": -110,
-      "away_odds": -106,
+      "away_odds": -103,
       "spread": {
         "point": 1.5,
-        "price": -205
+        "price": -196
       },
       "total": {
         "line": 7.5,
@@ -431,14 +423,14 @@
       },
       "model_home_prob": 0.475,
       "model_away_prob": 0.525,
-      "home_no_vig_prob": 0.5045,
-      "away_no_vig_prob": 0.4955,
-      "home_edge": -0.0295,
-      "away_edge": 0.0295,
+      "home_no_vig_prob": 0.508,
+      "away_no_vig_prob": 0.492,
+      "home_edge": -0.033,
+      "away_edge": 0.033,
       "home_ev": -0.0932,
-      "away_ev": 0.0203,
+      "away_ev": 0.0347,
       "home_kelly": 0.0,
-      "away_kelly": 0.0054,
+      "away_kelly": 0.0089,
       "best_bet": null,
       "home_pitcher": "Jacob deGrom",
       "away_pitcher": "Logan Gilbert"
@@ -450,11 +442,11 @@
       "commence_time": "2026-07-26T20:06:00Z",
       "home_team": "San Francisco Giants",
       "away_team": "Los Angeles Angels",
-      "home_odds": -106,
-      "away_odds": -108,
+      "home_odds": -104,
+      "away_odds": -112,
       "spread": {
         "point": 1.5,
-        "price": -184
+        "price": -182
       },
       "total": {
         "line": 8.5,
@@ -463,13 +455,13 @@
       },
       "model_home_prob": 0.5611,
       "model_away_prob": 0.4389,
-      "home_no_vig_prob": 0.4977,
-      "away_no_vig_prob": 0.5023,
-      "home_edge": 0.0634,
-      "away_edge": -0.0634,
-      "home_ev": 0.0904,
-      "away_ev": -0.1547,
-      "home_kelly": 0.024,
+      "home_no_vig_prob": 0.4911,
+      "away_no_vig_prob": 0.5089,
+      "home_edge": 0.07,
+      "away_edge": -0.07,
+      "home_ev": 0.1006,
+      "away_ev": -0.1692,
+      "home_kelly": 0.0262,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Carson Whisenhunt",
@@ -483,24 +475,24 @@
       "home_team": "Philadelphia Phillies",
       "away_team": "New York Yankees",
       "home_odds": -184,
-      "away_odds": 158,
+      "away_odds": 159,
       "spread": {
         "point": -1.5,
-        "price": 114
+        "price": 112
       },
       "total": {
         "line": 8.0,
-        "over": -110,
-        "under": -110
+        "over": -106,
+        "under": -114
       },
       "model_home_prob": 0.6243,
       "model_away_prob": 0.3757,
-      "home_no_vig_prob": 0.6257,
-      "away_no_vig_prob": 0.3743,
-      "home_edge": -0.0014,
-      "away_edge": 0.0014,
+      "home_no_vig_prob": 0.6266,
+      "away_no_vig_prob": 0.3734,
+      "home_edge": -0.0023,
+      "away_edge": 0.0023,
       "home_ev": -0.0364,
-      "away_ev": -0.0307,
+      "away_ev": -0.0269,
       "home_kelly": 0.0,
       "away_kelly": 0.0,
       "best_bet": null,
