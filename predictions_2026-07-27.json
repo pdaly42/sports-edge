@@ -1,0 +1,319 @@
+{
+  "generated_at": "2026-07-27T17:37:57.899467+00:00",
+  "date": "2026-07-27",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "0740e4a4b0377a066eec394f1a30425b",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-27T18:35:00Z",
+      "home_team": "Texas Rangers",
+      "away_team": "Seattle Mariners",
+      "home_odds": 112,
+      "away_odds": -132,
+      "spread": {
+        "point": 1.5,
+        "price": -163
+      },
+      "total": {
+        "line": 8.0,
+        "over": -114,
+        "under": -105
+      },
+      "model_home_prob": 0.5313,
+      "model_away_prob": 0.4687,
+      "home_no_vig_prob": 0.4533,
+      "away_no_vig_prob": 0.5467,
+      "home_edge": 0.078,
+      "away_edge": -0.078,
+      "home_ev": 0.1264,
+      "away_ev": -0.1762,
+      "home_kelly": 0.0282,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Kumar Rocker",
+      "away_pitcher": "George Kirby"
+    },
+    {
+      "id": "74749169ead486e15c8bbd906e738bd6",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-27T22:40:00Z",
+      "home_team": "Pittsburgh Pirates",
+      "away_team": "Arizona Diamondbacks",
+      "home_odds": -114,
+      "away_odds": 100,
+      "spread": {
+        "point": 1.5,
+        "price": -187
+      },
+      "total": {
+        "line": 9.5,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.5144,
+      "model_away_prob": 0.4856,
+      "home_no_vig_prob": 0.5158,
+      "away_no_vig_prob": 0.4842,
+      "home_edge": -0.0014,
+      "away_edge": 0.0014,
+      "home_ev": -0.0344,
+      "away_ev": -0.0288,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Mitch Keller",
+      "away_pitcher": "Merrill Kelly"
+    },
+    {
+      "id": "01c25573da43dfef2b25036b3d865245",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-27T22:40:00Z",
+      "home_team": "Detroit Tigers",
+      "away_team": "Baltimore Orioles",
+      "home_odds": -118,
+      "away_odds": 100,
+      "spread": {
+        "point": 1.5,
+        "price": -202
+      },
+      "total": {
+        "line": 8.5,
+        "over": -111,
+        "under": -109
+      },
+      "model_home_prob": 0.6591,
+      "model_away_prob": 0.3409,
+      "home_no_vig_prob": 0.5198,
+      "away_no_vig_prob": 0.4802,
+      "home_edge": 0.1393,
+      "away_edge": -0.1393,
+      "home_ev": 0.2177,
+      "away_ev": -0.3182,
+      "home_kelly": 0.0642,
+      "away_kelly": 0.0,
+      "best_bet": {
+        "side": "home",
+        "team": "Detroit Tigers",
+        "odds": -118,
+        "edge": 0.1393,
+        "ev": 0.2177,
+        "strength": "strong"
+      },
+      "home_pitcher": "Keider Montero",
+      "away_pitcher": "Kyle Bradish",
+      "justification": "Detroit Tigers are 6-4 in their last 10 (Baltimore Orioles 6-4); season records 50-56 vs 51-55. Detroit Tigers's avg run differential is -2.8 vs Baltimore Orioles's -1.4 over the last 10 games. Model prices Detroit Tigers at 65.9% \u2014 a +13.9% edge over the market line."
+    },
+    {
+      "id": "11fd3db49ab86a1ca24414fd4f9c4af6",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-27T22:41:00Z",
+      "home_team": "Miami Marlins",
+      "away_team": "Philadelphia Phillies",
+      "home_odds": 157,
+      "away_odds": -186,
+      "spread": {
+        "point": 1.5,
+        "price": -111
+      },
+      "total": {
+        "line": 7.5,
+        "over": -115,
+        "under": -105
+      },
+      "model_home_prob": 0.3573,
+      "model_away_prob": 0.6427,
+      "home_no_vig_prob": 0.3743,
+      "away_no_vig_prob": 0.6257,
+      "home_edge": -0.017,
+      "away_edge": 0.017,
+      "home_ev": -0.0817,
+      "away_ev": -0.0118,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Tyler Phillips",
+      "away_pitcher": "Zack Wheeler"
+    },
+    {
+      "id": "9053a0685edebb19cd19f34cb274be0d",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-27T22:46:00Z",
+      "home_team": "Washington Nationals",
+      "away_team": "Toronto Blue Jays",
+      "home_odds": -120,
+      "away_odds": 106,
+      "spread": {
+        "point": 1.5,
+        "price": -182
+      },
+      "total": {
+        "line": 10.0,
+        "over": -104,
+        "under": -118
+      },
+      "model_home_prob": 0.7272,
+      "model_away_prob": 0.2728,
+      "home_no_vig_prob": 0.5291,
+      "away_no_vig_prob": 0.4709,
+      "home_edge": 0.1981,
+      "away_edge": -0.1981,
+      "home_ev": 0.3332,
+      "away_ev": -0.438,
+      "home_kelly": 0.1,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Eddy Yean",
+      "away_pitcher": "Max Scherzer"
+    },
+    {
+      "id": "5f31d0e2c7e8dbd68ea839d172d9fd00",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-27T23:10:00Z",
+      "home_team": "New York Mets",
+      "away_team": "Atlanta Braves",
+      "home_odds": -106,
+      "away_odds": -109,
+      "spread": {
+        "point": 1.5,
+        "price": -181
+      },
+      "total": {
+        "line": 8.5,
+        "over": -122,
+        "under": 102
+      },
+      "model_home_prob": 0.699,
+      "model_away_prob": 0.301,
+      "home_no_vig_prob": 0.4966,
+      "away_no_vig_prob": 0.5034,
+      "home_edge": 0.2024,
+      "away_edge": -0.2024,
+      "home_ev": 0.3584,
+      "away_ev": -0.4229,
+      "home_kelly": 0.095,
+      "away_kelly": 0.0,
+      "best_bet": {
+        "side": "home",
+        "team": "New York Mets",
+        "odds": -106,
+        "edge": 0.2024,
+        "ev": 0.3584,
+        "strength": "strong"
+      },
+      "home_pitcher": "Zac Thornton",
+      "away_pitcher": "Mart\u00edn P\u00e9rez",
+      "justification": "New York Mets are 4-6 in their last 10 (Atlanta Braves 7-3); season records 44-62 vs 62-43. New York Mets's avg run differential is +0.4 vs Atlanta Braves's +3.2 over the last 10 games. Zac Thornton (ERA 1.93) has a meaningful ERA advantage over Mart\u00edn P\u00e9rez (ERA 3.38)."
+    },
+    {
+      "id": "4f2695cf655e94d9dd1a7ef77b7861be",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-27T23:10:00Z",
+      "home_team": "Cincinnati Reds",
+      "away_team": "Cleveland Guardians",
+      "home_odds": -164,
+      "away_odds": 140,
+      "spread": {
+        "point": -1.5,
+        "price": 124
+      },
+      "total": {
+        "line": 8.5,
+        "over": -109,
+        "under": -110
+      },
+      "model_home_prob": 0.6103,
+      "model_away_prob": 0.3897,
+      "home_no_vig_prob": 0.5985,
+      "away_no_vig_prob": 0.4015,
+      "home_edge": 0.0118,
+      "away_edge": -0.0118,
+      "home_ev": -0.0176,
+      "away_ev": -0.0647,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Chase Burns",
+      "away_pitcher": "Slade Cecconi"
+    },
+    {
+      "id": "302aa3f7c3d634878483c7edadbfdb0f",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-27T23:40:00Z",
+      "home_team": "Chicago White Sox",
+      "away_team": "New York Yankees",
+      "home_odds": 124,
+      "away_odds": -145,
+      "spread": {
+        "point": 1.5,
+        "price": -137
+      },
+      "total": {
+        "line": 8.5,
+        "over": -105,
+        "under": -114
+      },
+      "model_home_prob": 0.3823,
+      "model_away_prob": 0.6177,
+      "home_no_vig_prob": 0.43,
+      "away_no_vig_prob": 0.57,
+      "home_edge": -0.0477,
+      "away_edge": 0.0477,
+      "home_ev": -0.1436,
+      "away_ev": 0.0437,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0158,
+      "best_bet": null,
+      "home_pitcher": "Noah Schultz",
+      "away_pitcher": "Max Fried"
+    },
+    {
+      "id": "8f968dc825f43310933db311e1e61a6c",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-07-27T23:46:00Z",
+      "home_team": "St. Louis Cardinals",
+      "away_team": "Chicago Cubs",
+      "home_odds": 105,
+      "away_odds": -122,
+      "spread": {
+        "point": 1.5,
+        "price": -150
+      },
+      "total": {
+        "line": 9.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.6026,
+      "model_away_prob": 0.3974,
+      "home_no_vig_prob": 0.4702,
+      "away_no_vig_prob": 0.5298,
+      "home_edge": 0.1324,
+      "away_edge": -0.1324,
+      "home_ev": 0.2353,
+      "away_ev": -0.2769,
+      "home_kelly": 0.056,
+      "away_kelly": 0.0,
+      "best_bet": {
+        "side": "home",
+        "team": "St. Louis Cardinals",
+        "odds": 105,
+        "edge": 0.1324,
+        "ev": 0.2353,
+        "strength": "strong"
+      },
+      "home_pitcher": "TBD",
+      "away_pitcher": "David Peterson",
+      "justification": "St. Louis Cardinals are 3-7 in their last 10 (Chicago Cubs 6-4); season records 53-52 vs 59-46. St. Louis Cardinals's avg run differential is -0.7 vs Chicago Cubs's +1.2 over the last 10 games. Model prices St. Louis Cardinals at 60.3% \u2014 a +13.2% edge over the market line."
+    }
+  ]
+}
