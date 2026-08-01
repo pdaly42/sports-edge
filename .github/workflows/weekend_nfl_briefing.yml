@@ -41,7 +41,21 @@ jobs:
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
 
+      - name: Check NFL season
+        run: |
+          MONTH=$(date -u +%m)
+          # NFL regular season: September (09) through January (01).
+          # Skip August (08) and February–August off-season to avoid clobbering
+          # MLB/Soccer predictions with an empty NFL file.
+          if [ "$MONTH" -ge 2 ] && [ "$MONTH" -le 8 ]; then
+            echo "Outside NFL season (month=$MONTH) — skipping briefing"
+            echo "SKIP_NFL=true" >> $GITHUB_ENV
+          else
+            echo "SKIP_NFL=false" >> $GITHUB_ENV
+          fi
+
       - name: Generate NFL predictions
+        if: env.SKIP_NFL != 'true'
         run: |
           DATE="${{ github.event.inputs.target_date }}"
           if [ -z "$DATE" ]; then DATE=$(date -u '+%Y-%m-%d'); fi
@@ -52,12 +66,14 @@ jobs:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
 
       - name: Send email briefing
+        if: env.SKIP_NFL != 'true'
         run: python3 scripts/email_briefing.py "predictions_${PRED_DATE}.json"
         env:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}
           TO_EMAIL: ${{ github.event.inputs.to_email || 'pdaly42@gmail.com' }}
 
       - name: Commit predictions
+        if: env.SKIP_NFL != 'true'
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"

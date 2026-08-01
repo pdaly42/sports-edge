@@ -1259,7 +1259,7 @@ def predict_soccer(api_key: str, target_date: str) -> list:
 # ─────────────────────────────────────────────────────────────
 
 def run(api_key: str, output_path: str = None, target_date: str = None,
-        sports: list = None) -> None:
+        sports: list = None, merge: bool = False) -> None:
     target_date = target_date or date.today().isoformat()
     output_path = output_path or f"predictions_{target_date}.json"
     # NBA and NFL are out of season — re-enable when seasons resume
@@ -1276,6 +1276,26 @@ def run(api_key: str, output_path: str = None, target_date: str = None,
         all_games += predict_nfl(api_key, target_date)
     if "soccer" in sports:
         all_games += predict_soccer(api_key, target_date)
+
+    # When running a subset of sports, merge with the existing file so we don't
+    # clobber predictions from sports that weren't re-run (e.g. the NFL briefing
+    # running --sport nfl on a Saturday shouldn't wipe out all MLB picks).
+    if merge and Path(output_path).exists():
+        sport_key_map = {
+            "nba":    "basketball_nba",
+            "mlb":    "baseball_mlb",
+            "nfl":    "americanfootball_nfl",
+            "soccer": "soccer_fifa_world_cup",
+        }
+        refreshed_keys = {sport_key_map[s] for s in sports if s in sport_key_map}
+        try:
+            existing = json.loads(Path(output_path).read_text())
+            kept = [g for g in existing.get("games", [])
+                    if g.get("sport") not in refreshed_keys]
+            all_games = kept + all_games
+            print(f"  Merged: kept {len(kept)} existing game(s) from other sports")
+        except Exception as merge_err:
+            print(f"  Merge skipped ({merge_err}) — overwriting file")
 
     # Cap at 3 best bets per day — keep the highest-EV plays, clear the rest
     MAX_BEST_BETS = 3
@@ -1316,9 +1336,12 @@ if __name__ == "__main__":
     sports = [args.sport] if args.sport else ["nba", "mlb", "nfl", "soccer"]
     target_date = args.date or date.today().isoformat()
     output_path = args.output or f"predictions_{target_date}.json"
+    # Merge mode: when only specific sports are requested, preserve other sports'
+    # predictions in the existing file rather than overwriting the whole thing.
+    merge = bool(args.sport)
 
     try:
-        run(args.api_key, output_path, target_date, sports)
+        run(args.api_key, output_path, target_date, sports, merge=merge)
     except Exception as e:
         print(f"Pipeline error: {e}")
         # Write a minimal valid file so the workflow exits 0 and the dashboard
