@@ -1,0 +1,511 @@
+{
+  "generated_at": "2026-08-02T14:47:17.880908+00:00",
+  "date": "2026-08-02",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "279531c847530b5f8dc9fa88594748e6",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-02T17:36:00Z",
+      "home_team": "Atlanta Braves",
+      "away_team": "Washington Nationals",
+      "home_odds": -116,
+      "away_odds": 108,
+      "spread": {
+        "point": 1.5,
+        "price": -205
+      },
+      "total": {
+        "line": 8.5,
+        "over": -122,
+        "under": 100
+      },
+      "model_home_prob": 0.5368,
+      "model_away_prob": 0.4632,
+      "home_no_vig_prob": 0.5276,
+      "away_no_vig_prob": 0.4724,
+      "home_edge": 0.0092,
+      "away_edge": -0.0092,
+      "home_ev": -0.0004,
+      "away_ev": -0.0365,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "JR Ritchie",
+      "away_pitcher": "Cade Cavalli"
+    },
+    {
+      "id": "0a83565a7c1b5059b188a176bf7ef21f",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-02T17:36:00Z",
+      "home_team": "Baltimore Orioles",
+      "away_team": "Philadelphia Phillies",
+      "home_odds": 120,
+      "away_odds": -130,
+      "spread": {
+        "point": 1.5,
+        "price": -150
+      },
+      "total": {
+        "line": 7.5,
+        "over": -124,
+        "under": 102
+      },
+      "model_home_prob": 0.4266,
+      "model_away_prob": 0.5734,
+      "home_no_vig_prob": 0.4457,
+      "away_no_vig_prob": 0.5543,
+      "home_edge": -0.0191,
+      "away_edge": 0.0191,
+      "home_ev": -0.0615,
+      "away_ev": 0.0145,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0047,
+      "best_bet": null,
+      "home_pitcher": "Kyle Bradish",
+      "away_pitcher": "Zack Wheeler"
+    },
+    {
+      "id": "2ee28b25d57aa155a35d9706065b4963",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-02T17:38:00Z",
+      "home_team": "Toronto Blue Jays",
+      "away_team": "St. Louis Cardinals",
+      "home_odds": -122,
+      "away_odds": 112,
+      "spread": {
+        "point": -1.5,
+        "price": 158
+      },
+      "total": {
+        "line": 9.0,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.409,
+      "model_away_prob": 0.591,
+      "home_no_vig_prob": 0.5381,
+      "away_no_vig_prob": 0.4619,
+      "home_edge": -0.1291,
+      "away_edge": 0.1291,
+      "home_ev": -0.2558,
+      "away_ev": 0.2529,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0565,
+      "best_bet": {
+        "side": "away",
+        "team": "St. Louis Cardinals",
+        "odds": 112,
+        "edge": 0.1291,
+        "ev": 0.2529,
+        "strength": "strong"
+      },
+      "home_pitcher": "Max Scherzer",
+      "away_pitcher": "Matthew Liberatore",
+      "justification": "St. Louis Cardinals are 2-8 in their last 10 (Toronto Blue Jays 6-4); season records 54-57 vs 52-59. St. Louis Cardinals's avg run differential is -0.7 vs Toronto Blue Jays's -2.3 over the last 10 games. Matthew Liberatore (ERA 5.26) has a meaningful ERA advantage over Max Scherzer (ERA 9.49)."
+    },
+    {
+      "id": "93093742f035808566b727b495407df8",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-02T17:41:00Z",
+      "home_team": "Cleveland Guardians",
+      "away_team": "Arizona Diamondbacks",
+      "home_odds": -168,
+      "away_odds": 156,
+      "spread": {
+        "point": -1.5,
+        "price": 128
+      },
+      "total": {
+        "line": 8.0,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.6196,
+      "model_away_prob": 0.3804,
+      "home_no_vig_prob": 0.6161,
+      "away_no_vig_prob": 0.3839,
+      "home_edge": 0.0035,
+      "away_edge": -0.0035,
+      "home_ev": -0.0116,
+      "away_ev": -0.0262,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Gavin Williams",
+      "away_pitcher": "Merrill Kelly"
+    },
+    {
+      "id": "47af60aedd60c2f453d5618c98f9a180",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-02T17:41:00Z",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "Chicago White Sox",
+      "home_odds": -146,
+      "away_odds": 136,
+      "spread": {
+        "point": -1.5,
+        "price": 140
+      },
+      "total": {
+        "line": 7.5,
+        "over": -104,
+        "under": -118
+      },
+      "model_home_prob": 0.5868,
+      "model_away_prob": 0.4132,
+      "home_no_vig_prob": 0.5834,
+      "away_no_vig_prob": 0.4166,
+      "home_edge": 0.0034,
+      "away_edge": -0.0034,
+      "home_ev": -0.0113,
+      "away_ev": -0.0248,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Griffin Jax",
+      "away_pitcher": "Anthony Kay"
+    },
+    {
+      "id": "65c026b0a2fdad67a6ebb83ff414a011",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-02T17:41:00Z",
+      "home_team": "Cincinnati Reds",
+      "away_team": "Pittsburgh Pirates",
+      "home_odds": -137,
+      "away_odds": 126,
+      "spread": {
+        "point": -1.5,
+        "price": 146
+      },
+      "total": {
+        "line": 8.5,
+        "over": -120,
+        "under": -102
+      },
+      "model_home_prob": 0.7067,
+      "model_away_prob": 0.2933,
+      "home_no_vig_prob": 0.5664,
+      "away_no_vig_prob": 0.4336,
+      "home_edge": 0.1403,
+      "away_edge": -0.1403,
+      "home_ev": 0.2225,
+      "away_ev": -0.3371,
+      "home_kelly": 0.0762,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Chase Burns",
+      "away_pitcher": "Mitch Keller"
+    },
+    {
+      "id": "42cc8ab6df88e7bec73eafe4f684cbb1",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-02T17:41:00Z",
+      "home_team": "New York Mets",
+      "away_team": "Miami Marlins",
+      "home_odds": 108,
+      "away_odds": -116,
+      "spread": {
+        "point": 1.5,
+        "price": -162
+      },
+      "total": {
+        "line": 8.5,
+        "over": -118,
+        "under": -104
+      },
+      "model_home_prob": 0.4498,
+      "model_away_prob": 0.5502,
+      "home_no_vig_prob": 0.4724,
+      "away_no_vig_prob": 0.5276,
+      "home_edge": -0.0226,
+      "away_edge": 0.0226,
+      "home_ev": -0.0644,
+      "away_ev": 0.0245,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0071,
+      "best_bet": null,
+      "home_pitcher": "TBD",
+      "away_pitcher": "Sandy Alcantara"
+    },
+    {
+      "id": "5df20c738d76a47684394acb9ea9814e",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-02T18:11:00Z",
+      "home_team": "Houston Astros",
+      "away_team": "Texas Rangers",
+      "home_odds": -134,
+      "away_odds": 124,
+      "spread": {
+        "point": -1.5,
+        "price": 146
+      },
+      "total": {
+        "line": 9.0,
+        "over": 100,
+        "under": -122
+      },
+      "model_home_prob": 0.6053,
+      "model_away_prob": 0.3947,
+      "home_no_vig_prob": 0.5619,
+      "away_no_vig_prob": 0.4381,
+      "home_edge": 0.0434,
+      "away_edge": -0.0434,
+      "home_ev": 0.057,
+      "away_ev": -0.1159,
+      "home_kelly": 0.0191,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Peter Lambert",
+      "away_pitcher": "Kumar Rocker"
+    },
+    {
+      "id": "7cae5f89359f34f8e1b03d1c46f2c3d6",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-02T18:21:00Z",
+      "home_team": "Chicago Cubs",
+      "away_team": "New York Yankees",
+      "home_odds": 112,
+      "away_odds": -122,
+      "spread": {
+        "point": 1.5,
+        "price": -176
+      },
+      "total": {
+        "line": 6.5,
+        "over": -115,
+        "under": -105
+      },
+      "model_home_prob": 0.453,
+      "model_away_prob": 0.547,
+      "home_no_vig_prob": 0.4619,
+      "away_no_vig_prob": 0.5381,
+      "home_edge": -0.0089,
+      "away_edge": 0.0089,
+      "home_ev": -0.0396,
+      "away_ev": -0.0046,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Colin Rea",
+      "away_pitcher": "Gerrit Cole"
+    },
+    {
+      "id": "c77232b741072d22e3c49926ff91c383",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-02T19:11:00Z",
+      "home_team": "Colorado Rockies",
+      "away_team": "Kansas City Royals",
+      "home_odds": -126,
+      "away_odds": 118,
+      "spread": {
+        "point": -1.5,
+        "price": 138
+      },
+      "total": {
+        "line": 11.5,
+        "over": -114,
+        "under": -106
+      },
+      "model_home_prob": 0.3517,
+      "model_away_prob": 0.6483,
+      "home_no_vig_prob": 0.5486,
+      "away_no_vig_prob": 0.4514,
+      "home_edge": -0.1969,
+      "away_edge": 0.1969,
+      "home_ev": -0.3692,
+      "away_ev": 0.4133,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0876,
+      "best_bet": {
+        "side": "away",
+        "team": "Kansas City Royals",
+        "odds": 118,
+        "edge": 0.1969,
+        "ev": 0.4133,
+        "strength": "strong"
+      },
+      "home_pitcher": "Kyle Freeland",
+      "away_pitcher": "Seth Lugo",
+      "justification": "Kansas City Royals are 4-6 in their last 10 (Colorado Rockies 4-6); season records 46-66 vs 44-67. Kansas City Royals's avg run differential is +1.7 vs Colorado Rockies's -2.2 over the last 10 games. Seth Lugo (ERA 4.22) has a meaningful ERA advantage over Kyle Freeland (ERA 7.34)."
+    },
+    {
+      "id": "76967dffaea1fac3dcec1e9edc62b85f",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-02T19:16:00Z",
+      "home_team": "Los Angeles Angels",
+      "away_team": "Milwaukee Brewers",
+      "home_odds": 198,
+      "away_odds": -215,
+      "spread": {
+        "point": 1.5,
+        "price": 110
+      },
+      "total": {
+        "line": 7.5,
+        "over": -114,
+        "under": -106
+      },
+      "model_home_prob": 0.3458,
+      "model_away_prob": 0.6542,
+      "home_no_vig_prob": 0.3296,
+      "away_no_vig_prob": 0.6704,
+      "home_edge": 0.0162,
+      "away_edge": -0.0162,
+      "home_ev": 0.0305,
+      "away_ev": -0.0415,
+      "home_kelly": 0.0038,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Walbert Ure\u00f1a",
+      "away_pitcher": "Jacob Misiorowski"
+    },
+    {
+      "id": "f30a8fd0e01d631f6eaa1a3533faf544",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-02T20:06:00Z",
+      "home_team": "Athletics",
+      "away_team": "Detroit Tigers",
+      "home_odds": 102,
+      "away_odds": -110,
+      "spread": {
+        "point": 1.5,
+        "price": -154
+      },
+      "total": {
+        "line": 11.0,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.4729,
+      "model_away_prob": 0.5271,
+      "home_no_vig_prob": 0.4859,
+      "away_no_vig_prob": 0.5141,
+      "home_edge": -0.013,
+      "away_edge": 0.013,
+      "home_ev": -0.0447,
+      "away_ev": 0.0063,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0017,
+      "best_bet": null,
+      "home_pitcher": "Gage Jump",
+      "away_pitcher": "Keider Montero"
+    },
+    {
+      "id": "90e23149710c7c8f69e968ca8323f375",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-02T20:11:00Z",
+      "home_team": "Seattle Mariners",
+      "away_team": "Minnesota Twins",
+      "home_odds": -134,
+      "away_odds": 124,
+      "spread": {
+        "point": -1.5,
+        "price": 162
+      },
+      "total": {
+        "line": 7.5,
+        "over": 102,
+        "under": -124
+      },
+      "model_home_prob": 0.5467,
+      "model_away_prob": 0.4533,
+      "home_no_vig_prob": 0.5619,
+      "away_no_vig_prob": 0.4381,
+      "home_edge": -0.0152,
+      "away_edge": 0.0152,
+      "home_ev": -0.0453,
+      "away_ev": 0.0154,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0031,
+      "best_bet": null,
+      "home_pitcher": "George Kirby",
+      "away_pitcher": "Taj Bradley"
+    },
+    {
+      "id": "436bf68ad25a5637c9bf15c85396514a",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-02T20:11:00Z",
+      "home_team": "San Diego Padres",
+      "away_team": "San Francisco Giants",
+      "home_odds": -142,
+      "away_odds": 132,
+      "spread": {
+        "point": -1.5,
+        "price": 146
+      },
+      "total": {
+        "line": 8.0,
+        "over": -115,
+        "under": -105
+      },
+      "model_home_prob": 0.5874,
+      "model_away_prob": 0.4126,
+      "home_no_vig_prob": 0.5765,
+      "away_no_vig_prob": 0.4235,
+      "home_edge": 0.0109,
+      "away_edge": -0.0109,
+      "home_ev": 0.0011,
+      "away_ev": -0.0428,
+      "home_kelly": 0.0004,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Michael King",
+      "away_pitcher": "Landen Roupp"
+    },
+    {
+      "id": "9075e1d97a68d5244fa70607c57e266e",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-02T23:21:00Z",
+      "home_team": "Los Angeles Dodgers",
+      "away_team": "Boston Red Sox",
+      "home_odds": -172,
+      "away_odds": 158,
+      "spread": {
+        "point": -1.5,
+        "price": 115
+      },
+      "total": {
+        "line": 8.5,
+        "over": -112,
+        "under": -108
+      },
+      "model_home_prob": 0.3881,
+      "model_away_prob": 0.6119,
+      "home_no_vig_prob": 0.62,
+      "away_no_vig_prob": 0.38,
+      "home_edge": -0.2319,
+      "away_edge": 0.2319,
+      "home_ev": -0.3863,
+      "away_ev": 0.5787,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0916,
+      "best_bet": {
+        "side": "away",
+        "team": "Boston Red Sox",
+        "odds": 158,
+        "edge": 0.2319,
+        "ev": 0.5787,
+        "strength": "strong"
+      },
+      "home_pitcher": "Emmet Sheehan",
+      "away_pitcher": "Jake Bennett",
+      "justification": "Boston Red Sox are 7-3 in their last 10 (Los Angeles Dodgers 6-4); season records 59-51 vs 69-42. Boston Red Sox's avg run differential is +0.6 vs Los Angeles Dodgers's +1.5 over the last 10 games. Jake Bennett (ERA 2.74) has a meaningful ERA advantage over Emmet Sheehan (ERA 4.95)."
+    }
+  ]
+}
