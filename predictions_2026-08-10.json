@@ -1,0 +1,151 @@
+{
+  "generated_at": "2026-08-10T16:45:47.140590+00:00",
+  "date": "2026-08-10",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "af25489423425fb7619de2e178b46bc0",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-10T23:07:00Z",
+      "home_team": "Toronto Blue Jays",
+      "away_team": "Boston Red Sox",
+      "home_odds": 138,
+      "away_odds": -146,
+      "spread": {
+        "point": 1.5,
+        "price": -137
+      },
+      "total": {
+        "line": 8.5,
+        "over": -101,
+        "under": -119
+      },
+      "model_home_prob": 0.3825,
+      "model_away_prob": 0.6175,
+      "home_no_vig_prob": 0.4145,
+      "away_no_vig_prob": 0.5855,
+      "home_edge": -0.032,
+      "away_edge": 0.032,
+      "home_ev": -0.0897,
+      "away_ev": 0.0404,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0148,
+      "best_bet": null,
+      "home_pitcher": "Jameson Taillon",
+      "away_pitcher": "Sonny Gray"
+    },
+    {
+      "id": "4a90a077ddd83a66ffc796851a64a7ac",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-10T23:15:00Z",
+      "home_team": "Atlanta Braves",
+      "away_team": "New York Mets",
+      "home_odds": -140,
+      "away_odds": 132,
+      "spread": {
+        "point": -1.5,
+        "price": 139
+      },
+      "total": {
+        "line": 8.5,
+        "over": -108,
+        "under": -112
+      },
+      "model_home_prob": 0.4699,
+      "model_away_prob": 0.5301,
+      "home_no_vig_prob": 0.5751,
+      "away_no_vig_prob": 0.4249,
+      "home_edge": -0.1052,
+      "away_edge": 0.1052,
+      "home_ev": -0.1945,
+      "away_ev": 0.2298,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0435,
+      "best_bet": {
+        "side": "away",
+        "team": "New York Mets",
+        "odds": 132,
+        "edge": 0.1052,
+        "ev": 0.2298,
+        "strength": "moderate"
+      },
+      "home_pitcher": "Bryce Elder",
+      "away_pitcher": "Christian Scott",
+      "justification": "New York Mets are 6-4 in their last 10 (Atlanta Braves 8-2); season records 52-67 vs 71-47. New York Mets's avg run differential is +0.4 vs Atlanta Braves's +3.2 over the last 10 games. Christian Scott (ERA 3.15) has a meaningful ERA advantage over Bryce Elder (ERA 3.69)."
+    },
+    {
+      "id": "253334441d4a57efddaf3e77f2c41ad4",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-10T23:40:00Z",
+      "home_team": "Minnesota Twins",
+      "away_team": "Baltimore Orioles",
+      "home_odds": 104,
+      "away_odds": -112,
+      "spread": {
+        "point": 1.5,
+        "price": -171
+      },
+      "total": {
+        "line": 8.5,
+        "over": -107,
+        "under": -113
+      },
+      "model_home_prob": 0.4611,
+      "model_away_prob": 0.5389,
+      "home_no_vig_prob": 0.4813,
+      "away_no_vig_prob": 0.5187,
+      "home_edge": -0.0202,
+      "away_edge": 0.0202,
+      "home_ev": -0.0594,
+      "away_ev": 0.0201,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0056,
+      "best_bet": null,
+      "home_pitcher": "Dean Kremer",
+      "away_pitcher": "Trevor Rogers"
+    },
+    {
+      "id": "c255384aa44923f4efbe8a468688481e",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-10T23:46:00Z",
+      "home_team": "St. Louis Cardinals",
+      "away_team": "Philadelphia Phillies",
+      "home_odds": 107,
+      "away_odds": -114,
+      "spread": {
+        "point": 1.5,
+        "price": -162
+      },
+      "total": {
+        "line": 9.0,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.6065,
+      "model_away_prob": 0.3935,
+      "home_no_vig_prob": 0.4756,
+      "away_no_vig_prob": 0.5244,
+      "home_edge": 0.1309,
+      "away_edge": -0.1309,
+      "home_ev": 0.2555,
+      "away_ev": -0.2613,
+      "home_kelly": 0.0597,
+      "away_kelly": 0.0,
+      "best_bet": {
+        "side": "home",
+        "team": "St. Louis Cardinals",
+        "odds": 107,
+        "edge": 0.1309,
+        "ev": 0.2555,
+        "strength": "strong"
+      },
+      "home_pitcher": "Hunter Dobbins",
+      "away_pitcher": "Andrew Painter",
+      "justification": "St. Louis Cardinals are 5-5 in their last 10 (Philadelphia Phillies 6-4); season records 59-59 vs 63-56. St. Louis Cardinals's avg run differential is -0.7 vs Philadelphia Phillies's +0.9 over the last 10 games. Hunter Dobbins (ERA 3.6) has a meaningful ERA advantage over Andrew Painter (ERA 6.48)."
+    }
+  ]
+}
