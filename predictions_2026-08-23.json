@@ -1,6 +1,517 @@
 {
-  "generated_at": "2026-08-23T16:16:46.560450+00:00",
+  "generated_at": "2026-08-23T23:34:24.517641+00:00",
   "date": "2026-08-23",
-  "games": [],
-  "error": "No module named 'data.nfl_fetcher'"
+  "odds_available": true,
+  "games": [
+    {
+      "id": "401816641",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-23T17:35Z",
+      "home_team": "Philadelphia Phillies",
+      "away_team": "St. Louis Cardinals",
+      "home_odds": -216,
+      "away_odds": 200,
+      "spread": {
+        "point": 1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 8.0,
+        "over": -117,
+        "under": -103
+      },
+      "model_home_prob": 0.5533,
+      "model_away_prob": 0.4467,
+      "home_no_vig_prob": 0.6722,
+      "away_no_vig_prob": 0.3278,
+      "home_edge": -0.1189,
+      "away_edge": 0.1189,
+      "home_ev": -0.1905,
+      "away_ev": 0.3401,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0425,
+      "best_bet": {
+        "side": "away",
+        "team": "St. Louis Cardinals",
+        "odds": 200,
+        "edge": 0.1189,
+        "ev": 0.3401,
+        "strength": "moderate"
+      },
+      "home_pitcher": "Cristopher S\u00e1nchez",
+      "away_pitcher": "Kyle Leahy",
+      "justification": "St. Louis Cardinals are 5-5 in their last 10 (Philadelphia Phillies 9-1); season records 66-66 vs 73-58. St. Louis Cardinals's avg run differential is -0.7 vs Philadelphia Phillies's +0.9 over the last 10 games. Model prices St. Louis Cardinals at 44.7% \u2014 a +11.9% edge over the market line."
+    },
+    {
+      "id": "401816642",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-23T17:35Z",
+      "home_team": "Baltimore Orioles",
+      "away_team": "Tampa Bay Rays",
+      "home_odds": -108,
+      "away_odds": 101,
+      "spread": {
+        "point": -1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 8.5,
+        "over": -122,
+        "under": 102
+      },
+      "model_home_prob": 0.4119,
+      "model_away_prob": 0.5881,
+      "home_no_vig_prob": 0.5107,
+      "away_no_vig_prob": 0.4893,
+      "home_edge": -0.0988,
+      "away_edge": 0.0988,
+      "home_ev": -0.2067,
+      "away_ev": 0.1821,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0451,
+      "best_bet": null,
+      "home_pitcher": "Shane Baz",
+      "away_pitcher": "Nick Martinez",
+      "justification": "Tampa Bay Rays are 3-7 in their last 10 (Baltimore Orioles 5-5); season records 77-53 vs 63-68. Tampa Bay Rays's avg run differential is -0.4 vs Baltimore Orioles's -1.4 over the last 10 games. Nick Martinez (ERA 2.93) has a meaningful ERA advantage over Shane Baz (ERA 4.04)."
+    },
+    {
+      "id": "401816643",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-23T17:35Z",
+      "home_team": "New York Yankees",
+      "away_team": "Toronto Blue Jays",
+      "home_odds": -122,
+      "away_odds": 114,
+      "spread": {
+        "point": 1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 8.0,
+        "over": -118,
+        "under": -102
+      },
+      "model_home_prob": 0.5507,
+      "model_away_prob": 0.4493,
+      "home_no_vig_prob": 0.5404,
+      "away_no_vig_prob": 0.4596,
+      "home_edge": 0.0103,
+      "away_edge": -0.0103,
+      "home_ev": 0.0021,
+      "away_ev": -0.0385,
+      "home_kelly": 0.0006,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Carlos Rod\u00f3n",
+      "away_pitcher": "Jos\u00e9 Soriano"
+    },
+    {
+      "id": "401816644",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-23T17:40Z",
+      "home_team": "Miami Marlins",
+      "away_team": "Washington Nationals",
+      "home_odds": -158,
+      "away_odds": 147,
+      "spread": {
+        "point": 1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 8.0,
+        "over": -118,
+        "under": -102
+      },
+      "model_home_prob": 0.695,
+      "model_away_prob": 0.305,
+      "home_no_vig_prob": 0.602,
+      "away_no_vig_prob": 0.398,
+      "home_edge": 0.093,
+      "away_edge": -0.093,
+      "home_ev": 0.1349,
+      "away_ev": -0.2467,
+      "home_kelly": 0.0533,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Janson Junk",
+      "away_pitcher": "Jackson Kent",
+      "justification": "Miami Marlins are 5-5 in their last 10 (Washington Nationals 2-8); season records 67-64 vs 61-71. Miami Marlins's avg run differential is +0.6 vs Washington Nationals's -2.2 over the last 10 games. Janson Junk (ERA 4.25) has a meaningful ERA advantage over Jackson Kent (ERA 8.03)."
+    },
+    {
+      "id": "401816646",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-23T18:10Z",
+      "home_team": "Houston Astros",
+      "away_team": "Athletics",
+      "home_odds": -176,
+      "away_odds": 163,
+      "spread": {
+        "point": 1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 8.5,
+        "over": -120,
+        "under": 100
+      },
+      "model_home_prob": 0.4421,
+      "model_away_prob": 0.5579,
+      "home_no_vig_prob": 0.6265,
+      "away_no_vig_prob": 0.3735,
+      "home_edge": -0.1844,
+      "away_edge": 0.1844,
+      "home_ev": -0.3067,
+      "away_ev": 0.4673,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0717,
+      "best_bet": {
+        "side": "away",
+        "team": "Athletics",
+        "odds": 163,
+        "edge": 0.1844,
+        "ev": 0.4673,
+        "strength": "strong"
+      },
+      "home_pitcher": "Cristian Javier",
+      "away_pitcher": "Brady Basso",
+      "justification": "Athletics are 4-6 in their last 10 (Houston Astros 4-6); season records 51-80 vs 65-66. Athletics's avg run differential is -2.3 vs Houston Astros's -0.8 over the last 10 games. Brady Basso (ERA 4.88) has a meaningful ERA advantage over Cristian Javier (ERA 6.47)."
+    },
+    {
+      "id": "401816648",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-23T18:10Z",
+      "home_team": "Kansas City Royals",
+      "away_team": "Detroit Tigers",
+      "home_odds": 100,
+      "away_odds": -108,
+      "spread": {
+        "point": -1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 8.5,
+        "over": -108,
+        "under": -112
+      },
+      "model_home_prob": 0.4956,
+      "model_away_prob": 0.5044,
+      "home_no_vig_prob": 0.4906,
+      "away_no_vig_prob": 0.5094,
+      "home_edge": 0.005,
+      "away_edge": -0.005,
+      "home_ev": -0.0088,
+      "away_ev": -0.0286,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Daniel Lynch IV",
+      "away_pitcher": "Jacob Waguespack"
+    },
+    {
+      "id": "401816649",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-23T18:10Z",
+      "home_team": "Chicago White Sox",
+      "away_team": "New York Mets",
+      "home_odds": -102,
+      "away_odds": -106,
+      "spread": {
+        "point": -1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 8.5,
+        "over": -103,
+        "under": -117
+      },
+      "model_home_prob": 0.5694,
+      "model_away_prob": 0.4306,
+      "home_no_vig_prob": 0.4953,
+      "away_no_vig_prob": 0.5047,
+      "home_edge": 0.0741,
+      "away_edge": -0.0741,
+      "home_ev": 0.1276,
+      "away_ev": -0.1632,
+      "home_kelly": 0.0325,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Sean Newcomb",
+      "away_pitcher": "Nolan McLean"
+    },
+    {
+      "id": "401816645",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-23T18:35Z",
+      "home_team": "Texas Rangers",
+      "away_team": "Los Angeles Angels",
+      "home_odds": -154,
+      "away_odds": 143,
+      "spread": {
+        "point": 1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 8.0,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.7636,
+      "model_away_prob": 0.2364,
+      "home_no_vig_prob": 0.5957,
+      "away_no_vig_prob": 0.4043,
+      "home_edge": 0.1679,
+      "away_edge": -0.1679,
+      "home_ev": 0.2594,
+      "away_ev": -0.4255,
+      "home_kelly": 0.0999,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Cal Quantrill",
+      "away_pitcher": "Yusei Kikuchi"
+    },
+    {
+      "id": "401816650",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-23T19:10Z",
+      "home_team": "Colorado Rockies",
+      "away_team": "Cleveland Guardians",
+      "home_odds": 147,
+      "away_odds": -158,
+      "spread": {
+        "point": -1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 11.0,
+        "over": 101,
+        "under": -121
+      },
+      "model_home_prob": 0.3557,
+      "model_away_prob": 0.6443,
+      "home_no_vig_prob": 0.398,
+      "away_no_vig_prob": 0.602,
+      "home_edge": -0.0423,
+      "away_edge": 0.0423,
+      "home_ev": -0.1214,
+      "away_ev": 0.0521,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0206,
+      "best_bet": null,
+      "home_pitcher": "Tomoyuki Sugano",
+      "away_pitcher": "Foster Griffin"
+    },
+    {
+      "id": "401816640",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-23T19:15Z",
+      "home_team": "Boston Red Sox",
+      "away_team": "San Francisco Giants",
+      "home_odds": -201,
+      "away_odds": 187,
+      "spread": {
+        "point": 1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 8.5,
+        "over": -111,
+        "under": -108
+      },
+      "model_home_prob": 0.6598,
+      "model_away_prob": 0.3402,
+      "home_no_vig_prob": 0.6571,
+      "away_no_vig_prob": 0.3429,
+      "home_edge": 0.0027,
+      "away_edge": -0.0027,
+      "home_ev": -0.0119,
+      "away_ev": -0.0236,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Jake Bennett",
+      "away_pitcher": "Matt Wilkinson"
+    },
+    {
+      "id": "401816651",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-23T20:10Z",
+      "home_team": "Seattle Mariners",
+      "away_team": "Chicago Cubs",
+      "home_odds": 113,
+      "away_odds": -122,
+      "spread": {
+        "point": -1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 7.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.4423,
+      "model_away_prob": 0.5577,
+      "home_no_vig_prob": 0.4607,
+      "away_no_vig_prob": 0.5393,
+      "home_edge": -0.0184,
+      "away_edge": 0.0184,
+      "home_ev": -0.0579,
+      "away_ev": 0.0148,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0045,
+      "best_bet": null,
+      "home_pitcher": "Bryce Miller",
+      "away_pitcher": "Shota Imanaga"
+    },
+    {
+      "id": "401816653",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-23T20:10Z",
+      "home_team": "San Diego Padres",
+      "away_team": "Minnesota Twins",
+      "home_odds": -153,
+      "away_odds": 142,
+      "spread": {
+        "point": 1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 8.5,
+        "over": -122,
+        "under": 102
+      },
+      "model_home_prob": 0.5423,
+      "model_away_prob": 0.4577,
+      "home_no_vig_prob": 0.5941,
+      "away_no_vig_prob": 0.4059,
+      "home_edge": -0.0518,
+      "away_edge": 0.0518,
+      "home_ev": -0.1033,
+      "away_ev": 0.1076,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0189,
+      "best_bet": null,
+      "home_pitcher": "Walker Buehler",
+      "away_pitcher": "Bailey Ober"
+    },
+    {
+      "id": "401816654",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-23T20:10Z",
+      "home_team": "Los Angeles Dodgers",
+      "away_team": "Pittsburgh Pirates",
+      "home_odds": -275,
+      "away_odds": 253,
+      "spread": {
+        "point": 1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 8.5,
+        "over": -112,
+        "under": -108
+      },
+      "model_home_prob": 0.6702,
+      "model_away_prob": 0.3298,
+      "home_no_vig_prob": 0.7213,
+      "away_no_vig_prob": 0.2787,
+      "home_edge": -0.0511,
+      "away_edge": 0.0511,
+      "home_ev": -0.0861,
+      "away_ev": 0.1642,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0162,
+      "best_bet": null,
+      "home_pitcher": "Blake Snell",
+      "away_pitcher": "Lake Bachar"
+    },
+    {
+      "id": "401816652",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-23T20:15Z",
+      "home_team": "Arizona Diamondbacks",
+      "away_team": "Cincinnati Reds",
+      "home_odds": -140,
+      "away_odds": 131,
+      "spread": {
+        "point": 1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 8.5,
+        "over": -120,
+        "under": 100
+      },
+      "model_home_prob": 0.4561,
+      "model_away_prob": 0.5439,
+      "home_no_vig_prob": 0.574,
+      "away_no_vig_prob": 0.426,
+      "home_edge": -0.1179,
+      "away_edge": 0.1179,
+      "home_ev": -0.2181,
+      "away_ev": 0.2564,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0489,
+      "best_bet": {
+        "side": "away",
+        "team": "Cincinnati Reds",
+        "odds": 131,
+        "edge": 0.1179,
+        "ev": 0.2564,
+        "strength": "moderate"
+      },
+      "home_pitcher": "Mitch Bratt",
+      "away_pitcher": "Andrew Abbott",
+      "justification": "Cincinnati Reds's avg run differential is +0.9 vs Arizona Diamondbacks's -0.5 over the last 10 games. Model prices Cincinnati Reds at 54.4% \u2014 a +11.8% edge over the market line."
+    },
+    {
+      "id": "401816647",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-08-23T23:00Z",
+      "home_team": "Milwaukee Brewers",
+      "away_team": "Atlanta Braves",
+      "home_odds": -108,
+      "away_odds": 101,
+      "spread": {
+        "point": -1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 8.0,
+        "over": -102,
+        "under": -118
+      },
+      "model_home_prob": 0.612,
+      "model_away_prob": 0.388,
+      "home_no_vig_prob": 0.5107,
+      "away_no_vig_prob": 0.4893,
+      "home_edge": 0.1013,
+      "away_edge": -0.1013,
+      "home_ev": 0.1787,
+      "away_ev": -0.2201,
+      "home_kelly": 0.0482,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Shane Drohan",
+      "away_pitcher": "Tyler Mahle",
+      "justification": "Milwaukee Brewers are 7-3 in their last 10 (Atlanta Braves 3-7); season records 81-49 vs 75-55. Milwaukee Brewers's avg run differential is +0.0 vs Atlanta Braves's +3.2 over the last 10 games. Shane Drohan (ERA 3.9) has a meaningful ERA advantage over Tyler Mahle (ERA 4.49)."
+    }
+  ],
+  "sport_errors": {
+    "nfl": "HTTP Error 404: Not Found"
+  }
 }
