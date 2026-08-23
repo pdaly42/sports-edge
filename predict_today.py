@@ -116,17 +116,19 @@ def get_total(game: dict) -> dict | None:
 
 
 ESPN_SPORT_MAP = {
-    "basketball_nba":        "basketball/nba",
-    "baseball_mlb":          "baseball/mlb",
-    "americanfootball_nfl":  "football/nfl",
-    "soccer_fifa_world_cup": "soccer/fifa.world",
+    "basketball_nba":         "basketball/nba",
+    "baseball_mlb":           "baseball/mlb",
+    "americanfootball_nfl":   "football/nfl",
+    "americanfootball_ncaaf": "football/college-football",
+    "soccer_fifa_world_cup":  "soccer/fifa.world",
 }
 
 ESPN_LEAGUE_MAP = {
-    "basketball_nba":        "basketball/leagues/nba",
-    "baseball_mlb":          "baseball/leagues/mlb",
-    "americanfootball_nfl":  "football/leagues/nfl",
-    "soccer_fifa_world_cup": "soccer/leagues/fifa.world",
+    "basketball_nba":         "basketball/leagues/nba",
+    "baseball_mlb":           "baseball/leagues/mlb",
+    "americanfootball_nfl":   "football/leagues/nfl",
+    "americanfootball_ncaaf": "football/leagues/college-football",
+    "soccer_fifa_world_cup":  "soccer/leagues/fifa.world",
 }
 
 def fetch_espn_odds(sport_key: str, target_date: str) -> list:
@@ -736,6 +738,24 @@ NFL_TEAM_MAP = {
 }
 
 
+# Teams whose home stadium is a dome or fixed/typically-closed retractable roof.
+# Games at these stadiums get is_dome=1, wind=0, temp=72 at inference — a good
+# approximation since retractable roofs are closed in bad weather in practice.
+NFL_DOME_HOME_TEAMS = {
+    "ARI",   # State Farm (retractable, usually closed)
+    "ATL",   # Mercedes-Benz (retractable, usually closed)
+    "DAL",   # AT&T (retractable, usually closed)
+    "DET",   # Ford Field (fixed)
+    "HOU",   # NRG (retractable)
+    "IND",   # Lucas Oil (retractable)
+    "LA",    # SoFi (fixed indoor)
+    "LAC",   # SoFi (shared)
+    "LV",    # Allegiant (fixed dome)
+    "MIN",   # US Bank (fixed)
+    "NO",    # Caesars Superdome
+}
+
+
 def _best_ou_bet(line: float, predicted: float, p_over: float, p_under: float,
                  over_odds, under_odds, edge_over, edge_under) -> dict | None:
     """Flag an O/U best bet when edge >= 4% and predicted total is >= 3 pts from line."""
@@ -792,6 +812,7 @@ def predict_nfl(api_key: str, target_date: str) -> list:
     from data.nfl_fetcher import get_current_team_stats
     from data.nfl_qb_stats import get_current_qb_stats
     from data.nfl_injuries import get_current_injury_scores
+    from data.nfl_team_epa import get_current_team_epa
 
     try:
         bundle = load_model(sport="nfl", model_type="xgb")
@@ -819,6 +840,20 @@ def predict_nfl(api_key: str, target_date: str) -> list:
     qb_roll_cols = [c for c in qb_stats.columns if any(
         c.startswith(p) for p in ["qb_epa_per_att_", "qb_comp_pct_", "qb_ypa_", "qb_td_int_ratio_"]
     )]
+
+    # Current team EPA
+    print("  Fetching current team EPA...")
+    try:
+        epa_stats = get_current_team_epa()
+        epa_roll_cols = [c for c in epa_stats.columns if any(
+            c.startswith(p) for p in
+            ["off_epa_per_play_", "def_epa_per_play_",
+             "off_pass_epa_per_play_", "off_rush_epa_per_play_"]
+        )]
+    except Exception as e:
+        print(f"  Team EPA unavailable: {e}")
+        epa_stats = None
+        epa_roll_cols = []
 
     # Current injury report
     season, week = _get_nfl_current_week(target_date)
@@ -873,6 +908,31 @@ def predict_nfl(api_key: str, target_date: str) -> list:
                     feat[f"away_{c}"] = aq.get(c, 0.0) if hasattr(aq, "get") else 0.0
                 for c in qb_roll_cols:
                     feat[f"qb_{c.replace('qb_','')}_diff"] = feat[f"home_{c}"] - feat[f"away_{c}"]
+
+                # Team EPA rolling stats (offense/defense, 4w/8w)
+                if epa_stats is not None:
+                    h_epa_row = epa_stats[epa_stats["team"] == home_abbr]
+                    a_epa_row = epa_stats[epa_stats["team"] == away_abbr]
+                    he = h_epa_row.iloc[0] if not h_epa_row.empty else {}
+                    ae = a_epa_row.iloc[0] if not a_epa_row.empty else {}
+                    for c in epa_roll_cols:
+                        hv = he.get(c, 0.0) if hasattr(he, "get") else 0.0
+                        av = ae.get(c, 0.0) if hasattr(ae, "get") else 0.0
+                        # EPA/play is zero-centered so 0.0 ≈ league average
+                        hv = 0.0 if hv is None or (isinstance(hv, float) and np.isnan(hv)) else hv
+                        av = 0.0 if av is None or (isinstance(av, float) and np.isnan(av)) else av
+                        feat[f"home_{c}"]    = hv
+                        feat[f"away_{c}"]    = av
+                        feat[f"{c}_diff"]     = hv - av
+                        feat[f"combined_{c}"] = hv + av
+
+                # Weather / venue — dome inferred from home team's stadium
+                is_dome = 1 if home_abbr in NFL_DOME_HOME_TEAMS else 0
+                feat["is_dome"]      = is_dome
+                feat["wind_mph"]     = 0.0 if is_dome else 5.0
+                feat["temp_f"]       = 72.0 if is_dome else 65.0
+                feat["is_high_wind"] = 0
+                feat["is_cold"]      = 0
 
                 # Injury scores (0 if team not on report = healthy)
                 h_inj = injury_scores.get(home_abbr, {"injury_score": 0.0, "qb_injury_impact": 0.0})
@@ -1001,6 +1061,234 @@ def predict_nfl(api_key: str, target_date: str) -> list:
         )
 
     return results
+
+
+# ─────────────────────────────────────────────────────────────
+# College Football (P4 + top-25 filter)
+# ─────────────────────────────────────────────────────────────
+
+def _cfb_normalize(name: str) -> str:
+    """
+    Normalize team names between odds-API / ESPN and CFBD.
+    Both sources are inconsistent on 'State' abbrevs and 'University' suffixes.
+    """
+    if not name:
+        return name
+    return (name
+            .replace(" University", "")
+            .replace("St.", "State")
+            .replace("Miami (OH)", "Miami (OH)")
+            .strip())
+
+
+def predict_cfb(api_key: str, target_date: str) -> list:
+    print("\n── College Football ──")
+    games = fetch_odds(api_key, "americanfootball_ncaaf", target_date)
+    if not games:
+        games = fetch_games_from_espn("americanfootball_ncaaf", target_date)
+    print(f"  {len(games)} CFB games on {target_date}")
+    if not games:
+        return []
+
+    from data.cfb_fetcher import get_current_team_stats, get_current_ranked_teams, P4_CONFERENCES, P4_INDEPENDENTS
+    from data.cfb_ratings import get_current_sp_ratings
+    from data.cfb_epa import get_current_team_epa
+
+    try:
+        bundle = load_model(sport="cfb", model_type="xgb")
+    except FileNotFoundError:
+        print("  CFB model not found — run scripts/train_if_needed.py first")
+        return []
+
+    stats = get_current_team_stats()
+    if stats.empty:
+        print("  No CFB team stats available (CFBD_API_KEY set?) — skipping")
+        return []
+    roll_cols = [c for c in stats.columns if any(
+        c.startswith(p) for p in
+        ["win_pct_", "pts_for_avg_", "pts_against_avg_", "point_diff_avg_",
+         "season_win_pct", "season_point_diff_avg"]
+    )]
+
+    sp_df = get_current_sp_ratings()
+    sp_cols = ["sp_overall", "sp_offense", "sp_defense", "sp_st"]
+
+    epa_stats = get_current_team_epa()
+    epa_roll_cols = []
+    if not epa_stats.empty:
+        epa_roll_cols = [c for c in epa_stats.columns if any(
+            c.startswith(p) for p in
+            ["cfb_off_epa_per_play_", "cfb_def_epa_per_play_",
+             "cfb_off_pass_epa_", "cfb_off_rush_epa_"]
+        )]
+
+    ranked = get_current_ranked_teams()
+    print(f"  Currently ranked (AP top 25): {len(ranked)} teams")
+
+    # Build a conference lookup from the SP+ pull (which has every team)
+    # We use current-year games to know each team's conference.
+    from data.cfb_fetcher import fetch_season_games
+    from datetime import datetime as _dt
+    curr_games = fetch_season_games(_dt.now().year)
+    team_conf = {}
+    if not curr_games.empty:
+        for _, row in curr_games.iterrows():
+            if row.get("home_conference"):
+                team_conf.setdefault(row["home_team"], row["home_conference"])
+            if row.get("away_conference"):
+                team_conf.setdefault(row["away_team"], row["away_conference"])
+
+    def _is_p4(team):
+        return team_conf.get(team) in P4_CONFERENCES or team in P4_INDEPENDENTS
+
+    def _qualifies(home, away):
+        if _is_p4(home) and _is_p4(away):
+            return True
+        return home in ranked or away in ranked
+
+    results = []
+    for game in games:
+        home = _cfb_normalize(game["home_team"])
+        away = _cfb_normalize(game["away_team"])
+
+        # Skip non-qualifying games entirely — keeps the daily file lean and
+        # avoids polluting predictions with games the model wasn't trained on
+        if not _qualifies(home, away):
+            continue
+
+        prob_home = None
+        feat = {}
+        h_row = stats[stats["team"] == home]
+        a_row = stats[stats["team"] == away]
+
+        if not h_row.empty and not a_row.empty:
+            h, a = h_row.iloc[0], a_row.iloc[0]
+            feat = {"game_id": game["id"]}
+
+            for c in roll_cols:
+                feat[f"home_{c}"] = h.get(c, np.nan)
+                feat[f"away_{c}"] = a.get(c, np.nan)
+            for window in [3, 6]:
+                feat[f"win_pct_diff_{window}g"] = (
+                    (h.get(f"win_pct_{window}g", np.nan) or 0) -
+                    (a.get(f"win_pct_{window}g", np.nan) or 0)
+                )
+                feat[f"point_diff_diff_{window}g"] = (
+                    (h.get(f"point_diff_avg_{window}g", np.nan) or 0) -
+                    (a.get(f"point_diff_avg_{window}g", np.nan) or 0)
+                )
+                feat[f"combined_pts_for_{window}g"] = (
+                    (h.get(f"pts_for_avg_{window}g", 0) or 0) +
+                    (a.get(f"pts_for_avg_{window}g", 0) or 0)
+                )
+                feat[f"combined_pts_against_{window}g"] = (
+                    (h.get(f"pts_against_avg_{window}g", 0) or 0) +
+                    (a.get(f"pts_against_avg_{window}g", 0) or 0)
+                )
+            feat["rest_advantage"] = (h.get("days_rest", 7) or 7) - (a.get("days_rest", 7) or 7)
+            feat["home_days_rest"] = h.get("days_rest", 7)
+            feat["away_days_rest"] = a.get("days_rest", 7)
+            feat["season_win_pct_diff"] = (
+                (h.get("season_win_pct", 0.5) or 0.5) - (a.get("season_win_pct", 0.5) or 0.5)
+            )
+            feat["season_point_diff_avg_diff"] = (
+                (h.get("season_point_diff_avg", 0.0) or 0.0) -
+                (a.get("season_point_diff_avg", 0.0) or 0.0)
+            )
+            feat["neutral_site"] = 0  # ESPN's simple scoreboard rarely marks this reliably
+
+            # SP+ features
+            if not sp_df.empty:
+                h_sp = sp_df[sp_df["team"] == home]
+                a_sp = sp_df[sp_df["team"] == away]
+                hs = h_sp.iloc[0] if not h_sp.empty else {}
+                as_ = a_sp.iloc[0] if not a_sp.empty else {}
+                for c in sp_cols:
+                    hv = hs.get(c, 0.0) if hasattr(hs, "get") else 0.0
+                    av = as_.get(c, 0.0) if hasattr(as_, "get") else 0.0
+                    hv = 0.0 if hv is None else float(hv)
+                    av = 0.0 if av is None else float(av)
+                    feat[f"home_{c}"]     = hv
+                    feat[f"away_{c}"]     = av
+                    feat[f"sp_{c}_diff"]  = hv - av
+
+            # EPA features
+            if epa_roll_cols:
+                h_epa = epa_stats[epa_stats["team"] == home]
+                a_epa = epa_stats[epa_stats["team"] == away]
+                he = h_epa.iloc[0] if not h_epa.empty else {}
+                ae = a_epa.iloc[0] if not a_epa.empty else {}
+                for c in epa_roll_cols:
+                    hv = he.get(c, 0.0) if hasattr(he, "get") else 0.0
+                    av = ae.get(c, 0.0) if hasattr(ae, "get") else 0.0
+                    hv = 0.0 if hv is None or (isinstance(hv, float) and np.isnan(hv)) else float(hv)
+                    av = 0.0 if av is None or (isinstance(av, float) and np.isnan(av)) else float(av)
+                    feat[f"home_{c}"]      = hv
+                    feat[f"away_{c}"]      = av
+                    feat[f"{c}_diff"]       = hv - av
+                    feat[f"combined_{c}"]   = hv + av
+
+            aligned = align_features(feat, bundle)
+            if aligned is not None:
+                prob_home = predict_proba(bundle, aligned)[0]
+        else:
+            print(f"  Missing CFB stats: {home} or {away}")
+
+        pred = build_game_prediction(
+            game, prob_home,
+            best_line(game, "home"), best_line(game, "away"),
+            "americanfootball_ncaaf", "CFB"
+        )
+        if pred.get("best_bet") and feat and prob_home is not None:
+            pred["justification"] = _cfb_justification(
+                home, away, feat, float(prob_home), pred["best_bet"], ranked
+            )
+        pred["home_ranked"] = home in ranked
+        pred["away_ranked"] = away in ranked
+        results.append(pred)
+        print(f"  {away} @ {home}: model={pred['model_home_prob']} edge={pred['home_edge']}")
+
+    return results
+
+
+def _cfb_justification(home: str, away: str, feat: dict,
+                        model_home_prob: float, best_bet: dict,
+                        ranked: set) -> str:
+    """1-3 sentence justification for a CFB best bet."""
+    if best_bet is None:
+        return ""
+    side     = best_bet["side"]
+    edge_pct = round(best_bet["edge"] * 100, 1)
+    fav_team = home if side == "home" else away
+    dog_team = away if side == "home" else home
+    parts = []
+
+    # SP+ overall gap is the single strongest CFB signal
+    h_sp = feat.get("home_sp_overall", 0.0) or 0.0
+    a_sp = feat.get("away_sp_overall", 0.0) or 0.0
+    fav_sp = h_sp if side == "home" else a_sp
+    dog_sp = a_sp if side == "home" else h_sp
+    if abs(fav_sp - dog_sp) >= 5:
+        parts.append(f"{fav_team} rate {fav_sp:+.1f} in SP+ vs {dog_team} at {dog_sp:+.1f} — a {abs(fav_sp - dog_sp):.1f}-point gap")
+
+    # Recent point differential (6-game rolling)
+    pfx     = "home" if side == "home" else "away"
+    opp_pfx = "away" if side == "home" else "home"
+    d_fav = feat.get(f"{pfx}_point_diff_avg_6g")
+    d_dog = feat.get(f"{opp_pfx}_point_diff_avg_6g")
+    if d_fav is not None and d_dog is not None and str(d_fav) != "nan" and str(d_dog) != "nan":
+        parts.append(f"{fav_team} avg {d_fav:+.1f} pt diff over last 6 vs {dog_team}'s {d_dog:+.1f}")
+
+    # Ranked mismatch
+    if fav_team in ranked and dog_team not in ranked:
+        parts.append(f"{fav_team} enter this game ranked in the AP top-25 while {dog_team} are unranked")
+
+    parts.append(
+        f"Model prices {fav_team} at "
+        f"{round(model_home_prob*100 if side=='home' else (1-model_home_prob)*100, 1)}% "
+        f"— a +{edge_pct}% edge over market"
+    )
+    return ". ".join(parts[:3]) + "."
 
 
 def _nfl_justification(home: str, away: str, feat: dict,
@@ -1290,6 +1578,8 @@ def run(api_key: str, output_path: str = None, target_date: str = None,
         all_games += _run_sport("mlb", predict_mlb)
     if "nfl" in sports:
         all_games += _run_sport("nfl", predict_nfl)
+    if "cfb" in sports:
+        all_games += _run_sport("cfb", predict_cfb)
     if "soccer" in sports:
         all_games += _run_sport("soccer", predict_soccer)
 
@@ -1301,6 +1591,7 @@ def run(api_key: str, output_path: str = None, target_date: str = None,
             "nba":    "basketball_nba",
             "mlb":    "baseball_mlb",
             "nfl":    "americanfootball_nfl",
+            "cfb":    "americanfootball_ncaaf",
             "soccer": "soccer_fifa_world_cup",
         }
         refreshed_keys = {sport_key_map[s] for s in sports if s in sport_key_map}
@@ -1353,7 +1644,7 @@ if __name__ == "__main__":
     if not args.api_key:
         print("Warning: no ODDS_API_KEY — will use ESPN for game list, no odds data")
 
-    sports = [args.sport] if args.sport else ["nba", "mlb", "nfl", "soccer"]
+    sports = [args.sport] if args.sport else ["nba", "mlb", "nfl", "cfb", "soccer"]
     target_date = args.date or date.today().isoformat()
     output_path = args.output or f"predictions_{target_date}.json"
     # Merge mode: when only specific sports are requested, preserve other sports'

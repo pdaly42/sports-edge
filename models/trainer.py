@@ -104,6 +104,41 @@ FEATURE_PATTERNS = [
     "away_qb_injury_impact",
     "injury_score_diff",
     "qb_injury_impact_diff",
+    # NFL team EPA per play (rolling 4w and 8w)
+    "home_off_epa_per_play_",
+    "away_off_epa_per_play_",
+    "home_def_epa_per_play_",
+    "away_def_epa_per_play_",
+    "home_off_pass_epa_per_play_",
+    "away_off_pass_epa_per_play_",
+    "home_off_rush_epa_per_play_",
+    "away_off_rush_epa_per_play_",
+    "off_epa_per_play_",       # diffs (home - away)
+    "def_epa_per_play_",
+    "off_pass_epa_per_play_",
+    "off_rush_epa_per_play_",
+    # NFL weather / venue (used mainly by totals but also mild signal for winners)
+    "is_dome",
+    "wind_mph",
+    "temp_f",
+    "is_high_wind",
+    "is_cold",
+    # CFB SP+ ratings (single strongest college signal)
+    "home_sp_overall", "away_sp_overall",
+    "home_sp_offense", "away_sp_offense",
+    "home_sp_defense", "away_sp_defense",
+    "home_sp_st",      "away_sp_st",
+    "sp_sp_overall_diff", "sp_sp_offense_diff",
+    "sp_sp_defense_diff", "sp_sp_st_diff",
+    # CFB team EPA rolling (3g / 6g)
+    "home_cfb_off_epa_per_play_", "away_cfb_off_epa_per_play_",
+    "home_cfb_def_epa_per_play_", "away_cfb_def_epa_per_play_",
+    "home_cfb_off_pass_epa_",     "away_cfb_off_pass_epa_",
+    "home_cfb_off_rush_epa_",     "away_cfb_off_rush_epa_",
+    "cfb_off_epa_per_play_", "cfb_def_epa_per_play_",
+    "cfb_off_pass_epa_",     "cfb_off_rush_epa_",
+    # CFB neutral-site flag
+    "neutral_site",
 ]
 
 # Features used by the NFL totals regression model (sum-based, not differential)
@@ -127,6 +162,21 @@ TOTALS_FEATURE_PATTERNS = [
     "away_pts_against_avg_",
     "home_rest",
     "away_rest",
+    # Team EPA — combined offensive + defensive efficiency drives totals
+    "combined_off_epa_per_play_",
+    "combined_def_epa_per_play_",
+    "combined_off_pass_epa_per_play_",
+    "combined_off_rush_epa_per_play_",
+    "home_off_epa_per_play_",
+    "away_off_epa_per_play_",
+    "home_def_epa_per_play_",
+    "away_def_epa_per_play_",
+    # Weather — biggest totals suppressor after defensive strength
+    "is_dome",
+    "wind_mph",
+    "temp_f",
+    "is_high_wind",
+    "is_cold",
 ]
 
 

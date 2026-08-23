@@ -87,6 +87,24 @@ def train_nfl_totals():
     print("NFL totals model trained.")
 
 
+def train_cfb():
+    model_path = Path('models/cfb_xgb_model.pkl')
+    if not _needs_training(model_path):
+        print("CFB model is current, skipping")
+        return
+    print("Training CFB model (2015-present, P4 + top-25 games only)...")
+    from data.cfb_fetcher import build_matchup_features
+    from models.trainer import train
+    current_year = datetime.utcnow().year
+    df = build_matchup_features(list(range(2015, current_year + 1)))
+    if df is None or df.empty:
+        print("  CFB matchup build returned no rows — is CFBD_API_KEY set? Skipping.")
+        return
+    df = df.dropna(subset=['home_win']).reset_index(drop=True)
+    train(df, sport='cfb', model_type='xgb')
+    print("CFB model trained.")
+
+
 def train_soccer():
     model_path = Path('models/soccer_wc_model.pkl')
     if not _needs_training(model_path):
@@ -105,4 +123,5 @@ if __name__ == "__main__":
     train_mlb()
     train_nfl()
     train_nfl_totals()
+    train_cfb()
     train_soccer()

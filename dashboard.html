@@ -475,6 +475,7 @@
         <option value="all">All Sports</option>
         <option value="basketball_nba">NBA</option>
         <option value="americanfootball_nfl">NFL</option>
+        <option value="americanfootball_ncaaf">CFB</option>
         <option value="baseball_mlb">MLB</option>
         <option value="soccer_fifa_world_cup">⚽ World Cup</option>
       </select>
@@ -529,10 +530,11 @@ let dayOffset = 0;   // 0 = today, 1 = tomorrow, -1 = yesterday
 const gamesCache = {};
 
 const SPORTS = [
-  { key: 'basketball_nba',         label: 'NBA',       emoji: '🏀' },
-  { key: 'americanfootball_nfl',   label: 'NFL',       emoji: '🏈' },
-  { key: 'baseball_mlb',           label: 'MLB',       emoji: '⚾' },
-  { key: 'soccer_fifa_world_cup',  label: 'World Cup', emoji: '⚽' },
+  { key: 'basketball_nba',          label: 'NBA',       emoji: '🏀' },
+  { key: 'americanfootball_nfl',    label: 'NFL',       emoji: '🏈' },
+  { key: 'americanfootball_ncaaf',  label: 'CFB',       emoji: '🏈' },
+  { key: 'baseball_mlb',            label: 'MLB',       emoji: '⚾' },
+  { key: 'soccer_fifa_world_cup',   label: 'World Cup', emoji: '⚽' },
 ];
 
 const GH_OWNER    = 'pdaly42';
@@ -710,10 +712,11 @@ function resetRunBtn() {
 // ─────────────────────────────────────────
 const ESPN_BASE = 'https://site.api.espn.com/apis/site/v2/sports';
 const ESPN_SPORTS = [
-  { key: 'basketball_nba',        espn: 'basketball/nba',    label: 'NBA', emoji: '🏀' },
-  { key: 'baseball_mlb',          espn: 'baseball/mlb',      label: 'MLB', emoji: '⚾' },
-  { key: 'americanfootball_nfl',  espn: 'football/nfl',      label: 'NFL', emoji: '🏈' },
-  { key: 'soccer_fifa_world_cup', espn: 'soccer/fifa.world', label: 'World Cup', emoji: '⚽' },
+  { key: 'basketball_nba',          espn: 'basketball/nba',              label: 'NBA', emoji: '🏀' },
+  { key: 'baseball_mlb',            espn: 'baseball/mlb',                label: 'MLB', emoji: '⚾' },
+  { key: 'americanfootball_nfl',    espn: 'football/nfl',                label: 'NFL', emoji: '🏈' },
+  { key: 'americanfootball_ncaaf',  espn: 'football/college-football',   label: 'CFB', emoji: '🏈' },
+  { key: 'soccer_fifa_world_cup',   espn: 'soccer/fifa.world',           label: 'World Cup', emoji: '⚽' },
 ];
 
 // ESPN team displayName → odds API team name (only needed for mismatches)
