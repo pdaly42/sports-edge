@@ -1267,15 +1267,31 @@ def run(api_key: str, output_path: str = None, target_date: str = None,
 
     print(f"Running predictions for {target_date} — sports: {sports}")
     all_games = []
+    sport_errors: dict[str, str] = {}
+
+    # Each sport runs in its own try/except so a single sport's failure (e.g. a
+    # missing module, upstream API outage, or model-load error) cannot zero out
+    # the file. The dashboard prefers "MLB picks + NFL error banner" over "no
+    # games at all" — which is what happened for two straight weeks when the
+    # NFL importer began throwing on preseason game days.
+    def _run_sport(name: str, fn):
+        try:
+            return fn(api_key, target_date)
+        except Exception as sport_err:
+            import traceback
+            print(f"\n!! {name.upper()} failed — {sport_err}")
+            traceback.print_exc()
+            sport_errors[name] = str(sport_err)
+            return []
 
     if "nba" in sports:
-        all_games += predict_nba(api_key, target_date)
+        all_games += _run_sport("nba", predict_nba)
     if "mlb" in sports:
-        all_games += predict_mlb(api_key, target_date)
+        all_games += _run_sport("mlb", predict_mlb)
     if "nfl" in sports:
-        all_games += predict_nfl(api_key, target_date)
+        all_games += _run_sport("nfl", predict_nfl)
     if "soccer" in sports:
-        all_games += predict_soccer(api_key, target_date)
+        all_games += _run_sport("soccer", predict_soccer)
 
     # When running a subset of sports, merge with the existing file so we don't
     # clobber predictions from sports that weren't re-run (e.g. the NFL briefing
@@ -1314,12 +1330,16 @@ def run(api_key: str, output_path: str = None, target_date: str = None,
         "odds_available": odds_available,
         "games":          all_games,
     }
+    if sport_errors:
+        result["sport_errors"] = sport_errors
     Path(output_path).write_text(json.dumps(result, indent=2))
 
     strong   = sum(1 for g in all_games if g.get("best_bet") and g["best_bet"]["strength"] == "strong")
     moderate = sum(1 for g in all_games if g.get("best_bet") and g["best_bet"]["strength"] == "moderate")
     print(f"\nWrote {len(all_games)} predictions to {output_path}")
     print(f"Strong edges: {strong}  |  Moderate edges: {moderate} (capped at {MAX_BEST_BETS} total)")
+    if sport_errors:
+        print(f"Sport errors this run: {sport_errors}")
 
 
 if __name__ == "__main__":
@@ -1344,16 +1364,19 @@ if __name__ == "__main__":
         run(args.api_key, output_path, target_date, sports, merge=merge)
     except Exception as e:
         print(f"Pipeline error: {e}")
-        # Write a minimal valid file so the workflow exits 0 and the dashboard
-        # doesn't break — any partial predictions already computed are lost here
-        # but at least the Action succeeds.
         import traceback; traceback.print_exc()
-        fallback = {
-            "generated_at": datetime.now(timezone.utc).isoformat(),
-            "date":         target_date,
-            "games":        [],
-            "error":        str(e),
-        }
-        Path(output_path).write_text(json.dumps(fallback, indent=2))
-        print(f"Wrote empty fallback to {output_path} — check logs above for root cause")
+        # If a prior successful run left a file on disk for this date, keep it
+        # rather than overwriting with an empty one. Only write a fresh empty
+        # fallback when no file exists.
+        if Path(output_path).exists():
+            print(f"Preserving existing {output_path} — not overwriting with empty file")
+        else:
+            fallback = {
+                "generated_at": datetime.now(timezone.utc).isoformat(),
+                "date":         target_date,
+                "games":        [],
+                "error":        str(e),
+            }
+            Path(output_path).write_text(json.dumps(fallback, indent=2))
+            print(f"Wrote empty fallback to {output_path} — check logs above for root cause")
         sys.exit(0)  # exit 0 so the git commit + push steps still run

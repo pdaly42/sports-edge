@@ -1,0 +1,119 @@
+"""
+NFL QB stats via nfl_data_py.
+
+Identifies the starter each week (QB with most attempts) and computes
+rolling performance metrics used as features in the prediction model.
+
+Features produced (per team, per week):
+  qb_epa_per_att   — passing EPA per attempt (best single predictor)
+  qb_comp_pct      — completion percentage
+  qb_ypa           — yards per attempt
+  qb_td_int_ratio  — (TDs+1)/(INTs+1), Laplace-smoothed
+
+Rolling windows of 4 and 8 weeks are added for each metric.
+"""
+
+import pandas as pd
+import numpy as np
+import sys, os
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
+
+from pathlib import Path
+import nfl_data_py as nfl
+
+from config.settings import RAW_DIR
+
+NFL_RAW = RAW_DIR / "nfl"
+NFL_RAW.mkdir(parents=True, exist_ok=True)
+
+# Minimum attempts to count a QB as the starter that week
+MIN_ATTEMPTS = 10
+
+
+def _compute_qb_metrics(df: pd.DataFrame) -> pd.DataFrame:
+    """Add per-game QB efficiency metrics to a weekly QB row."""
+    df = df.copy()
+    df["qb_epa_per_att"]  = df["passing_epa"] / df["attempts"].replace(0, np.nan)
+    df["qb_comp_pct"]     = df["completions"] / df["attempts"].replace(0, np.nan)
+    df["qb_ypa"]          = df["passing_yards"] / df["attempts"].replace(0, np.nan)
+    df["qb_td_int_ratio"] = (df["passing_tds"] + 1) / (df["interceptions"] + 1)
+    return df
+
+
+def fetch_qb_weekly(seasons: list) -> pd.DataFrame:
+    """
+    Download weekly QB stats for all seasons, identify the starter per team/week
+    (highest attempts), and return one row per (season, week, team).
+    Caches to disk.
+    """
+    cache_path = NFL_RAW / f"qb_weekly_{min(seasons)}_{max(seasons)}.csv"
+    if cache_path.exists():
+        print(f"  Loading cached QB stats {min(seasons)}-{max(seasons)}")
+        return pd.read_csv(cache_path)
+
+    print(f"  Fetching QB weekly stats {min(seasons)}-{max(seasons)}...")
+    raw = nfl.import_weekly_data(seasons)
+    raw = raw[raw["season_type"] == "REG"].copy()
+
+    qbs = raw[
+        (raw["position"] == "QB") & (raw["attempts"] >= MIN_ATTEMPTS)
+    ][["player_name", "recent_team", "season", "week",
+       "completions", "attempts", "passing_yards",
+       "passing_tds", "interceptions", "passing_epa"]].copy()
+    qbs = qbs.rename(columns={"recent_team": "team"})
+
+    # One starter row per team/week — highest attempts
+    qbs = qbs.sort_values("attempts", ascending=False)
+    qbs = qbs.drop_duplicates(subset=["team", "season", "week"], keep="first")
+
+    qbs = _compute_qb_metrics(qbs)
+    qbs = qbs.sort_values(["team", "season", "week"]).reset_index(drop=True)
+
+    METRIC_COLS = ["qb_epa_per_att", "qb_comp_pct", "qb_ypa", "qb_td_int_ratio"]
+    for window in [4, 8]:
+        for col in METRIC_COLS:
+            qbs[f"{col}_{window}w"] = (
+                qbs.groupby("team")[col]
+                .transform(lambda x: x.shift(1).rolling(window, min_periods=2).mean())
+            )
+
+    qbs.to_csv(cache_path, index=False)
+    print(f"  Saved {len(qbs)} QB starter rows")
+    return qbs
+
+
+def get_qb_features_for_matchups(seasons: list) -> pd.DataFrame:
+    """
+    Return a DataFrame keyed on (season, week, team) with rolled QB features
+    ready to join onto the matchup DataFrame.
+    """
+    qbs = fetch_qb_weekly(seasons)
+    roll_cols = [c for c in qbs.columns if any(
+        c.startswith(p) for p in ["qb_epa_per_att_", "qb_comp_pct_", "qb_ypa_", "qb_td_int_ratio_"]
+    )]
+    return qbs[["season", "week", "team"] + roll_cols].copy()
+
+
+def get_current_qb_stats(seasons: list = None) -> pd.DataFrame:
+    """
+    Most recent week's starter QB rolling stats per team — used for live predictions.
+    Clears the cache so we always pull the freshest data.
+    """
+    if seasons is None:
+        current_year = pd.Timestamp.now().year
+        seasons = list(range(current_year - 3, current_year + 1))
+
+    # Bust cache so the current week is always fresh
+    cache_path = NFL_RAW / f"qb_weekly_{min(seasons)}_{max(seasons)}.csv"
+    if cache_path.exists():
+        cache_path.unlink()
+
+    qbs = fetch_qb_weekly(seasons)
+    latest = qbs.sort_values(["season", "week"]).groupby("team").last().reset_index()
+    return latest
+
+
+if __name__ == "__main__":
+    df = get_qb_features_for_matchups(list(range(2018, 2025)))
+    print(f"QB feature rows: {len(df)}")
+    print(df.head())
