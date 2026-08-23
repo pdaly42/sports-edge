@@ -65,8 +65,30 @@ jobs:
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
 
-      - name: Send email briefing
+      - name: Check that NFL predictions actually exist
         if: env.SKIP_NFL != 'true'
+        run: |
+          # Skip the email if the predictions file has no NFL games — happens
+          # when nfl_data_py 404s on the current week's stats, model file is
+          # missing, or the season hasn't kicked off yet. Better to send nothing
+          # than a "picks: none" email every Saturday morning.
+          NFL_COUNT=$(python3 -c "
+          import json
+          try:
+              d = json.load(open('predictions_${PRED_DATE}.json'))
+              print(sum(1 for g in d.get('games', []) if g.get('sport') == 'americanfootball_nfl'))
+          except Exception:
+              print(0)
+          ")
+          echo "NFL games in predictions file: $NFL_COUNT"
+          if [ "$NFL_COUNT" = "0" ]; then
+            echo "SKIP_EMAIL=true" >> $GITHUB_ENV
+          else
+            echo "SKIP_EMAIL=false" >> $GITHUB_ENV
+          fi
+
+      - name: Send email briefing
+        if: env.SKIP_NFL != 'true' && env.SKIP_EMAIL != 'true'
         run: python3 scripts/email_briefing.py "predictions_${PRED_DATE}.json"
         env:
           GMAIL_APP_PASSWORD: ${{ secrets.GMAIL_APP_PASSWORD }}

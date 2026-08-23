@@ -34,6 +34,7 @@ jobs:
         run: python3 scripts/train_if_needed.py
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
 
       - name: Generate predictions (today)
         run: |
@@ -43,6 +44,7 @@ jobs:
           python3 predict_today.py --date "$DATE"
         env:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
+          CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
 
       - name: Commit predictions
         run: |
