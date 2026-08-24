@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-24T15:57:27.082566+00:00",
+  "generated_at": "2026-08-24T16:27:17.625563+00:00",
   "date": "2026-08-24",
   "odds_available": true,
   "games": [
@@ -14,12 +14,12 @@
       "away_odds": -124,
       "spread": {
         "point": 1.5,
-        "price": -162
+        "price": -164
       },
       "total": {
-        "line": 7.5,
-        "over": 100,
-        "under": -122
+        "line": 7.0,
+        "over": -122,
+        "under": 100
       },
       "model_home_prob": 0.4948,
       "model_away_prob": 0.5052,
@@ -46,7 +46,7 @@
       "away_odds": -124,
       "spread": {
         "point": 1.5,
-        "price": -154
+        "price": -152
       },
       "total": {
         "line": 7.5,
@@ -78,7 +78,7 @@
       "away_odds": 169,
       "spread": {
         "point": -1.5,
-        "price": 118
+        "price": 120
       },
       "total": {
         "line": 8.0,
@@ -106,7 +106,7 @@
       "commence_time": "2026-08-24T23:41:00Z",
       "home_team": "Chicago White Sox",
       "away_team": "Texas Rangers",
-      "home_odds": -126,
+      "home_odds": -129,
       "away_odds": 120,
       "spread": {
         "point": -1.5,
@@ -119,11 +119,11 @@
       },
       "model_home_prob": 0.45,
       "model_away_prob": 0.55,
-      "home_no_vig_prob": 0.5509,
-      "away_no_vig_prob": 0.4491,
-      "home_edge": -0.1009,
-      "away_edge": 0.1009,
-      "home_ev": -0.1929,
+      "home_no_vig_prob": 0.5534,
+      "away_no_vig_prob": 0.4466,
+      "home_edge": -0.1034,
+      "away_edge": 0.1034,
+      "home_ev": -0.2012,
       "away_ev": 0.21,
       "home_kelly": 0.0,
       "away_kelly": 0.0438,
@@ -131,7 +131,7 @@
         "side": "away",
         "team": "Texas Rangers",
         "odds": 120,
-        "edge": 0.1009,
+        "edge": 0.1034,
         "ev": 0.21,
         "strength": "moderate"
       },
