@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-25T15:46:35.606732+00:00",
+  "generated_at": "2026-08-25T16:28:16.116854+00:00",
   "date": "2026-08-25",
   "odds_available": true,
   "games": [
@@ -11,24 +11,24 @@
       "home_team": "Miami Marlins",
       "away_team": "Boston Red Sox",
       "home_odds": 130,
-      "away_odds": -136,
+      "away_odds": -139,
       "spread": {
         "point": 1.5,
-        "price": -136
+        "price": -143
       },
       "total": {
         "line": 7.0,
-        "over": -125,
-        "under": 104
+        "over": -118,
+        "under": -102
       },
       "model_home_prob": 0.4331,
       "model_away_prob": 0.5669,
-      "home_no_vig_prob": 0.43,
-      "away_no_vig_prob": 0.57,
-      "home_edge": 0.0031,
-      "away_edge": -0.0031,
+      "home_no_vig_prob": 0.4278,
+      "away_no_vig_prob": 0.5722,
+      "home_edge": 0.0053,
+      "away_edge": -0.0053,
       "home_ev": -0.0039,
-      "away_ev": -0.0163,
+      "away_ev": -0.0253,
       "home_kelly": 0.0,
       "away_kelly": 0.0,
       "best_bet": null,
@@ -46,7 +46,7 @@
       "away_odds": -125,
       "spread": {
         "point": 1.5,
-        "price": -164
+        "price": -162
       },
       "total": {
         "line": 7.5,
@@ -110,7 +110,7 @@
       "away_odds": 131,
       "spread": {
         "point": -1.5,
-        "price": 138
+        "price": 136
       },
       "total": {
         "line": 8.5,
@@ -150,7 +150,7 @@
       "away_odds": 116,
       "spread": {
         "point": -1.5,
-        "price": 164
+        "price": 162
       },
       "total": {
         "line": 8.5,
@@ -186,7 +186,7 @@
       "commence_time": "2026-08-25T23:11:00Z",
       "home_team": "New York Mets",
       "away_team": "Milwaukee Brewers",
-      "home_odds": 148,
+      "home_odds": 151,
       "away_odds": -156,
       "spread": {
         "point": 1.5,
@@ -199,13 +199,13 @@
       },
       "model_home_prob": 0.4406,
       "model_away_prob": 0.5594,
-      "home_no_vig_prob": 0.3982,
-      "away_no_vig_prob": 0.6018,
-      "home_edge": 0.0424,
-      "away_edge": -0.0424,
-      "home_ev": 0.0927,
+      "home_no_vig_prob": 0.3953,
+      "away_no_vig_prob": 0.6047,
+      "home_edge": 0.0453,
+      "away_edge": -0.0453,
+      "home_ev": 0.1059,
       "away_ev": -0.082,
-      "home_kelly": 0.0157,
+      "home_kelly": 0.0175,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Zac Thornton",
@@ -254,7 +254,7 @@
       "away_odds": -106,
       "spread": {
         "point": 1.5,
-        "price": -182
+        "price": -188
       },
       "total": {
         "line": 7.5,
