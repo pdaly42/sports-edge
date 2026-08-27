@@ -1063,21 +1063,26 @@ function renderCard(game, threshold) {
         const oCls = oEdge == null ? 'neutral' : (oEdge > 0.03 ? 'positive' : oEdge < 0 ? 'negative' : 'neutral');
         const uCls = uEdge == null ? 'neutral' : (uEdge > 0.03 ? 'positive' : uEdge < 0 ? 'negative' : 'neutral');
         const ou = t.best_ou_bet;
+        const suppressed = t.suppressed === true;
         return `
         <div style="margin-top:8px;padding:8px 10px;background:#f8fafc;border-radius:8px;font-size:0.75rem;">
           <div style="display:flex;justify-content:space-between;align-items:center;gap:8px">
             <span style="color:var(--muted);font-weight:600;letter-spacing:0.03em;text-transform:uppercase;font-size:0.65rem">Total (model)</span>
             <span style="font-variant-numeric:tabular-nums">
               Model <strong>${t.predicted_total}</strong>
-              ${line != null ? `vs Market <strong>${line}</strong> (<span class="edge-val ${delta > 0 ? 'positive' : delta < 0 ? 'negative' : 'neutral'}">${deltaStr}</span>)` : ''}
+              ${line != null && !suppressed ? `vs Market <strong>${line}</strong> (<span class="edge-val ${delta > 0 ? 'positive' : delta < 0 ? 'negative' : 'neutral'}">${deltaStr}</span>)` : (line != null ? `vs Market <strong>${line}</strong>` : '')}
             </span>
           </div>
-          ${line != null ? `
+          ${suppressed ? `
+          <div style="margin-top:4px;color:#92400e;font-size:0.7rem;font-style:italic">
+            Model output outside plausible range — over/under recommendation suppressed
+          </div>` : ''}
+          ${!suppressed && line != null ? `
           <div style="display:flex;justify-content:space-between;margin-top:4px;font-variant-numeric:tabular-nums">
             <span>Over ${line}: <span class="edge-val ${oCls}">${fmtEdgePct(oEdge)}</span></span>
             <span>Under ${line}: <span class="edge-val ${uCls}">${fmtEdgePct(uEdge)}</span></span>
           </div>` : ''}
-          ${ou ? `
+          ${!suppressed && ou ? `
           <div style="margin-top:6px;padding:6px 8px;background:${ou.strength==='strong'?'#dcfce7':'#fef9c3'};border-radius:6px;font-size:0.75rem">
             <span style="font-weight:700;color:${ou.strength==='strong'?'#15803d':'#854d0e'}">
               ${ou.strength === 'strong' ? '★ STRONG O/U' : '◆ MODERATE O/U'}

@@ -1,218 +1,271 @@
 {
-  "generated_at": "2026-08-27T17:01:18.396564+00:00",
+  "generated_at": "2026-08-27T22:01:35.406683+00:00",
   "date": "2026-08-27",
   "odds_available": true,
   "games": [
     {
-      "id": "484411acaf382c9b99aa08d6e6ccd79f",
+      "id": "401816695",
       "sport": "baseball_mlb",
       "sport_label": "MLB",
-      "commence_time": "2026-08-27T17:06:00Z",
+      "commence_time": "2026-08-27T17:05Z",
       "home_team": "Washington Nationals",
       "away_team": "Colorado Rockies",
       "home_odds": -140,
       "away_odds": 131,
       "spread": {
-        "point": -1.5,
-        "price": 142
+        "point": 1.5,
+        "price": -110
       },
       "total": {
         "line": 9.5,
-        "over": -120,
+        "over": -118,
         "under": -102
       },
-      "model_home_prob": 0.6168,
-      "model_away_prob": 0.3832,
+      "model_home_prob": 0.5973,
+      "model_away_prob": 0.4027,
       "home_no_vig_prob": 0.574,
       "away_no_vig_prob": 0.426,
-      "home_edge": 0.0428,
-      "away_edge": -0.0428,
-      "home_ev": 0.0574,
-      "away_ev": -0.1148,
-      "home_kelly": 0.0201,
+      "home_edge": 0.0233,
+      "away_edge": -0.0233,
+      "home_ev": 0.0239,
+      "away_ev": -0.0698,
+      "home_kelly": 0.0084,
       "away_kelly": 0.0,
       "best_bet": null,
       "home_pitcher": "Jake Irvin",
-      "away_pitcher": "Gabriel Hughes"
+      "away_pitcher": "Gabriel Hughes",
+      "data_notes": [
+        "Model was last trained 26 days ago"
+      ]
     },
     {
-      "id": "f9efae328746bce7662ce368bb304f87",
+      "id": "401816700",
       "sport": "baseball_mlb",
       "sport_label": "MLB",
-      "commence_time": "2026-08-27T18:16:00Z",
+      "commence_time": "2026-08-27T18:15Z",
       "home_team": "St. Louis Cardinals",
       "away_team": "Baltimore Orioles",
-      "home_odds": 116,
-      "away_odds": -124,
+      "home_odds": 119,
+      "away_odds": -127,
       "spread": {
-        "point": 1.5,
-        "price": -156
+        "point": -1.5,
+        "price": -110
       },
       "total": {
         "line": 8.0,
-        "over": -108,
-        "under": -112
+        "over": -109,
+        "under": -110
       },
-      "model_home_prob": 0.5724,
-      "model_away_prob": 0.4276,
-      "home_no_vig_prob": 0.4554,
-      "away_no_vig_prob": 0.5446,
-      "home_edge": 0.117,
-      "away_edge": -0.117,
-      "home_ev": 0.2364,
-      "away_ev": -0.2276,
-      "home_kelly": 0.0509,
+      "model_home_prob": 0.609,
+      "model_away_prob": 0.391,
+      "home_no_vig_prob": 0.4494,
+      "away_no_vig_prob": 0.5506,
+      "home_edge": 0.1596,
+      "away_edge": -0.1596,
+      "home_ev": 0.3337,
+      "away_ev": -0.3011,
+      "home_kelly": 0.0701,
       "away_kelly": 0.0,
       "best_bet": {
         "side": "home",
         "team": "St. Louis Cardinals",
-        "odds": 116,
-        "edge": 0.117,
-        "ev": 0.2364,
-        "strength": "moderate"
+        "odds": 119,
+        "edge": 0.1596,
+        "ev": 0.3337,
+        "strength": "strong"
       },
       "home_pitcher": "Gordon Graceffo",
       "away_pitcher": "Trevor Rogers",
-      "justification": "St. Louis Cardinals are 3-7 in their last 10 (Baltimore Orioles 5-5); season records 66-68 vs 65-68. St. Louis Cardinals's avg run differential is -0.7 vs Baltimore Orioles's -1.4 over the last 10 games. Gordon Graceffo (ERA 3.13) has a meaningful ERA advantage over Trevor Rogers (ERA 4.14)."
+      "justification": "St. Louis Cardinals are 3-7 in their last 10 (Baltimore Orioles 4-6); season records 67-68 vs 65-69. St. Louis Cardinals's avg run differential is -0.7 vs Baltimore Orioles's -1.4 over the last 10 games. Gordon Graceffo (ERA 2.98) has a meaningful ERA advantage over Trevor Rogers (ERA 4.38).",
+      "data_notes": [
+        "Model was last trained 26 days ago"
+      ]
     },
     {
-      "id": "68a5f4cb0d65f2fc93321ae004027c46",
+      "id": "401816696",
       "sport": "baseball_mlb",
       "sport_label": "MLB",
-      "commence_time": "2026-08-27T23:06:00Z",
+      "commence_time": "2026-08-27T23:05Z",
       "home_team": "New York Yankees",
       "away_team": "Houston Astros",
-      "home_odds": -150,
-      "away_odds": 143,
+      "home_odds": -153,
+      "away_odds": 142,
       "spread": {
-        "point": -1.5,
-        "price": 130
+        "point": 1.5,
+        "price": -110
       },
       "total": {
         "line": 8.0,
         "over": -115,
         "under": -105
       },
-      "model_home_prob": 0.5907,
-      "model_away_prob": 0.4093,
-      "home_no_vig_prob": 0.5932,
-      "away_no_vig_prob": 0.4068,
-      "home_edge": -0.0025,
-      "away_edge": 0.0025,
-      "home_ev": -0.0155,
-      "away_ev": -0.0054,
+      "model_home_prob": 0.5703,
+      "model_away_prob": 0.4297,
+      "home_no_vig_prob": 0.5941,
+      "away_no_vig_prob": 0.4059,
+      "home_edge": -0.0238,
+      "away_edge": 0.0238,
+      "home_ev": -0.057,
+      "away_ev": 0.0399,
       "home_kelly": 0.0,
-      "away_kelly": 0.0,
+      "away_kelly": 0.007,
       "best_bet": null,
       "home_pitcher": "Gerrit Cole",
-      "away_pitcher": "Hayden Wesneski"
+      "away_pitcher": "Hayden Wesneski",
+      "data_notes": [
+        "Model was last trained 26 days ago"
+      ]
     },
     {
-      "id": "55ee0a20c48002519602e2362965c6e6",
+      "id": "401816697",
       "sport": "baseball_mlb",
       "sport_label": "MLB",
-      "commence_time": "2026-08-27T23:08:00Z",
+      "commence_time": "2026-08-27T23:07Z",
       "home_team": "Toronto Blue Jays",
       "away_team": "Kansas City Royals",
-      "home_odds": -101,
-      "away_odds": -106,
+      "home_odds": -102,
+      "away_odds": -105,
       "spread": {
-        "point": 1.5,
-        "price": -172
+        "point": -1.5,
+        "price": -110
       },
       "total": {
         "line": 8.5,
-        "over": -104,
-        "under": -118
+        "over": -101,
+        "under": -119
       },
-      "model_home_prob": 0.575,
-      "model_away_prob": 0.425,
-      "home_no_vig_prob": 0.4941,
-      "away_no_vig_prob": 0.5059,
-      "home_edge": 0.0809,
-      "away_edge": -0.0809,
-      "home_ev": 0.1443,
-      "away_ev": -0.1741,
-      "home_kelly": 0.0364,
+      "model_home_prob": 0.5541,
+      "model_away_prob": 0.4459,
+      "home_no_vig_prob": 0.4964,
+      "away_no_vig_prob": 0.5036,
+      "home_edge": 0.0577,
+      "away_edge": -0.0577,
+      "home_ev": 0.0973,
+      "away_ev": -0.1294,
+      "home_kelly": 0.0248,
       "away_kelly": 0.0,
-      "best_bet": {
-        "side": "home",
-        "team": "Toronto Blue Jays",
-        "odds": -101,
-        "edge": 0.0809,
-        "ev": 0.1443,
-        "strength": "moderate"
-      },
+      "best_bet": null,
       "home_pitcher": "Spencer Arrighetti",
       "away_pitcher": "Noah Cameron",
-      "justification": "Toronto Blue Jays are 5-5 in their last 10 (Kansas City Royals 9-1); season records 65-69 vs 59-75. Toronto Blue Jays's avg run differential is -2.3 vs Kansas City Royals's +1.7 over the last 10 games. Model prices Toronto Blue Jays at 57.5% \u2014 a +8.1% edge over the market line."
+      "data_notes": [
+        "Model was last trained 26 days ago"
+      ]
     },
     {
-      "id": "4f28746c8d3ba89a48ef42722f1bbc9c",
+      "id": "401816699",
       "sport": "baseball_mlb",
       "sport_label": "MLB",
-      "commence_time": "2026-08-27T23:11:00Z",
+      "commence_time": "2026-08-27T23:10Z",
       "home_team": "New York Mets",
       "away_team": "Milwaukee Brewers",
-      "home_odds": 178,
-      "away_odds": -192,
+      "home_odds": 184,
+      "away_odds": -198,
       "spread": {
-        "point": 1.5,
-        "price": -106
+        "point": -1.5,
+        "price": -110
       },
       "total": {
         "line": 7.0,
-        "over": -115,
-        "under": -105
+        "over": -108,
+        "under": -112
       },
-      "model_home_prob": 0.2779,
-      "model_away_prob": 0.7221,
-      "home_no_vig_prob": 0.3536,
-      "away_no_vig_prob": 0.6464,
-      "home_edge": -0.0757,
-      "away_edge": 0.0757,
-      "home_ev": -0.2274,
-      "away_ev": 0.0982,
+      "model_home_prob": 0.2711,
+      "model_away_prob": 0.7289,
+      "home_no_vig_prob": 0.3464,
+      "away_no_vig_prob": 0.6536,
+      "home_edge": -0.0753,
+      "away_edge": 0.0753,
+      "home_ev": -0.2301,
+      "away_ev": 0.097,
       "home_kelly": 0.0,
-      "away_kelly": 0.0471,
+      "away_kelly": 0.048,
       "best_bet": null,
       "home_pitcher": "Sean Manaea",
-      "away_pitcher": "Jacob Misiorowski"
+      "away_pitcher": "Jacob Misiorowski",
+      "data_notes": [
+        "Model was last trained 26 days ago"
+      ]
     },
     {
-      "id": "927a7b09cc5f1512d0324748164c0b5f",
+      "id": "401816698",
       "sport": "baseball_mlb",
       "sport_label": "MLB",
-      "commence_time": "2026-08-27T23:16:00Z",
+      "commence_time": "2026-08-27T23:15Z",
       "home_team": "Atlanta Braves",
       "away_team": "Los Angeles Dodgers",
-      "home_odds": -119,
-      "away_odds": 111,
+      "home_odds": -115,
+      "away_odds": 107,
       "spread": {
-        "point": -1.5,
-        "price": 180
+        "point": 1.5,
+        "price": -110
       },
       "total": {
         "line": 6.5,
-        "over": -104,
-        "under": -118
+        "over": -103,
+        "under": -117
       },
-      "model_home_prob": 0.4977,
-      "model_away_prob": 0.5023,
-      "home_no_vig_prob": 0.5341,
-      "away_no_vig_prob": 0.4659,
-      "home_edge": -0.0364,
-      "away_edge": 0.0364,
-      "home_ev": -0.0841,
-      "away_ev": 0.0599,
+      "model_home_prob": 0.4764,
+      "model_away_prob": 0.5236,
+      "home_no_vig_prob": 0.5254,
+      "away_no_vig_prob": 0.4746,
+      "home_edge": -0.049,
+      "away_edge": 0.049,
+      "home_ev": -0.1093,
+      "away_ev": 0.0839,
       "home_kelly": 0.0,
-      "away_kelly": 0.0135,
+      "away_kelly": 0.0196,
       "best_bet": null,
       "home_pitcher": "Chris Sale",
-      "away_pitcher": "Yoshinobu Yamamoto"
+      "away_pitcher": "Yoshinobu Yamamoto",
+      "data_notes": [
+        "Model was last trained 26 days ago"
+      ]
+    },
+    {
+      "id": "401873298",
+      "sport": "americanfootball_nfl",
+      "sport_label": "NFL",
+      "commence_time": "2026-08-27T23:00Z",
+      "home_team": "Buffalo Bills",
+      "away_team": "Pittsburgh Steelers",
+      "home_odds": -156,
+      "away_odds": 130,
+      "spread": {
+        "point": 3.0,
+        "price": -110
+      },
+      "total": {
+        "line": 34.5,
+        "over": -115,
+        "under": -105
+      },
+      "model_home_prob": 0.581,
+      "model_away_prob": 0.419,
+      "home_no_vig_prob": 0.5836,
+      "away_no_vig_prob": 0.4164,
+      "home_edge": -0.0026,
+      "away_edge": 0.0026,
+      "home_ev": -0.0466,
+      "away_ev": -0.0363,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_injury_score": 0.0,
+      "away_injury_score": 0.0,
+      "home_qb_injury_impact": 0.0,
+      "away_qb_injury_impact": 0.0,
+      "model_predicted_total": 1.5,
+      "totals": {
+        "predicted_total": 1.5,
+        "market_line": 34.5,
+        "suppressed": true,
+        "suppress_reason": "model output outside plausible NFL total range (20\u201380)"
+      },
+      "data_notes": [
+        "QB stats from 2024 season \u2014 nflverse hasn't published newer yet",
+        "No current injury report available",
+        "Totals model output 1.5 is implausible \u2014 over/under suppressed"
+      ]
     }
-  ],
-  "sport_errors": {
-    "nfl": "HTTP Error 404: Not Found"
-  }
+  ]
 }

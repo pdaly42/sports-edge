@@ -1060,7 +1060,24 @@ def predict_nfl(api_key: str, target_date: str) -> list:
             if totals_aligned is not None:
                 predicted_total = float(predict_total(totals_bundle, totals_aligned)[0])
                 pred["model_predicted_total"] = round(predicted_total, 1)
-                if market_total and market_total.get("line"):
+                # Sanity gate: modern NFL game totals live in ~25-65. Anything
+                # outside 20-80 means the totals model is broken (usually a
+                # feature-set mismatch between the pickled model and current
+                # inference code) and would produce a spurious "STRONG UNDER"
+                # or "STRONG OVER" badge. Suppress the edge/best_bet fields
+                # and flag the game via data_notes.
+                totals_suppressed = not (20.0 <= predicted_total <= 80.0)
+                if totals_suppressed:
+                    pred["totals"] = {
+                        "predicted_total":  round(predicted_total, 1),
+                        "market_line":      (market_total or {}).get("line"),
+                        "suppressed":       True,
+                        "suppress_reason":  "model output outside plausible NFL total range (20–80)",
+                    }
+                    pred.setdefault("_extra_data_notes", []).append(
+                        f"Totals model output {round(predicted_total,1)} is implausible — over/under suppressed"
+                    )
+                if not totals_suppressed and market_total and market_total.get("line"):
                     line = market_total["line"]
                     rmse = totals_bundle["rmse"]
                     p_over, p_under = over_under_probs(predicted_total, line, rmse)
@@ -1100,16 +1117,22 @@ def predict_nfl(api_key: str, target_date: str) -> list:
                             over_odds, under_odds, ou_edge_over, ou_edge_under
                         ),
                     }
-                else:
+                elif not totals_suppressed:
                     pred["totals"] = {"predicted_total": round(predicted_total, 1)}
 
-        if data_notes:
-            pred["data_notes"] = list(data_notes)
+        # Merge sport-level notes with any per-game notes accumulated (e.g. the
+        # totals-suppression warning above).
+        per_game_notes = pred.pop("_extra_data_notes", [])
+        merged_notes = list(data_notes) + list(per_game_notes)
+        if merged_notes:
+            pred["data_notes"] = merged_notes
         results.append(pred)
         tot_str = ""
-        if pred.get("totals") and pred["totals"].get("market_line"):
-            t = pred["totals"]
+        t = pred.get("totals") or {}
+        if t.get("market_line") and t.get("p_over") is not None:
             tot_str = f" | O/U {t['market_line']} → model={t['predicted_total']} over={t['p_over']:.0%}"
+        elif t.get("suppressed"):
+            tot_str = f" | O/U SUPPRESSED (model={t['predicted_total']} out of range)"
         print(
             f"  {away_api} @ {home_api}: model={pred['model_home_prob']} "
             f"edge={pred['home_edge']}{tot_str}"
