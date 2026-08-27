@@ -637,6 +637,17 @@ def predict_mlb(api_key: str, target_date: str) -> list:
     team_records = fetch_mlb_team_records()
 
     bundle = load_model(sport="mlb", model_type="xgb")
+
+    # Model-age data-quality note (any sport)
+    import time as _time
+    from pathlib import Path as _Path
+    _mlb_notes: list[str] = []
+    _mp = _Path("models/mlb_xgb_model.pkl")
+    if _mp.exists():
+        age_days = (_time.time() - _mp.stat().st_mtime) / 86400
+        if age_days > 14:
+            _mlb_notes.append(f"Model was last trained {int(age_days)} days ago")
+
     results = []
 
     for game in games:
@@ -706,6 +717,8 @@ def predict_mlb(api_key: str, target_date: str) -> list:
                     "team_records":  team_records,
                 }
             )
+        if _mlb_notes:
+            pred["data_notes"] = list(_mlb_notes)
         results.append(pred)
         print(f"  {away_api}({away_pitcher_name}) @ {home_api}({home_pitcher_name}): "
               f"model={pred['model_home_prob']} edge={pred['home_edge']}")
@@ -868,6 +881,41 @@ def predict_nfl(api_key: str, target_date: str) -> list:
     except Exception as e:
         print(f"  Injury data unavailable (offseason or error): {e}")
         injury_scores = {}
+
+    # ── Data-quality notes surfaced on each game card ──────────────────────
+    # If any data source fell back to an older season or is unavailable, we
+    # warn the user rather than silently degrading. Same list is attached to
+    # every game in the run since it's sport-level, not per-game.
+    import time as _time
+    from pathlib import Path as _Path
+    current_yr = pd.Timestamp.now().year
+    data_notes: list[str] = []
+
+    if qb_stats is None or (hasattr(qb_stats, "empty") and qb_stats.empty):
+        data_notes.append("QB efficiency data unavailable")
+    elif "season" in getattr(qb_stats, "columns", []):
+        qb_yr = int(qb_stats["season"].max())
+        if qb_yr < current_yr - 1:
+            data_notes.append(f"QB stats from {qb_yr} season — nflverse hasn't published newer yet")
+
+    if epa_stats is None or (hasattr(epa_stats, "empty") and epa_stats.empty):
+        data_notes.append("Team EPA data unavailable")
+    elif "season" in getattr(epa_stats, "columns", []):
+        epa_yr = int(epa_stats["season"].max())
+        if epa_yr < current_yr - 1:
+            data_notes.append(f"Team EPA from {epa_yr} season")
+
+    if not injury_scores:
+        data_notes.append("No current injury report available")
+
+    _model_path = _Path("models/nfl_xgb_model.pkl")
+    if _model_path.exists():
+        model_age_days = (_time.time() - _model_path.stat().st_mtime) / 86400
+        if model_age_days > 14:
+            data_notes.append(f"Model was last trained {int(model_age_days)} days ago")
+
+    if data_notes:
+        print(f"  Data-quality notes: {data_notes}")
 
     results = []
     for game in games:
@@ -1055,6 +1103,8 @@ def predict_nfl(api_key: str, target_date: str) -> list:
                 else:
                     pred["totals"] = {"predicted_total": round(predicted_total, 1)}
 
+        if data_notes:
+            pred["data_notes"] = list(data_notes)
         results.append(pred)
         tot_str = ""
         if pred.get("totals") and pred["totals"].get("market_line"):
