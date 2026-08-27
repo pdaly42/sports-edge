@@ -116,17 +116,39 @@ def get_team_epa_for_matchups(seasons: list) -> pd.DataFrame:
 
 
 def get_current_team_epa(seasons: list = None) -> pd.DataFrame:
-    """Most recent rolling EPA per team — used for live predictions."""
+    """
+    Most recent rolling EPA per team — used for live predictions.
+
+    Resilient to nflverse not yet publishing the current season's play-by-play
+    (404s until Week 1 regular season data lands). Drops the newest season and
+    retries if the initial fetch fails. Returns empty on total failure — the
+    caller in predict_nfl handles that.
+    """
     if seasons is None:
         current_year = pd.Timestamp.now().year
         seasons = list(range(current_year - 3, current_year + 1))
-    # Bust cache so the current week reflects the latest game results
-    cache_path = NFL_RAW / f"team_epa_{min(seasons)}_{max(seasons)}.csv"
-    if cache_path.exists():
-        cache_path.unlink()
-    epa = fetch_team_epa_weekly(seasons)
-    latest = epa.sort_values(["season", "week"]).groupby("team").last().reset_index()
-    return latest
+
+    attempt = list(seasons)
+    while attempt:
+        cache_path = NFL_RAW / f"team_epa_{min(attempt)}_{max(attempt)}.csv"
+        if cache_path.exists():
+            cache_path.unlink()
+        try:
+            epa = fetch_team_epa_weekly(attempt)
+            if epa is not None and not epa.empty:
+                if attempt != seasons:
+                    print(f"  Team EPA: falling back to seasons {min(attempt)}-{max(attempt)} "
+                          f"(current year pbp not yet published)")
+                latest = epa.sort_values(["season", "week"]).groupby("team").last().reset_index()
+                return latest
+            attempt = attempt[:-1]
+        except Exception as e:
+            print(f"  Team EPA {max(attempt)} unavailable ({type(e).__name__}: {e}); "
+                  f"trying without it")
+            attempt = attempt[:-1]
+
+    print("  Team EPA: no seasons available — returning empty frame")
+    return pd.DataFrame()
 
 
 if __name__ == "__main__":

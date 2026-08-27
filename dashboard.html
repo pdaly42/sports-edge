@@ -961,10 +961,16 @@ function renderCard(game, threshold) {
   const hasEdge  = bestEdge !== null && bestEdge >= threshold;
   const bb = pred?.best_bet;
   let badgeClass, badgeText;
-  if (!pred)                         { badgeClass = 'none';     badgeText = 'ODDS PENDING'; }
+  // Three distinct "no-badge" states:
+  //   ODDS PENDING — no market lines yet (sportsbook hasn't posted)
+  //   NO MODEL     — market has lines, but the model didn't produce a prediction
+  //                  (typically preseason NFL when nflverse data isn't published)
+  //   NO EDGE      — model ran but neither side crossed the edge threshold
+  if (!pred && !h2h)                    { badgeClass = 'none';     badgeText = 'ODDS PENDING'; }
+  else if (!pred)                       { badgeClass = 'none';     badgeText = 'NO MODEL'; }
   else if (bb?.strength === 'strong')   { badgeClass = 'strong';   badgeText = `EDGE +${(bb.edge*100).toFixed(1)}%`; }
   else if (bb?.strength === 'moderate') { badgeClass = 'moderate'; badgeText = `EDGE +${(bb.edge*100).toFixed(1)}%`; }
-  else                               { badgeClass = 'none';     badgeText = 'NO EDGE'; }
+  else                                  { badgeClass = 'none';     badgeText = 'NO EDGE'; }
 
   const time = new Date(game.commence_time).toLocaleTimeString('en-US', {
     hour: 'numeric', minute: '2-digit', timeZoneName: 'short'

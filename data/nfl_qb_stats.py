@@ -98,19 +98,40 @@ def get_current_qb_stats(seasons: list = None) -> pd.DataFrame:
     """
     Most recent week's starter QB rolling stats per team — used for live predictions.
     Clears the cache so we always pull the freshest data.
+
+    Resilient to nflverse not yet publishing the current season's weekly data
+    (which 404s until roughly after Week 1 of the regular season). If the full
+    range fails, progressively drops the most recent season and retries. If
+    every season fails, returns an empty DataFrame — predict_nfl handles that
+    gracefully by treating QB features as neutral (0.0).
     """
     if seasons is None:
         current_year = pd.Timestamp.now().year
         seasons = list(range(current_year - 3, current_year + 1))
 
-    # Bust cache so the current week is always fresh
-    cache_path = NFL_RAW / f"qb_weekly_{min(seasons)}_{max(seasons)}.csv"
-    if cache_path.exists():
-        cache_path.unlink()
+    attempt = list(seasons)
+    while attempt:
+        # Bust cache for this exact range so the current week reflects reality
+        cache_path = NFL_RAW / f"qb_weekly_{min(attempt)}_{max(attempt)}.csv"
+        if cache_path.exists():
+            cache_path.unlink()
+        try:
+            qbs = fetch_qb_weekly(attempt)
+            if qbs is not None and not qbs.empty:
+                if attempt != seasons:
+                    print(f"  QB stats: falling back to seasons {min(attempt)}-{max(attempt)} "
+                          f"(current year not yet published)")
+                latest = qbs.sort_values(["season", "week"]).groupby("team").last().reset_index()
+                return latest
+            # Empty result — treat like a soft 404
+            attempt = attempt[:-1]
+        except Exception as e:
+            print(f"  QB weekly {max(attempt)} unavailable ({type(e).__name__}: {e}); "
+                  f"trying without it")
+            attempt = attempt[:-1]
 
-    qbs = fetch_qb_weekly(seasons)
-    latest = qbs.sort_values(["season", "week"]).groupby("team").last().reset_index()
-    return latest
+    print("  QB weekly stats: no seasons available — returning empty frame")
+    return pd.DataFrame()
 
 
 if __name__ == "__main__":
