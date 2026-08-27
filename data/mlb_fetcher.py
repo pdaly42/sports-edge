@@ -5,6 +5,7 @@ Builds the same style of matchup DataFrame as nba_fetcher.py.
 """
 
 import sys, os, time, warnings
+from datetime import datetime
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 warnings.filterwarnings("ignore")
 
@@ -73,8 +74,14 @@ def fetch_team_season(team: str, season: int) -> pd.DataFrame:
     cache_path = MLB_RAW / f"{team}_{season}.csv"
     if cache_path.exists():
         df = pd.read_csv(cache_path, parse_dates=["date"])
-        # If cached before pitcher columns were added, re-fetch
-        if "win_pitcher" not in df.columns:
+        # Bust cache for the in-progress season on every read — otherwise new
+        # games played after the last fetch never make it into the training
+        # data, and the weekly retrain silently produces the same model each
+        # week even though real games have happened.
+        current_year = datetime.utcnow().year
+        if season >= current_year:
+            cache_path.unlink()
+        elif "win_pitcher" not in df.columns:
             cache_path.unlink()
         else:
             return df
@@ -87,7 +94,12 @@ def fetch_team_season(team: str, season: int) -> pd.DataFrame:
         print(f"    Error {team} {season}: {e}")
         return pd.DataFrame()
 
-    # Drop rows without a result (postponed, future games)
+    # Drop rows without a result (postponed, future games). BRef sometimes
+    # returns non-numeric sentinels like "Unknown" for R/RA on games with data
+    # issues — coerce first so those become NaN and get dropped rather than
+    # crashing the float() cast below.
+    raw["R"]  = pd.to_numeric(raw["R"],  errors="coerce")
+    raw["RA"] = pd.to_numeric(raw["RA"], errors="coerce")
     raw = raw.dropna(subset=["W/L", "R", "RA"])
     raw = raw[raw["W/L"].isin(["W", "L", "W-wo", "L-wo"])]
 
