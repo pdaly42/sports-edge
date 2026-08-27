@@ -769,10 +769,15 @@ def _best_ou_bet(line: float, predicted: float, p_over: float, p_under: float,
     if not candidates:
         return None
     side, prob, odds, edge = max(candidates, key=lambda x: x[3])
+    # EV is included so O/U picks can be ranked on the same scale as
+    # moneyline picks when the daily best-bet cap is applied.
+    payout = abs(odds)/100 if odds < 0 else odds/100
+    ev = prob * payout - (1 - prob)
     return {
         "side":     side,
         "odds":     odds,
         "edge":     round(edge, 4),
+        "ev":       round(ev, 4),
         "strength": "strong" if edge >= 0.07 else "moderate",
     }
 
@@ -1604,14 +1609,29 @@ def run(api_key: str, output_path: str = None, target_date: str = None,
         except Exception as merge_err:
             print(f"  Merge skipped ({merge_err}) — overwriting file")
 
-    # Cap at 3 best bets per day — keep the highest-EV plays, clear the rest
+    # Cap at 3 best bets per day — moneyline and totals compete for the same
+    # 3 slots ranked by EV. A single game can contribute both a moneyline pick
+    # and an O/U pick, each evaluated independently.
     MAX_BEST_BETS = 3
-    flagged = [g for g in all_games if g.get("best_bet")]
-    flagged.sort(key=lambda g: g["best_bet"]["ev"], reverse=True)
-    keep_ids = {id(g) for g in flagged[:MAX_BEST_BETS]}
+    candidates: list[dict] = []
     for g in all_games:
-        if g.get("best_bet") and id(g) not in keep_ids:
+        ml = g.get("best_bet")
+        if ml and ml.get("ev") is not None:
+            candidates.append({"gid": id(g), "kind": "ml", "ev": ml["ev"]})
+        ou = (g.get("totals") or {}).get("best_ou_bet")
+        if ou and ou.get("ev") is not None:
+            candidates.append({"gid": id(g), "kind": "ou", "ev": ou["ev"]})
+    candidates.sort(key=lambda c: c["ev"], reverse=True)
+    kept = candidates[:MAX_BEST_BETS]
+    kept_ml_ids = {c["gid"] for c in kept if c["kind"] == "ml"}
+    kept_ou_ids = {c["gid"] for c in kept if c["kind"] == "ou"}
+
+    for g in all_games:
+        if g.get("best_bet") and id(g) not in kept_ml_ids:
             g["best_bet"] = None
+        tot = g.get("totals")
+        if tot and tot.get("best_ou_bet") and id(g) not in kept_ou_ids:
+            tot["best_ou_bet"] = None
 
     odds_available = any(g.get("home_odds") is not None for g in all_games)
 
@@ -1625,10 +1645,17 @@ def run(api_key: str, output_path: str = None, target_date: str = None,
         result["sport_errors"] = sport_errors
     Path(output_path).write_text(json.dumps(result, indent=2))
 
-    strong   = sum(1 for g in all_games if g.get("best_bet") and g["best_bet"]["strength"] == "strong")
-    moderate = sum(1 for g in all_games if g.get("best_bet") and g["best_bet"]["strength"] == "moderate")
+    def _cnt(strength: str) -> int:
+        n = sum(1 for g in all_games
+                if g.get("best_bet") and g["best_bet"].get("strength") == strength)
+        n += sum(1 for g in all_games
+                 if (g.get("totals") or {}).get("best_ou_bet") and
+                 g["totals"]["best_ou_bet"].get("strength") == strength)
+        return n
+    strong   = _cnt("strong")
+    moderate = _cnt("moderate")
     print(f"\nWrote {len(all_games)} predictions to {output_path}")
-    print(f"Strong edges: {strong}  |  Moderate edges: {moderate} (capped at {MAX_BEST_BETS} total)")
+    print(f"Strong edges: {strong}  |  Moderate edges: {moderate} (capped at {MAX_BEST_BETS} total, ML+O/U)")
     if sport_errors:
         print(f"Sport errors this run: {sport_errors}")
 
