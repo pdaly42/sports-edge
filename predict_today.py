@@ -1226,18 +1226,32 @@ def predict_cfb(api_key: str, target_date: str) -> list:
 
     # ── Team-name reconciliation ──────────────────────────────────────────
     # the-odds-api sends mascot-suffixed names ("USC Trojans", "Virginia
-    # Cavaliers"); CFBD uses plain school names ("USC", "Virginia"). Build a
-    # canonical set of CFBD names and try longest-prefix match to reconcile.
+    # Cavaliers", "Hawaii Rainbow Warriors"); CFBD uses plain school names
+    # sometimes with diacritics/apostrophes ("USC", "Hawai'i", "San José State").
+    # Reconcile by folding both sides to plain ASCII, then longest-prefix match.
+    import unicodedata as _ud
+
+    def _ascii_fold(s: str) -> str:
+        if not s:
+            return s
+        stripped = "".join(c for c in s if c not in "'’ʻ")
+        return _ud.normalize("NFKD", stripped).encode("ascii", "ignore").decode("ascii")
+
     cfbd_teams = set(team_conf.keys()) | set(ranked)
+    # Fold each CFBD name for matching, but keep a mapping back to the original
+    # spelling so downstream stat/rating joins still find the row.
+    cfbd_folded = {_ascii_fold(t): t for t in cfbd_teams}
 
     def _match_cfbd(odds_name: str) -> str:
         normalized = _cfb_normalize(odds_name)
-        if not normalized or normalized in cfbd_teams:
+        if not normalized:
             return normalized
-        # Longest CFBD name that is a prefix of the odds name (mascot-stripped)
-        candidates = [t for t in cfbd_teams if normalized.startswith(t + " ")]
+        folded = _ascii_fold(normalized)
+        if folded in cfbd_folded:
+            return cfbd_folded[folded]
+        candidates = [t for t in cfbd_folded if folded.startswith(t + " ")]
         if candidates:
-            return max(candidates, key=len)
+            return cfbd_folded[max(candidates, key=len)]
         return normalized
 
     results = []
