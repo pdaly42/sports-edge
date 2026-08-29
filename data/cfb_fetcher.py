@@ -12,12 +12,29 @@ Requires CFBD_API_KEY env var (free key at collegefootballdata.com/key).
 
 import pandas as pd
 import numpy as np
+import re
 import sys, os
 from datetime import datetime
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 import requests
 from pathlib import Path
+
+
+def _camel_to_snake(name: str) -> str:
+    """CFBD's API v2 returns camelCase; the rest of this module expects
+    snake_case. Convert once at the fetch boundary so all downstream code
+    keeps working regardless of which API version is live."""
+    return re.sub(r"(?<!^)(?=[A-Z])", "_", name).lower()
+
+
+def _normalize_records(records: list) -> list:
+    """Rename every dict key from camelCase → snake_case, recursively."""
+    if isinstance(records, dict):
+        return {_camel_to_snake(k): _normalize_records(v) for k, v in records.items()}
+    if isinstance(records, list):
+        return [_normalize_records(r) for r in records]
+    return records
 
 from config.settings import RAW_DIR, CFBD_API_KEY
 from utils.features import rolling_avg
@@ -46,7 +63,10 @@ def _get(path: str, params: dict = None) -> list:
         if not r.ok:
             print(f"  CFBD {path}: HTTP {r.status_code} — {r.text[:120]}")
             return []
-        return r.json()
+        # CFBD's v2 API returns camelCase; normalize to snake_case so all
+        # downstream code (fetch_season_games, fetch_rankings, etc.) keeps
+        # working with the field names it already expects.
+        return _normalize_records(r.json())
     except Exception as e:
         print(f"  CFBD {path}: network error — {e}")
         return []

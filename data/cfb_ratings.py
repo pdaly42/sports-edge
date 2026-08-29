@@ -49,6 +49,10 @@ def fetch_sp_ratings(season: int) -> pd.DataFrame:
         print(f"  SP+ {season}: error — {e}")
         return pd.DataFrame()
 
+    # CFBD v2 returns camelCase; normalize so both schemas work.
+    from data.cfb_fetcher import _normalize_records
+    raw = _normalize_records(raw)
+
     rows = []
     for entry in raw:
         rows.append({
@@ -57,7 +61,7 @@ def fetch_sp_ratings(season: int) -> pd.DataFrame:
             "sp_overall":   (entry.get("rating") or 0.0),
             "sp_offense":   ((entry.get("offense") or {}).get("rating") or 0.0),
             "sp_defense":   ((entry.get("defense") or {}).get("rating") or 0.0),
-            "sp_st":        ((entry.get("specialTeams") or {}).get("rating") or 0.0),
+            "sp_st":        ((entry.get("special_teams") or {}).get("rating") or 0.0),
         })
     df = pd.DataFrame(rows)
     if not df.empty:

@@ -65,6 +65,10 @@ def fetch_ppa_games(season: int) -> pd.DataFrame:
         print(f"  CFB PPA {season}: error — {e}")
         return pd.DataFrame()
 
+    # CFBD v2 returns camelCase; normalize so both schemas work.
+    from data.cfb_fetcher import _normalize_records
+    raw = _normalize_records(raw)
+
     rows = []
     for entry in raw:
         offense = entry.get("offense") or {}
