@@ -1225,13 +1225,21 @@ def predict_cfb(api_key: str, target_date: str) -> list:
         return home in ranked or away in ranked
 
     results = []
+    skipped = []
     for game in games:
         home = _cfb_normalize(game["home_team"])
         away = _cfb_normalize(game["away_team"])
 
         # Skip non-qualifying games entirely — keeps the daily file lean and
-        # avoids polluting predictions with games the model wasn't trained on
+        # avoids polluting predictions with games the model wasn't trained on.
+        # Log the reason so name-mismatch bugs are visible.
         if not _qualifies(home, away):
+            home_conf = team_conf.get(home, "?")
+            away_conf = team_conf.get(away, "?")
+            skipped.append(
+                f"{away} ({away_conf}) @ {home} ({home_conf}) "
+                f"ranked={home in ranked}/{away in ranked}"
+            )
             continue
 
         prob_home = None
@@ -1325,6 +1333,11 @@ def predict_cfb(api_key: str, target_date: str) -> list:
         pred["away_ranked"] = away in ranked
         results.append(pred)
         print(f"  {away} @ {home}: model={pred['model_home_prob']} edge={pred['home_edge']}")
+
+    if skipped:
+        print(f"  Filtered out {len(skipped)} non-qualifying game(s):")
+        for s in skipped:
+            print(f"    - {s}")
 
     return results
 
