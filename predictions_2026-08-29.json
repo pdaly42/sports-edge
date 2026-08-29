@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-08-29T19:04:02.700774+00:00",
+  "generated_at": "2026-08-29T19:39:40.117793+00:00",
   "date": "2026-08-29",
   "odds_available": true,
   "games": [
@@ -485,32 +485,44 @@
       "commence_time": "2026-08-29T17:00Z",
       "home_team": "Indianapolis Colts",
       "away_team": "Detroit Lions",
-      "home_odds": null,
-      "away_odds": null,
-      "spread": null,
-      "total": null,
-      "model_home_prob": 0.3547,
-      "model_away_prob": 0.6453,
-      "home_no_vig_prob": null,
-      "away_no_vig_prob": null,
-      "home_edge": null,
-      "away_edge": null,
-      "home_ev": null,
-      "away_ev": null,
-      "home_kelly": null,
-      "away_kelly": null,
+      "home_odds": -130,
+      "away_odds": 107,
+      "spread": {
+        "point": 1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 36.5,
+        "over": -108,
+        "under": -112
+      },
+      "model_home_prob": 0.3316,
+      "model_away_prob": 0.6684,
+      "home_no_vig_prob": 0.5392,
+      "away_no_vig_prob": 0.4608,
+      "home_edge": -0.2076,
+      "away_edge": 0.2076,
+      "home_ev": -0.4133,
+      "away_ev": 0.3836,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0896,
       "best_bet": null,
+      "justification": "Detroit Lions's QB has a +0.465 EPA/attempt advantage over Indianapolis Colts (-0.010) over the last 4 weeks. Model prices Detroit Lions at 66.8% \u2014 a +20.8% edge over the market.",
       "home_injury_score": 0.0,
       "away_injury_score": 0.0,
       "home_qb_injury_impact": 0.0,
       "away_qb_injury_impact": 0.0,
-      "model_predicted_total": 59.1,
+      "model_predicted_total": 14.0,
       "totals": {
-        "predicted_total": 59.1
+        "predicted_total": 14.0,
+        "market_line": 36.5,
+        "suppressed": true,
+        "suppress_reason": "model output outside plausible NFL total range (20\u201380)"
       },
       "data_notes": [
         "QB stats from 2024 season \u2014 nflverse hasn't published newer yet",
-        "No current injury report available"
+        "No current injury report available",
+        "Totals model output 14.0 is implausible \u2014 over/under suppressed"
       ]
     },
     {
@@ -520,32 +532,43 @@
       "commence_time": "2026-08-29T22:00Z",
       "home_team": "Tennessee Titans",
       "away_team": "Chicago Bears",
-      "home_odds": null,
-      "away_odds": null,
-      "spread": null,
-      "total": null,
-      "model_home_prob": 0.527,
-      "model_away_prob": 0.473,
-      "home_no_vig_prob": null,
-      "away_no_vig_prob": null,
-      "home_edge": null,
-      "away_edge": null,
-      "home_ev": null,
-      "away_ev": null,
-      "home_kelly": null,
-      "away_kelly": null,
+      "home_odds": -124,
+      "away_odds": 103,
+      "spread": {
+        "point": 1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 36.5,
+        "over": -112,
+        "under": -108
+      },
+      "model_home_prob": 0.4935,
+      "model_away_prob": 0.5065,
+      "home_no_vig_prob": 0.5291,
+      "away_no_vig_prob": 0.4709,
+      "home_edge": -0.0356,
+      "away_edge": 0.0356,
+      "home_ev": -0.1085,
+      "away_ev": 0.0282,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0068,
       "best_bet": null,
       "home_injury_score": 0.0,
       "away_injury_score": 0.0,
       "home_qb_injury_impact": 0.0,
       "away_qb_injury_impact": 0.0,
-      "model_predicted_total": 54.7,
+      "model_predicted_total": 9.6,
       "totals": {
-        "predicted_total": 54.7
+        "predicted_total": 9.6,
+        "market_line": 36.5,
+        "suppressed": true,
+        "suppress_reason": "model output outside plausible NFL total range (20\u201380)"
       },
       "data_notes": [
         "QB stats from 2024 season \u2014 nflverse hasn't published newer yet",
-        "No current injury report available"
+        "No current injury report available",
+        "Totals model output 9.6 is implausible \u2014 over/under suppressed"
       ]
     }
   ]
