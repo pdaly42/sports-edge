@@ -1224,11 +1224,27 @@ def predict_cfb(api_key: str, target_date: str) -> list:
             return True
         return home in ranked or away in ranked
 
+    # ── Team-name reconciliation ──────────────────────────────────────────
+    # the-odds-api sends mascot-suffixed names ("USC Trojans", "Virginia
+    # Cavaliers"); CFBD uses plain school names ("USC", "Virginia"). Build a
+    # canonical set of CFBD names and try longest-prefix match to reconcile.
+    cfbd_teams = set(team_conf.keys()) | set(ranked)
+
+    def _match_cfbd(odds_name: str) -> str:
+        normalized = _cfb_normalize(odds_name)
+        if not normalized or normalized in cfbd_teams:
+            return normalized
+        # Longest CFBD name that is a prefix of the odds name (mascot-stripped)
+        candidates = [t for t in cfbd_teams if normalized.startswith(t + " ")]
+        if candidates:
+            return max(candidates, key=len)
+        return normalized
+
     results = []
     skipped = []
     for game in games:
-        home = _cfb_normalize(game["home_team"])
-        away = _cfb_normalize(game["away_team"])
+        home = _match_cfbd(game["home_team"])
+        away = _match_cfbd(game["away_team"])
 
         # Skip non-qualifying games entirely — keeps the daily file lean and
         # avoids polluting predictions with games the model wasn't trained on.
