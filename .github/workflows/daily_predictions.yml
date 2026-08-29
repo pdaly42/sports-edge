@@ -2,7 +2,12 @@ name: Daily Predictions
 
 on:
   schedule:
-    - cron: '0 16 * * *'   # noon ET — catches all morning MLB lines incl. West Coast
+    - cron: '0 13 * * *'   # 9am ET (13:00 UTC EDT / 14:00 UTC EST equivalent) —
+                           # runs before any football kickoff so ESPN's /odds
+                           # endpoint still has lines for early CFB (12pm ET
+                           # Saturdays) and NFL Thursday/Sunday slates. MLB
+                           # lines are typically posted the night before, so
+                           # 9am is early enough for the full day's slate.
   workflow_dispatch:
     inputs:
       target_date:
