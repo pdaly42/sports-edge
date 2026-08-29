@@ -1,0 +1,551 @@
+season,week,poll,team,rank
+2025,1,AP Top 25,Texas,1
+2025,1,AP Top 25,Penn State,2
+2025,1,AP Top 25,Ohio State,3
+2025,1,AP Top 25,Clemson,4
+2025,1,AP Top 25,Georgia,5
+2025,1,AP Top 25,Notre Dame,6
+2025,1,AP Top 25,Oregon,7
+2025,1,AP Top 25,Alabama,8
+2025,1,AP Top 25,LSU,9
+2025,1,AP Top 25,Miami,10
+2025,1,AP Top 25,Arizona State,11
+2025,1,AP Top 25,Illinois,12
+2025,1,AP Top 25,South Carolina,13
+2025,1,AP Top 25,Michigan,14
+2025,1,AP Top 25,Florida,15
+2025,1,AP Top 25,SMU,16
+2025,1,AP Top 25,Kansas State,17
+2025,1,AP Top 25,Oklahoma,18
+2025,1,AP Top 25,Texas A&M,19
+2025,1,AP Top 25,Indiana,20
+2025,1,AP Top 25,Ole Miss,21
+2025,1,AP Top 25,Iowa State,22
+2025,1,AP Top 25,Texas Tech,23
+2025,1,AP Top 25,Tennessee,24
+2025,1,AP Top 25,Boise State,25
+2025,2,AP Top 25,Ohio State,1
+2025,2,AP Top 25,Penn State,2
+2025,2,AP Top 25,LSU,3
+2025,2,AP Top 25,Georgia,4
+2025,2,AP Top 25,Miami,5
+2025,2,AP Top 25,Oregon,6
+2025,2,AP Top 25,Texas,7
+2025,2,AP Top 25,Clemson,8
+2025,2,AP Top 25,Notre Dame,9
+2025,2,AP Top 25,South Carolina,10
+2025,2,AP Top 25,Illinois,11
+2025,2,AP Top 25,Arizona State,12
+2025,2,AP Top 25,Florida,13
+2025,2,AP Top 25,Florida State,14
+2025,2,AP Top 25,Michigan,15
+2025,2,AP Top 25,Iowa State,16
+2025,2,AP Top 25,SMU,17
+2025,2,AP Top 25,Oklahoma,18
+2025,2,AP Top 25,Texas A&M,19
+2025,2,AP Top 25,Ole Miss,20
+2025,2,AP Top 25,Alabama,21
+2025,2,AP Top 25,Tennessee,22
+2025,2,AP Top 25,Indiana,23
+2025,2,AP Top 25,Texas Tech,24
+2025,2,AP Top 25,Utah,25
+2025,3,AP Top 25,Ohio State,1
+2025,3,AP Top 25,Penn State,2
+2025,3,AP Top 25,LSU,3
+2025,3,AP Top 25,Oregon,4
+2025,3,AP Top 25,Miami,5
+2025,3,AP Top 25,Georgia,6
+2025,3,AP Top 25,Texas,7
+2025,3,AP Top 25,Notre Dame,8
+2025,3,AP Top 25,Illinois,9
+2025,3,AP Top 25,Florida State,10
+2025,3,AP Top 25,South Carolina,11
+2025,3,AP Top 25,Clemson,12
+2025,3,AP Top 25,Oklahoma,13
+2025,3,AP Top 25,Iowa State,14
+2025,3,AP Top 25,Tennessee,15
+2025,3,AP Top 25,Texas A&M,16
+2025,3,AP Top 25,Ole Miss,17
+2025,3,AP Top 25,South Florida,18
+2025,3,AP Top 25,Alabama,19
+2025,3,AP Top 25,Utah,20
+2025,3,AP Top 25,Texas Tech,21
+2025,3,AP Top 25,Indiana,22
+2025,3,AP Top 25,Michigan,23
+2025,3,AP Top 25,Auburn,24
+2025,3,AP Top 25,Missouri,25
+2025,4,AP Top 25,Ohio State,1
+2025,4,AP Top 25,Penn State,2
+2025,4,AP Top 25,LSU,3
+2025,4,AP Top 25,Miami,4
+2025,4,AP Top 25,Georgia,5
+2025,4,AP Top 25,Oregon,6
+2025,4,AP Top 25,Florida State,7
+2025,4,AP Top 25,Texas,8
+2025,4,AP Top 25,Illinois,9
+2025,4,AP Top 25,Texas A&M,10
+2025,4,AP Top 25,Oklahoma,11
+2025,4,AP Top 25,Iowa State,12
+2025,4,AP Top 25,Ole Miss,13
+2025,4,AP Top 25,Alabama,14
+2025,4,AP Top 25,Tennessee,15
+2025,4,AP Top 25,Utah,16
+2025,4,AP Top 25,Texas Tech,17
+2025,4,AP Top 25,Georgia Tech,18
+2025,4,AP Top 25,Indiana,19
+2025,4,AP Top 25,Vanderbilt,20
+2025,4,AP Top 25,Michigan,21
+2025,4,AP Top 25,Auburn,22
+2025,4,AP Top 25,Missouri,23
+2025,4,AP Top 25,Notre Dame,24
+2025,4,AP Top 25,USC,25
+2025,5,AP Top 25,Ohio State,1
+2025,5,AP Top 25,Miami,2
+2025,5,AP Top 25,Penn State,3
+2025,5,AP Top 25,LSU,4
+2025,5,AP Top 25,Georgia,5
+2025,5,AP Top 25,Oregon,6
+2025,5,AP Top 25,Oklahoma,7
+2025,5,AP Top 25,Florida State,8
+2025,5,AP Top 25,Texas A&M,9
+2025,5,AP Top 25,Texas,10
+2025,5,AP Top 25,Indiana,11
+2025,5,AP Top 25,Texas Tech,12
+2025,5,AP Top 25,Ole Miss,13
+2025,5,AP Top 25,Iowa State,14
+2025,5,AP Top 25,Tennessee,15
+2025,5,AP Top 25,Georgia Tech,16
+2025,5,AP Top 25,Alabama,17
+2025,5,AP Top 25,Vanderbilt,18
+2025,5,AP Top 25,Michigan,19
+2025,5,AP Top 25,Missouri,20
+2025,5,AP Top 25,USC,21
+2025,5,AP Top 25,Notre Dame,22
+2025,5,AP Top 25,Illinois,23
+2025,5,AP Top 25,TCU,24
+2025,5,AP Top 25,BYU,25
+2025,6,AP Top 25,Ohio State,1
+2025,6,AP Top 25,Oregon,2
+2025,6,AP Top 25,Miami,3
+2025,6,AP Top 25,Ole Miss,4
+2025,6,AP Top 25,Oklahoma,5
+2025,6,AP Top 25,Texas A&M,6
+2025,6,AP Top 25,Penn State,7
+2025,6,AP Top 25,Indiana,8
+2025,6,AP Top 25,Texas,9
+2025,6,AP Top 25,Alabama,10
+2025,6,AP Top 25,Texas Tech,11
+2025,6,AP Top 25,Georgia,12
+2025,6,AP Top 25,LSU,13
+2025,6,AP Top 25,Iowa State,14
+2025,6,AP Top 25,Tennessee,15
+2025,6,AP Top 25,Vanderbilt,16
+2025,6,AP Top 25,Georgia Tech,17
+2025,6,AP Top 25,Florida State,18
+2025,6,AP Top 25,Missouri,19
+2025,6,AP Top 25,Michigan,20
+2025,6,AP Top 25,Notre Dame,21
+2025,6,AP Top 25,Illinois,22
+2025,6,AP Top 25,BYU,23
+2025,6,AP Top 25,Virginia,24
+2025,6,AP Top 25,Arizona State,25
+2025,7,AP Top 25,Ohio State,1
+2025,7,AP Top 25,Miami,2
+2025,7,AP Top 25,Oregon,3
+2025,7,AP Top 25,Ole Miss,4
+2025,7,AP Top 25,Texas A&M,5
+2025,7,AP Top 25,Oklahoma,6
+2025,7,AP Top 25,Indiana,7
+2025,7,AP Top 25,Alabama,8
+2025,7,AP Top 25,Texas Tech,9
+2025,7,AP Top 25,Georgia,10
+2025,7,AP Top 25,LSU,11
+2025,7,AP Top 25,Tennessee,12
+2025,7,AP Top 25,Georgia Tech,13
+2025,7,AP Top 25,Missouri,14
+2025,7,AP Top 25,Michigan,15
+2025,7,AP Top 25,Notre Dame,16
+2025,7,AP Top 25,Illinois,17
+2025,7,AP Top 25,BYU,18
+2025,7,AP Top 25,Virginia,19
+2025,7,AP Top 25,Vanderbilt,20
+2025,7,AP Top 25,Arizona State,21
+2025,7,AP Top 25,Iowa State,22
+2025,7,AP Top 25,Memphis,23
+2025,7,AP Top 25,South Florida,24
+2025,7,AP Top 25,Florida State,25
+2025,8,AP Top 25,Ohio State,1
+2025,8,AP Top 25,Miami,2
+2025,8,AP Top 25,Indiana,3
+2025,8,AP Top 25,Texas A&M,4
+2025,8,AP Top 25,Ole Miss,5
+2025,8,AP Top 25,Alabama,6
+2025,8,AP Top 25,Texas Tech,7
+2025,8,AP Top 25,Oregon,8
+2025,8,AP Top 25,Georgia,9
+2025,8,AP Top 25,LSU,10
+2025,8,AP Top 25,Tennessee,11
+2025,8,AP Top 25,Georgia Tech,12
+2025,8,AP Top 25,Notre Dame,13
+2025,8,AP Top 25,Oklahoma,14
+2025,8,AP Top 25,BYU,15
+2025,8,AP Top 25,Missouri,16
+2025,8,AP Top 25,Vanderbilt,17
+2025,8,AP Top 25,Virginia,18
+2025,8,AP Top 25,South Florida,19
+2025,8,AP Top 25,USC,20
+2025,8,AP Top 25,Texas,21
+2025,8,AP Top 25,Memphis,22
+2025,8,AP Top 25,Utah,23
+2025,8,AP Top 25,Cincinnati,24
+2025,8,AP Top 25,Nebraska,25
+2025,9,AP Top 25,Ohio State,1
+2025,9,AP Top 25,Indiana,2
+2025,9,AP Top 25,Texas A&M,3
+2025,9,AP Top 25,Alabama,4
+2025,9,AP Top 25,Georgia,5
+2025,9,AP Top 25,Oregon,6
+2025,9,AP Top 25,Georgia Tech,7
+2025,9,AP Top 25,Ole Miss,8
+2025,9,AP Top 25,Miami,9
+2025,9,AP Top 25,Vanderbilt,10
+2025,9,AP Top 25,BYU,11
+2025,9,AP Top 25,Notre Dame,12
+2025,9,AP Top 25,Oklahoma,13
+2025,9,AP Top 25,Texas Tech,14
+2025,9,AP Top 25,Missouri,15
+2025,9,AP Top 25,Virginia,16
+2025,9,AP Top 25,Tennessee,17
+2025,9,AP Top 25,South Florida,18
+2025,9,AP Top 25,Louisville,19
+2025,9,AP Top 25,LSU,20
+2025,9,AP Top 25,Cincinnati,21
+2025,9,AP Top 25,Texas,22
+2025,9,AP Top 25,Illinois,23
+2025,9,AP Top 25,Arizona State,24
+2025,9,AP Top 25,Michigan,25
+2025,10,AP Top 25,Ohio State,1
+2025,10,AP Top 25,Indiana,2
+2025,10,AP Top 25,Texas A&M,3
+2025,10,AP Top 25,Alabama,4
+2025,10,AP Top 25,Georgia,5
+2025,10,AP Top 25,Oregon,6
+2025,10,AP Top 25,Ole Miss,7
+2025,10,AP Top 25,Georgia Tech,8
+2025,10,AP Top 25,Vanderbilt,9
+2025,10,AP Top 25,BYU,10
+2025,10,AP Top 25,Miami,10
+2025,10,AP Top 25,Notre Dame,12
+2025,10,AP Top 25,Texas Tech,13
+2025,10,AP Top 25,Tennessee,14
+2025,10,AP Top 25,Virginia,15
+2025,10,AP Top 25,Louisville,16
+2025,10,AP Top 25,Cincinnati,17
+2025,10,AP Top 25,Oklahoma,18
+2025,10,AP Top 25,Missouri,19
+2025,10,AP Top 25,Texas,20
+2025,10,AP Top 25,Michigan,21
+2025,10,AP Top 25,Houston,22
+2025,10,AP Top 25,USC,23
+2025,10,AP Top 25,Utah,24
+2025,10,AP Top 25,Memphis,25
+2025,11,Playoff Committee Rankings,Ohio State,1
+2025,11,Playoff Committee Rankings,Indiana,2
+2025,11,Playoff Committee Rankings,Texas A&M,3
+2025,11,Playoff Committee Rankings,Alabama,4
+2025,11,Playoff Committee Rankings,Georgia,5
+2025,11,Playoff Committee Rankings,Ole Miss,6
+2025,11,Playoff Committee Rankings,BYU,7
+2025,11,Playoff Committee Rankings,Texas Tech,8
+2025,11,Playoff Committee Rankings,Oregon,9
+2025,11,Playoff Committee Rankings,Notre Dame,10
+2025,11,Playoff Committee Rankings,Texas,11
+2025,11,Playoff Committee Rankings,Oklahoma,12
+2025,11,Playoff Committee Rankings,Utah,13
+2025,11,Playoff Committee Rankings,Virginia,14
+2025,11,Playoff Committee Rankings,Louisville,15
+2025,11,Playoff Committee Rankings,Vanderbilt,16
+2025,11,Playoff Committee Rankings,Georgia Tech,17
+2025,11,Playoff Committee Rankings,Miami,18
+2025,11,Playoff Committee Rankings,USC,19
+2025,11,Playoff Committee Rankings,Iowa,20
+2025,11,Playoff Committee Rankings,Michigan,21
+2025,11,Playoff Committee Rankings,Missouri,22
+2025,11,Playoff Committee Rankings,Washington,23
+2025,11,Playoff Committee Rankings,Pittsburgh,24
+2025,11,Playoff Committee Rankings,Tennessee,25
+2025,11,AP Top 25,Ohio State,1
+2025,11,AP Top 25,Indiana,2
+2025,11,AP Top 25,Texas A&M,3
+2025,11,AP Top 25,Alabama,4
+2025,11,AP Top 25,Georgia,5
+2025,11,AP Top 25,Oregon,6
+2025,11,AP Top 25,Ole Miss,7
+2025,11,AP Top 25,BYU,8
+2025,11,AP Top 25,Texas Tech,9
+2025,11,AP Top 25,Notre Dame,10
+2025,11,AP Top 25,Oklahoma,11
+2025,11,AP Top 25,Virginia,12
+2025,11,AP Top 25,Texas,13
+2025,11,AP Top 25,Louisville,14
+2025,11,AP Top 25,Vanderbilt,15
+2025,11,AP Top 25,Georgia Tech,16
+2025,11,AP Top 25,Utah,17
+2025,11,AP Top 25,Miami,18
+2025,11,AP Top 25,Missouri,19
+2025,11,AP Top 25,USC,20
+2025,11,AP Top 25,Michigan,21
+2025,11,AP Top 25,Memphis,22
+2025,11,AP Top 25,Tennessee,23
+2025,11,AP Top 25,Washington,24
+2025,11,AP Top 25,Cincinnati,25
+2025,12,AP Top 25,Ohio State,1
+2025,12,AP Top 25,Indiana,2
+2025,12,AP Top 25,Texas A&M,3
+2025,12,AP Top 25,Alabama,4
+2025,12,AP Top 25,Georgia,5
+2025,12,AP Top 25,Ole Miss,6
+2025,12,AP Top 25,Oregon,7
+2025,12,AP Top 25,Texas Tech,8
+2025,12,AP Top 25,Notre Dame,9
+2025,12,AP Top 25,Texas,10
+2025,12,AP Top 25,Oklahoma,11
+2025,12,AP Top 25,BYU,12
+2025,12,AP Top 25,Vanderbilt,13
+2025,12,AP Top 25,Georgia Tech,14
+2025,12,AP Top 25,Utah,15
+2025,12,AP Top 25,Miami,16
+2025,12,AP Top 25,USC,17
+2025,12,AP Top 25,Michigan,18
+2025,12,AP Top 25,Louisville,19
+2025,12,AP Top 25,Virginia,20
+2025,12,AP Top 25,Tennessee,21
+2025,12,AP Top 25,Cincinnati,22
+2025,12,AP Top 25,Pittsburgh,23
+2025,12,AP Top 25,James Madison,24
+2025,12,AP Top 25,South Florida,25
+2025,12,Playoff Committee Rankings,Ohio State,1
+2025,12,Playoff Committee Rankings,Indiana,2
+2025,12,Playoff Committee Rankings,Texas A&M,3
+2025,12,Playoff Committee Rankings,Alabama,4
+2025,12,Playoff Committee Rankings,Georgia,5
+2025,12,Playoff Committee Rankings,Texas Tech,6
+2025,12,Playoff Committee Rankings,Ole Miss,7
+2025,12,Playoff Committee Rankings,Oregon,8
+2025,12,Playoff Committee Rankings,Notre Dame,9
+2025,12,Playoff Committee Rankings,Texas,10
+2025,12,Playoff Committee Rankings,Oklahoma,11
+2025,12,Playoff Committee Rankings,BYU,12
+2025,12,Playoff Committee Rankings,Utah,13
+2025,12,Playoff Committee Rankings,Vanderbilt,14
+2025,12,Playoff Committee Rankings,Miami,15
+2025,12,Playoff Committee Rankings,Georgia Tech,16
+2025,12,Playoff Committee Rankings,USC,17
+2025,12,Playoff Committee Rankings,Michigan,18
+2025,12,Playoff Committee Rankings,Virginia,19
+2025,12,Playoff Committee Rankings,Louisville,20
+2025,12,Playoff Committee Rankings,Iowa,21
+2025,12,Playoff Committee Rankings,Pittsburgh,22
+2025,12,Playoff Committee Rankings,Tennessee,23
+2025,12,Playoff Committee Rankings,South Florida,24
+2025,12,Playoff Committee Rankings,Cincinnati,25
+2025,13,Playoff Committee Rankings,Ohio State,1
+2025,13,Playoff Committee Rankings,Indiana,2
+2025,13,Playoff Committee Rankings,Texas A&M,3
+2025,13,Playoff Committee Rankings,Georgia,4
+2025,13,Playoff Committee Rankings,Texas Tech,5
+2025,13,Playoff Committee Rankings,Ole Miss,6
+2025,13,Playoff Committee Rankings,Oregon,7
+2025,13,Playoff Committee Rankings,Oklahoma,8
+2025,13,Playoff Committee Rankings,Notre Dame,9
+2025,13,Playoff Committee Rankings,Alabama,10
+2025,13,Playoff Committee Rankings,BYU,11
+2025,13,Playoff Committee Rankings,Utah,12
+2025,13,Playoff Committee Rankings,Miami,13
+2025,13,Playoff Committee Rankings,Vanderbilt,14
+2025,13,Playoff Committee Rankings,USC,15
+2025,13,Playoff Committee Rankings,Georgia Tech,16
+2025,13,Playoff Committee Rankings,Texas,17
+2025,13,Playoff Committee Rankings,Michigan,18
+2025,13,Playoff Committee Rankings,Virginia,19
+2025,13,Playoff Committee Rankings,Tennessee,20
+2025,13,Playoff Committee Rankings,Illinois,21
+2025,13,Playoff Committee Rankings,Missouri,22
+2025,13,Playoff Committee Rankings,Houston,23
+2025,13,Playoff Committee Rankings,Tulane,24
+2025,13,Playoff Committee Rankings,Arizona State,25
+2025,13,AP Top 25,Ohio State,1
+2025,13,AP Top 25,Indiana,2
+2025,13,AP Top 25,Texas A&M,3
+2025,13,AP Top 25,Georgia,4
+2025,13,AP Top 25,Ole Miss,5
+2025,13,AP Top 25,Oregon,6
+2025,13,AP Top 25,Texas Tech,6
+2025,13,AP Top 25,Oklahoma,8
+2025,13,AP Top 25,Notre Dame,9
+2025,13,AP Top 25,Alabama,10
+2025,13,AP Top 25,BYU,11
+2025,13,AP Top 25,Vanderbilt,12
+2025,13,AP Top 25,Utah,13
+2025,13,AP Top 25,Miami,14
+2025,13,AP Top 25,Georgia Tech,15
+2025,13,AP Top 25,USC,16
+2025,13,AP Top 25,Texas,17
+2025,13,AP Top 25,Michigan,18
+2025,13,AP Top 25,Virginia,19
+2025,13,AP Top 25,Tennessee,20
+2025,13,AP Top 25,James Madison,21
+2025,13,AP Top 25,North Texas,22
+2025,13,AP Top 25,Missouri,23
+2025,13,AP Top 25,Tulane,24
+2025,13,AP Top 25,Houston,25
+2025,14,AP Top 25,Ohio State,1
+2025,14,AP Top 25,Indiana,2
+2025,14,AP Top 25,Texas A&M,3
+2025,14,AP Top 25,Georgia,4
+2025,14,AP Top 25,Oregon,5
+2025,14,AP Top 25,Ole Miss,6
+2025,14,AP Top 25,Texas Tech,7
+2025,14,AP Top 25,Oklahoma,8
+2025,14,AP Top 25,Notre Dame,9
+2025,14,AP Top 25,Alabama,10
+2025,14,AP Top 25,BYU,11
+2025,14,AP Top 25,Vanderbilt,12
+2025,14,AP Top 25,Miami,13
+2025,14,AP Top 25,Utah,14
+2025,14,AP Top 25,Michigan,15
+2025,14,AP Top 25,Texas,16
+2025,14,AP Top 25,Virginia,17
+2025,14,AP Top 25,Tennessee,18
+2025,14,AP Top 25,USC,19
+2025,14,AP Top 25,James Madison,20
+2025,14,AP Top 25,North Texas,21
+2025,14,AP Top 25,Tulane,22
+2025,14,AP Top 25,Georgia Tech,23
+2025,14,AP Top 25,Pittsburgh,24
+2025,14,AP Top 25,SMU,25
+2025,14,Playoff Committee Rankings,Ohio State,1
+2025,14,Playoff Committee Rankings,Indiana,2
+2025,14,Playoff Committee Rankings,Texas A&M,3
+2025,14,Playoff Committee Rankings,Georgia,4
+2025,14,Playoff Committee Rankings,Texas Tech,5
+2025,14,Playoff Committee Rankings,Oregon,6
+2025,14,Playoff Committee Rankings,Ole Miss,7
+2025,14,Playoff Committee Rankings,Oklahoma,8
+2025,14,Playoff Committee Rankings,Notre Dame,9
+2025,14,Playoff Committee Rankings,Alabama,10
+2025,14,Playoff Committee Rankings,BYU,11
+2025,14,Playoff Committee Rankings,Miami,12
+2025,14,Playoff Committee Rankings,Utah,13
+2025,14,Playoff Committee Rankings,Vanderbilt,14
+2025,14,Playoff Committee Rankings,Michigan,15
+2025,14,Playoff Committee Rankings,Texas,16
+2025,14,Playoff Committee Rankings,USC,17
+2025,14,Playoff Committee Rankings,Virginia,18
+2025,14,Playoff Committee Rankings,Tennessee,19
+2025,14,Playoff Committee Rankings,Arizona State,20
+2025,14,Playoff Committee Rankings,SMU,21
+2025,14,Playoff Committee Rankings,Pittsburgh,22
+2025,14,Playoff Committee Rankings,Georgia Tech,23
+2025,14,Playoff Committee Rankings,Tulane,24
+2025,14,Playoff Committee Rankings,Arizona,25
+2025,15,AP Top 25,Ohio State,1
+2025,15,AP Top 25,Indiana,2
+2025,15,AP Top 25,Georgia,3
+2025,15,AP Top 25,Oregon,4
+2025,15,AP Top 25,Texas Tech,5
+2025,15,AP Top 25,Ole Miss,6
+2025,15,AP Top 25,Texas A&M,7
+2025,15,AP Top 25,Oklahoma,8
+2025,15,AP Top 25,Notre Dame,9
+2025,15,AP Top 25,Alabama,10
+2025,15,AP Top 25,BYU,11
+2025,15,AP Top 25,Miami,12
+2025,15,AP Top 25,Vanderbilt,13
+2025,15,AP Top 25,Texas,14
+2025,15,AP Top 25,Utah,15
+2025,15,AP Top 25,Virginia,16
+2025,15,AP Top 25,USC,17
+2025,15,AP Top 25,Michigan,18
+2025,15,AP Top 25,James Madison,19
+2025,15,AP Top 25,North Texas,20
+2025,15,AP Top 25,Tulane,21
+2025,15,AP Top 25,Arizona,22
+2025,15,AP Top 25,Navy,23
+2025,15,AP Top 25,Georgia Tech,24
+2025,15,AP Top 25,Missouri,25
+2025,15,Playoff Committee Rankings,Ohio State,1
+2025,15,Playoff Committee Rankings,Indiana,2
+2025,15,Playoff Committee Rankings,Georgia,3
+2025,15,Playoff Committee Rankings,Texas Tech,4
+2025,15,Playoff Committee Rankings,Oregon,5
+2025,15,Playoff Committee Rankings,Ole Miss,6
+2025,15,Playoff Committee Rankings,Texas A&M,7
+2025,15,Playoff Committee Rankings,Oklahoma,8
+2025,15,Playoff Committee Rankings,Alabama,9
+2025,15,Playoff Committee Rankings,Notre Dame,10
+2025,15,Playoff Committee Rankings,BYU,11
+2025,15,Playoff Committee Rankings,Miami,12
+2025,15,Playoff Committee Rankings,Texas,13
+2025,15,Playoff Committee Rankings,Vanderbilt,14
+2025,15,Playoff Committee Rankings,Utah,15
+2025,15,Playoff Committee Rankings,USC,16
+2025,15,Playoff Committee Rankings,Virginia,17
+2025,15,Playoff Committee Rankings,Arizona,18
+2025,15,Playoff Committee Rankings,Michigan,19
+2025,15,Playoff Committee Rankings,Tulane,20
+2025,15,Playoff Committee Rankings,Houston,21
+2025,15,Playoff Committee Rankings,Georgia Tech,22
+2025,15,Playoff Committee Rankings,Iowa,23
+2025,15,Playoff Committee Rankings,North Texas,24
+2025,15,Playoff Committee Rankings,James Madison,25
+2025,16,AP Top 25,Indiana,1
+2025,16,AP Top 25,Georgia,2
+2025,16,AP Top 25,Ohio State,3
+2025,16,AP Top 25,Texas Tech,4
+2025,16,AP Top 25,Oregon,5
+2025,16,AP Top 25,Ole Miss,6
+2025,16,AP Top 25,Texas A&M,7
+2025,16,AP Top 25,Oklahoma,8
+2025,16,AP Top 25,Notre Dame,9
+2025,16,AP Top 25,Miami,10
+2025,16,AP Top 25,Alabama,11
+2025,16,AP Top 25,BYU,12
+2025,16,AP Top 25,Vanderbilt,13
+2025,16,AP Top 25,Texas,14
+2025,16,AP Top 25,Utah,15
+2025,16,AP Top 25,USC,16
+2025,16,AP Top 25,Tulane,17
+2025,16,AP Top 25,Michigan,18
+2025,16,AP Top 25,James Madison,19
+2025,16,AP Top 25,Virginia,20
+2025,16,AP Top 25,Arizona,21
+2025,16,AP Top 25,Navy,22
+2025,16,AP Top 25,North Texas,23
+2025,16,AP Top 25,Georgia Tech,24
+2025,16,AP Top 25,Missouri,25
+2025,16,Playoff Committee Rankings,Indiana,1
+2025,16,Playoff Committee Rankings,Ohio State,2
+2025,16,Playoff Committee Rankings,Georgia,3
+2025,16,Playoff Committee Rankings,Texas Tech,4
+2025,16,Playoff Committee Rankings,Oregon,5
+2025,16,Playoff Committee Rankings,Ole Miss,6
+2025,16,Playoff Committee Rankings,Texas A&M,7
+2025,16,Playoff Committee Rankings,Oklahoma,8
+2025,16,Playoff Committee Rankings,Alabama,9
+2025,16,Playoff Committee Rankings,Miami,10
+2025,16,Playoff Committee Rankings,Notre Dame,11
+2025,16,Playoff Committee Rankings,BYU,12
+2025,16,Playoff Committee Rankings,Texas,13
+2025,16,Playoff Committee Rankings,Vanderbilt,14
+2025,16,Playoff Committee Rankings,Utah,15
+2025,16,Playoff Committee Rankings,USC,16
+2025,16,Playoff Committee Rankings,Arizona,17
+2025,16,Playoff Committee Rankings,Michigan,18
+2025,16,Playoff Committee Rankings,Virginia,19
+2025,16,Playoff Committee Rankings,Tulane,20
+2025,16,Playoff Committee Rankings,Houston,21
+2025,16,Playoff Committee Rankings,Georgia Tech,22
+2025,16,Playoff Committee Rankings,Iowa,23
+2025,16,Playoff Committee Rankings,James Madison,24
+2025,16,Playoff Committee Rankings,North Texas,25

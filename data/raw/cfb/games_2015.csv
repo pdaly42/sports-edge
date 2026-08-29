@@ -1,0 +1,1492 @@
+id,season,week,season_type,start_date,home_team,away_team,home_conference,away_conference,home_points,away_points,neutral_site,conference_game,venue
+400795501,2015,1,regular,2015-08-29 19:30:00,Montana,North Dakota State,Big Sky,MVFC,38,35,False,False,Washington-Grizzly Stadium
+400763593,2015,1,regular,2015-09-03 22:00:00,UCF,Florida International,American Athletic,Conference USA,14,15,False,False,FBC Mortgage Stadium
+400603840,2015,1,regular,2015-09-03 22:00:00,South Carolina,North Carolina,SEC,ACC,17,13,True,False,Bank of America Stadium
+400795766,2015,1,regular,2015-09-03 23:00:00,Murray State,Kentucky Wesleyan,OVC,Independent DII,52,12,False,False,Roy Stewart Stadium
+400799035,2015,1,regular,2015-09-03 23:00:00,Samford,Central Arkansas,Southern,Southland,45,16,False,False,Seibert Stadium
+400795494,2015,1,regular,2015-09-03 23:00:00,Western Illinois,Eastern Illinois,MVFC,OVC,33,5,False,False,Hanson Field
+400795765,2015,1,regular,2015-09-03 23:00:00,Eastern Kentucky,Valparaiso,OVC,Pioneer,52,10,False,False,Roy Kidd Stadium
+400799864,2015,1,regular,2015-09-03 23:00:00,Campbell,Pikeville,Pioneer,,41,20,False,False,Barker-Lane Stadium
+400795587,2015,1,regular,2015-09-03 23:00:00,Charleston Southern,North Greenville,Big South,Independent DII,41,14,False,False,Buccaneer Field
+400799924,2015,1,regular,2015-09-03 23:00:00,Northwestern State,SE Louisiana,Southland,Southland,20,34,False,True,Harry Turpin Stadium
+400763399,2015,1,regular,2015-09-03 23:00:00,Central Michigan,Oklahoma State,Mid-American,Big 12,13,24,False,False,Kelly/Shorts Stadium
+400787299,2015,1,regular,2015-09-03 23:00:00,Ball State,VMI,Mid-American,Southern,48,36,False,False,Scheumann Stadium
+400756896,2015,1,regular,2015-09-03 23:00:00,Wake Forest,Elon,ACC,CAA,41,3,False,False,Allegacy Federal Credit Union Stadium
+400764854,2015,1,regular,2015-09-03 23:30:00,UConn,Villanova,American Athletic,CAA,20,15,False,False,Pratt & Whitney Stadium
+400756895,2015,1,regular,2015-09-03 23:30:00,Georgia Tech,Alcorn State,ACC,SWAC,69,6,False,False,Bobby Dodd Stadium
+400795577,2015,1,regular,2015-09-03 23:30:00,East Tennessee State,Kennesaw State,FCS Independents,Big South,16,56,True,False,Kermit Tipton Stadium
+400603839,2015,1,regular,2015-09-04 00:00:00,Vanderbilt,Western Kentucky,SEC,Conference USA,12,14,False,False,FirstBank Stadium
+400756883,2015,1,regular,2015-09-04 00:30:00,Utah,Michigan,Pac-12,Big Ten,24,17,False,False,Rice-Eccles Stadium
+400787302,2015,1,regular,2015-09-04 01:00:00,Idaho,Ohio,Sun Belt,Mid-American,28,45,False,False,Kibbie Dome
+400763398,2015,1,regular,2015-09-04 01:00:00,Minnesota,TCU,Big Ten,Big 12,17,23,False,False,Huntington Bank Stadium
+400787110,2015,1,regular,2015-09-04 01:00:00,Utah State,Southern Utah,Mountain West,Big Sky,12,9,False,False,Maverik Stadium
+400795502,2015,1,regular,2015-09-04 01:05:00,Montana State,Fort Lewis,Big Sky,Rocky Mountain,45,14,False,False,Bobcat Stadium
+400756894,2015,1,regular,2015-09-04 01:30:00,Tulane,Duke,American Athletic,ACC,7,37,False,False,Yulman Stadium
+400756882,2015,1,regular,2015-09-04 02:00:00,Arizona,UTSA,Pac-12,Conference USA,42,32,False,False,Arizona Stadium
+400787109,2015,1,regular,2015-09-04 02:00:00,San José State,New Hampshire,Mountain West,CAA,43,13,False,False,CEFCU Stadium
+400787108,2015,1,regular,2015-09-04 02:00:00,Nevada,UC Davis,Mountain West,Big Sky,31,17,False,False,Mackay Stadium
+400799923,2015,1,regular,2015-09-04 02:00:00,Fresno State,Abilene Christian,Mountain West,Southland,34,13,False,False,Valley Children's Stadium
+400787107,2015,1,regular,2015-09-04 05:00:00,Hawai'i,Colorado,Mountain West,Pac-12,28,20,False,False,Aloha Stadium
+400763587,2015,1,regular,2015-09-04 19:30:00,Georgia State,Charlotte,Sun Belt,Conference USA,20,23,False,False,Georgia Dome
+400799427,2015,1,regular,2015-09-04 23:00:00,Central Connecticut,Lehigh,NEC,Patriot,14,20,False,False,Arute Field
+400764855,2015,1,regular,2015-09-04 23:00:00,SMU,Baylor,American Athletic,Big 12,21,56,False,False,Gerald J. Ford Stadium
+400763470,2015,1,regular,2015-09-04 23:00:00,Western Michigan,Michigan State,Mid-American,Big Ten,24,37,False,False,Waldo Stadium
+400795631,2015,1,regular,2015-09-04 23:00:00,Delaware,Jacksonville,CAA,Pioneer,14,20,False,False,Delaware Stadium
+400760491,2015,1,regular,2015-09-04 23:00:00,Army,Fordham,FBS Independents,Patriot,35,37,False,False,Michie Stadium
+400756903,2015,1,regular,2015-09-04 23:00:00,Syracuse,Rhode Island,ACC,CAA,47,0,False,False,JMA Wireless Dome
+400756887,2015,1,regular,2015-09-05 00:00:00,Oregon State,Weber State,Pac-12,Big Sky,26,7,False,False,Reser Stadium
+400756888,2015,1,regular,2015-09-05 02:26:00,Boise State,Washington,Mountain West,Pac-12,16,13,False,False,Albertsons Stadium
+400799833,2015,1,regular,2015-09-05 16:00:00,Robert Morris,Dayton,NEC,Pioneer,24,27,False,False,Joe Walton Stadium
+400603831,2015,1,regular,2015-09-05 16:00:00,Georgia,UL Monroe,SEC,Sun Belt,51,14,False,False,Sanford Stadium
+400799832,2015,1,regular,2015-09-05 16:00:00,Duquesne,Kentucky Christian,NEC,,47,7,False,False,Arthur J. Rooney Athletic Field
+400756891,2015,1,regular,2015-09-05 16:00:00,Northwestern,Stanford,Big Ten,Pac-12,16,6,False,False,Ryan Field
+400799428,2015,1,regular,2015-09-05 16:00:00,Saint Francis,Georgetown,NEC,Patriot,48,20,False,False,DeGol Field
+400603835,2015,1,regular,2015-09-05 16:00:00,Ole Miss,UT Martin,SEC,OVC,76,3,False,False,Vaught-Hemingway Stadium
+400763401,2015,1,regular,2015-09-05 16:00:00,Kansas,South Dakota State,Big 12,MVFC,38,41,False,False,Memorial Stadium
+400764860,2015,1,regular,2015-09-05 16:00:00,Navy,Colgate,American Athletic,Patriot,48,10,False,False,Navy-Marine Corps Memorial Stadium
+400763473,2015,1,regular,2015-09-05 16:00:00,Iowa,Illinois State,Big Ten,MVFC,31,14,False,False,Kinnick Stadium
+400763494,2015,1,regular,2015-09-05 16:00:00,Maryland,Richmond,Big Ten,CAA,50,21,False,False,SECU Stadium
+400763496,2015,1,regular,2015-09-05 16:00:00,Rutgers,Norfolk State,Big Ten,MEAC,63,13,True,False,High Point Solutions Stadium
+400756898,2015,1,regular,2015-09-05 16:30:00,Clemson,Wofford,ACC,Southern,49,10,False,False,"Memorial Stadium (Clemson, SC)"
+400756897,2015,1,regular,2015-09-05 17:00:00,Boston College,Maine,ACC,CAA,24,3,False,False,"Alumni Stadium (Chestnut Hill, MA)"
+400756902,2015,1,regular,2015-09-05 17:00:00,Pittsburgh,Youngstown State,ACC,MVFC,45,37,False,False,Acrisure Stadium
+400795590,2015,1,regular,2015-09-05 17:00:00,Monmouth,Holy Cross,Big South,Patriot,19,27,True,False,Kessler Field
+400835430,2015,1,regular,2015-09-05 18:00:00,Illinois,Kent State,Big Ten,Mid-American,52,3,False,False,"Memorial Stadium (Champaign, IL)"
+400756889,2015,1,regular,2015-09-05 18:00:00,Washington State,Portland State,Pac-12,Big Sky,17,24,False,False,Gesa Field
+400799831,2015,1,regular,2015-09-05 19:00:00,Bryant,American International,NEC,Northeast 10,27,3,False,False,Bulldog Stadium
+400799927,2015,1,regular,2015-09-05 19:00:00,Incarnate Word,Texas A&M-Kingsville,Southland,Lone Star,18,16,False,False,Gayle and Tom Benson Stadium
+400795495,2015,1,regular,2015-09-05 19:05:00,Indiana State,Butler,MVFC,Pioneer,52,17,False,False,Memorial Stadium
+400763592,2015,1,regular,2015-09-05 19:30:00,Tulsa,Florida Atlantic,American Athletic,Conference USA,47,44,False,False,Chapman Stadium
+400603828,2015,1,regular,2015-09-05 19:30:00,Arkansas,UTEP,SEC,Conference USA,48,13,False,False,Razorback Stadium
+400763495,2015,1,regular,2015-09-05 19:30:00,Nebraska,BYU,Big Ten,FBS Independents,28,33,False,False,"Memorial Stadium (Lincoln, NE)"
+400763588,2015,1,regular,2015-09-05 19:30:00,Eastern Michigan,Old Dominion,Mid-American,Conference USA,34,38,False,False,Rynearson Stadium
+400763497,2015,1,regular,2015-09-05 19:30:00,Temple,Penn State,American Athletic,Big Ten,27,10,False,False,Lincoln Financial Field
+400756904,2015,1,regular,2015-09-05 19:30:00,UCLA,Virginia,Pac-12,ACC,34,16,False,False,Rose Bowl
+400603829,2015,1,regular,2015-09-05 19:30:00,Auburn,Louisville,SEC,ACC,31,24,True,False,Georgia Dome
+400787304,2015,1,regular,2015-09-05 19:30:00,Miami (OH),Presbyterian,Mid-American,Big South,26,7,False,False,Yager Stadium
+400787111,2015,1,regular,2015-09-05 19:30:00,Air Force,Morgan State,Mountain West,MEAC,63,7,False,False,Falcon Stadium
+400787412,2015,1,regular,2015-09-05 19:30:00,App State,Howard,Sun Belt,MEAC,49,0,False,False,Kidd Brewer Stadium
+400787303,2015,1,regular,2015-09-05 19:30:00,Buffalo,UAlbany,Mid-American,CAA,51,14,False,False,UB Stadium
+400763406,2015,1,regular,2015-09-05 19:30:00,Texas Tech,Sam Houston,Big 12,Southland,59,45,False,False,Jones AT&T Stadium
+400795504,2015,1,regular,2015-09-05 19:35:00,Northern Colorado,Western Colorado,Big Sky,Rocky Mountain,42,34,False,False,Nottingham Field
+400603834,2015,1,regular,2015-09-05 20:00:00,Missouri,Southeast Missouri State,SEC,OVC,34,3,False,False,Memorial Stadium
+400763472,2015,1,regular,2015-09-05 20:00:00,Indiana,Southern Illinois,Big Ten,MVFC,48,47,False,False,"Memorial Stadium (Bloomington, IN)"
+400787116,2015,1,regular,2015-09-05 20:00:00,Wyoming,North Dakota,Mountain West,Big Sky,13,24,False,False,War Memorial Stadium
+400787112,2015,1,regular,2015-09-05 20:00:00,Colorado State,Savannah State,Mountain West,MEAC,65,13,True,False,Sonny Lubick Field at Hughes Stadium
+400834350,2015,1,regular,2015-09-05 20:00:00,Tennessee,Bowling Green,SEC,Mid-American,59,30,True,False,Nissan Stadium
+400763591,2015,1,regular,2015-09-05 20:40:00,Rice,Wagner,Conference USA,NEC,56,16,False,False,Rice Stadium
+400756890,2015,1,regular,2015-09-05 21:00:00,California,Grambling,Pac-12,SWAC,73,14,False,False,California Memorial Stadium
+400795767,2015,1,regular,2015-09-05 21:45:00,Austin Peay,Mercer,OVC,Southern,7,28,False,False,Governors Stadium
+400799043,2015,1,regular,2015-09-05 22:00:00,The Citadel,Davidson,Southern,Pioneer,69,0,False,False,Johnson Hagood Stadium
+400764857,2015,1,regular,2015-09-05 22:00:00,East Carolina,Towson,American Athletic,CAA,28,20,False,False,Dowdy-Ficklen Stadium
+400799782,2015,1,regular,2015-09-05 22:00:00,North Carolina Central,St. Augustine's,MEAC,CIAA,72,0,False,False,O'Kelly-Riddick Stadium
+400799783,2015,1,regular,2015-09-05 22:00:00,North Carolina A&T,Shaw,MEAC,CIAA,61,7,False,False,Aggie Stadium
+400799429,2015,1,regular,2015-09-05 22:00:00,Bucknell,Marist,Patriot,Pioneer,17,0,False,False,Christy Mathewson-Memorial Stadium
+400799834,2015,1,regular,2015-09-05 22:00:00,Sacred Heart,Saint Anselm,NEC,Northeast 10,43,19,False,False,Campus Field
+400787414,2015,1,regular,2015-09-05 22:00:00,South Alabama,Gardner-Webb,Sun Belt,Big South,33,23,True,False,Ladd Peebles Stadium
+400795632,2015,1,regular,2015-09-05 22:00:00,James Madison,Morehead State,CAA,Pioneer,56,7,False,False,Bridgeforth Stadium
+400795633,2015,1,regular,2015-09-05 22:00:00,Lafayette,William & Mary,Patriot,CAA,7,34,False,False,Fisher Field
+400795768,2015,1,regular,2015-09-05 22:00:00,Chattanooga,Jacksonville State,Southern,OVC,20,23,False,False,Finley Stadium
+400756900,2015,1,regular,2015-09-05 22:00:00,Miami,Bethune-Cookman,ACC,MEAC,45,0,False,False,Hard Rock Stadium
+400799781,2015,1,regular,2015-09-05 22:00:00,Hampton,Kentucky State,MEAC,SIAC,35,20,False,False,Armstrong Stadium
+400756901,2015,1,regular,2015-09-05 22:00:00,NC State,Troy,ACC,Sun Belt,49,21,False,False,Carter-Finley Stadium
+400795503,2015,1,regular,2015-09-05 22:05:00,Idaho State,Black Hills State,Big Sky,Rocky Mountain,55,0,False,False,Holt Arena
+400799052,2015,1,regular,2015-09-05 23:00:00,Western Carolina,Mars Hill,Southern,South Atlantic,42,14,False,False,E. J. Whitmire Stadium
+400795505,2015,1,regular,2015-09-05 23:00:00,Stephen F. Austin,Northern Arizona,Southland,Big Sky,28,34,False,False,Homer Bryce Stadium
+400764859,2015,1,regular,2015-09-05 23:00:00,Memphis,Missouri State,American Athletic,MVFC,63,7,False,False,Simmons Bank Liberty Stadium
+400795588,2015,1,regular,2015-09-05 23:00:00,Furman,Coastal Carolina,Southern,Big South,35,38,False,False,Paladin Stadium
+400763590,2015,1,regular,2015-09-05 23:00:00,Middle Tennessee,Jackson State,Conference USA,SWAC,70,14,False,False,"Johnny ""Red"" Floyd Stadium"
+400763589,2015,1,regular,2015-09-05 23:00:00,Louisiana Tech,Southern,Conference USA,SWAC,62,15,False,False,Joe Aillet Stadium
+400795589,2015,1,regular,2015-09-05 23:00:00,Liberty,Delaware State,Big South,MEAC,32,13,False,False,Williams Stadium (VA)
+400799865,2015,1,regular,2015-09-05 23:00:00,Drake,William Jewell,Pioneer,Great Lakes,44,30,False,False,Drake Stadium
+400799866,2015,1,regular,2015-09-05 23:00:00,Stetson,Webber International,Pioneer,,42,13,False,False,Spec Martin Municipal Stadium
+400764861,2015,1,regular,2015-09-05 23:00:00,South Florida,Florida A&M,American Athletic,MEAC,51,3,False,False,Raymond James Stadium
+400603838,2015,1,regular,2015-09-05 23:00:00,Texas A&M,Arizona State,SEC,Pac-12,38,17,True,False,NRG Stadium
+400763404,2015,1,regular,2015-09-05 23:00:00,Oklahoma,Akron,Big 12,Mid-American,41,3,False,False,"Memorial Stadium (Norman, OK)"
+400603832,2015,1,regular,2015-09-05 23:00:00,Kentucky,Louisiana,SEC,Sun Belt,40,33,False,False,Kroger Field
+400763402,2015,1,regular,2015-09-05 23:10:00,Kansas State,South Dakota,Big 12,MVFC,34,0,False,False,Bill Snyder Family Stadium
+400603830,2015,1,regular,2015-09-05 23:30:00,Florida,New Mexico State,SEC,Sun Belt,61,13,False,False,Ben Hill Griffin Stadium
+400763407,2015,1,regular,2015-09-05 23:30:00,West Virginia,Georgia Southern,Big 12,Sun Belt,44,0,False,False,Milan Puskar Stadium
+400787115,2015,1,regular,2015-09-05 23:30:00,Northern Illinois,UNLV,Mid-American,Mountain West,38,30,False,False,Huskie Stadium
+400763403,2015,1,regular,2015-09-05 23:30:00,Notre Dame,Texas,FBS Independents,Big 12,38,3,False,False,Notre Dame Stadium
+400603827,2015,1,regular,2015-09-06 00:00:00,Alabama,Wisconsin,SEC,Big Ten,35,17,True,False,AT&T Stadium
+400764858,2015,1,regular,2015-09-06 00:00:00,Houston,Tennessee Tech,American Athletic,OVC,52,24,False,False,TDECU Stadium
+400763400,2015,1,regular,2015-09-06 00:00:00,Iowa State,Northern Iowa,Big 12,MVFC,31,7,False,False,Jack Trice Stadium
+400799925,2015,1,regular,2015-09-06 00:00:00,Lamar,Bacone College,Southland,,66,3,False,False,Provost Umphrey Stadium
+400756886,2015,1,regular,2015-09-06 00:00:00,Oregon,Eastern Washington,Pac-12,Big Sky,61,42,False,False,Autzen Stadium
+400791346,2015,1,regular,2015-09-06 00:00:00,San Diego State,San Diego,Mountain West,Pioneer,37,3,True,False,Qualcomm Stadium
+400799926,2015,1,regular,2015-09-06 00:00:00,Houston Christian,Bethany (KS),Southland,,51,7,False,False,Husky Stadium
+400787114,2015,1,regular,2015-09-06 00:05:00,New Mexico,Mississippi Valley State,Mountain West,SWAC,66,0,False,False,University Stadium (NM)
+400764856,2015,1,regular,2015-09-06 00:45:00,Cincinnati,Alabama A&M,American Athletic,SWAC,52,10,False,False,Nippert Stadium
+400795508,2015,1,regular,2015-09-06 01:00:00,Montana,Cal Poly,Big Sky,Big Sky,19,20,False,True,Washington-Grizzly Stadium
+400799676,2015,1,regular,2015-09-06 01:00:00,Texas Southern,Prairie View A&M,SWAC,SWAC,11,38,False,True,BBVA Compass Stadium
+400756899,2015,1,regular,2015-09-06 01:03:00,Florida State,Texas State,ACC,Sun Belt,59,16,False,False,Doak Campbell Stadium
+400795506,2015,1,regular,2015-09-06 01:05:00,Sacramento State,Eastern Oregon,Big Sky,,41,20,False,False,Hornet Stadium
+400603836,2015,1,regular,2015-09-06 02:00:00,Southern Miss,Mississippi State,Conference USA,SEC,16,34,False,False,M. M. Roberts Stadium
+400756884,2015,1,regular,2015-09-06 03:00:00,USC,Arkansas State,Pac-12,Sun Belt,55,6,False,False,Los Angeles Memorial Coliseum
+400763498,2015,1,regular,2015-09-06 19:00:00,Marshall,Purdue,Conference USA,Big Ten,41,31,False,False,Joan C. Edwards Stadium
+400796441,2015,1,regular,2015-09-06 19:30:00,South Carolina State,Arkansas-Pine Bluff,MEAC,SWAC,35,7,True,False,Camping World Stadium
+400795769,2015,1,regular,2015-09-06 23:00:00,Tennessee State,Alabama State,OVC,SWAC,24,14,False,False,Nissan Stadium
+400756905,2015,1,regular,2015-09-08 00:00:00,Virginia Tech,Ohio State,ACC,Big Ten,24,42,False,False,Lane Stadium
+400799673,2015,2,regular,2015-09-10 23:30:00,Mississippi Valley State,Southern,SWAC,SWAC,13,50,False,True,Rice-Totten Field
+400795770,2015,2,regular,2015-09-10 23:30:00,UT Martin,Bethel University Tennessee,OVC,,72,10,False,False,Graham Stadium
+400795578,2015,2,regular,2015-09-10 23:30:00,East Tennessee State,Maryville (TN),FCS Independents,USA South,21,28,True,False,Kermit Tipton Stadium
+400763599,2015,2,regular,2015-09-11 00:00:00,Western Kentucky,Louisiana Tech,Conference USA,Conference USA,41,38,False,True,Houchens Industries-L.T. Smith Stadium
+400799680,2015,2,regular,2015-09-12 00:00:00,Texas Southern,Bacone College,SWAC,,63,0,False,False,BBVA Compass Stadium
+400756912,2015,2,regular,2015-09-12 00:00:00,Florida Atlantic,Miami,Conference USA,ACC,20,44,False,False,FAU Stadium
+400787981,2015,2,regular,2015-09-12 01:00:00,Utah,Utah State,Pac-12,Mountain West,24,14,False,False,Rice-Eccles Stadium
+400792601,2015,2,regular,2015-09-12 15:30:00,Florida State,South Florida,ACC,American Athletic,34,14,False,False,Doak Campbell Stadium
+400795638,2015,2,regular,2015-09-12 16:00:00,Hampton,Richmond,MEAC,CAA,28,31,False,False,Armstrong Stadium
+400763508,2015,2,regular,2015-09-12 16:00:00,Wisconsin,Miami (OH),Big Ten,Mid-American,58,0,False,False,Camp Randall Stadium
+400756911,2015,2,regular,2015-09-12 16:00:00,Louisville,Houston,ACC,American Athletic,31,34,False,False,L&N Federal Credit Union Stadium
+400763594,2015,2,regular,2015-09-12 16:00:00,Charlotte,Presbyterian,Conference USA,Big South,34,10,False,False,Jerry Richardson Stadium
+400763506,2015,2,regular,2015-09-12 16:00:00,Penn State,Buffalo,Big Ten,Mid-American,27,14,False,False,Beaver Stadium
+400763414,2015,2,regular,2015-09-12 16:00:00,UTSA,Kansas State,Conference USA,Big 12,3,30,False,False,Alamodome
+400763500,2015,2,regular,2015-09-12 16:00:00,Illinois,Western Illinois,Big Ten,MVFC,44,0,False,False,"Memorial Stadium (Champaign, IL)"
+400757019,2015,2,regular,2015-09-12 16:00:00,Michigan,Oregon State,Big Ten,Pac-12,35,7,False,False,Michigan Stadium
+400763502,2015,2,regular,2015-09-12 16:00:00,Maryland,Bowling Green,Big Ten,Mid-American,27,48,False,False,SECU Stadium
+400603863,2015,2,regular,2015-09-12 16:00:00,Auburn,Jacksonville State,SEC,OVC,27,20,False,False,Jordan-Hare Stadium
+400763507,2015,2,regular,2015-09-12 16:00:00,Purdue,Indiana State,Big Ten,MVFC,38,14,False,False,Ross-Ade Stadium
+400760492,2015,2,regular,2015-09-12 16:00:00,UConn,Army,American Athletic,FBS Independents,22,17,False,False,Pratt & Whitney Stadium
+400756907,2015,2,regular,2015-09-12 16:30:00,Clemson,App State,ACC,Sun Belt,41,10,False,False,"Memorial Stadium (Clemson, SC)"
+400756916,2015,2,regular,2015-09-12 16:30:00,Syracuse,Wake Forest,ACC,ACC,30,17,False,True,JMA Wireless Dome
+400799870,2015,2,regular,2015-09-12 17:00:00,Newberry,Jacksonville,South Atlantic,Pioneer,14,17,False,False,Setzler Field
+400798994,2015,2,regular,2015-09-12 17:00:00,Chattanooga,Mars Hill,Southern,South Atlantic,44,34,False,False,Finley Stadium
+400756906,2015,2,regular,2015-09-12 17:00:00,Boston College,Howard,ACC,MEAC,76,0,False,False,"Alumni Stadium (Chestnut Hill, MA)"
+400799048,2015,2,regular,2015-09-12 17:30:00,VMI,Morehead State,Southern,Pioneer,43,40,False,False,Alumni Memorial Field
+400795509,2015,2,regular,2015-09-12 18:00:00,Northern Iowa,Eastern Washington,MVFC,Big Sky,38,35,False,False,UNI-Dome
+400799835,2015,2,regular,2015-09-12 18:00:00,Valparaiso,Sacred Heart,Pioneer,NEC,3,56,False,False,Brown Field
+400757016,2015,2,regular,2015-09-12 18:00:00,Colorado,Massachusetts,Pac-12,Mid-American,48,14,False,False,Folsom Field
+400757020,2015,2,regular,2015-09-12 18:00:00,Washington,Sacramento State,Pac-12,Big Sky,49,0,False,False,Husky Stadium
+400787306,2015,2,regular,2015-09-12 19:00:00,Central Michigan,Monmouth,Mid-American,Big South,31,10,False,False,Kelly/Shorts Stadium
+400763415,2015,2,regular,2015-09-12 19:00:00,Texas Tech,UTEP,Big 12,Conference USA,69,20,False,False,Jones AT&T Stadium
+400763416,2015,2,regular,2015-09-12 19:00:00,West Virginia,Liberty,Big 12,Big South,41,17,False,False,Milan Puskar Stadium
+400795499,2015,2,regular,2015-09-12 19:00:00,Missouri State,Chadron State,MVFC,Rocky Mountain,21,13,False,False,Plaster Sports Complex
+400799036,2015,2,regular,2015-09-12 19:00:00,Samford,Florida A&M,Southern,MEAC,58,21,False,False,Seibert Stadium
+400757021,2015,2,regular,2015-09-12 19:30:00,Rutgers,Washington State,Big Ten,Pac-12,34,37,False,False,High Point Solutions Stadium
+400756917,2015,2,regular,2015-09-12 19:30:00,Virginia,Notre Dame,ACC,FBS Independents,27,34,False,False,Scott Stadium
+400603866,2015,2,regular,2015-09-12 19:30:00,Ole Miss,Fresno State,SEC,Mountain West,73,21,False,False,Vaught-Hemingway Stadium
+400763505,2015,2,regular,2015-09-12 19:30:00,Ohio State,Hawai'i,Big Ten,Mountain West,38,0,False,False,Ohio Stadium
+400603870,2015,2,regular,2015-09-12 19:30:00,Vanderbilt,Georgia,SEC,SEC,14,31,False,True,FirstBank Stadium
+400756910,2015,2,regular,2015-09-12 19:30:00,Georgia Tech,Tulane,ACC,American Athletic,65,10,False,False,Bobby Dodd Stadium
+400787307,2015,2,regular,2015-09-12 19:30:00,Northern Illinois,Murray State,Mid-American,OVC,57,26,False,False,Huskie Stadium
+400756918,2015,2,regular,2015-09-12 19:30:00,Virginia Tech,Furman,ACC,Southern,42,3,False,False,Lane Stadium
+400763412,2015,2,regular,2015-09-12 19:30:00,TCU,Stephen F. Austin,Big 12,Southland,70,7,False,False,Amon G. Carter Stadium
+400763499,2015,2,regular,2015-09-12 19:30:00,Colorado State,Minnesota,Mountain West,Big Ten,20,23,False,False,Sonny Lubick Field at Hughes Stadium
+400795515,2015,2,regular,2015-09-12 19:30:00,North Dakota State,Weber State,MVFC,Big Sky,41,14,False,False,Fargodome
+400763598,2015,2,regular,2015-09-12 19:30:00,Southern Miss,Austin Peay,Conference USA,OVC,52,6,False,False,M. M. Roberts Stadium
+400795634,2015,2,regular,2015-09-12 19:30:00,UAlbany,Rhode Island,CAA,CAA,35,7,False,True,Bob Ford Field
+400795636,2015,2,regular,2015-09-12 20:00:00,James Madison,Lehigh,CAA,Patriot,55,17,False,False,Bridgeforth Stadium
+400763504,2015,2,regular,2015-09-12 20:00:00,Northwestern,Eastern Illinois,Big Ten,OVC,41,0,False,False,Ryan Field
+400787119,2015,2,regular,2015-09-12 20:00:00,Wyoming,Eastern Michigan,Mountain West,Mid-American,29,48,False,False,War Memorial Stadium
+400795593,2015,2,regular,2015-09-12 20:00:00,Kennesaw State,Edward Waters,Big South,SIAC,58,7,False,False,Fifth Third Stadium
+400603861,2015,2,regular,2015-09-12 20:00:00,Arkansas,Toledo,SEC,Mid-American,12,16,False,False,War Memorial Stadium (AR)
+400603860,2015,2,regular,2015-09-12 20:00:00,Alabama,Middle Tennessee,SEC,Conference USA,37,10,False,False,Bryant-Denny Stadium
+400763409,2015,2,regular,2015-09-12 20:45:00,Iowa State,Iowa,Big 12,Big Ten,17,31,False,False,Jack Trice Stadium
+400757022,2015,2,regular,2015-09-12 21:00:00,California,San Diego State,Pac-12,Mountain West,35,7,False,False,California Memorial Stadium
+400795591,2015,2,regular,2015-09-12 22:00:00,South Carolina State,Coastal Carolina,MEAC,Big South,14,41,False,False,Oliver C. Dawson Stadium
+400799431,2015,2,regular,2015-09-12 22:00:00,Bucknell,Duquesne,Patriot,NEC,7,26,False,False,Christy Mathewson-Memorial Stadium
+400795637,2015,2,regular,2015-09-12 22:00:00,Colgate,New Hampshire,Patriot,CAA,8,26,False,False,Andy Kerr Stadium
+400799430,2015,2,regular,2015-09-12 22:00:00,Georgetown,Marist,Patriot,Pioneer,34,7,False,False,Cooper Field
+400795635,2015,2,regular,2015-09-12 22:00:00,Delaware,Lafayette,CAA,Patriot,19,9,False,False,Delaware Stadium
+400799044,2015,2,regular,2015-09-12 22:00:00,The Citadel,Western Carolina,Southern,Southern,28,10,False,True,Johnson Hagood Stadium
+400756915,2015,2,regular,2015-09-12 22:00:00,Akron,Pittsburgh,Mid-American,ACC,7,24,False,False,InfoCision Stadium
+400799868,2015,2,regular,2015-09-12 22:00:00,Campbell,Chowan,Pioneer,CIAA,35,3,False,False,Barker-Lane Stadium
+400795641,2015,2,regular,2015-09-12 22:00:00,Fordham,Villanova,Patriot,CAA,7,14,True,False,Coffey Field
+400795592,2015,2,regular,2015-09-12 22:00:00,Gardner-Webb,Elon,Big South,CAA,13,21,False,False,Ernest W. Spangler Stadium
+400795639,2015,2,regular,2015-09-12 22:00:00,Stony Brook,Central Connecticut,CAA,NEC,38,9,False,False,Kenneth P. LaValle Stadium
+400795640,2015,2,regular,2015-09-12 22:00:00,Towson,Saint Francis,CAA,NEC,35,20,False,False,Johnny Unitas Stadium
+400787305,2015,2,regular,2015-09-12 22:00:00,Kent State,Delaware State,Mid-American,MEAC,45,13,False,False,Dix Stadium
+400756908,2015,2,regular,2015-09-12 22:00:00,Duke,North Carolina Central,ACC,MEAC,55,0,False,False,Wallace Wade Stadium
+400756914,2015,2,regular,2015-09-12 22:00:00,NC State,Eastern Kentucky,ACC,OVC,35,0,False,False,Carter-Finley Stadium
+400756913,2015,2,regular,2015-09-12 22:00:00,North Carolina,North Carolina A&T,ACC,MEAC,53,14,False,False,Kenan Stadium
+400795511,2015,2,regular,2015-09-12 22:00:00,North Dakota,Drake,Big Sky,Pioneer,21,18,False,False,Alerus Center
+400799029,2015,2,regular,2015-09-12 22:00:00,Mercer,Stetson,Southern,Pioneer,57,14,False,False,Five Star Stadium at the Moye Complex
+400603868,2015,2,regular,2015-09-12 22:00:00,Tennessee,Oklahoma,SEC,Big 12,24,31,False,False,Neyland Stadium
+400787308,2015,2,regular,2015-09-12 22:00:00,Georgia Southern,Western Michigan,Sun Belt,Mid-American,43,17,False,False,Allen E. Paulson Stadium
+400795510,2015,2,regular,2015-09-12 22:05:00,Idaho State,Portland State,Big Sky,Big Sky,14,34,False,True,Holt Arena
+400799867,2015,2,regular,2015-09-12 22:30:00,Butler,Franklin,Pioneer,Heartland,41,14,False,False,Butler Bowl
+400799869,2015,2,regular,2015-09-12 23:00:00,Davidson,Catawba,Pioneer,South Atlantic,21,35,False,False,Richardson Stadium
+400787419,2015,2,regular,2015-09-12 23:00:00,Troy,Charleston Southern,Sun Belt,Big South,44,16,False,False,Veterans Memorial Stadium (AL)
+400787418,2015,2,regular,2015-09-12 23:00:00,Texas State,Prairie View A&M,Sun Belt,SWAC,63,24,False,False,Bobcat Stadium (TX)
+400795498,2015,2,regular,2015-09-12 23:00:00,Youngstown State,Robert Morris,MVFC,NEC,21,14,False,False,Stambaugh Stadium
+400799639,2015,2,regular,2015-09-12 23:00:00,Alabama State,Alcorn State,SWAC,SWAC,14,31,False,True,Hornet Stadium
+400799928,2015,2,regular,2015-09-12 23:00:00,McNeese,Incarnate Word,Southland,Southland,43,6,False,True,Cowboy Stadium
+400763595,2015,2,regular,2015-09-12 23:00:00,Ohio,Marshall,Mid-American,Conference USA,21,10,False,False,Peden Stadium
+400787417,2015,2,regular,2015-09-12 23:00:00,UL Monroe,Nicholls,Sun Belt,Southland,47,0,False,False,Malone Stadium
+400799656,2015,2,regular,2015-09-12 23:00:00,Arkansas-Pine Bluff,Morehouse,SWAC,SIAC,29,27,False,False,Golden Lion Stadium
+400787416,2015,2,regular,2015-09-12 23:00:00,Louisiana,Northwestern State,Sun Belt,Southland,44,17,False,False,Cajun Field
+400795512,2015,2,regular,2015-09-12 23:00:00,South Dakota State,Southern Utah,MVFC,Big Sky,55,10,True,False,Coughlin-Alumni Stadium
+400603862,2015,2,regular,2015-09-12 23:00:00,Arkansas State,Missouri,Sun Belt,SEC,20,27,False,False,Centennial Bank Stadium
+400799663,2015,2,regular,2015-09-12 23:00:00,Grambling,Bethune-Cookman,SWAC,MEAC,53,56,False,False,Eddie Robinson Stadium
+400795496,2015,2,regular,2015-09-12 23:00:00,Southeast Missouri State,Southern Illinois,OVC,MVFC,27,24,True,False,Houck Stadium
+400603864,2015,2,regular,2015-09-12 23:00:00,Florida,East Carolina,SEC,American Athletic,31,24,False,False,Ben Hill Griffin Stadium
+400795771,2015,2,regular,2015-09-12 23:00:00,Wofford,Tennessee Tech,Southern,OVC,34,14,False,False,Gibbs Stadium
+400795772,2015,2,regular,2015-09-12 23:00:00,Jackson State,Tennessee State,SWAC,OVC,25,35,True,False,Simmons Bank Liberty Stadium
+400756892,2015,2,regular,2015-09-12 23:00:00,Nevada,Arizona,Mountain West,Pac-12,20,44,False,False,Mackay Stadium
+400795513,2015,2,regular,2015-09-12 23:00:00,Northern Arizona,New Mexico Highlands,Big Sky,Rocky Mountain,41,5,False,False,Walkup Skydome
+400603869,2015,2,regular,2015-09-12 23:00:00,Texas A&M,Ball State,SEC,Mid-American,56,23,False,False,Kyle Field
+400763410,2015,2,regular,2015-09-12 23:00:00,Kansas,Memphis,Big 12,American Athletic,23,55,False,False,Memorial Stadium
+400763597,2015,2,regular,2015-09-12 23:00:00,SMU,North Texas,American Athletic,Conference USA,31,13,False,False,Gerald J. Ford Stadium
+400763596,2015,2,regular,2015-09-12 23:15:00,Old Dominion,Norfolk State,Conference USA,MEAC,24,10,False,False,S.B. Ballard Stadium
+400795497,2015,2,regular,2015-09-12 23:30:00,Illinois State,Morgan State,MVFC,MEAC,67,14,False,False,Hancock Stadium
+400763411,2015,2,regular,2015-09-12 23:30:00,Oklahoma State,Central Arkansas,Big 12,Southland,32,8,False,False,Boone Pickens Stadium
+400603867,2015,2,regular,2015-09-12 23:30:00,South Carolina,Kentucky,SEC,SEC,22,26,False,True,Williams-Brice Stadium
+400763408,2015,2,regular,2015-09-12 23:30:00,Baylor,Lamar,Big 12,Southland,66,31,False,False,McLane Stadium
+400764862,2015,2,regular,2015-09-13 00:00:00,Cincinnati,Temple,American Athletic,American Athletic,26,34,False,True,Nippert Stadium
+400795514,2015,2,regular,2015-09-13 00:00:00,Houston Christian,Northern Colorado,Southland,Big Sky,10,34,False,False,Husky Stadium
+400799929,2015,2,regular,2015-09-13 00:00:00,SE Louisiana,Florida Tech,Southland,Gulf South,28,17,False,False,Strawberry Stadium
+400763503,2015,2,regular,2015-09-13 00:00:00,Nebraska,South Alabama,Big Ten,Sun Belt,48,9,False,False,"Memorial Stadium (Lincoln, NE)"
+400757014,2015,2,regular,2015-09-13 00:00:00,USC,Idaho,Pac-12,Sun Belt,59,9,False,False,Los Angeles Memorial Coliseum
+400763501,2015,2,regular,2015-09-13 00:00:00,Indiana,Florida International,Big Ten,Conference USA,36,22,False,False,"Memorial Stadium (Bloomington, IN)"
+400763413,2015,2,regular,2015-09-13 00:00:00,Texas,Rice,Big 12,Conference USA,42,28,False,False,DKR-Texas Memorial Stadium
+400757018,2015,2,regular,2015-09-13 00:00:00,Michigan State,Oregon,Big Ten,Pac-12,31,28,False,False,Spartan Stadium
+400764863,2015,2,regular,2015-09-13 00:00:00,New Mexico,Tulsa,Mountain West,American Athletic,21,40,False,False,University Stadium (NM)
+400787415,2015,2,regular,2015-09-13 00:00:00,New Mexico State,Georgia State,Sun Belt,Sun Belt,32,34,False,True,Aggie Memorial Stadium
+400799871,2015,2,regular,2015-09-13 01:00:00,San Diego,Western New Mexico,Pioneer,Rocky Mountain,45,21,False,False,Torero Stadium
+400795516,2015,2,regular,2015-09-13 01:00:00,UC Davis,South Dakota,Big Sky,MVFC,17,27,False,False,Aggie Stadium
+400603865,2015,2,regular,2015-09-13 01:15:00,Mississippi State,LSU,SEC,SEC,19,21,False,True,Davis Wade Stadium
+400787117,2015,2,regular,2015-09-13 02:15:00,Air Force,San José State,Mountain West,Mountain West,37,16,False,True,Falcon Stadium
+400787118,2015,2,regular,2015-09-13 02:15:00,BYU,Boise State,FBS Independents,Mountain West,35,24,False,False,LaVell Edwards Stadium
+400757015,2015,2,regular,2015-09-13 02:30:00,UNLV,UCLA,Mountain West,Pac-12,3,37,False,False,Sam Boyd Stadium
+400757023,2015,2,regular,2015-09-13 02:30:00,Stanford,UCF,Pac-12,American Athletic,31,7,False,False,Stanford Stadium
+400756893,2015,2,regular,2015-09-13 03:00:00,Arizona State,Cal Poly,Pac-12,Big Sky,35,21,False,False,Mountain America Stadium
+400795579,2015,3,regular,2015-09-17 23:00:00,Charleston Southern,East Tennessee State,Big South,FCS Independents,47,7,False,False,Buccaneer Field
+400799788,2015,3,regular,2015-09-17 23:30:00,South Carolina State,Florida A&M,MEAC,MEAC,36,0,False,True,Oliver C. Dawson Stadium
+400756919,2015,3,regular,2015-09-17 23:30:00,Louisville,Clemson,ACC,ACC,17,20,False,True,L&N Federal Credit Union Stadium
+400799784,2015,3,regular,2015-09-18 23:30:00,Hampton,Howard,MEAC,MEAC,37,19,True,True,RFK Stadium
+400756920,2015,3,regular,2015-09-19 00:00:00,Boston College,Florida State,ACC,ACC,0,14,False,True,"Alumni Stadium (Chestnut Hill, MA)"
+400787120,2015,3,regular,2015-09-19 01:00:00,Boise State,Idaho State,Mountain West,Big Sky,52,0,False,False,Albertsons Stadium
+400787241,2015,3,regular,2015-09-19 02:00:00,Arizona State,New Mexico,Pac-12,Mountain West,34,10,False,False,Mountain America Stadium
+400763418,2015,3,regular,2015-09-19 16:00:00,Oklahoma,Tulsa,Big 12,American Athletic,52,38,False,False,"Memorial Stadium (Norman, OK)"
+400763511,2015,3,regular,2015-09-19 16:00:00,Michigan,UNLV,Big Ten,Mountain West,28,7,False,False,Michigan Stadium
+400763600,2015,3,regular,2015-09-19 16:00:00,Florida Atlantic,Buffalo,Conference USA,Mid-American,15,33,False,False,FAU Stadium
+400763512,2015,3,regular,2015-09-19 16:00:00,Michigan State,Air Force,Big Ten,Mountain West,35,21,False,False,Spartan Stadium
+400763510,2015,3,regular,2015-09-19 16:00:00,Maryland,South Florida,Big Ten,American Athletic,35,17,False,False,SECU Stadium
+400763513,2015,3,regular,2015-09-19 16:00:00,Minnesota,Kent State,Big Ten,Mid-American,10,7,False,False,Huntington Bank Stadium
+400756930,2015,3,regular,2015-09-19 16:00:00,Army,Wake Forest,FBS Independents,ACC,14,17,False,False,Michie Stadium
+400795644,2015,3,regular,2015-09-19 16:00:00,Villanova,Delaware,CAA,CAA,28,21,False,True,Villanova Stadium
+400787310,2015,3,regular,2015-09-19 16:00:00,Akron,Savannah State,Mid-American,MEAC,52,9,False,False,InfoCision Stadium
+400799432,2015,3,regular,2015-09-19 16:00:00,Georgetown,Dartmouth,Patriot,Ivy,10,31,False,False,Cooper Field
+400603858,2015,3,regular,2015-09-19 16:00:00,Texas A&M,Nevada,SEC,Mountain West,44,27,False,False,Kyle Field
+400756924,2015,3,regular,2015-09-19 16:00:00,North Carolina,Illinois,ACC,Big Ten,48,14,False,False,Kenan Stadium
+400603856,2015,3,regular,2015-09-19 16:00:00,Missouri,UConn,SEC,American Athletic,9,6,False,False,Memorial Stadium
+400799596,2015,3,regular,2015-09-19 16:30:00,Brown,Bryant,Ivy,NEC,16,20,False,False,Brown Stadium
+400799437,2015,3,regular,2015-09-19 16:30:00,Lehigh,Pennsylvania,Patriot,Ivy,42,21,False,False,Goodman Stadium
+400756921,2015,3,regular,2015-09-19 16:30:00,Duke,Northwestern,ACC,Big Ten,10,19,False,False,Wallace Wade Stadium
+400756927,2015,3,regular,2015-09-19 16:30:00,Syracuse,Central Michigan,ACC,Mid-American,30,27,False,False,JMA Wireless Dome
+400795646,2015,3,regular,2015-09-19 17:00:00,Rhode Island,Harvard,CAA,Ivy,10,41,False,False,Meade Stadium
+400795596,2015,3,regular,2015-09-19 17:00:00,Kennesaw State,Shorter,Big South,Gulf South,18,10,False,False,Fifth Third Stadium
+400799434,2015,3,regular,2015-09-19 17:00:00,Colgate,Yale,Patriot,Ivy,28,29,False,False,Andy Kerr Stadium
+400799433,2015,3,regular,2015-09-19 17:00:00,Fordham,Columbia,Patriot,Ivy,44,24,True,False,Coffey Field
+400799837,2015,3,regular,2015-09-19 17:00:00,Dayton,Duquesne,Pioneer,NEC,24,13,False,False,Welcome Stadium
+400795773,2015,3,regular,2015-09-19 18:00:00,Jacksonville State,Tennessee State,OVC,OVC,48,13,False,True,AmFirst Stadium
+400799786,2015,3,regular,2015-09-19 18:00:00,Delaware State,Chowan,MEAC,CIAA,30,31,False,False,Alumni Stadium
+400787309,2015,3,regular,2015-09-19 18:00:00,Ohio,SE Louisiana,Mid-American,Southland,35,14,False,False,Peden Stadium
+400757030,2015,3,regular,2015-09-19 18:00:00,Oregon,Georgia State,Pac-12,Sun Belt,61,28,False,False,Autzen Stadium
+400763605,2015,3,regular,2015-09-19 18:30:00,North Texas,Rice,Conference USA,Conference USA,24,38,False,True,DATCU Stadium
+400763417,2015,3,regular,2015-09-19 19:00:00,Kansas State,Louisiana Tech,Big 12,Conference USA,39,33,False,False,Bill Snyder Family Stadium
+400764864,2015,3,regular,2015-09-19 19:00:00,Bowling Green,Memphis,Mid-American,American Athletic,41,44,False,False,Doyt L. Perry Stadium
+400795642,2015,3,regular,2015-09-19 19:00:00,James Madison,UAlbany,CAA,CAA,42,28,False,True,Bridgeforth Stadium
+400795723,2015,3,regular,2015-09-19 19:00:00,South Dakota,Drake,MVFC,Pioneer,52,0,False,False,DakotaDome
+400787311,2015,3,regular,2015-09-19 19:00:00,Eastern Michigan,Ball State,Mid-American,Mid-American,17,28,False,True,Rynearson Stadium
+400799436,2015,3,regular,2015-09-19 19:00:00,Cornell,Bucknell,Ivy,Patriot,14,19,False,False,Schoellkopf Field
+400799839,2015,3,regular,2015-09-19 19:00:00,Robert Morris,Notre Dame College,NEC,Mountain East,35,24,False,False,Joe Walton Stadium
+400799931,2015,3,regular,2015-09-19 19:00:00,Incarnate Word,Nicholls,Southland,Southland,20,10,False,True,Gayle and Tom Benson Stadium
+400764869,2015,3,regular,2015-09-19 19:00:00,Massachusetts,Temple,Mid-American,American Athletic,23,25,False,False,Gillette Stadium
+400795722,2015,3,regular,2015-09-19 19:05:00,Indiana State,Southeast Missouri State,MVFC,OVC,29,28,False,False,Memorial Stadium
+400756923,2015,3,regular,2015-09-19 19:30:00,Miami,Nebraska,ACC,Big Ten,36,33,False,False,Hard Rock Stadium
+400756922,2015,3,regular,2015-09-19 19:30:00,Notre Dame,Georgia Tech,FBS Independents,ACC,30,22,False,False,Notre Dame Stadium
+400603854,2015,3,regular,2015-09-19 19:30:00,LSU,Auburn,SEC,SEC,45,21,False,True,Tiger Stadium (LA)
+400798995,2015,3,regular,2015-09-19 19:30:00,Samford,Chattanooga,Southern,Southern,21,31,False,True,Seibert Stadium
+400763602,2015,3,regular,2015-09-19 19:30:00,Marshall,Norfolk State,Conference USA,MEAC,45,7,False,False,Joan C. Edwards Stadium
+400756928,2015,3,regular,2015-09-19 19:30:00,Virginia,William & Mary,ACC,CAA,35,29,False,False,Scott Stadium
+400795520,2015,3,regular,2015-09-19 19:30:00,North Dakota State,North Dakota,MVFC,Big Sky,34,9,False,False,Fargodome
+400764866,2015,3,regular,2015-09-19 19:30:00,Navy,East Carolina,American Athletic,American Athletic,45,21,False,True,Navy-Marine Corps Memorial Stadium
+400763516,2015,3,regular,2015-09-19 19:30:00,Wisconsin,Troy,Big Ten,Sun Belt,28,3,False,False,Camp Randall Stadium
+400763419,2015,3,regular,2015-09-19 19:30:00,Oklahoma State,UTSA,Big 12,Conference USA,69,14,False,False,Boone Pickens Stadium
+400763514,2015,3,regular,2015-09-19 19:30:00,Ohio State,Northern Illinois,Big Ten,Mid-American,20,13,False,False,Ohio Stadium
+400756929,2015,3,regular,2015-09-19 19:30:00,Purdue,Virginia Tech,Big Ten,ACC,24,51,False,False,Ross-Ade Stadium
+400764865,2015,3,regular,2015-09-19 19:30:00,Miami (OH),Cincinnati,Mid-American,American Athletic,33,37,False,False,Yager Stadium
+400795500,2015,3,regular,2015-09-19 20:00:00,Youngstown State,Saint Francis,MVFC,NEC,48,3,False,False,Stambaugh Stadium
+400799785,2015,3,regular,2015-09-19 20:00:00,Bethune-Cookman,Lane College,MEAC,SIAC,7,3,False,False,Municipal Stadium
+400763509,2015,3,regular,2015-09-19 20:00:00,Indiana,Western Kentucky,Big Ten,Conference USA,38,35,False,False,"Memorial Stadium (Bloomington, IN)"
+400603855,2015,3,regular,2015-09-19 20:00:00,Mississippi State,Northwestern State,SEC,Southland,62,13,False,False,Davis Wade Stadium
+400603859,2015,3,regular,2015-09-19 20:00:00,Vanderbilt,Austin Peay,SEC,OVC,47,7,False,False,FirstBank Stadium
+400795517,2015,3,regular,2015-09-19 20:05:00,Eastern Washington,Montana State,Big Sky,Big Sky,55,50,False,True,Roos Field
+400757032,2015,3,regular,2015-09-19 21:00:00,Washington,Utah State,Pac-12,Mountain West,31,17,False,False,Husky Stadium
+400799648,2015,3,regular,2015-09-19 21:00:00,Alcorn State,Mississippi Valley State,SWAC,SWAC,55,14,False,True,Jack Spinks Stadium
+400787442,2015,3,regular,2015-09-19 21:00:00,Idaho,Wofford,Sun Belt,Southern,41,38,False,False,Kibbie Dome
+400795595,2015,3,regular,2015-09-19 22:00:00,Gardner-Webb,Virginia Union,Big South,CIAA,13,9,False,False,Ernest W. Spangler Stadium
+400799838,2015,3,regular,2015-09-19 22:00:00,Marist,Sacred Heart,Pioneer,NEC,34,27,False,False,Leonidoff Field
+400787441,2015,3,regular,2015-09-19 22:00:00,Georgia Southern,The Citadel,Sun Belt,Southern,48,13,False,False,Allen E. Paulson Stadium
+400795597,2015,3,regular,2015-09-19 22:00:00,Wagner,Monmouth,NEC,Big South,16,31,False,False,Wagner College Stadium
+400795647,2015,3,regular,2015-09-19 22:00:00,Richmond,VMI,CAA,Southern,42,10,False,False,E. Claiborne Robins Stadium
+400795594,2015,3,regular,2015-09-19 22:00:00,Coastal Carolina,Western Illinois,Big South,MVFC,34,27,False,False,Brooks Stadium (SC)
+400795645,2015,3,regular,2015-09-19 22:00:00,Elon,North Carolina A&T,CAA,MEAC,7,14,False,False,Rhodes Stadium
+400603852,2015,3,regular,2015-09-19 22:00:00,Georgia,South Carolina,SEC,SEC,52,20,False,True,Sanford Stadium
+400799435,2015,3,regular,2015-09-19 22:00:00,Lafayette,Princeton,Patriot,Ivy,7,40,False,False,Fisher Field
+400764868,2015,3,regular,2015-09-19 22:00:00,UCF,Furman,American Athletic,Southern,15,16,False,False,FBC Mortgage Stadium
+400763601,2015,3,regular,2015-09-19 22:00:00,Florida International,North Carolina Central,Conference USA,MEAC,39,14,False,False,FIU Stadium
+400795648,2015,3,regular,2015-09-19 22:00:00,Towson,Holy Cross,CAA,Patriot,29,26,False,False,Johnny Unitas Stadium
+400799669,2015,3,regular,2015-09-19 22:00:00,Southern,Jackson State,SWAC,SWAC,50,31,False,True,Ace W. Mumford Stadium
+400757028,2015,3,regular,2015-09-19 23:00:00,Colorado State,Colorado,Mountain West,Pac-12,24,27,True,False,Sports Authority Field at Mile High
+400799932,2015,3,regular,2015-09-19 23:00:00,Sam Houston,Lamar,Southland,Southland,46,49,False,True,Elliott T. Bowers Stadium
+400795519,2015,3,regular,2015-09-19 23:00:00,Liberty,Montana,Big South,Big Sky,31,21,False,False,Williams Stadium (VA)
+400799630,2015,3,regular,2015-09-19 23:00:00,Prairie View A&M,Alabama A&M,SWAC,SWAC,53,49,True,True,Blackshear Stadium
+400799640,2015,3,regular,2015-09-19 23:00:00,Alabama State,Grambling,SWAC,SWAC,10,34,False,True,Hornet Stadium
+400756925,2015,3,regular,2015-09-19 23:00:00,Old Dominion,NC State,Conference USA,ACC,14,38,False,False,S.B. Ballard Stadium
+400603851,2015,3,regular,2015-09-19 23:00:00,Arkansas,Texas Tech,SEC,Big 12,24,35,False,False,Razorback Stadium
+400799930,2015,3,regular,2015-09-19 23:00:00,Abilene Christian,Houston Christian,Southland,Southland,49,21,True,True,Shotwell Stadium
+400799933,2015,3,regular,2015-09-19 23:00:00,Stephen F. Austin,McNeese,Southland,Southland,14,28,False,True,Homer Bryce Stadium
+400787420,2015,3,regular,2015-09-19 23:00:00,Arkansas State,Missouri State,Sun Belt,MVFC,70,7,False,False,Centennial Bank Stadium
+400787312,2015,3,regular,2015-09-19 23:00:00,Western Michigan,Murray State,Mid-American,OVC,52,20,False,False,Waldo Stadium
+400795774,2015,3,regular,2015-09-19 23:00:00,Tennessee Tech,Mercer,OVC,Southern,29,22,False,False,Tucker Stadium
+400603857,2015,3,regular,2015-09-19 23:00:00,Tennessee,Western Carolina,SEC,Southern,55,10,False,False,Neyland Stadium
+400763603,2015,3,regular,2015-09-19 23:00:00,Middle Tennessee,Charlotte,Conference USA,Conference USA,73,14,False,True,"Johnny ""Red"" Floyd Stadium"
+400799836,2015,3,regular,2015-09-19 23:00:00,Central Connecticut,Bowie State,NEC,CIAA,21,14,False,False,Arute Field
+400795643,2015,3,regular,2015-09-19 23:00:00,Stony Brook,New Hampshire,CAA,CAA,31,6,False,True,Kenneth P. LaValle Stadium
+400763606,2015,3,regular,2015-09-19 23:00:00,Texas State,Southern Miss,Sun Belt,Conference USA,50,56,False,False,Bobcat Stadium (TX)
+400795598,2015,3,regular,2015-09-19 23:00:00,Presbyterian,Campbell,Big South,Pioneer,23,13,False,False,Bailey Memorial Stadium
+400799657,2015,3,regular,2015-09-19 23:00:00,Arkansas-Pine Bluff,Texas Southern,SWAC,SWAC,20,24,False,True,Golden Lion Stadium
+400603853,2015,3,regular,2015-09-19 23:30:00,Kentucky,Florida,SEC,SEC,9,14,False,True,Kroger Field
+400757034,2015,3,regular,2015-09-19 23:30:00,Texas,California,Big 12,Pac-12,44,45,False,False,DKR-Texas Memorial Stadium
+400756926,2015,3,regular,2015-09-20 00:00:00,Iowa,Pittsburgh,Big Ten,ACC,27,24,False,False,Kinnick Stadium
+400763604,2015,3,regular,2015-09-20 00:00:00,New Mexico State,UTEP,Sun Belt,Conference USA,47,50,False,False,Aggie Memorial Stadium
+400787243,2015,3,regular,2015-09-20 00:00:00,San Diego State,South Alabama,Mountain West,Sun Belt,27,34,False,False,Qualcomm Stadium
+400763515,2015,3,regular,2015-09-20 00:00:00,Penn State,Rutgers,Big Ten,Big Ten,28,3,False,True,Beaver Stadium
+400763420,2015,3,regular,2015-09-20 00:00:00,TCU,SMU,Big 12,American Athletic,56,37,False,False,Amon G. Carter Stadium
+400757031,2015,3,regular,2015-09-20 00:00:00,Oregon State,San José State,Pac-12,Mountain West,35,21,False,False,Reser Stadium
+400763421,2015,3,regular,2015-09-20 00:00:00,Toledo,Iowa State,Mid-American,Big 12,30,23,False,False,Glass Bowl
+400795522,2015,3,regular,2015-09-20 00:00:00,Weber State,Sacramento State,Big Sky,Big Sky,32,14,False,True,Stewart Stadium
+400795521,2015,3,regular,2015-09-20 00:00:00,Southern Utah,Northern Colorado,Big Sky,Big Sky,30,3,False,True,Eccles Coliseum
+400795721,2015,3,regular,2015-09-20 00:00:00,Eastern Illinois,Illinois State,OVC,MVFC,31,34,False,False,O'Brien Stadium
+400757026,2015,3,regular,2015-09-20 00:00:00,USC,Stanford,Pac-12,Pac-12,31,41,False,True,Los Angeles Memorial Coliseum
+400764867,2015,3,regular,2015-09-20 00:00:00,Tulane,Maine,American Athletic,CAA,38,7,False,False,Yulman Stadium
+400757033,2015,3,regular,2015-09-20 00:30:00,Washington State,Wyoming,Pac-12,Mountain West,31,14,False,False,Gesa Field
+400603850,2015,3,regular,2015-09-20 01:15:00,Alabama,Ole Miss,SEC,SEC,37,43,False,True,Bryant-Denny Stadium
+400795518,2015,3,regular,2015-09-20 02:30:00,Cal Poly,Northern Iowa,Big Sky,MVFC,20,34,False,False,Alex G. Spanos Stadium
+400757029,2015,3,regular,2015-09-20 02:30:00,Fresno State,Utah,Mountain West,Pac-12,24,45,False,False,Valley Children's Stadium
+400757027,2015,3,regular,2015-09-20 02:30:00,UCLA,BYU,Pac-12,FBS Independents,24,23,False,False,Rose Bowl
+400757024,2015,3,regular,2015-09-20 03:00:00,Arizona,Northern Arizona,Pac-12,Big Sky,77,13,False,False,Arizona Stadium
+400787242,2015,3,regular,2015-09-20 03:59:00,Hawai'i,UC Davis,Mountain West,Big Sky,47,27,True,False,Aloha Stadium
+400795654,2015,4,regular,2015-09-24 23:00:00,Villanova,Pennsylvania,CAA,Ivy,13,24,False,False,Villanova Stadium
+400764870,2015,4,regular,2015-09-24 23:30:00,Memphis,Cincinnati,American Athletic,American Athletic,53,46,False,True,Simmons Bank Liberty Stadium
+400756931,2015,4,regular,2015-09-26 00:00:00,Virginia,Boise State,ACC,Mountain West,14,56,False,False,Scott Stadium
+400757035,2015,4,regular,2015-09-26 02:00:00,Oregon State,Stanford,Pac-12,Pac-12,24,42,False,True,Reser Stadium
+400763522,2015,4,regular,2015-09-26 16:00:00,Nebraska,Southern Miss,Big Ten,Conference USA,36,28,False,False,"Memorial Stadium (Lincoln, NE)"
+400764871,2015,4,regular,2015-09-26 16:00:00,UConn,Navy,American Athletic,American Athletic,18,28,False,True,Pratt & Whitney Stadium
+400603849,2015,4,regular,2015-09-26 16:00:00,Syracuse,LSU,ACC,SEC,24,34,False,False,JMA Wireless Dome
+400763526,2015,4,regular,2015-09-26 16:00:00,Purdue,Bowling Green,Big Ten,Mid-American,28,35,False,False,Ross-Ade Stadium
+400763519,2015,4,regular,2015-09-26 16:00:00,Michigan,BYU,Big Ten,FBS Independents,31,0,False,False,Michigan Stadium
+400756933,2015,4,regular,2015-09-26 16:00:00,Duke,Georgia Tech,ACC,ACC,34,20,False,True,Wallace Wade Stadium
+400603848,2015,4,regular,2015-09-26 16:00:00,South Carolina,UCF,SEC,American Athletic,31,14,False,False,Williams-Brice Stadium
+400763423,2015,4,regular,2015-09-26 16:00:00,Rutgers,Kansas,Big Ten,Big 12,27,14,False,False,High Point Solutions Stadium
+400763520,2015,4,regular,2015-09-26 16:00:00,Michigan State,Central Michigan,Big Ten,Mid-American,30,10,False,False,Spartan Stadium
+400799875,2015,4,regular,2015-09-26 16:00:00,Butler,Campbell,Pioneer,Pioneer,25,24,False,True,Butler Bowl
+400603845,2015,4,regular,2015-09-26 16:00:00,Georgia,Southern,SEC,SWAC,48,6,False,False,Sanford Stadium
+400799877,2015,4,regular,2015-09-26 16:00:00,Marist,Jacksonville,Pioneer,Pioneer,16,20,False,True,Leonidoff Field
+400799934,2015,4,regular,2015-09-26 16:00:00,Abilene Christian,Stephen F. Austin,Southland,Southland,35,32,True,True,Shotwell Stadium
+400799438,2015,4,regular,2015-09-26 16:05:00,Holy Cross,Colgate,Patriot,Patriot,14,31,False,True,Fitton Field
+400756935,2015,4,regular,2015-09-26 16:30:00,North Carolina,Delaware,ACC,CAA,41,14,False,False,Kenan Stadium
+400756938,2015,4,regular,2015-09-26 16:30:00,Wake Forest,Indiana,ACC,Big Ten,24,31,False,False,Allegacy Federal Credit Union Stadium
+400756932,2015,4,regular,2015-09-26 17:00:00,Boston College,Northern Illinois,ACC,Mid-American,17,14,False,False,"Alumni Stadium (Chestnut Hill, MA)"
+400799598,2015,4,regular,2015-09-26 17:00:00,Yale,Cornell,Ivy,Ivy,33,26,False,True,Yale Bowl
+400799439,2015,4,regular,2015-09-26 17:00:00,Columbia,Georgetown,Ivy,Patriot,16,24,False,False,Lawrence A. Wien Stadium
+400795604,2015,4,regular,2015-09-26 17:00:00,Fordham,Monmouth,Patriot,Big South,54,31,True,False,Coffey Field
+400799878,2015,4,regular,2015-09-26 17:00:00,Morehead State,Davidson,Pioneer,Pioneer,34,0,False,True,Jayne Stadium
+400799879,2015,4,regular,2015-09-26 17:30:00,Valparaiso,San Diego,Pioneer,Pioneer,6,38,False,True,Brown Field
+400795580,2015,4,regular,2015-09-26 17:30:00,East Tennessee State,Emory & Henry,FCS Independents,Old Dominion,24,27,True,False,Kermit Tipton Stadium
+400757038,2015,4,regular,2015-09-26 17:30:00,Colorado,Nicholls,Pac-12,Southland,48,0,False,False,Folsom Field
+400799876,2015,4,regular,2015-09-26 18:00:00,Drake,Stetson,Pioneer,Pioneer,41,3,False,True,Drake Stadium
+400795775,2015,4,regular,2015-09-26 18:00:00,Southeast Missouri State,Shorter,OVC,Gulf South,21,26,True,False,Houck Stadium
+400795526,2015,4,regular,2015-09-26 18:00:00,North Dakota,UC Davis,Big Sky,Big Sky,31,24,False,True,Alerus Center
+400763609,2015,4,regular,2015-09-26 18:30:00,Louisiana Tech,Florida International,Conference USA,Conference USA,27,17,False,True,Joe Aillet Stadium
+400763422,2015,4,regular,2015-09-26 19:00:00,Baylor,Rice,Big 12,Conference USA,70,17,False,False,McLane Stadium
+400787246,2015,4,regular,2015-09-26 19:00:00,Wyoming,New Mexico,Mountain West,Mountain West,28,38,False,True,War Memorial Stadium
+400763426,2015,4,regular,2015-09-26 19:00:00,West Virginia,Maryland,Big 12,Big Ten,45,6,False,False,Milan Puskar Stadium
+400799022,2015,4,regular,2015-09-26 19:00:00,Furman,VMI,Southern,Southern,24,21,False,True,Paladin Stadium
+400795652,2015,4,regular,2015-09-26 19:00:00,UAlbany,Duquesne,CAA,NEC,17,14,False,False,Bob Ford Field
+400795651,2015,4,regular,2015-09-26 19:00:00,Elon,Towson,CAA,CAA,17,13,False,True,Rhodes Stadium
+400795778,2015,4,regular,2015-09-26 19:00:00,UT Martin,Jacksonville State,OVC,OVC,41,48,False,True,Graham Stadium
+400763610,2015,4,regular,2015-09-26 19:30:00,Old Dominion,App State,Conference USA,Sun Belt,0,49,False,False,S.B. Ballard Stadium
+400787245,2015,4,regular,2015-09-26 19:30:00,Buffalo,Nevada,Mid-American,Mountain West,21,24,False,False,UB Stadium
+400603844,2015,4,regular,2015-09-26 19:30:00,Florida,Tennessee,SEC,SEC,28,27,False,True,Ben Hill Griffin Stadium
+400763613,2015,4,regular,2015-09-26 19:30:00,Western Kentucky,Miami (OH),Conference USA,Mid-American,56,14,False,False,Houchens Industries-L.T. Smith Stadium
+400763525,2015,4,regular,2015-09-26 19:30:00,Penn State,San Diego State,Big Ten,Mountain West,37,21,False,False,Beaver Stadium
+400795649,2015,4,regular,2015-09-26 19:30:00,Maine,Rhode Island,CAA,CAA,27,17,False,True,Alfond Stadium
+400763608,2015,4,regular,2015-09-26 19:30:00,Kent State,Marshall,Mid-American,Conference USA,29,36,False,False,Dix Stadium
+400756937,2015,4,regular,2015-09-26 19:30:00,East Carolina,Virginia Tech,American Athletic,ACC,35,28,False,False,Dowdy-Ficklen Stadium
+400763524,2015,4,regular,2015-09-26 19:30:00,Ohio State,Western Michigan,Big Ten,Mid-American,38,12,False,False,Ohio Stadium
+400763521,2015,4,regular,2015-09-26 19:30:00,Minnesota,Ohio,Big Ten,Mid-American,27,24,False,False,Huntington Bank Stadium
+400763424,2015,4,regular,2015-09-26 19:30:00,Texas,Oklahoma State,Big 12,Big 12,27,30,False,True,DKR-Texas Memorial Stadium
+400763518,2015,4,regular,2015-09-26 19:30:00,Iowa,North Texas,Big Ten,Conference USA,62,16,False,False,Kinnick Stadium
+400763583,2015,4,regular,2015-09-26 19:30:00,Notre Dame,Massachusetts,FBS Independents,Mid-American,62,27,False,False,Notre Dame Stadium
+400795527,2015,4,regular,2015-09-26 19:35:00,Montana State,Cal Poly,Big Sky,Big Sky,45,28,False,True,Bobcat Stadium
+400795524,2015,4,regular,2015-09-26 19:35:00,Northern Colorado,Weber State,Big Sky,Big Sky,17,38,False,True,Nottingham Field
+400799789,2015,4,regular,2015-09-26 20:00:00,Bethune-Cookman,Savannah State,MEAC,MEAC,42,12,False,True,Municipal Stadium
+400763517,2015,4,regular,2015-09-26 20:00:00,Illinois,Middle Tennessee,Big Ten,Conference USA,27,25,False,False,"Memorial Stadium (Champaign, IL)"
+400799791,2015,4,regular,2015-09-26 20:00:00,Norfolk State,Hampton,MEAC,MEAC,24,14,False,True,"William Dick"""" Price Stadium"""""
+400795528,2015,4,regular,2015-09-26 20:00:00,Montana,Northern Arizona,Big Sky,Big Sky,23,14,False,True,Washington-Grizzly Stadium
+400603841,2015,4,regular,2015-09-26 20:00:00,Alabama,UL Monroe,SEC,Sun Belt,34,0,False,False,Bryant-Denny Stadium
+400799790,2015,4,regular,2015-09-26 20:30:00,Howard,Morgan State,MEAC,MEAC,13,21,True,True,Soldier Field
+400763425,2015,4,regular,2015-09-26 20:45:00,Texas Tech,TCU,Big 12,Big 12,52,55,False,True,Jones AT&T Stadium
+400757040,2015,4,regular,2015-09-26 21:00:00,Washington,California,Pac-12,Pac-12,24,30,False,True,Husky Stadium
+400799501,2015,4,regular,2015-09-26 21:00:00,Princeton,Lehigh,Ivy,Patriot,52,26,False,False,Princeton University Stadium
+400795525,2015,4,regular,2015-09-26 21:05:00,Portland State,Western Oregon,Big Sky,Great Northwest,31,0,True,False,Providence Park
+400795599,2015,4,regular,2015-09-26 22:00:00,The Citadel,Charleston Southern,Southern,Big South,20,33,False,False,Johnson Hagood Stadium
+400795776,2015,4,regular,2015-09-26 22:00:00,Eastern Kentucky,Austin Peay,OVC,OVC,51,13,False,True,Roy Kidd Stadium
+400795600,2015,4,regular,2015-09-26 22:00:00,Coastal Carolina,Bryant,Big South,NEC,31,17,False,False,Brooks Stadium (SC)
+400795779,2015,4,regular,2015-09-26 22:00:00,Florida A&M,Tennessee State,MEAC,OVC,14,30,False,False,Bragg Memorial Stadium
+400760493,2015,4,regular,2015-09-26 22:00:00,Eastern Michigan,Army,Mid-American,FBS Independents,36,58,False,False,Rynearson Stadium
+400795724,2015,4,regular,2015-09-26 22:00:00,South Dakota State,Robert Morris,MVFC,NEC,34,10,True,False,Coughlin-Alumni Stadium
+400799440,2015,4,regular,2015-09-26 22:00:00,Wagner,Lafayette,NEC,Patriot,24,35,False,False,Wagner College Stadium
+400795602,2015,4,regular,2015-09-26 22:00:00,Dayton,Kennesaw State,Pioneer,Big South,31,27,False,False,Welcome Stadium
+400795653,2015,4,regular,2015-09-26 22:00:00,New Hampshire,Central Connecticut,CAA,NEC,57,14,False,False,Wildcat Stadium
+400756934,2015,4,regular,2015-09-26 22:00:00,Louisville,Samford,ACC,Southern,45,3,False,False,L&N Federal Credit Union Stadium
+400768337,2015,4,regular,2015-09-26 23:00:00,SMU,James Madison,American Athletic,CAA,45,48,False,False,Gerald J. Ford Stadium
+400795777,2015,4,regular,2015-09-26 23:00:00,Murray State,Tennessee Tech,OVC,OVC,29,31,False,True,Roy Stewart Stadium
+400799935,2015,4,regular,2015-09-26 23:00:00,McNeese,Mississippi College,Southland,Gulf South,37,0,False,False,Cowboy Stadium
+400799597,2015,4,regular,2015-09-26 23:00:00,Harvard,Brown,Ivy,Ivy,53,27,False,True,Harvard Stadium
+400763612,2015,4,regular,2015-09-26 23:00:00,UTSA,Colorado State,Conference USA,Mountain West,31,33,False,False,Alamodome
+400795603,2015,4,regular,2015-09-26 23:00:00,Southern Illinois,Liberty,MVFC,Big South,34,13,False,False,Saluki Stadium
+400795605,2015,4,regular,2015-09-26 23:00:00,Presbyterian,Chattanooga,Big South,Southern,0,21,False,False,Bailey Memorial Stadium
+400799936,2015,4,regular,2015-09-26 23:00:00,Northwestern State,Central Arkansas,Southland,Southland,21,49,False,True,Harry Turpin Stadium
+400799937,2015,4,regular,2015-09-26 23:00:00,Sam Houston,Houston Christian,Southland,Southland,63,14,False,True,Elliott T. Bowers Stadium
+400799599,2015,4,regular,2015-09-26 23:00:00,Dartmouth,Sacred Heart,Ivy,NEC,49,7,False,False,Memorial Field
+400795601,2015,4,regular,2015-09-26 23:00:00,Wofford,Gardner-Webb,Southern,Big South,16,0,False,False,Gibbs Stadium
+400763607,2015,4,regular,2015-09-26 23:00:00,Charlotte,Florida Atlantic,Conference USA,Conference USA,7,17,False,True,Jerry Richardson Stadium
+400603847,2015,4,regular,2015-09-26 23:00:00,Ole Miss,Vanderbilt,SEC,SEC,27,16,False,True,Vaught-Hemingway Stadium
+400603842,2015,4,regular,2015-09-26 23:00:00,Arkansas,Texas A&M,SEC,SEC,21,28,True,True,AT&T Stadium
+400787313,2015,4,regular,2015-09-26 23:00:00,Louisiana,Akron,Sun Belt,Mid-American,14,35,False,False,Cajun Field
+400787314,2015,4,regular,2015-09-26 23:00:00,Toledo,Arkansas State,Mid-American,Sun Belt,37,7,False,False,Glass Bowl
+400603846,2015,4,regular,2015-09-26 23:30:00,Kentucky,Missouri,SEC,SEC,21,13,False,True,Kroger Field
+400603843,2015,4,regular,2015-09-26 23:30:00,Auburn,Mississippi State,SEC,SEC,9,17,False,True,Jordan-Hare Stadium
+400795650,2015,4,regular,2015-09-26 23:30:00,William & Mary,Stony Brook,CAA,CAA,21,0,False,True,Zable Stadium
+400756936,2015,4,regular,2015-09-27 00:00:00,South Alabama,NC State,Sun Belt,ACC,13,63,False,False,Ladd Peebles Stadium
+400764872,2015,4,regular,2015-09-27 00:00:00,Houston,Texas State,American Athletic,Sun Belt,59,14,False,False,TDECU Stadium
+400763611,2015,4,regular,2015-09-27 00:00:00,UTEP,Incarnate Word,Conference USA,Southland,27,17,False,False,Sun Bowl
+400795523,2015,4,regular,2015-09-27 00:00:00,Southern Utah,Brevard,Big Sky,South Atlantic,55,7,False,False,Eccles Coliseum
+400763527,2015,4,regular,2015-09-27 00:00:00,Wisconsin,Hawai'i,Big Ten,Mountain West,28,0,False,False,Camp Randall Stadium
+400763523,2015,4,regular,2015-09-27 00:00:00,Northwestern,Ball State,Big Ten,Mid-American,24,19,False,False,Ryan Field
+400757036,2015,4,regular,2015-09-27 00:00:00,Arizona,UCLA,Pac-12,Pac-12,30,56,False,True,Arizona Stadium
+400757039,2015,4,regular,2015-09-27 00:30:00,Oregon,Utah,Pac-12,Pac-12,20,62,False,True,Autzen Stadium
+400787443,2015,4,regular,2015-09-27 01:00:00,Idaho,Georgia Southern,Sun Belt,Sun Belt,20,44,False,True,Kibbie Dome
+400787247,2015,4,regular,2015-09-27 01:00:00,UNLV,Idaho State,Mountain West,Big Sky,80,8,True,False,Sam Boyd Stadium
+400795529,2015,4,regular,2015-09-27 01:05:00,Sacramento State,Eastern Washington,Big Sky,Big Sky,20,28,False,True,Hornet Stadium
+400787244,2015,4,regular,2015-09-27 02:30:00,San José State,Fresno State,Mountain West,Mountain West,49,23,False,True,CEFCU Stadium
+400757037,2015,4,regular,2015-09-27 02:30:00,Arizona State,USC,Pac-12,Pac-12,14,42,False,True,Mountain America Stadium
+400799942,2015,5,regular,2015-10-01 23:00:00,SE Louisiana,Lamar,Southland,Southland,30,27,False,True,Strawberry Stadium
+400799681,2015,5,regular,2015-10-01 23:30:00,Texas Southern,Alabama State,SWAC,SWAC,23,41,False,True,BBVA Compass Stadium
+400764873,2015,5,regular,2015-10-01 23:30:00,Cincinnati,Miami,American Athletic,ACC,34,23,False,False,Nippert Stadium
+400764875,2015,5,regular,2015-10-02 23:00:00,South Florida,Memphis,American Athletic,American Athletic,17,24,False,True,Raymond James Stadium
+400763614,2015,5,regular,2015-10-02 23:00:00,Charlotte,Temple,Conference USA,American Athletic,3,37,False,False,Jerry Richardson Stadium
+400799600,2015,5,regular,2015-10-02 23:00:00,Princeton,Columbia,Ivy,Ivy,10,5,False,True,Princeton University Stadium
+400799504,2015,5,regular,2015-10-02 23:00:00,Harvard,Georgetown,Ivy,Patriot,45,0,False,False,Harvard Stadium
+400799502,2015,5,regular,2015-10-02 23:00:00,Cornell,Colgate,Ivy,Patriot,21,28,False,False,Schoellkopf Field
+400795534,2015,5,regular,2015-10-03 00:00:00,Weber State,Southern Utah,Big Sky,Big Sky,0,44,False,True,Stewart Stadium
+400764874,2015,5,regular,2015-10-03 02:15:00,BYU,UConn,FBS Independents,American Athletic,30,13,False,False,LaVell Edwards Stadium
+400763430,2015,5,regular,2015-10-03 16:00:00,TCU,Texas,Big 12,Big 12,50,7,False,True,Amon G. Carter Stadium
+400763531,2015,5,regular,2015-10-03 16:00:00,Michigan State,Purdue,Big Ten,Big Ten,24,21,False,True,Spartan Stadium
+400763428,2015,5,regular,2015-10-03 16:00:00,Oklahoma,West Virginia,Big 12,Big 12,44,24,False,True,"Memorial Stadium (Norman, OK)"
+400763530,2015,5,regular,2015-10-03 16:00:00,Maryland,Michigan,Big Ten,Big Ten,0,28,False,True,SECU Stadium
+400764878,2015,5,regular,2015-10-03 16:00:00,Tulane,UCF,American Athletic,American Athletic,45,31,False,True,Yulman Stadium
+400603883,2015,5,regular,2015-10-03 16:00:00,Missouri,South Carolina,SEC,SEC,24,10,False,True,Memorial Stadium
+400760494,2015,5,regular,2015-10-03 16:00:00,Penn State,Army,Big Ten,FBS Independents,20,14,False,False,Beaver Stadium
+400764879,2015,5,regular,2015-10-03 16:00:00,Tulsa,Houston,American Athletic,American Athletic,24,38,False,True,Chapman Stadium
+400799842,2015,5,regular,2015-10-03 16:00:00,Wagner,Robert Morris,NEC,NEC,6,9,False,True,Wagner College Stadium
+400763532,2015,5,regular,2015-10-03 16:00:00,Northwestern,Minnesota,Big Ten,Big Ten,27,0,False,True,Ryan Field
+400795655,2015,5,regular,2015-10-03 16:00:00,James Madison,Stony Brook,CAA,CAA,38,20,False,True,Bridgeforth Stadium
+400756945,2015,5,regular,2015-10-03 16:00:00,Virginia Tech,Pittsburgh,ACC,ACC,13,17,False,True,Lane Stadium
+400799793,2015,5,regular,2015-10-03 16:00:00,Hampton,North Carolina A&T,MEAC,MEAC,31,45,False,True,Armstrong Stadium
+400763533,2015,5,regular,2015-10-03 16:00:00,Wisconsin,Iowa,Big Ten,Big Ten,6,10,False,True,Camp Randall Stadium
+400763427,2015,5,regular,2015-10-03 16:00:00,Iowa State,Kansas,Big 12,Big 12,38,13,False,True,Jack Trice Stadium
+400799841,2015,5,regular,2015-10-03 16:00:00,Duquesne,Central Connecticut,NEC,NEC,27,10,False,True,Arthur J. Rooney Athletic Field
+400756943,2015,5,regular,2015-10-03 16:30:00,NC State,Louisville,ACC,ACC,13,20,False,True,Carter-Finley Stadium
+400799505,2015,5,regular,2015-10-03 16:30:00,Lehigh,Yale,Patriot,Ivy,12,27,False,False,Goodman Stadium
+400795607,2015,5,regular,2015-10-03 17:00:00,Monmouth,Bryant,Big South,NEC,31,24,True,False,Kessler Field
+400799884,2015,5,regular,2015-10-03 17:00:00,Stetson,Dayton,Pioneer,Pioneer,14,27,False,True,Spec Martin Municipal Stadium
+400795725,2015,5,regular,2015-10-03 17:00:00,Illinois State,Northern Iowa,MVFC,MVFC,21,13,False,True,Hancock Stadium
+400795581,2015,5,regular,2015-10-03 17:00:00,East Tennessee State,Saint Francis,FCS Independents,NEC,9,58,True,False,Kermit Tipton Stadium
+400795659,2015,5,regular,2015-10-03 17:00:00,Holy Cross,UAlbany,Patriot,CAA,37,0,False,False,Fitton Field
+400799794,2015,5,regular,2015-10-03 17:00:00,Howard,Norfolk State,MEAC,MEAC,12,15,False,True,William H. Greene Stadium
+400799882,2015,5,regular,2015-10-03 17:00:00,Jacksonville,Morehead State,Pioneer,Pioneer,30,26,True,True,D. B. Milne Field
+400799881,2015,5,regular,2015-10-03 17:00:00,Davidson,Valparaiso,Pioneer,Pioneer,35,42,False,True,Richardson Stadium
+400799049,2015,5,regular,2015-10-03 17:30:00,VMI,Bucknell,Southern,Patriot,22,28,False,False,Alumni Memorial Field
+400795606,2015,5,regular,2015-10-03 18:00:00,Coastal Carolina,Alabama A&M,Big South,SWAC,55,0,False,False,Brooks Stadium (SC)
+400799792,2015,5,regular,2015-10-03 18:00:00,Delaware State,Morgan State,MEAC,MEAC,6,26,False,True,Alumni Stadium
+400787316,2015,5,regular,2015-10-03 18:00:00,Akron,Ohio,Mid-American,Mid-American,12,14,False,True,InfoCision Stadium
+400795780,2015,5,regular,2015-10-03 18:00:00,Jacksonville State,Mississippi Valley State,OVC,SWAC,49,7,False,False,AmFirst Stadium
+400799795,2015,5,regular,2015-10-03 18:00:00,North Carolina Central,Bethune-Cookman,MEAC,MEAC,26,28,False,True,O'Kelly-Riddick Stadium
+400787315,2015,5,regular,2015-10-03 19:00:00,Central Michigan,Northern Illinois,Mid-American,Mid-American,29,19,False,True,Kelly/Shorts Stadium
+400795727,2015,5,regular,2015-10-03 19:00:00,Missouri State,Indiana State,MVFC,MVFC,28,56,False,True,Plaster Sports Complex
+400787317,2015,5,regular,2015-10-03 19:00:00,Ball State,Toledo,Mid-American,Mid-American,10,24,False,True,Scheumann Stadium
+400763620,2015,5,regular,2015-10-03 19:00:00,Massachusetts,Florida International,Mid-American,Conference USA,24,14,False,False,Warren McGuirk Alumni Stadium
+400795728,2015,5,regular,2015-10-03 19:00:00,South Dakota,Youngstown State,MVFC,MVFC,3,31,False,True,DakotaDome
+400795608,2015,5,regular,2015-10-03 19:30:00,Western Carolina,Presbyterian,Southern,Big South,33,21,False,False,E. J. Whitmire Stadium
+400603879,2015,5,regular,2015-10-03 19:30:00,Georgia,Alabama,SEC,SEC,10,38,False,True,Sanford Stadium
+400795657,2015,5,regular,2015-10-03 19:30:00,New Hampshire,Elon,CAA,CAA,37,14,False,True,Wildcat Stadium
+400763529,2015,5,regular,2015-10-03 19:30:00,Indiana,Ohio State,Big Ten,Big Ten,27,34,False,True,"Memorial Stadium (Bloomington, IN)"
+400787446,2015,5,regular,2015-10-03 19:30:00,Georgia State,Liberty,Sun Belt,Big South,33,41,True,False,Georgia Dome
+400799602,2015,5,regular,2015-10-03 19:30:00,Pennsylvania,Dartmouth,Ivy,Ivy,20,41,False,True,Franklin Field
+400795656,2015,5,regular,2015-10-03 19:30:00,Richmond,Maine,CAA,CAA,48,17,False,True,E. Claiborne Robins Stadium
+400787319,2015,5,regular,2015-10-03 19:30:00,Kent State,Miami (OH),Mid-American,Mid-American,20,14,False,True,Dix Stadium
+400756942,2015,5,regular,2015-10-03 19:30:00,Georgia Tech,North Carolina,ACC,ACC,31,38,False,True,Bobby Dodd Stadium
+400756939,2015,5,regular,2015-10-03 19:30:00,Duke,Boston College,ACC,ACC,9,7,False,True,Wallace Wade Stadium
+400756941,2015,5,regular,2015-10-03 19:30:00,Wake Forest,Florida State,ACC,ACC,16,24,False,True,Allegacy Federal Credit Union Stadium
+400763431,2015,5,regular,2015-10-03 19:30:00,Baylor,Texas Tech,Big 12,Big 12,63,35,True,True,AT&T Stadium
+400763617,2015,5,regular,2015-10-03 19:30:00,Rice,Western Kentucky,Conference USA,Conference USA,10,49,False,True,Rice Stadium
+400763616,2015,5,regular,2015-10-03 19:30:00,Marshall,Old Dominion,Conference USA,Conference USA,27,7,False,True,Joan C. Edwards Stadium
+400787253,2015,5,regular,2015-10-03 19:30:00,App State,Wyoming,Sun Belt,Mountain West,31,13,False,False,Kidd Brewer Stadium
+400787318,2015,5,regular,2015-10-03 19:30:00,Buffalo,Bowling Green,Mid-American,Mid-American,22,28,False,True,UB Stadium
+400764876,2015,5,regular,2015-10-03 19:30:00,Navy,Air Force,American Athletic,Mountain West,33,11,False,False,Navy-Marine Corps Memorial Stadium
+400763429,2015,5,regular,2015-10-03 20:00:00,Oklahoma State,Kansas State,Big 12,Big 12,36,34,False,True,Boone Pickens Stadium
+400757044,2015,5,regular,2015-10-03 20:00:00,California,Washington State,Pac-12,Pac-12,34,28,False,True,California Memorial Stadium
+400764877,2015,5,regular,2015-10-03 20:00:00,SMU,East Carolina,American Athletic,American Athletic,23,49,False,True,Gerald J. Ford Stadium
+400603877,2015,5,regular,2015-10-03 20:00:00,Auburn,San José State,SEC,Mountain West,35,21,False,False,Jordan-Hare Stadium
+400795531,2015,5,regular,2015-10-03 20:00:00,UC Davis,Montana,Big Sky,Big Sky,13,27,False,True,Aggie Stadium
+400799883,2015,5,regular,2015-10-03 20:00:00,San Diego,Marist,Pioneer,Pioneer,30,27,False,True,Torero Stadium
+400795726,2015,5,regular,2015-10-03 20:00:00,Western Illinois,Southern Illinois,MVFC,MVFC,37,36,False,True,Hanson Field
+400763528,2015,5,regular,2015-10-03 20:02:00,Illinois,Nebraska,Big Ten,Big Ten,14,13,False,True,"Memorial Stadium (Champaign, IL)"
+400795783,2015,5,regular,2015-10-03 21:00:00,Austin Peay,Eastern Illinois,OVC,OVC,16,40,False,True,Governors Stadium
+400799650,2015,5,regular,2015-10-03 21:00:00,Arkansas-Pine Bluff,Alcorn State,SWAC,SWAC,14,61,True,True,War Memorial Stadium (AR)
+400795533,2015,5,regular,2015-10-03 21:05:00,Portland State,North Dakota,Big Sky,Big Sky,17,19,False,True,Hillsboro Stadium
+400799030,2015,5,regular,2015-10-03 22:00:00,Mercer,Wofford,Southern,Southern,33,34,False,True,Five Star Stadium at the Moye Complex
+400799503,2015,5,regular,2015-10-03 22:00:00,Lafayette,Fordham,Patriot,Patriot,7,35,False,True,Fisher Field
+400795660,2015,5,regular,2015-10-03 22:00:00,Brown,Rhode Island,Ivy,CAA,41,31,False,False,Brown Stadium
+400799880,2015,5,regular,2015-10-03 22:00:00,Campbell,Drake,Pioneer,Pioneer,24,14,False,True,Barker-Lane Stadium
+400603878,2015,5,regular,2015-10-03 23:00:00,Florida,Ole Miss,SEC,SEC,38,10,False,True,Ben Hill Griffin Stadium
+400795782,2015,5,regular,2015-10-03 23:00:00,Tennessee Tech,UT Martin,OVC,OVC,17,31,False,True,Tucker Stadium
+400799796,2015,5,regular,2015-10-03 23:00:00,Savannah State,Florida A&M,MEAC,MEAC,37,27,False,True,Ted Wright Stadium
+400603881,2015,5,regular,2015-10-03 23:00:00,LSU,Eastern Michigan,SEC,Mid-American,44,22,False,False,Tiger Stadium (LA)
+400787251,2015,5,regular,2015-10-03 23:00:00,Nevada,UNLV,Mountain West,Mountain West,17,23,False,True,Mackay Stadium
+400799023,2015,5,regular,2015-10-03 23:00:00,Furman,South Carolina State,Southern,MEAC,17,3,False,False,Paladin Stadium
+400799665,2015,5,regular,2015-10-03 23:00:00,Jackson State,Grambling,SWAC,SWAC,27,59,False,True,Mississippi Veterans Memorial Stadium
+400795781,2015,5,regular,2015-10-03 23:00:00,Southeast Missouri State,Murray State,OVC,OVC,27,10,True,True,Houck Stadium
+400763615,2015,5,regular,2015-10-03 23:00:00,Louisiana Tech,Louisiana,Conference USA,Sun Belt,43,14,False,False,Joe Aillet Stadium
+400787447,2015,5,regular,2015-10-03 23:00:00,Troy,South Alabama,Sun Belt,Sun Belt,18,24,False,True,Veterans Memorial Stadium (AL)
+400603882,2015,5,regular,2015-10-03 23:00:00,Middle Tennessee,Vanderbilt,Conference USA,SEC,13,17,False,False,"Johnny ""Red"" Floyd Stadium"
+400603884,2015,5,regular,2015-10-03 23:00:00,Tennessee,Arkansas,SEC,SEC,20,24,False,True,Neyland Stadium
+400795729,2015,5,regular,2015-10-03 23:00:00,South Dakota State,North Dakota State,MVFC,MVFC,7,28,True,True,Coughlin-Alumni Stadium
+400763618,2015,5,regular,2015-10-03 23:00:00,Southern Miss,North Texas,Conference USA,Conference USA,49,14,False,True,M. M. Roberts Stadium
+400787444,2015,5,regular,2015-10-03 23:00:00,Arkansas State,Idaho,Sun Belt,Sun Belt,49,35,False,True,Centennial Bank Stadium
+400787249,2015,5,regular,2015-10-03 23:00:00,Utah State,Colorado State,Mountain West,Mountain West,33,18,False,True,Maverik Stadium
+400787445,2015,5,regular,2015-10-03 23:00:00,UL Monroe,Georgia Southern,Sun Belt,Sun Belt,31,51,False,True,Malone Stadium
+400795532,2015,5,regular,2015-10-03 23:05:00,Northern Arizona,Montana State,Big Sky,Big Sky,49,41,False,True,Walkup Skydome
+400757042,2015,5,regular,2015-10-03 23:30:00,UCLA,Arizona State,Pac-12,Pac-12,23,38,False,True,Rose Bowl
+400603885,2015,5,regular,2015-10-03 23:30:00,Texas A&M,Mississippi State,SEC,SEC,30,17,False,True,Kyle Field
+400795658,2015,5,regular,2015-10-03 23:30:00,Delaware,William & Mary,CAA,CAA,24,23,False,True,Delaware Stadium
+400603880,2015,5,regular,2015-10-03 23:30:00,Kentucky,Eastern Kentucky,SEC,OVC,34,27,False,False,Kroger Field
+400787252,2015,5,regular,2015-10-04 00:00:00,New Mexico,New Mexico State,Mountain West,Sun Belt,38,29,False,False,University Stadium (NM)
+400756940,2015,5,regular,2015-10-04 00:00:00,Clemson,Notre Dame,ACC,FBS Independents,24,22,False,False,"Memorial Stadium (Clemson, SC)"
+400763619,2015,5,regular,2015-10-04 00:00:00,UTEP,UTSA,Conference USA,Conference USA,6,25,False,True,Sun Bowl
+400795530,2015,5,regular,2015-10-04 01:05:00,Cal Poly,Idaho State,Big Sky,Big Sky,58,26,False,True,Alex G. Spanos Stadium
+400795535,2015,5,regular,2015-10-04 01:05:00,Sacramento State,Northern Colorado,Big Sky,Big Sky,20,27,False,True,Hornet Stadium
+400787248,2015,5,regular,2015-10-04 02:15:00,Boise State,Hawai'i,Mountain West,Mountain West,55,0,False,True,Albertsons Stadium
+400787250,2015,5,regular,2015-10-04 02:30:00,San Diego State,Fresno State,Mountain West,Mountain West,21,7,False,True,Qualcomm Stadium
+400757041,2015,5,regular,2015-10-04 02:30:00,Stanford,Arizona,Pac-12,Pac-12,55,17,False,True,Stanford Stadium
+400757043,2015,5,regular,2015-10-04 03:05:00,Colorado,Oregon,Pac-12,Pac-12,24,41,False,True,Folsom Field
+400795784,2015,6,regular,2015-10-08 23:00:00,Eastern Kentucky,Tennessee Tech,OVC,OVC,48,17,True,True,Toyota Stadium
+400799797,2015,6,regular,2015-10-08 23:30:00,Bethune-Cookman,South Carolina State,MEAC,MEAC,17,14,False,True,Municipal Stadium
+400764880,2015,6,regular,2015-10-09 00:00:00,Houston,SMU,American Athletic,American Athletic,49,28,False,True,TDECU Stadium
+400757045,2015,6,regular,2015-10-09 01:00:00,USC,Washington,Pac-12,Pac-12,12,17,False,True,Los Angeles Memorial Coliseum
+400763623,2015,6,regular,2015-10-09 23:00:00,Marshall,Southern Miss,Conference USA,Conference USA,31,10,False,True,Joan C. Edwards Stadium
+400756946,2015,6,regular,2015-10-10 00:00:00,Virginia Tech,NC State,ACC,ACC,28,13,False,True,Lane Stadium
+400763626,2015,6,regular,2015-10-10 16:00:00,Western Kentucky,Middle Tennessee,Conference USA,Conference USA,58,28,False,True,Houchens Industries-L.T. Smith Stadium
+400763622,2015,6,regular,2015-10-10 16:00:00,Florida International,UTEP,Conference USA,Conference USA,52,12,False,True,FIU Stadium
+400763434,2015,6,regular,2015-10-10 16:00:00,Texas,Oklahoma,Big 12,Big 12,24,17,True,True,Cotton Bowl
+400799604,2015,6,regular,2015-10-10 16:00:00,Cornell,Harvard,Ivy,Ivy,3,40,False,True,Schoellkopf Field
+400764882,2015,6,regular,2015-10-10 16:00:00,Temple,Tulane,American Athletic,American Athletic,49,10,False,True,Lincoln Financial Field
+400763538,2015,6,regular,2015-10-10 16:00:00,Penn State,Indiana,Big Ten,Big Ten,29,7,False,True,Beaver Stadium
+400763534,2015,6,regular,2015-10-10 16:00:00,Iowa,Illinois,Big Ten,Big Ten,29,20,False,True,Kinnick Stadium
+400763432,2015,6,regular,2015-10-10 16:00:00,Kansas,Baylor,Big 12,Big 12,7,66,False,True,Memorial Stadium
+400763537,2015,6,regular,2015-10-10 16:00:00,Ohio State,Maryland,Big Ten,Big Ten,49,28,False,True,Ohio Stadium
+400787323,2015,6,regular,2015-10-10 16:00:00,Western Michigan,Central Michigan,Mid-American,Mid-American,41,39,False,True,Waldo Stadium
+400799845,2015,6,regular,2015-10-10 16:00:00,Robert Morris,Sacred Heart,NEC,NEC,13,26,False,True,Joe Walton Stadium
+400795609,2015,6,regular,2015-10-10 16:00:00,Charleston Southern,Monmouth,Big South,Big South,37,7,False,True,Buccaneer Field
+400795662,2015,6,regular,2015-10-10 16:00:00,Rhode Island,Delaware,CAA,CAA,20,0,False,True,Meade Stadium
+400756949,2015,6,regular,2015-10-10 16:00:00,Army,Duke,FBS Independents,ACC,3,44,False,False,Michie Stadium
+400795665,2015,6,regular,2015-10-10 16:00:00,Villanova,William & Mary,CAA,CAA,16,38,False,True,Villanova Stadium
+400603902,2015,6,regular,2015-10-10 16:00:00,Ole Miss,New Mexico State,SEC,Sun Belt,52,3,False,False,Vaught-Hemingway Stadium
+400756951,2015,6,regular,2015-10-10 16:30:00,Pittsburgh,Virginia,ACC,ACC,26,19,False,True,Acrisure Stadium
+400795612,2015,6,regular,2015-10-10 17:00:00,Kennesaw State,Point University,Big South,,56,17,False,False,Fifth Third Stadium
+400799509,2015,6,regular,2015-10-10 17:00:00,Princeton,Colgate,Ivy,Patriot,44,20,False,False,Princeton University Stadium
+400799507,2015,6,regular,2015-10-10 17:00:00,Bucknell,Lehigh,Patriot,Patriot,10,21,False,True,Christy Mathewson-Memorial Stadium
+400799890,2015,6,regular,2015-10-10 17:00:00,Morehead State,Butler,Pioneer,Pioneer,34,21,False,True,Jayne Stadium
+400798996,2015,6,regular,2015-10-10 17:00:00,Chattanooga,Furman,Southern,Southern,31,3,False,True,Finley Stadium
+400799843,2015,6,regular,2015-10-10 17:00:00,Central Connecticut,Bryant,NEC,NEC,35,33,False,True,Arute Field
+400799844,2015,6,regular,2015-10-10 17:00:00,Duquesne,Alderson-Broaddus,NEC,Independent DII,53,18,False,False,Arthur J. Rooney Athletic Field
+400799510,2015,6,regular,2015-10-10 17:00:00,Pennsylvania,Fordham,Ivy,Patriot,45,48,False,False,Franklin Field
+400799887,2015,6,regular,2015-10-10 17:00:00,Dayton,San Diego,Pioneer,Pioneer,13,12,False,True,Welcome Stadium
+400799886,2015,6,regular,2015-10-10 17:00:00,Davidson,Kentucky Wesleyan,Pioneer,Independent DII,14,7,False,False,Richardson Stadium
+400799508,2015,6,regular,2015-10-10 17:05:00,Holy Cross,Brown,Patriot,Ivy,24,25,False,False,Fitton Field
+400799605,2015,6,regular,2015-10-10 17:30:00,Dartmouth,Yale,Ivy,Ivy,35,3,False,True,Memorial Field
+400799037,2015,6,regular,2015-10-10 17:30:00,VMI,Samford,Southern,Southern,13,49,False,True,Alumni Memorial Field
+400787321,2015,6,regular,2015-10-10 18:00:00,Bowling Green,Massachusetts,Mid-American,Mid-American,62,38,False,True,Doyt L. Perry Stadium
+400795540,2015,6,regular,2015-10-10 18:00:00,North Dakota,Idaho State,Big Sky,Big Sky,31,37,False,True,Alerus Center
+400799045,2015,6,regular,2015-10-10 18:00:00,The Citadel,Wofford,Southern,Southern,39,12,False,True,Johnson Hagood Stadium
+400787325,2015,6,regular,2015-10-10 18:00:00,Ohio,Miami (OH),Mid-American,Mid-American,34,3,False,True,Peden Stadium
+400799506,2015,6,regular,2015-10-10 18:00:00,Georgetown,Lafayette,Patriot,Patriot,38,7,False,True,Cooper Field
+400795730,2015,6,regular,2015-10-10 18:00:00,North Dakota State,Northern Iowa,MVFC,MVFC,31,28,False,True,Fargodome
+400799799,2015,6,regular,2015-10-10 18:00:00,Hampton,Delaware State,MEAC,MEAC,21,7,False,True,Armstrong Stadium
+400795786,2015,6,regular,2015-10-10 18:00:00,Eastern Illinois,Southeast Missouri State,OVC,OVC,33,28,False,True,O'Brien Stadium
+400795610,2015,6,regular,2015-10-10 18:00:00,Coastal Carolina,Presbyterian,Big South,Big South,24,17,False,True,Brooks Stadium (SC)
+400799888,2015,6,regular,2015-10-10 18:00:00,Drake,Valparaiso,Pioneer,Pioneer,34,7,False,True,Drake Stadium
+400799801,2015,6,regular,2015-10-10 18:00:00,Norfolk State,North Carolina A&T,MEAC,MEAC,3,27,False,True,"William Dick"""" Price Stadium"""""
+400763621,2015,6,regular,2015-10-10 18:30:00,Florida Atlantic,Rice,Conference USA,Conference USA,26,27,False,True,FAU Stadium
+400756947,2015,6,regular,2015-10-10 19:00:00,Boston College,Wake Forest,ACC,ACC,0,3,False,True,"Alumni Stadium (Chestnut Hill, MA)"
+400787320,2015,6,regular,2015-10-10 19:00:00,Toledo,Kent State,Mid-American,Mid-American,38,7,False,True,Glass Bowl
+400787322,2015,6,regular,2015-10-10 19:00:00,Eastern Michigan,Akron,Mid-American,Mid-American,21,47,False,True,Rynearson Stadium
+400795664,2015,6,regular,2015-10-10 19:00:00,Towson,James Madison,CAA,CAA,30,51,False,True,Johnny Unitas Stadium
+400799674,2015,6,regular,2015-10-10 19:00:00,Prairie View A&M,Mississippi Valley State,SWAC,SWAC,45,6,True,True,Blackshear Stadium
+400795663,2015,6,regular,2015-10-10 19:30:00,Richmond,Elon,CAA,CAA,27,14,False,True,E. Claiborne Robins Stadium
+400799031,2015,6,regular,2015-10-10 19:30:00,Western Carolina,Mercer,Southern,Southern,24,21,False,True,E. J. Whitmire Stadium
+400795661,2015,6,regular,2015-10-10 19:30:00,UAlbany,Maine,CAA,CAA,7,39,False,True,Bob Ford Field
+400795787,2015,6,regular,2015-10-10 19:30:00,UT Martin,Tennessee State,OVC,OVC,28,14,False,True,Graham Stadium
+400799944,2015,6,regular,2015-10-10 19:30:00,Houston Christian,Central Arkansas,Southland,Southland,7,43,False,True,Husky Stadium
+400763535,2015,6,regular,2015-10-10 19:30:00,Michigan,Northwestern,Big Ten,Big Ten,38,0,False,True,Michigan Stadium
+400603903,2015,6,regular,2015-10-10 19:30:00,LSU,South Carolina,SEC,SEC,45,24,False,True,Tiger Stadium (LA)
+400787448,2015,6,regular,2015-10-10 19:30:00,Georgia State,App State,Sun Belt,Sun Belt,3,37,False,True,Georgia Dome
+400756952,2015,6,regular,2015-10-10 19:30:00,South Florida,Syracuse,American Athletic,ACC,45,24,False,False,Raymond James Stadium
+400763536,2015,6,regular,2015-10-10 19:30:00,Nebraska,Wisconsin,Big Ten,Big Ten,21,23,False,True,"Memorial Stadium (Lincoln, NE)"
+400787324,2015,6,regular,2015-10-10 19:30:00,Northern Illinois,Ball State,Mid-American,Mid-American,59,41,False,True,Huskie Stadium
+400603904,2015,6,regular,2015-10-10 19:30:00,Tennessee,Georgia,SEC,SEC,38,31,False,True,Neyland Stadium
+400763584,2015,6,regular,2015-10-10 19:30:00,Notre Dame,Navy,FBS Independents,American Athletic,41,24,False,False,Notre Dame Stadium
+400756948,2015,6,regular,2015-10-10 19:30:00,Clemson,Georgia Tech,ACC,ACC,43,24,False,True,"Memorial Stadium (Clemson, SC)"
+400763539,2015,6,regular,2015-10-10 19:30:00,Purdue,Minnesota,Big Ten,Big Ten,13,41,False,True,Ross-Ade Stadium
+400763435,2015,6,regular,2015-10-10 19:30:00,Texas Tech,Iowa State,Big 12,Big 12,66,31,False,True,Jones AT&T Stadium
+400764884,2015,6,regular,2015-10-10 19:45:00,UCF,UConn,American Athletic,American Athletic,13,40,False,True,FBC Mortgage Stadium
+400757046,2015,6,regular,2015-10-10 20:00:00,Arizona,Oregon State,Pac-12,Pac-12,44,7,False,True,Arizona Stadium
+400795731,2015,6,regular,2015-10-10 20:00:00,Western Illinois,South Dakota,MVFC,MVFC,40,21,False,True,Hanson Field
+400799800,2015,6,regular,2015-10-10 20:00:00,Morgan State,Savannah State,MEAC,MEAC,42,3,False,True,Hughes Stadium
+400795539,2015,6,regular,2015-10-10 20:00:00,Montana,Weber State,Big Sky,Big Sky,21,24,False,True,Washington-Grizzly Stadium
+400799948,2015,6,regular,2015-10-10 20:00:00,Stephen F. Austin,Nicholls,Southland,Southland,28,24,False,True,Homer Bryce Stadium
+400795785,2015,6,regular,2015-10-10 20:00:00,Murray State,Austin Peay,OVC,OVC,34,18,False,True,Roy Stewart Stadium
+400603900,2015,6,regular,2015-10-10 20:00:00,Mississippi State,Troy,SEC,Sun Belt,45,17,False,False,Davis Wade Stadium
+400799632,2015,6,regular,2015-10-10 20:00:00,Grambling,Alabama A&M,SWAC,SWAC,37,14,False,True,Eddie Robinson Stadium
+400795538,2015,6,regular,2015-10-10 20:05:00,Eastern Washington,Cal Poly,Big Sky,Big Sky,42,41,False,True,Roos Field
+400763624,2015,6,regular,2015-10-10 21:00:00,North Texas,Portland State,Conference USA,Big Sky,7,66,False,False,DATCU Stadium
+400799798,2015,6,regular,2015-10-10 21:00:00,Florida A&M,North Carolina Central,MEAC,MEAC,24,27,False,True,Bragg Memorial Stadium
+400799889,2015,6,regular,2015-10-10 22:00:00,Jacksonville,Stetson,Pioneer,Pioneer,41,14,True,True,D. B. Milne Field
+400799603,2015,6,regular,2015-10-10 22:00:00,Columbia,Wagner,Ivy,NEC,26,3,False,False,Lawrence A. Wien Stadium
+400799885,2015,6,regular,2015-10-10 22:00:00,Campbell,Marist,Pioneer,Pioneer,10,13,False,True,Barker-Lane Stadium
+400757049,2015,6,regular,2015-10-10 22:00:00,Oregon,Washington State,Pac-12,Pac-12,38,45,False,True,Autzen Stadium
+400764883,2015,6,regular,2015-10-10 22:00:00,Tulsa,UL Monroe,American Athletic,Sun Belt,34,24,False,False,Chapman Stadium
+400795611,2015,6,regular,2015-10-10 23:00:00,Gardner-Webb,Liberty,Big South,Big South,34,20,False,True,Ernest W. Spangler Stadium
+400763625,2015,6,regular,2015-10-10 23:00:00,UTSA,Louisiana Tech,Conference USA,Conference USA,31,34,False,True,Alamodome
+400787258,2015,6,regular,2015-10-10 23:00:00,Nevada,New Mexico,Mountain West,Mountain West,35,17,False,True,Mackay Stadium
+400795536,2015,6,regular,2015-10-10 23:00:00,UC Davis,Northern Arizona,Big Sky,Big Sky,38,24,False,True,Aggie Stadium
+400787449,2015,6,regular,2015-10-10 23:00:00,Louisiana,Texas State,Sun Belt,Sun Belt,49,27,False,True,Cajun Field
+400603899,2015,6,regular,2015-10-10 23:00:00,Alabama,Arkansas,SEC,SEC,27,14,False,True,Bryant-Denny Stadium
+400799947,2015,6,regular,2015-10-10 23:00:00,Sam Houston,Incarnate Word,Southland,Southland,59,7,False,True,Elliott T. Bowers Stadium
+400799643,2015,6,regular,2015-10-10 23:00:00,Alabama State,Southern,SWAC,SWAC,34,45,False,True,Hornet Stadium
+400795733,2015,6,regular,2015-10-10 23:00:00,Southern Illinois,Missouri State,MVFC,MVFC,73,26,False,True,Saluki Stadium
+400795732,2015,6,regular,2015-10-10 23:00:00,Youngstown State,Illinois State,MVFC,MVFC,29,31,False,True,Stambaugh Stadium
+400799946,2015,6,regular,2015-10-10 23:00:00,McNeese,SE Louisiana,Southland,Southland,21,7,False,True,Cowboy Stadium
+400795734,2015,6,regular,2015-10-10 23:00:00,South Dakota State,Indiana State,MVFC,MVFC,24,7,True,True,Coughlin-Alumni Stadium
+400763436,2015,6,regular,2015-10-10 23:00:00,West Virginia,Oklahoma State,Big 12,Big 12,26,33,False,True,Milan Puskar Stadium
+400787255,2015,6,regular,2015-10-10 23:00:00,Colorado State,Boise State,Mountain West,Mountain West,10,41,False,True,Sonny Lubick Field at Hughes Stadium
+400795537,2015,6,regular,2015-10-10 23:05:00,Montana State,Sacramento State,Big Sky,Big Sky,35,13,False,True,Bobcat Stadium
+400603901,2015,6,regular,2015-10-10 23:30:00,Missouri,Florida,SEC,SEC,3,21,False,True,Memorial Stadium
+400763433,2015,6,regular,2015-10-10 23:30:00,Kansas State,TCU,Big 12,Big 12,45,52,False,True,Bill Snyder Family Stadium
+400764881,2015,6,regular,2015-10-10 23:30:00,BYU,East Carolina,FBS Independents,American Athletic,45,38,False,False,LaVell Edwards Stadium
+400799945,2015,6,regular,2015-10-11 00:00:00,Lamar,Abilene Christian,Southland,Southland,44,28,False,True,Provost Umphrey Stadium
+400763540,2015,6,regular,2015-10-11 00:00:00,Rutgers,Michigan State,Big Ten,Big Ten,24,31,False,True,High Point Solutions Stadium
+400756950,2015,6,regular,2015-10-11 00:00:00,Florida State,Miami,ACC,ACC,29,24,False,True,Doak Campbell Stadium
+400787259,2015,6,regular,2015-10-11 01:00:00,UNLV,San José State,Mountain West,Mountain West,27,33,False,True,Sam Boyd Stadium
+400757047,2015,6,regular,2015-10-11 02:00:00,Arizona State,Colorado,Pac-12,Pac-12,48,23,False,True,Mountain America Stadium
+400757048,2015,6,regular,2015-10-11 02:15:00,Utah,California,Pac-12,Pac-12,30,24,False,True,Rice-Eccles Stadium
+400787254,2015,6,regular,2015-10-11 02:26:00,Air Force,Wyoming,Mountain West,Mountain West,31,17,False,True,Falcon Stadium
+400787256,2015,6,regular,2015-10-11 02:30:00,Fresno State,Utah State,Mountain West,Mountain West,14,56,False,True,Valley Children's Stadium
+400787257,2015,6,regular,2015-10-11 03:59:00,Hawai'i,San Diego State,Mountain West,Mountain West,14,28,False,True,Aloha Stadium
+400787450,2015,7,regular,2015-10-14 00:00:00,South Alabama,Arkansas State,Sun Belt,Sun Belt,31,49,False,True,Ladd Peebles Stadium
+400603898,2015,7,regular,2015-10-15 23:00:00,Kentucky,Auburn,SEC,SEC,27,30,False,True,Kroger Field
+400763629,2015,7,regular,2015-10-15 23:30:00,North Texas,Western Kentucky,Conference USA,Conference USA,28,55,False,True,DATCU Stadium
+400799644,2015,7,regular,2015-10-15 23:30:00,Arkansas-Pine Bluff,Alabama State,SWAC,SWAC,24,31,False,True,Golden Lion Stadium
+400757050,2015,7,regular,2015-10-16 02:30:00,Stanford,UCLA,Pac-12,Pac-12,56,35,False,True,Stanford Stadium
+400764886,2015,7,regular,2015-10-17 00:00:00,BYU,Cincinnati,FBS Independents,American Athletic,38,24,False,False,LaVell Edwards Stadium
+400764885,2015,7,regular,2015-10-17 01:00:00,Tulane,Houston,American Athletic,American Athletic,7,42,False,True,Yulman Stadium
+400790882,2015,7,regular,2015-10-17 01:00:00,Utah State,Boise State,Mountain West,Mountain West,52,26,False,True,Maverik Stadium
+400790883,2015,7,regular,2015-10-17 02:30:00,Fresno State,UNLV,Mountain West,Mountain West,31,28,False,True,Valley Children's Stadium
+400603895,2015,7,regular,2015-10-17 16:00:00,Mississippi State,Louisiana Tech,SEC,Conference USA,45,20,False,False,Davis Wade Stadium
+400763628,2015,7,regular,2015-10-17 16:00:00,Middle Tennessee,Florida International,Conference USA,Conference USA,42,34,False,True,"Johnny ""Red"" Floyd Stadium"
+400763627,2015,7,regular,2015-10-17 16:00:00,Florida Atlantic,Marshall,Conference USA,Conference USA,17,33,False,True,FAU Stadium
+400760495,2015,7,regular,2015-10-17 16:00:00,Army,Bucknell,FBS Independents,Patriot,21,14,False,False,Michie Stadium
+400787330,2015,7,regular,2015-10-17 16:00:00,Toledo,Eastern Michigan,Mid-American,Mid-American,63,20,False,True,Glass Bowl
+400799606,2015,7,regular,2015-10-17 16:00:00,Brown,Princeton,Ivy,Ivy,38,31,False,True,Brown Stadium
+400764887,2015,7,regular,2015-10-17 16:00:00,UConn,South Florida,American Athletic,American Athletic,20,28,False,True,Pratt & Whitney Stadium
+400763437,2015,7,regular,2015-10-17 16:00:00,Baylor,West Virginia,Big 12,Big 12,62,38,False,True,McLane Stadium
+400603894,2015,7,regular,2015-10-17 16:00:00,Memphis,Ole Miss,American Athletic,SEC,37,24,False,False,Simmons Bank Liberty Stadium
+400756954,2015,7,regular,2015-10-17 16:00:00,Florida State,Louisville,ACC,ACC,41,21,False,True,Doak Campbell Stadium
+400764888,2015,7,regular,2015-10-17 16:00:00,East Carolina,Tulsa,American Athletic,American Athletic,30,17,False,True,Dowdy-Ficklen Stadium
+400763544,2015,7,regular,2015-10-17 16:00:00,Northwestern,Iowa,Big Ten,Big Ten,10,40,False,True,Ryan Field
+400799608,2015,7,regular,2015-10-17 16:00:00,Central Connecticut,Dartmouth,NEC,Ivy,7,34,False,False,Arute Field
+400799846,2015,7,regular,2015-10-17 16:00:00,Bryant,Duquesne,NEC,NEC,38,17,False,True,Bulldog Stadium
+400795667,2015,7,regular,2015-10-17 16:00:00,William & Mary,New Hampshire,CAA,CAA,34,18,False,True,Zable Stadium
+400795666,2015,7,regular,2015-10-17 16:00:00,Rhode Island,Richmond,CAA,CAA,12,37,False,True,Meade Stadium
+400763546,2015,7,regular,2015-10-17 16:00:00,Wisconsin,Purdue,Big Ten,Big Ten,24,7,False,True,Camp Randall Stadium
+400763439,2015,7,regular,2015-10-17 16:00:00,Kansas,Texas Tech,Big 12,Big 12,20,30,False,True,Memorial Stadium
+400787328,2015,7,regular,2015-10-17 16:00:00,Ohio,Western Michigan,Mid-American,Mid-American,14,49,False,True,Peden Stadium
+400756955,2015,7,regular,2015-10-17 16:30:00,Georgia Tech,Pittsburgh,ACC,ACC,28,31,False,True,Bobby Dodd Stadium
+400787332,2015,7,regular,2015-10-17 17:00:00,Central Michigan,Buffalo,Mid-American,Mid-American,51,14,False,True,Kelly/Shorts Stadium
+400799512,2015,7,regular,2015-10-17 17:00:00,Fordham,Holy Cross,Patriot,Patriot,47,41,True,True,Coffey Field
+400795614,2015,7,regular,2015-10-17 17:00:00,Kennesaw State,Gardner-Webb,Big South,Big South,12,7,False,True,Fifth Third Stadium
+400799511,2015,7,regular,2015-10-17 17:00:00,Georgetown,Colgate,Patriot,Patriot,13,17,False,True,Cooper Field
+400799804,2015,7,regular,2015-10-17 17:00:00,North Carolina A&T,Bethune-Cookman,MEAC,MEAC,24,14,False,True,Aggie Stadium
+400799891,2015,7,regular,2015-10-17 17:00:00,Butler,Davidson,Pioneer,Pioneer,38,7,False,True,Butler Bowl
+400799803,2015,7,regular,2015-10-17 17:00:00,Morgan State,Hampton,MEAC,MEAC,10,20,False,True,Hughes Stadium
+400795615,2015,7,regular,2015-10-17 17:00:00,Monmouth,Liberty,Big South,Big South,20,17,True,True,Kessler Field
+400799892,2015,7,regular,2015-10-17 17:00:00,Jacksonville,Edward Waters,Pioneer,SIAC,49,28,True,False,D. B. Milne Field
+400799607,2015,7,regular,2015-10-17 17:00:00,Sacred Heart,Cornell,NEC,Ivy,31,6,False,False,Campus Field
+400799894,2015,7,regular,2015-10-17 17:00:00,Stetson,Campbell,Pioneer,Pioneer,6,16,False,True,Spec Martin Municipal Stadium
+400798997,2015,7,regular,2015-10-17 17:30:00,VMI,Chattanooga,Southern,Southern,27,33,False,True,Alumni Memorial Field
+400795613,2015,7,regular,2015-10-17 18:00:00,Presbyterian,Charleston Southern,Big South,Big South,7,10,False,True,Bailey Memorial Stadium
+400799895,2015,7,regular,2015-10-17 18:00:00,Valparaiso,Dayton,Pioneer,Pioneer,14,44,False,True,Brown Field
+400799805,2015,7,regular,2015-10-17 18:00:00,Savannah State,North Carolina Central,MEAC,MEAC,22,39,False,True,Ted Wright Stadium
+400795788,2015,7,regular,2015-10-17 18:00:00,Southeast Missouri State,Eastern Kentucky,OVC,OVC,10,27,True,True,Houck Stadium
+400799633,2015,7,regular,2015-10-17 18:00:00,Alabama A&M,Jackson State,SWAC,SWAC,28,22,False,True,Louis Crews Stadium
+400799806,2015,7,regular,2015-10-17 18:00:00,South Carolina State,Howard,MEAC,MEAC,49,10,False,True,Oliver C. Dawson Stadium
+400799053,2015,7,regular,2015-10-17 18:00:00,Wofford,Western Carolina,Southern,Southern,17,24,False,True,Gibbs Stadium
+400787327,2015,7,regular,2015-10-17 18:30:00,Miami (OH),Northern Illinois,Mid-American,Mid-American,12,45,False,True,Yager Stadium
+400787331,2015,7,regular,2015-10-17 19:00:00,Bowling Green,Akron,Mid-American,Mid-American,59,10,False,True,Doyt L. Perry Stadium
+400799038,2015,7,regular,2015-10-17 19:00:00,Samford,The Citadel,Southern,Southern,25,44,False,True,Seibert Stadium
+400799802,2015,7,regular,2015-10-17 19:00:00,Florida A&M,Delaware State,MEAC,MEAC,41,13,False,True,Bragg Memorial Stadium
+400795737,2015,7,regular,2015-10-17 19:00:00,Indiana State,Southern Illinois,MVFC,MVFC,39,36,False,True,Memorial Stadium
+400787329,2015,7,regular,2015-10-17 19:00:00,Ball State,Georgia State,Mid-American,Sun Belt,19,31,False,False,Scheumann Stadium
+400795738,2015,7,regular,2015-10-17 19:00:00,Missouri State,Illinois State,MVFC,MVFC,2,38,False,True,Plaster Sports Complex
+400795670,2015,7,regular,2015-10-17 19:00:00,Elon,James Madison,CAA,CAA,0,51,False,True,Rhodes Stadium
+400795544,2015,7,regular,2015-10-17 19:05:00,Northern Colorado,UC Davis,Big Sky,Big Sky,56,27,False,True,Nottingham Field
+400763630,2015,7,regular,2015-10-17 19:30:00,Old Dominion,Charlotte,Conference USA,Conference USA,37,34,False,True,S.B. Ballard Stadium
+400756958,2015,7,regular,2015-10-17 19:30:00,Virginia,Syracuse,ACC,ACC,44,38,False,True,Scott Stadium
+400763542,2015,7,regular,2015-10-17 19:30:00,Michigan,Michigan State,Big Ten,Big Ten,23,27,False,True,Michigan Stadium
+400763543,2015,7,regular,2015-10-17 19:30:00,Minnesota,Nebraska,Big Ten,Big Ten,25,48,False,True,Huntington Bank Stadium
+400763440,2015,7,regular,2015-10-17 19:30:00,Kansas State,Oklahoma,Big 12,Big 12,0,55,False,True,Bill Snyder Family Stadium
+400763541,2015,7,regular,2015-10-17 19:30:00,Indiana,Rutgers,Big Ten,Big Ten,52,55,False,True,"Memorial Stadium (Bloomington, IN)"
+400756956,2015,7,regular,2015-10-17 19:30:00,Miami,Virginia Tech,ACC,ACC,30,20,False,True,Hard Rock Stadium
+400787453,2015,7,regular,2015-10-17 19:30:00,Troy,Idaho,Sun Belt,Sun Belt,16,19,False,True,Veterans Memorial Stadium (AL)
+400799847,2015,7,regular,2015-10-17 19:30:00,Saint Francis,Wagner,NEC,NEC,43,14,False,True,DeGol Field
+400787260,2015,7,regular,2015-10-17 19:30:00,Colorado State,Air Force,Mountain West,Mountain West,38,23,False,True,Sonny Lubick Field at Hughes Stadium
+400799609,2015,7,regular,2015-10-17 19:30:00,Columbia,Pennsylvania,Ivy,Ivy,7,42,False,True,Lawrence A. Wien Stadium
+400795671,2015,7,regular,2015-10-17 19:30:00,Maine,Yale,CAA,Ivy,10,21,False,False,Alfond Stadium
+400799513,2015,7,regular,2015-10-17 19:30:00,Lafayette,Harvard,Patriot,Ivy,0,42,False,False,Fisher Field
+400787326,2015,7,regular,2015-10-17 19:30:00,Massachusetts,Kent State,Mid-American,Mid-American,10,15,False,True,Warren McGuirk Alumni Stadium
+400795735,2015,7,regular,2015-10-17 19:30:00,North Dakota State,South Dakota,MVFC,MVFC,21,24,False,True,Fargodome
+400799949,2015,7,regular,2015-10-17 19:30:00,Abilene Christian,Sam Houston,Southland,Southland,21,49,True,True,Shotwell Stadium
+400795668,2015,7,regular,2015-10-17 19:30:00,UAlbany,Villanova,CAA,CAA,0,37,False,True,Bob Ford Field
+400603897,2015,7,regular,2015-10-17 19:30:00,Texas A&M,Alabama,SEC,SEC,23,41,False,True,Kyle Field
+400795542,2015,7,regular,2015-10-17 19:35:00,Portland State,Montana State,Big Sky,Big Sky,59,42,True,True,Providence Park
+400603896,2015,7,regular,2015-10-17 20:00:00,South Carolina,Vanderbilt,SEC,SEC,19,10,False,True,Williams-Brice Stadium
+400795736,2015,7,regular,2015-10-17 20:00:00,Youngstown State,South Dakota State,MVFC,MVFC,8,38,False,True,Stambaugh Stadium
+400795582,2015,7,regular,2015-10-17 20:00:00,Mercer,East Tennessee State,Southern,FCS Independents,52,0,False,False,Five Star Stadium at the Moye Complex
+400799951,2015,7,regular,2015-10-17 20:00:00,Nicholls,Houston Christian,Southland,Southland,38,17,False,True,Manning Field at John L. Guidry Stadium
+400787264,2015,7,regular,2015-10-17 20:00:00,Wyoming,Nevada,Mountain West,Mountain West,28,21,False,True,War Memorial Stadium
+400757055,2015,7,regular,2015-10-17 20:00:00,Washington State,Oregon State,Pac-12,Pac-12,52,31,False,True,Gesa Field
+400795541,2015,7,regular,2015-10-17 20:35:00,Idaho State,Eastern Washington,Big Sky,Big Sky,28,45,False,True,Holt Arena
+400799893,2015,7,regular,2015-10-17 21:00:00,San Diego,Drake,Pioneer,Pioneer,27,0,False,True,Torero Stadium
+400795790,2015,7,regular,2015-10-17 21:00:00,Austin Peay,UT Martin,OVC,OVC,14,44,False,True,Governors Stadium
+400795739,2015,7,regular,2015-10-17 21:00:00,Northern Iowa,Western Illinois,MVFC,MVFC,19,24,False,True,UNI-Dome
+400795669,2015,7,regular,2015-10-17 22:00:00,Stony Brook,Towson,CAA,CAA,14,21,False,True,Kenneth P. LaValle Stadium
+400787452,2015,7,regular,2015-10-17 22:00:00,Georgia Southern,New Mexico State,Sun Belt,Sun Belt,56,26,False,True,Allen E. Paulson Stadium
+400787451,2015,7,regular,2015-10-17 23:00:00,UL Monroe,App State,Sun Belt,Sun Belt,14,59,False,True,Malone Stadium
+400756957,2015,7,regular,2015-10-17 23:00:00,North Carolina,Wake Forest,ACC,ACC,50,14,False,True,Kenan Stadium
+400756953,2015,7,regular,2015-10-17 23:00:00,Clemson,Boston College,ACC,ACC,34,17,False,True,"Memorial Stadium (Clemson, SC)"
+400763438,2015,7,regular,2015-10-17 23:00:00,Iowa State,TCU,Big 12,Big 12,21,45,False,True,Jack Trice Stadium
+400787262,2015,7,regular,2015-10-17 23:00:00,New Mexico,Hawai'i,Mountain West,Mountain West,28,27,False,True,University Stadium (NM)
+400603893,2015,7,regular,2015-10-17 23:00:00,LSU,Florida,SEC,SEC,35,28,False,True,Tiger Stadium (LA)
+400799950,2015,7,regular,2015-10-17 23:00:00,Central Arkansas,McNeese,Southland,Southland,13,28,False,True,Estes Stadium
+400799952,2015,7,regular,2015-10-17 23:00:00,Northwestern State,Lamar,Southland,Southland,48,35,False,True,Harry Turpin Stadium
+400763631,2015,7,regular,2015-10-17 23:00:00,Southern Miss,UTSA,Conference USA,Conference USA,32,10,False,True,M. M. Roberts Stadium
+400795791,2015,7,regular,2015-10-17 23:00:00,Tennessee State,Eastern Illinois,OVC,OVC,22,25,False,True,Nissan Stadium
+400795789,2015,7,regular,2015-10-17 23:00:00,Tennessee Tech,Jacksonville State,OVC,OVC,13,42,False,True,Tucker Stadium
+400603892,2015,7,regular,2015-10-17 23:30:00,Georgia,Missouri,SEC,SEC,9,6,False,True,Sanford Stadium
+400757053,2015,7,regular,2015-10-17 23:30:00,Notre Dame,USC,FBS Independents,Pac-12,41,31,False,False,Notre Dame Stadium
+400764889,2015,7,regular,2015-10-17 23:30:00,Temple,UCF,American Athletic,American Athletic,30,16,False,True,Lincoln Financial Field
+400795545,2015,7,regular,2015-10-18 00:00:00,Southern Utah,Sacramento State,Big Sky,Big Sky,44,0,False,True,Eccles Coliseum
+400763545,2015,7,regular,2015-10-18 00:00:00,Ohio State,Penn State,Big Ten,Big Ten,38,10,False,True,Ohio Stadium
+400795543,2015,7,regular,2015-10-18 00:00:00,Weber State,North Dakota,Big Sky,Big Sky,25,24,False,True,Stewart Stadium
+400799953,2015,7,regular,2015-10-18 00:00:00,SE Louisiana,Stephen F. Austin,Southland,Southland,27,28,False,True,Strawberry Stadium
+400757051,2015,7,regular,2015-10-18 01:00:00,Colorado,Arizona,Pac-12,Pac-12,31,38,False,True,Folsom Field
+400757052,2015,7,regular,2015-10-18 02:00:00,Utah,Arizona State,Pac-12,Pac-12,34,18,False,True,Rice-Eccles Stadium
+400757054,2015,7,regular,2015-10-18 02:30:00,Washington,Oregon,Pac-12,Pac-12,20,26,False,True,Husky Stadium
+400787265,2015,7,regular,2015-10-18 02:30:00,San José State,San Diego State,Mountain West,Mountain West,7,30,False,True,CEFCU Stadium
+400787454,2015,8,regular,2015-10-21 00:00:00,Arkansas State,Louisiana,Sun Belt,Sun Belt,37,27,False,True,Centennial Bank Stadium
+400764890,2015,8,regular,2015-10-22 23:00:00,East Carolina,Temple,American Athletic,American Athletic,14,24,False,True,Dowdy-Ficklen Stadium
+400787455,2015,8,regular,2015-10-22 23:30:00,App State,Georgia Southern,Sun Belt,Sun Belt,31,13,False,True,Kidd Brewer Stadium
+400757056,2015,8,regular,2015-10-23 01:00:00,UCLA,California,Pac-12,Pac-12,40,24,False,True,Rose Bowl
+400799613,2015,8,regular,2015-10-23 23:00:00,Pennsylvania,Yale,Ivy,Ivy,34,20,False,True,Franklin Field
+400764891,2015,8,regular,2015-10-24 00:00:00,Tulsa,Memphis,American Athletic,American Athletic,42,66,False,True,Chapman Stadium
+400790884,2015,8,regular,2015-10-24 02:30:00,San Diego State,Utah State,Mountain West,Mountain West,48,14,False,True,Qualcomm Stadium
+400756960,2015,8,regular,2015-10-24 16:00:00,Miami,Clemson,ACC,ACC,0,58,False,True,Hard Rock Stadium
+400603887,2015,8,regular,2015-10-24 16:00:00,Arkansas,Auburn,SEC,SEC,54,46,False,True,Razorback Stadium
+400756964,2015,8,regular,2015-10-24 16:00:00,Wake Forest,NC State,ACC,ACC,17,35,False,True,Allegacy Federal Credit Union Stadium
+400763441,2015,8,regular,2015-10-24 16:00:00,Baylor,Iowa State,Big 12,Big 12,45,27,False,True,McLane Stadium
+400760496,2015,8,regular,2015-10-24 16:00:00,Rice,Army,Conference USA,FBS Independents,38,31,False,False,Rice Stadium
+400763444,2015,8,regular,2015-10-24 16:00:00,Texas,Kansas State,Big 12,Big 12,23,9,False,True,DKR-Texas Memorial Stadium
+400763632,2015,8,regular,2015-10-24 16:00:00,Charlotte,Southern Miss,Conference USA,Conference USA,10,44,False,True,Jerry Richardson Stadium
+400799612,2015,8,regular,2015-10-24 16:00:00,Harvard,Princeton,Ivy,Ivy,42,7,False,True,Harvard Stadium
+400756965,2015,8,regular,2015-10-24 16:00:00,Syracuse,Pittsburgh,ACC,ACC,20,23,False,True,JMA Wireless Dome
+400764895,2015,8,regular,2015-10-24 16:00:00,UCF,Houston,American Athletic,American Athletic,10,59,False,True,FBC Mortgage Stadium
+400763550,2015,8,regular,2015-10-24 16:00:00,Nebraska,Northwestern,Big Ten,Big Ten,28,30,False,True,"Memorial Stadium (Lincoln, NE)"
+400756959,2015,8,regular,2015-10-24 16:30:00,Louisville,Boston College,ACC,ACC,17,14,False,True,L&N Federal Credit Union Stadium
+400795673,2015,8,regular,2015-10-24 16:30:00,Maine,Stony Brook,CAA,CAA,23,10,False,True,Alfond Stadium
+400799610,2015,8,regular,2015-10-24 16:30:00,Cornell,Brown,Ivy,Ivy,24,44,False,True,Schoellkopf Field
+400795742,2015,8,regular,2015-10-24 17:00:00,Indiana State,North Dakota State,MVFC,MVFC,14,28,False,True,Memorial Stadium
+400799514,2015,8,regular,2015-10-24 17:00:00,Fordham,Lehigh,Patriot,Patriot,59,42,True,True,Coffey Field
+400799850,2015,8,regular,2015-10-24 17:00:00,Sacred Heart,Central Connecticut,NEC,NEC,10,26,False,True,Campus Field
+400795617,2015,8,regular,2015-10-24 17:00:00,Monmouth,Coastal Carolina,Big South,Big South,20,23,True,True,Kessler Field
+400799810,2015,8,regular,2015-10-24 17:00:00,North Carolina A&T,Howard,MEAC,MEAC,65,14,False,True,Aggie Stadium
+400799897,2015,8,regular,2015-10-24 17:00:00,Davidson,Marist,Pioneer,Pioneer,10,31,False,True,Richardson Stadium
+400799516,2015,8,regular,2015-10-24 17:00:00,Holy Cross,Lafayette,Patriot,Patriot,42,0,False,True,Fitton Field
+400764893,2015,8,regular,2015-10-24 17:00:00,Navy,Tulane,American Athletic,American Athletic,31,14,False,True,Navy-Marine Corps Memorial Stadium
+400799679,2015,8,regular,2015-10-24 17:00:00,Texas Southern,Southern,SWAC,SWAC,21,40,False,True,BBVA Compass Stadium
+400799515,2015,8,regular,2015-10-24 17:00:00,Bucknell,Georgetown,Patriot,Patriot,9,17,False,True,Christy Mathewson-Memorial Stadium
+400799848,2015,8,regular,2015-10-24 17:00:00,Bryant,Saint Francis,NEC,NEC,26,24,False,True,Bulldog Stadium
+400787334,2015,8,regular,2015-10-24 17:00:00,Kent State,Bowling Green,Mid-American,Mid-American,0,48,False,True,Dix Stadium
+400799024,2015,8,regular,2015-10-24 17:30:00,Furman,The Citadel,Southern,Southern,17,38,False,True,Paladin Stadium
+400798998,2015,8,regular,2015-10-24 17:30:00,Wofford,Chattanooga,Southern,Southern,17,20,False,True,Gibbs Stadium
+400795616,2015,8,regular,2015-10-24 17:30:00,Gardner-Webb,Charleston Southern,Big South,Big South,0,34,False,True,Ernest W. Spangler Stadium
+400799808,2015,8,regular,2015-10-24 18:00:00,Delaware State,South Carolina State,MEAC,MEAC,7,34,False,True,Alumni Stadium
+400795794,2015,8,regular,2015-10-24 18:00:00,Eastern Illinois,Tennessee Tech,OVC,OVC,51,20,False,True,O'Brien Stadium
+400787337,2015,8,regular,2015-10-24 18:00:00,Western Michigan,Miami (OH),Mid-American,Mid-American,35,13,False,True,Waldo Stadium
+400787266,2015,8,regular,2015-10-24 18:00:00,Air Force,Fresno State,Mountain West,Mountain West,42,14,False,True,Falcon Stadium
+400799901,2015,8,regular,2015-10-24 18:00:00,Valparaiso,Stetson,Pioneer,Pioneer,14,37,False,True,Brown Field
+400799809,2015,8,regular,2015-10-24 18:00:00,North Carolina Central,Morgan State,MEAC,MEAC,20,17,False,True,O'Kelly-Riddick Stadium
+400799899,2015,8,regular,2015-10-24 18:00:00,Drake,Jacksonville,Pioneer,Pioneer,28,24,False,True,Drake Stadium
+400795743,2015,8,regular,2015-10-24 19:00:00,South Dakota,Missouri State,MVFC,MVFC,40,10,False,True,DakotaDome
+400795744,2015,8,regular,2015-10-24 19:00:00,South Dakota State,Northern Iowa,MVFC,MVFC,7,10,True,True,Coughlin-Alumni Stadium
+400795740,2015,8,regular,2015-10-24 19:00:00,Illinois State,Western Illinois,MVFC,MVFC,48,28,False,True,Hancock Stadium
+400787338,2015,8,regular,2015-10-24 19:00:00,Massachusetts,Toledo,Mid-American,Mid-American,35,51,False,True,Gillette Stadium
+400795795,2015,8,regular,2015-10-24 19:00:00,UT Martin,Murray State,OVC,OVC,52,45,False,True,Graham Stadium
+400787336,2015,8,regular,2015-10-24 19:00:00,Ball State,Central Michigan,Mid-American,Mid-American,21,23,False,True,Scheumann Stadium
+400799666,2015,8,regular,2015-10-24 19:00:00,Grambling,Mississippi Valley State,SWAC,SWAC,49,14,False,True,Eddie Robinson Stadium
+400799611,2015,8,regular,2015-10-24 19:00:00,Dartmouth,Columbia,Ivy,Ivy,13,9,False,True,Memorial Field
+400787429,2015,8,regular,2015-10-24 19:00:00,BYU,Wagner,FBS Independents,NEC,70,6,False,False,LaVell Edwards Stadium
+400799954,2015,8,regular,2015-10-24 19:00:00,Houston Christian,SE Louisiana,Southland,Southland,7,22,False,True,Husky Stadium
+400799032,2015,8,regular,2015-10-24 19:00:00,Mercer,VMI,Southern,Southern,21,28,False,True,Five Star Stadium at the Moye Complex
+400795792,2015,8,regular,2015-10-24 19:00:00,Eastern Kentucky,Tennessee State,OVC,OVC,45,21,False,True,Roy Kidd Stadium
+400799658,2015,8,regular,2015-10-24 19:00:00,Jackson State,Arkansas-Pine Bluff,SWAC,SWAC,37,3,False,True,Mississippi Veterans Memorial Stadium
+400763547,2015,8,regular,2015-10-24 19:30:00,Illinois,Wisconsin,Big Ten,Big Ten,13,24,False,True,"Memorial Stadium (Champaign, IL)"
+400795676,2015,8,regular,2015-10-24 19:30:00,James Madison,Richmond,CAA,CAA,49,59,False,True,Bridgeforth Stadium
+400795550,2015,8,regular,2015-10-24 19:30:00,Montana,North Dakota,Big Sky,Big Sky,42,16,False,True,Washington-Grizzly Stadium
+400763634,2015,8,regular,2015-10-24 19:30:00,Louisiana Tech,Middle Tennessee,Conference USA,Conference USA,45,16,False,True,Joe Aillet Stadium
+400763635,2015,8,regular,2015-10-24 19:30:00,Marshall,North Texas,Conference USA,Conference USA,30,13,False,True,Joan C. Edwards Stadium
+400795675,2015,8,regular,2015-10-24 19:30:00,William & Mary,Hampton,CAA,MEAC,40,7,False,False,Zable Stadium
+400799039,2015,8,regular,2015-10-24 19:30:00,Western Carolina,Samford,Southern,Southern,56,36,False,True,E. J. Whitmire Stadium
+400795672,2015,8,regular,2015-10-24 19:30:00,Delaware,New Hampshire,CAA,CAA,31,14,False,True,Delaware Stadium
+400787333,2015,8,regular,2015-10-24 19:30:00,Buffalo,Ohio,Mid-American,Mid-American,41,17,False,True,UB Stadium
+400756963,2015,8,regular,2015-10-24 19:30:00,North Carolina,Virginia,ACC,ACC,26,13,False,True,Kenan Stadium
+400763443,2015,8,regular,2015-10-24 19:30:00,Oklahoma State,Kansas,Big 12,Big 12,58,10,False,True,Boone Pickens Stadium
+400603886,2015,8,regular,2015-10-24 19:30:00,Alabama,Tennessee,SEC,SEC,19,14,False,True,Bryant-Denny Stadium
+400763549,2015,8,regular,2015-10-24 19:30:00,Michigan State,Indiana,Big Ten,Big Ten,52,26,False,True,Spartan Stadium
+400756961,2015,8,regular,2015-10-24 19:30:00,Virginia Tech,Duke,ACC,ACC,43,45,False,True,Lane Stadium
+400763548,2015,8,regular,2015-10-24 19:30:00,Maryland,Penn State,Big Ten,Big Ten,30,31,True,True,M&T Bank Stadium
+400787335,2015,8,regular,2015-10-24 19:30:00,Northern Illinois,Eastern Michigan,Mid-American,Mid-American,49,21,False,True,Huskie Stadium
+400763442,2015,8,regular,2015-10-24 19:30:00,Oklahoma,Texas Tech,Big 12,Big 12,63,27,False,True,"Memorial Stadium (Norman, OK)"
+400795552,2015,8,regular,2015-10-24 19:35:00,Northern Colorado,Eastern Washington,Big Sky,Big Sky,41,43,False,True,Nottingham Field
+400799807,2015,8,regular,2015-10-24 20:00:00,Bethune-Cookman,Norfolk State,MEAC,MEAC,59,49,False,True,Municipal Stadium
+400757057,2015,8,regular,2015-10-24 20:00:00,Arizona,Washington State,Pac-12,Pac-12,42,45,False,True,Arizona Stadium
+400603891,2015,8,regular,2015-10-24 20:00:00,Vanderbilt,Missouri,SEC,SEC,10,3,False,True,FirstBank Stadium
+400799896,2015,8,regular,2015-10-24 20:00:00,Campbell,Morehead State,Pioneer,Pioneer,27,31,False,True,Barker-Lane Stadium
+400787268,2015,8,regular,2015-10-24 20:00:00,Nevada,Hawai'i,Mountain West,Mountain West,30,20,False,True,Mackay Stadium
+400764894,2015,8,regular,2015-10-24 20:00:00,South Florida,SMU,American Athletic,American Athletic,38,14,False,True,Raymond James Stadium
+400764892,2015,8,regular,2015-10-24 20:30:00,Cincinnati,UConn,American Athletic,American Athletic,37,13,False,True,Nippert Stadium
+400795548,2015,8,regular,2015-10-24 20:35:00,Montana State,East Tennessee State,Big Sky,FCS Independents,63,7,False,False,Bobcat Stadium
+400795793,2015,8,regular,2015-10-24 21:00:00,Austin Peay,Jacksonville State,OVC,OVC,7,27,False,True,Governors Stadium
+400787456,2015,8,regular,2015-10-24 21:00:00,Idaho,UL Monroe,Sun Belt,Sun Belt,27,13,False,True,Kibbie Dome
+400799849,2015,8,regular,2015-10-24 22:00:00,Robert Morris,Duquesne,NEC,NEC,7,16,False,True,Joe Walton Stadium
+400799898,2015,8,regular,2015-10-24 22:00:00,Dayton,Butler,Pioneer,Pioneer,27,24,False,True,Welcome Stadium
+400763633,2015,8,regular,2015-10-24 22:00:00,Florida International,Old Dominion,Conference USA,Conference USA,41,12,False,True,FIU Stadium
+400763636,2015,8,regular,2015-10-24 23:00:00,UTEP,Florida Atlantic,Conference USA,Conference USA,27,17,False,True,Sun Bowl
+400795741,2015,8,regular,2015-10-24 23:00:00,Southern Illinois,Youngstown State,MVFC,MVFC,38,31,False,True,Saluki Stadium
+400795674,2015,8,regular,2015-10-24 23:00:00,Towson,Villanova,CAA,CAA,28,21,False,True,Johnny Unitas Stadium
+400799957,2015,8,regular,2015-10-24 23:00:00,McNeese,Northwestern State,Southland,Southland,47,27,False,True,Cowboy Stadium
+400795618,2015,8,regular,2015-10-24 23:00:00,Liberty,Kennesaw State,Big South,Big South,45,35,False,True,Williams Stadium (VA)
+400787269,2015,8,regular,2015-10-24 23:00:00,San José State,New Mexico,Mountain West,Mountain West,31,21,False,True,CEFCU Stadium
+400795546,2015,8,regular,2015-10-24 23:00:00,UC Davis,Southern Utah,Big Sky,Big Sky,6,34,False,True,Aggie Stadium
+400603888,2015,8,regular,2015-10-24 23:00:00,LSU,Western Kentucky,SEC,Conference USA,48,20,False,False,Tiger Stadium (LA)
+400799956,2015,8,regular,2015-10-24 23:00:00,Lamar,Central Arkansas,Southland,Southland,17,35,False,True,Provost Umphrey Stadium
+400795547,2015,8,regular,2015-10-24 23:00:00,Northern Arizona,Weber State,Big Sky,Big Sky,52,36,False,True,Walkup Skydome
+400787458,2015,8,regular,2015-10-24 23:00:00,Texas State,South Alabama,Sun Belt,Sun Belt,36,18,False,True,Bobcat Stadium (TX)
+400799958,2015,8,regular,2015-10-24 23:00:00,Sam Houston,Nicholls,Southland,Southland,37,7,False,True,Elliott T. Bowers Stadium
+400603890,2015,8,regular,2015-10-24 23:00:00,Ole Miss,Texas A&M,SEC,SEC,23,3,False,True,Vaught-Hemingway Stadium
+400756962,2015,8,regular,2015-10-24 23:00:00,Georgia Tech,Florida State,ACC,ACC,22,16,False,True,Bobby Dodd Stadium
+400757058,2015,8,regular,2015-10-24 23:30:00,USC,Utah,Pac-12,Pac-12,42,24,False,True,Los Angeles Memorial Coliseum
+400603889,2015,8,regular,2015-10-24 23:30:00,Mississippi State,Kentucky,SEC,SEC,42,16,False,True,Davis Wade Stadium
+400787457,2015,8,regular,2015-10-25 00:00:00,New Mexico State,Troy,Sun Belt,Sun Belt,7,52,False,True,Aggie Memorial Stadium
+400763551,2015,8,regular,2015-10-25 00:00:00,Rutgers,Ohio State,Big Ten,Big Ten,7,49,False,True,High Point Solutions Stadium
+400799900,2015,8,regular,2015-10-25 01:00:00,San Diego,Warner,Pioneer,,45,14,False,False,Torero Stadium
+400795551,2015,8,regular,2015-10-25 01:05:00,Cal Poly,Portland State,Big Sky,Big Sky,35,38,False,True,Alex G. Spanos Stadium
+400795549,2015,8,regular,2015-10-25 01:05:00,Sacramento State,Idaho State,Big Sky,Big Sky,38,13,False,True,Hornet Stadium
+400787267,2015,8,regular,2015-10-25 02:21:00,Boise State,Wyoming,Mountain West,Mountain West,34,14,False,True,Albertsons Stadium
+400757059,2015,8,regular,2015-10-25 02:30:00,Oregon State,Colorado,Pac-12,Pac-12,13,17,False,True,Reser Stadium
+400757060,2015,8,regular,2015-10-25 02:36:00,Stanford,Washington,Pac-12,Pac-12,31,14,False,True,Stanford Stadium
+400850248,2015,8,regular,2015-10-25 19:00:00,Incarnate Word,Abilene Christian,Southland,Southland,25,20,False,True,Gayle and Tom Benson Stadium
+400756966,2015,9,regular,2015-10-29 23:00:00,Pittsburgh,North Carolina,ACC,ACC,19,26,False,True,Acrisure Stadium
+400787340,2015,9,regular,2015-10-29 23:30:00,Miami (OH),Buffalo,Mid-American,Mid-American,24,29,False,True,Yager Stadium
+400787459,2015,9,regular,2015-10-29 23:30:00,Georgia Southern,Texas State,Sun Belt,Sun Belt,37,13,False,True,Allen E. Paulson Stadium
+400763445,2015,9,regular,2015-10-29 23:30:00,TCU,West Virginia,Big 12,Big 12,40,10,False,True,Amon G. Carter Stadium
+400787339,2015,9,regular,2015-10-29 23:30:00,Eastern Michigan,Western Michigan,Mid-American,Mid-American,28,58,False,True,Rynearson Stadium
+400757061,2015,9,regular,2015-10-30 02:30:00,Arizona State,Oregon,Pac-12,Pac-12,55,61,False,True,Mountain America Stadium
+400764896,2015,9,regular,2015-10-30 23:00:00,UConn,East Carolina,American Athletic,American Athletic,31,13,False,True,Pratt & Whitney Stadium
+400756967,2015,9,regular,2015-10-30 23:00:00,Wake Forest,Louisville,ACC,ACC,19,20,False,True,Allegacy Federal Credit Union Stadium
+400799617,2015,9,regular,2015-10-30 23:30:00,Harvard,Dartmouth,Ivy,Ivy,14,13,False,True,Harvard Stadium
+400763641,2015,9,regular,2015-10-31 00:00:00,Rice,Louisiana Tech,Conference USA,Conference USA,17,42,False,True,Rice Stadium
+400790885,2015,9,regular,2015-10-31 02:26:00,Utah State,Wyoming,Mountain West,Mountain West,58,27,False,True,Maverik Stadium
+400799853,2015,9,regular,2015-10-31 16:00:00,Saint Francis,Sacred Heart,NEC,NEC,23,14,False,True,DeGol Field
+400756971,2015,9,regular,2015-10-31 16:00:00,Florida State,Syracuse,ACC,ACC,45,21,False,True,Doak Campbell Stadium
+400799904,2015,9,regular,2015-10-31 16:00:00,Marist,Butler,Pioneer,Pioneer,35,14,False,True,Leonidoff Field
+400799851,2015,9,regular,2015-10-31 16:00:00,Central Connecticut,Robert Morris,NEC,NEC,34,0,False,True,Arute Field
+400795681,2015,9,regular,2015-10-31 16:00:00,Stony Brook,Elon,CAA,CAA,7,21,False,True,Kenneth P. LaValle Stadium
+400799852,2015,9,regular,2015-10-31 16:00:00,Duquesne,Wagner,NEC,NEC,35,17,False,True,Arthur J. Rooney Athletic Field
+400603872,2015,9,regular,2015-10-31 16:00:00,Auburn,Ole Miss,SEC,SEC,19,27,False,True,Jordan-Hare Stadium
+400763555,2015,9,regular,2015-10-31 16:00:00,Purdue,Nebraska,Big Ten,Big Ten,55,45,False,True,Ross-Ade Stadium
+400763556,2015,9,regular,2015-10-31 16:00:00,Wisconsin,Rutgers,Big Ten,Big Ten,48,10,False,True,Camp Randall Stadium
+400764899,2015,9,regular,2015-10-31 16:00:00,Navy,South Florida,American Athletic,American Athletic,29,17,False,True,Navy-Marine Corps Memorial Stadium
+400603876,2015,9,regular,2015-10-31 16:00:00,Texas A&M,South Carolina,SEC,SEC,35,28,False,True,Kyle Field
+400763640,2015,9,regular,2015-10-31 16:00:00,Old Dominion,Western Kentucky,Conference USA,Conference USA,30,55,False,True,S.B. Ballard Stadium
+400764897,2015,9,regular,2015-10-31 16:00:00,Cincinnati,UCF,American Athletic,American Athletic,52,7,False,True,Nippert Stadium
+400763554,2015,9,regular,2015-10-31 16:00:00,Penn State,Illinois,Big Ten,Big Ten,39,0,False,True,Beaver Stadium
+400756968,2015,9,regular,2015-10-31 16:30:00,Boston College,Virginia Tech,ACC,ACC,10,26,False,True,"Alumni Stadium (Chestnut Hill, MA)"
+400799519,2015,9,regular,2015-10-31 16:30:00,Lehigh,Georgetown,Patriot,Patriot,33,28,False,True,Goodman Stadium
+400799615,2015,9,regular,2015-10-31 16:30:00,Yale,Columbia,Ivy,Ivy,7,17,False,True,Yale Bowl
+400799614,2015,9,regular,2015-10-31 16:30:00,Brown,Pennsylvania,Ivy,Ivy,28,48,False,True,Brown Stadium
+400795678,2015,9,regular,2015-10-31 17:00:00,New Hampshire,Rhode Island,CAA,CAA,20,17,False,True,Wildcat Stadium
+400795621,2015,9,regular,2015-10-31 17:00:00,Kennesaw State,Monmouth,Big South,Big South,23,13,False,True,Fifth Third Stadium
+400799518,2015,9,regular,2015-10-31 17:00:00,Colgate,Fordham,Patriot,Patriot,31,29,False,True,Andy Kerr Stadium
+400799903,2015,9,regular,2015-10-31 17:00:00,Dayton,Jacksonville,Pioneer,Pioneer,31,14,False,True,Welcome Stadium
+400795583,2015,9,regular,2015-10-31 17:00:00,East Tennessee State,Warner,FCS Independents,,42,9,True,False,Kermit Tipton Stadium
+400795745,2015,9,regular,2015-10-31 17:00:00,Illinois State,Indiana State,MVFC,MVFC,27,24,False,True,Hancock Stadium
+400799906,2015,9,regular,2015-10-31 17:00:00,Stetson,San Diego,Pioneer,Pioneer,16,47,False,True,Spec Martin Municipal Stadium
+400799905,2015,9,regular,2015-10-31 17:00:00,Morehead State,Drake,Pioneer,Pioneer,38,35,False,True,Jayne Stadium
+400799813,2015,9,regular,2015-10-31 17:00:00,Howard,Savannah State,MEAC,MEAC,55,9,False,True,William H. Greene Stadium
+400787342,2015,9,regular,2015-10-31 17:00:00,Ball State,Massachusetts,Mid-American,Mid-American,20,10,False,True,Scheumann Stadium
+400799520,2015,9,regular,2015-10-31 17:05:00,Holy Cross,Bryant,Patriot,NEC,34,33,False,False,Fitton Field
+400799815,2015,9,regular,2015-10-31 17:30:00,South Carolina State,Hampton,MEAC,MEAC,34,20,False,True,Oliver C. Dawson Stadium
+400799050,2015,9,regular,2015-10-31 17:30:00,VMI,Wofford,Southern,Southern,20,41,False,True,Alumni Memorial Field
+400795746,2015,9,regular,2015-10-31 18:00:00,Western Illinois,Youngstown State,MVFC,MVFC,21,23,False,True,Hanson Field
+400795680,2015,9,regular,2015-10-31 18:00:00,Towson,Delaware,CAA,CAA,19,0,False,True,Johnny Unitas Stadium
+400795556,2015,9,regular,2015-10-31 18:00:00,North Dakota,Montana State,Big Sky,Big Sky,44,38,False,True,Alerus Center
+400795620,2015,9,regular,2015-10-31 18:00:00,Presbyterian,Gardner-Webb,Big South,Big South,10,14,False,True,Bailey Memorial Stadium
+400799814,2015,9,regular,2015-10-31 18:00:00,North Carolina Central,Norfolk State,MEAC,MEAC,24,16,False,True,O'Kelly-Riddick Stadium
+400798999,2015,9,regular,2015-10-31 18:00:00,Chattanooga,Western Carolina,Southern,Southern,41,13,False,True,Finley Stadium
+400787341,2015,9,regular,2015-10-31 18:00:00,Akron,Central Michigan,Mid-American,Mid-American,6,14,False,True,InfoCision Stadium
+400799033,2015,9,regular,2015-10-31 18:00:00,The Citadel,Mercer,Southern,Southern,21,19,False,True,Johnson Hagood Stadium
+400795796,2015,9,regular,2015-10-31 18:00:00,Jacksonville State,Eastern Kentucky,OVC,OVC,34,0,False,True,AmFirst Stadium
+400795797,2015,9,regular,2015-10-31 18:00:00,Southeast Missouri State,Tennessee Tech,OVC,OVC,38,17,True,True,Houck Stadium
+400795749,2015,9,regular,2015-10-31 18:00:00,Northern Iowa,South Dakota,MVFC,MVFC,20,7,False,True,UNI-Dome
+400799659,2015,9,regular,2015-10-31 18:00:00,Prairie View A&M,Arkansas-Pine Bluff,SWAC,SWAC,54,29,True,True,Blackshear Stadium
+400799671,2015,9,regular,2015-10-31 18:00:00,Mississippi Valley State,Jackson State,SWAC,SWAC,16,26,False,True,Rice-Totten Field
+400799811,2015,9,regular,2015-10-31 18:00:00,Delaware State,Bethune-Cookman,MEAC,MEAC,21,49,False,True,Alumni Stadium
+400795798,2015,9,regular,2015-10-31 18:00:00,Murray State,Eastern Illinois,OVC,OVC,20,34,False,True,Roy Stewart Stadium
+400763642,2015,9,regular,2015-10-31 18:30:00,Southern Miss,UTEP,Conference USA,Conference USA,34,13,False,True,M. M. Roberts Stadium
+400795799,2015,9,regular,2015-10-31 19:00:00,Tennessee State,Austin Peay,OVC,OVC,20,6,True,True,Hale Stadium
+400799025,2015,9,regular,2015-10-31 19:00:00,Samford,Furman,Southern,Southern,17,20,False,True,Seibert Stadium
+400799961,2015,9,regular,2015-10-31 19:00:00,Houston Christian,Lamar,Southland,Southland,7,55,False,True,Husky Stadium
+400757064,2015,9,regular,2015-10-31 19:00:00,UCLA,Colorado,Pac-12,Pac-12,35,31,False,True,Rose Bowl
+400757063,2015,9,regular,2015-10-31 19:00:00,California,USC,Pac-12,Pac-12,21,27,False,True,California Memorial Stadium
+400795747,2015,9,regular,2015-10-31 19:00:00,Southern Illinois,North Dakota State,MVFC,MVFC,29,35,False,True,Saluki Stadium
+400795748,2015,9,regular,2015-10-31 19:00:00,Missouri State,South Dakota State,MVFC,MVFC,0,39,False,True,Plaster Sports Complex
+400799902,2015,9,regular,2015-10-31 19:00:00,Davidson,Campbell,Pioneer,Pioneer,9,39,False,True,Richardson Stadium
+400756972,2015,9,regular,2015-10-31 19:00:00,Virginia,Georgia Tech,ACC,ACC,27,21,False,True,Scott Stadium
+400795553,2015,9,regular,2015-10-31 19:05:00,Eastern Washington,Weber State,Big Sky,Big Sky,14,13,False,True,Roos Field
+400787460,2015,9,regular,2015-10-31 19:30:00,App State,Troy,Sun Belt,Sun Belt,44,41,False,True,Kidd Brewer Stadium
+400787273,2015,9,regular,2015-10-31 19:30:00,Colorado State,San Diego State,Mountain West,Mountain West,17,41,False,True,Sonny Lubick Field at Hughes Stadium
+400799517,2015,9,regular,2015-10-31 19:30:00,Lafayette,Bucknell,Patriot,Patriot,24,35,False,True,Fisher Field
+400763447,2015,9,regular,2015-10-31 19:30:00,Kansas,Oklahoma,Big 12,Big 12,7,62,False,True,Memorial Stadium
+400799634,2015,9,regular,2015-10-31 19:30:00,Alabama State,Alabama A&M,SWAC,SWAC,35,20,True,True,Legion Field
+400763448,2015,9,regular,2015-10-31 19:30:00,Texas Tech,Oklahoma State,Big 12,Big 12,53,70,False,True,Jones AT&T Stadium
+400799616,2015,9,regular,2015-10-31 19:30:00,Princeton,Cornell,Ivy,Ivy,47,21,False,True,Princeton University Stadium
+400799959,2015,9,regular,2015-10-31 19:30:00,Abilene Christian,McNeese,Southland,Southland,13,15,True,True,Shotwell Stadium
+400795679,2015,9,regular,2015-10-31 19:30:00,Richmond,UAlbany,CAA,CAA,38,31,False,True,E. Claiborne Robins Stadium
+400763638,2015,9,regular,2015-10-31 19:30:00,Florida Atlantic,Florida International,Conference USA,Conference USA,31,17,False,True,FAU Stadium
+400787272,2015,9,regular,2015-10-31 19:30:00,UNLV,Boise State,Mountain West,Mountain West,27,55,False,True,Sam Boyd Stadium
+400763637,2015,9,regular,2015-10-31 19:30:00,Charlotte,Marshall,Conference USA,Conference USA,10,34,False,True,Jerry Richardson Stadium
+400603873,2015,9,regular,2015-10-31 19:30:00,Florida,Georgia,SEC,SEC,27,3,True,True,EverBank Stadium
+400763552,2015,9,regular,2015-10-31 19:30:00,Iowa,Maryland,Big Ten,Big Ten,31,15,False,True,Kinnick Stadium
+400756969,2015,9,regular,2015-10-31 19:30:00,NC State,Clemson,ACC,ACC,41,56,False,True,Carter-Finley Stadium
+400764900,2015,9,regular,2015-10-31 20:00:00,SMU,Tulsa,American Athletic,American Athletic,31,40,False,True,Gerald J. Ford Stadium
+400799964,2015,9,regular,2015-10-31 20:00:00,Stephen F. Austin,Incarnate Word,Southland,Southland,55,21,False,True,Homer Bryce Stadium
+400603871,2015,9,regular,2015-10-31 20:00:00,Arkansas,UT Martin,SEC,OVC,63,28,False,False,Razorback Stadium
+400799962,2015,9,regular,2015-10-31 20:00:00,Nicholls,Northwestern State,Southland,Southland,21,37,False,True,Manning Field at John L. Guidry Stadium
+400795682,2015,9,regular,2015-10-31 20:00:00,William & Mary,James Madison,CAA,CAA,44,41,False,True,Zable Stadium
+400795557,2015,9,regular,2015-10-31 21:00:00,Northern Arizona,Northern Colorado,Big Sky,Big Sky,63,21,False,True,Walkup Skydome
+400787463,2015,9,regular,2015-10-31 21:00:00,Louisiana,UL Monroe,Sun Belt,Sun Belt,30,24,False,True,Cajun Field
+400799812,2015,9,regular,2015-10-31 21:00:00,Florida A&M,North Carolina A&T,MEAC,MEAC,10,28,False,True,Bragg Memorial Stadium
+400799652,2015,9,regular,2015-10-31 21:00:00,Southern,Alcorn State,SWAC,SWAC,7,48,False,True,Ace W. Mumford Stadium
+400795554,2015,9,regular,2015-10-31 21:00:00,Southern Utah,Cal Poly,Big Sky,Big Sky,54,37,False,True,Eccles Coliseum
+400795555,2015,9,regular,2015-10-31 21:00:00,Portland State,Montana,Big Sky,Big Sky,35,16,True,True,Providence Park
+400756970,2015,9,regular,2015-10-31 23:00:00,Duke,Miami,ACC,ACC,27,30,False,True,Wallace Wade Stadium
+400799963,2015,9,regular,2015-10-31 23:00:00,Sam Houston,East Texas A&M,Southland,Lone Star,38,24,False,False,Elliott T. Bowers Stadium
+400757065,2015,9,regular,2015-10-31 23:00:00,Utah,Oregon State,Pac-12,Pac-12,27,12,False,True,Rice-Eccles Stadium
+400795619,2015,9,regular,2015-10-31 23:00:00,Charleston Southern,Coastal Carolina,Big South,Big South,33,25,False,True,Buccaneer Field
+400787461,2015,9,regular,2015-10-31 23:00:00,Arkansas State,Georgia State,Sun Belt,Sun Belt,48,34,False,True,Centennial Bank Stadium
+400603874,2015,9,regular,2015-10-31 23:00:00,Houston,Vanderbilt,American Athletic,SEC,34,0,False,False,TDECU Stadium
+400763553,2015,9,regular,2015-10-31 23:00:00,Minnesota,Michigan,Big Ten,Big Ten,26,29,False,True,Huntington Bank Stadium
+400764898,2015,9,regular,2015-10-31 23:00:00,Memphis,Tulane,American Athletic,American Athletic,41,13,False,True,Simmons Bank Liberty Stadium
+400763446,2015,9,regular,2015-10-31 23:00:00,Iowa State,Texas,Big 12,Big 12,24,0,False,True,Jack Trice Stadium
+400763639,2015,9,regular,2015-10-31 23:00:00,North Texas,UTSA,Conference USA,Conference USA,30,23,False,True,DATCU Stadium
+400795677,2015,9,regular,2015-10-31 23:30:00,Villanova,Maine,CAA,CAA,13,3,False,True,Villanova Stadium
+400603875,2015,9,regular,2015-10-31 23:30:00,Kentucky,Tennessee,SEC,SEC,21,52,False,True,Kroger Field
+400799960,2015,9,regular,2015-11-01 00:00:00,Central Arkansas,SE Louisiana,Southland,Southland,21,16,False,True,Estes Stadium
+400763585,2015,9,regular,2015-11-01 00:00:00,Temple,Notre Dame,American Athletic,FBS Independents,20,24,False,False,Lincoln Financial Field
+400787462,2015,9,regular,2015-11-01 00:00:00,New Mexico State,Idaho,Sun Belt,Sun Belt,55,48,False,True,Aggie Memorial Stadium
+400787271,2015,9,regular,2015-11-01 02:30:00,Hawai'i,Air Force,Mountain West,Mountain West,7,58,False,True,Aloha Stadium
+400757066,2015,9,regular,2015-11-01 02:30:00,Washington State,Stanford,Pac-12,Pac-12,28,30,False,True,Gesa Field
+400757062,2015,9,regular,2015-11-01 03:00:00,Washington,Arizona,Pac-12,Pac-12,49,3,False,True,Husky Stadium
+400787343,2015,10,regular,2015-11-04 01:00:00,Toledo,Northern Illinois,Mid-American,Mid-American,27,32,False,True,Glass Bowl
+400787344,2015,10,regular,2015-11-05 01:00:00,Bowling Green,Ohio,Mid-American,Mid-American,62,24,False,True,Doyt L. Perry Stadium
+400787345,2015,10,regular,2015-11-06 00:00:00,Kent State,Buffalo,Mid-American,Mid-American,17,18,False,True,Dix Stadium
+400787464,2015,10,regular,2015-11-06 00:30:00,App State,Arkansas State,Sun Belt,Sun Belt,27,40,False,True,Kidd Brewer Stadium
+400787346,2015,10,regular,2015-11-06 00:30:00,Western Michigan,Ball State,Mid-American,Mid-American,54,7,False,True,Waldo Stadium
+400763449,2015,10,regular,2015-11-06 00:30:00,Kansas State,Baylor,Big 12,Big 12,24,31,False,True,Bill Snyder Family Stadium
+400603911,2015,10,regular,2015-11-06 02:00:00,Missouri,Mississippi State,SEC,SEC,13,31,False,True,Memorial Stadium
+400790886,2015,10,regular,2015-11-06 03:30:00,Fresno State,Nevada,Mountain West,Mountain West,16,30,False,True,Valley Children's Stadium
+400799620,2015,10,regular,2015-11-07 01:00:00,Dartmouth,Cornell,Ivy,Ivy,21,3,False,True,Memorial Field
+400764901,2015,10,regular,2015-11-07 01:00:00,SMU,Temple,American Athletic,American Athletic,40,60,False,True,Gerald J. Ford Stadium
+400763646,2015,10,regular,2015-11-07 01:00:00,UTEP,Rice,Conference USA,Conference USA,24,21,False,True,Sun Bowl
+400790887,2015,10,regular,2015-11-07 04:30:00,San José State,BYU,Mountain West,FBS Independents,16,17,False,False,CEFCU Stadium
+400763643,2015,10,regular,2015-11-07 17:00:00,Florida International,Charlotte,Conference USA,Conference USA,48,31,False,True,FIU Stadium
+400799855,2015,10,regular,2015-11-07 17:00:00,Sacred Heart,Duquesne,NEC,NEC,14,41,False,True,Campus Field
+400763648,2015,10,regular,2015-11-07 17:00:00,Western Kentucky,Florida Atlantic,Conference USA,Conference USA,35,19,False,True,Houchens Industries-L.T. Smith Stadium
+400795687,2015,10,regular,2015-11-07 17:00:00,Elon,William & Mary,CAA,CAA,13,34,False,True,Rhodes Stadium
+400763453,2015,10,regular,2015-11-07 17:00:00,West Virginia,Texas Tech,Big 12,Big 12,31,26,False,True,Milan Puskar Stadium
+400756975,2015,10,regular,2015-11-07 17:00:00,North Carolina,Duke,ACC,ACC,66,31,False,True,Kenan Stadium
+400799621,2015,10,regular,2015-11-07 17:00:00,Pennsylvania,Princeton,Ivy,Ivy,26,23,False,True,Franklin Field
+400799856,2015,10,regular,2015-11-07 17:00:00,Wagner,Bryant,NEC,NEC,10,40,False,True,Wagner College Stadium
+400756978,2015,10,regular,2015-11-07 17:00:00,Pittsburgh,Notre Dame,ACC,FBS Independents,30,42,False,False,Acrisure Stadium
+400603906,2015,10,regular,2015-11-07 17:00:00,Florida,Vanderbilt,SEC,SEC,9,7,False,True,Ben Hill Griffin Stadium
+400763563,2015,10,regular,2015-11-07 17:00:00,Purdue,Illinois,Big Ten,Big Ten,14,48,False,True,Ross-Ade Stadium
+400799854,2015,10,regular,2015-11-07 17:00:00,Central Connecticut,Saint Francis,NEC,NEC,13,22,False,True,Arute Field
+400795584,2015,10,regular,2015-11-07 17:00:00,Robert Morris,East Tennessee State,NEC,FCS Independents,21,9,False,False,Joe Walton Stadium
+400763561,2015,10,regular,2015-11-07 17:00:00,Northwestern,Penn State,Big Ten,Big Ten,23,21,False,True,Ryan Field
+400603907,2015,10,regular,2015-11-07 17:00:00,Georgia,Kentucky,SEC,SEC,27,3,False,True,Sanford Stadium
+400795683,2015,10,regular,2015-11-07 17:00:00,Delaware,UAlbany,CAA,CAA,6,17,False,True,Delaware Stadium
+400787348,2015,10,regular,2015-11-07 17:00:00,Massachusetts,Akron,Mid-American,Mid-American,13,17,False,True,Gillette Stadium
+400764906,2015,10,regular,2015-11-07 17:00:00,Tulsa,UCF,American Athletic,American Athletic,45,30,False,True,Chapman Stadium
+400756973,2015,10,regular,2015-11-07 17:30:00,Boston College,NC State,ACC,ACC,8,24,False,True,"Alumni Stadium (Chestnut Hill, MA)"
+400795685,2015,10,regular,2015-11-07 17:30:00,Rhode Island,Villanova,CAA,CAA,3,24,False,True,Meade Stadium
+400799618,2015,10,regular,2015-11-07 17:30:00,Yale,Brown,Ivy,Ivy,41,14,False,True,Yale Bowl
+400756976,2015,10,regular,2015-11-07 17:30:00,Louisville,Syracuse,ACC,ACC,41,17,False,True,L&N Federal Credit Union Stadium
+400799523,2015,10,regular,2015-11-07 17:30:00,Lehigh,Holy Cross,Patriot,Patriot,51,38,False,True,Goodman Stadium
+400799522,2015,10,regular,2015-11-07 18:00:00,Lafayette,Colgate,Patriot,Patriot,19,28,False,True,Fisher Field
+400795800,2015,10,regular,2015-11-07 18:00:00,Eastern Kentucky,UT Martin,OVC,OVC,35,42,False,True,Roy Kidd Stadium
+400799908,2015,10,regular,2015-11-07 18:00:00,Jacksonville,Davidson,Pioneer,Pioneer,42,12,True,True,D. B. Milne Field
+400795688,2015,10,regular,2015-11-07 18:00:00,Stony Brook,Howard,CAA,MEAC,14,9,False,False,Kenneth P. LaValle Stadium
+400799910,2015,10,regular,2015-11-07 18:00:00,Morehead State,Dayton,Pioneer,Pioneer,15,20,False,True,Jayne Stadium
+400799521,2015,10,regular,2015-11-07 18:00:00,Fordham,Bucknell,Patriot,Patriot,24,16,True,True,Coffey Field
+400799909,2015,10,regular,2015-11-07 18:00:00,Marist,Stetson,Pioneer,Pioneer,49,14,False,True,Leonidoff Field
+400799817,2015,10,regular,2015-11-07 18:00:00,Hampton,Florida A&M,MEAC,MEAC,33,0,False,True,Armstrong Stadium
+400795622,2015,10,regular,2015-11-07 18:00:00,Kennesaw State,Charleston Southern,Big South,Big South,14,28,False,True,Fifth Third Stadium
+400799619,2015,10,regular,2015-11-07 18:00:00,Columbia,Harvard,Ivy,Ivy,16,24,False,True,Lawrence A. Wien Stadium
+400799907,2015,10,regular,2015-11-07 18:00:00,Butler,Valparaiso,Pioneer,Pioneer,42,21,False,True,Butler Bowl
+400757070,2015,10,regular,2015-11-07 18:00:00,Colorado,Stanford,Pac-12,Pac-12,10,42,False,True,Folsom Field
+400799820,2015,10,regular,2015-11-07 18:30:00,South Carolina State,North Carolina A&T,MEAC,MEAC,6,9,False,True,Oliver C. Dawson Stadium
+400795750,2015,10,regular,2015-11-07 19:00:00,Youngstown State,Missouri State,MVFC,MVFC,47,7,False,True,Stambaugh Stadium
+400795753,2015,10,regular,2015-11-07 19:00:00,South Dakota,Southern Illinois,MVFC,MVFC,34,31,False,True,DakotaDome
+400787465,2015,10,regular,2015-11-07 19:00:00,Georgia State,Louisiana,Sun Belt,Sun Belt,21,23,False,True,Georgia Dome
+400795560,2015,10,regular,2015-11-07 19:00:00,Weber State,UC Davis,Big Sky,Big Sky,23,3,False,True,Stewart Stadium
+400795558,2015,10,regular,2015-11-07 19:00:00,Northern Colorado,Portland State,Big Sky,Big Sky,35,32,False,True,Nottingham Field
+400799818,2015,10,regular,2015-11-07 19:00:00,North Carolina Central,Delaware State,MEAC,MEAC,43,10,False,True,O'Kelly-Riddick Stadium
+400799819,2015,10,regular,2015-11-07 19:00:00,Norfolk State,Savannah State,MEAC,MEAC,20,17,False,True,"William Dick"""" Price Stadium"""""
+400795802,2015,10,regular,2015-11-07 19:00:00,Eastern Illinois,Jacksonville State,OVC,OVC,3,24,False,True,O'Brien Stadium
+400799046,2015,10,regular,2015-11-07 19:00:00,The Citadel,VMI,Southern,Southern,35,14,False,True,Johnson Hagood Stadium
+400799635,2015,10,regular,2015-11-07 19:00:00,Alabama A&M,Mississippi Valley State,SWAC,SWAC,27,24,False,True,Louis Crews Stadium
+400787347,2015,10,regular,2015-11-07 19:30:00,Miami (OH),Eastern Michigan,Mid-American,Mid-American,28,13,False,True,Yager Stadium
+400756977,2015,10,regular,2015-11-07 20:00:00,Miami,Virginia,ACC,ACC,27,21,False,True,Hard Rock Stadium
+400787275,2015,10,regular,2015-11-07 20:00:00,Wyoming,Colorado State,Mountain West,Mountain West,7,26,False,True,War Memorial Stadium
+400787466,2015,10,regular,2015-11-07 20:00:00,South Alabama,Idaho,Sun Belt,Sun Belt,52,45,False,True,Ladd Peebles Stadium
+400795686,2015,10,regular,2015-11-07 20:00:00,New Hampshire,Richmond,CAA,CAA,30,25,False,True,Wildcat Stadium
+400799911,2015,10,regular,2015-11-07 20:00:00,San Diego,Campbell,Pioneer,Pioneer,31,27,False,True,Torero Stadium
+400799040,2015,10,regular,2015-11-07 20:00:00,Samford,Clark Atlanta,Southern,SIAC,43,0,False,False,Seibert Stadium
+400795754,2015,10,regular,2015-11-07 20:00:00,South Dakota State,Illinois State,MVFC,MVFC,25,20,True,True,Coughlin-Alumni Stadium
+400799653,2015,10,regular,2015-11-07 20:00:00,Alcorn State,Prairie View A&M,SWAC,SWAC,34,40,False,True,Jack Spinks Stadium
+400799667,2015,10,regular,2015-11-07 20:00:00,Grambling,Texas Southern,SWAC,SWAC,41,15,False,True,Eddie Robinson Stadium
+400795623,2015,10,regular,2015-11-07 20:30:00,Coastal Carolina,Gardner-Webb,Big South,Big South,46,0,False,True,Brooks Stadium (SC)
+400799965,2015,10,regular,2015-11-07 20:30:00,Central Arkansas,Stephen F. Austin,Southland,Southland,36,24,False,True,Estes Stadium
+400799660,2015,10,regular,2015-11-07 20:30:00,Arkansas-Pine Bluff,Southern,SWAC,SWAC,24,57,False,True,Golden Lion Stadium
+400795803,2015,10,regular,2015-11-07 20:30:00,Tennessee State,Murray State,OVC,OVC,43,46,True,True,Hale Stadium
+400795624,2015,10,regular,2015-11-07 20:30:00,Liberty,Presbyterian,Big South,Big South,21,13,False,True,Williams Stadium (VA)
+400799026,2015,10,regular,2015-11-07 20:30:00,Western Carolina,Furman,Southern,Southern,48,10,False,True,E. J. Whitmire Stadium
+400795751,2015,10,regular,2015-11-07 20:30:00,North Dakota State,Western Illinois,MVFC,MVFC,59,7,False,True,Fargodome
+400603908,2015,10,regular,2015-11-07 20:30:00,Ole Miss,Arkansas,SEC,SEC,52,53,False,True,Vaught-Hemingway Stadium
+400760497,2015,10,regular,2015-11-07 20:30:00,Air Force,Army,Mountain West,FBS Independents,20,3,False,False,Falcon Stadium
+400763451,2015,10,regular,2015-11-07 20:30:00,Oklahoma State,TCU,Big 12,Big 12,49,29,False,True,Boone Pickens Stadium
+400763645,2015,10,regular,2015-11-07 20:30:00,Middle Tennessee,Marshall,Conference USA,Conference USA,27,24,False,True,"Johnny ""Red"" Floyd Stadium"
+400787467,2015,10,regular,2015-11-07 20:30:00,Troy,UL Monroe,Sun Belt,Sun Belt,51,14,False,True,Veterans Memorial Stadium (AL)
+400763557,2015,10,regular,2015-11-07 20:30:00,Indiana,Iowa,Big Ten,Big Ten,27,35,False,True,"Memorial Stadium (Bloomington, IN)"
+400787278,2015,10,regular,2015-11-07 20:30:00,New Mexico,Utah State,Mountain West,Mountain West,14,13,False,True,University Stadium (NM)
+400757068,2015,10,regular,2015-11-07 20:30:00,Washington State,Arizona State,Pac-12,Pac-12,38,24,False,True,Gesa Field
+400763559,2015,10,regular,2015-11-07 20:30:00,Michigan,Rutgers,Big Ten,Big Ten,49,16,False,True,Michigan Stadium
+400756974,2015,10,regular,2015-11-07 20:30:00,Clemson,Florida State,ACC,ACC,23,13,False,True,"Memorial Stadium (Clemson, SC)"
+400764903,2015,10,regular,2015-11-07 20:30:00,Houston,Cincinnati,American Athletic,American Athletic,33,30,False,True,TDECU Stadium
+400763644,2015,10,regular,2015-11-07 20:30:00,Louisiana Tech,North Texas,Conference USA,Conference USA,56,13,False,True,Joe Aillet Stadium
+400763558,2015,10,regular,2015-11-07 20:30:00,Maryland,Wisconsin,Big Ten,Big Ten,24,31,False,True,SECU Stadium
+400795559,2015,10,regular,2015-11-07 20:40:00,Montana State,Southern Utah,Big Sky,Big Sky,23,34,False,True,Bobcat Stadium
+400799816,2015,10,regular,2015-11-07 21:00:00,Bethune-Cookman,Morgan State,MEAC,MEAC,38,14,False,True,Municipal Stadium
+400799000,2015,10,regular,2015-11-07 21:00:00,Mercer,Chattanooga,Southern,Southern,17,14,False,True,Five Star Stadium at the Moye Complex
+400764905,2015,10,regular,2015-11-07 21:00:00,Tulane,UConn,American Athletic,American Athletic,3,7,False,True,Yulman Stadium
+400603909,2015,10,regular,2015-11-07 21:00:00,Tennessee,South Carolina,SEC,SEC,27,24,False,True,Neyland Stadium
+400787468,2015,10,regular,2015-11-07 21:00:00,Texas State,New Mexico State,Sun Belt,Sun Belt,21,31,False,True,Bobcat Stadium (TX)
+400757069,2015,10,regular,2015-11-07 21:30:00,Oregon State,UCLA,Pac-12,Pac-12,0,41,False,True,Reser Stadium
+400795561,2015,10,regular,2015-11-07 21:35:00,Idaho State,Montana,Big Sky,Big Sky,27,33,False,True,Holt Arena
+400795752,2015,10,regular,2015-11-07 22:00:00,Northern Iowa,Indiana State,MVFC,MVFC,59,13,False,True,UNI-Dome
+400795801,2015,10,regular,2015-11-07 22:00:00,Austin Peay,Southeast Missouri State,OVC,OVC,15,44,False,True,Governors Stadium
+400787277,2015,10,regular,2015-11-07 23:00:00,UNLV,Hawai'i,Mountain West,Mountain West,41,21,False,True,Sam Boyd Stadium
+400795563,2015,10,regular,2015-11-07 23:05:00,Eastern Washington,Northern Arizona,Big Sky,Big Sky,30,52,False,True,Roos Field
+400799966,2015,10,regular,2015-11-08 00:00:00,Lamar,Nicholls,Southland,Southland,28,30,False,True,Provost Umphrey Stadium
+400799968,2015,10,regular,2015-11-08 00:00:00,Northwestern State,Abilene Christian,Southland,Southland,39,22,False,True,Harry Turpin Stadium
+400799967,2015,10,regular,2015-11-08 00:00:00,McNeese,Sam Houston,Southland,Southland,27,10,False,True,Cowboy Stadium
+400799969,2015,10,regular,2015-11-08 00:00:00,SE Louisiana,Incarnate Word,Southland,Southland,2,16,False,True,Strawberry Stadium
+400799645,2015,10,regular,2015-11-08 00:00:00,Jackson State,Alabama State,SWAC,SWAC,12,17,False,True,Mississippi Veterans Memorial Stadium
+400795684,2015,10,regular,2015-11-08 00:00:00,Maine,Towson,CAA,CAA,7,10,False,True,Alfond Stadium
+400764904,2015,10,regular,2015-11-08 00:00:00,Memphis,Navy,American Athletic,American Athletic,20,45,False,True,Simmons Bank Liberty Stadium
+400763450,2015,10,regular,2015-11-08 00:00:00,Oklahoma,Iowa State,Big 12,Big 12,52,16,False,True,"Memorial Stadium (Norman, OK)"
+400763560,2015,10,regular,2015-11-08 00:00:00,Nebraska,Michigan State,Big Ten,Big Ten,39,38,False,True,"Memorial Stadium (Lincoln, NE)"
+400763647,2015,10,regular,2015-11-08 00:00:00,UTSA,Old Dominion,Conference USA,Conference USA,31,36,False,True,Alamodome
+400603910,2015,10,regular,2015-11-08 00:30:00,Texas A&M,Auburn,SEC,SEC,10,26,False,True,Kyle Field
+400764902,2015,10,regular,2015-11-08 00:30:00,East Carolina,South Florida,American Athletic,American Athletic,17,22,False,True,Dowdy-Ficklen Stadium
+400757071,2015,10,regular,2015-11-08 00:30:00,Washington,Utah,Pac-12,Pac-12,23,34,False,True,Husky Stadium
+400763452,2015,10,regular,2015-11-08 01:00:00,Texas,Kansas,Big 12,Big 12,59,20,False,True,DKR-Texas Memorial Stadium
+400763562,2015,10,regular,2015-11-08 01:00:00,Ohio State,Minnesota,Big Ten,Big Ten,28,14,False,True,Ohio Stadium
+400603905,2015,10,regular,2015-11-08 01:00:00,Alabama,LSU,SEC,SEC,30,16,False,True,Bryant-Denny Stadium
+400795562,2015,10,regular,2015-11-08 02:05:00,Cal Poly,Sacramento State,Big Sky,Big Sky,36,14,False,True,Alex G. Spanos Stadium
+400757067,2015,10,regular,2015-11-08 03:30:00,USC,Arizona,Pac-12,Pac-12,38,30,False,True,Los Angeles Memorial Coliseum
+400757072,2015,10,regular,2015-11-08 03:30:00,Oregon,California,Pac-12,Pac-12,44,28,False,True,Autzen Stadium
+400787350,2015,11,regular,2015-11-11 01:00:00,Central Michigan,Toledo,Mid-American,Mid-American,23,28,False,True,Kelly/Shorts Stadium
+400787349,2015,11,regular,2015-11-11 01:00:00,Ohio,Kent State,Mid-American,Mid-American,27,0,False,True,Peden Stadium
+400787351,2015,11,regular,2015-11-12 01:00:00,Buffalo,Northern Illinois,Mid-American,Mid-American,30,41,False,True,UB Stadium
+400787352,2015,11,regular,2015-11-12 01:00:00,Western Michigan,Bowling Green,Mid-American,Mid-American,27,41,False,True,Waldo Stadium
+400756979,2015,11,regular,2015-11-13 00:30:00,Georgia Tech,Virginia Tech,ACC,ACC,21,23,False,True,Bobby Dodd Stadium
+400787469,2015,11,regular,2015-11-13 00:30:00,South Alabama,Louisiana,Sun Belt,Sun Belt,32,25,False,True,Ladd Peebles Stadium
+400757073,2015,11,regular,2015-11-14 02:00:00,Colorado,USC,Pac-12,Pac-12,24,27,False,True,Folsom Field
+400799624,2015,11,regular,2015-11-14 17:00:00,Harvard,Pennsylvania,Ivy,Ivy,25,35,False,True,Harvard Stadium
+400763568,2015,11,regular,2015-11-14 17:00:00,Northwestern,Purdue,Big Ten,Big Ten,21,14,False,True,Ryan Field
+400763564,2015,11,regular,2015-11-14 17:00:00,Illinois,Ohio State,Big Ten,Big Ten,3,28,False,True,"Memorial Stadium (Champaign, IL)"
+400795627,2015,11,regular,2015-11-14 17:00:00,Monmouth,Presbyterian,Big South,Big South,21,16,True,True,Kessler Field
+400603935,2015,11,regular,2015-11-14 17:00:00,Tennessee,North Texas,SEC,Conference USA,24,0,False,False,Neyland Stadium
+400603931,2015,11,regular,2015-11-14 17:00:00,Auburn,Georgia,SEC,SEC,13,20,False,True,Jordan-Hare Stadium
+400763456,2015,11,regular,2015-11-14 17:00:00,TCU,Kansas,Big 12,Big 12,23,17,False,True,Amon G. Carter Stadium
+400799914,2015,11,regular,2015-11-14 17:00:00,Davidson,San Diego,Pioneer,Pioneer,10,35,False,True,Richardson Stadium
+400799858,2015,11,regular,2015-11-14 17:00:00,Saint Francis,Robert Morris,NEC,NEC,21,0,False,True,DeGol Field
+400799859,2015,11,regular,2015-11-14 17:00:00,Wagner,Central Connecticut,NEC,NEC,28,7,False,True,Wagner College Stadium
+400603934,2015,11,regular,2015-11-14 17:00:00,South Carolina,Florida,SEC,SEC,14,24,False,True,Williams-Brice Stadium
+400799524,2015,11,regular,2015-11-14 17:00:00,Georgetown,Fordham,Patriot,Patriot,31,38,False,True,Cooper Field
+400763650,2015,11,regular,2015-11-14 17:00:00,Florida Atlantic,Middle Tennessee,Conference USA,Conference USA,17,24,False,True,FAU Stadium
+400763567,2015,11,regular,2015-11-14 17:00:00,Michigan State,Maryland,Big Ten,Big Ten,24,7,False,True,Spartan Stadium
+400799857,2015,11,regular,2015-11-14 17:00:00,Bryant,Sacred Heart,NEC,NEC,19,28,False,True,Bulldog Stadium
+400763652,2015,11,regular,2015-11-14 17:00:00,Old Dominion,UTEP,Conference USA,Conference USA,31,21,False,True,S.B. Ballard Stadium
+400787353,2015,11,regular,2015-11-14 17:00:00,Miami (OH),Akron,Mid-American,Mid-American,28,37,False,True,Yager Stadium
+400756981,2015,11,regular,2015-11-14 17:00:00,Duke,Pittsburgh,ACC,ACC,13,31,False,True,Wallace Wade Stadium
+400760498,2015,11,regular,2015-11-14 17:00:00,Army,Tulane,FBS Independents,American Athletic,31,34,False,False,Michie Stadium
+400763458,2015,11,regular,2015-11-14 17:00:00,West Virginia,Texas,Big 12,Big 12,38,20,False,True,Milan Puskar Stadium
+400756983,2015,11,regular,2015-11-14 17:30:00,Louisville,Virginia,ACC,ACC,38,31,False,True,L&N Federal Credit Union Stadium
+400756982,2015,11,regular,2015-11-14 17:30:00,Florida State,NC State,ACC,ACC,34,17,False,True,Doak Campbell Stadium
+400795690,2015,11,regular,2015-11-14 17:30:00,Rhode Island,Stony Brook,CAA,CAA,7,19,False,True,Meade Stadium
+400799623,2015,11,regular,2015-11-14 17:30:00,Cornell,Columbia,Ivy,Ivy,3,0,False,True,Schoellkopf Field
+400799622,2015,11,regular,2015-11-14 17:30:00,Brown,Dartmouth,Ivy,Ivy,18,34,False,True,Brown Stadium
+400795693,2015,11,regular,2015-11-14 17:30:00,Maine,Elon,CAA,CAA,22,27,False,True,Alfond Stadium
+400799822,2015,11,regular,2015-11-14 18:00:00,Morgan State,Florida A&M,MEAC,MEAC,21,7,False,True,Hughes Stadium
+400799525,2015,11,regular,2015-11-14 18:00:00,Colgate,Lehigh,Patriot,Patriot,49,42,False,True,Andy Kerr Stadium
+400799823,2015,11,regular,2015-11-14 18:00:00,Norfolk State,South Carolina State,MEAC,MEAC,10,17,False,True,"William Dick"""" Price Stadium"""""
+400799912,2015,11,regular,2015-11-14 18:00:00,Butler,Drake,Pioneer,Pioneer,20,13,False,True,Butler Bowl
+400799526,2015,11,regular,2015-11-14 18:00:00,Bucknell,Holy Cross,Patriot,Patriot,7,23,False,True,Christy Mathewson-Memorial Stadium
+400799824,2015,11,regular,2015-11-14 18:00:00,North Carolina A&T,Delaware State,MEAC,MEAC,27,6,False,True,Aggie Stadium
+400799915,2015,11,regular,2015-11-14 18:00:00,Dayton,Marist,Pioneer,Pioneer,28,21,False,True,Welcome Stadium
+400799625,2015,11,regular,2015-11-14 18:00:00,Princeton,Yale,Ivy,Ivy,28,35,False,True,Princeton University Stadium
+400799825,2015,11,regular,2015-11-14 18:00:00,Savannah State,Hampton,MEAC,MEAC,3,42,False,True,Ted Wright Stadium
+400799913,2015,11,regular,2015-11-14 18:00:00,Campbell,Jacksonville,Pioneer,Pioneer,14,20,False,True,Barker-Lane Stadium
+400799821,2015,11,regular,2015-11-14 18:00:00,Howard,North Carolina Central,MEAC,MEAC,6,41,False,True,William H. Greene Stadium
+400795757,2015,11,regular,2015-11-14 18:05:00,Indiana State,Western Illinois,MVFC,MVFC,30,37,False,True,Memorial Stadium
+400795585,2015,11,regular,2015-11-14 18:30:00,Gardner-Webb,East Tennessee State,Big South,FCS Independents,28,3,False,False,Ernest W. Spangler Stadium
+400795692,2015,11,regular,2015-11-14 18:30:00,William & Mary,Towson,CAA,CAA,31,17,False,True,Zable Stadium
+400799027,2015,11,regular,2015-11-14 18:30:00,Furman,Mercer,Southern,Southern,20,27,False,True,Paladin Stadium
+400799041,2015,11,regular,2015-11-14 18:30:00,Wofford,Samford,Southern,Southern,27,37,False,True,Gibbs Stadium
+400795804,2015,11,regular,2015-11-14 19:00:00,Jacksonville State,Southeast Missouri State,OVC,OVC,56,28,False,True,AmFirst Stadium
+400795759,2015,11,regular,2015-11-14 19:00:00,South Dakota,South Dakota State,MVFC,MVFC,23,30,False,True,DakotaDome
+400799021,2015,11,regular,2015-11-14 19:00:00,Chattanooga,The Citadel,Southern,Southern,31,23,False,True,Finley Stadium
+400787280,2015,11,regular,2015-11-14 19:00:00,Air Force,Utah State,Mountain West,Mountain West,35,28,False,True,Falcon Stadium
+400795805,2015,11,regular,2015-11-14 19:00:00,Murray State,Eastern Kentucky,OVC,OVC,34,41,False,True,Roy Stewart Stadium
+400799917,2015,11,regular,2015-11-14 19:00:00,Valparaiso,Morehead State,Pioneer,Pioneer,29,36,False,True,Brown Field
+400795626,2015,11,regular,2015-11-14 19:00:00,Coastal Carolina,Kennesaw State,Big South,Big South,45,13,False,True,Brooks Stadium (SC)
+400795625,2015,11,regular,2015-11-14 19:00:00,Charleston Southern,Liberty,Big South,Big South,31,24,False,True,Buccaneer Field
+400795755,2015,11,regular,2015-11-14 19:00:00,Youngstown State,North Dakota State,MVFC,MVFC,24,27,False,True,Stambaugh Stadium
+400799654,2015,11,regular,2015-11-14 19:00:00,Texas Southern,Alcorn State,SWAC,SWAC,13,65,False,True,BBVA Compass Stadium
+400763649,2015,11,regular,2015-11-14 19:00:00,Charlotte,UTSA,Conference USA,Conference USA,27,30,False,True,Jerry Richardson Stadium
+400795567,2015,11,regular,2015-11-14 19:00:00,North Dakota,Northern Colorado,Big Sky,Big Sky,45,14,False,True,Alerus Center
+400795806,2015,11,regular,2015-11-14 19:30:00,Tennessee Tech,Austin Peay,OVC,OVC,42,24,False,True,Tucker Stadium
+400795758,2015,11,regular,2015-11-14 20:00:00,Missouri State,Northern Iowa,MVFC,MVFC,0,41,False,True,Plaster Sports Complex
+400799916,2015,11,regular,2015-11-14 20:00:00,Stetson,Ave Maria University,Pioneer,,60,21,False,False,Spec Martin Municipal Stadium
+400787354,2015,11,regular,2015-11-14 20:00:00,Eastern Michigan,Massachusetts,Mid-American,Mid-American,17,28,False,True,Rynearson Stadium
+400799971,2015,11,regular,2015-11-14 20:00:00,Incarnate Word,Lamar,Southland,Southland,21,28,False,True,Gayle and Tom Benson Stadium
+400795807,2015,11,regular,2015-11-14 20:00:00,UT Martin,Eastern Illinois,OVC,OVC,21,23,False,True,Graham Stadium
+400787471,2015,11,regular,2015-11-14 20:00:00,UL Monroe,Arkansas State,Sun Belt,Sun Belt,21,59,False,True,Malone Stadium
+400799970,2015,11,regular,2015-11-14 20:00:00,Abilene Christian,SE Louisiana,Southland,Southland,21,17,True,True,Shotwell Stadium
+400799646,2015,11,regular,2015-11-14 20:00:00,Alabama State,Prairie View A&M,SWAC,SWAC,13,38,False,True,Hornet Stadium
+400795756,2015,11,regular,2015-11-14 20:00:00,Southern Illinois,Illinois State,MVFC,MVFC,21,42,False,True,Saluki Stadium
+400757075,2015,11,regular,2015-11-14 20:00:00,Arizona State,Washington,Pac-12,Pac-12,27,17,False,True,Mountain America Stadium
+400756984,2015,11,regular,2015-11-14 20:30:00,North Carolina,Miami,ACC,ACC,59,21,False,True,Kenan Stadium
+400603933,2015,11,regular,2015-11-14 20:30:00,Mississippi State,Alabama,SEC,SEC,6,31,False,True,Davis Wade Stadium
+400764909,2015,11,regular,2015-11-14 20:30:00,Navy,SMU,American Athletic,American Athletic,55,14,False,True,Navy-Marine Corps Memorial Stadium
+400787472,2015,11,regular,2015-11-14 20:30:00,Troy,Georgia Southern,Sun Belt,Sun Belt,10,45,False,True,Veterans Memorial Stadium (AL)
+400756980,2015,11,regular,2015-11-14 20:30:00,Syracuse,Clemson,ACC,ACC,27,37,False,True,JMA Wireless Dome
+400763565,2015,11,regular,2015-11-14 20:30:00,Indiana,Michigan,Big Ten,Big Ten,41,48,False,True,"Memorial Stadium (Bloomington, IN)"
+400763455,2015,11,regular,2015-11-14 20:30:00,Iowa State,Oklahoma State,Big 12,Big 12,31,35,False,True,Jack Trice Stadium
+400763653,2015,11,regular,2015-11-14 20:30:00,Rice,Southern Miss,Conference USA,Conference USA,10,65,False,True,Rice Stadium
+400763457,2015,11,regular,2015-11-14 20:30:00,Texas Tech,Kansas State,Big 12,Big 12,59,44,False,True,Jones AT&T Stadium
+400763651,2015,11,regular,2015-11-14 20:30:00,Marshall,Florida International,Conference USA,Conference USA,52,0,False,True,Joan C. Edwards Stadium
+400756985,2015,11,regular,2015-11-14 20:30:00,Notre Dame,Wake Forest,FBS Independents,ACC,28,7,False,False,Notre Dame Stadium
+400795565,2015,11,regular,2015-11-14 20:30:00,Montana,Eastern Washington,Big Sky,Big Sky,57,16,False,True,Washington-Grizzly Stadium
+400763569,2015,11,regular,2015-11-14 20:30:00,Rutgers,Nebraska,Big Ten,Big Ten,14,31,False,True,High Point Solutions Stadium
+400799661,2015,11,regular,2015-11-14 20:30:00,Arkansas-Pine Bluff,Grambling,SWAC,SWAC,31,49,False,True,Golden Lion Stadium
+400795694,2015,11,regular,2015-11-14 20:30:00,Delaware,James Madison,CAA,CAA,21,24,False,True,Delaware Stadium
+400795689,2015,11,regular,2015-11-14 20:30:00,Villanova,Richmond,CAA,CAA,21,20,False,True,Villanova Stadium
+400799973,2015,11,regular,2015-11-14 20:30:00,Sam Houston,Northwestern State,Southland,Southland,59,21,False,True,Elliott T. Bowers Stadium
+400799974,2015,11,regular,2015-11-14 21:00:00,Stephen F. Austin,Houston Christian,Southland,Southland,55,20,False,True,Homer Bryce Stadium
+400787284,2015,11,regular,2015-11-14 21:00:00,Nevada,San José State,Mountain West,Mountain West,37,34,False,True,Mackay Stadium
+400795569,2015,11,regular,2015-11-14 21:00:00,Northern Arizona,Sacramento State,Big Sky,Big Sky,49,35,False,True,Walkup Skydome
+400603937,2015,11,regular,2015-11-14 21:00:00,Vanderbilt,Kentucky,SEC,SEC,21,17,False,True,FirstBank Stadium
+400787473,2015,11,regular,2015-11-14 21:00:00,Texas State,Georgia State,Sun Belt,Sun Belt,19,41,False,True,Bobcat Stadium (TX)
+400795564,2015,11,regular,2015-11-14 21:35:00,Idaho State,Montana State,Big Sky,Big Sky,20,44,False,True,Holt Arena
+400795566,2015,11,regular,2015-11-14 22:00:00,UC Davis,Cal Poly,Big Sky,Big Sky,38,55,False,True,Aggie Stadium
+400799636,2015,11,regular,2015-11-14 22:00:00,Southern,Alabama A&M,SWAC,SWAC,46,7,False,True,Ace W. Mumford Stadium
+400787470,2015,11,regular,2015-11-14 22:00:00,Idaho,App State,Sun Belt,Sun Belt,20,47,False,True,Kibbie Dome
+400795568,2015,11,regular,2015-11-14 22:05:00,Portland State,Southern Utah,Big Sky,Big Sky,24,23,True,True,Providence Park
+400603936,2015,11,regular,2015-11-15 00:00:00,Texas A&M,Western Carolina,SEC,Southern,41,17,False,False,Kyle Field
+400795691,2015,11,regular,2015-11-15 00:00:00,UAlbany,New Hampshire,CAA,CAA,14,24,False,True,Bob Ford Field
+400799972,2015,11,regular,2015-11-15 00:00:00,Nicholls,Central Arkansas,Southland,Southland,31,34,False,True,Manning Field at John L. Guidry Stadium
+400764908,2015,11,regular,2015-11-15 00:00:00,Houston,Memphis,American Athletic,American Athletic,35,34,False,True,TDECU Stadium
+400787282,2015,11,regular,2015-11-15 00:00:00,Colorado State,UNLV,Mountain West,Mountain West,49,35,False,True,Sonny Lubick Field at Hughes Stadium
+400764910,2015,11,regular,2015-11-15 00:00:00,South Florida,Temple,American Athletic,American Athletic,44,23,False,True,Raymond James Stadium
+400603932,2015,11,regular,2015-11-15 00:15:00,LSU,Arkansas,SEC,SEC,14,31,False,True,Tiger Stadium (LA)
+400764907,2015,11,regular,2015-11-15 00:30:00,Cincinnati,Tulsa,American Athletic,American Athletic,49,38,False,True,Nippert Stadium
+400785063,2015,11,regular,2015-11-15 00:30:00,Missouri,BYU,SEC,FBS Independents,20,16,True,False,GEHA Field at Arrowhead Stadium
+400757077,2015,11,regular,2015-11-15 00:30:00,Stanford,Oregon,Pac-12,Pac-12,36,38,False,True,Stanford Stadium
+400763454,2015,11,regular,2015-11-15 01:00:00,Baylor,Oklahoma,Big 12,Big 12,34,44,False,True,McLane Stadium
+400763566,2015,11,regular,2015-11-15 01:00:00,Iowa,Minnesota,Big Ten,Big Ten,40,35,False,True,Kinnick Stadium
+400757074,2015,11,regular,2015-11-15 03:00:00,Arizona,Utah,Pac-12,Pac-12,37,30,False,True,Arizona Stadium
+400787281,2015,11,regular,2015-11-15 03:15:00,Boise State,New Mexico,Mountain West,Mountain West,24,31,False,True,Albertsons Stadium
+400757078,2015,11,regular,2015-11-15 03:30:00,California,Oregon State,Pac-12,Pac-12,54,24,False,True,California Memorial Stadium
+400787285,2015,11,regular,2015-11-15 03:30:00,San Diego State,Wyoming,Mountain West,Mountain West,38,3,False,True,Qualcomm Stadium
+400757076,2015,11,regular,2015-11-15 03:45:00,UCLA,Washington State,Pac-12,Pac-12,27,31,False,True,Rose Bowl
+400787283,2015,11,regular,2015-11-15 04:00:00,Hawai'i,Fresno State,Mountain West,Mountain West,14,42,False,True,Aloha Stadium
+400787356,2015,12,regular,2015-11-17 23:00:00,Bowling Green,Toledo,Mid-American,Mid-American,28,44,False,True,Doyt L. Perry Stadium
+400787355,2015,12,regular,2015-11-18 00:00:00,Ohio,Ball State,Mid-American,Mid-American,48,31,False,True,Peden Stadium
+400787357,2015,12,regular,2015-11-19 01:00:00,Kent State,Central Michigan,Mid-American,Mid-American,14,27,False,True,Dix Stadium
+400787358,2015,12,regular,2015-11-19 01:00:00,Northern Illinois,Western Michigan,Mid-American,Mid-American,27,19,False,True,Huskie Stadium
+400795628,2015,12,regular,2015-11-20 00:00:00,Liberty,Coastal Carolina,Big South,Big South,24,21,False,True,Williams Stadium (VA)
+400799975,2015,12,regular,2015-11-20 00:00:00,SE Louisiana,Nicholls,Southland,Southland,24,27,False,True,Strawberry Stadium
+400764911,2015,12,regular,2015-11-20 00:30:00,UCF,East Carolina,American Athletic,American Athletic,7,44,False,True,FBC Mortgage Stadium
+400787474,2015,12,regular,2015-11-20 02:30:00,Texas State,UL Monroe,Sun Belt,Sun Belt,16,3,False,True,Bobcat Stadium (TX)
+400799626,2015,12,regular,2015-11-21 00:30:00,Columbia,Brown,Ivy,Ivy,23,28,False,True,Lawrence A. Wien Stadium
+400764912,2015,12,regular,2015-11-21 01:00:00,South Florida,Cincinnati,American Athletic,American Athletic,65,27,False,True,Raymond James Stadium
+400790881,2015,12,regular,2015-11-21 02:30:00,Boise State,Air Force,Mountain West,Mountain West,30,37,False,True,Albertsons Stadium
+400795698,2015,12,regular,2015-11-21 17:00:00,Elon,Delaware,CAA,CAA,10,14,False,True,Rhodes Stadium
+400763655,2015,12,regular,2015-11-21 17:00:00,Middle Tennessee,North Texas,Conference USA,Conference USA,41,7,False,True,"Johnny ""Red"" Floyd Stadium"
+400795699,2015,12,regular,2015-11-21 17:00:00,James Madison,Villanova,CAA,CAA,38,29,False,True,Bridgeforth Stadium
+400799628,2015,12,regular,2015-11-21 17:00:00,Dartmouth,Princeton,Ivy,Ivy,17,10,False,True,Memorial Field
+400799862,2015,12,regular,2015-11-21 17:00:00,Sacred Heart,Wagner,NEC,NEC,45,17,False,True,Campus Field
+400799861,2015,12,regular,2015-11-21 17:00:00,Robert Morris,Bryant,NEC,NEC,21,20,False,True,Joe Walton Stadium
+400799860,2015,12,regular,2015-11-21 17:00:00,Duquesne,Saint Francis,NEC,NEC,30,20,False,True,Arthur J. Rooney Athletic Field
+400795700,2015,12,regular,2015-11-21 17:00:00,Richmond,William & Mary,CAA,CAA,20,9,False,True,E. Claiborne Robins Stadium
+400763572,2015,12,regular,2015-11-21 17:00:00,Minnesota,Illinois,Big Ten,Big Ten,32,23,False,True,Huntington Bank Stadium
+400764915,2015,12,regular,2015-11-21 17:00:00,Temple,Memphis,American Athletic,American Athletic,31,12,False,True,Lincoln Financial Field
+400756992,2015,12,regular,2015-11-21 17:00:00,Virginia Tech,North Carolina,ACC,ACC,27,30,False,True,Lane Stadium
+400763571,2015,12,regular,2015-11-21 17:00:00,Maryland,Indiana,Big Ten,Big Ten,28,47,False,True,SECU Stadium
+400603929,2015,12,regular,2015-11-21 17:00:00,South Carolina,The Citadel,SEC,Southern,22,23,False,False,Williams-Brice Stadium
+400763460,2015,12,regular,2015-11-21 17:00:00,Kansas State,Iowa State,Big 12,Big 12,38,35,False,True,Bill Snyder Family Stadium
+400763574,2015,12,regular,2015-11-21 17:00:00,Penn State,Michigan,Big Ten,Big Ten,16,28,False,True,Beaver Stadium
+400763459,2015,12,regular,2015-11-21 17:00:00,Kansas,West Virginia,Big 12,Big 12,0,49,False,True,Memorial Stadium
+400760499,2015,12,regular,2015-11-21 17:00:00,Army,Rutgers,FBS Independents,Big Ten,21,31,False,False,Michie Stadium
+400603924,2015,12,regular,2015-11-21 17:00:00,Florida,Florida Atlantic,SEC,Conference USA,20,14,False,False,Ben Hill Griffin Stadium
+400763570,2015,12,regular,2015-11-21 17:00:00,Iowa,Purdue,Big Ten,Big Ten,40,20,False,True,Kinnick Stadium
+400799528,2015,12,regular,2015-11-21 17:05:00,Holy Cross,Georgetown,Patriot,Patriot,45,7,False,True,Fitton Field
+400799529,2015,12,regular,2015-11-21 17:30:00,Lehigh,Lafayette,Patriot,Patriot,49,35,False,True,Goodman Stadium
+400756990,2015,12,regular,2015-11-21 17:30:00,Miami,Georgia Tech,ACC,ACC,38,21,False,True,Hard Rock Stadium
+400756993,2015,12,regular,2015-11-21 17:30:00,NC State,Syracuse,ACC,ACC,42,29,False,True,Carter-Finley Stadium
+400799922,2015,12,regular,2015-11-21 18:00:00,Stetson,Davidson,Pioneer,Pioneer,17,20,False,True,Spec Martin Municipal Stadium
+400799920,2015,12,regular,2015-11-21 18:00:00,Marist,Morehead State,Pioneer,Pioneer,17,20,False,True,Leonidoff Field
+400795760,2015,12,regular,2015-11-21 18:00:00,Illinois State,South Dakota,MVFC,MVFC,46,0,False,True,Hancock Stadium
+400795586,2015,12,regular,2015-11-21 18:00:00,East Tennessee State,Kentucky Wesleyan,FCS Independents,Independent DII,42,27,True,False,Kermit Tipton Stadium
+400795696,2015,12,regular,2015-11-21 18:00:00,New Hampshire,Maine,CAA,CAA,22,6,False,True,Wildcat Stadium
+400799828,2015,12,regular,2015-11-21 18:00:00,Morgan State,Norfolk State,MEAC,MEAC,10,17,False,True,Hughes Stadium
+400795695,2015,12,regular,2015-11-21 18:00:00,Stony Brook,UAlbany,CAA,CAA,20,2,False,True,Kenneth P. LaValle Stadium
+400799527,2015,12,regular,2015-11-21 18:00:00,Colgate,Bucknell,Patriot,Patriot,14,10,False,True,Andy Kerr Stadium
+400787359,2015,12,regular,2015-11-21 18:00:00,Massachusetts,Miami (OH),Mid-American,Mid-American,13,20,False,True,Warren McGuirk Alumni Stadium
+400799830,2015,12,regular,2015-11-21 18:00:00,Savannah State,South Carolina State,MEAC,MEAC,29,52,False,True,Ted Wright Stadium
+400799919,2015,12,regular,2015-11-21 18:00:00,Jacksonville,Valparaiso,Pioneer,Pioneer,58,13,True,True,D. B. Milne Field
+400799829,2015,12,regular,2015-11-21 18:00:00,North Carolina A&T,North Carolina Central,MEAC,MEAC,16,21,False,True,Aggie Stadium
+400799627,2015,12,regular,2015-11-21 18:00:00,Pennsylvania,Cornell,Ivy,Ivy,34,21,False,True,Franklin Field
+400795763,2015,12,regular,2015-11-21 18:05:00,Indiana State,Youngstown State,MVFC,MVFC,27,24,False,True,Memorial Stadium
+400795629,2015,12,regular,2015-11-21 18:30:00,Gardner-Webb,Monmouth,Big South,Big South,9,23,False,True,Ernest W. Spangler Stadium
+400799051,2015,12,regular,2015-11-21 18:30:00,VMI,Western Carolina,Southern,Southern,20,24,False,True,Alumni Memorial Field
+400795808,2015,12,regular,2015-11-21 19:00:00,Jacksonville State,Murray State,OVC,OVC,42,20,False,True,AmFirst Stadium
+400799827,2015,12,regular,2015-11-21 19:00:00,Delaware State,Howard,MEAC,MEAC,32,31,False,True,Alumni Stadium
+400799918,2015,12,regular,2015-11-21 19:00:00,Drake,Dayton,Pioneer,Pioneer,27,17,False,True,Drake Stadium
+400795697,2015,12,regular,2015-11-21 19:00:00,Towson,Rhode Island,CAA,CAA,38,21,False,True,Johnny Unitas Stadium
+400799662,2015,12,regular,2015-11-21 19:00:00,Mississippi Valley State,Arkansas-Pine Bluff,SWAC,SWAC,19,25,False,True,Rice-Totten Field
+400795572,2015,12,regular,2015-11-21 19:00:00,Northern Colorado,Abilene Christian,Big Sky,Southland,40,36,False,False,Nottingham Field
+400795811,2015,12,regular,2015-11-21 19:00:00,Eastern Illinois,Eastern Kentucky,OVC,OVC,21,7,False,True,O'Brien Stadium
+400799672,2015,12,regular,2015-11-21 19:00:00,Prairie View A&M,Jackson State,SWAC,SWAC,56,14,True,True,Blackshear Stadium
+400795574,2015,12,regular,2015-11-21 19:00:00,Montana State,Montana,Big Sky,Big Sky,35,54,False,True,Bobcat Stadium
+400795630,2015,12,regular,2015-11-21 19:00:00,Presbyterian,Kennesaw State,Big South,Big South,14,6,False,True,Bailey Memorial Stadium
+400795809,2015,12,regular,2015-11-21 19:00:00,Southeast Missouri State,UT Martin,OVC,OVC,25,28,True,True,Houck Stadium
+400787475,2015,12,regular,2015-11-21 19:00:00,Georgia State,South Alabama,Sun Belt,Sun Belt,24,10,False,True,Georgia Dome
+400763654,2015,12,regular,2015-11-21 19:30:00,Florida International,Western Kentucky,Conference USA,Conference USA,7,63,False,True,FIU Stadium
+400799629,2015,12,regular,2015-11-21 19:30:00,Yale,Harvard,Ivy,Ivy,19,38,False,True,Yale Bowl
+400799826,2015,12,regular,2015-11-21 19:30:00,Bethune-Cookman,Florida A&M,MEAC,MEAC,35,14,True,True,Camping World Stadium
+400799977,2015,12,regular,2015-11-21 20:00:00,Houston Christian,Incarnate Word,Southland,Southland,3,30,False,True,Husky Stadium
+400799034,2015,12,regular,2015-11-21 20:00:00,Mercer,Samford,Southern,Southern,21,47,False,True,Five Star Stadium at the Moye Complex
+400799637,2015,12,regular,2015-11-21 20:00:00,Alcorn State,Alabama A&M,SWAC,SWAC,44,10,False,True,Jack Spinks Stadium
+400795573,2015,12,regular,2015-11-21 20:00:00,Weber State,Idaho State,Big Sky,Big Sky,35,14,False,True,Stewart Stadium
+400756989,2015,12,regular,2015-11-21 20:00:00,Florida State,Chattanooga,ACC,Southern,52,13,False,False,Doak Campbell Stadium
+400787288,2015,12,regular,2015-11-21 20:00:00,BYU,Fresno State,FBS Independents,Mountain West,52,10,False,False,LaVell Edwards Stadium
+400763657,2015,12,regular,2015-11-21 20:30:00,UTEP,Louisiana Tech,Conference USA,Conference USA,15,17,False,True,Sun Bowl
+400787360,2015,12,regular,2015-11-21 20:30:00,Akron,Buffalo,Mid-American,Mid-American,42,21,False,True,InfoCision Stadium
+400787290,2015,12,regular,2015-11-21 20:30:00,Utah State,Nevada,Mountain West,Mountain West,31,27,False,True,Maverik Stadium
+400603928,2015,12,regular,2015-11-21 20:30:00,Ole Miss,LSU,SEC,SEC,38,17,False,True,Vaught-Hemingway Stadium
+400757079,2015,12,regular,2015-11-21 20:30:00,Arizona State,Arizona,Pac-12,Pac-12,52,37,False,True,Mountain America Stadium
+400764913,2015,12,regular,2015-11-21 20:30:00,UConn,Houston,American Athletic,American Athletic,20,17,False,True,Pratt & Whitney Stadium
+400757081,2015,12,regular,2015-11-21 20:30:00,Utah,UCLA,Pac-12,Pac-12,9,17,False,True,Rice-Eccles Stadium
+400795761,2015,12,regular,2015-11-21 20:30:00,Western Illinois,South Dakota State,MVFC,MVFC,30,24,False,True,Hanson Field
+400763656,2015,12,regular,2015-11-21 20:30:00,Southern Miss,Old Dominion,Conference USA,Conference USA,56,31,False,True,M. M. Roberts Stadium
+400799028,2015,12,regular,2015-11-21 20:30:00,Wofford,Furman,Southern,Southern,38,28,False,True,Gibbs Stadium
+400795810,2015,12,regular,2015-11-21 20:30:00,Tennessee Tech,Tennessee State,OVC,OVC,30,24,False,True,Tucker Stadium
+400756988,2015,12,regular,2015-11-21 20:30:00,Virginia,Duke,ACC,ACC,42,34,False,True,Scott Stadium
+400763575,2015,12,regular,2015-11-21 20:30:00,Wisconsin,Northwestern,Big Ten,Big Ten,7,13,False,True,Camp Randall Stadium
+400756987,2015,12,regular,2015-11-21 20:30:00,Clemson,Wake Forest,ACC,ACC,33,13,False,True,"Memorial Stadium (Clemson, SC)"
+400757080,2015,12,regular,2015-11-21 20:30:00,Oregon,USC,Pac-12,Pac-12,48,28,False,True,Autzen Stadium
+400763573,2015,12,regular,2015-11-21 20:30:00,Ohio State,Michigan State,Big Ten,Big Ten,14,17,False,True,Ohio Stadium
+400795762,2015,12,regular,2015-11-21 20:30:00,North Dakota State,Missouri State,MVFC,MVFC,55,0,False,True,Fargodome
+400756991,2015,12,regular,2015-11-21 20:45:00,Pittsburgh,Louisville,ACC,ACC,45,34,False,True,Acrisure Stadium
+400799979,2015,12,regular,2015-11-21 21:00:00,Northwestern State,Stephen F. Austin,Southland,Southland,33,17,False,True,Harry Turpin Stadium
+400799921,2015,12,regular,2015-11-21 21:00:00,San Diego,Butler,Pioneer,Pioneer,28,27,False,True,Torero Stadium
+400603921,2015,12,regular,2015-11-21 21:00:00,Alabama,Charleston Southern,SEC,Big South,56,6,False,False,Bryant-Denny Stadium
+400603923,2015,12,regular,2015-11-21 21:00:00,Auburn,Idaho,SEC,Sun Belt,56,34,False,False,Jordan-Hare Stadium
+400799647,2015,12,regular,2015-11-21 21:00:00,Alabama State,Miles,SWAC,SIAC,26,7,False,False,Hornet Stadium
+400787476,2015,12,regular,2015-11-21 22:00:00,Louisiana,New Mexico State,Sun Belt,Sun Belt,34,37,False,True,Cajun Field
+400795764,2015,12,regular,2015-11-21 22:00:00,Northern Iowa,Southern Illinois,MVFC,MVFC,49,28,False,True,UNI-Dome
+400795570,2015,12,regular,2015-11-21 22:00:00,Southern Utah,Northern Arizona,Big Sky,Big Sky,49,41,False,True,Eccles Coliseum
+400795576,2015,12,regular,2015-11-21 22:05:00,Eastern Washington,Portland State,Big Sky,Big Sky,31,34,False,True,Roos Field
+400795571,2015,12,regular,2015-11-21 22:30:00,Sacramento State,UC Davis,Big Sky,Big Sky,21,35,False,True,Hornet Stadium
+400787287,2015,12,regular,2015-11-21 22:30:00,New Mexico,Colorado State,Mountain West,Mountain West,21,28,False,True,University Stadium (NM)
+400757083,2015,12,regular,2015-11-21 23:00:00,Oregon State,Washington,Pac-12,Pac-12,7,52,False,True,Reser Stadium
+400799976,2015,12,regular,2015-11-22 00:00:00,Central Arkansas,Sam Houston,Southland,Southland,13,42,False,True,Estes Stadium
+400799978,2015,12,regular,2015-11-22 00:00:00,Lamar,McNeese,Southland,Southland,14,20,False,True,Provost Umphrey Stadium
+400764916,2015,12,regular,2015-11-22 00:00:00,Tulsa,Navy,American Athletic,American Athletic,21,44,False,True,Chapman Stadium
+400603922,2015,12,regular,2015-11-22 00:00:00,Arkansas,Mississippi State,SEC,SEC,50,51,False,True,Razorback Stadium
+400603925,2015,12,regular,2015-11-22 00:00:00,Georgia,Georgia Southern,SEC,Sun Belt,23,17,False,False,Sanford Stadium
+400763658,2015,12,regular,2015-11-22 00:00:00,UTSA,Rice,Conference USA,Conference USA,34,24,False,True,Alamodome
+400603927,2015,12,regular,2015-11-22 00:15:00,Missouri,Tennessee,SEC,SEC,8,19,False,True,Memorial Stadium
+400756986,2015,12,regular,2015-11-22 00:30:00,Notre Dame,Boston College,FBS Independents,ACC,19,16,True,False,Fenway Park
+400603926,2015,12,regular,2015-11-22 00:30:00,Kentucky,Charlotte,SEC,Conference USA,58,10,False,False,Kroger Field
+400603930,2015,12,regular,2015-11-22 00:30:00,Vanderbilt,Texas A&M,SEC,SEC,0,25,False,True,FirstBank Stadium
+400763462,2015,12,regular,2015-11-22 00:30:00,Oklahoma State,Baylor,Big 12,Big 12,35,45,False,True,Boone Pickens Stadium
+400763461,2015,12,regular,2015-11-22 01:00:00,Oklahoma,TCU,Big 12,Big 12,30,29,False,True,"Memorial Stadium (Norman, OK)"
+400764914,2015,12,regular,2015-11-22 01:00:00,SMU,Tulane,American Athletic,American Athletic,49,21,False,True,Gerald J. Ford Stadium
+400795575,2015,12,regular,2015-11-22 02:05:00,Cal Poly,North Dakota,Big Sky,Big Sky,21,45,False,True,Alex G. Spanos Stadium
+400757084,2015,12,regular,2015-11-22 03:30:00,Stanford,California,Pac-12,Pac-12,35,22,False,True,Stanford Stadium
+400787291,2015,12,regular,2015-11-22 03:30:00,UNLV,San Diego State,Mountain West,Mountain West,14,52,False,True,Sam Boyd Stadium
+400757082,2015,12,regular,2015-11-22 03:45:00,Washington State,Colorado,Pac-12,Pac-12,27,3,False,True,Gesa Field
+400787289,2015,12,regular,2015-11-22 04:00:00,Hawai'i,San José State,Mountain West,Mountain West,23,42,False,True,Aloha Stadium
+400787361,2015,13,regular,2015-11-25 00:00:00,Ball State,Bowling Green,Mid-American,Mid-American,10,48,False,True,Scheumann Stadium
+400787362,2015,13,regular,2015-11-25 00:30:00,Northern Illinois,Ohio,Mid-American,Mid-American,21,26,False,True,Huskie Stadium
+400763463,2015,13,regular,2015-11-27 00:30:00,Texas,Texas Tech,Big 12,Big 12,45,48,False,True,DKR-Texas Memorial Stadium
+400764918,2015,13,regular,2015-11-27 00:30:00,UCF,South Florida,American Athletic,American Athletic,3,44,False,True,FBC Mortgage Stadium
+400787363,2015,13,regular,2015-11-27 17:00:00,Toledo,Western Michigan,Mid-American,Mid-American,30,35,False,True,Glass Bowl
+400787366,2015,13,regular,2015-11-27 17:00:00,Akron,Kent State,Mid-American,Mid-American,20,0,False,True,InfoCision Stadium
+400756994,2015,13,regular,2015-11-27 17:00:00,Pittsburgh,Miami,ACC,ACC,24,29,False,True,Acrisure Stadium
+400763664,2015,13,regular,2015-11-27 17:00:00,Western Kentucky,Marshall,Conference USA,Conference USA,49,28,False,True,Houchens Industries-L.T. Smith Stadium
+400764917,2015,13,regular,2015-11-27 17:00:00,Houston,Navy,American Athletic,American Athletic,52,31,False,True,TDECU Stadium
+400787364,2015,13,regular,2015-11-27 18:00:00,Central Michigan,Eastern Michigan,Mid-American,Mid-American,35,28,False,True,Kelly/Shorts Stadium
+400787477,2015,13,regular,2015-11-27 19:00:00,Georgia State,Troy,Sun Belt,Sun Belt,31,21,False,True,Georgia Dome
+400603912,2015,13,regular,2015-11-27 19:30:00,Arkansas,Missouri,SEC,SEC,28,3,False,True,Razorback Stadium
+400763576,2015,13,regular,2015-11-27 20:30:00,Nebraska,Iowa,Big Ten,Big Ten,20,28,False,True,"Memorial Stadium (Lincoln, NE)"
+400757086,2015,13,regular,2015-11-27 20:30:00,Washington,Washington State,Pac-12,Pac-12,45,10,False,True,Husky Stadium
+400790888,2015,13,regular,2015-11-27 20:30:00,San José State,Boise State,Mountain West,Mountain West,23,40,False,True,CEFCU Stadium
+400757085,2015,13,regular,2015-11-27 21:00:00,Oregon,Oregon State,Pac-12,Pac-12,52,42,False,True,Autzen Stadium
+400787365,2015,13,regular,2015-11-27 21:30:00,Buffalo,Massachusetts,Mid-American,Mid-American,26,31,False,True,UB Stadium
+400763464,2015,13,regular,2015-11-28 00:30:00,TCU,Baylor,Big 12,Big 12,28,21,False,True,Amon G. Carter Stadium
+400764922,2015,13,regular,2015-11-28 01:00:00,Tulane,Tulsa,American Athletic,American Athletic,34,45,False,True,Yulman Stadium
+400603919,2015,13,regular,2015-11-28 17:00:00,South Carolina,Clemson,SEC,ACC,32,37,False,False,Williams-Brice Stadium
+400603916,2015,13,regular,2015-11-28 17:00:00,Kentucky,Louisville,SEC,ACC,24,38,False,False,Kroger Field
+400853515,2015,13,regular,2015-11-28 17:00:00,Dayton,Western Illinois,Pioneer,MVFC,7,24,False,False,Welcome Stadium
+400763467,2015,13,regular,2015-11-28 17:00:00,West Virginia,Iowa State,Big 12,Big 12,30,6,False,True,Milan Puskar Stadium
+400763659,2015,13,regular,2015-11-28 17:00:00,Louisiana Tech,Southern Miss,Conference USA,Conference USA,24,58,False,True,Joe Aillet Stadium
+400764919,2015,13,regular,2015-11-28 17:00:00,East Carolina,Cincinnati,American Athletic,American Athletic,16,19,False,True,Dowdy-Ficklen Stadium
+400763661,2015,13,regular,2015-11-28 17:00:00,Old Dominion,Florida Atlantic,Conference USA,Conference USA,31,33,False,True,S.B. Ballard Stadium
+400603915,2015,13,regular,2015-11-28 17:00:00,Georgia Tech,Georgia,ACC,SEC,7,13,False,False,Bobby Dodd Stadium
+400763582,2015,13,regular,2015-11-28 17:00:00,Rutgers,Maryland,Big Ten,Big Ten,41,46,False,True,High Point Solutions Stadium
+400764920,2015,13,regular,2015-11-28 17:00:00,Memphis,SMU,American Athletic,American Athletic,63,0,False,True,Simmons Bank Liberty Stadium
+400763581,2015,13,regular,2015-11-28 17:00:00,Purdue,Indiana,Big Ten,Big Ten,36,54,False,True,Ross-Ade Stadium
+400763578,2015,13,regular,2015-11-28 17:00:00,Michigan,Ohio State,Big Ten,Big Ten,13,42,False,True,Michigan Stadium
+400756998,2015,13,regular,2015-11-28 17:00:00,Virginia,Virginia Tech,ACC,ACC,20,23,False,True,Scott Stadium
+400756995,2015,13,regular,2015-11-28 17:30:00,Syracuse,Boston College,ACC,ACC,20,17,False,True,JMA Wireless Dome
+400756996,2015,13,regular,2015-11-28 17:30:00,Wake Forest,Duke,ACC,ACC,21,27,False,True,Allegacy Federal Credit Union Stadium
+400853508,2015,13,regular,2015-11-28 18:00:00,Chattanooga,Fordham,Southern,Patriot,50,20,False,False,Finley Stadium
+400799638,2015,13,regular,2015-11-28 19:00:00,Alabama A&M,Texas Southern,SWAC,SWAC,38,7,False,True,Louis Crews Stadium
+400787298,2015,13,regular,2015-11-28 19:00:00,Wyoming,UNLV,Mountain West,Mountain West,35,28,False,True,War Memorial Stadium
+400787478,2015,13,regular,2015-11-28 19:00:00,App State,Louisiana,Sun Belt,Sun Belt,28,7,False,True,Kidd Brewer Stadium
+400853509,2015,13,regular,2015-11-28 19:00:00,Coastal Carolina,The Citadel,Big South,Southern,38,41,False,False,Brooks Stadium (SC)
+400787480,2015,13,regular,2015-11-28 19:00:00,Georgia Southern,South Alabama,Sun Belt,Sun Belt,55,17,False,True,Allen E. Paulson Stadium
+400763663,2015,13,regular,2015-11-28 19:30:00,UTSA,Middle Tennessee,Conference USA,Conference USA,7,42,False,True,Alamodome
+400757089,2015,13,regular,2015-11-28 19:30:00,Utah,Colorado,Pac-12,Pac-12,20,14,False,True,Rice-Eccles Stadium
+400853511,2015,13,regular,2015-11-28 20:00:00,Sam Houston,Southern Utah,Southland,Big Sky,42,39,False,False,Elliott T. Bowers Stadium
+400799655,2015,13,regular,2015-11-28 20:00:00,Jackson State,Alcorn State,SWAC,SWAC,10,14,False,True,Mississippi Veterans Memorial Stadium
+400853512,2015,13,regular,2015-11-28 20:00:00,Montana,South Dakota State,Big Sky,MVFC,24,17,False,False,Washington-Grizzly Stadium
+400853510,2015,13,regular,2015-11-28 20:30:00,New Hampshire,Colgate,CAA,Patriot,20,27,False,False,Wildcat Stadium
+400763577,2015,13,regular,2015-11-28 20:30:00,Illinois,Northwestern,Big Ten,Big Ten,14,24,True,True,Soldier Field
+400763580,2015,13,regular,2015-11-28 20:30:00,Minnesota,Wisconsin,Big Ten,Big Ten,21,31,False,True,Huntington Bank Stadium
+400763660,2015,13,regular,2015-11-28 20:30:00,North Texas,UTEP,Conference USA,Conference USA,17,20,False,True,DATCU Stadium
+400853514,2015,13,regular,2015-11-28 20:30:00,William & Mary,Duquesne,CAA,NEC,52,49,False,False,Zable Stadium
+400787297,2015,13,regular,2015-11-28 20:30:00,Utah State,BYU,Mountain West,FBS Independents,28,51,False,False,Maverik Stadium
+400603913,2015,13,regular,2015-11-28 20:30:00,Auburn,Alabama,SEC,SEC,13,29,False,True,Jordan-Hare Stadium
+400763662,2015,13,regular,2015-11-28 20:30:00,Rice,Charlotte,Conference USA,Conference USA,27,7,False,True,Rice Stadium
+400757088,2015,13,regular,2015-11-28 20:30:00,USC,UCLA,Pac-12,Pac-12,40,21,False,True,Los Angeles Memorial Coliseum
+400763579,2015,13,regular,2015-11-28 20:30:00,Michigan State,Penn State,Big Ten,Big Ten,55,16,False,True,Spartan Stadium
+400756997,2015,13,regular,2015-11-28 20:30:00,NC State,North Carolina,ACC,ACC,34,45,False,True,Carter-Finley Stadium
+400787479,2015,13,regular,2015-11-28 21:00:00,New Mexico State,Arkansas State,Sun Belt,Sun Belt,28,52,False,True,Aggie Memorial Stadium
+400763465,2015,13,regular,2015-11-28 21:00:00,Kansas,Kansas State,Big 12,Big 12,14,45,False,True,Memorial Stadium
+400603920,2015,13,regular,2015-11-28 21:00:00,Tennessee,Vanderbilt,SEC,SEC,53,28,False,True,Neyland Stadium
+400799668,2015,13,regular,2015-11-28 22:00:00,Grambling,Southern,SWAC,SWAC,34,23,True,True,Caesars Superdome
+400853513,2015,13,regular,2015-11-28 22:00:00,Northern Iowa,Eastern Illinois,MVFC,OVC,53,17,False,False,UNI-Dome
+400787481,2015,13,regular,2015-11-28 22:00:00,Idaho,Texas State,Sun Belt,Sun Belt,38,31,False,True,Kibbie Dome
+400764921,2015,13,regular,2015-11-29 00:00:00,Temple,UConn,American Athletic,American Athletic,27,3,False,True,Lincoln Financial Field
+400603918,2015,13,regular,2015-11-29 00:15:00,Mississippi State,Ole Miss,SEC,SEC,27,38,False,True,Davis Wade Stadium
+400603917,2015,13,regular,2015-11-29 00:30:00,LSU,Texas A&M,SEC,SEC,19,7,False,True,Tiger Stadium (LA)
+400603914,2015,13,regular,2015-11-29 00:30:00,Florida,Florida State,SEC,ACC,2,27,False,False,Ben Hill Griffin Stadium
+400757090,2015,13,regular,2015-11-29 00:30:00,Stanford,Notre Dame,Pac-12,FBS Independents,38,36,False,False,Stanford Stadium
+400763466,2015,13,regular,2015-11-29 01:00:00,Oklahoma State,Oklahoma,Big 12,Big 12,23,58,False,True,Boone Pickens Stadium
+400787294,2015,13,regular,2015-11-29 02:00:00,Fresno State,Colorado State,Mountain West,Mountain West,31,34,False,True,Valley Children's Stadium
+400757087,2015,13,regular,2015-11-29 03:00:00,California,Arizona State,Pac-12,Pac-12,48,46,False,True,California Memorial Stadium
+400787292,2015,13,regular,2015-11-29 03:15:00,New Mexico,Air Force,Mountain West,Mountain West,47,35,False,True,University Stadium (NM)
+400787296,2015,13,regular,2015-11-29 03:45:00,San Diego State,Nevada,Mountain West,Mountain West,31,14,False,True,Qualcomm Stadium
+400787295,2015,13,regular,2015-11-29 04:00:00,Hawai'i,UL Monroe,Mountain West,Sun Belt,28,26,False,False,Aloha Stadium
+400852680,2015,14,regular,2015-12-05 01:00:00,Northern Illinois,Bowling Green,Mid-American,Mid-American,14,34,True,True,Ford Field
+400854531,2015,14,regular,2015-12-05 17:00:00,Richmond,William & Mary,CAA,CAA,48,13,False,True,E. Claiborne Robins Stadium
+400852672,2015,14,regular,2015-12-05 17:00:00,Western Kentucky,Southern Miss,Conference USA,Conference USA,45,28,False,True,Houchens Industries-L.T. Smith Stadium
+400763468,2015,14,regular,2015-12-05 17:00:00,Baylor,Texas,Big 12,Big 12,17,23,False,True,McLane Stadium
+400852678,2015,14,regular,2015-12-05 17:00:00,Houston,Temple,American Athletic,American Athletic,24,13,False,True,TDECU Stadium
+400854528,2015,14,regular,2015-12-05 18:00:00,James Madison,Colgate,CAA,Patriot,38,44,False,False,Bridgeforth Stadium
+400854488,2015,14,regular,2015-12-05 18:00:00,Charleston Southern,The Citadel,Big South,Southern,14,6,False,False,Buccaneer Field
+400854451,2015,14,regular,2015-12-05 19:00:00,Jacksonville State,Chattanooga,OVC,Southern,41,35,False,False,AmFirst Stadium
+400854429,2015,14,regular,2015-12-05 19:00:00,Illinois State,Western Illinois,MVFC,MVFC,36,19,False,True,Hancock Stadium
+400787484,2015,14,regular,2015-12-05 19:00:00,Georgia Southern,Georgia State,Sun Belt,Sun Belt,7,34,False,True,Allen E. Paulson Stadium
+400787483,2015,14,regular,2015-12-05 20:00:00,Arkansas State,Texas State,Sun Belt,Sun Belt,55,17,False,True,Centennial Bank Stadium
+400787486,2015,14,regular,2015-12-05 20:00:00,UL Monroe,New Mexico State,Sun Belt,Sun Belt,42,35,False,True,Malone Stadium
+400854530,2015,14,regular,2015-12-05 20:30:00,North Dakota State,Montana,MVFC,Big Sky,37,6,False,False,Fargodome
+400852681,2015,14,regular,2015-12-05 21:00:00,Alabama,Florida,SEC,SEC,29,15,True,True,Georgia Dome
+400852674,2015,14,regular,2015-12-05 21:00:00,Alcorn State,Grambling,SWAC,SWAC,49,21,True,True,NRG Stadium
+400763469,2015,14,regular,2015-12-05 21:30:00,Kansas State,West Virginia,Big 12,Big 12,24,23,False,True,Bill Snyder Family Stadium
+400787485,2015,14,regular,2015-12-05 22:00:00,Louisiana,Troy,Sun Belt,Sun Belt,17,41,False,True,Cajun Field
+400854529,2015,14,regular,2015-12-06 00:00:00,McNeese,Sam Houston,Southland,Southland,29,34,False,True,Cowboy Stadium
+400787482,2015,14,regular,2015-12-06 00:30:00,South Alabama,App State,Sun Belt,Sun Belt,27,34,False,True,Ladd Peebles Stadium
+400852675,2015,14,regular,2015-12-06 00:30:00,San Diego State,Air Force,Mountain West,Mountain West,27,24,False,True,Qualcomm Stadium
+400852677,2015,14,regular,2015-12-06 00:45:00,Stanford,USC,Pac-12,Pac-12,41,22,True,True,Levi's Stadium
+400852682,2015,14,regular,2015-12-06 01:00:00,Iowa,Michigan State,Big Ten,Big Ten,13,16,True,True,Lucas Oil Stadium
+400852676,2015,14,regular,2015-12-06 01:00:00,Clemson,North Carolina,ACC,ACC,45,37,True,True,Bank of America Stadium
+400854548,2015,14,regular,2015-12-06 03:00:00,Portland State,Northern Iowa,Big Sky,MVFC,17,29,True,False,Providence Park
+400855895,2015,15,regular,2015-12-12 00:30:00,Illinois State,Richmond,MVFC,CAA,27,39,False,False,Hancock Stadium
+400855896,2015,15,regular,2015-12-12 01:00:00,Jacksonville State,Charleston Southern,OVC,Big South,58,38,False,False,AmFirst Stadium
+400855898,2015,15,regular,2015-12-12 17:00:00,North Dakota State,Northern Iowa,MVFC,MVFC,23,13,False,True,Fargodome
+400855897,2015,15,regular,2015-12-12 17:00:00,Sam Houston,Colgate,Southland,Patriot,48,21,False,False,Elliott T. Bowers Stadium
+400760500,2015,15,regular,2015-12-12 20:00:00,Navy,Army,American Athletic,FBS Independents,21,17,True,False,Lincoln Financial Field

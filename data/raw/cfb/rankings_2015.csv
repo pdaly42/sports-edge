@@ -1,0 +1,526 @@
+season,week,poll,team,rank
+2015,15,AP Top 25,Florida,19
+2015,15,AP Top 25,Oklahoma State,13
+2015,15,AP Top 25,Baylor,18
+2015,15,AP Top 25,TCU,11
+2015,15,AP Top 25,Oregon,15
+2015,15,AP Top 25,Stanford,5
+2015,15,AP Top 25,LSU,22
+2015,15,AP Top 25,Utah,20
+2015,15,AP Top 25,Western Kentucky,25
+2015,15,AP Top 25,Alabama,2
+2015,15,AP Top 25,Ole Miss,16
+2015,15,AP Top 25,Ohio State,7
+2015,15,AP Top 25,Michigan State,3
+2015,15,AP Top 25,Michigan,17
+2015,15,AP Top 25,Wisconsin,23
+2015,15,AP Top 25,Iowa,6
+2015,15,AP Top 25,Northwestern,12
+2015,15,AP Top 25,Oklahoma,4
+2015,15,AP Top 25,Notre Dame,8
+2015,15,AP Top 25,Temple,24
+2015,15,AP Top 25,Houston,14
+2015,15,AP Top 25,Navy,21
+2015,15,AP Top 25,Florida State,9
+2015,15,AP Top 25,Clemson,1
+2015,15,AP Top 25,North Carolina,10
+2015,15,Playoff Committee Rankings,Florida,19
+2015,15,Playoff Committee Rankings,Tennessee,23
+2015,15,Playoff Committee Rankings,Oklahoma State,16
+2015,15,Playoff Committee Rankings,Baylor,17
+2015,15,Playoff Committee Rankings,TCU,11
+2015,15,Playoff Committee Rankings,Oregon,15
+2015,15,Playoff Committee Rankings,Stanford,6
+2015,15,Playoff Committee Rankings,USC,25
+2015,15,Playoff Committee Rankings,LSU,20
+2015,15,Playoff Committee Rankings,Utah,22
+2015,15,Playoff Committee Rankings,Alabama,2
+2015,15,Playoff Committee Rankings,Ole Miss,12
+2015,15,Playoff Committee Rankings,Ohio State,7
+2015,15,Playoff Committee Rankings,Michigan State,3
+2015,15,Playoff Committee Rankings,Michigan,14
+2015,15,Playoff Committee Rankings,Iowa,5
+2015,15,Playoff Committee Rankings,Northwestern,13
+2015,15,Playoff Committee Rankings,Oklahoma,4
+2015,15,Playoff Committee Rankings,Notre Dame,8
+2015,15,Playoff Committee Rankings,Temple,24
+2015,15,Playoff Committee Rankings,Houston,18
+2015,15,Playoff Committee Rankings,Navy,21
+2015,15,Playoff Committee Rankings,Florida State,9
+2015,15,Playoff Committee Rankings,Clemson,1
+2015,15,Playoff Committee Rankings,North Carolina,10
+2015,9,AP Top 25,Florida,11
+2015,9,AP Top 25,Oklahoma State,12
+2015,9,AP Top 25,Baylor,2
+2015,9,AP Top 25,TCU,5
+2015,9,AP Top 25,Stanford,8
+2015,9,AP Top 25,LSU,4
+2015,9,AP Top 25,Toledo,20
+2015,9,AP Top 25,UCLA,24
+2015,9,AP Top 25,Utah,13
+2015,9,AP Top 25,Alabama,7
+2015,9,AP Top 25,Ole Miss,19
+2015,9,AP Top 25,Mississippi State,25
+2015,9,AP Top 25,Ohio State,1
+2015,9,AP Top 25,Michigan State,6
+2015,9,AP Top 25,Michigan,15
+2015,9,AP Top 25,Iowa,10
+2015,9,AP Top 25,Oklahoma,14
+2015,9,AP Top 25,Notre Dame,9
+2015,9,AP Top 25,Temple,21
+2015,9,AP Top 25,Houston,18
+2015,9,AP Top 25,Memphis,16
+2015,9,AP Top 25,Florida State,17
+2015,9,AP Top 25,Clemson,3
+2015,9,AP Top 25,Duke,22
+2015,9,AP Top 25,Pittsburgh,23
+2015,8,AP Top 25,Florida,13
+2015,8,AP Top 25,Oklahoma State,14
+2015,8,AP Top 25,Baylor,2
+2015,8,AP Top 25,TCU,4
+2015,8,AP Top 25,Stanford,10
+2015,8,AP Top 25,California,20
+2015,8,AP Top 25,LSU,5
+2015,8,AP Top 25,Toledo,19
+2015,8,AP Top 25,Utah,3
+2015,8,AP Top 25,Alabama,8
+2015,8,AP Top 25,Ole Miss,24
+2015,8,AP Top 25,Texas A&M,15
+2015,8,AP Top 25,Ohio State,1
+2015,8,AP Top 25,Michigan State,7
+2015,8,AP Top 25,Michigan,15
+2015,8,AP Top 25,Iowa,12
+2015,8,AP Top 25,Oklahoma,17
+2015,8,AP Top 25,Notre Dame,11
+2015,8,AP Top 25,Temple,22
+2015,8,AP Top 25,Houston,21
+2015,8,AP Top 25,Memphis,18
+2015,8,AP Top 25,Florida State,9
+2015,8,AP Top 25,Clemson,6
+2015,8,AP Top 25,Duke,23
+2015,8,AP Top 25,Pittsburgh,25
+2015,6,AP Top 25,Georgia,19
+2015,6,AP Top 25,Florida,11
+2015,6,AP Top 25,Oklahoma State,21
+2015,6,AP Top 25,Baylor,3
+2015,6,AP Top 25,TCU,2
+2015,6,AP Top 25,Stanford,16
+2015,6,AP Top 25,California,23
+2015,6,AP Top 25,USC,17
+2015,6,AP Top 25,LSU,7
+2015,6,AP Top 25,Toledo,24
+2015,6,AP Top 25,UCLA,20
+2015,6,AP Top 25,Utah,5
+2015,6,AP Top 25,Alabama,8
+2015,6,AP Top 25,Ole Miss,14
+2015,6,AP Top 25,Texas A&M,9
+2015,6,AP Top 25,Ohio State,1
+2015,6,AP Top 25,Michigan State,4
+2015,6,AP Top 25,Michigan,18
+2015,6,AP Top 25,Iowa,22
+2015,6,AP Top 25,Northwestern,13
+2015,6,AP Top 25,Oklahoma,10
+2015,6,AP Top 25,Notre Dame,15
+2015,6,AP Top 25,Florida State,12
+2015,6,AP Top 25,Clemson,6
+2015,6,AP Top 25,Boise State,25
+2015,5,AP Top 25,Georgia,8
+2015,5,AP Top 25,Florida,25
+2015,5,AP Top 25,Oklahoma State,20
+2015,5,AP Top 25,Baylor,5
+2015,5,AP Top 25,TCU,4
+2015,5,AP Top 25,West Virginia,23
+2015,5,AP Top 25,Stanford,18
+2015,5,AP Top 25,California,24
+2015,5,AP Top 25,USC,17
+2015,5,AP Top 25,LSU,9
+2015,5,AP Top 25,UCLA,7
+2015,5,AP Top 25,Utah,10
+2015,5,AP Top 25,Alabama,13
+2015,5,AP Top 25,Ole Miss,3
+2015,5,AP Top 25,Mississippi State,21
+2015,5,AP Top 25,Texas A&M,14
+2015,5,AP Top 25,Ohio State,1
+2015,5,AP Top 25,Michigan State,2
+2015,5,AP Top 25,Michigan,22
+2015,5,AP Top 25,Wisconsin,19
+2015,5,AP Top 25,Northwestern,16
+2015,5,AP Top 25,Oklahoma,15
+2015,5,AP Top 25,Notre Dame,6
+2015,5,AP Top 25,Florida State,11
+2015,5,AP Top 25,Clemson,12
+2015,4,AP Top 25,Georgia,7
+2015,4,AP Top 25,Oklahoma State,24
+2015,4,AP Top 25,Baylor,5
+2015,4,AP Top 25,TCU,3
+2015,4,AP Top 25,Oregon,13
+2015,4,AP Top 25,Stanford,21
+2015,4,AP Top 25,USC,19
+2015,4,AP Top 25,BYU,22
+2015,4,AP Top 25,LSU,8
+2015,4,AP Top 25,UCLA,9
+2015,4,AP Top 25,Utah,18
+2015,4,AP Top 25,Arizona,16
+2015,4,AP Top 25,Alabama,12
+2015,4,AP Top 25,Ole Miss,3
+2015,4,AP Top 25,Missouri,25
+2015,4,AP Top 25,Texas A&M,14
+2015,4,AP Top 25,Ohio State,1
+2015,4,AP Top 25,Michigan State,2
+2015,4,AP Top 25,Wisconsin,22
+2015,4,AP Top 25,Northwestern,17
+2015,4,AP Top 25,Oklahoma,15
+2015,4,AP Top 25,Notre Dame,6
+2015,4,AP Top 25,Florida State,10
+2015,4,AP Top 25,Clemson,11
+2015,4,AP Top 25,Georgia Tech,20
+2015,3,AP Top 25,Georgia,7
+2015,3,AP Top 25,Oklahoma State,25
+2015,3,AP Top 25,Baylor,5
+2015,3,AP Top 25,TCU,3
+2015,3,AP Top 25,Oregon,12
+2015,3,AP Top 25,USC,6
+2015,3,AP Top 25,BYU,19
+2015,3,AP Top 25,Auburn,18
+2015,3,AP Top 25,LSU,13
+2015,3,AP Top 25,UCLA,10
+2015,3,AP Top 25,Utah,21
+2015,3,AP Top 25,Arizona,20
+2015,3,AP Top 25,Alabama,2
+2015,3,AP Top 25,Ole Miss,15
+2015,3,AP Top 25,Missouri,22
+2015,3,AP Top 25,Texas A&M,17
+2015,3,AP Top 25,Ohio State,1
+2015,3,AP Top 25,Michigan State,4
+2015,3,AP Top 25,Wisconsin,24
+2015,3,AP Top 25,Northwestern,23
+2015,3,AP Top 25,Oklahoma,16
+2015,3,AP Top 25,Notre Dame,8
+2015,3,AP Top 25,Florida State,9
+2015,3,AP Top 25,Clemson,11
+2015,3,AP Top 25,Georgia Tech,14
+2015,2,AP Top 25,Georgia,10
+2015,2,AP Top 25,Tennessee,23
+2015,2,AP Top 25,Baylor,4
+2015,2,AP Top 25,TCU,3
+2015,2,AP Top 25,Oregon,7
+2015,2,AP Top 25,USC,8
+2015,2,AP Top 25,Auburn,6
+2015,2,AP Top 25,LSU,14
+2015,2,AP Top 25,UCLA,13
+2015,2,AP Top 25,Utah,24
+2015,2,AP Top 25,Arizona,22
+2015,2,AP Top 25,Alabama,2
+2015,2,AP Top 25,Ole Miss,17
+2015,2,AP Top 25,Mississippi State,25
+2015,2,AP Top 25,Arkansas,18
+2015,2,AP Top 25,Missouri,21
+2015,2,AP Top 25,Texas A&M,16
+2015,2,AP Top 25,Ohio State,1
+2015,2,AP Top 25,Michigan State,5
+2015,2,AP Top 25,Oklahoma,19
+2015,2,AP Top 25,Notre Dame,9
+2015,2,AP Top 25,Florida State,11
+2015,2,AP Top 25,Clemson,12
+2015,2,AP Top 25,Georgia Tech,15
+2015,2,AP Top 25,Boise State,20
+2015,1,AP Top 25,Georgia,9
+2015,1,AP Top 25,Tennessee,25
+2015,1,AP Top 25,Baylor,4
+2015,1,AP Top 25,TCU,2
+2015,1,AP Top 25,Oregon,7
+2015,1,AP Top 25,Stanford,21
+2015,1,AP Top 25,USC,8
+2015,1,AP Top 25,Auburn,6
+2015,1,AP Top 25,LSU,14
+2015,1,AP Top 25,UCLA,13
+2015,1,AP Top 25,Arizona State,15
+2015,1,AP Top 25,Arizona,22
+2015,1,AP Top 25,Alabama,3
+2015,1,AP Top 25,Ole Miss,17
+2015,1,AP Top 25,Arkansas,18
+2015,1,AP Top 25,Missouri,24
+2015,1,AP Top 25,Ohio State,1
+2015,1,AP Top 25,Michigan State,5
+2015,1,AP Top 25,Wisconsin,20
+2015,1,AP Top 25,Oklahoma,19
+2015,1,AP Top 25,Notre Dame,11
+2015,1,AP Top 25,Florida State,10
+2015,1,AP Top 25,Clemson,12
+2015,1,AP Top 25,Georgia Tech,16
+2015,1,AP Top 25,Boise State,23
+2015,14,AP Top 25,Florida,18
+2015,14,AP Top 25,Oklahoma State,14
+2015,14,AP Top 25,Baylor,12
+2015,14,AP Top 25,TCU,11
+2015,14,AP Top 25,Oregon,15
+2015,14,AP Top 25,Stanford,7
+2015,14,AP Top 25,USC,24
+2015,14,AP Top 25,LSU,23
+2015,14,AP Top 25,Utah,21
+2015,14,AP Top 25,Alabama,2
+2015,14,AP Top 25,Ole Miss,16
+2015,14,AP Top 25,Ohio State,6
+2015,14,AP Top 25,Michigan State,5
+2015,14,AP Top 25,Michigan,19
+2015,14,AP Top 25,Wisconsin,25
+2015,14,AP Top 25,Iowa,4
+2015,14,AP Top 25,Northwestern,13
+2015,14,AP Top 25,Oklahoma,3
+2015,14,AP Top 25,Notre Dame,9
+2015,14,AP Top 25,Temple,20
+2015,14,AP Top 25,Houston,17
+2015,14,AP Top 25,Navy,22
+2015,14,AP Top 25,Florida State,10
+2015,14,AP Top 25,Clemson,1
+2015,14,AP Top 25,North Carolina,8
+2015,14,Playoff Committee Rankings,Florida,18
+2015,14,Playoff Committee Rankings,Tennessee,25
+2015,14,Playoff Committee Rankings,Oklahoma State,17
+2015,14,Playoff Committee Rankings,Baylor,12
+2015,14,Playoff Committee Rankings,TCU,11
+2015,14,Playoff Committee Rankings,Oregon,16
+2015,14,Playoff Committee Rankings,Stanford,7
+2015,14,Playoff Committee Rankings,USC,20
+2015,14,Playoff Committee Rankings,LSU,21
+2015,14,Playoff Committee Rankings,Utah,24
+2015,14,Playoff Committee Rankings,Alabama,2
+2015,14,Playoff Committee Rankings,Ole Miss,13
+2015,14,Playoff Committee Rankings,Ohio State,6
+2015,14,Playoff Committee Rankings,Michigan State,5
+2015,14,Playoff Committee Rankings,Michigan,15
+2015,14,Playoff Committee Rankings,Iowa,4
+2015,14,Playoff Committee Rankings,Northwestern,14
+2015,14,Playoff Committee Rankings,Oklahoma,3
+2015,14,Playoff Committee Rankings,Notre Dame,8
+2015,14,Playoff Committee Rankings,Temple,22
+2015,14,Playoff Committee Rankings,Houston,19
+2015,14,Playoff Committee Rankings,Navy,23
+2015,14,Playoff Committee Rankings,Florida State,9
+2015,14,Playoff Committee Rankings,Clemson,1
+2015,14,Playoff Committee Rankings,North Carolina,10
+2015,13,AP Top 25,Florida,10
+2015,13,AP Top 25,Oklahoma State,9
+2015,13,AP Top 25,Baylor,7
+2015,13,AP Top 25,TCU,15
+2015,13,AP Top 25,Oregon,18
+2015,13,AP Top 25,Stanford,13
+2015,13,AP Top 25,Washington State,20
+2015,13,AP Top 25,Toledo,24
+2015,13,AP Top 25,UCLA,22
+2015,13,AP Top 25,Alabama,2
+2015,13,AP Top 25,Ole Miss,19
+2015,13,AP Top 25,Mississippi State,23
+2015,13,AP Top 25,Ohio State,8
+2015,13,AP Top 25,Michigan State,6
+2015,13,AP Top 25,Michigan,12
+2015,13,AP Top 25,Iowa,3
+2015,13,AP Top 25,Northwestern,17
+2015,13,AP Top 25,Oklahoma,5
+2015,13,AP Top 25,Notre Dame,4
+2015,13,AP Top 25,Temple,25
+2015,13,AP Top 25,Houston,21
+2015,13,AP Top 25,Navy,16
+2015,13,AP Top 25,Florida State,14
+2015,13,AP Top 25,Clemson,1
+2015,13,AP Top 25,North Carolina,11
+2015,13,Playoff Committee Rankings,Florida,12
+2015,13,Playoff Committee Rankings,Oklahoma State,11
+2015,13,Playoff Committee Rankings,Baylor,7
+2015,13,Playoff Committee Rankings,TCU,19
+2015,13,Playoff Committee Rankings,Oregon,17
+2015,13,Playoff Committee Rankings,Stanford,9
+2015,13,Playoff Committee Rankings,Washington State,20
+2015,13,Playoff Committee Rankings,Toledo,24
+2015,13,Playoff Committee Rankings,UCLA,22
+2015,13,Playoff Committee Rankings,Utah,23
+2015,13,Playoff Committee Rankings,Alabama,2
+2015,13,Playoff Committee Rankings,Ole Miss,18
+2015,13,Playoff Committee Rankings,Mississippi State,21
+2015,13,Playoff Committee Rankings,Ohio State,8
+2015,13,Playoff Committee Rankings,Michigan State,5
+2015,13,Playoff Committee Rankings,Michigan,10
+2015,13,Playoff Committee Rankings,Iowa,4
+2015,13,Playoff Committee Rankings,Northwestern,16
+2015,13,Playoff Committee Rankings,Oklahoma,3
+2015,13,Playoff Committee Rankings,Notre Dame,6
+2015,13,Playoff Committee Rankings,Temple,25
+2015,13,Playoff Committee Rankings,Navy,15
+2015,13,Playoff Committee Rankings,Florida State,13
+2015,13,Playoff Committee Rankings,Clemson,1
+2015,13,Playoff Committee Rankings,North Carolina,14
+2015,12,AP Top 25,Florida,8
+2015,12,AP Top 25,Oklahoma State,4
+2015,12,AP Top 25,Baylor,10
+2015,12,AP Top 25,TCU,11
+2015,12,AP Top 25,Oregon,23
+2015,12,AP Top 25,Stanford,15
+2015,12,AP Top 25,Washington State,24
+2015,12,AP Top 25,USC,22
+2015,12,AP Top 25,LSU,17
+2015,12,AP Top 25,Utah,18
+2015,12,AP Top 25,Alabama,3
+2015,12,AP Top 25,Ole Miss,25
+2015,12,AP Top 25,Ohio State,2
+2015,12,AP Top 25,Michigan State,9
+2015,12,AP Top 25,Michigan,14
+2015,12,AP Top 25,Wisconsin,21
+2015,12,AP Top 25,Iowa,6
+2015,12,AP Top 25,Northwestern,20
+2015,12,AP Top 25,Oklahoma,7
+2015,12,AP Top 25,Notre Dame,5
+2015,12,AP Top 25,Houston,13
+2015,12,AP Top 25,Navy,19
+2015,12,AP Top 25,Florida State,16
+2015,12,AP Top 25,Clemson,1
+2015,12,AP Top 25,North Carolina,12
+2015,12,Playoff Committee Rankings,Florida,8
+2015,12,Playoff Committee Rankings,Oklahoma State,6
+2015,12,Playoff Committee Rankings,Baylor,10
+2015,12,Playoff Committee Rankings,TCU,18
+2015,12,Playoff Committee Rankings,Oregon,23
+2015,12,Playoff Committee Rankings,Stanford,11
+2015,12,Playoff Committee Rankings,USC,24
+2015,12,Playoff Committee Rankings,LSU,15
+2015,12,Playoff Committee Rankings,Utah,13
+2015,12,Playoff Committee Rankings,Alabama,2
+2015,12,Playoff Committee Rankings,Ole Miss,22
+2015,12,Playoff Committee Rankings,Ohio State,3
+2015,12,Playoff Committee Rankings,Michigan State,9
+2015,12,Playoff Committee Rankings,Michigan,12
+2015,12,Playoff Committee Rankings,Wisconsin,25
+2015,12,Playoff Committee Rankings,Iowa,5
+2015,12,Playoff Committee Rankings,Northwestern,20
+2015,12,Playoff Committee Rankings,Oklahoma,7
+2015,12,Playoff Committee Rankings,Notre Dame,4
+2015,12,Playoff Committee Rankings,Houston,19
+2015,12,Playoff Committee Rankings,Navy,16
+2015,12,Playoff Committee Rankings,Memphis,21
+2015,12,Playoff Committee Rankings,Florida State,14
+2015,12,Playoff Committee Rankings,Clemson,1
+2015,12,Playoff Committee Rankings,North Carolina,17
+2015,11,AP Top 25,Florida,11
+2015,11,AP Top 25,Oklahoma State,5
+2015,11,AP Top 25,Baylor,4
+2015,11,AP Top 25,TCU,13
+2015,11,AP Top 25,Stanford,7
+2015,11,AP Top 25,LSU,9
+2015,11,AP Top 25,UCLA,18
+2015,11,AP Top 25,Utah,10
+2015,11,AP Top 25,Alabama,3
+2015,11,AP Top 25,Mississippi State,20
+2015,11,AP Top 25,Ohio State,2
+2015,11,AP Top 25,Michigan State,14
+2015,11,AP Top 25,Michigan,15
+2015,11,AP Top 25,Wisconsin,23
+2015,11,AP Top 25,Iowa,8
+2015,11,AP Top 25,Northwestern,24
+2015,11,AP Top 25,Oklahoma,12
+2015,11,AP Top 25,Notre Dame,6
+2015,11,AP Top 25,Temple,21
+2015,11,AP Top 25,Houston,16
+2015,11,AP Top 25,Navy,22
+2015,11,AP Top 25,Memphis,25
+2015,11,AP Top 25,Florida State,19
+2015,11,AP Top 25,Clemson,1
+2015,11,AP Top 25,North Carolina,17
+2015,11,Playoff Committee Rankings,Florida,11
+2015,11,Playoff Committee Rankings,Oklahoma State,8
+2015,11,Playoff Committee Rankings,Baylor,6
+2015,11,Playoff Committee Rankings,TCU,15
+2015,11,Playoff Committee Rankings,Stanford,7
+2015,11,Playoff Committee Rankings,LSU,9
+2015,11,Playoff Committee Rankings,UCLA,19
+2015,11,Playoff Committee Rankings,Utah,10
+2015,11,Playoff Committee Rankings,Alabama,2
+2015,11,Playoff Committee Rankings,Mississippi State,17
+2015,11,Playoff Committee Rankings,Ohio State,3
+2015,11,Playoff Committee Rankings,Michigan State,13
+2015,11,Playoff Committee Rankings,Michigan,14
+2015,11,Playoff Committee Rankings,Wisconsin,25
+2015,11,Playoff Committee Rankings,Iowa,5
+2015,11,Playoff Committee Rankings,Northwestern,18
+2015,11,Playoff Committee Rankings,Oklahoma,12
+2015,11,Playoff Committee Rankings,Notre Dame,4
+2015,11,Playoff Committee Rankings,Temple,22
+2015,11,Playoff Committee Rankings,Houston,24
+2015,11,Playoff Committee Rankings,Navy,20
+2015,11,Playoff Committee Rankings,Memphis,21
+2015,11,Playoff Committee Rankings,Florida State,16
+2015,11,Playoff Committee Rankings,Clemson,1
+2015,11,Playoff Committee Rankings,North Carolina,23
+2015,10,AP Top 25,Florida,11
+2015,10,AP Top 25,Oklahoma State,12
+2015,10,AP Top 25,Baylor,2
+2015,10,AP Top 25,TCU,5
+2015,10,AP Top 25,Stanford,9
+2015,10,AP Top 25,LSU,4
+2015,10,AP Top 25,Toledo,20
+2015,10,AP Top 25,UCLA,22
+2015,10,AP Top 25,Utah,13
+2015,10,AP Top 25,Alabama,7
+2015,10,AP Top 25,Ole Miss,19
+2015,10,AP Top 25,Mississippi State,24
+2015,10,AP Top 25,Texas A&M,25
+2015,10,AP Top 25,Ohio State,1
+2015,10,AP Top 25,Michigan State,6
+2015,10,AP Top 25,Michigan,16
+2015,10,AP Top 25,Iowa,10
+2015,10,AP Top 25,Oklahoma,14
+2015,10,AP Top 25,Notre Dame,8
+2015,10,AP Top 25,Temple,23
+2015,10,AP Top 25,Houston,18
+2015,10,AP Top 25,Memphis,15
+2015,10,AP Top 25,Florida State,17
+2015,10,AP Top 25,Clemson,3
+2015,10,AP Top 25,North Carolina,21
+2015,10,Playoff Committee Rankings,Florida,10
+2015,10,Playoff Committee Rankings,Oklahoma State,14
+2015,10,Playoff Committee Rankings,Baylor,6
+2015,10,Playoff Committee Rankings,TCU,8
+2015,10,Playoff Committee Rankings,Stanford,11
+2015,10,Playoff Committee Rankings,LSU,2
+2015,10,Playoff Committee Rankings,Toledo,24
+2015,10,Playoff Committee Rankings,UCLA,23
+2015,10,Playoff Committee Rankings,Utah,12
+2015,10,Playoff Committee Rankings,Alabama,4
+2015,10,Playoff Committee Rankings,Ole Miss,18
+2015,10,Playoff Committee Rankings,Mississippi State,20
+2015,10,Playoff Committee Rankings,Texas A&M,19
+2015,10,Playoff Committee Rankings,Ohio State,3
+2015,10,Playoff Committee Rankings,Michigan State,7
+2015,10,Playoff Committee Rankings,Michigan,17
+2015,10,Playoff Committee Rankings,Iowa,9
+2015,10,Playoff Committee Rankings,Northwestern,21
+2015,10,Playoff Committee Rankings,Oklahoma,15
+2015,10,Playoff Committee Rankings,Notre Dame,5
+2015,10,Playoff Committee Rankings,Temple,22
+2015,10,Playoff Committee Rankings,Houston,25
+2015,10,Playoff Committee Rankings,Memphis,13
+2015,10,Playoff Committee Rankings,Florida State,16
+2015,10,Playoff Committee Rankings,Clemson,1
+2015,7,AP Top 25,Florida,8
+2015,7,AP Top 25,Oklahoma State,16
+2015,7,AP Top 25,Baylor,2
+2015,7,AP Top 25,TCU,3
+2015,7,AP Top 25,Stanford,15
+2015,7,AP Top 25,California,23
+2015,7,AP Top 25,LSU,6
+2015,7,AP Top 25,Toledo,22
+2015,7,AP Top 25,UCLA,18
+2015,7,AP Top 25,Utah,4
+2015,7,AP Top 25,Alabama,10
+2015,7,AP Top 25,Ole Miss,13
+2015,7,AP Top 25,Texas A&M,9
+2015,7,AP Top 25,Ohio State,1
+2015,7,AP Top 25,Michigan State,7
+2015,7,AP Top 25,Michigan,12
+2015,7,AP Top 25,Iowa,17
+2015,7,AP Top 25,Northwestern,20
+2015,7,AP Top 25,Oklahoma,19
+2015,7,AP Top 25,Notre Dame,14
+2015,7,AP Top 25,Houston,24
+2015,7,AP Top 25,Florida State,11
+2015,7,AP Top 25,Clemson,5
+2015,7,AP Top 25,Duke,25
+2015,7,AP Top 25,Boise State,21

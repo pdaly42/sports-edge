@@ -1,0 +1,1051 @@
+season,week,team,opponent,cfb_off_epa_per_play,cfb_off_pass_epa,cfb_off_rush_epa,cfb_def_epa_per_play
+2020,1,Arkansas State,Memphis,0.2,0.25,0.14,0.33
+2020,1,Army,Middle Tennessee,0.38,0.53,0.37,-0.19
+2020,1,BYU,Navy,0.46,0.84,0.29,-0.25
+2020,1,Marshall,Eastern Kentucky,0.53,0.78,0.38,0.0
+2020,1,Memphis,Arkansas State,0.33,0.71,0.04,0.2
+2020,1,Middle Tennessee,Army,-0.19,-0.25,-0.13,0.38
+2020,1,Navy,BYU,-0.25,-0.28,-0.24,0.46
+2020,1,North Texas,Houston Christian,0.58,0.98,0.32,0.0
+2020,1,SMU,Texas State,0.2,0.33,0.09,0.14
+2020,1,South Alabama,Southern Miss,0.3,0.52,0.12,0.23
+2020,1,Southern Miss,South Alabama,0.23,0.55,-0.09,0.3
+2020,1,Texas State,SMU,0.14,-0.05,0.36,0.2
+2020,1,UAB,Central Arkansas,0.27,0.52,0.11,0.0
+2020,1,UTEP,Stephen F. Austin,0.19,0.47,-0.03,0.0
+2020,2,App State,Charlotte,0.33,0.48,0.27,-0.14
+2020,2,Arkansas State,Kansas State,0.23,0.38,0.03,0.13
+2020,2,Army,UL Monroe,0.38,-0.05,0.41,-0.06
+2020,2,Charlotte,App State,-0.14,-0.29,0.02,0.33
+2020,2,Clemson,Wake Forest,0.35,0.58,0.14,-0.04
+2020,2,Coastal Carolina,Kansas,0.26,0.39,0.21,0.14
+2020,2,Duke,Notre Dame,0.02,-0.01,0.06,0.18
+2020,2,Florida State,Georgia Tech,0.08,0.0,0.19,0.15
+2020,2,Georgia Southern,Campbell,0.22,0.11,0.25,0.0
+2020,2,Georgia Tech,Florida State,0.15,0.25,0.05,0.08
+2020,2,Iowa State,Louisiana,0.11,-0.14,0.37,0.17
+2020,2,Kansas,Coastal Carolina,0.14,0.16,0.12,0.26
+2020,2,Kansas State,Arkansas State,0.13,0.43,-0.13,0.23
+2020,2,Louisiana,Iowa State,0.17,0.29,0.09,0.11
+2020,2,Louisville,Western Kentucky,0.35,0.62,0.11,-0.06
+2020,2,Miami,UAB,0.34,0.21,0.41,0.06
+2020,2,North Carolina,Syracuse,0.33,0.47,0.17,-0.23
+2020,2,Notre Dame,Duke,0.18,0.2,0.16,0.02
+2020,2,Oklahoma,Missouri State,0.43,0.83,-0.09,0.0
+2020,2,Pittsburgh,Austin Peay,0.46,0.59,0.36,0.0
+2020,2,South Alabama,Tulane,0.13,0.35,-0.17,0.08
+2020,2,South Florida,The Citadel,0.15,-0.32,0.52,0.0
+2020,2,Syracuse,North Carolina,-0.23,-0.25,-0.2,0.33
+2020,2,Texas,UTEP,0.48,0.6,0.33,-0.15
+2020,2,Texas State,UTSA,0.12,0.04,0.22,0.21
+2020,2,Texas Tech,Houston Christian,0.37,0.54,0.16,0.0
+2020,2,Tulane,South Alabama,0.08,-0.07,0.2,0.13
+2020,2,UAB,Miami,0.06,0.23,-0.19,0.34
+2020,2,UL Monroe,Army,-0.06,0.26,-0.53,0.38
+2020,2,UTEP,Texas,-0.15,-0.01,-0.34,0.48
+2020,2,UTSA,Texas State,0.21,0.2,0.22,0.12
+2020,2,Wake Forest,Clemson,-0.04,0.08,-0.23,0.35
+2020,2,Western Kentucky,Louisville,-0.06,-0.28,0.1,0.35
+2020,2,West Virginia,Eastern Kentucky,0.45,0.43,0.46,0.0
+2020,3,App State,Marshall,-0.02,0.06,-0.12,0.08
+2020,3,Boston College,Duke,0.34,0.79,-0.21,-0.01
+2020,3,Cincinnati,Austin Peay,0.51,0.74,0.35,0.0
+2020,3,Clemson,The Citadel,0.27,0.35,0.2,0.0
+2020,3,Coastal Carolina,Campbell,0.62,1.24,0.32,0.0
+2020,3,Duke,Boston College,-0.01,0.25,-0.27,0.34
+2020,3,Georgia State,Louisiana,0.11,-0.01,0.21,0.18
+2020,3,Georgia Tech,UCF,0.1,0.3,-0.06,0.34
+2020,3,Liberty,Western Kentucky,0.31,0.14,0.37,0.32
+2020,3,Louisiana,Georgia State,0.18,0.14,0.22,0.11
+2020,3,Louisiana Tech,Southern Miss,0.25,0.23,0.27,0.22
+2020,3,Louisville,Miami,0.27,0.27,0.27,0.36
+2020,3,Marshall,App State,0.08,-0.08,0.17,-0.02
+2020,3,Miami,Louisville,0.36,0.78,-0.11,0.27
+2020,3,Middle Tennessee,Troy,-0.07,0.07,-0.18,0.24
+2020,3,Navy,Tulane,0.1,0.88,-0.06,0.07
+2020,3,NC State,Wake Forest,0.15,0.02,0.22,0.23
+2020,3,North Texas,SMU,0.24,0.38,0.15,0.42
+2020,3,Notre Dame,South Florida,0.39,0.2,0.48,-0.22
+2020,3,Oklahoma State,Tulsa,-0.12,-0.23,-0.05,-0.05
+2020,3,Pittsburgh,Syracuse,0.04,0.24,-0.14,-0.19
+2020,3,SMU,North Texas,0.42,0.51,0.36,0.24
+2020,3,Southern Miss,Louisiana Tech,0.22,0.19,0.25,0.25
+2020,3,South Florida,Notre Dame,-0.22,-0.39,-0.06,0.39
+2020,3,Syracuse,Pittsburgh,-0.19,-0.38,0.02,0.04
+2020,3,Texas State,UL Monroe,0.28,0.68,0.04,-0.04
+2020,3,Troy,Middle Tennessee,0.24,0.17,0.3,-0.07
+2020,3,Tulane,Navy,0.07,-0.38,0.4,0.1
+2020,3,Tulsa,Oklahoma State,-0.05,0.18,-0.28,-0.12
+2020,3,UCF,Georgia Tech,0.34,0.52,0.18,0.1
+2020,3,UL Monroe,Texas State,-0.04,0.13,-0.41,0.28
+2020,3,UTEP,Abilene Christian,0.12,0.3,-0.02,0.0
+2020,3,UTSA,Stephen F. Austin,0.18,0.23,0.14,0.0
+2020,3,Wake Forest,NC State,0.23,0.5,-0.02,0.15
+2020,3,Western Kentucky,Liberty,0.32,0.57,0.1,0.31
+2020,4,Alabama,Missouri,0.39,0.65,0.14,0.08
+2020,4,App State,Campbell,0.39,0.45,0.37,0.0
+2020,4,Arkansas,Georgia,-0.12,-0.11,-0.03,-0.04
+2020,4,Army,Cincinnati,-0.1,-0.09,-0.11,0.04
+2020,4,Auburn,Kentucky,0.2,0.55,-0.13,0.04
+2020,4,Baylor,Kansas,0.25,0.36,0.19,0.17
+2020,4,Boston College,Texas State,0.17,0.14,0.23,0.17
+2020,4,BYU,Troy,0.35,0.41,0.31,-0.11
+2020,4,Cincinnati,Army,0.04,0.36,-0.28,-0.1
+2020,4,Duke,Virginia,-0.07,0.06,-0.26,0.17
+2020,4,East Carolina,UCF,0.08,0.31,-0.07,0.32
+2020,4,Florida,Ole Miss,0.56,0.68,0.39,0.39
+2020,4,Florida International,Liberty,0.38,0.12,0.63,0.25
+2020,4,Florida State,Miami,0.0,-0.41,0.57,0.43
+2020,4,Georgia,Arkansas,-0.04,0.02,-0.1,-0.12
+2020,4,Georgia Southern,Louisiana,0.18,0.68,0.01,0.32
+2020,4,Georgia Tech,Syracuse,0.06,-0.26,0.26,0.07
+2020,4,Iowa State,TCU,0.31,0.45,0.18,0.22
+2020,4,Kansas,Baylor,0.17,0.24,0.15,0.25
+2020,4,Kansas State,Oklahoma,0.36,0.66,0.06,0.32
+2020,4,Kentucky,Auburn,0.04,0.04,0.03,0.2
+2020,4,Liberty,Florida International,0.25,0.39,0.15,0.38
+2020,4,Louisiana,Georgia Southern,0.32,0.34,0.31,0.18
+2020,4,Louisiana Tech,Houston Christian,0.46,0.54,0.37,0.0
+2020,4,Louisville,Pittsburgh,0.02,-0.09,0.16,0.04
+2020,4,LSU,Mississippi State,0.06,0.05,0.1,0.35
+2020,4,Miami,Florida State,0.43,0.39,0.47,0.0
+2020,4,Middle Tennessee,UTSA,0.31,0.39,0.21,0.1
+2020,4,Mississippi State,LSU,0.35,0.43,-0.13,0.06
+2020,4,Missouri,Alabama,0.08,0.23,-0.14,0.39
+2020,4,NC State,Virginia Tech,0.21,0.13,0.31,0.41
+2020,4,Oklahoma,Kansas State,0.32,0.61,-0.06,0.36
+2020,4,Oklahoma State,West Virginia,0.18,0.12,0.21,-0.12
+2020,4,Ole Miss,Florida,0.39,0.38,0.4,0.56
+2020,4,Pittsburgh,Louisville,0.04,0.28,-0.19,0.02
+2020,4,SMU,Stephen F. Austin,0.34,0.27,0.4,0.0
+2020,4,South Alabama,UAB,-0.02,-0.06,0.02,0.41
+2020,4,South Carolina,Tennessee,0.07,0.11,0.01,0.18
+2020,4,Southern Miss,Tulane,0.17,0.27,0.02,0.49
+2020,4,Syracuse,Georgia Tech,0.07,0.34,-0.11,0.06
+2020,4,TCU,Iowa State,0.22,0.37,0.04,0.31
+2020,4,Tennessee,South Carolina,0.18,0.34,0.01,0.07
+2020,4,Texas,Texas Tech,0.13,0.41,-0.12,0.12
+2020,4,Texas A&M,Vanderbilt,0.23,0.43,0.0,-0.13
+2020,4,Texas State,Boston College,0.17,0.33,0.03,0.17
+2020,4,Texas Tech,Texas,0.12,0.24,0.14,0.13
+2020,4,Troy,BYU,-0.11,-0.03,-0.33,0.35
+2020,4,Tulane,Southern Miss,0.49,0.26,0.57,0.17
+2020,4,UAB,South Alabama,0.41,0.71,0.19,-0.02
+2020,4,UCF,East Carolina,0.32,0.51,0.09,0.08
+2020,4,UL Monroe,UTEP,-0.13,-0.06,-0.35,0.3
+2020,4,UTEP,UL Monroe,0.3,0.93,-0.03,-0.13
+2020,4,UTSA,Middle Tennessee,0.1,0.18,-0.03,0.31
+2020,4,Vanderbilt,Texas A&M,-0.13,-0.02,-0.17,0.23
+2020,4,Virginia,Duke,0.17,0.04,0.35,-0.07
+2020,4,Virginia Tech,NC State,0.41,0.18,0.52,0.21
+2020,4,West Virginia,Oklahoma State,-0.12,0.22,-0.48,0.18
+2020,5,Air Force,Navy,0.39,0.07,0.44,-0.01
+2020,5,Alabama,Texas A&M,0.57,0.98,0.13,0.05
+2020,5,Arkansas,Mississippi State,0.01,0.33,-0.29,-0.07
+2020,5,Arkansas State,Coastal Carolina,0.14,0.19,0.01,0.32
+2020,5,Army,Abilene Christian,0.42,-0.28,0.51,0.0
+2020,5,Auburn,Georgia,-0.02,-0.12,0.17,0.31
+2020,5,Baylor,West Virginia,-0.2,-0.21,-0.18,0.05
+2020,5,Boston College,North Carolina,0.19,0.22,0.1,0.3
+2020,5,BYU,Louisiana Tech,0.44,0.86,0.16,0.13
+2020,5,Charlotte,Florida Atlantic,0.1,0.3,-0.11,0.15
+2020,5,Cincinnati,South Florida,0.02,0.0,0.04,-0.07
+2020,5,Clemson,Virginia,0.36,0.52,0.13,0.21
+2020,5,Coastal Carolina,Arkansas State,0.32,0.88,-0.02,0.14
+2020,5,Duke,Virginia Tech,0.19,0.26,0.09,0.27
+2020,5,East Carolina,Georgia State,-0.18,-0.2,-0.12,0.13
+2020,5,Florida,South Carolina,0.37,0.55,0.12,0.13
+2020,5,Florida Atlantic,Charlotte,0.15,0.01,0.24,0.1
+2020,5,Florida State,Jacksonville State,0.29,0.0,0.47,0.0
+2020,5,Georgia,Auburn,0.31,0.43,0.23,-0.02
+2020,5,Georgia Southern,UL Monroe,0.35,-0.32,0.46,0.34
+2020,5,Georgia State,East Carolina,0.13,0.1,0.16,-0.18
+2020,5,Iowa State,Oklahoma,0.38,0.63,0.16,0.24
+2020,5,Kansas,Oklahoma State,-0.16,-0.2,-0.13,0.32
+2020,5,Kansas State,Texas Tech,0.3,0.59,0.13,0.21
+2020,5,Kentucky,Ole Miss,0.4,0.2,0.48,0.31
+2020,5,Liberty,North Alabama,0.23,0.36,0.15,0.0
+2020,5,Louisiana Tech,BYU,0.13,0.15,0.11,0.44
+2020,5,LSU,Vanderbilt,0.37,0.6,0.1,-0.02
+2020,5,Memphis,SMU,0.26,0.23,0.29,0.3
+2020,5,Middle Tennessee,Western Kentucky,0.15,0.22,0.08,0.05
+2020,5,Mississippi State,Arkansas,-0.07,-0.14,0.12,0.01
+2020,5,Missouri,Tennessee,0.04,0.16,-0.04,0.36
+2020,5,Navy,Air Force,-0.01,-0.03,0.0,0.39
+2020,5,NC State,Pittsburgh,0.18,0.32,-0.05,0.26
+2020,5,North Carolina,Boston College,0.3,0.38,0.23,0.19
+2020,5,North Texas,Southern Miss,0.21,0.35,0.02,0.25
+2020,5,Oklahoma,Iowa State,0.24,0.4,0.05,0.38
+2020,5,Oklahoma State,Kansas,0.32,0.42,0.27,-0.16
+2020,5,Ole Miss,Kentucky,0.31,0.72,-0.05,0.4
+2020,5,Pittsburgh,NC State,0.26,0.56,-0.1,0.18
+2020,5,SMU,Memphis,0.3,0.63,-0.29,0.26
+2020,5,South Carolina,Florida,0.13,0.07,0.25,0.37
+2020,5,Southern Miss,North Texas,0.25,0.24,0.26,0.21
+2020,5,South Florida,Cincinnati,-0.07,-0.14,0.02,0.02
+2020,5,TCU,Texas,0.18,0.25,0.17,0.23
+2020,5,Tennessee,Missouri,0.36,0.43,0.32,0.04
+2020,5,Texas,TCU,0.23,0.36,0.03,0.18
+2020,5,Texas A&M,Alabama,0.05,0.1,-0.03,0.57
+2020,5,Texas Tech,Kansas State,0.21,0.18,0.25,0.3
+2020,5,Tulsa,UCF,0.16,0.39,0.04,0.12
+2020,5,UAB,UTSA,0.13,0.41,-0.08,-0.18
+2020,5,UCF,Tulsa,0.12,0.25,-0.02,0.16
+2020,5,UL Monroe,Georgia Southern,0.34,0.38,0.21,0.35
+2020,5,UTSA,UAB,-0.18,-0.45,0.06,0.13
+2020,5,Vanderbilt,LSU,-0.02,-0.1,0.03,0.37
+2020,5,Virginia,Clemson,0.21,0.12,0.32,0.36
+2020,5,Virginia Tech,Duke,0.27,0.2,0.3,0.19
+2020,5,Wake Forest,Campbell,0.61,0.8,0.52,0.0
+2020,5,Western Kentucky,Middle Tennessee,0.05,0.28,-0.19,0.15
+2020,5,West Virginia,Baylor,0.05,0.0,0.11,-0.2
+2020,6,Alabama,Ole Miss,0.67,0.83,0.53,0.45
+2020,6,Arkansas,Auburn,0.27,0.78,-0.15,0.21
+2020,6,Arkansas State,Central Arkansas,0.43,0.73,0.08,0.0
+2020,6,Army,The Citadel,0.1,0.64,-0.01,0.0
+2020,6,Auburn,Arkansas,0.21,0.03,0.36,0.27
+2020,6,Boston College,Pittsburgh,0.18,0.55,-0.24,0.09
+2020,6,BYU,UTSA,0.38,0.66,0.17,0.17
+2020,6,Charlotte,North Texas,0.48,0.8,0.33,0.15
+2020,6,Clemson,Miami,0.34,0.33,0.35,-0.1
+2020,6,Duke,Syracuse,0.25,0.34,0.19,0.08
+2020,6,East Carolina,South Florida,0.33,0.65,0.12,0.12
+2020,6,Florida,Texas A&M,0.33,0.53,0.09,0.43
+2020,6,Florida International,Middle Tennessee,0.06,-0.38,0.33,0.15
+2020,6,Florida State,Notre Dame,0.17,0.18,0.15,0.45
+2020,6,Georgia,Tennessee,0.08,0.33,-0.06,0.09
+2020,6,Georgia Tech,Louisville,0.57,0.73,0.46,0.23
+2020,6,Houston,Tulane,0.17,0.21,0.14,-0.07
+2020,6,Iowa State,Texas Tech,0.3,0.49,0.11,-0.03
+2020,6,Kansas State,TCU,-0.02,-0.07,0.0,0.04
+2020,6,Kentucky,Mississippi State,-0.11,-0.11,-0.03,-0.28
+2020,6,Liberty,UL Monroe,0.03,-0.09,0.13,-0.11
+2020,6,Louisiana Tech,UTEP,-0.03,-0.06,-0.01,0.0
+2020,6,Louisville,Georgia Tech,0.23,0.25,0.22,0.57
+2020,6,LSU,Missouri,0.26,0.37,-0.03,0.52
+2020,6,Marshall,Western Kentucky,0.15,0.17,0.14,0.01
+2020,6,Miami,Clemson,-0.1,-0.39,0.4,0.34
+2020,6,Middle Tennessee,Florida International,0.15,0.18,0.11,0.06
+2020,6,Mississippi State,Kentucky,-0.28,-0.27,-0.31,-0.11
+2020,6,Missouri,LSU,0.52,0.86,0.17,0.26
+2020,6,Navy,Temple,0.32,1.55,0.26,0.41
+2020,6,NC State,Virginia,0.14,0.37,0.0,-0.03
+2020,6,North Carolina,Virginia Tech,0.71,0.78,0.67,0.29
+2020,6,North Texas,Charlotte,0.15,0.27,-0.05,0.48
+2020,6,Notre Dame,Florida State,0.45,0.47,0.44,0.17
+2020,6,Oklahoma,Texas,0.18,0.46,-0.04,0.09
+2020,6,Ole Miss,Alabama,0.45,0.75,0.28,0.67
+2020,6,Pittsburgh,Boston College,0.09,0.22,-0.08,0.18
+2020,6,South Carolina,Vanderbilt,0.34,0.34,0.34,-0.07
+2020,6,South Florida,East Carolina,0.12,0.23,-0.03,0.33
+2020,6,Syracuse,Duke,0.08,0.17,-0.11,0.25
+2020,6,TCU,Kansas State,0.04,-0.26,0.39,-0.02
+2020,6,Temple,Navy,0.41,0.41,0.41,0.32
+2020,6,Tennessee,Georgia,0.09,0.22,-0.13,0.08
+2020,6,Texas,Oklahoma,0.09,0.01,0.27,0.18
+2020,6,Texas A&M,Florida,0.43,0.57,0.29,0.33
+2020,6,Texas State,Troy,-0.07,-0.11,-0.04,0.26
+2020,6,Texas Tech,Iowa State,-0.03,0.08,-0.24,0.3
+2020,6,Troy,Texas State,0.26,0.53,-0.1,-0.07
+2020,6,Tulane,Houston,-0.07,-0.16,0.01,0.17
+2020,6,UL Monroe,Liberty,-0.11,-0.04,-0.19,0.03
+2020,6,UTEP,Louisiana Tech,0.0,0.1,-0.16,-0.03
+2020,6,UTSA,BYU,0.17,0.38,-0.09,0.38
+2020,6,Vanderbilt,South Carolina,-0.07,-0.1,-0.05,0.34
+2020,6,Virginia,NC State,-0.03,0.09,-0.34,0.14
+2020,6,Virginia Tech,North Carolina,0.29,0.12,0.39,0.71
+2020,6,Western Kentucky,Marshall,0.01,0.07,-0.08,0.15
+2020,7,Alabama,Georgia,0.3,0.6,0.02,0.14
+2020,7,Arkansas,Ole Miss,0.09,0.2,0.0,-0.16
+2020,7,Arkansas State,Georgia State,0.23,0.71,-0.54,0.33
+2020,7,Army,UTSA,0.29,0.07,0.31,0.09
+2020,7,Auburn,South Carolina,0.14,0.08,0.23,0.09
+2020,7,Boston College,Virginia Tech,0.12,0.31,-0.31,0.44
+2020,7,BYU,Houston,0.42,0.55,0.18,0.26
+2020,7,Clemson,Georgia Tech,0.45,0.67,0.14,-0.15
+2020,7,Coastal Carolina,Louisiana,0.29,0.61,0.12,0.38
+2020,7,Duke,NC State,-0.11,-0.12,-0.1,0.17
+2020,7,East Carolina,Navy,0.11,-0.07,0.2,0.2
+2020,7,Florida State,North Carolina,0.3,0.21,0.36,0.1
+2020,7,Georgia,Alabama,0.14,0.03,0.29,0.3
+2020,7,Georgia Southern,Massachusetts,0.41,0.65,0.32,-0.05
+2020,7,Georgia State,Arkansas State,0.33,0.38,0.28,0.23
+2020,7,Georgia Tech,Clemson,-0.15,-0.24,-0.1,0.45
+2020,7,Houston,BYU,0.26,0.55,0.0,0.42
+2020,7,Kansas,West Virginia,-0.16,-0.09,-0.23,0.2
+2020,7,Kentucky,Tennessee,0.22,0.61,0.05,-0.21
+2020,7,Liberty,Syracuse,0.39,0.49,0.35,-0.02
+2020,7,Louisiana,Coastal Carolina,0.38,0.42,0.35,0.29
+2020,7,Louisiana Tech,Marshall,0.09,0.19,-0.13,0.22
+2020,7,Louisville,Notre Dame,0.12,0.23,0.01,0.13
+2020,7,Marshall,Louisiana Tech,0.22,0.43,0.11,0.09
+2020,7,Massachusetts,Georgia Southern,-0.05,-0.19,0.05,0.41
+2020,7,Memphis,UCF,0.37,0.68,-0.01,0.43
+2020,7,Miami,Pittsburgh,0.08,0.33,-0.15,-0.03
+2020,7,Middle Tennessee,North Texas,0.19,0.3,0.11,0.64
+2020,7,Mississippi State,Texas A&M,-0.03,-0.05,0.05,0.11
+2020,7,Navy,East Carolina,0.2,-0.22,0.25,0.11
+2020,7,NC State,Duke,0.17,0.2,0.14,-0.11
+2020,7,North Carolina,Florida State,0.1,0.16,0.03,0.3
+2020,7,North Texas,Middle Tennessee,0.64,0.47,0.74,0.19
+2020,7,Notre Dame,Louisville,0.13,0.15,0.12,0.12
+2020,7,Ole Miss,Arkansas,-0.16,-0.46,0.07,0.09
+2020,7,Pittsburgh,Miami,-0.03,0.06,-0.2,0.08
+2020,7,SMU,Tulane,0.32,0.58,0.07,0.19
+2020,7,South Alabama,Texas State,0.25,0.61,-0.04,0.12
+2020,7,South Carolina,Auburn,0.09,0.16,0.05,0.14
+2020,7,South Florida,Temple,0.14,0.15,0.12,0.19
+2020,7,Syracuse,Liberty,-0.02,0.08,-0.19,0.39
+2020,7,Temple,South Florida,0.19,0.51,-0.12,0.14
+2020,7,Tennessee,Kentucky,-0.21,-0.73,0.16,0.22
+2020,7,Texas A&M,Mississippi State,0.11,-0.14,0.29,-0.03
+2020,7,Texas State,South Alabama,0.12,0.25,-0.09,0.25
+2020,7,Troy,Eastern Kentucky,0.33,0.41,0.24,0.0
+2020,7,Tulane,SMU,0.19,0.11,0.26,0.32
+2020,7,UAB,Western Kentucky,0.1,0.11,0.1,-0.01
+2020,7,UCF,Memphis,0.43,0.73,0.12,0.37
+2020,7,UTSA,Army,0.09,0.09,0.08,0.29
+2020,7,Virginia,Wake Forest,0.12,0.05,0.21,0.3
+2020,7,Virginia Tech,Boston College,0.44,0.27,0.51,0.12
+2020,7,Wake Forest,Virginia,0.3,0.68,0.03,0.12
+2020,7,Western Kentucky,UAB,-0.01,-0.19,0.24,0.1
+2020,7,West Virginia,Kansas,0.2,0.19,0.22,-0.16
+2020,8,Air Force,San José State,0.05,0.17,0.01,0.05
+2020,8,Alabama,Tennessee,0.44,0.57,0.32,0.07
+2020,8,App State,Arkansas State,0.44,0.72,0.29,0.03
+2020,8,Arkansas State,App State,0.03,0.03,0.04,0.44
+2020,8,Army,Mercer,0.38,0.76,0.35,0.0
+2020,8,Auburn,Ole Miss,0.38,0.41,0.36,0.19
+2020,8,Baylor,Texas,0.09,0.12,0.02,0.27
+2020,8,Boise State,Utah State,0.39,0.45,0.32,0.01
+2020,8,Boston College,Georgia Tech,0.32,0.48,0.25,0.15
+2020,8,BYU,Texas State,0.44,0.53,0.35,-0.14
+2020,8,Charlotte,UTEP,0.23,0.53,0.0,0.19
+2020,8,Cincinnati,SMU,0.41,0.29,0.49,-0.14
+2020,8,Clemson,Syracuse,0.18,0.06,0.33,-0.08
+2020,8,Coastal Carolina,Georgia Southern,0.08,0.16,0.01,-0.06
+2020,8,Florida Atlantic,Marshall,-0.07,-0.12,-0.01,0.18
+2020,8,Florida International,Jacksonville State,-0.15,-0.14,-0.15,0.0
+2020,8,Florida State,Louisville,-0.04,-0.31,0.27,0.53
+2020,8,Fresno State,Hawai'i,0.09,0.14,0.04,0.4
+2020,8,Georgia Southern,Coastal Carolina,-0.06,-0.27,0.11,0.08
+2020,8,Georgia State,Troy,0.02,0.21,-0.08,0.14
+2020,8,Georgia Tech,Boston College,0.15,0.21,0.07,0.32
+2020,8,Hawai'i,Fresno State,0.4,0.25,0.51,0.09
+2020,8,Houston,Navy,0.29,0.55,-0.02,0.26
+2020,8,Illinois,Wisconsin,-0.09,-0.26,0.09,0.28
+2020,8,Indiana,Penn State,0.0,0.01,-0.03,0.22
+2020,8,Iowa,Purdue,0.1,0.03,0.17,0.13
+2020,8,Iowa State,Oklahoma State,0.13,-0.06,0.37,0.15
+2020,8,Kansas,Kansas State,-0.08,-0.22,0.11,0.2
+2020,8,Kansas State,Kansas,0.2,0.42,0.0,-0.08
+2020,8,Kentucky,Missouri,0.06,-0.17,0.19,0.13
+2020,8,Liberty,Southern Miss,0.49,0.67,0.31,0.28
+2020,8,Louisiana,UAB,0.14,0.34,0.04,0.17
+2020,8,Louisiana Tech,UTSA,-0.1,-0.15,-0.03,0.03
+2020,8,Louisville,Florida State,0.53,0.88,0.38,-0.04
+2020,8,LSU,South Carolina,0.49,1.01,0.28,0.19
+2020,8,Marshall,Florida Atlantic,0.18,0.21,0.15,-0.07
+2020,8,Maryland,Northwestern,-0.1,-0.14,-0.04,0.41
+2020,8,Memphis,Temple,0.27,0.66,-0.06,0.13
+2020,8,Miami,Virginia,0.18,0.46,-0.06,0.16
+2020,8,Michigan,Minnesota,0.51,0.44,0.58,0.07
+2020,8,Michigan State,Rutgers,-0.02,0.42,-0.51,-0.01
+2020,8,Middle Tennessee,Rice,0.19,0.49,-0.13,0.23
+2020,8,Minnesota,Michigan,0.07,0.07,0.06,0.51
+2020,8,Missouri,Kentucky,0.13,0.49,-0.05,0.06
+2020,8,Navy,Houston,0.26,0.67,0.09,0.29
+2020,8,NC State,North Carolina,0.13,0.16,0.04,0.37
+2020,8,Nebraska,Ohio State,0.23,0.27,0.19,0.52
+2020,8,Nevada,Wyoming,0.26,0.34,0.09,0.12
+2020,8,North Carolina,NC State,0.37,0.37,0.38,0.13
+2020,8,Northwestern,Maryland,0.41,0.59,0.31,-0.1
+2020,8,Notre Dame,Pittsburgh,0.21,0.61,-0.07,-0.31
+2020,8,Ohio State,Nebraska,0.52,0.82,0.36,0.23
+2020,8,Oklahoma,TCU,0.32,0.98,-0.03,0.11
+2020,8,Oklahoma State,Iowa State,0.15,0.38,0.03,0.13
+2020,8,Ole Miss,Auburn,0.19,-0.01,0.3,0.38
+2020,8,Penn State,Indiana,0.22,0.46,0.05,0.0
+2020,8,Pittsburgh,Notre Dame,-0.31,-0.2,-0.19,0.21
+2020,8,Purdue,Iowa,0.13,0.22,-0.07,0.1
+2020,8,Rice,Middle Tennessee,0.23,0.43,0.06,0.19
+2020,8,Rutgers,Michigan State,-0.01,0.2,-0.19,-0.02
+2020,8,San Diego State,UNLV,0.26,0.18,0.31,-0.04
+2020,8,San José State,Air Force,0.05,0.47,-0.34,0.05
+2020,8,SMU,Cincinnati,-0.14,-0.2,-0.04,0.41
+2020,8,South Alabama,UL Monroe,0.38,0.75,0.19,-0.02
+2020,8,South Carolina,LSU,0.19,-0.05,0.46,0.49
+2020,8,Southern Miss,Liberty,0.28,0.19,0.34,0.49
+2020,8,South Florida,Tulsa,-0.17,-0.04,-0.31,0.38
+2020,8,Syracuse,Clemson,-0.08,0.02,-0.18,0.18
+2020,8,TCU,Oklahoma,0.11,0.27,-0.15,0.32
+2020,8,Temple,Memphis,0.13,0.2,-0.03,0.27
+2020,8,Tennessee,Alabama,0.07,0.01,0.12,0.44
+2020,8,Texas,Baylor,0.27,0.64,0.06,0.09
+2020,8,Texas State,BYU,-0.14,-0.25,-0.02,0.44
+2020,8,Texas Tech,West Virginia,0.27,0.16,0.37,0.18
+2020,8,Troy,Georgia State,0.14,0.3,-0.36,0.02
+2020,8,Tulane,UCF,0.24,0.43,0.07,0.43
+2020,8,Tulsa,South Florida,0.38,0.47,0.32,-0.17
+2020,8,UAB,Louisiana,0.17,0.18,0.16,0.14
+2020,8,UCF,Tulane,0.43,0.7,0.23,0.24
+2020,8,UL Monroe,South Alabama,-0.02,0.11,-0.19,0.38
+2020,8,UNLV,San Diego State,-0.04,-0.09,0.03,0.26
+2020,8,Utah State,Boise State,0.01,0.08,-0.04,0.39
+2020,8,UTEP,Charlotte,0.19,0.27,0.1,0.23
+2020,8,UTSA,Louisiana Tech,0.03,-0.12,0.15,-0.1
+2020,8,Virginia,Miami,0.16,0.07,0.24,0.18
+2020,8,Virginia Tech,Wake Forest,0.17,-0.05,0.35,0.14
+2020,8,Wake Forest,Virginia Tech,0.14,0.19,0.13,0.17
+2020,8,Western Kentucky,Chattanooga,-0.04,0.22,-0.25,0.0
+2020,8,West Virginia,Texas Tech,0.18,0.21,0.13,0.27
+2020,8,Wisconsin,Illinois,0.28,0.95,0.0,-0.09
+2020,8,Wyoming,Nevada,0.12,0.08,0.17,0.26
+2020,9,Air Force,Boise State,0.45,0.69,0.42,0.66
+2020,9,Alabama,Mississippi State,0.26,0.45,0.09,-0.25
+2020,9,App State,UL Monroe,0.26,0.13,0.31,0.06
+2020,9,Arkansas,Texas A&M,0.29,0.31,0.26,0.46
+2020,9,Arkansas State,Troy,0.1,0.15,0.01,0.19
+2020,9,Auburn,LSU,0.43,0.78,0.23,0.09
+2020,9,Baylor,TCU,-0.01,0.06,-0.11,0.07
+2020,9,Boise State,Air Force,0.66,1.05,0.4,0.45
+2020,9,Boston College,Clemson,0.14,0.47,-0.15,0.16
+2020,9,BYU,Western Kentucky,0.3,0.39,0.2,0.0
+2020,9,Charlotte,Duke,0.08,0.02,0.13,0.41
+2020,9,Cincinnati,Memphis,0.46,0.55,0.4,-0.07
+2020,9,Clemson,Boston College,0.16,0.53,-0.39,0.14
+2020,9,Coastal Carolina,Georgia State,0.44,0.87,0.18,-0.21
+2020,9,Colorado State,Fresno State,0.04,0.15,-0.06,0.33
+2020,9,Duke,Charlotte,0.41,0.32,0.46,0.08
+2020,9,East Carolina,Tulsa,0.28,0.39,0.07,0.2
+2020,9,Florida,Missouri,0.22,0.38,0.06,-0.06
+2020,9,Florida Atlantic,UTSA,0.08,0.22,0.0,-0.03
+2020,9,Fresno State,Colorado State,0.33,0.64,0.01,0.04
+2020,9,Georgia,Kentucky,0.12,0.03,0.15,-0.02
+2020,9,Georgia Southern,South Alabama,0.18,0.31,0.16,0.05
+2020,9,Georgia State,Coastal Carolina,-0.21,-0.36,-0.13,0.44
+2020,9,Georgia Tech,Notre Dame,0.0,-0.22,0.22,0.14
+2020,9,Hawai'i,Wyoming,-0.01,-0.3,0.35,0.17
+2020,9,Houston,UCF,0.11,-0.03,0.3,0.43
+2020,9,Illinois,Purdue,0.08,0.22,-0.05,0.25
+2020,9,Indiana,Rutgers,0.18,0.36,0.04,-0.1
+2020,9,Iowa,Northwestern,-0.08,-0.17,0.13,0.11
+2020,9,Iowa State,Kansas,0.38,0.35,0.42,-0.03
+2020,9,Kansas,Iowa State,-0.03,-0.1,0.05,0.38
+2020,9,Kansas State,West Virginia,-0.13,-0.15,-0.1,0.28
+2020,9,Kentucky,Georgia,-0.02,-0.18,0.1,0.12
+2020,9,Louisiana,Texas State,0.29,0.48,0.18,0.17
+2020,9,Louisiana Tech,UAB,0.03,0.24,-0.3,-0.03
+2020,9,Louisville,Virginia Tech,0.41,0.51,0.26,0.32
+2020,9,LSU,Auburn,0.09,0.26,-0.3,0.43
+2020,9,Maryland,Minnesota,0.62,0.66,0.57,0.39
+2020,9,Memphis,Cincinnati,-0.07,0.09,-0.37,0.46
+2020,9,Michigan,Michigan State,0.16,0.25,0.03,0.18
+2020,9,Michigan State,Michigan,0.18,0.62,-0.2,0.16
+2020,9,Minnesota,Maryland,0.39,0.63,0.31,0.62
+2020,9,Mississippi State,Alabama,-0.25,-0.28,-0.13,0.26
+2020,9,Missouri,Florida,-0.06,0.02,-0.27,0.22
+2020,9,Navy,SMU,0.28,0.32,0.24,0.59
+2020,9,Nevada,UNLV,0.55,0.71,0.36,0.22
+2020,9,New Mexico,San José State,0.19,0.27,0.11,0.44
+2020,9,North Carolina,Virginia,0.45,0.81,0.03,0.37
+2020,9,Northwestern,Iowa,0.11,0.4,0.01,-0.08
+2020,9,Notre Dame,Georgia Tech,0.14,0.42,-0.04,0.0
+2020,9,Ohio State,Penn State,0.38,0.65,0.17,0.28
+2020,9,Oklahoma,Texas Tech,0.47,0.52,0.42,0.26
+2020,9,Oklahoma State,Texas,0.19,0.61,-0.25,0.03
+2020,9,Ole Miss,Vanderbilt,0.69,0.66,0.75,0.18
+2020,9,Penn State,Ohio State,0.28,0.68,-0.33,0.38
+2020,9,Purdue,Illinois,0.25,0.41,0.03,0.08
+2020,9,Rice,Southern Miss,0.24,1.08,-0.06,-0.1
+2020,9,Rutgers,Indiana,-0.1,-0.28,0.13,0.18
+2020,9,San Diego State,Utah State,0.33,0.17,0.42,-0.09
+2020,9,San José State,New Mexico,0.44,0.68,-0.02,0.19
+2020,9,SMU,Navy,0.59,0.7,0.51,0.28
+2020,9,South Alabama,Georgia Southern,0.05,0.3,-0.24,0.18
+2020,9,Southern Miss,Rice,-0.1,-0.07,-0.12,0.24
+2020,9,Syracuse,Wake Forest,-0.06,-0.2,0.19,0.18
+2020,9,TCU,Baylor,0.07,-0.02,0.13,-0.01
+2020,9,Temple,Tulane,-0.12,-0.06,-0.18,0.23
+2020,9,Texas,Oklahoma State,0.03,0.01,0.05,0.19
+2020,9,Texas A&M,Arkansas,0.46,1.01,0.08,0.29
+2020,9,Texas State,Louisiana,0.17,-0.1,0.43,0.29
+2020,9,Texas Tech,Oklahoma,0.26,0.31,0.19,0.47
+2020,9,Troy,Arkansas State,0.19,0.32,-0.01,0.1
+2020,9,Tulane,Temple,0.23,0.47,0.1,-0.12
+2020,9,Tulsa,East Carolina,0.2,0.09,0.33,0.28
+2020,9,UAB,Louisiana Tech,-0.03,-0.34,0.1,0.03
+2020,9,UCF,Houston,0.43,0.37,0.48,0.11
+2020,9,UL Monroe,App State,0.06,0.0,0.21,0.26
+2020,9,UNLV,Nevada,0.22,0.29,0.1,0.55
+2020,9,Utah State,San Diego State,-0.09,-0.18,0.03,0.33
+2020,9,UTSA,Florida Atlantic,-0.03,0.06,-0.12,0.08
+2020,9,Vanderbilt,Ole Miss,0.18,0.53,-0.22,0.69
+2020,9,Virginia,North Carolina,0.37,0.53,0.28,0.45
+2020,9,Virginia Tech,Louisville,0.32,0.8,0.19,0.41
+2020,9,Wake Forest,Syracuse,0.18,0.34,0.07,-0.06
+2020,9,Western Kentucky,BYU,0.0,0.01,-0.01,0.3
+2020,9,West Virginia,Kansas State,0.28,0.67,-0.05,-0.13
+2020,9,Wyoming,Hawai'i,0.17,0.31,0.12,-0.01
+2020,10,Akron,Western Michigan,-0.06,-0.21,0.12,0.53
+2020,10,App State,Texas State,0.26,0.4,0.17,0.03
+2020,10,Arizona State,USC,0.19,-0.02,0.32,0.09
+2020,10,Arkansas,Tennessee,0.26,0.45,0.14,-0.05
+2020,10,Arkansas State,Louisiana,0.16,0.05,0.28,0.07
+2020,10,Ball State,Miami (OH),0.42,0.42,0.49,0.25
+2020,10,Baylor,Iowa State,0.18,0.44,-0.15,0.09
+2020,10,Boise State,BYU,0.05,0.21,-0.24,0.5
+2020,10,Boston College,Syracuse,0.14,0.29,0.05,0.07
+2020,10,Bowling Green,Toledo,-0.14,-0.27,-0.03,0.21
+2020,10,Buffalo,Northern Illinois,0.35,0.64,0.2,-0.07
+2020,10,BYU,Boise State,0.5,0.7,0.33,0.05
+2020,10,Central Michigan,Ohio,0.12,0.11,0.12,0.09
+2020,10,Cincinnati,Houston,0.37,0.21,0.49,0.06
+2020,10,Clemson,Notre Dame,0.18,0.53,-0.3,0.18
+2020,10,Coastal Carolina,South Alabama,0.27,0.42,0.15,-0.03
+2020,10,Colorado,UCLA,0.28,0.51,0.15,0.31
+2020,10,Colorado State,Wyoming,0.11,0.51,-0.24,0.1
+2020,10,Duke,North Carolina,0.17,0.0,0.33,0.5
+2020,10,East Carolina,Tulane,0.04,0.22,-0.29,0.3
+2020,10,Eastern Michigan,Kent State,0.06,0.22,-0.15,0.22
+2020,10,Florida,Georgia,0.22,0.45,-0.06,0.06
+2020,10,Florida Atlantic,Western Kentucky,0.07,-0.12,0.18,0.01
+2020,10,Florida State,Pittsburgh,0.04,-0.22,0.49,0.27
+2020,10,Fresno State,UNLV,0.23,-0.02,0.54,0.2
+2020,10,Georgia,Florida,0.06,-0.06,0.19,0.22
+2020,10,Georgia Southern,Troy,0.05,-0.35,0.15,-0.17
+2020,10,Georgia State,UL Monroe,0.38,0.57,0.26,0.29
+2020,10,Hawai'i,New Mexico,0.27,0.47,-0.03,0.22
+2020,10,Houston,Cincinnati,0.06,0.0,0.14,0.37
+2020,10,Illinois,Minnesota,0.17,-0.07,0.33,0.4
+2020,10,Indiana,Michigan,0.23,0.4,0.01,0.27
+2020,10,Iowa,Michigan State,0.22,0.19,0.24,-0.17
+2020,10,Iowa State,Baylor,0.09,0.17,0.05,0.18
+2020,10,Kansas,Oklahoma,-0.09,-0.21,0.07,0.52
+2020,10,Kansas State,Oklahoma State,0.12,0.29,0.04,-0.06
+2020,10,Kent State,Eastern Michigan,0.22,0.3,0.16,0.06
+2020,10,Liberty,Virginia Tech,0.36,0.47,0.29,0.49
+2020,10,Louisiana,Arkansas State,0.07,0.19,-0.03,0.16
+2020,10,Marshall,Massachusetts,0.35,0.16,0.51,0.11
+2020,10,Maryland,Penn State,0.24,0.58,-0.07,0.17
+2020,10,Massachusetts,Marshall,0.11,0.2,0.01,0.35
+2020,10,Memphis,South Florida,0.11,0.25,-0.11,0.14
+2020,10,Miami,NC State,0.3,0.48,0.1,0.34
+2020,10,Miami (OH),Ball State,0.25,0.46,0.02,0.42
+2020,10,Michigan,Indiana,0.27,0.46,-0.22,0.23
+2020,10,Michigan State,Iowa,-0.17,-0.04,-0.12,0.22
+2020,10,Minnesota,Illinois,0.4,0.45,0.37,0.17
+2020,10,Mississippi State,Vanderbilt,0.05,0.02,0.27,0.12
+2020,10,NC State,Miami,0.34,0.68,0.01,0.3
+2020,10,Nebraska,Northwestern,0.03,-0.18,0.27,0.13
+2020,10,Nevada,Utah State,0.36,0.51,0.11,-0.13
+2020,10,New Mexico,Hawai'i,0.22,-0.04,0.5,0.27
+2020,10,North Carolina,Duke,0.5,0.46,0.53,0.17
+2020,10,Northern Illinois,Buffalo,-0.07,-0.11,-0.05,0.35
+2020,10,Northwestern,Nebraska,0.13,0.46,-0.11,0.03
+2020,10,Notre Dame,Clemson,0.18,0.37,-0.01,0.18
+2020,10,Ohio,Central Michigan,0.09,0.4,-0.17,0.12
+2020,10,Ohio State,Rutgers,0.47,0.8,0.18,0.14
+2020,10,Oklahoma,Kansas,0.52,0.43,0.63,-0.09
+2020,10,Oklahoma State,Kansas State,-0.06,-0.06,-0.06,0.12
+2020,10,Oregon,Stanford,0.45,0.54,0.39,0.34
+2020,10,Oregon State,Washington State,0.32,0.28,0.39,0.3
+2020,10,Penn State,Maryland,0.17,0.18,0.17,0.24
+2020,10,Pittsburgh,Florida State,0.27,0.36,0.2,0.04
+2020,10,Rutgers,Ohio State,0.14,0.27,-0.05,0.47
+2020,10,San Diego State,San José State,0.05,0.22,-0.08,0.19
+2020,10,San José State,San Diego State,0.19,0.21,0.17,0.05
+2020,10,SMU,Temple,0.46,0.63,0.24,0.22
+2020,10,South Alabama,Coastal Carolina,-0.03,0.05,-0.12,0.27
+2020,10,South Carolina,Texas A&M,-0.15,0.01,-0.39,0.51
+2020,10,Southern Miss,North Alabama,0.19,0.04,0.27,0.0
+2020,10,South Florida,Memphis,0.14,0.29,-0.02,0.11
+2020,10,Stanford,Oregon,0.34,0.45,0.25,0.45
+2020,10,Syracuse,Boston College,0.07,0.14,-0.07,0.14
+2020,10,TCU,Texas Tech,0.05,-0.37,0.29,0.07
+2020,10,Temple,SMU,0.22,0.39,0.1,0.46
+2020,10,Tennessee,Arkansas,-0.05,-0.18,0.01,0.26
+2020,10,Texas,West Virginia,0.09,0.21,-0.02,-0.01
+2020,10,Texas A&M,South Carolina,0.51,0.86,0.29,-0.15
+2020,10,Texas State,App State,0.03,-0.22,0.38,0.26
+2020,10,Texas Tech,TCU,0.07,0.01,0.19,0.05
+2020,10,Toledo,Bowling Green,0.21,0.51,0.03,-0.14
+2020,10,Troy,Georgia Southern,-0.17,-0.21,-0.02,0.05
+2020,10,Tulane,East Carolina,0.3,0.36,0.23,0.04
+2020,10,UCLA,Colorado,0.31,0.35,0.23,0.28
+2020,10,UL Monroe,Georgia State,0.29,0.34,0.19,0.38
+2020,10,UNLV,Fresno State,0.2,0.05,0.35,0.23
+2020,10,USC,Arizona State,0.09,0.23,-0.13,0.19
+2020,10,Utah State,Nevada,-0.13,-0.23,0.01,0.36
+2020,10,Vanderbilt,Mississippi State,0.12,0.14,0.09,0.05
+2020,10,Virginia Tech,Liberty,0.49,0.75,0.26,0.36
+2020,10,Washington State,Oregon State,0.3,0.2,0.43,0.32
+2020,10,Western Kentucky,Florida Atlantic,0.01,-0.09,0.17,0.07
+2020,10,Western Michigan,Akron,0.53,0.81,0.39,-0.06
+2020,10,West Virginia,Texas,-0.01,0.07,-0.18,0.09
+2020,10,Wyoming,Colorado State,0.1,0.16,0.06,0.11
+2020,11,Akron,Ohio,0.16,0.07,0.23,0.14
+2020,11,App State,Georgia State,-0.02,0.1,-0.09,-0.01
+2020,11,Arizona,USC,0.25,0.4,0.09,0.25
+2020,11,Arkansas,Florida,0.56,0.6,0.52,0.49
+2020,11,Army,Tulane,0.06,-0.31,0.15,0.31
+2020,11,Ball State,Eastern Michigan,0.29,0.15,0.39,0.3
+2020,11,Baylor,Texas Tech,0.08,0.14,0.05,0.03
+2020,11,Boise State,Colorado State,0.16,0.3,0.02,0.06
+2020,11,Boston College,Notre Dame,0.1,0.29,-0.24,0.42
+2020,11,Bowling Green,Kent State,0.08,-0.14,0.19,0.49
+2020,11,Buffalo,Miami (OH),0.49,1.09,0.12,-0.05
+2020,11,California,UCLA,-0.13,-0.24,0.06,0.18
+2020,11,Central Michigan,Northern Illinois,0.19,0.25,0.16,-0.09
+2020,11,Cincinnati,East Carolina,0.55,0.55,0.55,-0.08
+2020,11,Colorado,Stanford,0.17,0.52,-0.02,0.2
+2020,11,Colorado State,Boise State,0.06,0.01,0.09,0.16
+2020,11,East Carolina,Cincinnati,-0.08,-0.63,0.22,0.55
+2020,11,Eastern Michigan,Ball State,0.3,0.37,0.25,0.29
+2020,11,Florida,Arkansas,0.49,0.76,0.25,0.56
+2020,11,Florida Atlantic,Florida International,0.39,0.39,0.38,0.0
+2020,11,Florida International,Florida Atlantic,0.0,-0.08,0.1,0.39
+2020,11,Florida State,NC State,0.25,0.3,0.2,0.18
+2020,11,Fresno State,Utah State,0.25,0.63,-0.19,-0.15
+2020,11,Georgia Southern,Texas State,0.25,-0.15,0.32,0.25
+2020,11,Georgia State,App State,-0.01,-0.02,-0.01,-0.02
+2020,11,Hawai'i,San Diego State,-0.11,-0.25,0.08,0.04
+2020,11,Houston,South Florida,0.26,-0.01,0.46,0.05
+2020,11,Illinois,Rutgers,0.22,0.11,0.26,0.17
+2020,11,Indiana,Michigan State,0.06,0.16,-0.06,-0.08
+2020,11,Iowa,Minnesota,0.32,0.06,0.45,0.05
+2020,11,Kent State,Bowling Green,0.49,0.63,0.4,0.08
+2020,11,Kentucky,Vanderbilt,0.56,0.47,0.61,0.3
+2020,11,Liberty,Western Carolina,0.62,1.0,0.38,0.0
+2020,11,Louisiana,South Alabama,0.3,0.37,0.22,-0.05
+2020,11,Louisville,Virginia,0.06,-0.56,0.47,0.09
+2020,11,Marshall,Middle Tennessee,0.29,0.52,0.06,0.09
+2020,11,Miami,Virginia Tech,0.11,0.12,0.11,0.12
+2020,11,Miami (OH),Buffalo,-0.05,-0.09,-0.01,0.49
+2020,11,Michigan,Wisconsin,-0.05,0.28,-0.52,0.42
+2020,11,Michigan State,Indiana,-0.08,-0.14,0.0,0.06
+2020,11,Middle Tennessee,Marshall,0.09,0.21,-0.15,0.29
+2020,11,Minnesota,Iowa,0.05,-0.08,0.18,0.32
+2020,11,NC State,Florida State,0.18,0.49,-0.11,0.25
+2020,11,Nebraska,Penn State,0.17,0.29,0.1,0.13
+2020,11,Nevada,New Mexico,0.18,0.28,-0.02,0.0
+2020,11,New Mexico,Nevada,0.0,0.12,-0.1,0.18
+2020,11,North Carolina,Wake Forest,0.48,0.7,0.2,0.34
+2020,11,Northern Illinois,Central Michigan,-0.09,-0.01,-0.13,0.19
+2020,11,Northwestern,Purdue,0.06,0.56,-0.38,-0.01
+2020,11,Notre Dame,Boston College,0.42,0.78,0.23,0.1
+2020,11,Ohio,Akron,0.14,-0.22,0.38,0.16
+2020,11,Ole Miss,South Carolina,0.59,1.27,0.12,0.49
+2020,11,Oregon,Washington State,0.47,0.74,0.24,0.22
+2020,11,Oregon State,Washington,0.06,-0.14,0.22,0.23
+2020,11,Penn State,Nebraska,0.13,-0.11,0.32,0.17
+2020,11,Purdue,Northwestern,-0.01,0.11,-0.48,0.06
+2020,11,Rutgers,Illinois,0.17,0.16,0.19,0.22
+2020,11,San Diego State,Hawai'i,0.04,-0.37,0.16,-0.11
+2020,11,San José State,UNLV,0.38,0.57,0.18,0.15
+2020,11,SMU,Tulsa,0.07,0.01,0.12,0.11
+2020,11,South Alabama,Louisiana,-0.05,-0.09,0.0,0.3
+2020,11,South Carolina,Ole Miss,0.49,0.17,0.75,0.59
+2020,11,Southern Miss,Western Kentucky,-0.01,-0.31,0.18,0.03
+2020,11,South Florida,Houston,0.05,0.06,0.05,0.26
+2020,11,Stanford,Colorado,0.2,0.25,0.05,0.17
+2020,11,TCU,West Virginia,-0.02,-0.14,0.08,0.2
+2020,11,Temple,UCF,-0.04,-0.13,0.03,0.39
+2020,11,Texas State,Georgia Southern,0.25,0.36,0.05,0.25
+2020,11,Texas Tech,Baylor,0.03,-0.01,0.07,0.08
+2020,11,Toledo,Western Michigan,0.34,0.47,0.18,0.39
+2020,11,Tulane,Army,0.31,0.54,0.11,0.06
+2020,11,Tulsa,SMU,0.11,0.45,-0.22,0.07
+2020,11,UCF,Temple,0.39,0.56,0.27,-0.04
+2020,11,UCLA,California,0.18,0.56,0.0,-0.13
+2020,11,UNLV,San José State,0.15,0.24,0.04,0.38
+2020,11,USC,Arizona,0.25,0.4,0.05,0.25
+2020,11,Utah State,Fresno State,-0.15,-0.28,-0.01,0.25
+2020,11,UTEP,UTSA,0.17,0.36,0.01,0.5
+2020,11,UTSA,UTEP,0.5,0.86,0.29,0.17
+2020,11,Vanderbilt,Kentucky,0.3,0.36,0.25,0.56
+2020,11,Virginia,Louisville,0.09,0.37,-0.07,0.06
+2020,11,Virginia Tech,Miami,0.12,0.13,0.11,0.11
+2020,11,Wake Forest,North Carolina,0.34,0.52,0.12,0.48
+2020,11,Washington,Oregon State,0.23,0.22,0.23,0.06
+2020,11,Washington State,Oregon,0.22,0.39,-0.04,0.47
+2020,11,Western Kentucky,Southern Miss,0.03,-0.02,0.08,-0.01
+2020,11,Western Michigan,Toledo,0.39,0.45,0.33,0.34
+2020,11,West Virginia,TCU,0.2,0.38,0.06,-0.02
+2020,11,Wisconsin,Michigan,0.42,0.2,0.53,-0.05
+2020,12,Air Force,New Mexico,0.3,1.46,0.2,-0.08
+2020,12,Akron,Kent State,0.22,0.09,0.3,0.73
+2020,12,Alabama,Kentucky,0.49,0.6,0.42,-0.28
+2020,12,App State,Coastal Carolina,0.09,0.0,0.16,0.25
+2020,12,Arizona,Washington,0.18,0.18,0.18,0.36
+2020,12,Arkansas,LSU,0.39,0.7,0.05,0.17
+2020,12,Arkansas State,Texas State,0.43,0.63,0.2,0.46
+2020,12,Army,Georgia Southern,0.08,0.58,0.06,0.29
+2020,12,Auburn,Tennessee,0.2,0.31,0.12,0.19
+2020,12,Ball State,Northern Illinois,0.17,0.18,0.16,0.18
+2020,12,Boise State,Hawai'i,0.21,0.53,-0.06,0.2
+2020,12,Bowling Green,Buffalo,0.19,0.0,0.34,0.5
+2020,12,Buffalo,Bowling Green,0.5,-0.08,0.64,0.19
+2020,12,BYU,North Alabama,0.65,0.78,0.53,0.0
+2020,12,California,Oregon State,0.11,0.16,0.05,0.21
+2020,12,Central Michigan,Western Michigan,0.34,0.36,0.32,0.42
+2020,12,Cincinnati,UCF,0.19,0.61,-0.1,0.09
+2020,12,Coastal Carolina,App State,0.25,0.22,0.27,0.09
+2020,12,East Carolina,Temple,0.15,0.12,0.17,-0.25
+2020,12,Eastern Michigan,Toledo,0.1,0.26,-0.15,0.39
+2020,12,Florida,Vanderbilt,0.42,0.79,0.09,0.15
+2020,12,Florida Atlantic,Massachusetts,0.1,0.18,0.02,-0.4
+2020,12,Florida International,Western Kentucky,-0.13,-0.26,-0.01,0.05
+2020,12,Georgia,Mississippi State,0.36,0.79,-0.53,0.28
+2020,12,Georgia Southern,Army,0.29,0.53,0.18,0.08
+2020,12,Georgia State,South Alabama,0.22,0.39,0.12,-0.01
+2020,12,Hawai'i,Boise State,0.2,0.23,0.15,0.21
+2020,12,Illinois,Nebraska,0.37,0.5,0.3,0.17
+2020,12,Indiana,Ohio State,0.14,0.38,-0.68,0.29
+2020,12,Iowa,Penn State,0.19,0.28,0.14,-0.06
+2020,12,Iowa State,Kansas State,0.38,0.8,0.12,-0.23
+2020,12,Kansas State,Iowa State,-0.23,-0.23,-0.23,0.38
+2020,12,Kent State,Akron,0.73,1.08,0.53,0.22
+2020,12,Kentucky,Alabama,-0.28,-0.32,-0.24,0.49
+2020,12,Liberty,NC State,0.01,0.22,-0.14,0.11
+2020,12,Louisville,Syracuse,0.15,0.18,0.13,-0.18
+2020,12,LSU,Arkansas,0.17,0.4,-0.04,0.39
+2020,12,Massachusetts,Florida Atlantic,-0.4,-0.42,-0.38,0.1
+2020,12,Memphis,Stephen F. Austin,0.28,0.02,0.49,0.0
+2020,12,Michigan,Rutgers,0.26,0.52,-0.06,0.25
+2020,12,Middle Tennessee,Troy,0.19,0.45,0.05,0.25
+2020,12,Minnesota,Purdue,0.44,0.94,0.17,0.39
+2020,12,Mississippi State,Georgia,0.28,0.27,0.29,0.36
+2020,12,Missouri,South Carolina,-0.02,0.12,-0.15,0.06
+2020,12,NC State,Liberty,0.11,0.06,0.15,0.01
+2020,12,Nebraska,Illinois,0.17,0.14,0.19,0.37
+2020,12,Nevada,San Diego State,0.14,0.22,-0.02,0.08
+2020,12,New Mexico,Air Force,-0.08,-0.03,-0.16,0.3
+2020,12,Northern Illinois,Ball State,0.18,0.21,0.15,0.17
+2020,12,North Texas,Rice,0.23,0.23,0.23,0.06
+2020,12,Northwestern,Wisconsin,-0.2,0.03,-0.69,-0.07
+2020,12,Ohio State,Indiana,0.29,0.18,0.38,0.14
+2020,12,Oklahoma,Oklahoma State,0.4,0.75,0.17,-0.05
+2020,12,Oklahoma State,Oklahoma,-0.05,-0.13,0.08,0.4
+2020,12,Oregon,UCLA,0.2,0.47,-0.1,0.12
+2020,12,Oregon State,California,0.21,0.21,0.21,0.11
+2020,12,Penn State,Iowa,-0.06,0.03,-0.18,0.19
+2020,12,Pittsburgh,Virginia Tech,0.32,0.36,0.24,0.04
+2020,12,Purdue,Minnesota,0.39,0.53,0.17,0.44
+2020,12,Rice,North Texas,0.06,0.29,-0.23,0.23
+2020,12,Rutgers,Michigan,0.25,0.48,-0.02,0.26
+2020,12,San Diego State,Nevada,0.08,0.24,-0.06,0.14
+2020,12,South Alabama,Georgia State,-0.01,-0.16,0.23,0.22
+2020,12,South Carolina,Missouri,0.06,0.12,0.01,-0.02
+2020,12,Southern Miss,UTSA,0.05,0.17,-0.09,0.06
+2020,12,Syracuse,Louisville,-0.18,-0.41,0.01,0.15
+2020,12,Temple,East Carolina,-0.25,-0.14,-0.31,0.15
+2020,12,Tennessee,Auburn,0.19,-0.04,0.43,0.2
+2020,12,Texas State,Arkansas State,0.46,0.55,0.18,0.43
+2020,12,Toledo,Eastern Michigan,0.39,0.63,0.24,0.1
+2020,12,Troy,Middle Tennessee,0.25,0.29,0.17,0.19
+2020,12,Tulane,Tulsa,-0.1,-0.38,0.0,0.11
+2020,12,Tulsa,Tulane,0.11,0.18,0.02,-0.1
+2020,12,UCF,Cincinnati,0.09,0.12,0.02,0.19
+2020,12,UCLA,Oregon,0.12,-0.06,0.25,0.2
+2020,12,USC,Utah,0.01,0.33,-0.38,0.02
+2020,12,Utah,USC,0.02,-0.03,0.09,0.01
+2020,12,UTSA,Southern Miss,0.06,0.05,0.07,0.05
+2020,12,Vanderbilt,Florida,0.15,0.41,-0.14,0.42
+2020,12,Virginia,Abilene Christian,0.49,0.93,0.16,0.0
+2020,12,Virginia Tech,Pittsburgh,0.04,0.31,-0.18,0.32
+2020,12,Washington,Arizona,0.36,0.61,0.21,0.18
+2020,12,Western Kentucky,Florida International,0.05,-0.05,0.15,-0.13
+2020,12,Western Michigan,Central Michigan,0.42,1.51,0.01,0.34
+2020,12,Wisconsin,Northwestern,-0.07,-0.13,0.01,-0.2
+2020,13,Akron,Miami (OH),-0.28,-0.26,-0.31,0.46
+2020,13,Alabama,Auburn,0.52,0.82,0.19,0.03
+2020,13,App State,Troy,0.5,0.74,0.29,-0.08
+2020,13,Arizona,UCLA,-0.07,-0.12,-0.01,0.17
+2020,13,Arkansas State,South Alabama,0.3,0.64,0.03,0.25
+2020,13,Auburn,Alabama,0.03,0.0,0.05,0.52
+2020,13,Ball State,Toledo,0.11,0.44,-0.15,0.15
+2020,13,Baylor,Kansas State,0.25,0.38,0.03,0.29
+2020,13,Boston College,Louisville,0.28,0.5,0.12,0.3
+2020,13,Bowling Green,Ohio,0.02,0.02,0.03,0.37
+2020,13,Buffalo,Kent State,0.65,0.37,0.76,0.38
+2020,13,California,Stanford,0.29,0.19,0.39,0.1
+2020,13,Central Michigan,Eastern Michigan,0.09,0.15,0.06,0.18
+2020,13,Clemson,Pittsburgh,0.3,0.28,0.34,-0.07
+2020,13,Coastal Carolina,Texas State,0.49,0.6,0.46,0.08
+2020,13,Colorado,San Diego State,-0.21,-0.28,-0.17,-0.2
+2020,13,Duke,Georgia Tech,0.0,0.21,-0.3,0.27
+2020,13,East Carolina,SMU,0.3,0.73,-0.04,0.14
+2020,13,Eastern Michigan,Central Michigan,0.18,0.28,0.06,0.09
+2020,13,Florida,Kentucky,0.35,0.63,0.0,-0.07
+2020,13,Georgia,South Carolina,0.5,0.18,0.64,0.15
+2020,13,Georgia Southern,Georgia State,0.21,0.23,0.2,0.24
+2020,13,Georgia State,Georgia Southern,0.24,0.42,0.02,0.21
+2020,13,Georgia Tech,Duke,0.27,0.1,0.41,0.0
+2020,13,Hawai'i,Nevada,0.3,0.58,0.02,0.36
+2020,13,Indiana,Maryland,0.09,0.16,0.05,-0.07
+2020,13,Iowa,Nebraska,0.1,0.38,-0.09,0.2
+2020,13,Iowa State,Texas,0.22,0.36,0.05,0.12
+2020,13,Kansas,TCU,-0.1,0.0,-0.19,0.34
+2020,13,Kansas State,Baylor,0.29,0.13,0.37,0.25
+2020,13,Kent State,Buffalo,0.38,0.55,0.25,0.65
+2020,13,Kentucky,Florida,-0.07,-0.33,0.07,0.35
+2020,13,Liberty,Massachusetts,0.51,0.45,0.55,-0.09
+2020,13,Louisiana,UL Monroe,0.51,0.32,0.65,-0.18
+2020,13,Louisville,Boston College,0.3,0.42,0.2,0.28
+2020,13,LSU,Texas A&M,-0.16,-0.11,-0.27,-0.2
+2020,13,Maryland,Indiana,-0.07,-0.04,-0.03,0.09
+2020,13,Massachusetts,Liberty,-0.09,0.29,-0.41,0.51
+2020,13,Memphis,Navy,-0.08,0.15,-0.35,-0.01
+2020,13,Miami (OH),Akron,0.46,0.84,0.04,-0.28
+2020,13,Michigan,Penn State,0.08,-0.18,0.34,0.21
+2020,13,Michigan State,Northwestern,0.09,0.13,0.07,-0.05
+2020,13,Mississippi State,Ole Miss,0.21,0.36,-0.41,0.23
+2020,13,Missouri,Vanderbilt,0.42,0.51,0.3,-0.14
+2020,13,Navy,Memphis,-0.01,-0.24,0.06,-0.08
+2020,13,NC State,Syracuse,0.12,0.59,-0.27,0.01
+2020,13,Nebraska,Iowa,0.2,0.22,0.18,0.1
+2020,13,Nevada,Hawai'i,0.36,0.3,0.41,0.3
+2020,13,New Mexico,Utah State,0.05,-0.1,0.19,0.26
+2020,13,North Carolina,Notre Dame,0.14,0.34,-0.15,0.32
+2020,13,Northern Illinois,Western Michigan,0.11,0.3,-0.08,0.19
+2020,13,North Texas,UTSA,0.13,-0.21,0.46,0.55
+2020,13,Northwestern,Michigan State,-0.05,0.03,-0.17,0.09
+2020,13,Notre Dame,North Carolina,0.32,0.46,0.18,0.14
+2020,13,Ohio,Bowling Green,0.37,0.26,0.4,0.02
+2020,13,Oklahoma State,Texas Tech,0.23,0.2,0.25,0.25
+2020,13,Ole Miss,Mississippi State,0.23,0.38,0.09,0.21
+2020,13,Oregon,Oregon State,0.37,0.41,0.34,0.3
+2020,13,Oregon State,Oregon,0.3,0.18,0.4,0.37
+2020,13,Penn State,Michigan,0.21,0.19,0.22,0.08
+2020,13,Pittsburgh,Clemson,-0.07,0.03,-0.32,0.3
+2020,13,Purdue,Rutgers,0.23,0.2,0.28,0.21
+2020,13,Rutgers,Purdue,0.21,0.59,0.01,0.23
+2020,13,San Diego State,Colorado,-0.2,-0.28,-0.11,-0.21
+2020,13,SMU,East Carolina,0.14,0.19,0.03,0.3
+2020,13,South Alabama,Arkansas State,0.25,0.91,-0.21,0.3
+2020,13,South Carolina,Georgia,0.15,0.36,0.01,0.5
+2020,13,South Florida,UCF,0.33,0.4,0.24,0.32
+2020,13,Stanford,California,0.1,0.07,0.13,0.29
+2020,13,Syracuse,NC State,0.01,0.25,-0.47,0.12
+2020,13,TCU,Kansas,0.34,0.19,0.4,-0.1
+2020,13,Texas,Iowa State,0.12,0.3,-0.05,0.22
+2020,13,Texas A&M,LSU,-0.2,-0.31,-0.1,-0.16
+2020,13,Texas State,Coastal Carolina,0.08,0.06,0.11,0.49
+2020,13,Texas Tech,Oklahoma State,0.25,0.27,0.22,0.23
+2020,13,Toledo,Ball State,0.15,0.45,-0.38,0.11
+2020,13,Troy,App State,-0.08,-0.16,-0.03,0.5
+2020,13,UCF,South Florida,0.32,0.54,0.11,0.33
+2020,13,UCLA,Arizona,0.17,0.24,0.14,-0.07
+2020,13,UL Monroe,Louisiana,-0.18,-0.41,0.1,0.51
+2020,13,UNLV,Wyoming,0.09,-0.12,0.3,0.44
+2020,13,Utah,Washington,0.02,-0.03,0.06,0.12
+2020,13,Utah State,New Mexico,0.26,0.52,0.12,0.05
+2020,13,UTSA,North Texas,0.55,0.37,0.67,0.13
+2020,13,Vanderbilt,Missouri,-0.14,0.04,-0.3,0.42
+2020,13,Washington,Utah,0.12,0.26,-0.08,0.02
+2020,13,Western Michigan,Northern Illinois,0.19,0.27,0.1,0.11
+2020,13,Wyoming,UNLV,0.44,0.15,0.52,0.09
+2020,14,Air Force,Utah State,0.44,1.1,0.32,0.04
+2020,14,Akron,Bowling Green,0.09,-0.34,0.35,-0.09
+2020,14,Alabama,LSU,0.47,0.76,0.27,-0.04
+2020,14,App State,Louisiana,-0.04,-0.17,0.03,0.08
+2020,14,Arizona,Colorado,-0.03,-0.26,0.19,0.2
+2020,14,Arizona State,UCLA,0.13,-0.06,0.38,0.19
+2020,14,Arkansas,Missouri,0.42,0.42,0.43,0.44
+2020,14,Arkansas State,UL Monroe,0.4,1.06,-0.23,-0.04
+2020,14,Auburn,Texas A&M,0.27,0.09,0.44,0.46
+2020,14,Ball State,Central Michigan,0.22,0.38,0.07,0.16
+2020,14,Baylor,Oklahoma,0.06,0.06,0.05,0.0
+2020,14,Boston College,Virginia,0.29,0.42,-0.07,0.36
+2020,14,Bowling Green,Akron,-0.09,-0.13,-0.06,0.09
+2020,14,BYU,Coastal Carolina,0.21,0.11,0.34,0.22
+2020,14,California,Oregon,-0.02,0.05,-0.08,0.12
+2020,14,Central Michigan,Ball State,0.16,0.12,0.2,0.22
+2020,14,Charlotte,Western Kentucky,0.02,0.22,-0.21,0.18
+2020,14,Clemson,Virginia Tech,0.43,0.26,0.56,-0.01
+2020,14,Coastal Carolina,BYU,0.22,0.15,0.24,0.21
+2020,14,Colorado,Arizona,0.2,0.01,0.28,-0.03
+2020,14,Colorado State,San Diego State,-0.12,-0.26,-0.01,-0.06
+2020,14,Duke,Miami,-0.14,-0.02,-0.28,0.43
+2020,14,Eastern Michigan,Western Michigan,0.41,0.6,0.26,0.46
+2020,14,Florida,Tennessee,0.3,0.53,-0.49,0.14
+2020,14,Florida Atlantic,Georgia Southern,-0.07,0.12,-0.25,0.05
+2020,14,Fresno State,Nevada,0.16,0.24,0.03,0.14
+2020,14,Georgia Southern,Florida Atlantic,0.05,-0.29,0.12,-0.07
+2020,14,Georgia Tech,NC State,0.17,-0.02,0.29,0.1
+2020,14,Hawai'i,San José State,0.4,0.4,0.4,0.34
+2020,14,Illinois,Iowa,0.15,0.25,0.06,0.29
+2020,14,Indiana,Wisconsin,-0.02,0.26,-0.23,0.04
+2020,14,Iowa,Illinois,0.29,0.46,0.15,0.15
+2020,14,Iowa State,West Virginia,0.48,1.26,0.06,-0.03
+2020,14,Kansas,Texas Tech,-0.1,-0.12,-0.08,-0.05
+2020,14,Kansas State,Texas,0.22,0.12,0.28,0.7
+2020,14,Kentucky,South Carolina,0.29,0.19,0.34,0.16
+2020,14,Louisiana,App State,0.08,-0.13,0.3,-0.04
+2020,14,Louisiana Tech,North Texas,0.15,0.07,0.21,0.2
+2020,14,LSU,Alabama,-0.04,-0.01,-0.1,0.47
+2020,14,Marshall,Rice,-0.25,-0.42,0.0,-0.04
+2020,14,Memphis,Tulane,0.04,0.14,-0.15,0.24
+2020,14,Miami,Duke,0.43,0.78,0.19,-0.14
+2020,14,Michigan State,Ohio State,-0.21,-0.24,-0.17,0.31
+2020,14,Missouri,Arkansas,0.44,0.5,0.36,0.42
+2020,14,Navy,Tulsa,-0.11,-0.21,-0.08,0.02
+2020,14,NC State,Georgia Tech,0.1,0.32,-0.17,0.17
+2020,14,Nebraska,Purdue,0.16,0.37,-0.01,0.17
+2020,14,Nevada,Fresno State,0.14,0.46,-0.43,0.16
+2020,14,New Mexico,Wyoming,-0.11,-0.13,-0.1,0.02
+2020,14,North Carolina,Western Carolina,0.46,0.51,0.42,0.0
+2020,14,Northern Illinois,Toledo,0.1,0.2,-0.06,0.4
+2020,14,North Texas,Louisiana Tech,0.2,0.29,0.11,0.15
+2020,14,Notre Dame,Syracuse,0.25,0.21,0.28,0.18
+2020,14,Ohio State,Michigan State,0.31,0.31,0.38,-0.21
+2020,14,Oklahoma,Baylor,0.0,0.08,-0.1,0.06
+2020,14,Oklahoma State,TCU,-0.02,0.09,-0.11,0.2
+2020,14,Oregon,California,0.12,0.49,-0.17,-0.02
+2020,14,Oregon State,Utah,0.1,0.0,0.24,0.25
+2020,14,Penn State,Rutgers,0.05,0.13,0.01,-0.2
+2020,14,Purdue,Nebraska,0.17,0.35,-0.47,0.16
+2020,14,Rice,Marshall,-0.04,0.28,-0.15,-0.25
+2020,14,Rutgers,Penn State,-0.2,-0.1,-0.3,0.05
+2020,14,San Diego State,Colorado State,-0.06,0.09,-0.14,-0.12
+2020,14,San José State,Hawai'i,0.34,0.29,0.37,0.4
+2020,14,South Alabama,Troy,-0.12,-0.23,0.07,0.17
+2020,14,South Carolina,Kentucky,0.16,0.02,0.25,0.29
+2020,14,Stanford,Washington,0.39,0.64,0.19,0.38
+2020,14,Syracuse,Notre Dame,0.18,0.27,0.11,0.25
+2020,14,TCU,Oklahoma State,0.2,0.33,0.12,-0.02
+2020,14,Tennessee,Florida,0.14,0.18,0.09,0.3
+2020,14,Texas,Kansas State,0.7,0.48,0.9,0.22
+2020,14,Texas A&M,Auburn,0.46,0.61,0.39,0.27
+2020,14,Texas Tech,Kansas,-0.05,-0.25,0.07,-0.1
+2020,14,Toledo,Northern Illinois,0.4,0.7,0.05,0.1
+2020,14,Troy,South Alabama,0.17,0.36,-0.06,-0.12
+2020,14,Tulane,Memphis,0.24,0.13,0.33,0.04
+2020,14,Tulsa,Navy,0.02,0.35,-0.17,-0.11
+2020,14,UCLA,Arizona State,0.19,0.27,0.19,0.13
+2020,14,UL Monroe,Arkansas State,-0.04,-0.08,0.02,0.4
+2020,14,USC,Washington State,0.24,0.71,-0.6,0.08
+2020,14,Utah,Oregon State,0.25,0.28,0.23,0.1
+2020,14,Utah State,Air Force,0.04,-0.08,0.21,0.44
+2020,14,Virginia,Boston College,0.36,0.3,0.4,0.29
+2020,14,Virginia Tech,Clemson,-0.01,0.52,-0.27,0.43
+2020,14,Washington,Stanford,0.38,0.68,0.17,0.39
+2020,14,Washington State,USC,0.08,-0.06,0.36,0.24
+2020,14,Western Kentucky,Charlotte,0.18,0.36,0.04,0.02
+2020,14,Western Michigan,Eastern Michigan,0.46,0.69,0.29,0.41
+2020,14,West Virginia,Iowa State,-0.03,0.04,-0.16,0.48
+2020,14,Wisconsin,Indiana,0.04,-0.02,0.11,-0.02
+2020,14,Wyoming,New Mexico,0.02,-0.17,0.11,-0.11
+2020,15,Akron,Buffalo,-0.15,-0.23,-0.05,0.48
+2020,15,Alabama,Arkansas,0.26,0.36,0.18,-0.16
+2020,15,App State,Georgia Southern,0.07,0.11,0.04,0.1
+2020,15,Arizona,Arizona State,-0.06,-0.13,0.02,0.37
+2020,15,Arizona State,Arizona,0.37,1.45,0.08,-0.06
+2020,15,Arkansas,Alabama,-0.16,-0.08,-0.22,0.26
+2020,15,Army,Navy,-0.17,1.69,-0.21,-0.28
+2020,15,Auburn,Mississippi State,0.08,-0.13,0.28,-0.05
+2020,15,Ball State,Western Michigan,0.21,0.34,0.07,0.21
+2020,15,Baylor,Oklahoma State,-0.21,-0.23,-0.18,0.35
+2020,15,Boise State,Wyoming,-0.02,0.23,-0.21,-0.13
+2020,15,Buffalo,Akron,0.48,0.39,0.5,-0.15
+2020,15,BYU,San Diego State,0.38,0.55,0.07,-0.01
+2020,15,Central Michigan,Toledo,0.06,0.04,0.07,0.06
+2020,15,Coastal Carolina,Troy,0.37,0.86,0.02,0.28
+2020,15,Colorado,Utah,0.09,0.26,-0.18,0.06
+2020,15,Duke,Florida State,0.18,0.05,0.25,0.43
+2020,15,Eastern Michigan,Northern Illinois,0.17,0.44,-0.01,0.21
+2020,15,Florida,LSU,0.25,0.2,0.38,0.17
+2020,15,Florida Atlantic,Southern Miss,0.22,0.15,0.3,0.34
+2020,15,Florida State,Duke,0.43,0.31,0.5,0.18
+2020,15,Fresno State,New Mexico,0.27,0.14,0.66,0.45
+2020,15,Georgia,Missouri,0.53,0.58,0.5,0.03
+2020,15,Georgia Southern,App State,0.1,-0.05,0.17,0.07
+2020,15,Georgia Tech,Pittsburgh,0.16,0.2,0.1,0.17
+2020,15,Hawai'i,UNLV,0.2,0.03,0.35,0.08
+2020,15,Houston,Memphis,0.17,0.28,0.02,0.15
+2020,15,Illinois,Northwestern,0.05,0.05,0.05,0.35
+2020,15,Iowa,Wisconsin,0.25,0.5,0.01,-0.19
+2020,15,Louisiana Tech,TCU,0.03,0.05,0.0,0.61
+2020,15,Louisville,Wake Forest,0.32,0.46,0.24,0.08
+2020,15,LSU,Florida,0.17,0.39,-0.01,0.25
+2020,15,Maryland,Rutgers,0.03,-0.01,0.08,0.05
+2020,15,Memphis,Houston,0.15,0.42,-0.21,0.17
+2020,15,Miami,North Carolina,0.2,0.44,-0.14,0.7
+2020,15,Michigan State,Penn State,0.1,0.28,-0.18,0.17
+2020,15,Minnesota,Nebraska,0.14,0.17,0.12,0.14
+2020,15,Mississippi State,Auburn,-0.05,-0.12,0.33,0.08
+2020,15,Missouri,Georgia,0.03,0.18,-0.21,0.53
+2020,15,Navy,Army,-0.28,-0.38,-0.21,-0.17
+2020,15,Nebraska,Minnesota,0.14,0.05,0.21,0.14
+2020,15,Nevada,San José State,0.13,0.06,0.3,0.31
+2020,15,New Mexico,Fresno State,0.45,0.21,0.57,0.27
+2020,15,North Carolina,Miami,0.7,0.57,0.75,0.2
+2020,15,Northern Illinois,Eastern Michigan,0.21,0.27,0.15,0.17
+2020,15,North Texas,UTEP,0.18,0.56,-0.09,0.32
+2020,15,Northwestern,Illinois,0.35,0.37,0.35,0.05
+2020,15,Oklahoma State,Baylor,0.35,0.44,0.28,-0.21
+2020,15,Oregon State,Stanford,0.28,0.29,0.27,0.29
+2020,15,Penn State,Michigan State,0.17,0.69,-0.22,0.1
+2020,15,Pittsburgh,Georgia Tech,0.17,-0.04,0.3,0.16
+2020,15,Rice,UAB,0.04,0.16,-0.08,0.27
+2020,15,Rutgers,Maryland,0.05,-0.22,0.31,0.03
+2020,15,San Diego State,BYU,-0.01,0.41,-0.31,0.38
+2020,15,San José State,Nevada,0.31,0.56,0.02,0.13
+2020,15,Southern Miss,Florida Atlantic,0.34,0.68,0.19,0.22
+2020,15,Stanford,Oregon State,0.29,0.58,0.03,0.28
+2020,15,TCU,Louisiana Tech,0.61,0.42,0.7,0.03
+2020,15,Tennessee,Vanderbilt,0.36,0.55,0.16,-0.04
+2020,15,Toledo,Central Michigan,0.06,0.08,0.03,0.06
+2020,15,Troy,Coastal Carolina,0.28,0.29,0.25,0.37
+2020,15,UAB,Rice,0.27,0.69,0.04,0.04
+2020,15,UCLA,USC,0.33,0.8,-0.08,0.21
+2020,15,UNLV,Hawai'i,0.08,0.02,0.14,0.2
+2020,15,USC,UCLA,0.21,0.31,0.04,0.33
+2020,15,Utah,Colorado,0.06,0.32,-0.17,0.09
+2020,15,UTEP,North Texas,0.32,0.31,0.32,0.18
+2020,15,Vanderbilt,Tennessee,-0.04,-0.08,0.01,0.36
+2020,15,Virginia,Virginia Tech,0.02,-0.05,0.21,0.29
+2020,15,Virginia Tech,Virginia,0.29,0.65,0.11,0.02
+2020,15,Wake Forest,Louisville,0.08,0.16,-0.04,0.32
+2020,15,Western Michigan,Ball State,0.21,0.43,0.05,0.21
+2020,15,Wisconsin,Iowa,-0.19,-0.09,-0.33,0.25
+2020,15,Wyoming,Boise State,-0.13,-0.21,-0.07,-0.02
+2020,16,Air Force,Army,0.19,0.08,0.26,0.07
+2020,16,Alabama,Florida,0.37,0.51,0.21,0.4
+2020,16,Arizona State,Oregon State,0.46,0.59,0.42,0.28
+2020,16,Army,Air Force,0.07,-0.6,0.09,0.19
+2020,16,Ball State,Buffalo,0.19,0.37,0.04,0.11
+2020,16,Boise State,San José State,-0.05,-0.04,-0.07,0.15
+2020,16,Buffalo,Ball State,0.11,0.38,-0.3,0.19
+2020,16,Cincinnati,Tulsa,0.15,0.49,-0.12,0.15
+2020,16,Clemson,Notre Dame,0.38,0.16,0.75,-0.02
+2020,16,Florida,Alabama,0.4,0.5,0.21,0.37
+2020,16,Illinois,Penn State,-0.05,-0.17,0.04,0.49
+2020,16,Iowa State,Oklahoma,0.16,0.14,0.19,0.14
+2020,16,LSU,Ole Miss,0.24,0.29,0.17,0.26
+2020,16,Marshall,UAB,0.09,0.15,0.04,0.19
+2020,16,Minnesota,Wisconsin,0.09,0.35,-0.12,0.11
+2020,16,Mississippi State,Missouri,0.23,0.26,0.17,0.09
+2020,16,Missouri,Mississippi State,0.09,0.07,0.12,0.23
+2020,16,Nebraska,Rutgers,0.3,0.23,0.33,-0.07
+2020,16,Northwestern,Ohio State,-0.03,0.02,-0.08,0.17
+2020,16,Notre Dame,Clemson,-0.02,0.18,-0.28,0.38
+2020,16,Ohio State,Northwestern,0.17,-0.43,0.58,-0.03
+2020,16,Oklahoma,Iowa State,0.14,0.15,0.12,0.16
+2020,16,Ole Miss,LSU,0.26,0.11,0.35,0.24
+2020,16,Oregon,USC,0.06,0.22,-0.02,0.15
+2020,16,Oregon State,Arizona State,0.28,0.32,0.26,0.46
+2020,16,Penn State,Illinois,0.49,0.6,0.42,-0.05
+2020,16,Rutgers,Nebraska,-0.07,-0.21,0.04,0.3
+2020,16,San José State,Boise State,0.15,0.45,-0.58,-0.05
+2020,16,Stanford,UCLA,0.31,0.27,0.37,0.36
+2020,16,Tennessee,Texas A&M,0.05,0.25,-0.24,0.31
+2020,16,Texas A&M,Tennessee,0.31,0.5,0.19,0.05
+2020,16,Tulsa,Cincinnati,0.15,0.01,0.28,0.15
+2020,16,UAB,Marshall,0.19,0.8,-0.08,0.09
+2020,16,UCLA,Stanford,0.36,0.49,0.29,0.31
+2020,16,USC,Oregon,0.15,0.34,-0.24,0.06
+2020,16,Utah,Washington State,0.25,0.28,0.22,0.0
+2020,16,Washington State,Utah,0.0,-0.01,0.01,0.25
+2020,16,Wisconsin,Minnesota,0.11,0.13,0.11,0.09

@@ -1,0 +1,1584 @@
+season,week,team,opponent,cfb_off_epa_per_play,cfb_off_pass_epa,cfb_off_rush_epa,cfb_def_epa_per_play
+2018,1,Air Force,Stony Brook,0.15,-0.2,0.16,0.0
+2018,1,Alabama,Louisville,0.39,0.69,0.23,-0.03
+2018,1,App State,Penn State,0.23,0.37,0.09,0.21
+2018,1,Arizona,BYU,0.14,0.2,0.1,0.28
+2018,1,Arizona State,UTSA,0.45,0.72,0.27,-0.08
+2018,1,Arkansas,Eastern Illinois,0.32,0.91,-0.11,0.0
+2018,1,Arkansas State,Southeast Missouri State,0.44,0.95,-0.08,0.0
+2018,1,Army,Duke,0.2,0.47,0.07,0.32
+2018,1,Auburn,Washington,0.22,0.58,-0.08,0.08
+2018,1,Ball State,Central Connecticut,0.43,0.37,0.49,0.0
+2018,1,Baylor,Abilene Christian,0.55,0.52,0.55,0.0
+2018,1,Boise State,Troy,0.46,0.89,0.02,0.09
+2018,1,Boston College,Massachusetts,0.37,0.83,0.17,-0.13
+2018,1,Boston College,Massachusetts,0.37,0.83,0.17,0.54
+2018,1,Bowling Green,Oregon,-0.06,0.05,-0.11,0.39
+2018,1,Buffalo,Delaware State,0.31,0.65,0.03,0.0
+2018,1,BYU,Arizona,0.28,0.33,0.26,0.14
+2018,1,California,North Carolina,-0.08,-0.2,0.01,-0.05
+2018,1,Central Michigan,Kentucky,-0.02,-0.14,0.13,0.21
+2018,1,Charlotte,Fordham,0.28,0.62,0.12,0.0
+2018,1,Cincinnati,UCLA,0.01,-0.21,0.17,0.1
+2018,1,Clemson,Furman,0.39,0.29,0.49,0.0
+2018,1,Coastal Carolina,South Carolina,0.05,0.11,-0.01,0.54
+2018,1,Colorado,Colorado State,0.39,0.94,0.04,0.55
+2018,1,Colorado,Colorado State,0.39,0.94,0.04,-0.03
+2018,1,Colorado State,Hawai'i,0.55,0.77,0.09,0.5
+2018,1,Colorado State,Hawai'i,0.55,0.77,0.09,0.44
+2018,1,Colorado State,Colorado,-0.03,0.1,-0.14,0.39
+2018,1,Duke,Army,0.32,0.3,0.4,0.2
+2018,1,East Carolina,North Carolina A&T,-0.14,-0.08,-0.21,0.0
+2018,1,Eastern Michigan,Monmouth,0.43,1.08,-0.01,0.0
+2018,1,Florida,Charleston Southern,0.32,0.63,0.14,0.0
+2018,1,Florida Atlantic,Oklahoma,-0.02,-0.06,0.02,0.68
+2018,1,Florida International,Indiana,0.1,0.05,0.13,0.3
+2018,1,Florida State,Virginia Tech,-0.09,0.21,-0.24,-0.03
+2018,1,Fresno State,Idaho,0.44,0.32,0.54,0.0
+2018,1,Georgia,Austin Peay,0.42,0.65,0.27,0.0
+2018,1,Georgia Southern,South Carolina State,0.27,0.14,0.31,0.0
+2018,1,Georgia State,Kennesaw State,0.13,0.42,-0.16,0.0
+2018,1,Georgia Tech,Alcorn State,0.27,-0.09,0.39,0.0
+2018,1,Hawai'i,Navy,0.5,0.78,0.06,0.43
+2018,1,Hawai'i,Colorado State,0.44,0.82,0.1,0.55
+2018,1,Hawai'i,Colorado State,0.44,0.82,0.1,-0.03
+2018,1,Houston,Rice,0.5,0.94,0.2,0.12
+2018,1,Houston,Rice,0.5,0.94,0.2,0.16
+2018,1,Illinois,Kent State,0.18,-0.01,0.26,0.17
+2018,1,Indiana,Florida International,0.3,0.52,0.09,0.1
+2018,1,Iowa,Northern Illinois,0.08,0.28,-0.02,-0.09
+2018,1,Kansas,Nicholls,-0.05,-0.1,-0.03,0.0
+2018,1,Kansas State,South Dakota,-0.04,-0.28,0.14,0.0
+2018,1,Kent State,Illinois,0.17,0.16,0.2,0.18
+2018,1,Kentucky,Central Michigan,0.21,-0.12,0.42,-0.02
+2018,1,Liberty,Old Dominion,0.38,0.73,0.09,0.0
+2018,1,Louisiana,Grambling,0.44,0.43,0.44,0.0
+2018,1,Louisiana Tech,South Alabama,0.11,-0.03,0.22,-0.01
+2018,1,Louisville,Alabama,-0.03,-0.02,-0.31,0.39
+2018,1,LSU,Miami,0.01,0.08,-0.04,0.01
+2018,1,Marshall,Miami (OH),0.28,0.29,0.27,0.2
+2018,1,Maryland,Texas,0.11,0.4,-0.04,0.12
+2018,1,Massachusetts,Boston College,-0.13,-0.14,-0.1,0.37
+2018,1,Massachusetts,Duquesne,0.54,0.67,0.45,0.0
+2018,1,Memphis,Mercer,0.49,0.93,0.15,0.0
+2018,1,Miami,LSU,0.01,0.0,0.04,0.01
+2018,1,Miami (OH),Marshall,0.2,0.32,-0.01,0.28
+2018,1,Michigan,Notre Dame,0.0,0.1,-0.11,0.13
+2018,1,Michigan State,Utah State,0.12,0.11,0.12,0.15
+2018,1,Middle Tennessee,Vanderbilt,0.07,-0.08,0.28,0.38
+2018,1,Minnesota,New Mexico State,0.32,0.44,0.29,-0.16
+2018,1,Minnesota,New Mexico State,0.32,0.44,0.29,-0.07
+2018,1,Mississippi State,Stephen F. Austin,0.53,0.69,0.39,0.0
+2018,1,Missouri,UT Martin,0.32,0.84,0.01,0.0
+2018,1,Navy,Hawai'i,0.43,0.06,0.56,0.5
+2018,1,Navy,Hawai'i,0.43,0.06,0.56,0.44
+2018,1,NC State,James Madison,0.25,0.53,-0.14,0.0
+2018,1,Nevada,Portland State,0.56,0.81,0.41,0.0
+2018,1,New Mexico,Incarnate Word,0.35,1.19,0.03,0.0
+2018,1,New Mexico State,Minnesota,-0.16,-0.2,-0.06,0.32
+2018,1,New Mexico State,Wyoming,-0.07,-0.04,-0.03,0.11
+2018,1,New Mexico State,Wyoming,-0.07,-0.04,-0.03,0.01
+2018,1,North Carolina,California,-0.05,-0.35,0.21,-0.08
+2018,1,Northern Illinois,Iowa,-0.09,-0.3,0.17,0.08
+2018,1,North Texas,SMU,0.21,0.66,-0.37,-0.02
+2018,1,Northwestern,Purdue,0.15,0.17,0.14,0.17
+2018,1,Notre Dame,Michigan,0.13,0.23,0.04,0.0
+2018,1,Ohio,Howard,0.25,0.38,0.16,0.0
+2018,1,Ohio State,Oregon State,0.59,0.72,0.51,0.06
+2018,1,Oklahoma,Florida Atlantic,0.68,0.92,0.51,-0.02
+2018,1,Oklahoma State,Missouri State,0.38,0.48,0.34,0.0
+2018,1,Old Dominion,Liberty,0.0,-0.03,0.0,0.38
+2018,1,Ole Miss,Texas Tech,0.42,0.6,0.31,0.03
+2018,1,Oregon,Bowling Green,0.39,0.58,0.26,-0.06
+2018,1,Oregon State,Ohio State,0.06,0.32,-0.13,0.59
+2018,1,Penn State,App State,0.21,0.09,0.35,0.23
+2018,1,Pittsburgh,UAlbany,0.35,0.35,0.35,0.0
+2018,1,Purdue,Northwestern,0.17,0.04,0.52,0.15
+2018,1,Rice,Houston,0.12,0.43,-0.2,0.5
+2018,1,Rice,Prairie View A&M,0.16,0.0,0.28,0.0
+2018,1,Rutgers,Texas State,0.02,-0.26,0.2,-0.14
+2018,1,San Diego State,Stanford,0.05,0.01,0.15,0.16
+2018,1,San José State,UC Davis,0.15,0.33,-0.06,0.0
+2018,1,SMU,North Texas,-0.02,0.11,-0.23,0.21
+2018,1,South Alabama,Louisiana Tech,-0.01,-0.25,0.13,0.11
+2018,1,South Carolina,Coastal Carolina,0.54,0.57,0.51,0.05
+2018,1,Southern Miss,Jackson State,0.16,0.32,0.04,0.0
+2018,1,South Florida,Elon,0.4,0.51,0.23,0.0
+2018,1,Stanford,San Diego State,0.16,0.63,-0.39,0.05
+2018,1,Syracuse,Western Michigan,0.21,0.25,0.22,0.5
+2018,1,TCU,Southern,0.3,0.61,0.12,0.0
+2018,1,Temple,Villanova,0.13,0.27,-0.14,0.0
+2018,1,Tennessee,West Virginia,0.13,0.24,0.06,0.46
+2018,1,Texas,Maryland,0.12,0.15,0.08,0.11
+2018,1,Texas A&M,Northwestern State,0.45,0.39,0.48,0.0
+2018,1,Texas State,Rutgers,-0.14,-0.26,-0.02,0.02
+2018,1,Texas Tech,Ole Miss,0.03,0.04,0.02,0.42
+2018,1,Toledo,VMI,0.45,0.7,0.26,0.0
+2018,1,Troy,Boise State,0.09,0.24,-0.07,0.46
+2018,1,Tulane,Wake Forest,0.07,0.09,0.05,0.17
+2018,1,Tulsa,Central Arkansas,0.27,0.31,0.26,0.0
+2018,1,UAB,Savannah State,0.44,0.81,0.27,0.0
+2018,1,UCF,UConn,0.71,0.9,0.52,0.09
+2018,1,UCLA,Cincinnati,0.1,0.0,0.31,0.01
+2018,1,UConn,UCF,0.09,0.12,0.06,0.71
+2018,1,UL Monroe,SE Louisiana,0.25,0.39,0.11,0.0
+2018,1,UNLV,USC,0.12,-0.1,0.31,0.26
+2018,1,USC,UNLV,0.26,0.34,0.17,0.12
+2018,1,Utah,Weber State,0.28,0.45,0.13,0.0
+2018,1,Utah State,Michigan State,0.15,0.32,-0.16,0.12
+2018,1,UTEP,Northern Arizona,-0.12,-0.16,-0.04,0.0
+2018,1,UTSA,Arizona State,-0.08,-0.12,0.0,0.45
+2018,1,Vanderbilt,Middle Tennessee,0.38,0.75,0.19,0.07
+2018,1,Virginia,Richmond,0.24,-0.11,0.46,0.0
+2018,1,Virginia Tech,Florida State,-0.03,0.24,-0.24,-0.09
+2018,1,Wake Forest,Tulane,0.17,0.34,-0.03,0.07
+2018,1,Washington,Auburn,0.08,0.28,-0.13,0.22
+2018,1,Washington State,Wyoming,0.16,0.18,0.23,0.11
+2018,1,Washington State,Wyoming,0.16,0.18,0.23,0.01
+2018,1,Western Kentucky,Wisconsin,-0.1,0.08,-0.24,0.35
+2018,1,Western Michigan,Syracuse,0.5,0.55,0.43,0.21
+2018,1,West Virginia,Tennessee,0.46,0.88,-0.04,0.13
+2018,1,Wisconsin,Western Kentucky,0.35,0.5,0.2,-0.1
+2018,1,Wyoming,New Mexico State,0.11,0.31,0.05,-0.16
+2018,1,Wyoming,New Mexico State,0.11,0.31,0.05,-0.07
+2018,1,Wyoming,Washington State,0.01,-0.2,0.16,0.16
+2018,2,Air Force,Florida Atlantic,0.01,0.5,-0.13,0.18
+2018,2,Akron,Morgan State,0.11,0.2,0.07,0.0
+2018,2,Alabama,Arkansas State,0.47,0.87,0.21,-0.09
+2018,2,App State,Charlotte,0.37,1.19,0.01,-0.02
+2018,2,Arizona,Houston,0.05,0.27,-0.21,0.32
+2018,2,Arizona State,Michigan State,0.16,0.38,-0.18,0.08
+2018,2,Arkansas,Colorado State,0.21,0.01,0.33,0.18
+2018,2,Arkansas State,Alabama,-0.09,-0.25,0.2,0.47
+2018,2,Army,Liberty,0.19,-0.04,0.22,0.11
+2018,2,Auburn,Alabama State,0.19,0.32,0.19,0.0
+2018,2,Ball State,Notre Dame,0.01,0.08,-0.04,0.01
+2018,2,Baylor,UTSA,0.3,0.6,-0.15,0.1
+2018,2,Boise State,UConn,0.71,1.0,0.58,0.01
+2018,2,Boston College,Holy Cross,0.44,0.74,0.3,0.0
+2018,2,Bowling Green,Maryland,-0.03,0.1,-0.21,0.43
+2018,2,Buffalo,Temple,0.13,0.35,-0.14,0.22
+2018,2,BYU,California,-0.03,-0.01,-0.06,0.0
+2018,2,California,BYU,0.0,0.03,-0.03,-0.03
+2018,2,Central Michigan,Kansas,-0.11,-0.23,0.02,0.11
+2018,2,Charlotte,App State,-0.02,-0.13,-0.06,0.37
+2018,2,Cincinnati,Miami (OH),0.1,0.47,0.02,-0.09
+2018,2,Clemson,Texas A&M,0.18,0.46,-0.07,0.25
+2018,2,Coastal Carolina,UAB,0.54,0.51,0.55,0.27
+2018,2,Colorado,Nebraska,0.16,0.27,-0.06,0.21
+2018,2,Colorado State,Arkansas,0.18,0.32,-0.18,0.21
+2018,2,Duke,Northwestern,0.06,0.35,-0.15,-0.07
+2018,2,East Carolina,North Carolina,0.27,0.69,0.01,0.14
+2018,2,Eastern Michigan,Purdue,0.13,0.43,-0.21,0.1
+2018,2,Florida,Kentucky,0.26,0.3,0.22,0.28
+2018,2,Florida Atlantic,Air Force,0.18,0.7,-0.43,0.01
+2018,2,Florida International,Old Dominion,0.29,0.72,0.02,0.02
+2018,2,Florida State,Samford,0.17,0.4,-0.13,0.0
+2018,2,Fresno State,Minnesota,0.03,0.1,-0.08,0.17
+2018,2,Georgia,South Carolina,0.29,0.66,0.16,-0.11
+2018,2,Georgia Southern,Massachusetts,0.29,1.54,0.09,0.16
+2018,2,Georgia State,NC State,0.12,0.11,0.14,0.31
+2018,2,Georgia Tech,South Florida,0.4,0.63,0.33,0.25
+2018,2,Hawai'i,Rice,0.44,0.62,0.29,0.1
+2018,2,Houston,Arizona,0.32,0.28,0.42,0.05
+2018,2,Illinois,Western Illinois,0.19,0.3,0.09,0.0
+2018,2,Indiana,Virginia,0.22,0.54,0.06,0.11
+2018,2,Iowa,Iowa State,0.02,0.21,-0.15,-0.09
+2018,2,Iowa State,Iowa,-0.09,0.03,-0.26,0.02
+2018,2,Kansas,Central Michigan,0.11,0.19,0.03,-0.11
+2018,2,Kansas State,Mississippi State,-0.18,-0.35,-0.03,0.45
+2018,2,Kent State,Howard,0.21,-0.06,0.38,0.0
+2018,2,Kentucky,Florida,0.28,0.44,0.22,0.26
+2018,2,Liberty,Army,0.11,0.17,0.01,0.19
+2018,2,Louisiana Tech,Southern,0.53,0.61,0.48,0.0
+2018,2,Louisville,Indiana State,0.15,0.0,0.24,0.0
+2018,2,LSU,SE Louisiana,0.32,0.24,0.33,0.0
+2018,2,Marshall,Eastern Kentucky,0.14,0.24,-0.03,0.0
+2018,2,Maryland,Bowling Green,0.43,0.53,0.42,-0.03
+2018,2,Massachusetts,Georgia Southern,0.16,0.23,0.07,0.29
+2018,2,Memphis,Navy,0.18,0.01,0.34,0.04
+2018,2,Miami,Savannah State,0.44,0.51,0.39,0.0
+2018,2,Miami (OH),Cincinnati,-0.09,-0.12,-0.03,0.1
+2018,2,Michigan,Western Michigan,0.95,1.03,0.91,-0.39
+2018,2,Michigan State,Arizona State,0.08,0.26,-0.14,0.16
+2018,2,Middle Tennessee,UT Martin,0.41,0.76,-0.02,0.0
+2018,2,Minnesota,Fresno State,0.17,0.37,-0.02,0.03
+2018,2,Mississippi State,Kansas State,0.45,0.16,0.66,-0.18
+2018,2,Missouri,Wyoming,0.33,0.68,-0.02,-0.01
+2018,2,Navy,Memphis,0.04,0.3,0.02,0.18
+2018,2,NC State,Georgia State,0.31,0.7,-0.04,0.12
+2018,2,Nebraska,Colorado,0.21,0.18,0.23,0.16
+2018,2,Nevada,Vanderbilt,-0.07,0.14,-0.43,0.18
+2018,2,New Mexico,Wisconsin,0.02,0.26,-0.2,0.42
+2018,2,New Mexico State,Utah State,-0.16,-0.35,-0.03,0.11
+2018,2,North Carolina,East Carolina,0.14,0.03,0.29,0.27
+2018,2,Northern Illinois,Utah,-0.21,-0.32,-0.13,0.1
+2018,2,North Texas,Incarnate Word,0.27,0.42,0.17,0.0
+2018,2,Northwestern,Duke,-0.07,-0.11,0.02,0.06
+2018,2,Notre Dame,Ball State,0.01,0.18,-0.18,0.01
+2018,2,Ohio State,Rutgers,0.49,0.81,0.23,-0.18
+2018,2,Oklahoma,UCLA,0.36,0.54,0.18,0.12
+2018,2,Oklahoma State,South Alabama,0.23,0.35,0.04,-0.21
+2018,2,Old Dominion,Florida International,0.02,0.13,-0.16,0.29
+2018,2,Ole Miss,Southern Illinois,0.71,0.95,0.44,0.0
+2018,2,Oregon,Portland State,0.52,0.73,0.39,0.0
+2018,2,Oregon State,Southern Utah,0.4,0.59,0.33,0.0
+2018,2,Penn State,Pittsburgh,0.2,0.22,0.18,-0.01
+2018,2,Pittsburgh,Penn State,-0.01,-0.65,0.3,0.2
+2018,2,Purdue,Eastern Michigan,0.1,0.12,0.11,0.13
+2018,2,Rice,Hawai'i,0.1,0.37,-0.12,0.44
+2018,2,Rutgers,Ohio State,-0.18,-0.34,0.01,0.49
+2018,2,San Diego State,Sacramento State,0.19,0.48,-0.02,0.0
+2018,2,San José State,Washington State,-0.27,-0.41,-0.03,0.19
+2018,2,SMU,TCU,-0.11,-0.14,0.14,0.03
+2018,2,South Alabama,Oklahoma State,-0.21,-0.28,-0.14,0.23
+2018,2,South Carolina,Georgia,-0.11,0.13,-0.69,0.29
+2018,2,Southern Miss,UL Monroe,0.08,0.29,-0.27,0.03
+2018,2,South Florida,Georgia Tech,0.25,0.2,0.3,0.4
+2018,2,Stanford,USC,0.2,0.35,0.08,-0.01
+2018,2,Syracuse,Wagner,0.28,0.36,0.19,0.0
+2018,2,TCU,SMU,0.03,-0.09,0.16,-0.11
+2018,2,Temple,Buffalo,0.22,0.28,0.13,0.13
+2018,2,Tennessee,East Tennessee State,0.35,0.88,0.17,0.0
+2018,2,Texas,Tulsa,0.21,0.35,0.13,0.18
+2018,2,Texas A&M,Clemson,0.25,0.52,-0.15,0.18
+2018,2,Texas State,Texas Southern,0.16,0.17,0.18,0.0
+2018,2,Texas Tech,Lamar,0.55,0.96,0.28,0.0
+2018,2,Troy,Florida A&M,0.29,0.17,0.45,0.0
+2018,2,Tulane,Nicholls,0.53,0.87,0.35,0.0
+2018,2,Tulsa,Texas,0.18,0.27,0.11,0.21
+2018,2,UAB,Coastal Carolina,0.27,-0.02,0.46,0.54
+2018,2,UCF,South Carolina State,0.15,0.05,0.26,0.0
+2018,2,UCLA,Oklahoma,0.12,0.24,0.04,0.36
+2018,2,UConn,Boise State,0.01,-0.05,0.07,0.71
+2018,2,UL Monroe,Southern Miss,0.03,0.1,-0.03,0.08
+2018,2,UNLV,UTEP,0.41,0.39,0.42,0.24
+2018,2,USC,Stanford,-0.01,-0.1,0.09,0.2
+2018,2,Utah,Northern Illinois,0.1,0.27,-0.09,-0.21
+2018,2,Utah State,New Mexico State,0.11,0.09,0.03,-0.16
+2018,2,UTEP,UNLV,0.24,-0.08,0.5,0.41
+2018,2,UTSA,Baylor,0.1,0.0,0.2,0.3
+2018,2,Vanderbilt,Nevada,0.18,0.39,0.05,-0.07
+2018,2,Virginia,Indiana,0.11,0.27,0.01,0.22
+2018,2,Virginia Tech,William & Mary,0.52,0.6,0.46,0.0
+2018,2,Wake Forest,Towson,0.34,0.76,0.18,0.0
+2018,2,Washington,North Dakota,0.32,0.53,0.07,0.0
+2018,2,Washington State,San José State,0.19,0.22,0.12,-0.27
+2018,2,Western Kentucky,Maine,0.07,0.2,-0.17,0.0
+2018,2,Western Michigan,Michigan,-0.39,-0.49,-0.3,0.95
+2018,2,West Virginia,Youngstown State,0.45,0.72,0.3,0.0
+2018,2,Wisconsin,New Mexico,0.42,0.57,0.41,0.02
+2018,2,Wyoming,Missouri,-0.01,-0.07,-0.01,0.33
+2018,3,Akron,Northwestern,0.14,0.54,-0.14,-0.04
+2018,3,Alabama,Ole Miss,0.38,0.67,0.2,-0.25
+2018,3,Arizona,Southern Utah,0.64,1.36,0.24,0.0
+2018,3,Arizona State,San Diego State,0.22,0.45,-0.31,0.13
+2018,3,Arkansas,North Texas,-0.05,-0.2,0.18,-0.08
+2018,3,Arkansas State,Tulsa,0.08,-0.02,0.21,-0.04
+2018,3,Army,Hawai'i,0.24,1.5,0.05,0.32
+2018,3,Auburn,LSU,0.08,0.36,-0.14,0.02
+2018,3,Ball State,Indiana,0.08,-0.16,0.29,0.18
+2018,3,Baylor,Duke,0.08,-0.06,0.28,0.1
+2018,3,Boise State,Oklahoma State,0.17,0.41,-0.37,0.28
+2018,3,Boston College,Wake Forest,0.31,0.8,0.02,0.05
+2018,3,Bowling Green,Eastern Kentucky,0.25,0.38,0.1,0.0
+2018,3,Buffalo,Eastern Michigan,0.2,0.91,-0.25,0.23
+2018,3,BYU,Wisconsin,0.22,0.02,0.37,0.24
+2018,3,California,Idaho State,0.26,0.67,-0.06,0.0
+2018,3,Central Michigan,Northern Illinois,-0.01,-0.03,0.03,0.14
+2018,3,Charlotte,Old Dominion,0.15,0.22,0.12,0.27
+2018,3,Cincinnati,Alabama A&M,0.55,0.59,0.52,0.0
+2018,3,Clemson,Georgia Southern,0.33,0.36,0.29,-0.16
+2018,3,Coastal Carolina,Campbell,0.61,1.17,0.42,0.0
+2018,3,Colorado,New Hampshire,0.12,-0.01,0.21,0.0
+2018,3,Colorado State,Florida,0.0,0.05,-0.12,0.37
+2018,3,Duke,Baylor,0.1,0.1,0.12,0.08
+2018,3,Eastern Michigan,Buffalo,0.23,0.34,0.11,0.2
+2018,3,Florida,Colorado State,0.37,0.13,0.51,0.0
+2018,3,Florida Atlantic,Bethune-Cookman,0.36,0.26,0.41,0.0
+2018,3,Florida International,Massachusetts,0.36,0.57,0.27,0.09
+2018,3,Florida State,Syracuse,-0.05,-0.1,0.06,0.07
+2018,3,Fresno State,UCLA,0.18,0.38,0.07,-0.07
+2018,3,Georgia,Middle Tennessee,0.63,0.84,0.49,-0.15
+2018,3,Georgia Southern,Clemson,-0.16,0.08,-0.25,0.33
+2018,3,Georgia State,Memphis,0.07,0.04,0.1,0.58
+2018,3,Georgia Tech,Pittsburgh,0.13,-0.5,0.31,0.22
+2018,3,Hawai'i,Army,0.32,0.32,0.34,0.24
+2018,3,Houston,Texas Tech,0.35,0.51,0.15,0.41
+2018,3,Illinois,South Florida,0.04,-0.03,0.13,0.3
+2018,3,Indiana,Ball State,0.18,0.23,0.17,0.08
+2018,3,Iowa,Northern Iowa,0.72,0.98,0.48,0.0
+2018,3,Iowa State,Oklahoma,0.27,0.43,0.12,0.35
+2018,3,Kansas,Rutgers,0.34,0.41,0.31,-0.23
+2018,3,Kansas State,UTSA,0.35,0.87,0.07,0.03
+2018,3,Kent State,Penn State,-0.08,-0.11,-0.01,0.58
+2018,3,Kentucky,Murray State,0.39,0.33,0.42,0.0
+2018,3,Louisiana,Mississippi State,0.07,0.21,-0.13,0.66
+2018,3,Louisville,Western Kentucky,-0.02,-0.24,0.16,0.19
+2018,3,LSU,Auburn,0.02,0.22,-0.13,0.08
+2018,3,Maryland,Temple,-0.3,-0.97,0.36,0.07
+2018,3,Massachusetts,Florida International,0.09,-0.19,0.41,0.36
+2018,3,Memphis,Georgia State,0.58,0.67,0.53,0.07
+2018,3,Miami,Toledo,0.34,0.61,0.22,0.2
+2018,3,Miami (OH),Minnesota,-0.09,-0.07,-0.03,0.01
+2018,3,Michigan,SMU,0.43,0.69,0.31,-0.02
+2018,3,Middle Tennessee,Georgia,-0.15,-0.24,0.09,0.63
+2018,3,Minnesota,Miami (OH),0.01,0.14,-0.1,-0.09
+2018,3,Mississippi State,Louisiana,0.66,0.54,0.72,0.07
+2018,3,Missouri,Purdue,0.3,0.43,0.24,0.37
+2018,3,Navy,Lehigh,0.33,-0.11,0.47,0.0
+2018,3,Nebraska,Troy,0.1,0.27,0.03,0.03
+2018,3,Nevada,Oregon State,0.07,-0.02,0.22,0.26
+2018,3,New Mexico,New Mexico State,0.03,-0.12,0.09,-0.12
+2018,3,New Mexico State,New Mexico,-0.12,-0.21,0.0,0.03
+2018,3,Northern Illinois,Central Michigan,0.14,0.39,0.04,-0.01
+2018,3,North Texas,Arkansas,-0.08,0.03,-0.18,-0.05
+2018,3,Northwestern,Akron,-0.04,0.02,-0.15,0.14
+2018,3,Notre Dame,Vanderbilt,0.18,0.19,0.2,0.02
+2018,3,Ohio,Virginia,0.15,0.0,0.29,0.47
+2018,3,Ohio State,TCU,0.26,0.55,0.03,0.06
+2018,3,Oklahoma,Iowa State,0.35,0.74,0.09,0.27
+2018,3,Oklahoma State,Boise State,0.28,0.4,0.23,0.17
+2018,3,Old Dominion,Charlotte,0.27,0.4,0.13,0.15
+2018,3,Ole Miss,Alabama,-0.25,-0.44,-0.11,0.38
+2018,3,Oregon,San José State,0.08,0.19,0.0,-0.05
+2018,3,Oregon State,Nevada,0.26,0.37,0.07,0.07
+2018,3,Penn State,Kent State,0.58,0.72,0.5,-0.08
+2018,3,Pittsburgh,Georgia Tech,0.22,0.44,0.08,0.13
+2018,3,Purdue,Missouri,0.37,0.57,-0.21,0.3
+2018,3,Rutgers,Kansas,-0.23,-0.36,-0.1,0.34
+2018,3,San Diego State,Arizona State,0.13,0.14,0.11,0.22
+2018,3,San José State,Oregon,-0.05,0.16,-0.34,0.08
+2018,3,SMU,Michigan,-0.02,-0.11,0.09,0.43
+2018,3,South Alabama,Texas State,0.2,0.37,0.04,-0.05
+2018,3,South Florida,Illinois,0.3,0.48,0.16,0.04
+2018,3,Stanford,UC Davis,0.13,0.26,-0.05,0.0
+2018,3,Syracuse,Florida State,0.07,0.19,0.06,-0.05
+2018,3,TCU,Ohio State,0.06,-0.01,0.15,0.26
+2018,3,Temple,Maryland,0.07,0.37,-0.09,-0.3
+2018,3,Tennessee,UTEP,0.31,0.15,0.36,-0.2
+2018,3,Texas,USC,0.16,0.2,0.14,0.0
+2018,3,Texas A&M,UL Monroe,0.43,0.42,0.43,0.13
+2018,3,Texas State,South Alabama,-0.05,0.26,-0.23,0.2
+2018,3,Texas Tech,Houston,0.41,0.75,-0.08,0.35
+2018,3,Toledo,Miami,0.2,0.47,-0.02,0.34
+2018,3,Troy,Nebraska,0.03,-0.16,0.19,0.1
+2018,3,Tulane,UAB,0.08,-0.1,0.22,0.13
+2018,3,Tulsa,Arkansas State,-0.04,-0.09,0.07,0.08
+2018,3,UAB,Tulane,0.13,-0.02,0.2,0.08
+2018,3,UCLA,Fresno State,-0.07,-0.04,-0.09,0.18
+2018,3,UConn,Rhode Island,0.42,1.11,0.08,0.0
+2018,3,UL Monroe,Texas A&M,0.13,0.11,0.18,0.43
+2018,3,UNLV,Prairie View A&M,0.29,0.18,0.34,0.0
+2018,3,USC,Texas,0.0,0.16,-0.49,0.16
+2018,3,Utah,Washington,-0.14,-0.36,0.16,0.13
+2018,3,Utah State,Tennessee Tech,0.49,0.39,0.59,0.0
+2018,3,UTEP,Tennessee,-0.2,-0.45,0.01,0.31
+2018,3,UTSA,Kansas State,0.03,0.24,-0.14,0.35
+2018,3,Vanderbilt,Notre Dame,0.02,0.2,-0.19,0.18
+2018,3,Virginia,Ohio,0.47,0.65,0.32,0.15
+2018,3,Wake Forest,Boston College,0.05,-0.11,0.22,0.31
+2018,3,Washington,Utah,0.13,0.35,-0.01,-0.14
+2018,3,Washington State,Eastern Washington,0.44,0.4,0.66,0.0
+2018,3,Western Kentucky,Louisville,0.19,0.23,0.17,-0.02
+2018,3,Western Michigan,Delaware State,0.41,0.6,0.32,0.0
+2018,3,Wisconsin,BYU,0.24,0.24,0.23,0.22
+2018,3,Wyoming,Wofford,0.09,0.14,0.03,0.0
+2018,4,Air Force,Utah State,0.15,0.36,0.1,0.44
+2018,4,Akron,Iowa State,0.06,-0.01,0.06,0.05
+2018,4,Alabama,Texas A&M,0.49,0.96,-0.03,0.05
+2018,4,App State,Gardner-Webb,0.58,0.33,0.75,0.0
+2018,4,Arizona,Oregon State,0.43,0.33,0.47,0.08
+2018,4,Arizona State,Washington,0.16,0.11,0.2,0.23
+2018,4,Arkansas,Auburn,-0.05,-0.02,-0.06,-0.04
+2018,4,Arkansas State,UNLV,0.21,0.17,0.24,0.08
+2018,4,Army,Oklahoma,0.24,0.3,0.23,0.47
+2018,4,Auburn,Arkansas,-0.04,-0.19,0.06,-0.05
+2018,4,Ball State,Western Kentucky,0.25,0.43,0.01,0.4
+2018,4,Baylor,Kansas,0.33,0.41,0.27,0.14
+2018,4,Boston College,Purdue,-0.07,-0.15,0.01,0.07
+2018,4,Bowling Green,Miami (OH),0.14,0.1,0.19,0.21
+2018,4,Buffalo,Rutgers,0.23,0.39,0.1,-0.03
+2018,4,BYU,McNeese,0.04,0.17,-0.02,0.0
+2018,4,Central Michigan,Maine,-0.13,-0.01,-0.16,0.0
+2018,4,Charlotte,Massachusetts,0.13,0.23,0.05,0.26
+2018,4,Cincinnati,Ohio,0.37,0.66,0.1,0.15
+2018,4,Clemson,Georgia Tech,0.41,0.38,0.44,0.03
+2018,4,Coastal Carolina,Louisiana,0.35,0.78,0.18,0.41
+2018,4,Colorado State,Illinois State,0.1,0.06,0.16,0.0
+2018,4,Duke,North Carolina Central,0.2,0.12,0.25,0.0
+2018,4,East Carolina,South Florida,-0.03,-0.06,0.05,0.06
+2018,4,Eastern Michigan,San Diego State,0.06,0.22,-0.06,0.1
+2018,4,Florida,Tennessee,0.36,0.57,0.26,-0.09
+2018,4,Florida Atlantic,UCF,0.16,-0.29,0.41,0.4
+2018,4,Florida International,Miami,-0.06,0.07,-0.24,0.25
+2018,4,Florida State,Northern Illinois,0.17,0.68,-0.17,-0.05
+2018,4,Georgia,Missouri,0.18,0.68,-0.1,-0.05
+2018,4,Georgia State,Western Michigan,0.18,0.22,0.14,0.43
+2018,4,Georgia Tech,Clemson,0.03,-0.1,0.05,0.41
+2018,4,Hawai'i,Duquesne,0.32,0.3,0.34,0.0
+2018,4,Houston,Texas Southern,0.43,0.33,0.55,0.0
+2018,4,Illinois,Penn State,0.13,0.31,0.03,0.55
+2018,4,Indiana,Michigan State,-0.17,0.04,-0.56,0.09
+2018,4,Iowa,Wisconsin,0.23,0.9,-0.21,0.31
+2018,4,Iowa State,Akron,0.05,0.36,-0.17,0.06
+2018,4,Kansas,Baylor,0.14,0.11,0.17,0.33
+2018,4,Kansas State,West Virginia,-0.03,0.15,-0.19,0.27
+2018,4,Kent State,Ole Miss,0.1,-0.17,0.47,0.42
+2018,4,Kentucky,Mississippi State,0.08,-0.19,0.19,-0.03
+2018,4,Liberty,North Texas,-0.08,-0.01,-0.17,0.39
+2018,4,Louisiana,Coastal Carolina,0.41,0.3,0.49,0.35
+2018,4,Louisiana Tech,LSU,0.19,0.29,-0.02,0.25
+2018,4,Louisville,Virginia,-0.12,0.08,-0.31,0.24
+2018,4,LSU,Louisiana Tech,0.25,0.18,0.32,0.19
+2018,4,Marshall,NC State,-0.08,-0.02,-0.17,0.25
+2018,4,Maryland,Minnesota,0.58,0.48,0.62,-0.17
+2018,4,Massachusetts,Charlotte,0.26,0.69,0.0,0.13
+2018,4,Memphis,South Alabama,0.39,0.56,0.28,0.2
+2018,4,Miami,Florida International,0.25,0.33,0.23,-0.06
+2018,4,Miami (OH),Bowling Green,0.21,0.71,0.07,0.14
+2018,4,Michigan,Nebraska,0.24,0.24,0.22,-0.12
+2018,4,Michigan State,Indiana,0.09,0.35,-0.09,-0.17
+2018,4,Minnesota,Maryland,-0.17,-0.58,0.22,0.58
+2018,4,Mississippi State,Kentucky,-0.03,0.01,-0.08,0.08
+2018,4,Missouri,Georgia,-0.05,0.08,-0.04,0.18
+2018,4,Navy,SMU,0.21,-0.22,0.25,0.01
+2018,4,NC State,Marshall,0.25,0.57,-0.02,-0.08
+2018,4,Nebraska,Michigan,-0.12,-0.12,-0.11,0.24
+2018,4,Nevada,Toledo,0.31,0.19,0.52,0.29
+2018,4,New Mexico State,UTEP,0.03,0.3,-0.11,0.07
+2018,4,North Carolina,Pittsburgh,0.24,0.47,0.08,0.33
+2018,4,Northern Illinois,Florida State,-0.05,-0.01,-0.16,0.17
+2018,4,North Texas,Liberty,0.39,0.23,0.48,-0.08
+2018,4,Notre Dame,Wake Forest,0.44,0.37,0.51,0.14
+2018,4,Ohio,Cincinnati,0.15,0.11,0.18,0.37
+2018,4,Ohio State,Tulane,0.44,0.77,0.06,0.0
+2018,4,Oklahoma,Army,0.47,0.87,0.2,0.24
+2018,4,Oklahoma State,Texas Tech,0.19,0.2,0.17,0.3
+2018,4,Old Dominion,Virginia Tech,0.4,0.5,0.23,0.23
+2018,4,Ole Miss,Kent State,0.42,0.56,0.3,0.1
+2018,4,Oregon,Stanford,0.27,0.57,0.01,0.35
+2018,4,Oregon State,Arizona,0.08,0.32,-0.08,0.43
+2018,4,Penn State,Illinois,0.55,0.52,0.55,0.13
+2018,4,Pittsburgh,North Carolina,0.33,0.09,0.58,0.24
+2018,4,Purdue,Boston College,0.07,0.26,-0.08,-0.07
+2018,4,Rice,Southern Miss,0.09,0.23,-0.04,0.48
+2018,4,Rutgers,Buffalo,-0.03,-0.04,0.01,0.23
+2018,4,San Diego State,Eastern Michigan,0.1,0.24,-0.04,0.06
+2018,4,SMU,Navy,0.01,0.43,-0.34,0.21
+2018,4,South Alabama,Memphis,0.2,0.64,-0.24,0.39
+2018,4,South Carolina,Vanderbilt,0.25,0.58,0.1,0.14
+2018,4,Southern Miss,Rice,0.48,0.79,0.17,0.09
+2018,4,South Florida,East Carolina,0.06,0.01,0.1,-0.03
+2018,4,Stanford,Oregon,0.35,0.95,-0.28,0.27
+2018,4,Syracuse,UConn,0.34,0.45,0.34,0.19
+2018,4,TCU,Texas,0.03,-0.05,0.19,0.14
+2018,4,Temple,Tulsa,0.12,-0.19,0.3,0.02
+2018,4,Tennessee,Florida,-0.09,0.14,-0.16,0.36
+2018,4,Texas,TCU,0.14,0.48,-0.14,0.03
+2018,4,Texas A&M,Alabama,0.05,-0.07,0.38,0.49
+2018,4,Texas State,UTSA,0.13,0.22,0.09,-0.08
+2018,4,Texas Tech,Oklahoma State,0.3,0.37,0.24,0.19
+2018,4,Toledo,Nevada,0.29,0.46,0.18,0.31
+2018,4,Troy,UL Monroe,0.4,0.66,0.13,0.23
+2018,4,Tulane,Ohio State,0.0,0.15,-0.07,0.44
+2018,4,Tulsa,Temple,0.02,-0.16,0.18,0.12
+2018,4,UCF,Florida Atlantic,0.4,0.64,0.25,0.16
+2018,4,UConn,Syracuse,0.19,0.12,0.27,0.34
+2018,4,UL Monroe,Troy,0.23,0.12,0.39,0.4
+2018,4,UNLV,Arkansas State,0.08,-0.7,0.47,0.21
+2018,4,USC,Washington State,0.26,0.49,0.09,0.32
+2018,4,Utah State,Air Force,0.44,0.54,0.26,0.15
+2018,4,UTEP,New Mexico State,0.07,0.21,0.04,0.03
+2018,4,UTSA,Texas State,-0.08,0.05,-0.24,0.13
+2018,4,Vanderbilt,South Carolina,0.14,0.23,0.03,0.25
+2018,4,Virginia,Louisville,0.24,0.59,0.05,-0.12
+2018,4,Virginia Tech,Old Dominion,0.23,0.1,0.34,0.4
+2018,4,Wake Forest,Notre Dame,0.14,0.1,0.18,0.44
+2018,4,Washington,Arizona State,0.23,0.64,0.03,0.16
+2018,4,Washington State,USC,0.32,0.35,0.25,0.26
+2018,4,Western Kentucky,Ball State,0.4,0.52,0.3,0.25
+2018,4,Western Michigan,Georgia State,0.43,0.69,0.31,0.18
+2018,4,West Virginia,Kansas State,0.27,0.62,-0.22,-0.03
+2018,4,Wisconsin,Iowa,0.31,0.67,0.11,0.23
+2018,5,Air Force,Nevada,0.05,0.09,0.01,0.11
+2018,5,Alabama,Louisiana,0.71,1.65,0.36,0.1
+2018,5,App State,South Alabama,0.41,0.28,0.5,-0.02
+2018,5,Arizona,USC,0.0,0.15,-0.14,0.1
+2018,5,Arizona State,Oregon State,0.48,0.31,0.6,0.16
+2018,5,Arkansas,Texas A&M,0.1,0.14,0.03,0.08
+2018,5,Arkansas State,Georgia Southern,0.12,0.13,0.09,0.39
+2018,5,Army,Buffalo,0.42,1.14,0.35,0.04
+2018,5,Auburn,Southern Miss,0.08,0.18,0.01,-0.07
+2018,5,Ball State,Kent State,0.25,0.35,0.14,0.19
+2018,5,Baylor,Oklahoma,0.27,0.28,0.27,0.73
+2018,5,Boise State,Wyoming,0.23,0.45,0.04,0.06
+2018,5,Boston College,Temple,0.22,0.43,0.12,0.2
+2018,5,Bowling Green,Georgia Tech,0.09,0.2,-0.05,0.7
+2018,5,Buffalo,Army,0.04,0.05,0.04,0.42
+2018,5,BYU,Washington,0.06,0.38,-0.2,0.52
+2018,5,California,Oregon,0.04,-0.26,0.31,0.37
+2018,5,Central Michigan,Michigan State,0.08,0.1,0.06,0.06
+2018,5,Charlotte,UAB,-0.08,0.08,-0.25,0.36
+2018,5,Cincinnati,UConn,0.5,0.83,0.31,-0.16
+2018,5,Clemson,Syracuse,0.22,-0.02,0.4,0.07
+2018,5,Coastal Carolina,Troy,0.08,0.08,0.08,0.42
+2018,5,Colorado,UCLA,0.29,0.42,0.21,0.08
+2018,5,Duke,Virginia Tech,0.02,0.15,-0.14,0.28
+2018,5,East Carolina,Old Dominion,0.28,0.43,0.09,-0.04
+2018,5,Eastern Michigan,Northern Illinois,-0.08,-0.07,-0.09,-0.03
+2018,5,Florida,Mississippi State,0.11,0.34,-0.1,-0.01
+2018,5,Florida Atlantic,Middle Tennessee,0.15,0.18,0.13,0.12
+2018,5,Florida International,Arkansas-Pine Bluff,0.72,1.29,0.45,0.0
+2018,5,Florida State,Louisville,0.29,0.88,-0.23,0.0
+2018,5,Fresno State,Toledo,0.44,0.82,0.11,0.04
+2018,5,Georgia,Tennessee,0.34,0.44,0.27,0.05
+2018,5,Georgia Southern,Arkansas State,0.39,1.53,0.29,0.12
+2018,5,Georgia State,UL Monroe,0.31,0.51,0.23,0.01
+2018,5,Georgia Tech,Bowling Green,0.7,1.44,0.59,0.09
+2018,5,Hawai'i,San José State,0.16,0.26,0.06,0.07
+2018,5,Indiana,Rutgers,0.16,0.36,-0.04,0.11
+2018,5,Iowa State,TCU,0.12,0.05,0.2,0.01
+2018,5,Kansas,Oklahoma State,0.18,0.44,-0.16,0.42
+2018,5,Kansas State,Texas,-0.01,-0.01,0.03,0.16
+2018,5,Kent State,Ball State,0.19,0.29,0.05,0.25
+2018,5,Kentucky,South Carolina,0.11,0.31,0.04,0.12
+2018,5,Liberty,New Mexico,0.29,0.56,0.02,0.29
+2018,5,Louisiana,Alabama,0.1,-0.28,0.31,0.71
+2018,5,Louisiana Tech,North Texas,0.06,0.18,-0.02,0.23
+2018,5,Louisville,Florida State,0.0,0.07,-0.09,0.29
+2018,5,LSU,Ole Miss,0.32,0.72,0.13,0.11
+2018,5,Marshall,Western Kentucky,0.03,0.15,-0.12,-0.06
+2018,5,Massachusetts,Ohio,0.34,0.59,-0.24,0.35
+2018,5,Memphis,Tulane,0.16,0.27,0.01,0.24
+2018,5,Miami,North Carolina,0.29,0.55,0.24,-0.18
+2018,5,Miami (OH),Western Michigan,0.27,0.58,-0.1,0.43
+2018,5,Michigan,Northwestern,0.18,0.27,0.17,0.0
+2018,5,Michigan State,Central Michigan,0.06,-0.09,0.18,0.08
+2018,5,Middle Tennessee,Florida Atlantic,0.12,0.25,-0.02,0.15
+2018,5,Mississippi State,Florida,-0.01,-0.22,0.27,0.11
+2018,5,NC State,Virginia,0.28,0.64,0.04,0.08
+2018,5,Nebraska,Purdue,0.28,0.2,0.37,0.25
+2018,5,Nevada,Air Force,0.11,0.23,0.04,0.05
+2018,5,New Mexico,Liberty,0.29,0.37,0.19,0.29
+2018,5,North Carolina,Miami,-0.18,-0.39,0.04,0.29
+2018,5,Northern Illinois,Eastern Michigan,-0.03,-0.32,0.15,-0.08
+2018,5,North Texas,Louisiana Tech,0.23,0.42,-0.01,0.06
+2018,5,Northwestern,Michigan,0.0,0.05,-0.15,0.18
+2018,5,Notre Dame,Stanford,0.31,0.67,0.1,0.12
+2018,5,Ohio,Massachusetts,0.35,0.3,0.44,0.34
+2018,5,Ohio State,Penn State,0.07,0.13,0.0,0.08
+2018,5,Oklahoma,Baylor,0.73,1.42,0.24,0.27
+2018,5,Oklahoma State,Kansas,0.42,1.11,0.16,0.18
+2018,5,Old Dominion,East Carolina,-0.04,0.07,-0.17,0.28
+2018,5,Ole Miss,LSU,0.11,0.07,0.19,0.32
+2018,5,Oregon,California,0.37,0.66,0.22,0.04
+2018,5,Oregon State,Arizona State,0.16,0.09,0.21,0.48
+2018,5,Penn State,Ohio State,0.08,-0.02,0.2,0.07
+2018,5,Pittsburgh,UCF,-0.03,-0.08,0.02,0.39
+2018,5,Purdue,Nebraska,0.25,0.26,0.28,0.28
+2018,5,Rice,Wake Forest,0.05,-0.09,0.17,0.37
+2018,5,Rutgers,Indiana,0.11,0.02,0.18,0.16
+2018,5,San José State,Hawai'i,0.07,0.19,-0.06,0.16
+2018,5,SMU,Houston Christian,0.47,0.68,0.31,0.0
+2018,5,South Alabama,App State,-0.02,0.12,-0.17,0.41
+2018,5,South Carolina,Kentucky,0.12,0.14,0.13,0.11
+2018,5,Southern Miss,Auburn,-0.07,-0.09,-0.16,0.08
+2018,5,Stanford,Notre Dame,0.12,0.2,-0.04,0.31
+2018,5,Syracuse,Clemson,0.07,0.11,-0.03,0.22
+2018,5,TCU,Iowa State,0.01,0.24,-0.12,0.12
+2018,5,Temple,Boston College,0.2,0.07,0.41,0.22
+2018,5,Tennessee,Georgia,0.05,0.2,-0.1,0.34
+2018,5,Texas,Kansas State,0.16,0.36,-0.09,-0.01
+2018,5,Texas A&M,Arkansas,0.08,0.08,0.09,0.1
+2018,5,Texas Tech,West Virginia,0.1,0.11,0.14,0.34
+2018,5,Toledo,Fresno State,0.04,-0.06,0.11,0.44
+2018,5,Troy,Coastal Carolina,0.42,0.23,0.52,0.08
+2018,5,Tulane,Memphis,0.24,0.36,0.22,0.16
+2018,5,UAB,Charlotte,0.36,0.78,0.11,-0.08
+2018,5,UCF,Pittsburgh,0.39,0.63,0.24,-0.03
+2018,5,UCLA,Colorado,0.08,-0.14,0.41,0.29
+2018,5,UConn,Cincinnati,-0.16,-0.21,-0.07,0.5
+2018,5,UL Monroe,Georgia State,0.01,0.04,-0.04,0.31
+2018,5,USC,Arizona,0.1,0.47,-0.1,0.0
+2018,5,Utah,Washington State,0.07,-0.08,0.13,0.22
+2018,5,UTEP,UTSA,0.09,0.38,-0.05,0.1
+2018,5,UTSA,UTEP,0.1,0.07,0.15,0.09
+2018,5,Vanderbilt,Tennessee State,0.31,0.54,0.19,0.0
+2018,5,Virginia,NC State,0.08,0.08,0.07,0.28
+2018,5,Virginia Tech,Duke,0.28,0.91,-0.16,0.02
+2018,5,Wake Forest,Rice,0.37,0.77,0.17,0.05
+2018,5,Washington,BYU,0.52,0.71,0.38,0.06
+2018,5,Washington State,Utah,0.22,0.3,-0.22,0.07
+2018,5,Western Kentucky,Marshall,-0.06,0.05,-0.21,0.03
+2018,5,Western Michigan,Miami (OH),0.43,0.79,0.01,0.27
+2018,5,West Virginia,Texas Tech,0.34,0.47,0.15,0.1
+2018,5,Wyoming,Boise State,0.06,0.03,0.1,0.23
+2018,6,Air Force,Navy,0.22,0.93,0.09,-0.07
+2018,6,Akron,Miami (OH),-0.01,0.08,-0.13,0.21
+2018,6,Alabama,Arkansas,0.66,1.42,0.35,0.09
+2018,6,Arizona,California,0.04,0.12,-0.06,0.05
+2018,6,Arizona State,Colorado,0.24,0.53,0.09,0.38
+2018,6,Arkansas,Alabama,0.09,0.15,-0.01,0.66
+2018,6,Auburn,Mississippi State,-0.06,-0.05,-0.05,0.16
+2018,6,Ball State,Northern Illinois,0.0,0.11,-0.19,0.17
+2018,6,Baylor,Kansas State,0.25,0.18,0.36,0.44
+2018,6,Boise State,San Diego State,-0.06,-0.09,-0.01,-0.11
+2018,6,Boston College,NC State,0.08,0.12,0.05,0.22
+2018,6,Bowling Green,Toledo,0.37,0.44,0.29,0.32
+2018,6,Buffalo,Central Michigan,0.24,0.14,0.31,0.12
+2018,6,BYU,Utah State,-0.01,0.07,-0.25,0.28
+2018,6,California,Arizona,0.05,0.03,0.1,0.04
+2018,6,Central Michigan,Buffalo,0.12,0.11,0.12,0.24
+2018,6,Cincinnati,Tulane,0.13,0.33,0.05,-0.11
+2018,6,Clemson,Wake Forest,0.59,0.33,0.81,-0.2
+2018,6,Colorado,Arizona State,0.38,0.7,0.15,0.24
+2018,6,Colorado State,San José State,0.22,0.43,0.12,-0.22
+2018,6,East Carolina,Temple,-0.13,-0.17,-0.1,0.3
+2018,6,Eastern Michigan,Western Michigan,0.03,0.27,-0.12,0.22
+2018,6,Florida,LSU,0.05,-0.13,0.16,0.04
+2018,6,Florida Atlantic,Old Dominion,0.45,0.59,0.33,0.19
+2018,6,Florida State,Miami,-0.04,0.0,-0.14,-0.02
+2018,6,Fresno State,Nevada,0.03,0.37,-0.36,-0.06
+2018,6,Georgia,Vanderbilt,0.5,0.64,0.34,0.06
+2018,6,Georgia Southern,South Alabama,0.3,0.58,0.29,-0.05
+2018,6,Georgia State,Troy,0.26,1.19,-0.17,0.48
+2018,6,Georgia Tech,Louisville,0.62,-0.48,0.65,0.17
+2018,6,Hawai'i,Wyoming,-0.14,-0.22,-0.06,0.05
+2018,6,Houston,Tulsa,0.26,0.31,0.25,0.05
+2018,6,Illinois,Rutgers,0.3,0.04,0.45,0.12
+2018,6,Indiana,Ohio State,0.05,0.09,-0.12,0.37
+2018,6,Iowa,Minnesota,0.22,0.6,-0.12,0.06
+2018,6,Iowa State,Oklahoma State,0.31,0.55,0.15,0.31
+2018,6,Kansas,West Virginia,0.05,0.07,0.02,0.16
+2018,6,Kansas State,Baylor,0.44,0.1,0.74,0.25
+2018,6,Kent State,Ohio,0.22,0.23,0.19,0.26
+2018,6,Kentucky,Texas A&M,-0.06,-0.09,-0.02,0.14
+2018,6,Liberty,New Mexico State,0.19,0.11,0.32,0.43
+2018,6,Louisiana,Texas State,0.43,0.62,0.35,0.28
+2018,6,Louisiana Tech,UAB,-0.15,-0.35,0.0,0.03
+2018,6,Louisville,Georgia Tech,0.17,0.21,0.17,0.62
+2018,6,LSU,Florida,0.04,-0.07,0.17,0.05
+2018,6,Marshall,Middle Tennessee,0.07,-0.09,0.2,0.19
+2018,6,Maryland,Michigan,-0.04,-0.34,0.09,0.34
+2018,6,Massachusetts,South Florida,0.19,0.38,-0.18,0.28
+2018,6,Memphis,UConn,0.7,0.97,0.56,0.07
+2018,6,Miami,Florida State,-0.02,0.22,-0.08,-0.04
+2018,6,Miami (OH),Akron,0.21,0.39,0.09,-0.01
+2018,6,Michigan,Maryland,0.34,0.87,0.01,-0.04
+2018,6,Michigan State,Northwestern,0.09,0.18,-0.04,0.23
+2018,6,Middle Tennessee,Marshall,0.19,0.26,0.13,0.07
+2018,6,Minnesota,Iowa,0.06,-0.04,0.17,0.22
+2018,6,Mississippi State,Auburn,0.16,-0.06,0.26,-0.06
+2018,6,Missouri,South Carolina,0.08,-0.1,0.26,0.05
+2018,6,Navy,Air Force,-0.07,-0.12,-0.06,0.22
+2018,6,NC State,Boston College,0.22,0.49,0.05,0.08
+2018,6,Nebraska,Wisconsin,0.32,0.34,0.31,0.36
+2018,6,Nevada,Fresno State,-0.06,-0.07,-0.06,0.03
+2018,6,New Mexico,UNLV,0.34,1.08,0.09,-0.15
+2018,6,New Mexico State,Liberty,0.43,0.44,0.41,0.19
+2018,6,Northern Illinois,Ball State,0.17,0.01,0.31,0.0
+2018,6,North Texas,UTEP,0.23,0.42,0.02,0.24
+2018,6,Northwestern,Michigan State,0.23,0.43,-0.27,0.09
+2018,6,Notre Dame,Virginia Tech,0.28,0.42,0.12,0.15
+2018,6,Ohio,Kent State,0.26,0.6,0.06,0.22
+2018,6,Ohio State,Indiana,0.37,0.77,-0.01,0.05
+2018,6,Oklahoma,Texas,0.58,0.73,0.49,0.41
+2018,6,Oklahoma State,Iowa State,0.31,0.37,0.25,0.31
+2018,6,Old Dominion,Florida Atlantic,0.19,0.28,0.06,0.45
+2018,6,Ole Miss,UL Monroe,0.83,1.1,0.57,0.09
+2018,6,Oregon State,Washington State,0.3,0.31,0.31,0.58
+2018,6,Pittsburgh,Syracuse,0.14,-0.21,0.25,0.1
+2018,6,Rice,UTSA,-0.1,0.1,-0.25,-0.01
+2018,6,Rutgers,Illinois,0.12,0.21,0.03,0.3
+2018,6,San Diego State,Boise State,-0.11,-0.11,-0.16,-0.06
+2018,6,San José State,Colorado State,-0.22,-0.38,0.06,0.22
+2018,6,SMU,UCF,-0.06,0.09,-0.21,0.4
+2018,6,South Alabama,Georgia Southern,-0.05,-0.06,-0.05,0.3
+2018,6,South Carolina,Missouri,0.05,0.5,-0.28,0.08
+2018,6,South Florida,Massachusetts,0.28,0.22,0.38,0.19
+2018,6,Stanford,Utah,0.0,0.05,-0.08,0.3
+2018,6,Syracuse,Pittsburgh,0.1,-0.04,0.22,0.14
+2018,6,Temple,East Carolina,0.3,0.62,0.07,-0.13
+2018,6,Texas,Oklahoma,0.41,0.54,0.29,0.58
+2018,6,Texas A&M,Kentucky,0.14,0.28,0.02,-0.06
+2018,6,Texas State,Louisiana,0.28,0.44,0.02,0.43
+2018,6,Toledo,Bowling Green,0.32,0.17,0.45,0.37
+2018,6,Troy,Georgia State,0.48,0.6,0.4,0.26
+2018,6,Tulane,Cincinnati,-0.11,-0.19,-0.04,0.13
+2018,6,Tulsa,Houston,0.05,0.19,-0.01,0.26
+2018,6,UAB,Louisiana Tech,0.03,0.04,0.03,-0.15
+2018,6,UCF,SMU,0.4,0.42,0.4,-0.06
+2018,6,UCLA,Washington,0.36,0.36,0.33,0.22
+2018,6,UConn,Memphis,0.07,0.13,-0.01,0.7
+2018,6,UL Monroe,Ole Miss,0.09,0.17,0.0,0.83
+2018,6,UNLV,New Mexico,-0.15,-0.13,-0.17,0.34
+2018,6,Utah,Stanford,0.3,0.64,0.18,0.0
+2018,6,Utah State,BYU,0.28,0.64,0.04,-0.01
+2018,6,UTEP,North Texas,0.24,0.29,0.17,0.23
+2018,6,UTSA,Rice,-0.01,-0.25,0.07,-0.1
+2018,6,Vanderbilt,Georgia,0.06,0.23,-0.07,0.5
+2018,6,Virginia Tech,Notre Dame,0.15,0.21,0.03,0.28
+2018,6,Wake Forest,Clemson,-0.2,-0.34,-0.1,0.59
+2018,6,Washington,UCLA,0.22,0.33,0.18,0.36
+2018,6,Washington State,Oregon State,0.58,0.79,0.22,0.3
+2018,6,Western Michigan,Eastern Michigan,0.22,0.43,0.1,0.03
+2018,6,West Virginia,Kansas,0.16,0.11,0.18,0.05
+2018,6,Wisconsin,Nebraska,0.36,0.27,0.45,0.32
+2018,6,Wyoming,Hawai'i,0.05,-0.02,0.14,-0.14
+2018,7,Air Force,San Diego State,-0.03,0.14,-0.08,0.01
+2018,7,Akron,Buffalo,-0.09,-0.24,0.02,0.18
+2018,7,Alabama,Missouri,0.25,0.68,0.02,-0.07
+2018,7,App State,Arkansas State,0.18,0.09,0.25,-0.06
+2018,7,Arizona,Utah,-0.06,0.01,-0.23,0.38
+2018,7,Arkansas,Ole Miss,0.3,0.36,0.29,0.48
+2018,7,Arkansas State,App State,-0.06,-0.09,-0.01,0.18
+2018,7,Army,San José State,0.42,0.84,0.39,-0.01
+2018,7,Auburn,Tennessee,0.17,0.18,0.21,0.14
+2018,7,Ball State,Central Michigan,0.24,0.13,0.33,0.18
+2018,7,Baylor,Texas,0.13,0.27,-0.09,0.14
+2018,7,Boise State,Nevada,0.22,0.45,0.04,-0.09
+2018,7,Boston College,Louisville,0.07,0.16,0.04,0.03
+2018,7,Bowling Green,Western Michigan,0.28,0.45,-0.01,0.18
+2018,7,Buffalo,Akron,0.18,0.15,0.21,-0.09
+2018,7,BYU,Hawai'i,0.4,0.46,0.36,0.17
+2018,7,California,UCLA,-0.04,0.06,-0.18,0.17
+2018,7,Central Michigan,Ball State,0.18,0.04,0.19,0.24
+2018,7,Charlotte,Western Kentucky,0.25,0.62,0.04,0.09
+2018,7,Coastal Carolina,UL Monroe,0.08,-0.26,0.29,0.44
+2018,7,Colorado,USC,-0.11,-0.18,0.0,0.14
+2018,7,Colorado State,New Mexico,0.07,0.21,-0.02,0.25
+2018,7,Duke,Georgia Tech,0.1,0.29,-0.09,-0.03
+2018,7,East Carolina,Houston,0.1,0.22,-0.16,0.18
+2018,7,Eastern Michigan,Toledo,0.26,0.36,0.19,0.09
+2018,7,Florida,Vanderbilt,0.26,0.28,0.29,0.25
+2018,7,Florida International,Middle Tennessee,0.18,0.6,-0.3,0.16
+2018,7,Fresno State,Wyoming,0.21,0.52,-0.09,-0.04
+2018,7,Georgia,LSU,0.07,0.1,0.02,0.19
+2018,7,Georgia Southern,Texas State,-0.19,-0.29,-0.14,-0.07
+2018,7,Georgia Tech,Duke,-0.03,-0.09,0.0,0.1
+2018,7,Hawai'i,BYU,0.17,0.27,0.02,0.4
+2018,7,Houston,East Carolina,0.18,0.47,-0.03,0.1
+2018,7,Illinois,Purdue,-0.05,-0.18,0.11,0.42
+2018,7,Indiana,Iowa,0.0,-0.05,0.15,0.42
+2018,7,Iowa,Indiana,0.42,0.61,0.21,0.0
+2018,7,Iowa State,West Virginia,0.27,0.85,-0.06,-0.11
+2018,7,Kansas State,Oklahoma State,0.27,0.0,0.41,0.01
+2018,7,Kent State,Miami (OH),0.02,-0.21,0.32,0.29
+2018,7,Liberty,Troy,0.06,0.35,-0.17,0.0
+2018,7,Louisiana,New Mexico State,0.48,1.08,0.17,0.32
+2018,7,Louisiana Tech,UTSA,0.15,0.37,-0.09,-0.09
+2018,7,Louisville,Boston College,0.03,-0.08,0.22,0.07
+2018,7,LSU,Georgia,0.19,0.07,0.33,0.07
+2018,7,Marshall,Old Dominion,0.25,0.02,0.4,0.12
+2018,7,Maryland,Rutgers,0.19,0.1,0.26,-0.19
+2018,7,Memphis,UCF,0.2,0.37,0.11,0.22
+2018,7,Miami,Virginia,0.0,-0.05,0.02,-0.08
+2018,7,Miami (OH),Kent State,0.29,0.41,0.23,0.02
+2018,7,Michigan,Wisconsin,0.2,-0.09,0.38,-0.01
+2018,7,Michigan State,Penn State,0.04,0.05,0.03,0.06
+2018,7,Middle Tennessee,Florida International,0.16,-0.02,0.29,0.18
+2018,7,Minnesota,Ohio State,0.18,0.09,0.25,0.32
+2018,7,Missouri,Alabama,-0.07,-0.07,0.0,0.25
+2018,7,Navy,Temple,0.11,-0.27,0.21,0.12
+2018,7,Nebraska,Northwestern,0.07,0.04,0.09,0.16
+2018,7,Nevada,Boise State,-0.09,-0.07,-0.13,0.22
+2018,7,New Mexico,Colorado State,0.25,0.32,0.2,0.07
+2018,7,New Mexico State,Louisiana,0.32,0.13,0.8,0.48
+2018,7,North Carolina,Virginia Tech,0.08,0.3,-0.12,0.14
+2018,7,Northern Illinois,Ohio,0.13,-0.12,0.33,0.1
+2018,7,North Texas,Southern Miss,0.17,0.29,0.05,-0.03
+2018,7,Northwestern,Nebraska,0.16,0.33,-0.34,0.07
+2018,7,Notre Dame,Pittsburgh,-0.03,0.26,-0.27,0.05
+2018,7,Ohio,Northern Illinois,0.1,0.46,-0.22,0.13
+2018,7,Ohio State,Minnesota,0.32,0.53,0.02,0.18
+2018,7,Oklahoma State,Kansas State,0.01,-0.2,0.24,0.27
+2018,7,Old Dominion,Marshall,0.12,0.14,0.12,0.25
+2018,7,Ole Miss,Arkansas,0.48,0.68,0.29,0.3
+2018,7,Oregon,Washington,0.14,0.2,0.11,0.21
+2018,7,Penn State,Michigan State,0.06,0.16,0.0,0.04
+2018,7,Pittsburgh,Notre Dame,0.05,0.1,-0.01,-0.03
+2018,7,Purdue,Illinois,0.42,0.64,0.23,-0.05
+2018,7,Rice,UAB,-0.23,0.0,-0.44,0.23
+2018,7,Rutgers,Maryland,-0.19,-0.91,0.1,0.19
+2018,7,San Diego State,Air Force,0.01,0.17,-0.06,-0.03
+2018,7,San José State,Army,-0.01,0.18,-0.25,0.42
+2018,7,South Carolina,Texas A&M,0.11,0.19,-0.06,0.2
+2018,7,Southern Miss,North Texas,-0.03,0.12,-0.32,0.17
+2018,7,South Florida,Tulsa,0.12,-0.01,0.32,0.13
+2018,7,TCU,Texas Tech,0.02,0.1,-0.11,0.03
+2018,7,Temple,Navy,0.12,0.38,-0.09,0.11
+2018,7,Tennessee,Auburn,0.14,0.73,-0.45,0.17
+2018,7,Texas,Baylor,0.14,0.22,0.11,0.13
+2018,7,Texas A&M,South Carolina,0.2,0.48,-0.1,0.11
+2018,7,Texas State,Georgia Southern,-0.07,0.09,-0.18,-0.19
+2018,7,Texas Tech,TCU,0.03,0.25,-0.12,0.02
+2018,7,Toledo,Eastern Michigan,0.09,-0.19,0.27,0.26
+2018,7,Troy,Liberty,0.0,-0.17,0.14,0.06
+2018,7,Tulsa,South Florida,0.13,-0.09,0.23,0.12
+2018,7,UAB,Rice,0.23,0.85,-0.05,-0.23
+2018,7,UCF,Memphis,0.22,0.38,0.09,0.2
+2018,7,UCLA,California,0.17,0.31,0.16,-0.04
+2018,7,UL Monroe,Coastal Carolina,0.44,0.52,0.43,0.08
+2018,7,UNLV,Utah State,0.16,0.16,0.16,0.51
+2018,7,USC,Colorado,0.14,0.46,-0.28,-0.11
+2018,7,Utah,Arizona,0.38,0.68,0.22,-0.06
+2018,7,Utah State,UNLV,0.51,0.99,0.15,0.16
+2018,7,UTSA,Louisiana Tech,-0.09,-0.09,-0.07,0.15
+2018,7,Vanderbilt,Florida,0.25,0.23,0.19,0.26
+2018,7,Virginia,Miami,-0.08,-0.41,0.17,0.0
+2018,7,Virginia Tech,North Carolina,0.14,0.12,0.16,0.08
+2018,7,Washington,Oregon,0.21,0.73,-0.06,0.14
+2018,7,Western Kentucky,Charlotte,0.09,0.12,0.0,0.25
+2018,7,Western Michigan,Bowling Green,0.18,-0.12,0.38,0.28
+2018,7,West Virginia,Iowa State,-0.11,-0.18,0.03,0.27
+2018,7,Wisconsin,Michigan,-0.01,-0.36,0.28,0.2
+2018,7,Wyoming,Fresno State,-0.04,-0.1,0.02,0.21
+2018,8,Air Force,UNLV,0.48,1.44,0.31,0.28
+2018,8,Akron,Kent State,0.07,0.03,0.14,0.05
+2018,8,Alabama,Tennessee,0.37,0.54,0.24,0.03
+2018,8,App State,Louisiana,0.12,0.27,0.05,0.02
+2018,8,Arizona,UCLA,0.18,0.13,0.26,0.19
+2018,8,Arizona State,Stanford,0.11,0.17,0.03,0.1
+2018,8,Arkansas,Tulsa,0.0,0.27,-0.07,-0.09
+2018,8,Arkansas State,Georgia State,0.59,0.65,0.58,0.03
+2018,8,Army,Miami (OH),0.13,-0.86,0.16,0.21
+2018,8,Auburn,Ole Miss,0.21,0.52,0.08,0.12
+2018,8,Ball State,Eastern Michigan,0.17,0.12,0.23,0.19
+2018,8,Boise State,Colorado State,0.48,0.88,0.11,0.25
+2018,8,Bowling Green,Ohio,0.17,0.52,-0.2,0.69
+2018,8,Buffalo,Toledo,-0.03,-0.02,-0.07,-0.05
+2018,8,California,Oregon State,0.37,0.52,0.27,-0.17
+2018,8,Central Michigan,Western Michigan,-0.03,-0.05,-0.03,0.2
+2018,8,Charlotte,Middle Tennessee,0.08,-0.01,0.18,-0.27
+2018,8,Cincinnati,Temple,0.04,-0.16,0.18,0.01
+2018,8,Clemson,NC State,0.22,0.39,0.01,-0.1
+2018,8,Coastal Carolina,Massachusetts,0.21,0.64,0.07,0.1
+2018,8,Colorado,Washington,-0.06,0.17,-0.23,0.11
+2018,8,Colorado State,Boise State,0.25,0.26,0.41,0.48
+2018,8,Duke,Virginia,0.07,0.06,0.08,0.1
+2018,8,East Carolina,UCF,0.04,0.24,-0.28,0.16
+2018,8,Eastern Michigan,Ball State,0.19,0.54,-0.03,0.17
+2018,8,Florida Atlantic,Marshall,0.03,0.02,0.04,0.03
+2018,8,Florida International,Rice,0.37,0.65,0.16,0.15
+2018,8,Florida State,Wake Forest,0.3,0.43,0.11,-0.02
+2018,8,Fresno State,New Mexico,0.3,0.64,0.07,0.05
+2018,8,Georgia Southern,New Mexico State,0.37,0.63,0.37,0.35
+2018,8,Georgia State,Arkansas State,0.03,0.41,-0.33,0.59
+2018,8,Hawai'i,Nevada,0.05,0.01,0.12,0.21
+2018,8,Houston,Navy,0.5,0.68,0.23,0.21
+2018,8,Illinois,Wisconsin,0.0,-0.31,0.26,0.32
+2018,8,Indiana,Penn State,0.23,0.13,0.39,0.13
+2018,8,Iowa,Maryland,0.01,-0.11,0.09,-0.12
+2018,8,Kansas,Texas Tech,-0.1,0.0,-0.22,0.38
+2018,8,Kent State,Akron,0.05,0.08,0.04,0.07
+2018,8,Kentucky,Vanderbilt,0.07,0.19,0.06,-0.01
+2018,8,Liberty,Idaho State,0.29,0.36,0.21,0.0
+2018,8,Louisiana,App State,0.02,0.11,-0.05,0.12
+2018,8,Louisiana Tech,UTEP,0.1,0.13,0.17,0.04
+2018,8,LSU,Mississippi State,-0.1,-0.09,-0.07,-0.19
+2018,8,Marshall,Florida Atlantic,0.03,-0.27,0.21,0.03
+2018,8,Maryland,Iowa,-0.12,-0.28,0.02,0.01
+2018,8,Massachusetts,Coastal Carolina,0.1,0.13,-0.02,0.21
+2018,8,Memphis,Missouri,0.09,0.0,0.19,0.54
+2018,8,Miami (OH),Army,0.21,0.44,-0.23,0.13
+2018,8,Michigan,Michigan State,0.08,0.41,-0.1,-0.19
+2018,8,Michigan State,Michigan,-0.19,-0.15,-0.26,0.08
+2018,8,Middle Tennessee,Charlotte,-0.27,-0.09,-0.4,0.08
+2018,8,Minnesota,Nebraska,0.14,0.25,0.03,0.56
+2018,8,Mississippi State,LSU,-0.19,-0.56,0.1,-0.1
+2018,8,Missouri,Memphis,0.54,0.83,0.31,0.09
+2018,8,Navy,Houston,0.21,-0.04,0.27,0.5
+2018,8,NC State,Clemson,-0.1,-0.11,-0.09,0.22
+2018,8,Nebraska,Minnesota,0.56,0.49,0.63,0.14
+2018,8,Nevada,Hawai'i,0.21,0.34,0.15,0.05
+2018,8,New Mexico,Fresno State,0.05,0.02,0.08,0.3
+2018,8,New Mexico State,Georgia Southern,0.35,0.34,0.39,0.37
+2018,8,North Carolina,Syracuse,0.02,0.09,-0.09,0.14
+2018,8,North Texas,UAB,0.01,0.34,-0.63,0.08
+2018,8,Northwestern,Rutgers,-0.02,0.0,0.02,-0.07
+2018,8,Ohio,Bowling Green,0.69,1.26,0.53,0.17
+2018,8,Ohio State,Purdue,0.08,0.13,0.0,0.45
+2018,8,Oklahoma,TCU,0.46,0.69,0.34,0.04
+2018,8,Old Dominion,Western Kentucky,0.21,0.29,0.17,0.22
+2018,8,Ole Miss,Auburn,0.12,0.18,0.04,0.21
+2018,8,Oregon,Washington State,0.1,0.17,-0.02,0.25
+2018,8,Oregon State,California,-0.17,-0.38,0.08,0.37
+2018,8,Penn State,Indiana,0.13,0.01,0.33,0.23
+2018,8,Purdue,Ohio State,0.45,0.45,0.44,0.08
+2018,8,Rice,Florida International,0.15,0.02,0.22,0.37
+2018,8,Rutgers,Northwestern,-0.07,-0.18,0.1,-0.02
+2018,8,San Diego State,San José State,0.13,0.36,0.08,0.01
+2018,8,San José State,San Diego State,0.01,0.21,-0.18,0.13
+2018,8,SMU,Tulane,-0.1,0.13,-0.38,0.06
+2018,8,Southern Miss,UTSA,0.07,0.32,-0.05,-0.18
+2018,8,South Florida,UConn,0.44,0.27,0.59,0.26
+2018,8,Stanford,Arizona State,0.1,0.4,-0.04,0.11
+2018,8,Syracuse,North Carolina,0.14,0.18,0.11,0.02
+2018,8,TCU,Oklahoma,0.04,0.16,-0.07,0.46
+2018,8,Temple,Cincinnati,0.01,0.14,-0.16,0.04
+2018,8,Tennessee,Alabama,0.03,0.52,-0.38,0.37
+2018,8,Texas State,UL Monroe,0.01,0.02,0.01,0.15
+2018,8,Texas Tech,Kansas,0.38,0.6,0.0,-0.1
+2018,8,Toledo,Buffalo,-0.05,-0.25,0.11,-0.03
+2018,8,Tulane,SMU,0.06,-0.05,0.13,-0.1
+2018,8,Tulsa,Arkansas,-0.09,-0.38,0.18,0.0
+2018,8,UAB,North Texas,0.08,0.11,0.1,0.01
+2018,8,UCF,East Carolina,0.16,-0.14,0.3,0.04
+2018,8,UCLA,Arizona,0.19,0.4,-0.03,0.18
+2018,8,UConn,South Florida,0.26,-0.22,0.5,0.44
+2018,8,UL Monroe,Texas State,0.15,0.1,0.17,0.01
+2018,8,UNLV,Air Force,0.28,0.42,0.11,0.48
+2018,8,USC,Utah,0.04,0.1,-0.02,0.3
+2018,8,Utah,USC,0.3,0.61,0.12,0.04
+2018,8,Utah State,Wyoming,-0.06,-0.26,0.11,-0.01
+2018,8,UTEP,Louisiana Tech,0.04,0.13,-0.06,0.1
+2018,8,UTSA,Southern Miss,-0.18,-0.18,-0.13,0.07
+2018,8,Vanderbilt,Kentucky,-0.01,0.14,-0.17,0.07
+2018,8,Virginia,Duke,0.1,0.12,0.07,0.07
+2018,8,Wake Forest,Florida State,-0.02,0.0,-0.03,0.3
+2018,8,Washington,Colorado,0.11,0.14,0.1,-0.06
+2018,8,Washington State,Oregon,0.25,0.39,-0.06,0.1
+2018,8,Western Kentucky,Old Dominion,0.22,0.44,0.11,0.21
+2018,8,Western Michigan,Central Michigan,0.2,0.02,0.23,-0.03
+2018,8,Wisconsin,Illinois,0.32,0.3,0.34,0.0
+2018,8,Wyoming,Utah State,-0.01,-0.07,0.03,-0.06
+2018,9,Air Force,Boise State,0.4,1.13,0.15,0.45
+2018,9,Akron,Central Michigan,-0.07,0.06,-0.19,-0.11
+2018,9,App State,Georgia Southern,0.02,-0.2,0.19,0.16
+2018,9,Arizona,Oregon,0.19,0.16,0.26,-0.05
+2018,9,Arizona State,USC,0.3,0.32,0.31,0.27
+2018,9,Arkansas,Vanderbilt,0.43,0.3,0.57,0.39
+2018,9,Arkansas State,Louisiana,0.34,0.24,0.42,0.46
+2018,9,Army,Eastern Michigan,0.25,2.09,0.1,0.21
+2018,9,Ball State,Ohio,0.1,-0.03,0.29,0.38
+2018,9,Baylor,West Virginia,0.0,-0.02,0.02,0.47
+2018,9,Boise State,Air Force,0.45,0.71,0.13,0.4
+2018,9,Boston College,Miami,0.08,0.27,0.0,0.01
+2018,9,BYU,Northern Illinois,-0.09,0.04,-0.21,-0.08
+2018,9,California,Washington,0.0,0.22,-0.16,-0.14
+2018,9,Central Michigan,Akron,-0.11,-0.17,-0.05,-0.07
+2018,9,Charlotte,Southern Miss,0.04,-0.1,0.04,-0.02
+2018,9,Cincinnati,SMU,0.04,0.1,0.0,-0.05
+2018,9,Clemson,Florida State,0.29,0.52,0.01,-0.08
+2018,9,Coastal Carolina,Georgia State,0.28,0.73,0.16,0.5
+2018,9,Colorado,Oregon State,0.2,0.39,0.02,0.14
+2018,9,Colorado State,Wyoming,0.16,0.26,-0.15,0.26
+2018,9,Duke,Pittsburgh,0.46,0.64,0.26,0.49
+2018,9,Eastern Michigan,Army,0.21,0.34,-0.17,0.25
+2018,9,Florida,Georgia,0.09,-0.03,0.17,0.26
+2018,9,Florida Atlantic,Louisiana Tech,0.06,-0.16,0.29,0.06
+2018,9,Florida International,Western Kentucky,0.25,0.4,0.15,0.12
+2018,9,Florida State,Clemson,-0.08,0.19,-0.5,0.29
+2018,9,Fresno State,Hawai'i,0.4,0.68,0.2,0.22
+2018,9,Georgia,Florida,0.26,0.78,0.04,0.09
+2018,9,Georgia Southern,App State,0.16,1.02,0.08,0.02
+2018,9,Georgia State,Coastal Carolina,0.5,0.52,0.48,0.28
+2018,9,Georgia Tech,Virginia Tech,0.47,-0.63,0.5,0.38
+2018,9,Hawai'i,Fresno State,0.22,0.4,-0.01,0.4
+2018,9,Houston,South Florida,0.56,0.82,0.34,0.26
+2018,9,Illinois,Maryland,0.21,0.25,0.22,0.73
+2018,9,Indiana,Minnesota,0.12,0.09,0.23,0.31
+2018,9,Iowa,Penn State,-0.11,-0.18,-0.02,-0.01
+2018,9,Iowa State,Texas Tech,0.17,0.42,0.04,-0.05
+2018,9,Kansas,TCU,0.16,0.67,-0.21,0.29
+2018,9,Kansas State,Oklahoma,0.1,0.22,0.03,0.56
+2018,9,Kentucky,Missouri,-0.03,0.26,-0.38,-0.04
+2018,9,Louisiana,Arkansas State,0.46,0.81,0.25,0.34
+2018,9,Louisiana Tech,Florida Atlantic,0.06,0.17,-0.05,0.06
+2018,9,Louisville,Wake Forest,0.26,0.21,0.33,0.49
+2018,9,Maryland,Illinois,0.73,0.93,0.63,0.21
+2018,9,Massachusetts,UConn,0.23,0.75,0.11,-0.01
+2018,9,Miami,Boston College,0.01,-0.23,0.31,0.08
+2018,9,Michigan State,Purdue,0.11,0.35,-0.18,0.11
+2018,9,Middle Tennessee,Old Dominion,0.26,0.39,0.15,-0.13
+2018,9,Minnesota,Indiana,0.31,0.92,-0.08,0.12
+2018,9,Mississippi State,Texas A&M,0.38,0.5,0.27,-0.14
+2018,9,Missouri,Kentucky,-0.04,0.2,-0.23,-0.03
+2018,9,Navy,Notre Dame,0.05,-0.51,0.2,0.47
+2018,9,NC State,Syracuse,0.37,0.64,0.01,0.37
+2018,9,Nebraska,Bethune-Cookman,0.38,0.03,0.78,0.0
+2018,9,Nevada,San Diego State,0.1,0.24,-0.14,0.19
+2018,9,New Mexico,Utah State,-0.25,-0.35,-0.2,0.4
+2018,9,New Mexico State,Texas State,-0.06,-0.11,0.12,0.26
+2018,9,North Carolina,Virginia,0.21,0.34,-0.04,0.16
+2018,9,Northern Illinois,BYU,-0.08,-0.01,-0.12,-0.09
+2018,9,North Texas,Rice,0.42,0.39,0.46,0.06
+2018,9,Northwestern,Wisconsin,0.02,0.01,0.05,0.08
+2018,9,Notre Dame,Navy,0.47,0.61,0.38,0.05
+2018,9,Ohio,Ball State,0.38,0.02,0.54,0.1
+2018,9,Oklahoma,Kansas State,0.56,0.82,0.45,0.1
+2018,9,Oklahoma State,Texas,0.22,0.55,-0.02,0.35
+2018,9,Old Dominion,Middle Tennessee,-0.13,-0.08,-0.16,0.26
+2018,9,Oregon,Arizona,-0.05,-0.1,0.06,0.19
+2018,9,Oregon State,Colorado,0.14,0.29,-0.07,0.2
+2018,9,Penn State,Iowa,-0.01,0.04,-0.03,-0.11
+2018,9,Pittsburgh,Duke,0.49,0.21,0.55,0.46
+2018,9,Purdue,Michigan State,0.11,0.1,0.21,0.11
+2018,9,Rice,North Texas,0.06,0.25,-0.13,0.42
+2018,9,San Diego State,Nevada,0.19,0.32,0.11,0.1
+2018,9,San José State,UNLV,0.25,0.52,-0.07,0.17
+2018,9,SMU,Cincinnati,-0.05,0.17,-0.44,0.04
+2018,9,South Alabama,Troy,0.13,0.35,-0.1,0.47
+2018,9,South Carolina,Tennessee,0.24,0.47,0.21,0.22
+2018,9,Southern Miss,Charlotte,-0.02,-0.13,0.11,0.04
+2018,9,South Florida,Houston,0.26,0.18,0.42,0.56
+2018,9,Stanford,Washington State,0.36,0.46,0.22,0.44
+2018,9,Syracuse,NC State,0.37,0.56,0.19,0.37
+2018,9,TCU,Kansas,0.29,0.67,-0.03,0.16
+2018,9,Tennessee,South Carolina,0.22,0.21,0.17,0.24
+2018,9,Texas,Oklahoma State,0.35,0.34,0.38,0.22
+2018,9,Texas A&M,Mississippi State,-0.14,-0.18,-0.14,0.38
+2018,9,Texas State,New Mexico State,0.26,0.54,0.14,-0.06
+2018,9,Texas Tech,Iowa State,-0.05,0.01,-0.17,0.17
+2018,9,Toledo,Western Michigan,0.35,0.51,0.31,0.21
+2018,9,Troy,South Alabama,0.47,0.66,0.41,0.13
+2018,9,Tulane,Tulsa,0.12,0.26,0.09,0.01
+2018,9,Tulsa,Tulane,0.01,-0.03,0.05,0.12
+2018,9,UAB,UTEP,0.13,-0.13,0.26,-0.25
+2018,9,UCLA,Utah,0.08,0.0,0.23,0.36
+2018,9,UConn,Massachusetts,-0.01,-0.55,0.08,0.23
+2018,9,UNLV,San José State,0.17,0.25,0.09,0.25
+2018,9,USC,Arizona State,0.27,0.49,0.04,0.3
+2018,9,Utah,UCLA,0.36,0.36,0.38,0.08
+2018,9,Utah State,New Mexico,0.4,0.91,0.09,-0.25
+2018,9,UTEP,UAB,-0.25,0.07,-0.46,0.13
+2018,9,Vanderbilt,Arkansas,0.39,0.43,0.36,0.43
+2018,9,Virginia,North Carolina,0.16,0.23,0.11,0.21
+2018,9,Virginia Tech,Georgia Tech,0.38,0.41,0.36,0.47
+2018,9,Wake Forest,Louisville,0.49,0.5,0.49,0.26
+2018,9,Washington,California,-0.14,-0.16,-0.11,0.0
+2018,9,Washington State,Stanford,0.44,0.58,0.12,0.36
+2018,9,Western Kentucky,Florida International,0.12,0.0,0.28,0.25
+2018,9,Western Michigan,Toledo,0.21,0.22,0.22,0.35
+2018,9,West Virginia,Baylor,0.47,0.7,0.19,0.0
+2018,9,Wisconsin,Northwestern,0.08,-0.03,0.21,0.02
+2018,9,Wyoming,Colorado State,0.26,0.81,0.16,0.16
+2018,10,Air Force,Army,0.05,0.13,0.0,0.22
+2018,10,Akron,Northern Illinois,0.08,0.32,-0.29,0.19
+2018,10,Alabama,LSU,0.33,0.2,0.52,-0.15
+2018,10,App State,Coastal Carolina,-0.15,-0.46,-0.03,-0.18
+2018,10,Arizona,Colorado,0.52,1.11,0.19,0.05
+2018,10,Arizona State,Utah,0.34,0.81,0.14,0.1
+2018,10,Arkansas State,South Alabama,0.29,0.57,0.02,-0.04
+2018,10,Army,Air Force,0.22,0.68,0.21,0.05
+2018,10,Auburn,Texas A&M,0.27,0.57,-0.26,0.15
+2018,10,Ball State,Toledo,-0.03,-0.04,-0.01,0.31
+2018,10,Baylor,Oklahoma State,0.2,-0.04,0.39,0.23
+2018,10,Boise State,BYU,0.11,0.16,0.06,0.13
+2018,10,Boston College,Virginia Tech,0.05,0.16,0.0,0.1
+2018,10,Bowling Green,Kent State,0.03,0.25,-0.19,0.21
+2018,10,Buffalo,Miami (OH),0.35,0.46,0.26,0.33
+2018,10,BYU,Boise State,0.13,0.0,0.21,0.11
+2018,10,California,Washington State,-0.02,-0.07,-0.01,0.18
+2018,10,Central Michigan,Eastern Michigan,-0.16,-0.31,0.02,-0.08
+2018,10,Charlotte,Tennessee,-0.05,0.1,-0.15,-0.05
+2018,10,Cincinnati,Navy,0.47,0.65,0.38,-0.22
+2018,10,Clemson,Louisville,0.75,0.64,0.8,-0.09
+2018,10,Coastal Carolina,App State,-0.18,-0.25,-0.01,-0.15
+2018,10,Colorado,Arizona,0.05,0.24,-0.28,0.52
+2018,10,Duke,Miami,-0.1,-0.12,-0.03,0.14
+2018,10,East Carolina,Memphis,0.29,0.23,0.3,0.46
+2018,10,Eastern Michigan,Central Michigan,-0.08,0.27,-0.33,-0.16
+2018,10,Florida,Missouri,0.05,0.06,0.04,0.36
+2018,10,Florida Atlantic,Florida International,0.45,0.71,0.38,0.02
+2018,10,Florida International,Florida Atlantic,0.02,0.38,-0.37,0.45
+2018,10,Florida State,NC State,0.3,0.39,0.0,0.23
+2018,10,Fresno State,UNLV,0.37,0.5,0.29,-0.04
+2018,10,Georgia,Kentucky,0.3,0.36,0.29,0.02
+2018,10,Georgia Southern,UL Monroe,0.04,-0.11,0.14,0.37
+2018,10,Georgia State,Texas State,0.19,0.24,0.16,0.44
+2018,10,Georgia Tech,North Carolina,0.25,4.14,0.17,0.16
+2018,10,Hawai'i,Utah State,-0.02,0.03,-0.2,0.48
+2018,10,Houston,SMU,0.15,0.31,0.08,0.28
+2018,10,Illinois,Minnesota,0.65,0.37,0.87,0.2
+2018,10,Iowa,Purdue,0.26,0.39,0.16,0.34
+2018,10,Iowa State,Kansas,0.24,0.46,0.09,-0.13
+2018,10,Kansas,Iowa State,-0.13,-0.09,-0.17,0.24
+2018,10,Kansas State,TCU,-0.01,-0.17,0.1,0.01
+2018,10,Kent State,Bowling Green,0.21,0.04,0.31,0.03
+2018,10,Kentucky,Georgia,0.02,0.19,-0.15,0.3
+2018,10,Liberty,Massachusetts,0.12,0.03,0.21,0.36
+2018,10,Louisiana,Troy,-0.02,-0.04,0.02,0.21
+2018,10,Louisiana Tech,Mississippi State,-0.07,-0.29,0.12,0.46
+2018,10,Louisville,Clemson,-0.09,-0.09,-0.07,0.75
+2018,10,LSU,Alabama,-0.15,-0.14,-0.17,0.33
+2018,10,Marshall,Southern Miss,-0.09,0.01,-0.27,-0.02
+2018,10,Maryland,Michigan State,-0.29,-0.2,-0.37,0.15
+2018,10,Massachusetts,Liberty,0.36,0.43,0.36,0.12
+2018,10,Memphis,East Carolina,0.46,0.67,0.36,0.29
+2018,10,Miami,Duke,0.14,-0.11,0.32,-0.1
+2018,10,Miami (OH),Buffalo,0.33,0.29,0.37,0.35
+2018,10,Michigan,Penn State,0.28,0.46,0.22,-0.27
+2018,10,Michigan State,Maryland,0.15,0.18,0.15,-0.29
+2018,10,Middle Tennessee,Western Kentucky,0.09,0.13,0.1,-0.03
+2018,10,Minnesota,Illinois,0.2,0.23,0.2,0.65
+2018,10,Mississippi State,Louisiana Tech,0.46,0.41,0.46,-0.07
+2018,10,Missouri,Florida,0.36,0.55,0.21,0.05
+2018,10,Navy,Cincinnati,-0.22,-0.43,-0.18,0.47
+2018,10,NC State,Florida State,0.23,0.65,0.06,0.3
+2018,10,Nebraska,Ohio State,0.18,0.37,0.08,0.19
+2018,10,New Mexico,San Diego State,-0.12,-0.3,0.04,0.34
+2018,10,New Mexico State,Alcorn State,0.45,0.59,0.23,0.0
+2018,10,North Carolina,Georgia Tech,0.16,0.35,0.06,0.25
+2018,10,Northern Illinois,Akron,0.19,0.17,0.2,0.08
+2018,10,Northwestern,Notre Dame,0.03,0.01,0.06,0.32
+2018,10,Notre Dame,Northwestern,0.32,0.82,-0.13,0.03
+2018,10,Ohio,Western Michigan,0.4,0.49,0.36,0.02
+2018,10,Ohio State,Nebraska,0.19,0.19,0.19,0.18
+2018,10,Oklahoma,Texas Tech,0.53,0.61,0.46,0.34
+2018,10,Oklahoma State,Baylor,0.23,0.18,0.31,0.2
+2018,10,Ole Miss,South Carolina,0.27,0.29,0.31,0.32
+2018,10,Oregon,UCLA,0.29,0.51,0.11,0.25
+2018,10,Oregon State,USC,0.06,0.17,-0.16,0.4
+2018,10,Penn State,Michigan,-0.27,-0.5,-0.04,0.28
+2018,10,Pittsburgh,Virginia,0.27,-0.3,0.46,0.11
+2018,10,Purdue,Iowa,0.34,0.55,0.14,0.26
+2018,10,Rice,UTEP,0.08,0.25,-0.06,0.29
+2018,10,Rutgers,Wisconsin,0.16,0.31,-0.03,0.27
+2018,10,San Diego State,New Mexico,0.34,0.69,0.09,-0.12
+2018,10,San José State,Wyoming,-0.03,0.16,-0.26,0.15
+2018,10,SMU,Houston,0.28,0.41,0.14,0.15
+2018,10,South Alabama,Arkansas State,-0.04,-0.04,-0.04,0.29
+2018,10,South Carolina,Ole Miss,0.32,0.55,0.16,0.27
+2018,10,Southern Miss,Marshall,-0.02,0.27,-0.21,-0.09
+2018,10,Stanford,Washington,0.18,0.35,-0.13,0.21
+2018,10,Syracuse,Wake Forest,0.13,-0.12,0.3,0.09
+2018,10,TCU,Kansas State,0.01,0.25,-0.28,-0.01
+2018,10,Temple,UCF,0.31,0.43,0.19,0.5
+2018,10,Tennessee,Charlotte,-0.05,0.47,-0.51,-0.05
+2018,10,Texas,West Virginia,0.35,0.63,0.14,0.38
+2018,10,Texas A&M,Auburn,0.15,0.22,0.11,0.27
+2018,10,Texas State,Georgia State,0.44,0.81,0.16,0.19
+2018,10,Texas Tech,Oklahoma,0.34,0.46,0.17,0.53
+2018,10,Toledo,Ball State,0.31,0.44,0.22,-0.03
+2018,10,Troy,Louisiana,0.21,0.83,-0.1,-0.02
+2018,10,Tulsa,UConn,0.42,0.98,0.26,0.14
+2018,10,UAB,UTSA,0.61,1.11,0.43,-0.27
+2018,10,UCF,Temple,0.5,0.54,0.5,0.31
+2018,10,UCLA,Oregon,0.25,0.18,0.34,0.29
+2018,10,UConn,Tulsa,0.14,0.2,0.09,0.42
+2018,10,UL Monroe,Georgia Southern,0.37,0.48,0.34,0.04
+2018,10,UNLV,Fresno State,-0.04,-0.16,0.06,0.37
+2018,10,USC,Oregon State,0.4,0.08,0.6,0.06
+2018,10,Utah,Arizona State,0.1,-0.11,0.32,0.34
+2018,10,Utah State,Hawai'i,0.48,0.74,0.35,-0.02
+2018,10,UTEP,Rice,0.29,0.38,0.23,0.08
+2018,10,UTSA,UAB,-0.27,-0.29,-0.24,0.61
+2018,10,Virginia,Pittsburgh,0.11,0.19,0.05,0.27
+2018,10,Virginia Tech,Boston College,0.1,0.35,-0.19,0.05
+2018,10,Wake Forest,Syracuse,0.09,0.07,0.14,0.13
+2018,10,Washington,Stanford,0.21,0.36,0.15,0.18
+2018,10,Washington State,California,0.18,0.12,0.43,-0.02
+2018,10,Western Kentucky,Middle Tennessee,-0.03,-0.06,0.03,0.09
+2018,10,Western Michigan,Ohio,0.02,0.13,-0.04,0.4
+2018,10,West Virginia,Texas,0.38,0.47,0.26,0.35
+2018,10,Wisconsin,Rutgers,0.27,0.12,0.37,0.16
+2018,10,Wyoming,San José State,0.15,0.32,0.14,-0.03
+2018,11,Air Force,New Mexico,0.41,1.97,0.27,0.06
+2018,11,Akron,Eastern Michigan,-0.54,-0.95,-0.3,0.06
+2018,11,Alabama,Mississippi State,-0.02,0.09,-0.14,-0.24
+2018,11,App State,Texas State,0.39,0.45,0.36,-0.27
+2018,11,Arizona State,UCLA,0.21,0.23,0.2,0.29
+2018,11,Arkansas,LSU,-0.01,0.07,-0.14,0.15
+2018,11,Arkansas State,Coastal Carolina,0.58,0.89,0.3,0.0
+2018,11,Army,Lafayette,0.44,1.03,0.4,0.0
+2018,11,Auburn,Georgia,0.04,0.03,0.08,0.26
+2018,11,Baylor,Iowa State,0.22,0.4,-0.05,0.3
+2018,11,Boise State,Fresno State,0.19,0.34,0.1,0.19
+2018,11,Boston College,Clemson,-0.4,-0.13,-0.43,0.02
+2018,11,Bowling Green,Central Michigan,-0.02,0.27,-0.15,-0.02
+2018,11,Buffalo,Kent State,0.21,0.17,0.23,-0.02
+2018,11,BYU,Massachusetts,0.27,0.34,0.23,0.06
+2018,11,California,USC,-0.05,-0.01,-0.09,-0.07
+2018,11,Central Michigan,Bowling Green,-0.02,-0.02,-0.02,-0.02
+2018,11,Charlotte,Marshall,0.0,-0.26,0.19,0.11
+2018,11,Cincinnati,South Florida,0.25,0.42,0.15,0.13
+2018,11,Clemson,Boston College,0.02,0.26,-0.04,-0.4
+2018,11,Coastal Carolina,Arkansas State,0.0,0.01,-0.02,0.58
+2018,11,Colorado,Washington State,-0.05,0.06,-0.35,0.17
+2018,11,Colorado State,Nevada,-0.11,-0.09,-0.13,0.47
+2018,11,Duke,North Carolina,0.33,0.29,0.41,0.21
+2018,11,East Carolina,Tulane,-0.08,-0.19,0.16,0.1
+2018,11,Eastern Michigan,Akron,0.06,0.03,0.06,-0.54
+2018,11,Florida,South Carolina,0.36,0.52,0.31,0.34
+2018,11,Florida Atlantic,Western Kentucky,0.31,0.31,0.35,-0.05
+2018,11,Florida International,UTSA,0.29,0.65,0.06,-0.11
+2018,11,Florida State,Notre Dame,-0.08,-0.2,0.11,0.31
+2018,11,Fresno State,Boise State,0.19,0.18,0.21,0.19
+2018,11,Georgia,Auburn,0.26,0.27,0.3,0.04
+2018,11,Georgia Southern,Troy,0.15,0.41,-0.07,0.26
+2018,11,Georgia State,Louisiana,0.23,0.14,0.28,0.41
+2018,11,Georgia Tech,Miami,0.19,2.5,0.04,0.29
+2018,11,Houston,Temple,0.28,0.32,0.23,0.46
+2018,11,Illinois,Nebraska,0.32,-0.27,0.65,0.5
+2018,11,Indiana,Maryland,0.1,0.15,0.09,0.22
+2018,11,Iowa,Northwestern,-0.05,0.16,-0.51,0.06
+2018,11,Iowa State,Baylor,0.3,0.52,0.2,0.22
+2018,11,Kansas,Kansas State,0.08,0.31,-0.14,0.16
+2018,11,Kansas State,Kansas,0.16,0.09,0.2,0.08
+2018,11,Kent State,Buffalo,-0.02,-0.06,0.01,0.21
+2018,11,Kentucky,Tennessee,-0.09,-0.19,0.06,0.14
+2018,11,Liberty,Virginia,0.2,0.18,0.23,0.38
+2018,11,Louisiana,Georgia State,0.41,0.35,0.49,0.23
+2018,11,Louisiana Tech,Rice,0.19,0.41,-0.05,0.0
+2018,11,Louisville,Syracuse,0.05,0.02,0.09,0.2
+2018,11,LSU,Arkansas,0.15,0.42,0.02,-0.01
+2018,11,Marshall,Charlotte,0.11,0.37,0.01,0.0
+2018,11,Maryland,Indiana,0.22,0.42,0.15,0.1
+2018,11,Massachusetts,BYU,0.06,0.17,-0.02,0.27
+2018,11,Memphis,Tulsa,0.18,0.65,0.04,-0.02
+2018,11,Miami,Georgia Tech,0.29,0.32,0.27,0.19
+2018,11,Miami (OH),Ohio,0.08,0.11,0.28,0.2
+2018,11,Michigan,Rutgers,0.35,0.74,0.07,-0.02
+2018,11,Michigan State,Ohio State,0.0,0.09,-0.09,0.0
+2018,11,Middle Tennessee,UTEP,0.15,0.35,-0.05,-0.03
+2018,11,Minnesota,Purdue,0.33,0.42,0.35,-0.05
+2018,11,Mississippi State,Alabama,-0.24,-0.15,-0.32,-0.02
+2018,11,Missouri,Vanderbilt,0.3,0.43,0.22,0.27
+2018,11,Navy,UCF,0.16,-1.02,0.23,0.37
+2018,11,NC State,Wake Forest,0.06,0.34,-0.43,0.26
+2018,11,Nebraska,Illinois,0.5,0.45,0.59,0.32
+2018,11,Nevada,Colorado State,0.47,0.7,0.22,-0.11
+2018,11,New Mexico,Air Force,0.06,0.2,0.0,0.41
+2018,11,North Carolina,Duke,0.21,0.05,0.39,0.33
+2018,11,Northern Illinois,Toledo,0.28,0.16,0.32,0.07
+2018,11,North Texas,Old Dominion,0.03,0.07,0.0,0.09
+2018,11,Northwestern,Iowa,0.06,-0.15,0.2,-0.05
+2018,11,Notre Dame,Florida State,0.31,0.29,0.35,-0.08
+2018,11,Ohio,Miami (OH),0.2,0.23,0.23,0.08
+2018,11,Ohio State,Michigan State,0.0,0.18,-0.18,0.0
+2018,11,Oklahoma,Oklahoma State,0.49,0.51,0.51,0.41
+2018,11,Oklahoma State,Oklahoma,0.41,0.44,0.36,0.49
+2018,11,Old Dominion,North Texas,0.09,0.18,0.01,0.03
+2018,11,Ole Miss,Texas A&M,0.09,0.32,-0.22,0.22
+2018,11,Oregon,Utah,0.24,0.3,0.19,0.19
+2018,11,Oregon State,Stanford,0.15,0.19,0.15,0.62
+2018,11,Penn State,Wisconsin,0.12,0.12,0.1,-0.03
+2018,11,Pittsburgh,Virginia Tech,0.87,0.68,0.92,0.11
+2018,11,Purdue,Minnesota,-0.05,-0.06,-0.03,0.33
+2018,11,Rice,Louisiana Tech,0.0,0.02,-0.01,0.19
+2018,11,Rutgers,Michigan,-0.02,-0.3,0.14,0.35
+2018,11,San Diego State,UNLV,0.23,0.39,0.06,0.26
+2018,11,San José State,Utah State,0.03,0.16,-0.23,0.51
+2018,11,SMU,UConn,0.56,0.68,0.49,0.4
+2018,11,South Alabama,UL Monroe,-0.05,0.07,-0.15,0.34
+2018,11,South Carolina,Florida,0.34,0.6,0.14,0.36
+2018,11,Southern Miss,UAB,-0.15,-0.2,-0.07,-0.05
+2018,11,South Florida,Cincinnati,0.13,0.22,0.0,0.25
+2018,11,Stanford,Oregon State,0.62,0.63,0.61,0.15
+2018,11,Syracuse,Louisville,0.2,-0.03,0.32,0.05
+2018,11,TCU,West Virginia,-0.08,0.03,-0.17,0.3
+2018,11,Temple,Houston,0.46,0.37,0.48,0.28
+2018,11,Tennessee,Kentucky,0.14,0.54,-0.04,-0.09
+2018,11,Texas,Texas Tech,0.35,0.5,0.13,0.24
+2018,11,Texas A&M,Ole Miss,0.22,0.51,0.04,0.09
+2018,11,Texas State,App State,-0.27,-0.22,-0.33,0.39
+2018,11,Texas Tech,Texas,0.24,0.48,-0.15,0.35
+2018,11,Toledo,Northern Illinois,0.07,0.03,0.16,0.28
+2018,11,Troy,Georgia Southern,0.26,0.58,0.04,0.15
+2018,11,Tulane,East Carolina,0.1,0.75,-0.31,-0.08
+2018,11,Tulsa,Memphis,-0.02,0.03,-0.06,0.18
+2018,11,UAB,Southern Miss,-0.05,0.08,-0.15,-0.15
+2018,11,UCF,Navy,0.37,0.56,0.3,0.16
+2018,11,UCLA,Arizona State,0.29,0.62,-0.15,0.21
+2018,11,UConn,SMU,0.4,0.17,0.59,0.56
+2018,11,UL Monroe,South Alabama,0.34,0.61,0.1,-0.05
+2018,11,UNLV,San Diego State,0.26,0.56,0.1,0.23
+2018,11,USC,California,-0.07,0.01,-0.15,-0.05
+2018,11,Utah,Oregon,0.19,0.38,0.13,0.24
+2018,11,Utah State,San José State,0.51,0.72,0.32,0.03
+2018,11,UTEP,Middle Tennessee,-0.03,-0.15,0.18,0.15
+2018,11,UTSA,Florida International,-0.11,-0.29,0.15,0.29
+2018,11,Vanderbilt,Missouri,0.27,0.21,0.36,0.3
+2018,11,Virginia,Liberty,0.38,0.46,0.36,0.2
+2018,11,Virginia Tech,Pittsburgh,0.11,-0.01,0.23,0.87
+2018,11,Wake Forest,NC State,0.26,0.49,0.01,0.06
+2018,11,Washington State,Colorado,0.17,0.18,0.18,-0.05
+2018,11,Western Kentucky,Florida Atlantic,-0.05,-0.03,-0.1,0.31
+2018,11,West Virginia,TCU,0.3,0.51,0.05,-0.08
+2018,11,Wisconsin,Penn State,-0.03,-0.29,0.19,0.12
+2018,12,Air Force,Wyoming,0.25,0.17,0.29,0.32
+2018,12,Akron,Bowling Green,-0.03,-0.05,0.03,0.16
+2018,12,Alabama,The Citadel,0.72,1.15,0.35,0.0
+2018,12,App State,Georgia State,0.54,0.88,0.31,0.08
+2018,12,Arizona,Washington State,0.18,0.19,0.16,0.43
+2018,12,Arizona State,Oregon,0.04,0.2,-0.08,0.14
+2018,12,Arkansas,Mississippi State,-0.08,-0.23,0.13,0.51
+2018,12,Arkansas State,UL Monroe,0.23,0.62,-0.04,-0.04
+2018,12,Army,Colgate,0.25,0.46,0.23,0.0
+2018,12,Auburn,Liberty,0.23,0.39,0.15,-0.26
+2018,12,Ball State,Western Michigan,0.3,0.61,-0.05,0.22
+2018,12,Baylor,TCU,-0.01,-0.06,0.03,-0.02
+2018,12,Boise State,New Mexico,0.35,0.41,0.32,0.11
+2018,12,Boston College,Florida State,0.07,0.22,-0.06,0.08
+2018,12,Bowling Green,Akron,0.16,0.08,0.22,-0.03
+2018,12,Buffalo,Ohio,0.17,0.15,0.26,0.46
+2018,12,BYU,New Mexico State,0.17,-0.1,0.38,-0.07
+2018,12,Charlotte,Florida International,0.36,0.42,0.33,0.41
+2018,12,Cincinnati,UCF,0.09,0.0,0.14,0.3
+2018,12,Clemson,Duke,0.29,0.33,0.25,-0.1
+2018,12,Coastal Carolina,Georgia Southern,0.04,0.24,-0.12,0.35
+2018,12,Colorado,Utah,-0.15,-0.1,-0.23,0.13
+2018,12,Colorado State,Utah State,0.05,0.07,0.05,0.09
+2018,12,Duke,Clemson,-0.1,-0.2,0.09,0.29
+2018,12,East Carolina,UConn,0.46,0.64,0.38,0.15
+2018,12,Florida,Idaho,0.4,0.52,0.24,0.0
+2018,12,Florida Atlantic,North Texas,0.18,0.51,-0.05,0.19
+2018,12,Florida International,Charlotte,0.41,0.55,0.33,0.36
+2018,12,Florida State,Boston College,0.08,0.24,-0.07,0.07
+2018,12,Fresno State,San Diego State,0.18,0.26,0.15,0.14
+2018,12,Georgia,Massachusetts,0.77,0.85,0.76,0.29
+2018,12,Georgia Southern,Coastal Carolina,0.35,-0.02,0.39,0.04
+2018,12,Georgia State,App State,0.08,-0.25,0.24,0.54
+2018,12,Georgia Tech,Virginia,0.08,-0.26,0.15,0.32
+2018,12,Hawai'i,UNLV,0.2,0.39,-0.12,0.07
+2018,12,Houston,Tulane,0.21,0.33,0.15,0.04
+2018,12,Illinois,Iowa,-0.24,-0.48,-0.03,0.39
+2018,12,Indiana,Michigan,0.08,0.04,0.14,0.15
+2018,12,Iowa,Illinois,0.39,0.48,0.33,-0.24
+2018,12,Iowa State,Texas,-0.06,-0.17,0.11,0.15
+2018,12,Kansas,Oklahoma,0.48,0.39,0.57,0.5
+2018,12,Kansas State,Texas Tech,-0.02,0.33,-0.19,-0.13
+2018,12,Kent State,Toledo,0.12,0.04,0.22,0.32
+2018,12,Kentucky,Middle Tennessee,0.25,0.34,0.23,0.04
+2018,12,Liberty,Auburn,-0.26,-0.25,-0.28,0.23
+2018,12,Louisiana,South Alabama,0.34,0.54,0.27,0.29
+2018,12,Louisiana Tech,Southern Miss,0.16,0.26,0.05,0.17
+2018,12,Louisville,NC State,0.2,0.1,0.28,0.41
+2018,12,LSU,Rice,0.46,0.6,0.32,-0.05
+2018,12,Marshall,UTSA,0.07,0.3,-0.1,-0.15
+2018,12,Maryland,Ohio State,0.31,0.14,0.38,0.25
+2018,12,Massachusetts,Georgia,0.29,0.31,0.35,0.77
+2018,12,Memphis,SMU,0.13,0.41,-0.02,-0.03
+2018,12,Miami,Virginia Tech,0.14,0.06,0.26,0.01
+2018,12,Miami (OH),Northern Illinois,-0.19,0.08,-0.35,0.02
+2018,12,Michigan,Indiana,0.15,0.35,0.15,0.08
+2018,12,Michigan State,Nebraska,-0.15,-0.36,0.1,-0.16
+2018,12,Middle Tennessee,Kentucky,0.04,0.06,0.03,0.25
+2018,12,Minnesota,Northwestern,-0.03,0.0,-0.07,0.07
+2018,12,Mississippi State,Arkansas,0.51,1.12,0.31,-0.08
+2018,12,Missouri,Tennessee,0.27,0.54,0.14,-0.01
+2018,12,Navy,Tulsa,0.35,0.08,0.38,0.18
+2018,12,NC State,Louisville,0.41,0.56,0.26,0.2
+2018,12,Nebraska,Michigan State,-0.16,-0.18,-0.13,-0.15
+2018,12,Nevada,San José State,0.14,0.45,-0.09,-0.05
+2018,12,New Mexico,Boise State,0.11,0.15,0.1,0.35
+2018,12,New Mexico State,BYU,-0.07,0.01,-0.31,0.17
+2018,12,North Carolina,Western Carolina,0.35,0.45,0.3,0.0
+2018,12,Northern Illinois,Miami (OH),0.02,-0.17,0.2,-0.19
+2018,12,North Texas,Florida Atlantic,0.19,0.33,0.06,0.18
+2018,12,Northwestern,Minnesota,0.07,0.3,-0.05,-0.03
+2018,12,Notre Dame,Syracuse,0.18,0.25,0.17,-0.15
+2018,12,Ohio,Buffalo,0.46,0.29,0.57,0.17
+2018,12,Ohio State,Maryland,0.25,0.45,0.11,0.31
+2018,12,Oklahoma,Kansas,0.5,0.34,0.63,0.48
+2018,12,Oklahoma State,West Virginia,0.37,0.41,0.35,0.21
+2018,12,Old Dominion,VMI,0.41,0.31,0.46,0.0
+2018,12,Ole Miss,Vanderbilt,0.22,0.4,0.07,0.18
+2018,12,Oregon,Arizona State,0.14,0.3,0.03,0.04
+2018,12,Oregon State,Washington,0.05,0.07,0.05,0.41
+2018,12,Penn State,Rutgers,-0.05,-0.02,-0.01,-0.02
+2018,12,Pittsburgh,Wake Forest,0.32,0.69,0.06,-0.02
+2018,12,Purdue,Wisconsin,0.0,0.19,-0.25,0.38
+2018,12,Rice,LSU,-0.05,-0.04,-0.1,0.46
+2018,12,Rutgers,Penn State,-0.02,-0.37,0.11,-0.05
+2018,12,San Diego State,Fresno State,0.14,0.51,-0.16,0.18
+2018,12,San José State,Nevada,-0.05,0.24,-0.39,0.14
+2018,12,SMU,Memphis,-0.03,0.11,-0.33,0.13
+2018,12,South Alabama,Louisiana,0.29,0.73,0.08,0.34
+2018,12,South Carolina,Chattanooga,0.44,0.67,0.23,0.0
+2018,12,Southern Miss,Louisiana Tech,0.17,0.32,-0.01,0.16
+2018,12,South Florida,Temple,-0.09,-0.19,-0.04,-0.05
+2018,12,Syracuse,Notre Dame,-0.15,-0.43,0.22,0.18
+2018,12,TCU,Baylor,-0.02,0.2,-0.13,-0.01
+2018,12,Temple,South Florida,-0.05,0.3,-0.38,-0.09
+2018,12,Tennessee,Missouri,-0.01,0.01,0.02,0.27
+2018,12,Texas,Iowa State,0.15,0.29,0.09,-0.06
+2018,12,Texas A&M,UAB,0.41,0.45,0.44,0.25
+2018,12,Texas State,Troy,-0.07,0.02,-0.14,-0.13
+2018,12,Texas Tech,Kansas State,-0.13,-0.02,-0.25,-0.02
+2018,12,Toledo,Kent State,0.32,0.29,0.33,0.12
+2018,12,Troy,Texas State,-0.13,-0.22,-0.13,-0.07
+2018,12,Tulane,Houston,0.04,-0.28,0.22,0.21
+2018,12,Tulsa,Navy,0.18,0.33,0.09,0.35
+2018,12,UAB,Texas A&M,0.25,0.51,-0.06,0.41
+2018,12,UCF,Cincinnati,0.3,0.62,0.06,0.09
+2018,12,UCLA,USC,0.24,0.22,0.27,0.34
+2018,12,UConn,East Carolina,0.15,0.3,-0.07,0.46
+2018,12,UL Monroe,Arkansas State,-0.04,-0.23,0.21,0.23
+2018,12,UNLV,Hawai'i,0.07,0.03,0.09,0.2
+2018,12,USC,UCLA,0.34,0.47,0.19,0.24
+2018,12,Utah,Colorado,0.13,0.52,-0.06,-0.15
+2018,12,Utah State,Colorado State,0.09,0.31,0.0,0.05
+2018,12,UTEP,Western Kentucky,-0.07,-0.11,0.04,0.06
+2018,12,UTSA,Marshall,-0.15,-0.06,-0.36,0.07
+2018,12,Vanderbilt,Ole Miss,0.18,0.08,0.25,0.22
+2018,12,Virginia,Georgia Tech,0.32,0.69,0.11,0.08
+2018,12,Virginia Tech,Miami,0.01,-0.03,0.06,0.14
+2018,12,Wake Forest,Pittsburgh,-0.02,0.11,-0.09,0.32
+2018,12,Washington,Oregon State,0.41,0.54,0.32,0.05
+2018,12,Washington State,Arizona,0.43,0.46,0.34,0.18
+2018,12,Western Kentucky,UTEP,0.06,0.07,0.07,-0.07
+2018,12,Western Michigan,Ball State,0.22,0.26,0.24,0.3
+2018,12,West Virginia,Oklahoma State,0.21,0.33,0.09,0.37
+2018,12,Wisconsin,Purdue,0.38,0.42,0.41,0.0
+2018,12,Wyoming,Air Force,0.32,0.51,0.14,0.25
+2018,13,Air Force,Colorado State,0.22,0.34,0.21,0.3
+2018,13,Akron,Ohio,0.43,0.73,-0.25,0.44
+2018,13,Alabama,Auburn,0.53,0.68,0.37,0.03
+2018,13,App State,Troy,0.09,0.22,0.01,-0.19
+2018,13,Arizona,Arizona State,0.27,0.33,0.28,0.28
+2018,13,Arizona State,Arizona,0.28,0.43,0.23,0.27
+2018,13,Arkansas,Missouri,-0.18,-0.11,-0.24,0.16
+2018,13,Arkansas State,Texas State,0.27,0.73,0.04,0.04
+2018,13,Auburn,Alabama,0.03,-0.03,0.08,0.53
+2018,13,Ball State,Miami (OH),0.15,0.11,0.21,0.37
+2018,13,Baylor,Texas Tech,0.31,0.54,0.16,0.19
+2018,13,Boise State,Utah State,0.22,0.56,-0.01,0.21
+2018,13,Boston College,Syracuse,0.02,0.06,-0.02,0.24
+2018,13,Bowling Green,Buffalo,0.07,0.3,-0.18,0.29
+2018,13,Buffalo,Bowling Green,0.29,0.1,0.38,0.07
+2018,13,BYU,Utah,0.05,0.07,0.03,0.14
+2018,13,California,Colorado,-0.07,0.04,-0.13,-0.09
+2018,13,Central Michigan,Toledo,-0.16,-0.18,-0.11,0.08
+2018,13,Cincinnati,East Carolina,0.37,0.64,0.08,-0.16
+2018,13,Clemson,South Carolina,0.54,0.61,0.5,0.34
+2018,13,Coastal Carolina,South Alabama,0.25,0.38,0.08,0.31
+2018,13,Colorado,California,-0.09,-0.29,0.09,-0.07
+2018,13,Colorado State,Air Force,0.3,0.46,0.04,0.22
+2018,13,Duke,Wake Forest,-0.16,-0.24,-0.06,0.37
+2018,13,East Carolina,Cincinnati,-0.16,-0.21,-0.11,0.37
+2018,13,Eastern Michigan,Kent State,0.05,-0.25,0.23,0.04
+2018,13,Florida,Florida State,0.22,0.42,0.16,0.06
+2018,13,Florida International,Marshall,0.09,-0.1,0.33,0.16
+2018,13,Florida State,Florida,0.06,-0.21,0.37,0.22
+2018,13,Fresno State,San José State,0.26,0.62,0.01,-0.05
+2018,13,Georgia,Georgia Tech,0.37,0.58,0.32,0.03
+2018,13,Georgia Southern,Georgia State,0.28,0.34,0.31,0.11
+2018,13,Georgia State,Georgia Southern,0.11,0.18,0.02,0.28
+2018,13,Georgia Tech,Georgia,0.03,0.08,0.01,0.37
+2018,13,Hawai'i,San Diego State,0.28,0.51,-0.15,0.17
+2018,13,Houston,Memphis,0.09,-0.03,0.22,0.22
+2018,13,Illinois,Northwestern,0.19,0.38,0.06,0.29
+2018,13,Indiana,Purdue,0.21,0.18,0.26,0.22
+2018,13,Iowa,Nebraska,0.26,0.34,0.25,0.21
+2018,13,Iowa State,Kansas State,0.39,0.65,0.16,0.34
+2018,13,Kansas,Texas,0.05,-0.13,0.2,0.02
+2018,13,Kansas State,Iowa State,0.34,0.43,0.29,0.39
+2018,13,Kent State,Eastern Michigan,0.04,-0.06,0.16,0.05
+2018,13,Kentucky,Louisville,0.62,0.6,0.63,0.12
+2018,13,Liberty,New Mexico State,-0.13,-0.08,-0.18,-0.14
+2018,13,Louisiana,UL Monroe,0.16,0.25,0.13,0.13
+2018,13,Louisiana Tech,Western Kentucky,-0.05,0.02,-0.05,0.08
+2018,13,Louisville,Kentucky,0.12,-0.07,0.25,0.62
+2018,13,LSU,Texas A&M,0.26,0.28,0.2,0.18
+2018,13,Marshall,Florida International,0.16,0.19,0.13,0.09
+2018,13,Maryland,Penn State,-0.07,0.17,-0.26,0.46
+2018,13,Memphis,Houston,0.22,-0.13,0.44,0.09
+2018,13,Miami,Pittsburgh,-0.06,-0.49,0.29,-0.23
+2018,13,Miami (OH),Ball State,0.37,0.18,0.44,0.15
+2018,13,Michigan,Ohio State,0.11,0.28,0.15,0.41
+2018,13,Michigan State,Rutgers,-0.02,-0.09,0.07,-0.08
+2018,13,Middle Tennessee,UAB,0.2,0.45,0.03,-0.2
+2018,13,Minnesota,Wisconsin,0.18,0.39,0.16,0.14
+2018,13,Mississippi State,Ole Miss,0.3,0.29,0.31,-0.14
+2018,13,Missouri,Arkansas,0.16,0.41,-0.03,-0.18
+2018,13,Navy,Tulane,0.2,0.71,0.0,0.32
+2018,13,NC State,North Carolina,0.26,0.37,0.19,0.16
+2018,13,Nebraska,Iowa,0.21,0.19,0.28,0.26
+2018,13,Nevada,UNLV,0.22,0.25,0.24,0.27
+2018,13,New Mexico,Wyoming,-0.3,-0.32,-0.26,0.19
+2018,13,New Mexico State,Liberty,-0.14,-0.17,-0.04,-0.13
+2018,13,North Carolina,NC State,0.16,0.13,0.18,0.26
+2018,13,Northern Illinois,Western Michigan,0.06,0.13,0.02,0.02
+2018,13,North Texas,UTSA,0.33,0.53,0.14,0.24
+2018,13,Northwestern,Illinois,0.29,0.56,0.2,0.19
+2018,13,Notre Dame,USC,0.25,0.47,-0.1,0.15
+2018,13,Ohio,Akron,0.44,-0.17,0.64,0.43
+2018,13,Ohio State,Michigan,0.41,0.79,0.18,0.11
+2018,13,Oklahoma,West Virginia,0.53,1.03,0.19,0.35
+2018,13,Oklahoma State,TCU,0.12,0.12,0.09,0.16
+2018,13,Old Dominion,Rice,0.02,0.11,-0.17,0.16
+2018,13,Ole Miss,Mississippi State,-0.14,0.1,-0.39,0.3
+2018,13,Oregon,Oregon State,0.37,0.13,0.43,0.05
+2018,13,Oregon State,Oregon,0.05,0.14,-0.17,0.37
+2018,13,Penn State,Maryland,0.46,0.33,0.56,-0.07
+2018,13,Pittsburgh,Miami,-0.23,-0.2,-0.28,-0.06
+2018,13,Purdue,Indiana,0.22,0.37,0.01,0.21
+2018,13,Rice,Old Dominion,0.16,-0.09,0.25,0.02
+2018,13,Rutgers,Michigan State,-0.08,-0.03,-0.09,-0.02
+2018,13,San Diego State,Hawai'i,0.17,0.23,0.11,0.28
+2018,13,San José State,Fresno State,-0.05,-0.02,-0.1,0.26
+2018,13,SMU,Tulsa,0.12,0.14,0.07,0.1
+2018,13,South Alabama,Coastal Carolina,0.31,1.4,0.05,0.25
+2018,13,South Carolina,Clemson,0.34,0.5,-0.05,0.54
+2018,13,Southern Miss,UTEP,0.18,0.18,0.17,-0.23
+2018,13,South Florida,UCF,-0.11,-0.07,-0.11,0.32
+2018,13,Stanford,UCLA,0.26,0.67,-0.08,0.22
+2018,13,Syracuse,Boston College,0.24,0.51,0.06,0.02
+2018,13,TCU,Oklahoma State,0.16,0.38,0.06,0.12
+2018,13,Temple,UConn,0.43,0.64,0.49,-0.17
+2018,13,Tennessee,Vanderbilt,0.06,0.04,0.11,0.29
+2018,13,Texas,Kansas,0.02,0.04,0.01,0.05
+2018,13,Texas A&M,LSU,0.18,0.43,0.0,0.26
+2018,13,Texas State,Arkansas State,0.04,0.03,0.11,0.27
+2018,13,Texas Tech,Baylor,0.19,0.19,0.19,0.31
+2018,13,Toledo,Central Michigan,0.08,-0.15,0.24,-0.16
+2018,13,Troy,App State,-0.19,-0.22,-0.14,0.09
+2018,13,Tulane,Navy,0.32,0.56,0.09,0.2
+2018,13,Tulsa,SMU,0.1,0.56,-0.16,0.12
+2018,13,UAB,Middle Tennessee,-0.2,-0.23,-0.18,0.2
+2018,13,UCF,South Florida,0.32,0.25,0.36,-0.11
+2018,13,UCLA,Stanford,0.22,0.31,0.06,0.26
+2018,13,UConn,Temple,-0.17,-0.24,-0.12,0.43
+2018,13,UL Monroe,Louisiana,0.13,0.1,0.16,0.16
+2018,13,UNLV,Nevada,0.27,0.58,0.11,0.22
+2018,13,USC,Notre Dame,0.15,0.24,-0.02,0.25
+2018,13,Utah,BYU,0.14,0.09,0.18,0.05
+2018,13,Utah State,Boise State,0.21,0.33,-0.1,0.22
+2018,13,UTEP,Southern Miss,-0.23,-0.39,-0.06,0.18
+2018,13,UTSA,North Texas,0.24,0.24,0.26,0.33
+2018,13,Vanderbilt,Tennessee,0.29,0.61,-0.02,0.06
+2018,13,Virginia,Virginia Tech,0.19,0.48,-0.03,0.11
+2018,13,Virginia Tech,Virginia,0.11,-0.01,0.21,0.19
+2018,13,Wake Forest,Duke,0.37,0.67,0.28,-0.16
+2018,13,Washington,Washington State,0.43,0.6,0.37,-0.05
+2018,13,Washington State,Washington,-0.05,-0.15,0.12,0.43
+2018,13,Western Kentucky,Louisiana Tech,0.08,-0.12,0.19,-0.05
+2018,13,Western Michigan,Northern Illinois,0.02,0.07,-0.05,0.06
+2018,13,West Virginia,Oklahoma,0.35,0.79,-0.21,0.53
+2018,13,Wisconsin,Minnesota,0.14,0.2,0.07,0.18
+2018,13,Wyoming,New Mexico,0.19,-0.21,0.34,-0.3
+2018,14,Akron,South Carolina,-0.08,-0.13,-0.06,-0.14
+2018,14,Alabama,Georgia,0.31,0.29,0.33,0.27
+2018,14,App State,Louisiana,0.17,-0.08,0.26,0.06
+2018,14,Boise State,Fresno State,0.0,-0.13,0.09,-0.02
+2018,14,Buffalo,Northern Illinois,0.23,0.14,0.36,0.27
+2018,14,California,Stanford,0.02,-0.05,0.13,0.07
+2018,14,Clemson,Pittsburgh,0.3,-0.13,0.62,-0.08
+2018,14,East Carolina,NC State,-0.3,-0.27,-0.42,0.34
+2018,14,Fresno State,Boise State,-0.02,-0.05,-0.04,0.0
+2018,14,Georgia,Alabama,0.27,0.5,0.01,0.31
+2018,14,Iowa State,Drake,0.1,0.28,-0.02,0.0
+2018,14,Liberty,Norfolk State,0.41,0.33,0.5,0.0
+2018,14,Louisiana,App State,0.06,0.02,0.12,0.17
+2018,14,Marshall,Virginia Tech,0.2,0.18,0.22,0.2
+2018,14,Memphis,UCF,0.31,0.07,0.53,0.42
+2018,14,Middle Tennessee,UAB,0.15,0.27,-0.04,0.1
+2018,14,NC State,East Carolina,0.34,0.46,0.29,-0.3
+2018,14,Northern Illinois,Buffalo,0.27,0.36,0.12,0.23
+2018,14,Northwestern,Ohio State,0.1,-0.02,0.44,0.31
+2018,14,Ohio State,Northwestern,0.31,0.79,-0.2,0.1
+2018,14,Oklahoma,Texas,0.29,0.66,0.06,0.3
+2018,14,Pittsburgh,Clemson,-0.08,-0.48,0.07,0.3
+2018,14,South Carolina,Akron,-0.14,0.02,-0.27,-0.08
+2018,14,Stanford,California,0.07,0.28,-0.02,0.02
+2018,14,Texas,Oklahoma,0.3,0.44,0.19,0.29
+2018,14,UAB,Middle Tennessee,0.1,0.34,0.06,0.15
+2018,14,UCF,Memphis,0.42,0.87,0.21,0.31
+2018,14,Utah,Washington,-0.28,-0.35,-0.27,-0.04
+2018,14,Virginia Tech,Marshall,0.2,0.49,0.0,0.2
+2018,14,Washington,Utah,-0.04,-0.04,-0.01,-0.28
+2018,15,Army,Navy,0.05,0.08,0.04,-0.15
+2018,15,Navy,Army,-0.15,0.11,-0.3,0.05

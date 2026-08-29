@@ -1,0 +1,528 @@
+season,week,poll,team,rank
+2019,16,AP Top 25,Georgia,5
+2019,16,AP Top 25,Florida,6
+2019,16,AP Top 25,Oklahoma State,25
+2019,16,AP Top 25,Baylor,8
+2019,16,AP Top 25,Oregon,7
+2019,16,AP Top 25,USC,22
+2019,16,AP Top 25,Auburn,9
+2019,16,AP Top 25,LSU,1
+2019,16,AP Top 25,Utah,12
+2019,16,AP Top 25,Alabama,9
+2019,16,AP Top 25,Ohio State,2
+2019,16,AP Top 25,Michigan,17
+2019,16,AP Top 25,Penn State,13
+2019,16,AP Top 25,Wisconsin,11
+2019,16,AP Top 25,Minnesota,16
+2019,16,AP Top 25,Iowa,19
+2019,16,AP Top 25,Oklahoma,4
+2019,16,AP Top 25,Notre Dame,14
+2019,16,AP Top 25,App State,20
+2019,16,AP Top 25,Cincinnati,23
+2019,16,AP Top 25,Navy,21
+2019,16,AP Top 25,Memphis,15
+2019,16,AP Top 25,Clemson,3
+2019,16,AP Top 25,Boise State,18
+2019,16,AP Top 25,Air Force,24
+2019,16,Playoff Committee Rankings,Georgia,5
+2019,16,Playoff Committee Rankings,Florida,9
+2019,16,Playoff Committee Rankings,Oklahoma State,25
+2019,16,Playoff Committee Rankings,Baylor,7
+2019,16,Playoff Committee Rankings,Oregon,6
+2019,16,Playoff Committee Rankings,USC,22
+2019,16,Playoff Committee Rankings,Auburn,12
+2019,16,Playoff Committee Rankings,LSU,1
+2019,16,Playoff Committee Rankings,Utah,11
+2019,16,Playoff Committee Rankings,Alabama,13
+2019,16,Playoff Committee Rankings,Ohio State,2
+2019,16,Playoff Committee Rankings,Michigan,14
+2019,16,Playoff Committee Rankings,Penn State,10
+2019,16,Playoff Committee Rankings,Wisconsin,8
+2019,16,Playoff Committee Rankings,Minnesota,18
+2019,16,Playoff Committee Rankings,Iowa,16
+2019,16,Playoff Committee Rankings,Oklahoma,4
+2019,16,Playoff Committee Rankings,Notre Dame,15
+2019,16,Playoff Committee Rankings,App State,20
+2019,16,Playoff Committee Rankings,Cincinnati,21
+2019,16,Playoff Committee Rankings,Navy,23
+2019,16,Playoff Committee Rankings,Memphis,17
+2019,16,Playoff Committee Rankings,Clemson,3
+2019,16,Playoff Committee Rankings,Virginia,24
+2019,16,Playoff Committee Rankings,Boise State,19
+2019,15,Playoff Committee Rankings,Georgia,4
+2019,15,Playoff Committee Rankings,Florida,9
+2019,15,Playoff Committee Rankings,Oklahoma State,25
+2019,15,Playoff Committee Rankings,Baylor,7
+2019,15,Playoff Committee Rankings,Oregon,13
+2019,15,Playoff Committee Rankings,USC,22
+2019,15,Playoff Committee Rankings,Auburn,11
+2019,15,Playoff Committee Rankings,LSU,2
+2019,15,Playoff Committee Rankings,Utah,5
+2019,15,Playoff Committee Rankings,Alabama,12
+2019,15,Playoff Committee Rankings,Ohio State,1
+2019,15,Playoff Committee Rankings,Michigan,14
+2019,15,Playoff Committee Rankings,Penn State,10
+2019,15,Playoff Committee Rankings,Wisconsin,8
+2019,15,Playoff Committee Rankings,Minnesota,18
+2019,15,Playoff Committee Rankings,Iowa,16
+2019,15,Playoff Committee Rankings,Oklahoma,6
+2019,15,Playoff Committee Rankings,Notre Dame,15
+2019,15,Playoff Committee Rankings,App State,21
+2019,15,Playoff Committee Rankings,Cincinnati,20
+2019,15,Playoff Committee Rankings,Navy,24
+2019,15,Playoff Committee Rankings,Memphis,17
+2019,15,Playoff Committee Rankings,Clemson,3
+2019,15,Playoff Committee Rankings,Virginia,23
+2019,15,Playoff Committee Rankings,Boise State,19
+2019,15,AP Top 25,Georgia,4
+2019,15,AP Top 25,Florida,7
+2019,15,AP Top 25,Baylor,8
+2019,15,AP Top 25,Oregon,13
+2019,15,AP Top 25,USC,24
+2019,15,AP Top 25,Auburn,11
+2019,15,AP Top 25,LSU,1
+2019,15,AP Top 25,Utah,5
+2019,15,AP Top 25,Alabama,9
+2019,15,AP Top 25,Ohio State,2
+2019,15,AP Top 25,Michigan,17
+2019,15,AP Top 25,Penn State,12
+2019,15,AP Top 25,Wisconsin,10
+2019,15,AP Top 25,Minnesota,15
+2019,15,AP Top 25,Iowa,18
+2019,15,AP Top 25,Oklahoma,6
+2019,15,AP Top 25,Notre Dame,14
+2019,15,AP Top 25,App State,20
+2019,15,AP Top 25,Cincinnati,21
+2019,15,AP Top 25,Navy,23
+2019,15,AP Top 25,Memphis,16
+2019,15,AP Top 25,Clemson,3
+2019,15,AP Top 25,Virginia,22
+2019,15,AP Top 25,Boise State,19
+2019,15,AP Top 25,Air Force,25
+2019,14,AP Top 25,Georgia,4
+2019,14,AP Top 25,Florida,8
+2019,14,AP Top 25,Oklahoma State,21
+2019,14,AP Top 25,Baylor,11
+2019,14,AP Top 25,Oregon,14
+2019,14,AP Top 25,USC,25
+2019,14,AP Top 25,Auburn,16
+2019,14,AP Top 25,LSU,1
+2019,14,AP Top 25,Utah,6
+2019,14,AP Top 25,Alabama,5
+2019,14,AP Top 25,Ohio State,2
+2019,14,AP Top 25,Michigan,10
+2019,14,AP Top 25,Penn State,12
+2019,14,AP Top 25,Wisconsin,13
+2019,14,AP Top 25,Minnesota,9
+2019,14,AP Top 25,Iowa,19
+2019,14,AP Top 25,Oklahoma,7
+2019,14,AP Top 25,Notre Dame,15
+2019,14,AP Top 25,App State,22
+2019,14,AP Top 25,Cincinnati,18
+2019,14,AP Top 25,Navy,24
+2019,14,AP Top 25,Memphis,17
+2019,14,AP Top 25,Clemson,3
+2019,14,AP Top 25,Virginia Tech,23
+2019,14,AP Top 25,Boise State,20
+2019,13,Playoff Committee Rankings,Georgia,4
+2019,13,Playoff Committee Rankings,Florida,11
+2019,13,Playoff Committee Rankings,Oklahoma State,21
+2019,13,Playoff Committee Rankings,Baylor,14
+2019,13,Playoff Committee Rankings,Iowa State,22
+2019,13,Playoff Committee Rankings,Oregon,6
+2019,13,Playoff Committee Rankings,USC,23
+2019,13,Playoff Committee Rankings,Auburn,15
+2019,13,Playoff Committee Rankings,LSU,1
+2019,13,Playoff Committee Rankings,Utah,7
+2019,13,Playoff Committee Rankings,Alabama,5
+2019,13,Playoff Committee Rankings,Ohio State,2
+2019,13,Playoff Committee Rankings,Michigan,13
+2019,13,Playoff Committee Rankings,Penn State,8
+2019,13,Playoff Committee Rankings,Wisconsin,12
+2019,13,Playoff Committee Rankings,Minnesota,10
+2019,13,Playoff Committee Rankings,Iowa,17
+2019,13,Playoff Committee Rankings,Oklahoma,9
+2019,13,Playoff Committee Rankings,Notre Dame,16
+2019,13,Playoff Committee Rankings,App State,24
+2019,13,Playoff Committee Rankings,Cincinnati,19
+2019,13,Playoff Committee Rankings,Memphis,18
+2019,13,Playoff Committee Rankings,SMU,25
+2019,13,Playoff Committee Rankings,Clemson,3
+2019,13,Playoff Committee Rankings,Boise State,20
+2019,13,AP Top 25,Georgia,4
+2019,13,AP Top 25,Florida,10
+2019,13,AP Top 25,Oklahoma State,22
+2019,13,AP Top 25,Baylor,13
+2019,13,AP Top 25,Oregon,6
+2019,13,AP Top 25,Auburn,16
+2019,13,AP Top 25,LSU,1
+2019,13,AP Top 25,Utah,7
+2019,13,AP Top 25,Alabama,5
+2019,13,AP Top 25,Texas A&M,24
+2019,13,AP Top 25,Ohio State,2
+2019,13,AP Top 25,Michigan,12
+2019,13,AP Top 25,Penn State,9
+2019,13,AP Top 25,Wisconsin,14
+2019,13,AP Top 25,Minnesota,11
+2019,13,AP Top 25,Iowa,19
+2019,13,AP Top 25,Oklahoma,8
+2019,13,AP Top 25,Notre Dame,15
+2019,13,AP Top 25,App State,23
+2019,13,AP Top 25,Cincinnati,17
+2019,13,AP Top 25,Memphis,18
+2019,13,AP Top 25,SMU,21
+2019,13,AP Top 25,Clemson,3
+2019,13,AP Top 25,Virginia Tech,25
+2019,13,AP Top 25,Boise State,20
+2019,12,Playoff Committee Rankings,Georgia,4
+2019,12,Playoff Committee Rankings,Florida,11
+2019,12,Playoff Committee Rankings,Oklahoma State,22
+2019,12,Playoff Committee Rankings,Kansas State,24
+2019,12,Playoff Committee Rankings,Baylor,13
+2019,12,Playoff Committee Rankings,Oregon,6
+2019,12,Playoff Committee Rankings,Auburn,12
+2019,12,Playoff Committee Rankings,LSU,1
+2019,12,Playoff Committee Rankings,Utah,7
+2019,12,Playoff Committee Rankings,Alabama,5
+2019,12,Playoff Committee Rankings,Ohio State,2
+2019,12,Playoff Committee Rankings,Michigan,15
+2019,12,Playoff Committee Rankings,Penn State,9
+2019,12,Playoff Committee Rankings,Wisconsin,14
+2019,12,Playoff Committee Rankings,Minnesota,8
+2019,12,Playoff Committee Rankings,Iowa,20
+2019,12,Playoff Committee Rankings,Texas,19
+2019,12,Playoff Committee Rankings,Oklahoma,10
+2019,12,Playoff Committee Rankings,Notre Dame,16
+2019,12,Playoff Committee Rankings,App State,25
+2019,12,Playoff Committee Rankings,Cincinnati,17
+2019,12,Playoff Committee Rankings,Navy,23
+2019,12,Playoff Committee Rankings,Memphis,18
+2019,12,Playoff Committee Rankings,Clemson,3
+2019,12,Playoff Committee Rankings,Boise State,21
+2019,12,AP Top 25,Georgia,5
+2019,12,AP Top 25,Florida,11
+2019,12,AP Top 25,Oklahoma State,25
+2019,12,AP Top 25,Baylor,12
+2019,12,AP Top 25,Oregon,6
+2019,12,AP Top 25,Auburn,13
+2019,12,AP Top 25,LSU,1
+2019,12,AP Top 25,Utah,8
+2019,12,AP Top 25,Alabama,4
+2019,12,AP Top 25,Ohio State,2
+2019,12,AP Top 25,Michigan,14
+2019,12,AP Top 25,Penn State,9
+2019,12,AP Top 25,Indiana,24
+2019,12,AP Top 25,Wisconsin,15
+2019,12,AP Top 25,Minnesota,7
+2019,12,AP Top 25,Iowa,23
+2019,12,AP Top 25,Texas,22
+2019,12,AP Top 25,Oklahoma,10
+2019,12,AP Top 25,Notre Dame,16
+2019,12,AP Top 25,Cincinnati,17
+2019,12,AP Top 25,Navy,21
+2019,12,AP Top 25,Memphis,18
+2019,12,AP Top 25,SMU,20
+2019,12,AP Top 25,Clemson,3
+2019,12,AP Top 25,Boise State,19
+2019,7,AP Top 25,Georgia,3
+2019,7,AP Top 25,Florida,7
+2019,7,AP Top 25,Baylor,22
+2019,7,AP Top 25,Oregon,13
+2019,7,AP Top 25,Auburn,12
+2019,7,AP Top 25,LSU,5
+2019,7,AP Top 25,Utah,15
+2019,7,AP Top 25,Arizona State,18
+2019,7,AP Top 25,Alabama,1
+2019,7,AP Top 25,Texas A&M,24
+2019,7,AP Top 25,Ohio State,3
+2019,7,AP Top 25,Michigan,16
+2019,7,AP Top 25,Penn State,10
+2019,7,AP Top 25,Wisconsin,8
+2019,7,AP Top 25,Iowa,17
+2019,7,AP Top 25,Texas,11
+2019,7,AP Top 25,Oklahoma,6
+2019,7,AP Top 25,Notre Dame,9
+2019,7,AP Top 25,Cincinnati,25
+2019,7,AP Top 25,Memphis,23
+2019,7,AP Top 25,SMU,21
+2019,7,AP Top 25,Clemson,2
+2019,7,AP Top 25,Wake Forest,19
+2019,7,AP Top 25,Virginia,20
+2019,7,AP Top 25,Boise State,14
+2019,6,AP Top 25,Georgia,3
+2019,6,AP Top 25,Florida,10
+2019,6,AP Top 25,Oklahoma State,21
+2019,6,AP Top 25,Oregon,13
+2019,6,AP Top 25,Washington,15
+2019,6,AP Top 25,Auburn,7
+2019,6,AP Top 25,LSU,5
+2019,6,AP Top 25,Utah,17
+2019,6,AP Top 25,Arizona State,20
+2019,6,AP Top 25,Alabama,1
+2019,6,AP Top 25,Texas A&M,25
+2019,6,AP Top 25,Ohio State,4
+2019,6,AP Top 25,Michigan State,25
+2019,6,AP Top 25,Michigan,19
+2019,6,AP Top 25,Penn State,12
+2019,6,AP Top 25,Wisconsin,8
+2019,6,AP Top 25,Iowa,14
+2019,6,AP Top 25,Texas,11
+2019,6,AP Top 25,Oklahoma,6
+2019,6,AP Top 25,Notre Dame,9
+2019,6,AP Top 25,UCF,18
+2019,6,AP Top 25,SMU,24
+2019,6,AP Top 25,Clemson,2
+2019,6,AP Top 25,Wake Forest,22
+2019,6,AP Top 25,Virginia,23
+2019,6,AP Top 25,Boise State,16
+2019,5,AP Top 25,Georgia,3
+2019,5,AP Top 25,Florida,9
+2019,5,AP Top 25,Kansas State,24
+2019,5,AP Top 25,Oregon,13
+2019,5,AP Top 25,Washington,17
+2019,5,AP Top 25,California,15
+2019,5,AP Top 25,USC,21
+2019,5,AP Top 25,Auburn,7
+2019,5,AP Top 25,LSU,4
+2019,5,AP Top 25,Utah,19
+2019,5,AP Top 25,Alabama,2
+2019,5,AP Top 25,Texas A&M,23
+2019,5,AP Top 25,Ohio State,5
+2019,5,AP Top 25,Michigan State,25
+2019,5,AP Top 25,Michigan,20
+2019,5,AP Top 25,Penn State,12
+2019,5,AP Top 25,Wisconsin,8
+2019,5,AP Top 25,Iowa,14
+2019,5,AP Top 25,Texas,11
+2019,5,AP Top 25,Oklahoma,6
+2019,5,AP Top 25,Notre Dame,10
+2019,5,AP Top 25,UCF,22
+2019,5,AP Top 25,Clemson,1
+2019,5,AP Top 25,Virginia,18
+2019,5,AP Top 25,Boise State,16
+2019,4,AP Top 25,Georgia,3
+2019,4,AP Top 25,Florida,9
+2019,4,AP Top 25,TCU,25
+2019,4,AP Top 25,Oregon,16
+2019,4,AP Top 25,Washington,22
+2019,4,AP Top 25,California,23
+2019,4,AP Top 25,Washington State,19
+2019,4,AP Top 25,Auburn,8
+2019,4,AP Top 25,LSU,4
+2019,4,AP Top 25,Utah,10
+2019,4,AP Top 25,Arizona State,24
+2019,4,AP Top 25,Alabama,2
+2019,4,AP Top 25,Texas A&M,17
+2019,4,AP Top 25,Ohio State,6
+2019,4,AP Top 25,Michigan,11
+2019,4,AP Top 25,Penn State,13
+2019,4,AP Top 25,Wisconsin,13
+2019,4,AP Top 25,Iowa,18
+2019,4,AP Top 25,Texas,12
+2019,4,AP Top 25,Oklahoma,5
+2019,4,AP Top 25,Notre Dame,7
+2019,4,AP Top 25,UCF,15
+2019,4,AP Top 25,Clemson,1
+2019,4,AP Top 25,Virginia,21
+2019,4,AP Top 25,Boise State,20
+2019,3,AP Top 25,Georgia,3
+2019,3,AP Top 25,Florida,9
+2019,3,AP Top 25,Oregon,15
+2019,3,AP Top 25,Washington,23
+2019,3,AP Top 25,Washington State,20
+2019,3,AP Top 25,USC,24
+2019,3,AP Top 25,Auburn,8
+2019,3,AP Top 25,LSU,4
+2019,3,AP Top 25,Utah,11
+2019,3,AP Top 25,Alabama,2
+2019,3,AP Top 25,Texas A&M,16
+2019,3,AP Top 25,Ohio State,6
+2019,3,AP Top 25,Michigan State,18
+2019,3,AP Top 25,Maryland,21
+2019,3,AP Top 25,Michigan,10
+2019,3,AP Top 25,Penn State,13
+2019,3,AP Top 25,Wisconsin,14
+2019,3,AP Top 25,Iowa,19
+2019,3,AP Top 25,Texas,12
+2019,3,AP Top 25,Oklahoma,5
+2019,3,AP Top 25,Notre Dame,7
+2019,3,AP Top 25,UCF,17
+2019,3,AP Top 25,Clemson,1
+2019,3,AP Top 25,Virginia,25
+2019,3,AP Top 25,Boise State,22
+2019,2,AP Top 25,Georgia,3
+2019,2,AP Top 25,Florida,11
+2019,2,AP Top 25,Iowa State,25
+2019,2,AP Top 25,Oregon,16
+2019,2,AP Top 25,Stanford,23
+2019,2,AP Top 25,Washington,14
+2019,2,AP Top 25,Washington State,22
+2019,2,AP Top 25,Auburn,10
+2019,2,AP Top 25,LSU,6
+2019,2,AP Top 25,Utah,13
+2019,2,AP Top 25,Alabama,2
+2019,2,AP Top 25,Texas A&M,12
+2019,2,AP Top 25,Ohio State,5
+2019,2,AP Top 25,Michigan State,19
+2019,2,AP Top 25,Michigan,7
+2019,2,AP Top 25,Penn State,15
+2019,2,AP Top 25,Wisconsin,17
+2019,2,AP Top 25,Nebraska,25
+2019,2,AP Top 25,Iowa,20
+2019,2,AP Top 25,Texas,9
+2019,2,AP Top 25,Oklahoma,4
+2019,2,AP Top 25,Notre Dame,8
+2019,2,AP Top 25,UCF,18
+2019,2,AP Top 25,Clemson,1
+2019,2,AP Top 25,Syracuse,21
+2019,2,AP Top 25,Boise State,24
+2019,1,AP Top 25,Georgia,3
+2019,1,AP Top 25,Florida,8
+2019,1,AP Top 25,Iowa State,21
+2019,1,AP Top 25,Oregon,11
+2019,1,AP Top 25,Stanford,25
+2019,1,AP Top 25,Washington,13
+2019,1,AP Top 25,Washington State,23
+2019,1,AP Top 25,Auburn,16
+2019,1,AP Top 25,LSU,6
+2019,1,AP Top 25,Utah,14
+2019,1,AP Top 25,Alabama,2
+2019,1,AP Top 25,Texas A&M,12
+2019,1,AP Top 25,Ohio State,5
+2019,1,AP Top 25,Michigan State,18
+2019,1,AP Top 25,Michigan,7
+2019,1,AP Top 25,Penn State,15
+2019,1,AP Top 25,Wisconsin,19
+2019,1,AP Top 25,Nebraska,24
+2019,1,AP Top 25,Iowa,20
+2019,1,AP Top 25,Texas,10
+2019,1,AP Top 25,Oklahoma,4
+2019,1,AP Top 25,Notre Dame,9
+2019,1,AP Top 25,UCF,17
+2019,1,AP Top 25,Clemson,1
+2019,1,AP Top 25,Syracuse,22
+2019,11,Playoff Committee Rankings,Georgia,6
+2019,11,Playoff Committee Rankings,Florida,10
+2019,11,Playoff Committee Rankings,Oklahoma State,23
+2019,11,Playoff Committee Rankings,Kansas State,16
+2019,11,Playoff Committee Rankings,Baylor,12
+2019,11,Playoff Committee Rankings,Oregon,7
+2019,11,Playoff Committee Rankings,Auburn,11
+2019,11,Playoff Committee Rankings,LSU,2
+2019,11,Playoff Committee Rankings,Utah,8
+2019,11,Playoff Committee Rankings,Alabama,3
+2019,11,Playoff Committee Rankings,Ohio State,1
+2019,11,Playoff Committee Rankings,Michigan,14
+2019,11,Playoff Committee Rankings,Penn State,4
+2019,11,Playoff Committee Rankings,Wisconsin,13
+2019,11,Playoff Committee Rankings,Minnesota,17
+2019,11,Playoff Committee Rankings,Iowa,18
+2019,11,Playoff Committee Rankings,Oklahoma,9
+2019,11,Playoff Committee Rankings,Notre Dame,15
+2019,11,Playoff Committee Rankings,Cincinnati,20
+2019,11,Playoff Committee Rankings,Navy,24
+2019,11,Playoff Committee Rankings,Memphis,21
+2019,11,Playoff Committee Rankings,SMU,25
+2019,11,Playoff Committee Rankings,Clemson,5
+2019,11,Playoff Committee Rankings,Wake Forest,19
+2019,11,Playoff Committee Rankings,Boise State,22
+2019,11,AP Top 25,Georgia,6
+2019,11,AP Top 25,Florida,10
+2019,11,AP Top 25,Kansas State,20
+2019,11,AP Top 25,Baylor,11
+2019,11,AP Top 25,Oregon,7
+2019,11,AP Top 25,Auburn,12
+2019,11,AP Top 25,LSU,1
+2019,11,AP Top 25,Utah,8
+2019,11,AP Top 25,Alabama,2
+2019,11,AP Top 25,Ohio State,3
+2019,11,AP Top 25,Michigan,14
+2019,11,AP Top 25,Penn State,5
+2019,11,AP Top 25,Wisconsin,16
+2019,11,AP Top 25,Minnesota,13
+2019,11,AP Top 25,Iowa,18
+2019,11,AP Top 25,Oklahoma,9
+2019,11,AP Top 25,Notre Dame,15
+2019,11,AP Top 25,Cincinnati,17
+2019,11,AP Top 25,Navy,25
+2019,11,AP Top 25,Memphis,19
+2019,11,AP Top 25,SMU,23
+2019,11,AP Top 25,Clemson,4
+2019,11,AP Top 25,Wake Forest,22
+2019,11,AP Top 25,Boise State,21
+2019,11,AP Top 25,San Diego State,24
+2019,10,AP Top 25,Georgia,8
+2019,10,AP Top 25,Florida,6
+2019,10,AP Top 25,Kansas State,22
+2019,10,AP Top 25,Baylor,12
+2019,10,AP Top 25,Oregon,7
+2019,10,AP Top 25,Auburn,11
+2019,10,AP Top 25,LSU,1
+2019,10,AP Top 25,Utah,9
+2019,10,AP Top 25,Alabama,2
+2019,10,AP Top 25,Ohio State,3
+2019,10,AP Top 25,Michigan,14
+2019,10,AP Top 25,Penn State,5
+2019,10,AP Top 25,Wisconsin,18
+2019,10,AP Top 25,Minnesota,13
+2019,10,AP Top 25,Iowa,19
+2019,10,AP Top 25,Oklahoma,10
+2019,10,AP Top 25,Notre Dame,16
+2019,10,AP Top 25,App State,20
+2019,10,AP Top 25,Cincinnati,17
+2019,10,AP Top 25,Memphis,24
+2019,10,AP Top 25,SMU,15
+2019,10,AP Top 25,Clemson,4
+2019,10,AP Top 25,Wake Forest,23
+2019,10,AP Top 25,Boise State,21
+2019,10,AP Top 25,San Diego State,25
+2019,9,AP Top 25,Georgia,10
+2019,9,AP Top 25,Florida,7
+2019,9,AP Top 25,Baylor,14
+2019,9,AP Top 25,Iowa State,23
+2019,9,AP Top 25,Oregon,11
+2019,9,AP Top 25,Auburn,9
+2019,9,AP Top 25,LSU,2
+2019,9,AP Top 25,Utah,12
+2019,9,AP Top 25,Arizona State,24
+2019,9,AP Top 25,Alabama,1
+2019,9,AP Top 25,Ohio State,3
+2019,9,AP Top 25,Michigan,19
+2019,9,AP Top 25,Penn State,6
+2019,9,AP Top 25,Wisconsin,13
+2019,9,AP Top 25,Minnesota,17
+2019,9,AP Top 25,Iowa,20
+2019,9,AP Top 25,Texas,15
+2019,9,AP Top 25,Oklahoma,5
+2019,9,AP Top 25,Notre Dame,8
+2019,9,AP Top 25,App State,21
+2019,9,AP Top 25,Cincinnati,18
+2019,9,AP Top 25,SMU,16
+2019,9,AP Top 25,Clemson,4
+2019,9,AP Top 25,Wake Forest,25
+2019,9,AP Top 25,Boise State,22
+2019,8,AP Top 25,Georgia,10
+2019,8,AP Top 25,Florida,9
+2019,8,AP Top 25,Baylor,18
+2019,8,AP Top 25,Oregon,12
+2019,8,AP Top 25,Washington,25
+2019,8,AP Top 25,Auburn,11
+2019,8,AP Top 25,LSU,2
+2019,8,AP Top 25,Utah,13
+2019,8,AP Top 25,Arizona State,17
+2019,8,AP Top 25,Alabama,1
+2019,8,AP Top 25,Missouri,22
+2019,8,AP Top 25,Ohio State,4
+2019,8,AP Top 25,Michigan,16
+2019,8,AP Top 25,Penn State,7
+2019,8,AP Top 25,Wisconsin,6
+2019,8,AP Top 25,Minnesota,20
+2019,8,AP Top 25,Iowa,23
+2019,8,AP Top 25,Texas,15
+2019,8,AP Top 25,Oklahoma,5
+2019,8,AP Top 25,Notre Dame,8
+2019,8,AP Top 25,App State,24
+2019,8,AP Top 25,Cincinnati,21
+2019,8,AP Top 25,SMU,19
+2019,8,AP Top 25,Clemson,3
+2019,8,AP Top 25,Boise State,14
