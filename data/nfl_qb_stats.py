@@ -68,12 +68,16 @@ def fetch_qb_weekly(seasons: list) -> pd.DataFrame:
     raw = pd.concat(per_season, ignore_index=True)
     raw = raw[raw["season_type"] == "REG"].copy()
 
+    # Schema notes (nflreadpy's new player_stats vs archived nfl_data_py):
+    #   recent_team    → team
+    #   interceptions  → passing_interceptions
+    # Everything else keeps its old name.
     qbs = raw[
         (raw["position"] == "QB") & (raw["attempts"] >= MIN_ATTEMPTS)
-    ][["player_name", "recent_team", "season", "week",
+    ][["player_name", "team", "season", "week",
        "completions", "attempts", "passing_yards",
-       "passing_tds", "interceptions", "passing_epa"]].copy()
-    qbs = qbs.rename(columns={"recent_team": "team"})
+       "passing_tds", "passing_interceptions", "passing_epa"]].copy()
+    qbs = qbs.rename(columns={"passing_interceptions": "interceptions"})
 
     # One starter row per team/week — highest attempts
     qbs = qbs.sort_values("attempts", ascending=False)
