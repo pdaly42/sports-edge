@@ -188,6 +188,58 @@ def select_features(df: pd.DataFrame) -> list[str]:
     return [c for c in df.columns if any(c.startswith(p) for p in FEATURE_PATTERNS)]
 
 
+def compute_recency_weights(df: pd.DataFrame, current_year: int | None = None,
+                             week_col: str = "week") -> np.ndarray:
+    """
+    Per-sample training weights that emphasize the current and most-recent
+    completed seasons over older data. Reflects the reality that roster
+    turnover, coaching changes, and rule tweaks make older games less
+    representative of the current environment.
+
+    Weighting scheme:
+      • Current season   → 2.0  (or 0.75 if fewer than 4 weeks played yet,
+                                   so a tiny in-season sample doesn't
+                                   overwhelm the model)
+      • Prior season     → 1.0  (1.5 during early current-season)
+      • 2 seasons back   → 0.5  (1.0 during early current-season)
+      • Older            → 0.25 (safety net for anything else that leaks in)
+
+    The early-season boost effectively acts as a mild Bayesian prior:
+    when the current season has almost no data, the prior season carries
+    the model. As the current season fills in (Week 4+), it takes over.
+    """
+    weights = np.ones(len(df), dtype=float)
+    if "season" not in df.columns:
+        return weights
+
+    if current_year is None:
+        current_year = int(df["season"].max())
+
+    seasons = df["season"].values
+    current_mask = seasons == current_year
+    weeks_current = 0
+    if current_mask.any() and week_col in df.columns:
+        wk = df.loc[current_mask, week_col].max()
+        try:
+            weeks_current = int(wk) if pd.notna(wk) else 0
+        except (TypeError, ValueError):
+            weeks_current = 0
+    early_season = weeks_current < 4
+
+    for s in np.unique(seasons):
+        mask = seasons == s
+        if s == current_year:
+            weights[mask] = 0.75 if early_season else 2.0
+        elif s == current_year - 1:
+            weights[mask] = 1.5 if early_season else 1.0
+        elif s == current_year - 2:
+            weights[mask] = 1.0 if early_season else 0.5
+        else:
+            weights[mask] = 0.25
+
+    return weights
+
+
 def _print_calibration_diagnostics(y_true: np.ndarray, probs_raw: np.ndarray,
                                    probs_cal: np.ndarray) -> None:
     """Print per-decile calibration table: predicted prob vs actual win rate."""
@@ -217,6 +269,7 @@ def train(
     target: str = "home_win",
     sport: str = "nba",
     model_type: str = "xgb",
+    apply_recency_weights: bool = False,
 ) -> dict:
     """
     Train a calibrated model using chronological train/calibration split.
@@ -227,6 +280,13 @@ def train(
          calibration layer never sees training data, preventing over-extreme
          out-of-sample probabilities.
       3. Run time-series CV on the training split to report fold metrics.
+
+    apply_recency_weights: if True, per-sample weights derived from
+      compute_recency_weights() are passed to XGBoost .fit() so recent
+      seasons carry more weight than older ones. Combined with the caller
+      limiting the training window to the last ~3 seasons, this makes the
+      model track roster/coaching turnover rather than averaging across
+      a decade of stale data.
     """
     df = df.dropna(subset=[target]).copy()
     feature_cols = select_features(df)
@@ -236,10 +296,22 @@ def train(
     X = df[feature_cols].values
     y = df[target].values
 
+    # Compute sample weights aligned to df rows (post-sort, post-dropna)
+    if apply_recency_weights:
+        weights_all = compute_recency_weights(df)
+        if "season" in df.columns:
+            by_season = (df.assign(_w=weights_all)
+                           .groupby("season")["_w"].first().sort_index())
+            wt_summary = ", ".join(f"{int(s)}:{w:.2f}" for s, w in by_season.items())
+            print(f"  Recency weights by season: {wt_summary}")
+    else:
+        weights_all = np.ones(len(df))
+
     # Chronological 80/20 split for calibration
     split = int(len(df) * 0.80)
     X_train_all, X_cal = X[:split], X[split:]
     y_train_all, y_cal = y[:split], y[split:]
+    w_train_all       = weights_all[:split]
 
     print(f"  Training set: {len(X_train_all)} games | Calibration set: {len(X_cal)} games")
 
@@ -250,6 +322,7 @@ def train(
     for fold, (tr_idx, val_idx) in enumerate(tscv.split(X_train_all)):
         X_tr, X_val = X_train_all[tr_idx], X_train_all[val_idx]
         y_tr, y_val = y_train_all[tr_idx], y_train_all[val_idx]
+        w_tr        = w_train_all[tr_idx]
 
         scaler = StandardScaler()
         X_tr_s  = scaler.fit_transform(X_tr)
@@ -257,13 +330,15 @@ def train(
 
         if model_type == "logistic":
             base = LogisticRegression(C=1.0, max_iter=1000)
+            fit_kwargs = {"sample_weight": w_tr} if apply_recency_weights else {}
         else:
             base = XGBClassifier(
                 n_estimators=300, max_depth=4, learning_rate=0.05,
                 subsample=0.8, colsample_bytree=0.8,
                 eval_metric="logloss", verbosity=0,
             )
-        base.fit(X_tr_s, y_tr)
+            fit_kwargs = {"sample_weight": w_tr} if apply_recency_weights else {}
+        base.fit(X_tr_s, y_tr, **fit_kwargs)
         probs = base.predict_proba(X_val_s)[:, 1]
 
         metrics["brier"].append(brier_score_loss(y_val, probs))
@@ -289,7 +364,8 @@ def train(
             n_estimators=300, max_depth=4, learning_rate=0.05,
             subsample=0.8, colsample_bytree=0.8, verbosity=0,
         )
-    base_final.fit(X_train_s, y_train_all)
+    final_fit_kwargs = {"sample_weight": w_train_all} if apply_recency_weights else {}
+    base_final.fit(X_train_s, y_train_all, **final_fit_kwargs)
 
     # ── Calibrate on the held-out 20% using Platt sigmoid ─────────────────
     # sklearn ≥1.4 removed cv='prefit'; replicate manually: fit a LogisticRegression
@@ -325,6 +401,7 @@ def train_regression(
     target: str = "total_points",
     sport: str = "nfl",
     model_name: str = "totals",
+    apply_recency_weights: bool = False,
 ) -> dict:
     """
     Train an XGBoost regression model to predict total points scored.
@@ -335,6 +412,8 @@ def train_regression(
       3. Store residual RMSE from the held-out set — used at inference time to
          convert a point-total prediction into P(over) / P(under) via a normal
          CDF, giving calibrated probabilities without needing historical lines.
+
+    apply_recency_weights: see train() docstring — same semantics.
     """
     df = df.dropna(subset=[target]).copy()
     feature_cols = select_totals_features(df)
@@ -344,9 +423,15 @@ def train_regression(
     X = df[feature_cols].values
     y = df[target].values
 
+    if apply_recency_weights:
+        weights_all = compute_recency_weights(df)
+    else:
+        weights_all = np.ones(len(df))
+
     split = int(len(df) * 0.80)
     X_train_all, X_cal = X[:split], X[split:]
     y_train_all, y_cal = y[:split], y[split:]
+    w_train_all       = weights_all[:split]
 
     print(f"  Training set: {len(X_train_all)} games | Eval set: {len(X_cal)} games")
 
@@ -355,6 +440,7 @@ def train_regression(
     for fold, (tr_idx, val_idx) in enumerate(tscv.split(X_train_all)):
         X_tr, X_val = X_train_all[tr_idx], X_train_all[val_idx]
         y_tr, y_val = y_train_all[tr_idx], y_train_all[val_idx]
+        w_tr        = w_train_all[tr_idx]
 
         scaler = StandardScaler()
         X_tr_s  = scaler.fit_transform(X_tr)
@@ -364,7 +450,8 @@ def train_regression(
             n_estimators=300, max_depth=4, learning_rate=0.05,
             subsample=0.8, colsample_bytree=0.8, verbosity=0,
         )
-        m.fit(X_tr_s, y_tr)
+        fit_kwargs = {"sample_weight": w_tr} if apply_recency_weights else {}
+        m.fit(X_tr_s, y_tr, **fit_kwargs)
         preds = m.predict(X_val_s)
         mae = mean_absolute_error(y_val, preds)
         fold_maes.append(mae)
@@ -381,7 +468,8 @@ def train_regression(
         n_estimators=300, max_depth=4, learning_rate=0.05,
         subsample=0.8, colsample_bytree=0.8, verbosity=0,
     )
-    model_final.fit(X_train_s, y_train_all)
+    final_fit_kwargs = {"sample_weight": w_train_all} if apply_recency_weights else {}
+    model_final.fit(X_train_s, y_train_all, **final_fit_kwargs)
 
     cal_preds = model_final.predict(X_cal_s)
     residuals = y_cal - cal_preds
