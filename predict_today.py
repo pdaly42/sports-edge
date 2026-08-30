@@ -730,7 +730,7 @@ def predict_mlb(api_key: str, target_date: str) -> list:
 # NFL
 # ─────────────────────────────────────────────────────────────
 
-# nfl_data_py uses 2-3 letter abbreviations; map from the-odds-api full names
+# nflreadpy uses 2-3 letter abbreviations; map from the-odds-api full names
 NFL_TEAM_MAP = {
     "Arizona Cardinals":   "ARI", "Atlanta Falcons":      "ATL",
     "Baltimore Ravens":    "BAL", "Buffalo Bills":        "BUF",
@@ -801,12 +801,12 @@ def _get_nfl_current_week(target_date: str) -> tuple[int, int]:
     Falls back to current calendar year and week 1 if not determinable.
     """
     try:
-        import nfl_data_py as nfl
+        import nflreadpy as nfl   # successor to archived nfl_data_py
         target_dt = pd.to_datetime(target_date)
         current_year = target_dt.year
         # NFL season year: regular season runs Sep–Jan, so Jan belongs to prior season
         season = current_year if target_dt.month >= 8 else current_year - 1
-        sched = nfl.import_schedules([season])
+        sched = nfl.load_schedules(seasons=[season]).to_pandas()
         sched = sched[sched["game_type"] == "REG"].copy()
         sched["gameday"] = pd.to_datetime(sched["gameday"])
         # Find the week whose games are closest to target_date

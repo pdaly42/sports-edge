@@ -1,5 +1,5 @@
 """
-Fetch NFL game results via nfl_data_py (wraps nflfastR data, free, no API key).
+Fetch NFL game results via nflreadpy (wraps nflfastR data, free, no API key).
 Saves raw data to data/raw/nfl/ and returns engineered matchup DataFrames.
 
 Game data columns used: season, game_id, gameday, home_team, away_team,
@@ -13,7 +13,7 @@ from datetime import datetime
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 from pathlib import Path
-import nfl_data_py as nfl
+import nflreadpy as nfl   # migrated from archived nfl_data_py, Sept 2025
 
 from config.settings import RAW_DIR
 from utils.features import rolling_avg, days_rest
@@ -41,7 +41,9 @@ def fetch_season_games(seasons: list) -> pd.DataFrame:
         return df
 
     print(f"  Fetching NFL games {min(seasons)}-{max(seasons)} via nfl_data_py...")
-    raw = nfl.import_schedules(seasons)
+    # nflreadpy returns polars; convert at the boundary so all downstream code
+    # can keep using pandas operations. seasons= is the same list-of-int shape.
+    raw = nfl.load_schedules(seasons=seasons).to_pandas()
 
     # Keep only completed regular-season games
     raw = raw[raw["game_type"] == "REG"].copy()

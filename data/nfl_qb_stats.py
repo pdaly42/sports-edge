@@ -1,5 +1,5 @@
 """
-NFL QB stats via nfl_data_py.
+NFL QB stats via nflreadpy (successor to archived nfl_data_py).
 
 Identifies the starter each week (QB with most attempts) and computes
 rolling performance metrics used as features in the prediction model.
@@ -19,7 +19,7 @@ import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 from pathlib import Path
-import nfl_data_py as nfl
+import nflreadpy as nfl   # migrated from archived nfl_data_py, Sept 2025
 
 from config.settings import RAW_DIR
 
@@ -52,7 +52,11 @@ def fetch_qb_weekly(seasons: list) -> pd.DataFrame:
         return pd.read_csv(cache_path)
 
     print(f"  Fetching QB weekly stats {min(seasons)}-{max(seasons)}...")
-    raw = nfl.import_weekly_data(seasons)
+    # nflreadpy's player_stats replaces nfl_data_py's weekly_data. Same shape
+    # (one row per player per week) but under a new nflverse-data release
+    # path that actually publishes 2025/2026 (the archived nfl_data_py hit
+    # dead URLs). Convert polars → pandas at the boundary.
+    raw = nfl.load_player_stats(seasons=seasons, summary_level="week").to_pandas()
     raw = raw[raw["season_type"] == "REG"].copy()
 
     qbs = raw[

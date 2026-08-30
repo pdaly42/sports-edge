@@ -25,7 +25,7 @@ import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 from pathlib import Path
-import nfl_data_py as nfl
+import nflreadpy as nfl   # migrated from archived nfl_data_py, Sept 2025
 
 from config.settings import RAW_DIR
 
@@ -108,7 +108,7 @@ def fetch_injury_reports(seasons: list) -> pd.DataFrame:
         return pd.read_csv(cache_path)
 
     print(f"  Fetching injury reports {min(seasons)}-{max(seasons)}...")
-    raw = nfl.import_injuries(seasons)
+    raw = nfl.load_injuries(seasons=seasons).to_pandas()
     cols = ["season", "week", "team", "full_name", "position", "report_status"]
     df = raw[cols].dropna(subset=["report_status"]).copy()
     # Keep only statuses we have multipliers for

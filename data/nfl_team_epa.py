@@ -21,7 +21,7 @@ import sys, os
 sys.path.insert(0, os.path.join(os.path.dirname(__file__), '..'))
 
 from pathlib import Path
-import nfl_data_py as nfl
+import nflreadpy as nfl   # migrated from archived nfl_data_py, Sept 2025
 
 from config.settings import RAW_DIR
 
@@ -47,9 +47,12 @@ def fetch_team_epa_weekly(seasons: list) -> pd.DataFrame:
         return pd.read_csv(cache_path)
 
     print(f"  Fetching NFL play-by-play {min(seasons)}-{max(seasons)} — this may take a minute...")
+    # nflreadpy's load_pbp always returns all columns; filter after the polars→pandas
+    # conversion. Column names match the old nfl_data_py schema for pbp.
     cols = ["season", "week", "season_type", "posteam", "defteam",
             "epa", "pass", "rush"]
-    pbp = nfl.import_pbp_data(seasons, columns=cols, downcast=True)
+    pbp = nfl.load_pbp(seasons=seasons).to_pandas()
+    pbp = pbp[[c for c in cols if c in pbp.columns]]
     pbp = pbp[pbp["season_type"] == "REG"].copy()
     pbp = pbp.dropna(subset=["posteam", "defteam", "epa"])
     # Only rush/pass plays — kicks, punts, penalties would dilute EPA
