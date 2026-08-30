@@ -108,7 +108,18 @@ def fetch_injury_reports(seasons: list) -> pd.DataFrame:
         return pd.read_csv(cache_path)
 
     print(f"  Fetching injury reports {min(seasons)}-{max(seasons)}...")
-    raw = nfl.load_injuries(seasons=seasons).to_pandas()
+    # Per-season fetch + skip on failure — nflreadpy raises "Season must be
+    # between 2009 and 2025" for 2026 (during preseason). Individual retries
+    # keep the training pipeline moving with whatever data is available.
+    frames = []
+    for s in seasons:
+        try:
+            frames.append(nfl.load_injuries(seasons=[s]).to_pandas())
+        except Exception as e:
+            print(f"    injuries {s} unavailable ({type(e).__name__}), skipping")
+    if not frames:
+        raise RuntimeError(f"No injury data available for any of {seasons}")
+    raw = pd.concat(frames, ignore_index=True)
     cols = ["season", "week", "team", "full_name", "position", "report_status"]
     df = raw[cols].dropna(subset=["report_status"]).copy()
     # Keep only statuses we have multipliers for

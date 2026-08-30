@@ -54,9 +54,18 @@ def fetch_qb_weekly(seasons: list) -> pd.DataFrame:
     print(f"  Fetching QB weekly stats {min(seasons)}-{max(seasons)}...")
     # nflreadpy's player_stats replaces nfl_data_py's weekly_data. Same shape
     # (one row per player per week) but under a new nflverse-data release
-    # path that actually publishes 2025/2026 (the archived nfl_data_py hit
-    # dead URLs). Convert polars → pandas at the boundary.
-    raw = nfl.load_player_stats(seasons=seasons, summary_level="week").to_pandas()
+    # path. Fetch per-season and skip any year that 404s (typically the
+    # current calendar year during preseason before Week 1 data lands) so
+    # a single missing year doesn't kill the whole training pipeline.
+    per_season = []
+    for s in seasons:
+        try:
+            per_season.append(nfl.load_player_stats(seasons=[s], summary_level="week").to_pandas())
+        except Exception as e:
+            print(f"    QB weekly {s} unavailable ({type(e).__name__}), skipping")
+    if not per_season:
+        raise RuntimeError(f"No QB weekly data available for any of {seasons}")
+    raw = pd.concat(per_season, ignore_index=True)
     raw = raw[raw["season_type"] == "REG"].copy()
 
     qbs = raw[

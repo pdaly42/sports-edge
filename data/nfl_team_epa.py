@@ -47,11 +47,21 @@ def fetch_team_epa_weekly(seasons: list) -> pd.DataFrame:
         return pd.read_csv(cache_path)
 
     print(f"  Fetching NFL play-by-play {min(seasons)}-{max(seasons)} — this may take a minute...")
-    # nflreadpy's load_pbp always returns all columns; filter after the polars→pandas
-    # conversion. Column names match the old nfl_data_py schema for pbp.
+    # Per-season fetch + skip on failure so a single missing year (typically
+    # the current calendar year during preseason before Week 1 pbp lands, or
+    # nflreadpy's ValueError "Season must be between 1999 and 2025") doesn't
+    # kill the entire training set.
     cols = ["season", "week", "season_type", "posteam", "defteam",
             "epa", "pass", "rush"]
-    pbp = nfl.load_pbp(seasons=seasons).to_pandas()
+    frames = []
+    for s in seasons:
+        try:
+            frames.append(nfl.load_pbp(seasons=[s]).to_pandas())
+        except Exception as e:
+            print(f"    pbp {s} unavailable ({type(e).__name__}), skipping")
+    if not frames:
+        raise RuntimeError(f"No pbp data available for any of {seasons}")
+    pbp = pd.concat(frames, ignore_index=True)
     pbp = pbp[[c for c in cols if c in pbp.columns]]
     pbp = pbp[pbp["season_type"] == "REG"].copy()
     pbp = pbp.dropna(subset=["posteam", "defteam", "epa"])
