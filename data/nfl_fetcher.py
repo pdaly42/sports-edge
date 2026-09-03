@@ -349,13 +349,56 @@ def build_matchup_features(seasons: list = None, include_qb: bool = True,
 
 
 def get_current_team_stats(seasons: list = None) -> pd.DataFrame:
-    """Most recent rolling stats for every team — used for live predictions."""
+    """
+    Most recent rolling stats for every team — used for live predictions.
+
+    Primary source: nflreadpy schedule → per-team-per-game log → rolling window
+    averages. Works fine mid-season once a few games have been played.
+
+    Fallback (Phase 2): during preseason and Week 1, no completed regular-season
+    games exist yet, so the rolling averages come out NaN or reflect only stale
+    prior-season data. When that happens we splice in ESPN's live season-to-date
+    per-team totals as a proxy for the rolling window averages. Same shape, so
+    predict_nfl doesn't need to know which source it's reading from.
+    """
     if seasons is None:
         current_year = pd.Timestamp.now().year
         # NFL season spans two calendar years; use recent seasons
         seasons = list(range(current_year - 4, current_year + 1))
     log = build_team_game_log(seasons)
     latest = log.sort_values("date").groupby("team").last().reset_index()
+
+    # ── ESPN live fallback (Phase 2) ──────────────────────────────────────
+    # If the newest game in our per-team log is from a prior season (i.e., we
+    # have no current-season data yet), splice in ESPN's season-to-date team
+    # totals as a proxy so the model has a live signal to work with.
+    try:
+        current_year_nfl = pd.Timestamp.now().year
+        latest_season = int(latest["season"].max()) if not latest.empty else 0
+        if latest_season < current_year_nfl:
+            print(f"  Team log's most recent season is {latest_season} "
+                  f"< current year {current_year_nfl}; splicing in ESPN totals")
+            from data.nfl_espn_stats import get_current_espn_team_stats
+            espn = get_current_espn_team_stats(current_year_nfl)
+            if not espn.empty:
+                # Fill the rolling-average columns with ESPN's season totals as a
+                # proxy — same shape (points/gm), just computed over the full
+                # season instead of a rolling window. Downstream code sees no
+                # difference.
+                latest = latest.merge(espn[["team", "espn_pts_for_avg"]],
+                                      on="team", how="left")
+                for w in [4, 8, 16]:
+                    col = f"pts_for_avg_{w}g"
+                    if col in latest.columns:
+                        latest[col] = latest[col].fillna(latest["espn_pts_for_avg"])
+                # Note: ESPN's endpoint doesn't cleanly expose pts_against per game,
+                # so those columns keep their prior-season fallback values. We
+                # accept that gap for v1 — it's still an improvement over having
+                # nothing at all for the current season.
+                latest = latest.drop(columns=["espn_pts_for_avg"])
+    except Exception as e:
+        print(f"  ESPN fallback failed (non-fatal): {type(e).__name__}: {e}")
+
     return latest
 
 
