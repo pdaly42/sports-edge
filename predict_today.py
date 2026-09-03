@@ -866,7 +866,9 @@ def predict_nfl(api_key: str, target_date: str) -> list:
         epa_roll_cols = [c for c in epa_stats.columns if any(
             c.startswith(p) for p in
             ["off_epa_per_play_", "def_epa_per_play_",
-             "off_pass_epa_per_play_", "off_rush_epa_per_play_"]
+             "off_pass_epa_per_play_", "off_rush_epa_per_play_",
+             # Phase 4: opp-adjusted rolling windows
+             "off_epa_oadj_per_play_", "def_epa_oadj_per_play_"]
         )]
     except Exception as e:
         print(f"  Team EPA unavailable: {e}")

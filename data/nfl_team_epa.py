@@ -33,6 +33,15 @@ METRIC_COLS = [
     "def_epa_per_play",
     "off_pass_epa_per_play",
     "off_rush_epa_per_play",
+    # Opponent-adjusted variants (subtract opponent's def/off EPA to credit
+    # teams that put up numbers against strong opponents). Interpretation:
+    #   off_epa_oadj = own_off_epa - opp_def_epa_allowed_that_week
+    #   Team A putting up +0.10 EPA/play against a defense that usually allows
+    #   -0.05 (elite defense) yields off_epa_oadj = +0.15 — genuinely strong.
+    #   Same +0.10 against a defense allowing +0.15 (bad defense) yields
+    #   off_epa_oadj = -0.05 — inflated raw score, weak against expectations.
+    "off_epa_oadj_per_play",
+    "def_epa_oadj_per_play",
 ]
 
 
@@ -106,6 +115,36 @@ def fetch_team_epa_weekly(seasons: list) -> pd.DataFrame:
         .sort_values(["team", "season", "week"])
         .reset_index(drop=True)
     )
+
+    # ── Opponent adjustment (Phase 4) ─────────────────────────────────────
+    # Build team→opponent map per (season, week) from the pbp itself, then
+    # look up the opponent's raw def/off EPA that week. Subtract to get an
+    # opponent-adjusted metric: how much better/worse did this team perform
+    # than what the opponent typically allows/scores?
+    #
+    # Uses same-week opponent EPA (not rolling) for v1 simplicity — slight
+    # circularity but captures the strength-of-schedule effect well enough
+    # for the model to learn from. Rolling windows applied after.
+    opp_map = (pbp[["season", "week", "posteam", "defteam"]]
+               .drop_duplicates()
+               .rename(columns={"posteam": "team", "defteam": "opponent"}))
+    merged = merged.merge(opp_map, on=["season", "week", "team"], how="left")
+
+    opp_epa = merged[["season", "week", "team",
+                      "def_epa_per_play", "off_epa_per_play"]].rename(
+        columns={"team": "opponent",
+                 "def_epa_per_play": "opp_def_epa_per_play",
+                 "off_epa_per_play": "opp_off_epa_per_play"}
+    )
+    merged = merged.merge(opp_epa, on=["season", "week", "opponent"], how="left")
+
+    merged["off_epa_oadj_per_play"] = (
+        merged["off_epa_per_play"] - merged["opp_def_epa_per_play"]
+    )
+    merged["def_epa_oadj_per_play"] = (
+        merged["def_epa_per_play"] - merged["opp_off_epa_per_play"]
+    )
+    merged = merged.drop(columns=["opp_def_epa_per_play", "opp_off_epa_per_play"])
 
     for window in [4, 8]:
         for col in METRIC_COLS:

@@ -117,6 +117,13 @@ FEATURE_PATTERNS = [
     "def_epa_per_play_",
     "off_pass_epa_per_play_",
     "off_rush_epa_per_play_",
+    # Phase 4: opponent-adjusted EPA (strength-of-schedule aware)
+    "home_off_epa_oadj_per_play_",
+    "away_off_epa_oadj_per_play_",
+    "home_def_epa_oadj_per_play_",
+    "away_def_epa_oadj_per_play_",
+    "off_epa_oadj_per_play_",   # diffs
+    "def_epa_oadj_per_play_",
     # NFL weather / venue (used mainly by totals but also mild signal for winners)
     "is_dome",
     "wind_mph",
@@ -167,6 +174,8 @@ TOTALS_FEATURE_PATTERNS = [
     "combined_def_epa_per_play_",
     "combined_off_pass_epa_per_play_",
     "combined_off_rush_epa_per_play_",
+    "combined_off_epa_oadj_per_play_",   # Phase 4: opp-adjusted
+    "combined_def_epa_oadj_per_play_",
     "home_off_epa_per_play_",
     "away_off_epa_per_play_",
     "home_def_epa_per_play_",
