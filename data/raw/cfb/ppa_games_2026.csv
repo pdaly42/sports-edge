@@ -1,3 +1,17 @@
 season,week,team,opponent,cfb_off_epa_per_play,cfb_off_pass_epa,cfb_off_rush_epa,cfb_def_epa_per_play
+2026,1,Eastern Michigan,Sacramento State,0.06,0.28,-0.23,-0.08
+2026,1,Florida State,New Mexico State,0.29,0.38,0.33,0.16
+2026,1,Hawai'i,Stanford,0.05,0.14,-0.08,0.33
+2026,1,Jacksonville State,North Dakota State,-0.32,-0.33,-0.3,0.22
+2026,1,Memphis,UNLV,0.29,0.41,0.19,0.09
+2026,1,NC State,Virginia,-0.14,-0.08,-0.21,0.27
+2026,1,New Mexico State,Florida State,0.16,0.41,-0.07,0.29
 2026,1,North Carolina,TCU,0.11,0.27,-0.09,-0.05
+2026,1,North Dakota State,Jacksonville State,0.22,0.41,0.11,-0.32
+2026,1,Sacramento State,Eastern Michigan,-0.08,-0.08,-0.05,0.06
+2026,1,San José State,USC,0.22,0.32,0.07,0.39
+2026,1,Stanford,Hawai'i,0.33,0.42,0.22,0.05
 2026,1,TCU,North Carolina,-0.05,0.02,-0.03,0.11
+2026,1,UNLV,Memphis,0.09,0.07,0.19,0.29
+2026,1,USC,San José State,0.39,0.39,0.39,0.22
+2026,1,Virginia,NC State,0.27,0.86,0.19,-0.14

@@ -1,0 +1,215 @@
+{
+  "generated_at": "2026-09-03T16:50:58.058019+00:00",
+  "date": "2026-09-03",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "f857ea6771bf681398b05379f108f0c5",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-03T16:37:00Z",
+      "home_team": "Pittsburgh Pirates",
+      "away_team": "San Francisco Giants",
+      "home_odds": -220,
+      "away_odds": 176,
+      "spread": {
+        "point": -1.5,
+        "price": -102
+      },
+      "total": {
+        "line": 8.5,
+        "over": -102,
+        "under": -130
+      },
+      "model_home_prob": 0.5345,
+      "model_away_prob": 0.4655,
+      "home_no_vig_prob": 0.6549,
+      "away_no_vig_prob": 0.3451,
+      "home_edge": -0.1204,
+      "away_edge": 0.1204,
+      "home_ev": -0.2225,
+      "away_ev": 0.2848,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0405,
+      "best_bet": {
+        "side": "away",
+        "team": "San Francisco Giants",
+        "odds": 176,
+        "edge": 0.1204,
+        "ev": 0.2848,
+        "strength": "strong"
+      },
+      "home_pitcher": "Lake Bachar",
+      "away_pitcher": "Blade Tidwell",
+      "justification": "San Francisco Giants are 6-4 in their last 10 (Pittsburgh Pirates 5-5); season records 58-82 vs 68-72. San Francisco Giants's avg run differential is +0.1 vs Pittsburgh Pirates's +0.9 over the last 10 games. Model prices San Francisco Giants at 46.5% \u2014 a +12.0% edge over the market line."
+    },
+    {
+      "id": "e956df5f498f78f522f5b8656f304df4",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-03T17:10:00Z",
+      "home_team": "Cleveland Guardians",
+      "away_team": "Toronto Blue Jays",
+      "home_odds": -108,
+      "away_odds": -108,
+      "spread": {
+        "point": 1.5,
+        "price": -185
+      },
+      "total": {
+        "line": 7.5,
+        "over": -119,
+        "under": -102
+      },
+      "model_home_prob": 0.5592,
+      "model_away_prob": 0.4408,
+      "home_no_vig_prob": 0.5,
+      "away_no_vig_prob": 0.5,
+      "home_edge": 0.0592,
+      "away_edge": -0.0592,
+      "home_ev": 0.077,
+      "away_ev": -0.1511,
+      "home_kelly": 0.0208,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Tanner Bibee",
+      "away_pitcher": "Jos\u00e9 Soriano"
+    },
+    {
+      "id": "e3f232afa3f72858e94154eb4e526488",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-03T18:10:00Z",
+      "home_team": "Houston Astros",
+      "away_team": "Chicago White Sox",
+      "home_odds": -156,
+      "away_odds": 138,
+      "spread": {
+        "point": -1.5,
+        "price": 133
+      },
+      "total": {
+        "line": 8.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.6406,
+      "model_away_prob": 0.3594,
+      "home_no_vig_prob": 0.5919,
+      "away_no_vig_prob": 0.4081,
+      "home_edge": 0.0487,
+      "away_edge": -0.0487,
+      "home_ev": 0.0512,
+      "away_ev": -0.1446,
+      "home_kelly": 0.02,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Hunter Brown",
+      "away_pitcher": "Luis Castillo"
+    },
+    {
+      "id": "b27b102032634f4f3dc542889c7d62e9",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-03T23:15:00Z",
+      "home_team": "Baltimore Orioles",
+      "away_team": "Boston Red Sox",
+      "home_odds": 108,
+      "away_odds": -125,
+      "spread": {
+        "point": 1.5,
+        "price": -160
+      },
+      "total": {
+        "line": 8.5,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.515,
+      "model_away_prob": 0.485,
+      "home_no_vig_prob": 0.4639,
+      "away_no_vig_prob": 0.5361,
+      "home_edge": 0.0511,
+      "away_edge": -0.0511,
+      "home_ev": 0.0712,
+      "away_ev": -0.127,
+      "home_kelly": 0.0165,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Brandon Young",
+      "away_pitcher": "Jake Bennett"
+    },
+    {
+      "id": "c3d5e91757e67f6c08706b0970a77f89",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-03T23:15:00Z",
+      "home_team": "Chicago Cubs",
+      "away_team": "Milwaukee Brewers",
+      "home_odds": -102,
+      "away_odds": -115,
+      "spread": {
+        "point": 1.5,
+        "price": -180
+      },
+      "total": {
+        "line": 8.5,
+        "over": -105,
+        "under": -114
+      },
+      "model_home_prob": 0.4348,
+      "model_away_prob": 0.5652,
+      "home_no_vig_prob": 0.4856,
+      "away_no_vig_prob": 0.5144,
+      "home_edge": -0.0508,
+      "away_edge": 0.0508,
+      "home_ev": -0.1389,
+      "away_ev": 0.0567,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0163,
+      "best_bet": null,
+      "home_pitcher": "Kevin Gausman",
+      "away_pitcher": "Logan Henderson"
+    },
+    {
+      "id": "d64025a75ea543bf8f87ab2a697704d8",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-03T23:40:00Z",
+      "home_team": "Kansas City Royals",
+      "away_team": "Miami Marlins",
+      "home_odds": -116,
+      "away_odds": -102,
+      "spread": {
+        "point": 1.5,
+        "price": -185
+      },
+      "total": {
+        "line": 9.0,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.6109,
+      "model_away_prob": 0.3891,
+      "home_no_vig_prob": 0.5154,
+      "away_no_vig_prob": 0.4846,
+      "home_edge": 0.0955,
+      "away_edge": -0.0955,
+      "home_ev": 0.1375,
+      "away_ev": -0.2294,
+      "home_kelly": 0.0399,
+      "away_kelly": 0.0,
+      "best_bet": {
+        "side": "home",
+        "team": "Kansas City Royals",
+        "odds": -116,
+        "edge": 0.0955,
+        "ev": 0.1375,
+        "strength": "moderate"
+      },
+      "home_pitcher": "Michael Wacha",
+      "away_pitcher": "Sandy Alcantara",
+      "justification": "Kansas City Royals are 6-4 in their last 10 (Miami Marlins 5-5); season records 62-78 vs 71-69. Kansas City Royals's avg run differential is +1.7 vs Miami Marlins's +0.6 over the last 10 games. Model prices Kansas City Royals at 61.1% \u2014 a +9.6% edge over the market line."
+    }
+  ]
+}
