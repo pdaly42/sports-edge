@@ -51,11 +51,17 @@ jobs:
           ODDS_API_KEY: ${{ secrets.ODDS_API_KEY }}
           CFBD_API_KEY: ${{ secrets.CFBD_API_KEY }}
 
+      - name: Log completed pick results
+        # Scans the last 60 days of predictions_*.json, resolves any newly-
+        # completed picks against ESPN scores, appends to results_log.csv.
+        # Idempotent — re-running is safe.
+        run: python3 scripts/log_pick_results.py
+
       - name: Commit predictions
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add predictions_*.json data/raw/
+          git add predictions_*.json data/raw/ results_log.csv
           git diff --staged --quiet || git commit -m "predictions: $(date -u '+%Y-%m-%d %H:%M') UTC"
           git stash
           git pull --rebase origin main

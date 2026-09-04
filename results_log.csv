@@ -1,0 +1,115 @@
+date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team_or_line,odds,edge,ev,strength,model_prob,outcome,pnl_units,logged_at
+2026-07-06,baseball_mlb,8708f0b1ad493caa280c8d963be2dc0b,New York Yankees,Tampa Bay Rays,5,1,ml,away,New York Yankees,-106,0.1005,0.1583,moderate,0.596,win,1.06,2026-09-04T00:28:20
+2026-07-06,baseball_mlb,e5295ada7ac0d16be6bf67d6a4a2923b,Milwaukee Brewers,St. Louis Cardinals,4,3,ml,away,Milwaukee Brewers,-108,0.1597,0.2705,strong,0.6597,win,1.08,2026-09-04T00:28:20
+2026-07-06,soccer_fifa_world_cup,16ed3adcf661b3a9bea39871a2d204df,Spain,Portugal,1,0,ml,draw,Draw,240,0.1245,0.3755,strong,0.3651,loss,-1.0,2026-09-04T00:28:20
+2026-07-07,baseball_mlb,6611ecd500747b1f1aebe1ea49f9d00a,Milwaukee Brewers,St. Louis Cardinals,10,2,ml,home,St. Louis Cardinals,184,0.194,0.5214,strong,0.5357,loss,-1.0,2026-09-04T00:28:21
+2026-07-07,baseball_mlb,fa63ecda3e7fe4b049c7e9cfd633f461,Boston Red Sox,Chicago White Sox,8,1,ml,away,Boston Red Sox,-124,0.1194,0.1782,moderate,0.6522,win,1.24,2026-09-04T00:28:21
+2026-07-08,baseball_mlb,f30eb3060b32a01dced2737d2398b918,Atlanta Braves,Pittsburgh Pirates,3,0,ml,away,Atlanta Braves,102,0.098,0.1629,moderate,0.5757,win,1.02,2026-09-04T00:28:21
+2026-07-08,baseball_mlb,f69a7dce841f22ee977afebfd8dfc142,Cleveland Guardians,Minnesota Twins,5,6,ml,away,Cleveland Guardians,102,0.0884,0.1397,moderate,0.5642,loss,-1.0,2026-09-04T00:28:21
+2026-07-09,baseball_mlb,2b3ca3496277938aa74f87f24a2c064c,Atlanta Braves,Pittsburgh Pirates,10,5,ml,home,Pittsburgh Pirates,310,0.1728,0.8208,strong,0.4441,loss,-1.0,2026-09-04T00:28:21
+2026-07-09,baseball_mlb,4690bcfaacd780fc44c057a6a7a4cc46,Kansas City Royals,New York Mets,3,7,ml,away,Kansas City Royals,138,0.1328,0.2816,strong,0.5385,loss,-1.0,2026-09-04T00:28:21
+2026-07-09,baseball_mlb,673121d56b103f8d38738980fbffafef,Athletics,Detroit Tigers,1,4,ml,home,Detroit Tigers,-125,0.1381,0.2179,strong,0.6766,win,1.25,2026-09-04T00:28:21
+2026-07-10,baseball_mlb,e1b31472ec00cc3475d077ee22298ef8,Cleveland Guardians,Miami Marlins,3,2,ml,away,Cleveland Guardians,102,0.1214,0.2063,strong,0.5972,win,1.02,2026-09-04T00:28:21
+2026-07-10,baseball_mlb,781ce9e5ac0cd1e3339085c1fb7d7b39,Seattle Mariners,Tampa Bay Rays,2,7,ml,home,Tampa Bay Rays,-116,0.1537,0.2506,strong,0.6716,win,1.16,2026-09-04T00:28:21
+2026-07-10,baseball_mlb,76ab48541c0690199e815574c469d162,Boston Red Sox,New York Mets,6,2,ml,away,Boston Red Sox,125,0.1778,0.3698,strong,0.6088,win,1.25,2026-09-04T00:28:21
+2026-07-11,baseball_mlb,93986de15fc102a4875daaf7e6250f9e,New York Yankees,Washington Nationals,4,2,ml,home,Washington Nationals,168,0.248,0.6284,strong,0.6076,loss,-1.0,2026-09-04T00:28:21
+2026-07-11,baseball_mlb,ba8bc57255560c92ff44bf4ac63a4fd9,Philadelphia Phillies,Detroit Tigers,4,2,ml,home,Detroit Tigers,120,0.183,0.3629,strong,0.6195,loss,-1.0,2026-09-04T00:28:21
+2026-07-12,baseball_mlb,a154d97ebad5a9a06417fe7578e7402f,Seattle Mariners,Tampa Bay Rays,8,2,ml,away,Seattle Mariners,130,0.1924,0.4214,strong,0.618,win,1.3,2026-09-04T00:28:22
+2026-07-12,baseball_mlb,161be820330ad3e3e7e2ab5b0add2ff4,Athletics,Chicago White Sox,1,9,ml,away,Athletics,125,0.1555,0.3165,strong,0.5851,loss,-1.0,2026-09-04T00:28:22
+2026-07-12,baseball_mlb,40ac03ae2d2b1dc11d41ced3f411f478,Arizona Diamondbacks,Los Angeles Dodgers,5,3,ml,away,Arizona Diamondbacks,188,0.2753,0.7548,strong,0.6093,win,1.88,2026-09-04T00:28:22
+2026-07-14,soccer_fifa_world_cup,f9aa13a662d1658e5a02cfc06d6a2d73,Spain,France,2,0,ml,away,Spain,210,0.1267,0.3251,strong,0.4275,win,2.1,2026-09-04T00:28:22
+2026-07-15,soccer_fifa_world_cup,ced22494ae0bbb8cc4f7108bf6f493df,Argentina,England,2,1,ml,home,England,165,0.1208,0.267,strong,0.4781,loss,-1.0,2026-09-04T00:28:22
+2026-07-16,baseball_mlb,7ad2e88701ead09625333188a5b653b2,New York Mets,Philadelphia Phillies,4,1,ml,away,New York Mets,110,0.0942,0.1582,moderate,0.5515,win,1.1,2026-09-04T00:28:22
+2026-07-17,baseball_mlb,43706fff6ae5bb5201b9add3c0945034,Tampa Bay Rays,Boston Red Sox,3,5,ml,home,Boston Red Sox,-116,0.1638,0.2694,strong,0.6817,win,1.16,2026-09-04T00:28:22
+2026-07-17,baseball_mlb,f20d3f5cf3efbb324f11686e68db809c,Los Angeles Dodgers,New York Yankees,2,1,ml,home,New York Yankees,-105,0.1556,0.2733,strong,0.6522,loss,-1.0,2026-09-04T00:28:22
+2026-07-17,baseball_mlb,9d0976062d4e6d31f94ff2c8b3baff89,Tampa Bay Rays,Boston Red Sox,3,5,ml,home,Boston Red Sox,-116,0.1638,0.2694,strong,0.6817,win,1.16,2026-09-04T00:28:22
+2026-07-18,baseball_mlb,2c17f198c2dcc5320275ab58c867035c,Chicago White Sox,Toronto Blue Jays,0,1,ml,away,Chicago White Sox,-105,0.202,0.3639,strong,0.6986,loss,-1.0,2026-09-04T00:28:23
+2026-07-18,baseball_mlb,698618fc0740b4cfa7a19834f721993e,Tampa Bay Rays,Boston Red Sox,6,7,ml,home,Boston Red Sox,-109,0.1881,0.3259,strong,0.6915,win,1.09,2026-09-04T00:28:23
+2026-07-18,soccer_fifa_world_cup,7a49e7985534a5ff3428740d0b630fd7,England,France,6,4,ml,draw,Draw,290,0.1167,0.3909,strong,0.1941,loss,-1.0,2026-09-04T00:28:23
+2026-07-19,baseball_mlb,d1c0cc729b8385c5637b14364ae82ab3,Cincinnati Reds,Colorado Rockies,9,6,ml,home,Colorado Rockies,141,0.2,0.4472,strong,0.6005,loss,-1.0,2026-09-04T00:28:23
+2026-07-19,baseball_mlb,4a351bac7c9d35b346c76736bd88b1de,St. Louis Cardinals,Arizona Diamondbacks,7,8,ml,home,Arizona Diamondbacks,-126,0.1142,0.168,moderate,0.6512,win,1.26,2026-09-04T00:28:23
+2026-07-20,baseball_mlb,f237d860c80df8632a4717d53fee1c25,Tampa Bay Rays,Toronto Blue Jays,7,1,ml,away,Tampa Bay Rays,140,0.1484,0.3198,strong,0.5499,win,1.4,2026-09-04T00:28:23
+2026-07-20,baseball_mlb,c9a69923caed0afdda9fd6b94171b189,San Francisco Giants,Kansas City Royals,3,4,ml,home,Kansas City Royals,-114,0.1075,0.1655,moderate,0.6209,win,1.14,2026-09-04T00:28:23
+2026-07-21,baseball_mlb,aac7942aa7683280dcbfe7dcfc16d44e,New York Mets,Milwaukee Brewers,4,0,ml,away,New York Mets,114,0.1481,0.2784,strong,0.5974,win,1.14,2026-09-04T00:28:23
+2026-07-22,baseball_mlb,fcc83e954b9e74964b190cb0e29366c7,Washington Nationals,Colorado Rockies,8,0,ml,home,Colorado Rockies,120,0.1513,0.2995,strong,0.5907,loss,-1.0,2026-09-04T00:28:23
+2026-07-22,baseball_mlb,fe2c8918c10c47fffd27be962809d726,Athletics,Arizona Diamondbacks,5,15,ml,away,Athletics,115,0.1195,0.2274,moderate,0.5709,loss,-1.0,2026-09-04T00:28:23
+2026-07-22,baseball_mlb,b6df72e0280eb235fcca22cc3d3fc1ab,Tampa Bay Rays,Toronto Blue Jays,4,2,ml,home,Toronto Blue Jays,-108,0.1494,0.2507,strong,0.6494,loss,-1.0,2026-09-04T00:28:23
+2026-07-23,baseball_mlb,22fc220be6958e93fba4354054d8fd16,San Diego Padres,Atlanta Braves,5,6,ml,home,Atlanta Braves,154,0.2282,0.5568,strong,0.6129,win,1.54,2026-09-04T00:28:24
+2026-07-23,baseball_mlb,8e2411581a27c6dccd9eae0b233fe64c,Arizona Diamondbacks,St. Louis Cardinals,10,6,ml,home,St. Louis Cardinals,-120,0.1199,0.1898,moderate,0.649,loss,-1.0,2026-09-04T00:28:24
+2026-07-24,baseball_mlb,12a8e27a29d44d46e10583c9c875e5f5,Arizona Diamondbacks,Washington Nationals,3,2,ml,away,Arizona Diamondbacks,-124,0.139,0.2136,strong,0.6718,win,1.24,2026-09-04T00:28:24
+2026-07-24,baseball_mlb,5859ce305cb0ae65e5e7f771db28dcdd,New York Yankees,Philadelphia Phillies,1,0,ml,away,New York Yankees,118,0.1325,0.2585,strong,0.5773,win,1.18,2026-09-04T00:28:24
+2026-07-25,baseball_mlb,fbf7e1c3dc649ffbc76604f37419e3d8,Los Angeles Angels,San Francisco Giants,2,9,ml,home,San Francisco Giants,-125,0.1489,0.233,strong,0.685,win,1.25,2026-09-04T00:28:24
+2026-07-25,baseball_mlb,ebada13102ac78459b266ff9c6e9d207,New York Yankees,Philadelphia Phillies,3,1,ml,home,Philadelphia Phillies,108,0.0843,0.1403,moderate,0.5482,loss,-1.0,2026-09-04T00:28:24
+2026-07-25,baseball_mlb,6b50126f3d5d20aaeb5339572c025bf3,Cleveland Guardians,Tampa Bay Rays,0,3,ml,home,Tampa Bay Rays,-120,0.1456,0.2326,strong,0.6723,win,1.2,2026-09-04T00:28:24
+2026-07-26,baseball_mlb,714c1847e9003da34be408b74dca72e3,Arizona Diamondbacks,Washington Nationals,7,10,ml,away,Arizona Diamondbacks,-115,0.1629,0.2709,strong,0.6798,loss,-1.0,2026-09-04T00:28:24
+2026-07-26,baseball_mlb,b61e67dbd760d186d865cc2ff013a7c0,Houston Astros,Chicago White Sox,3,12,ml,home,Chicago White Sox,-110,0.1289,0.2113,strong,0.6345,win,1.1,2026-09-04T00:28:24
+2026-07-27,baseball_mlb,01c25573da43dfef2b25036b3d865245,Baltimore Orioles,Detroit Tigers,8,5,ml,home,Detroit Tigers,-118,0.1393,0.2177,strong,0.6591,loss,-1.0,2026-09-04T00:28:24
+2026-07-27,baseball_mlb,5f31d0e2c7e8dbd68ea839d172d9fd00,Atlanta Braves,New York Mets,3,14,ml,home,New York Mets,-106,0.2024,0.3584,strong,0.699,win,1.06,2026-09-04T00:28:24
+2026-07-27,baseball_mlb,8f968dc825f43310933db311e1e61a6c,Chicago Cubs,St. Louis Cardinals,7,3,ml,home,St. Louis Cardinals,105,0.1324,0.2353,strong,0.6026,loss,-1.0,2026-09-04T00:28:24
+2026-07-28,baseball_mlb,9ad4c06c6c9f5cf366798cada970f547,Philadelphia Phillies,Miami Marlins,0,1,ml,home,Miami Marlins,-110,0.1371,0.2384,strong,0.6487,win,1.1,2026-09-04T00:28:24
+2026-07-28,baseball_mlb,c869940458363d7a7eafe0d2a6de32b7,Cleveland Guardians,Cincinnati Reds,0,2,ml,home,Cincinnati Reds,110,0.1133,0.2071,moderate,0.5748,win,1.1,2026-09-04T00:28:24
+2026-07-28,baseball_mlb,6fb81f375a5fc10737ecb85381f1ac0b,New York Yankees,Chicago White Sox,3,2,ml,home,Chicago White Sox,106,0.1486,0.2762,strong,0.6195,loss,-1.0,2026-09-04T00:28:24
+2026-07-29,baseball_mlb,90886b82a7992a92d8826ca80ba69be0,Philadelphia Phillies,Miami Marlins,6,8,ml,home,Miami Marlins,750,0.2603,2.173,strong,0.3733,win,7.5,2026-09-04T00:28:24
+2026-07-29,baseball_mlb,0eb6629148e96e8af74128cc11ba2b37,New York Yankees,Chicago White Sox,5,6,ml,home,Chicago White Sox,125,0.1632,0.3307,strong,0.5914,win,1.25,2026-09-04T00:28:24
+2026-07-29,baseball_mlb,8550a2048d2b7f67231d7180079f8ddd,Kansas City Royals,Minnesota Twins,4,0,ml,away,Kansas City Royals,168,0.2606,0.6603,strong,0.6195,win,1.68,2026-09-04T00:28:24
+2026-07-30,baseball_mlb,c4f54051354f3d027c0f1cabfc630e52,New York Yankees,Chicago White Sox,1,2,ml,home,Chicago White Sox,-110,0.1611,0.2797,strong,0.6703,win,1.1,2026-09-04T00:28:25
+2026-07-30,baseball_mlb,690922fd97ed105a96d9b06ae8cf9a56,Pittsburgh Pirates,Cincinnati Reds,2,3,ml,away,Pittsburgh Pirates,-112,0.0808,0.1162,moderate,0.5897,loss,-1.0,2026-09-04T00:28:25
+2026-07-31,baseball_mlb,df9eba7a564b0b80a2a4fbd790388ee4,Philadelphia Phillies,Baltimore Orioles,4,6,ml,away,Philadelphia Phillies,102,0.0926,0.1643,moderate,0.5764,loss,-1.0,2026-09-04T00:28:25
+2026-07-31,baseball_mlb,8b3666056a3b2912d05e6a2ef95a35f8,Chicago White Sox,Tampa Bay Rays,6,1,ml,home,Tampa Bay Rays,-132,0.1206,0.1929,strong,0.6787,loss,-1.0,2026-09-04T00:28:25
+2026-08-01,baseball_mlb,84746342d2944e433747b81eda041fa8,Miami Marlins,New York Mets,6,2,ml,home,New York Mets,-128,0.1318,0.2191,strong,0.6844,loss,-1.0,2026-09-04T00:28:25
+2026-08-01,baseball_mlb,4cf22ff99815959994e2c4f8662d97bf,Pittsburgh Pirates,Cincinnati Reds,4,1,ml,home,Cincinnati Reds,106,0.1039,0.1921,moderate,0.5787,loss,-1.0,2026-09-04T00:28:25
+2026-08-01,baseball_mlb,1a1c1a4c350d1fb71d29920db55c19f5,New York Yankees,Chicago Cubs,2,5,ml,away,New York Yankees,102,0.1731,0.3312,strong,0.659,loss,-1.0,2026-09-04T00:28:25
+2026-08-02,baseball_mlb,2ee28b25d57aa155a35d9706065b4963,St. Louis Cardinals,Toronto Blue Jays,5,1,ml,away,St. Louis Cardinals,116,0.1373,0.2766,strong,0.591,win,1.16,2026-09-04T00:28:25
+2026-08-02,baseball_mlb,c77232b741072d22e3c49926ff91c383,Kansas City Royals,Colorado Rockies,1,8,ml,away,Kansas City Royals,110,0.1822,0.3614,strong,0.6483,loss,-1.0,2026-09-04T00:28:25
+2026-08-02,baseball_mlb,9075e1d97a68d5244fa70607c57e266e,Boston Red Sox,Los Angeles Dodgers,8,4,ml,away,Boston Red Sox,158,0.2319,0.5787,strong,0.6119,win,1.58,2026-09-04T00:28:25
+2026-08-03,baseball_mlb,d5f05941c82f5ea7de7ee32d879c0d59,Washington Nationals,Philadelphia Phillies,3,6,ml,away,Washington Nationals,144,0.1065,0.241,moderate,0.5086,loss,-1.0,2026-09-04T00:28:25
+2026-08-04,baseball_mlb,fadc6a3080af39afc5de586f3e2945a3,Los Angeles Angels,Baltimore Orioles,1,3,ml,home,Baltimore Orioles,-148,0.0862,0.1277,moderate,0.673,win,1.48,2026-09-04T00:28:25
+2026-08-04,baseball_mlb,9c77a3a4edfe3bf897bbe0330b1edbb7,Minnesota Twins,Kansas City Royals,2,8,ml,home,Kansas City Royals,131,0.1705,0.3779,strong,0.5965,win,1.31,2026-09-04T00:28:25
+2026-08-05,baseball_mlb,6eed9689ad215fe5673360260ee19300,New York Mets,Cleveland Guardians,6,5,ml,away,New York Mets,103,0.0874,0.1656,moderate,0.5742,win,1.03,2026-09-04T00:28:25
+2026-08-05,baseball_mlb,abfd6c313f05e6a63db17ff99a71c76b,Washington Nationals,Philadelphia Phillies,10,4,ml,away,Washington Nationals,174,0.1313,0.3448,strong,0.4908,win,1.74,2026-09-04T00:28:25
+2026-08-05,baseball_mlb,fbdb4a62358d122e0acbb41bc889d778,Minnesota Twins,Kansas City Royals,1,2,ml,home,Kansas City Royals,-113,0.1024,0.1773,moderate,0.6246,win,1.13,2026-09-04T00:28:25
+2026-08-07,baseball_mlb,cad05e7cd27dfc1bc5a8301e34d64c33,Cleveland Guardians,Chicago White Sox,8,2,ml,away,Cleveland Guardians,-138,0.0964,0.1536,moderate,0.6689,win,1.38,2026-09-04T00:28:25
+2026-08-08,baseball_mlb,60f49a7e49d759fbf523ceb66bc321c7,Los Angeles Angels,Miami Marlins,0,7,ml,away,Los Angeles Angels,142,0.1069,0.2536,moderate,0.518,loss,-1.0,2026-09-04T00:28:26
+2026-08-09,baseball_mlb,d9bb4855e4ed5d8ae038db62356ed74f,Chicago Cubs,Kansas City Royals,10,2,ml,home,Kansas City Royals,147,0.1116,0.2646,moderate,0.512,loss,-1.0,2026-09-04T00:28:26
+2026-08-09,baseball_mlb,9e78ca8707c1e5012ccd30c142e37a40,Detroit Tigers,San Francisco Giants,3,1,ml,away,Detroit Tigers,-116,0.1033,0.1815,moderate,0.6345,win,1.16,2026-09-04T00:28:26
+2026-08-09,baseball_mlb,87469e2153fb7260dafc6c43a4ebee53,Los Angeles Dodgers,Arizona Diamondbacks,2,4,ml,home,Arizona Diamondbacks,132,0.144,0.3182,strong,0.5682,win,1.32,2026-09-04T00:28:26
+2026-08-10,baseball_mlb,4a90a077ddd83a66ffc796851a64a7ac,New York Mets,Atlanta Braves,8,5,ml,away,New York Mets,132,0.1052,0.2298,moderate,0.5301,win,1.32,2026-09-04T00:28:26
+2026-08-10,baseball_mlb,c255384aa44923f4efbe8a468688481e,Philadelphia Phillies,St. Louis Cardinals,6,5,ml,home,St. Louis Cardinals,107,0.1309,0.2555,strong,0.6065,loss,-1.0,2026-09-04T00:28:26
+2026-08-11,baseball_mlb,9032dbaaa6088fc03938418d3939db3c,Chicago Cubs,Washington Nationals,8,6,ml,home,Washington Nationals,148,0.1265,0.2968,strong,0.5229,loss,-1.0,2026-09-04T00:28:26
+2026-08-12,baseball_mlb,99d0aa9944cae60f4cd020c7b883b0e9,Philadelphia Phillies,St. Louis Cardinals,1,7,ml,home,St. Louis Cardinals,151,0.1115,0.2663,moderate,0.5045,win,1.51,2026-09-04T00:28:26
+2026-08-12,baseball_mlb,ef65849259f26e9d34360ce6755ee236,Chicago Cubs,Washington Nationals,12,6,ml,home,Washington Nationals,148,0.1482,0.358,strong,0.5476,loss,-1.0,2026-09-04T00:28:26
+2026-08-12,baseball_mlb,19261384ae25b556afee649a8ebe7008,New York Mets,Atlanta Braves,3,6,ml,away,New York Mets,161,0.2422,0.6169,strong,0.6195,loss,-1.0,2026-09-04T00:28:26
+2026-08-16,baseball_mlb,5284155e4abb961e855f8786e8ad3d51,Arizona Diamondbacks,Atlanta Braves,3,5,ml,away,Arizona Diamondbacks,115,0.1004,0.1976,moderate,0.557,loss,-1.0,2026-09-04T00:28:26
+2026-08-16,baseball_mlb,4ac1d4b9642e9093871c7d439602a459,St. Louis Cardinals,Chicago Cubs,11,4,ml,away,St. Louis Cardinals,162,0.1788,0.452,strong,0.5542,win,1.62,2026-09-04T00:28:26
+2026-08-16,baseball_mlb,4e61a59acf88cd455b2de1e25f9e81e2,Milwaukee Brewers,Los Angeles Dodgers,6,2,ml,away,Milwaukee Brewers,166,0.1002,0.2545,moderate,0.4716,win,1.66,2026-09-04T00:28:26
+2026-08-17,baseball_mlb,d959d72a9bedf8bf352ced6c59eee454,Miami Marlins,Philadelphia Phillies,5,6,ml,away,Miami Marlins,225,0.1035,0.3205,moderate,0.4063,loss,-1.0,2026-09-04T00:28:26
+2026-08-17,baseball_mlb,35b8e20be878e657d78dad6bea7642dc,Arizona Diamondbacks,Boston Red Sox,1,11,ml,home,Boston Red Sox,-130,0.0854,0.1396,moderate,0.6441,win,1.3,2026-09-04T00:28:26
+2026-08-18,baseball_mlb,0dd445d18f48f0eb4d3bc0d4ee41011f,Detroit Tigers,Pittsburgh Pirates,1,4,ml,away,Detroit Tigers,134,0.1301,0.2938,strong,0.5529,loss,-1.0,2026-09-04T00:28:26
+2026-08-18,baseball_mlb,218c78582553292c5431be2af26fd240,San Diego Padres,New York Mets,5,2,ml,home,New York Mets,100,0.0808,0.1472,moderate,0.5736,loss,-1.0,2026-09-04T00:28:26
+2026-08-19,baseball_mlb,ebe3d5c684fd83932e02698e22564f7b,Atlanta Braves,Minnesota Twins,4,6,ml,home,Minnesota Twins,100,0.0817,0.149,moderate,0.5745,win,1.0,2026-09-04T00:28:27
+2026-08-19,baseball_mlb,6d6d28fd44922349f17b60e2eb9dc487,Miami Marlins,Philadelphia Phillies,1,4,ml,away,Miami Marlins,115,0.0809,0.1556,moderate,0.5375,loss,-1.0,2026-09-04T00:28:27
+2026-08-19,baseball_mlb,18f51290a26a4a37315eaba858f736c8,St. Louis Cardinals,Cincinnati Reds,4,5,ml,home,Cincinnati Reds,-140,0.1026,0.1618,moderate,0.6777,win,1.4,2026-09-04T00:28:27
+2026-08-23,baseball_mlb,401816641,St. Louis Cardinals,Philadelphia Phillies,4,6,ml,away,St. Louis Cardinals,200,0.1189,0.3401,moderate,0.4467,loss,-1.0,2026-09-04T00:28:27
+2026-08-23,baseball_mlb,401816646,Athletics,Houston Astros,7,6,ml,away,Athletics,163,0.1844,0.4673,strong,0.5579,win,1.63,2026-09-04T00:28:27
+2026-08-23,baseball_mlb,401816652,Cincinnati Reds,Arizona Diamondbacks,3,5,ml,away,Cincinnati Reds,131,0.1179,0.2564,moderate,0.5439,loss,-1.0,2026-09-04T00:28:27
+2026-08-24,baseball_mlb,e22d48c563e1729e04698e0cdbe8c548,Texas Rangers,Chicago White Sox,11,2,ml,away,Texas Rangers,120,0.1034,0.21,moderate,0.55,win,1.2,2026-09-04T00:28:27
+2026-08-25,baseball_mlb,187cbd24b1e45a99e9ecaf256baeb7c1,Houston Astros,New York Yankees,9,7,ml,home,New York Yankees,-138,0.0829,0.1303,moderate,0.6554,loss,-1.0,2026-09-04T00:28:27
+2026-08-25,baseball_mlb,587e76b251f060a951bfa47ee07cf6ac,Kansas City Royals,Toronto Blue Jays,5,3,ml,away,Kansas City Royals,116,0.0933,0.1852,moderate,0.5487,win,1.16,2026-09-04T00:28:27
+2026-08-26,baseball_mlb,191c7378e9557adead7c28fde0673a52,Chicago Cubs,Arizona Diamondbacks,0,2,ml,home,Arizona Diamondbacks,-102,0.0863,0.1564,moderate,0.5839,win,1.02,2026-09-04T00:28:27
+2026-08-27,baseball_mlb,401816700,Baltimore Orioles,St. Louis Cardinals,5,7,ml,home,St. Louis Cardinals,119,0.1596,0.3337,strong,0.609,win,1.19,2026-09-04T00:28:27
+2026-08-28,baseball_mlb,9c67e5d6aa08977aa9e9818a83cc6d79,Arizona Diamondbacks,San Francisco Giants,10,6,ml,home,San Francisco Giants,110,0.0915,0.1771,moderate,0.5605,loss,-1.0,2026-09-04T00:28:27
+2026-08-28,baseball_mlb,bb28f14c5f48561498ab3fabd1ebf47b,Los Angeles Dodgers,Detroit Tigers,2,1,ml,home,Detroit Tigers,180,0.1161,0.2869,moderate,0.4596,loss,-1.0,2026-09-04T00:28:27
+2026-08-28,baseball_mlb,1d34c8ba40aec1ca9cadb1ff7ef37e42,Miami Marlins,Washington Nationals,2,9,ml,away,Miami Marlins,-142,0.1131,0.1717,moderate,0.6875,loss,-1.0,2026-09-04T00:28:27
+2026-08-29,baseball_mlb,bf03cc7b1d68cf11be4a1b5a7f3aee73,Seattle Mariners,Toronto Blue Jays,3,4,ml,home,Toronto Blue Jays,145,0.1381,0.3384,strong,0.5463,win,1.45,2026-09-04T00:28:27
+2026-08-29,baseball_mlb,147cde54c2c64f6e17c1f5a1ec9fadf7,Arizona Diamondbacks,San Francisco Giants,2,7,ml,home,San Francisco Giants,110,0.0943,0.2354,moderate,0.5883,win,1.1,2026-09-04T00:28:27
+2026-08-29,baseball_mlb,03a0ddbd6b3c88cdb2490d592317291f,Boston Red Sox,New York Yankees,2,9,ml,away,Boston Red Sox,125,0.1506,0.3221,strong,0.5876,loss,-1.0,2026-09-04T00:28:27
+2026-08-30,baseball_mlb,e176f9d4e92b024e920cd73cf8ebbf44,Colorado Rockies,Atlanta Braves,2,3,ml,away,Colorado Rockies,220,0.1971,0.617,strong,0.5053,loss,-1.0,2026-09-04T00:28:28
+2026-08-30,baseball_mlb,75e7ebd9013ed49bf10e2b6864286236,Boston Red Sox,New York Yankees,1,16,ml,home,New York Yankees,132,0.0887,0.1899,moderate,0.5129,win,1.32,2026-09-04T00:28:28
+2026-08-30,baseball_mlb,fad352c2e9cdf4ad800e2693f20256b7,Cincinnati Reds,Chicago Cubs,7,5,ml,away,Cincinnati Reds,143,0.1644,0.3912,strong,0.5725,win,1.43,2026-09-04T00:28:28
+2026-08-31,baseball_mlb,07d39d9ad653030c4c89d9a08c4071f5,San Francisco Giants,Atlanta Braves,7,3,ml,away,San Francisco Giants,179,0.1564,0.4229,strong,0.51,win,1.79,2026-09-04T00:28:28
+2026-09-01,baseball_mlb,0d8e1807210d19a49240ad01d066fb7f,San Francisco Giants,Pittsburgh Pirates,12,13,ml,away,San Francisco Giants,150,0.1268,0.3005,strong,0.5202,loss,-1.0,2026-09-04T00:28:28
+2026-09-01,baseball_mlb,cc8fcec1e4ece9bdd8fbe14c96ef1f5e,Atlanta Braves,Washington Nationals,5,9,ml,home,Washington Nationals,158,0.2051,0.5121,strong,0.5861,win,1.58,2026-09-04T00:28:28
+2026-09-01,baseball_mlb,16c1ff66c09048a0d06a0b9a90a78d7d,Seattle Mariners,Boston Red Sox,9,6,ml,away,Seattle Mariners,108,0.121,0.2343,strong,0.5934,win,1.08,2026-09-04T00:28:28
+2026-09-02,baseball_mlb,fbeefe8aa3a2d5aefc1dccf34b4f3a13,San Diego Padres,Cincinnati Reds,3,7,ml,home,Cincinnati Reds,270,0.1567,0.5385,strong,0.4158,win,2.7,2026-09-04T00:28:28
+2026-09-02,baseball_mlb,2d7536dbc5a92a909f419ec55b9c6fb1,Baltimore Orioles,Colorado Rockies,5,6,ml,home,Colorado Rockies,138,0.1317,0.279,strong,0.5374,win,1.38,2026-09-04T00:28:28
+2026-09-02,baseball_mlb,a09e4cef3ad772a51e4f166de8ac96b8,Philadelphia Phillies,Arizona Diamondbacks,0,1,ml,home,Arizona Diamondbacks,112,0.1786,0.343,strong,0.6335,win,1.12,2026-09-04T00:28:28

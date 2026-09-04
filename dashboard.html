@@ -143,7 +143,7 @@
     /* ── Summary Bar ── */
     .summary-bar {
       display: grid;
-      grid-template-columns: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
       gap: 12px;
       margin-bottom: 24px;
     }
@@ -439,6 +439,11 @@
       <div class="summary-value" id="stat-record">—</div>
       <div class="summary-sub" id="stat-record-sub">model vs actual results</div>
     </div>
+    <div class="summary-card">
+      <div class="summary-label">Lifetime P/L (log)</div>
+      <div class="summary-value" id="stat-lifetime-pnl">—</div>
+      <div class="summary-sub" id="stat-lifetime-sub">1u per pick · from results_log.csv</div>
+    </div>
   </div>
 
   <!-- No-odds warning banner -->
@@ -553,6 +558,7 @@ window.addEventListener('DOMContentLoaded', () => {
   loadAllGames();
   loadModelPredictions();
   loadYesterdayResults();
+  loadLifetimeResults();
 
   document.getElementById('sport-select').addEventListener('change', e => {
     activeSport = e.target.value;
@@ -624,6 +630,49 @@ function shiftDay(delta) {
 // ─────────────────────────────────────────
 // Model predictions
 // ─────────────────────────────────────────
+// ─────────────────────────────────────────
+// Lifetime results (server-side CSV log)
+// ─────────────────────────────────────────
+async function loadLifetimeResults() {
+  const pnlEl = document.getElementById('stat-lifetime-pnl');
+  const subEl = document.getElementById('stat-lifetime-sub');
+  try {
+    const res = await fetch(`results_log.csv?t=${Date.now()}`);
+    if (!res.ok) return;
+    const text = await res.text();
+    const lines = text.trim().split('\n');
+    if (lines.length < 2) return;   // header only
+    const header = lines[0].split(',');
+    const idx = k => header.indexOf(k);
+    const iOutcome = idx('outcome'), iPnl = idx('pnl_units'), iSport = idx('sport');
+    let wins = 0, losses = 0, pushes = 0, pnl = 0;
+    const bySport = {};
+    for (let i = 1; i < lines.length; i++) {
+      const cells = lines[i].split(',');
+      const outcome = cells[iOutcome];
+      const p = parseFloat(cells[iPnl]) || 0;
+      const s = cells[iSport] || '?';
+      if (outcome === 'win') wins++;
+      else if (outcome === 'loss') losses++;
+      else if (outcome === 'push') pushes++;
+      pnl += p;
+      if (!bySport[s]) bySport[s] = { w:0, l:0, p:0, pnl:0 };
+      if (outcome === 'win') bySport[s].w++;
+      else if (outcome === 'loss') bySport[s].l++;
+      else if (outcome === 'push') bySport[s].p++;
+      bySport[s].pnl += p;
+    }
+    const resolved = wins + losses;
+    const roi = resolved > 0 ? (pnl / resolved * 100) : 0;
+    pnlEl.textContent = (pnl >= 0 ? '+' : '') + pnl.toFixed(1) + 'u';
+    pnlEl.style.color = pnl >= 0 ? 'var(--green)' : 'var(--red)';
+    subEl.textContent = `${wins}-${losses}` + (pushes ? `-${pushes}` : '') +
+                        ` · ${roi >= 0 ? '+' : ''}${roi.toFixed(1)}% ROI`;
+  } catch (e) {
+    // results_log.csv doesn't exist yet — that's fine, tile stays "—"
+  }
+}
+
 async function loadModelPredictions() {
   const dateStr = getViewDateISO();
   const url = `predictions_${dateStr}.json?t=${Date.now()}`;
