@@ -919,6 +919,38 @@ def predict_nfl(api_key: str, target_date: str) -> list:
     if data_notes:
         print(f"  Data-quality notes: {data_notes}")
 
+    # ── Phase 5a: real per-game weather from schedule ──────────────────────
+    # Load the current season's schedule once and look up each game's roof /
+    # temp / wind on demand. Falls back to the hard-coded defaults if the
+    # lookup misses. This replaces the previous behaviour where every outdoor
+    # game got wind=5, temp=65 regardless of the actual forecast.
+    game_weather_df = None
+    try:
+        import nflreadpy as _nfl
+        wx = _nfl.load_schedules(seasons=[season]).to_pandas()
+        keep_cols = [c for c in ["home_team", "away_team", "week", "roof", "temp", "wind"]
+                     if c in wx.columns]
+        game_weather_df = wx[keep_cols].copy()
+    except Exception as e:
+        print(f"  Schedule weather lookup unavailable: {type(e).__name__}: {e}")
+
+    def _lookup_game_weather(home_a: str, away_a: str) -> dict:
+        """Return {roof, temp, wind} for a specific game — empty dict if not found."""
+        if game_weather_df is None or game_weather_df.empty:
+            return {}
+        row = game_weather_df[
+            (game_weather_df["home_team"] == home_a) &
+            (game_weather_df["away_team"] == away_a)
+        ]
+        if row.empty:
+            return {}
+        r = row.iloc[0]
+        return {
+            "roof": r.get("roof") if "roof" in game_weather_df.columns else None,
+            "temp": r.get("temp") if "temp" in game_weather_df.columns else None,
+            "wind": r.get("wind") if "wind" in game_weather_df.columns else None,
+        }
+
     results = []
     for game in games:
         home_api  = game["home_team"]
@@ -981,13 +1013,35 @@ def predict_nfl(api_key: str, target_date: str) -> list:
                         feat[f"{c}_diff"]     = hv - av
                         feat[f"combined_{c}"] = hv + av
 
-                # Weather / venue — dome inferred from home team's stadium
-                is_dome = 1 if home_abbr in NFL_DOME_HOME_TEAMS else 0
-                feat["is_dome"]      = is_dome
-                feat["wind_mph"]     = 0.0 if is_dome else 5.0
-                feat["temp_f"]       = 72.0 if is_dome else 65.0
-                feat["is_high_wind"] = 0
-                feat["is_cold"]      = 0
+                # Weather / venue — real values from nflreadpy schedule when
+                # available, hardcoded defaults otherwise. Roof preference
+                # order: schedule value > NFL_DOME_HOME_TEAMS lookup > outdoors.
+                wx = _lookup_game_weather(home_abbr, away_abbr)
+                sched_roof = wx.get("roof")
+                if sched_roof and str(sched_roof) != "nan":
+                    is_dome = 1 if str(sched_roof).lower() in ("dome", "closed") else 0
+                else:
+                    is_dome = 1 if home_abbr in NFL_DOME_HOME_TEAMS else 0
+                feat["is_dome"] = is_dome
+
+                if is_dome:
+                    feat["wind_mph"] = 0.0
+                    feat["temp_f"]   = 72.0
+                else:
+                    sched_wind = wx.get("wind")
+                    sched_temp = wx.get("temp")
+                    try:
+                        feat["wind_mph"] = float(sched_wind) if sched_wind is not None \
+                            and not pd.isna(sched_wind) else 5.0
+                    except (TypeError, ValueError):
+                        feat["wind_mph"] = 5.0
+                    try:
+                        feat["temp_f"] = float(sched_temp) if sched_temp is not None \
+                            and not pd.isna(sched_temp) else 65.0
+                    except (TypeError, ValueError):
+                        feat["temp_f"] = 65.0
+                feat["is_high_wind"] = 1 if feat["wind_mph"] > 15 else 0
+                feat["is_cold"]      = 1 if feat["temp_f"] < 32 else 0
 
                 # Injury scores (0 if team not on report = healthy)
                 h_inj = injury_scores.get(home_abbr, {"injury_score": 0.0, "qb_injury_impact": 0.0})
