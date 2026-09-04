@@ -113,3 +113,4 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-09-02,baseball_mlb,fbeefe8aa3a2d5aefc1dccf34b4f3a13,San Diego Padres,Cincinnati Reds,3,7,ml,home,Cincinnati Reds,270,0.1567,0.5385,strong,0.4158,win,2.7,2026-09-04T00:28:28
 2026-09-02,baseball_mlb,2d7536dbc5a92a909f419ec55b9c6fb1,Baltimore Orioles,Colorado Rockies,5,6,ml,home,Colorado Rockies,138,0.1317,0.279,strong,0.5374,win,1.38,2026-09-04T00:28:28
 2026-09-02,baseball_mlb,a09e4cef3ad772a51e4f166de8ac96b8,Philadelphia Phillies,Arizona Diamondbacks,0,1,ml,home,Arizona Diamondbacks,112,0.1786,0.343,strong,0.6335,win,1.12,2026-09-04T00:28:28
+2026-09-03,baseball_mlb,d64025a75ea543bf8f87ab2a697704d8,Miami Marlins,Kansas City Royals,3,7,ml,home,Kansas City Royals,-116,0.0869,0.1375,moderate,0.6109,win,1.16,2026-09-04T16:42:20
