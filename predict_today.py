@@ -472,9 +472,20 @@ def build_game_prediction(game: dict, model_home_prob,
             best_edge = max(h_edge, a_edge)
             side = "home" if h_edge >= a_edge else "away"
             side_prob = prob_h if side == "home" else prob_a
-            # Require meaningful edge, cap model confidence, and reject implausibly large
-            # edges (>30%) which signal a model/data error rather than a real opportunity.
-            if best_edge >= 0.08 and side_prob <= 0.70 and best_edge <= 0.30:
+            # ── Best-bet gates ─────────────────────────────────────────────
+            # 1. Meaningful edge (≥8%) and not implausibly large (≤30%)
+            # 2. Model confidence not extreme (≤70%) — hedges against
+            #    over-extreme calibration on the favorite side
+            # 3. NEW: market's no-vig probability for both sides must fall in
+            #    [10%, 90%]. XGBoost + Platt-scaled classifiers can't
+            #    calibrate at the tails — the model floors around 13-15%
+            #    even for teams the sharp market prices at 2-3% (see the
+            #    Sept 2026 CFB slate: NIU +5000 vs Iowa priced 1.9%, model
+            #    said 14.1%, produced a fake +616% EV). Skipping picks at
+            #    market extremes eliminates that class of false positive.
+            market_extreme = h_nv < 0.10 or h_nv > 0.90
+            if best_edge >= 0.08 and side_prob <= 0.70 and best_edge <= 0.30 \
+                    and not market_extreme:
                 out["best_bet"] = {
                     "side":     side,
                     "team":     game["home_team"] if side == "home" else game["away_team"],
