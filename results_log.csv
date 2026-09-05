@@ -114,3 +114,6 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-09-02,baseball_mlb,2d7536dbc5a92a909f419ec55b9c6fb1,Baltimore Orioles,Colorado Rockies,5,6,ml,home,Colorado Rockies,138,0.1317,0.279,strong,0.5374,win,1.38,2026-09-04T00:28:28
 2026-09-02,baseball_mlb,a09e4cef3ad772a51e4f166de8ac96b8,Philadelphia Phillies,Arizona Diamondbacks,0,1,ml,home,Arizona Diamondbacks,112,0.1786,0.343,strong,0.6335,win,1.12,2026-09-04T00:28:28
 2026-09-03,baseball_mlb,d64025a75ea543bf8f87ab2a697704d8,Miami Marlins,Kansas City Royals,3,7,ml,home,Kansas City Royals,-116,0.0869,0.1375,moderate,0.6109,win,1.16,2026-09-04T16:42:20
+2026-09-04,baseball_mlb,062e69d482e7d6bf3c2d654eca93bd44,Detroit Tigers,Cleveland Guardians,3,4,ml,home,Cleveland Guardians,-130,0.1208,0.1739,strong,0.6635,win,1.3,2026-09-05T14:02:42
+2026-09-04,baseball_mlb,c3750e470b5141a39a1efd04ef2e7b25,Los Angeles Angels,Pittsburgh Pirates,0,1,ml,away,Los Angeles Angels,165,0.1589,0.383,strong,0.5219,loss,-1.0,2026-09-05T14:02:42
+2026-09-04,baseball_mlb,a78d8674e699409d8d881b105ba90acd,Detroit Tigers,Cleveland Guardians,3,4,ml,home,Cleveland Guardians,-138,0.1029,0.1443,moderate,0.6635,win,1.38,2026-09-05T14:02:42
