@@ -117,3 +117,5 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-09-04,baseball_mlb,062e69d482e7d6bf3c2d654eca93bd44,Detroit Tigers,Cleveland Guardians,3,4,ml,home,Cleveland Guardians,-130,0.1208,0.1739,strong,0.6635,win,1.3,2026-09-05T14:02:42
 2026-09-04,baseball_mlb,c3750e470b5141a39a1efd04ef2e7b25,Los Angeles Angels,Pittsburgh Pirates,0,1,ml,away,Los Angeles Angels,165,0.1589,0.383,strong,0.5219,loss,-1.0,2026-09-05T14:02:42
 2026-09-04,baseball_mlb,a78d8674e699409d8d881b105ba90acd,Detroit Tigers,Cleveland Guardians,3,4,ml,home,Cleveland Guardians,-138,0.1029,0.1443,moderate,0.6635,win,1.38,2026-09-05T14:02:42
+2026-09-05,baseball_mlb,335cdc2989ec57b83bd603b5beeb7fcc,Atlanta Braves,Philadelphia Phillies,2,4,ml,away,Atlanta Braves,140,0.1466,0.3154,strong,0.5481,loss,-1.0,2026-09-06T15:57:11
+2026-09-05,baseball_mlb,9744b17bfe52474717b2c23f7700752f,Milwaukee Brewers,Cincinnati Reds,3,5,ml,home,Cincinnati Reds,132,0.1034,0.2025,moderate,0.5183,win,1.32,2026-09-06T15:57:11
