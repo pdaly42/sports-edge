@@ -119,3 +119,6 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-09-04,baseball_mlb,a78d8674e699409d8d881b105ba90acd,Detroit Tigers,Cleveland Guardians,3,4,ml,home,Cleveland Guardians,-138,0.1029,0.1443,moderate,0.6635,win,1.38,2026-09-05T14:02:42
 2026-09-05,baseball_mlb,335cdc2989ec57b83bd603b5beeb7fcc,Atlanta Braves,Philadelphia Phillies,2,4,ml,away,Atlanta Braves,140,0.1466,0.3154,strong,0.5481,loss,-1.0,2026-09-06T15:57:11
 2026-09-05,baseball_mlb,9744b17bfe52474717b2c23f7700752f,Milwaukee Brewers,Cincinnati Reds,3,5,ml,home,Cincinnati Reds,132,0.1034,0.2025,moderate,0.5183,win,1.32,2026-09-06T15:57:11
+2026-09-06,baseball_mlb,739d53b2d2899aaf9a833b48ae636d03,Los Angeles Angels,Pittsburgh Pirates,0,1,ml,away,Los Angeles Angels,152,0.1696,0.3893,strong,0.5513,loss,-1.0,2026-09-07T18:02:34
+2026-09-06,baseball_mlb,756b1fa5fc5aae0f6173b45c15d5e49f,San Francisco Giants,New York Mets,2,4,ml,away,San Francisco Giants,144,0.1814,0.4223,strong,0.5829,loss,-1.0,2026-09-07T18:02:34
+2026-09-06,baseball_mlb,d545cab19c6dbf61ef08fc9c481877f8,Toronto Blue Jays,Kansas City Royals,1,6,ml,home,Kansas City Royals,105,0.1466,0.2644,strong,0.6168,win,1.05,2026-09-07T18:02:34

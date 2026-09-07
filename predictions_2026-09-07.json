@@ -1,0 +1,311 @@
+{
+  "generated_at": "2026-09-07T18:02:33.367816+00:00",
+  "date": "2026-09-07",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "ce94c6d5ef8ae9f29d29223e386beee1",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-07T17:06:00Z",
+      "home_team": "Philadelphia Phillies",
+      "away_team": "Atlanta Braves",
+      "home_odds": -200,
+      "away_odds": 164,
+      "spread": {
+        "point": -1.5,
+        "price": 188
+      },
+      "total": {
+        "line": 3.5,
+        "over": -130,
+        "under": -102
+      },
+      "model_home_prob": 0.525,
+      "model_away_prob": 0.475,
+      "home_no_vig_prob": 0.6377,
+      "away_no_vig_prob": 0.3623,
+      "home_edge": -0.1127,
+      "away_edge": 0.1127,
+      "home_ev": -0.2125,
+      "away_ev": 0.254,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0387,
+      "best_bet": {
+        "side": "away",
+        "team": "Atlanta Braves",
+        "odds": 164,
+        "edge": 0.1127,
+        "ev": 0.254,
+        "strength": "moderate"
+      },
+      "home_pitcher": "Jes\u00fas Luzardo",
+      "away_pitcher": "Grant Holmes",
+      "justification": "Atlanta Braves are 7-3 in their last 10 (Philadelphia Phillies 7-3); season records 85-58 vs 80-63. Atlanta Braves's avg run differential is +3.2 vs Philadelphia Phillies's +0.9 over the last 10 games. Model prices Atlanta Braves at 47.5% \u2014 a +11.3% edge over the market line."
+    },
+    {
+      "id": "4645b2d34e3503155b3ff308836621dc",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-07T17:11:00Z",
+      "home_team": "Miami Marlins",
+      "away_team": "New York Mets",
+      "home_odds": -210,
+      "away_odds": 167,
+      "spread": {
+        "point": -1.5,
+        "price": 116
+      },
+      "total": {
+        "line": 13.5,
+        "over": -118,
+        "under": -112
+      },
+      "model_home_prob": 0.6337,
+      "model_away_prob": 0.3663,
+      "home_no_vig_prob": 0.644,
+      "away_no_vig_prob": 0.356,
+      "home_edge": -0.0103,
+      "away_edge": 0.0103,
+      "home_ev": -0.0645,
+      "away_ev": -0.022,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Eury P\u00e9rez",
+      "away_pitcher": "Jonah Tong"
+    },
+    {
+      "id": "0a5522c3b427e5162e8c13c1ddb05dd7",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-07T17:36:00Z",
+      "home_team": "Baltimore Orioles",
+      "away_team": "Cleveland Guardians",
+      "home_odds": -150,
+      "away_odds": 125,
+      "spread": {
+        "point": -1.5,
+        "price": 158
+      },
+      "total": {
+        "line": 6.5,
+        "over": 100,
+        "under": -132
+      },
+      "model_home_prob": 0.538,
+      "model_away_prob": 0.462,
+      "home_no_vig_prob": 0.5745,
+      "away_no_vig_prob": 0.4255,
+      "home_edge": -0.0365,
+      "away_edge": 0.0365,
+      "home_ev": -0.1033,
+      "away_ev": 0.0395,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0079,
+      "best_bet": null,
+      "home_pitcher": "Trevor Rogers",
+      "away_pitcher": "Joey Cantillo"
+    },
+    {
+      "id": "22430c880f9e9118f74aacf0b720b7ee",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-07T17:36:00Z",
+      "home_team": "Boston Red Sox",
+      "away_team": "Los Angeles Angels",
+      "home_odds": -155,
+      "away_odds": 159,
+      "spread": {
+        "point": -1.5,
+        "price": 130
+      },
+      "total": {
+        "line": 7.5,
+        "over": -112,
+        "under": -118
+      },
+      "model_home_prob": 0.5151,
+      "model_away_prob": 0.4849,
+      "home_no_vig_prob": 0.6115,
+      "away_no_vig_prob": 0.3885,
+      "home_edge": -0.0964,
+      "away_edge": 0.0964,
+      "home_ev": -0.1526,
+      "away_ev": 0.2559,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0402,
+      "best_bet": {
+        "side": "away",
+        "team": "Los Angeles Angels",
+        "odds": 159,
+        "edge": 0.0964,
+        "ev": 0.2559,
+        "strength": "moderate"
+      },
+      "home_pitcher": "Brayan Bello",
+      "away_pitcher": "Grayson Rodriguez",
+      "justification": "Los Angeles Angels are 2-8 in their last 10 (Boston Red Sox 6-4); season records 54-89 vs 79-65. Los Angeles Angels's avg run differential is -2.4 vs Boston Red Sox's +0.6 over the last 10 games. Model prices Los Angeles Angels at 48.5% \u2014 a +9.6% edge over the market line."
+    },
+    {
+      "id": "b4745820fda1c660f277b88a71e25596",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-07T18:11:00Z",
+      "home_team": "Kansas City Royals",
+      "away_team": "Arizona Diamondbacks",
+      "home_odds": -112,
+      "away_odds": -104,
+      "spread": {
+        "point": 1.5,
+        "price": -178
+      },
+      "total": {
+        "line": 9.5,
+        "over": 102,
+        "under": -124
+      },
+      "model_home_prob": 0.4977,
+      "model_away_prob": 0.5023,
+      "home_no_vig_prob": 0.5089,
+      "away_no_vig_prob": 0.4911,
+      "home_edge": -0.0112,
+      "away_edge": 0.0112,
+      "home_ev": -0.0579,
+      "away_ev": -0.0147,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Noah Cameron",
+      "away_pitcher": "Derek Law"
+    },
+    {
+      "id": "0902d8258427af19994e87abb3519262",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-07T18:11:00Z",
+      "home_team": "Milwaukee Brewers",
+      "away_team": "Chicago Cubs",
+      "home_odds": -124,
+      "away_odds": 106,
+      "spread": {
+        "point": 1.5,
+        "price": -196
+      },
+      "total": {
+        "line": 8.5,
+        "over": -108,
+        "under": -112
+      },
+      "model_home_prob": 0.5539,
+      "model_away_prob": 0.4461,
+      "home_no_vig_prob": 0.5328,
+      "away_no_vig_prob": 0.4672,
+      "home_edge": 0.0211,
+      "away_edge": -0.0211,
+      "home_ev": 0.0006,
+      "away_ev": -0.081,
+      "home_kelly": 0.0002,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Robert Gasser",
+      "away_pitcher": "Matthew Boyd"
+    },
+    {
+      "id": "a410afcc86bee1b6cbe7e60eafd8d50e",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-07T19:11:00Z",
+      "home_team": "Detroit Tigers",
+      "away_team": "Minnesota Twins",
+      "home_odds": -120,
+      "away_odds": 102,
+      "spread": {
+        "point": 1.5,
+        "price": -215
+      },
+      "total": {
+        "line": 7.5,
+        "over": -118,
+        "under": -104
+      },
+      "model_home_prob": 0.5991,
+      "model_away_prob": 0.4009,
+      "home_no_vig_prob": 0.5242,
+      "away_no_vig_prob": 0.4758,
+      "home_edge": 0.0749,
+      "away_edge": -0.0749,
+      "home_ev": 0.0983,
+      "away_ev": -0.1902,
+      "home_kelly": 0.0295,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Troy Melton",
+      "away_pitcher": "Joe Ryan"
+    },
+    {
+      "id": "4b966f5cc20bd2c8aabb3ffae91d489c",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-07T21:11:00Z",
+      "home_team": "San Diego Padres",
+      "away_team": "Washington Nationals",
+      "home_odds": -192,
+      "away_odds": 166,
+      "spread": {
+        "point": -1.5,
+        "price": 110
+      },
+      "total": {
+        "line": 8.0,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.5813,
+      "model_away_prob": 0.4187,
+      "home_no_vig_prob": 0.6362,
+      "away_no_vig_prob": 0.3638,
+      "home_edge": -0.0549,
+      "away_edge": 0.0549,
+      "home_ev": -0.1159,
+      "away_ev": 0.1137,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0171,
+      "best_bet": null,
+      "home_pitcher": "Nick Pivetta",
+      "away_pitcher": "Jake Irvin"
+    },
+    {
+      "id": "a570687d47661da4982cfd885cdb4a44",
+      "sport": "americanfootball_ncaaf",
+      "sport_label": "CFB",
+      "commence_time": "2026-09-07T23:30:00Z",
+      "home_team": "Florida State Seminoles",
+      "away_team": "SMU Mustangs",
+      "home_odds": 125,
+      "away_odds": -142,
+      "spread": {
+        "point": 2.5,
+        "price": -105
+      },
+      "total": {
+        "line": 54.5,
+        "over": -118,
+        "under": -102
+      },
+      "model_home_prob": 0.7456,
+      "model_away_prob": 0.2544,
+      "home_no_vig_prob": 0.431,
+      "away_no_vig_prob": 0.569,
+      "home_edge": 0.3146,
+      "away_edge": -0.3146,
+      "home_ev": 0.6776,
+      "away_ev": -0.5664,
+      "home_kelly": 0.1355,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_ranked": false,
+      "away_ranked": true
+    }
+  ]
+}
