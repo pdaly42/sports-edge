@@ -122,3 +122,5 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-09-06,baseball_mlb,739d53b2d2899aaf9a833b48ae636d03,Los Angeles Angels,Pittsburgh Pirates,0,1,ml,away,Los Angeles Angels,152,0.1696,0.3893,strong,0.5513,loss,-1.0,2026-09-07T18:02:34
 2026-09-06,baseball_mlb,756b1fa5fc5aae0f6173b45c15d5e49f,San Francisco Giants,New York Mets,2,4,ml,away,San Francisco Giants,144,0.1814,0.4223,strong,0.5829,loss,-1.0,2026-09-07T18:02:34
 2026-09-06,baseball_mlb,d545cab19c6dbf61ef08fc9c481877f8,Toronto Blue Jays,Kansas City Royals,1,6,ml,home,Kansas City Royals,105,0.1466,0.2644,strong,0.6168,win,1.05,2026-09-07T18:02:34
+2026-09-07,baseball_mlb,ce94c6d5ef8ae9f29d29223e386beee1,Atlanta Braves,Philadelphia Phillies,0,1,ml,away,Atlanta Braves,164,0.1127,0.254,moderate,0.475,loss,-1.0,2026-09-08T17:00:24
+2026-09-07,baseball_mlb,22430c880f9e9118f74aacf0b720b7ee,Los Angeles Angels,Boston Red Sox,2,5,ml,away,Los Angeles Angels,159,0.0964,0.2559,moderate,0.4849,loss,-1.0,2026-09-08T17:00:24
