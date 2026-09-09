@@ -124,3 +124,6 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-09-06,baseball_mlb,d545cab19c6dbf61ef08fc9c481877f8,Toronto Blue Jays,Kansas City Royals,1,6,ml,home,Kansas City Royals,105,0.1466,0.2644,strong,0.6168,win,1.05,2026-09-07T18:02:34
 2026-09-07,baseball_mlb,ce94c6d5ef8ae9f29d29223e386beee1,Atlanta Braves,Philadelphia Phillies,0,1,ml,away,Atlanta Braves,164,0.1127,0.254,moderate,0.475,loss,-1.0,2026-09-08T17:00:24
 2026-09-07,baseball_mlb,22430c880f9e9118f74aacf0b720b7ee,Los Angeles Angels,Boston Red Sox,2,5,ml,away,Los Angeles Angels,159,0.0964,0.2559,moderate,0.4849,loss,-1.0,2026-09-08T17:00:24
+2026-09-08,baseball_mlb,401816856,Houston Astros,Philadelphia Phillies,6,5,ml,away,Houston Astros,119,0.0938,0.1622,moderate,0.5307,win,1.19,2026-09-09T16:14:35
+2026-09-08,baseball_mlb,401816853,Los Angeles Angels,Boston Red Sox,6,1,ml,away,Los Angeles Angels,123,0.0947,0.1665,moderate,0.5231,win,1.23,2026-09-09T16:14:35
+2026-09-08,baseball_mlb,401816860,Arizona Diamondbacks,Kansas City Royals,5,3,ml,home,Kansas City Royals,-101,0.115,0.1831,moderate,0.5945,loss,-1.0,2026-09-09T16:14:35
