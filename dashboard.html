@@ -1107,37 +1107,67 @@ function renderCard(game, threshold) {
         const line = t.market_line;
         const delta = line != null ? (t.predicted_total - line) : null;
         const deltaStr = delta != null ? (delta >= 0 ? `+${delta.toFixed(1)}` : delta.toFixed(1)) : '';
+        const deltaColor = delta == null ? 'var(--muted)'
+                          : delta > 0.5 ? 'var(--green)'
+                          : delta < -0.5 ? 'var(--red)' : 'var(--muted)';
         const oEdge = t.over_edge, uEdge = t.under_edge;
         const fmtEdgePct = (e) => e == null ? '—' : (e >= 0 ? '+' : '') + (e*100).toFixed(1) + '%';
         const oCls = oEdge == null ? 'neutral' : (oEdge > 0.03 ? 'positive' : oEdge < 0 ? 'negative' : 'neutral');
         const uCls = uEdge == null ? 'neutral' : (uEdge > 0.03 ? 'positive' : uEdge < 0 ? 'negative' : 'neutral');
+        // Which side does the model favor? Used for a subtle lean indicator.
+        const modelLean = (oEdge != null && uEdge != null)
+                            ? (oEdge > uEdge ? 'over' : uEdge > oEdge ? 'under' : null)
+                            : null;
         const ou = t.best_ou_bet;
         const suppressed = t.suppressed === true;
         return `
-        <div style="margin-top:8px;padding:8px 10px;background:#f8fafc;border-radius:8px;font-size:0.75rem;">
-          <div style="display:flex;justify-content:space-between;align-items:center;gap:8px">
-            <span style="color:var(--muted);font-weight:600;letter-spacing:0.03em;text-transform:uppercase;font-size:0.65rem">Total (model)</span>
-            <span style="font-variant-numeric:tabular-nums">
-              Model <strong>${t.predicted_total}</strong>
-              ${line != null && !suppressed ? `vs Market <strong>${line}</strong> (<span class="edge-val ${delta > 0 ? 'positive' : delta < 0 ? 'negative' : 'neutral'}">${deltaStr}</span>)` : (line != null ? `vs Market <strong>${line}</strong>` : '')}
-            </span>
+        <div style="margin-top:8px;padding:10px 12px;background:#f8fafc;border-radius:8px;">
+          <div style="color:var(--muted);font-weight:700;letter-spacing:0.06em;text-transform:uppercase;font-size:0.62rem;margin-bottom:6px">
+            Total Prediction
           </div>
+
+          <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:8px;text-align:center;font-variant-numeric:tabular-nums;align-items:end">
+            <div>
+              <div style="font-size:0.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em">Model</div>
+              <div style="font-size:1.25rem;font-weight:700;color:var(--blue);line-height:1.1">${t.predicted_total}</div>
+            </div>
+            <div>
+              <div style="font-size:0.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em">Market</div>
+              <div style="font-size:1.25rem;font-weight:700;color:var(--text);line-height:1.1">${line != null ? line : '—'}</div>
+            </div>
+            <div>
+              <div style="font-size:0.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em">Δ</div>
+              <div style="font-size:1.25rem;font-weight:700;color:${deltaColor};line-height:1.1">${line != null && !suppressed ? deltaStr : '—'}</div>
+            </div>
+          </div>
+
           ${suppressed ? `
-          <div style="margin-top:4px;color:#92400e;font-size:0.7rem;font-style:italic">
-            Model output outside plausible range — over/under recommendation suppressed
+          <div style="margin-top:8px;padding-top:6px;border-top:1px solid var(--border);color:#92400e;font-size:0.7rem;font-style:italic;text-align:center">
+            ⚠ Model output outside plausible range — recommendation suppressed
           </div>` : ''}
+
           ${!suppressed && line != null ? `
-          <div style="display:flex;justify-content:space-between;margin-top:4px;font-variant-numeric:tabular-nums">
-            <span>Over ${line}: <span class="edge-val ${oCls}">${fmtEdgePct(oEdge)}</span></span>
-            <span>Under ${line}: <span class="edge-val ${uCls}">${fmtEdgePct(uEdge)}</span></span>
-          </div>` : ''}
-          ${!suppressed && ou ? `
-          <div style="margin-top:6px;padding:6px 8px;background:${ou.strength==='strong'?'#dcfce7':'#fef9c3'};border-radius:6px;font-size:0.75rem">
-            <span style="font-weight:700;color:${ou.strength==='strong'?'#15803d':'#854d0e'}">
-              ${ou.strength === 'strong' ? '★ STRONG O/U' : '◆ MODERATE O/U'}
+          <div style="display:flex;justify-content:space-between;align-items:center;margin-top:8px;padding-top:6px;border-top:1px solid var(--border);font-size:0.78rem;font-variant-numeric:tabular-nums">
+            <span>
+              <span style="color:var(--muted);font-weight:600">Over ${line}:</span>
+              <strong class="edge-val ${oCls}" style="margin-left:4px">${fmtEdgePct(oEdge)}</strong>
+              ${modelLean === 'over' ? '<span style="color:var(--green);font-size:0.7rem;margin-left:4px">← model</span>' : ''}
             </span>
-            &nbsp;${ou.side.toUpperCase()} ${line} ${fmtOdds(ou.odds)}
-            &nbsp;·&nbsp;EV ${ou.ev >= 0 ? '+' : ''}${(ou.ev*100).toFixed(1)}%
+            <span>
+              ${modelLean === 'under' ? '<span style="color:var(--green);font-size:0.7rem;margin-right:4px">model →</span>' : ''}
+              <span style="color:var(--muted);font-weight:600">Under ${line}:</span>
+              <strong class="edge-val ${uCls}" style="margin-left:4px">${fmtEdgePct(uEdge)}</strong>
+            </span>
+          </div>` : ''}
+
+          ${!suppressed && ou ? `
+          <div style="margin-top:8px;padding:8px 10px;background:${ou.strength==='strong'?'#dcfce7':'#fef9c3'};border-radius:6px;font-size:0.78rem;display:flex;justify-content:space-between;align-items:center">
+            <span style="font-weight:700;color:${ou.strength==='strong'?'#15803d':'#854d0e'}">
+              ${ou.strength === 'strong' ? '★ STRONG O/U' : '◆ MODERATE O/U'} · ${ou.side.toUpperCase()} ${line} ${fmtOdds(ou.odds)}
+            </span>
+            <span style="color:${ou.strength==='strong'?'#15803d':'#854d0e'};font-weight:600">
+              EV ${ou.ev >= 0 ? '+' : ''}${(ou.ev*100).toFixed(1)}%
+            </span>
           </div>` : ''}
         </div>`;
       })() : ''}
