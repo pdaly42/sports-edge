@@ -20,6 +20,12 @@ import numpy as np
 from datetime import date, datetime, timezone
 from pathlib import Path
 
+try:
+    from zoneinfo import ZoneInfo
+    _ET = ZoneInfo("America/New_York")
+except ImportError:  # zoneinfo landed in 3.9; older fallbacks are moot on the runner
+    _ET = None
+
 from config.settings import RAW_DIR
 from models.trainer import load_model, predict_proba
 from utils.odds import remove_vig, expected_value, kelly_fraction as kelly_calc
@@ -27,6 +33,27 @@ from utils.odds import remove_vig, expected_value, kelly_fraction as kelly_calc
 # ─────────────────────────────────────────────────────────────
 # Shared helpers
 # ─────────────────────────────────────────────────────────────
+
+
+def _local_date(iso_utc: str) -> str:
+    """
+    Convert an ISO-8601 UTC timestamp (with 'Z' or '+00:00') to a YYYY-MM-DD
+    string in America/New_York. Sports leagues schedule and label games in
+    ET; matching against target_date in UTC breaks for late-night games
+    (e.g. Monday Night Football's 8:20pm ET kickoff → 00:20 UTC next day),
+    which caused the entire NFL sport to fall through to the no-odds path.
+    Falls back to raw UTC slice on any parse failure so callers stay safe.
+    """
+    if not iso_utc:
+        return ""
+    try:
+        dt = datetime.fromisoformat(iso_utc.replace("Z", "+00:00"))
+        if _ET is not None:
+            return dt.astimezone(_ET).date().isoformat()
+    except Exception:
+        pass
+    return iso_utc[:10]
+
 
 def fetch_odds(api_key: str, sport_key: str, target_date: str) -> list:
     """
@@ -52,7 +79,7 @@ def fetch_odds(api_key: str, sport_key: str, target_date: str) -> list:
         if resp is not None and resp.ok:
             print(f"  Requests remaining: {resp.headers.get('x-requests-remaining', '?')}")
             all_games = resp.json()
-            return [g for g in all_games if g["commence_time"][:10] == target_date]
+            return [g for g in all_games if _local_date(g["commence_time"]) == target_date]
 
         if resp is not None:
             code = resp.status_code
@@ -162,7 +189,7 @@ def fetch_espn_odds(sport_key: str, target_date: str) -> list:
         try:
             event_id = ev["id"]
             start    = ev["date"]
-            if start[:10] != target_date:
+            if _local_date(start) != target_date:
                 continue
 
             comp  = ev["competitions"][0]
