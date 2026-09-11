@@ -130,3 +130,5 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-09-09,baseball_mlb,2aa327e9de6b277bd5a019e26bf45f04,Toronto Blue Jays,Athletics,0,2,ml,home,Athletics,145,0.1315,0.2833,strong,0.5238,win,1.45,2026-09-10T16:51:22
 2026-09-09,baseball_mlb,01ff759b99c1daf7fe8fbee28fd97362,Arizona Diamondbacks,Kansas City Royals,2,5,ml,home,Kansas City Royals,104,0.1896,0.3523,strong,0.6629,win,1.04,2026-09-10T16:51:22
 2026-09-09,baseball_mlb,ba3b6f3389f7c7505df2444dceae8938,Pittsburgh Pirates,Chicago White Sox,4,2,ml,away,Pittsburgh Pirates,116,0.1217,0.2252,strong,0.5672,win,1.16,2026-09-10T16:51:22
+2026-09-10,americanfootball_nfl,acc580d74344ea3b31bbcdd057fe6a9c,San Francisco 49ers,Los Angeles Rams,27,7,ml,away,San Francisco 49ers,166,0.0886,0.2034,moderate,0.4524,win,1.66,2026-09-11T16:52:01
+2026-09-10,americanfootball_nfl,acc580d74344ea3b31bbcdd057fe6a9c,San Francisco 49ers,Los Angeles Rams,27,7,ou,over,48.5,-105,0.2043,0.4216,strong,0.6935,loss,-1.0,2026-09-11T16:52:01
