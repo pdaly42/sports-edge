@@ -132,3 +132,6 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-09-09,baseball_mlb,ba3b6f3389f7c7505df2444dceae8938,Pittsburgh Pirates,Chicago White Sox,4,2,ml,away,Pittsburgh Pirates,116,0.1217,0.2252,strong,0.5672,win,1.16,2026-09-10T16:51:22
 2026-09-10,americanfootball_nfl,acc580d74344ea3b31bbcdd057fe6a9c,San Francisco 49ers,Los Angeles Rams,27,7,ml,away,San Francisco 49ers,166,0.0886,0.2034,moderate,0.4524,win,1.66,2026-09-11T16:52:01
 2026-09-10,americanfootball_nfl,acc580d74344ea3b31bbcdd057fe6a9c,San Francisco 49ers,Los Angeles Rams,27,7,ou,over,48.5,-105,0.2043,0.4216,strong,0.6935,loss,-1.0,2026-09-11T16:52:01
+2026-09-11,baseball_mlb,2a71920945eea81357374c316f625200,Los Angeles Dodgers,Miami Marlins,6,2,ml,home,Miami Marlins,180,0.1527,0.3961,strong,0.4986,loss,-1.0,2026-09-12T15:58:06
+2026-09-11,baseball_mlb,89750de1ac29c31e5d404f2f05763ca9,San Diego Padres,San Francisco Giants,7,5,ml,home,San Francisco Giants,125,0.187,0.3842,strong,0.6152,loss,-1.0,2026-09-12T15:58:06
+2026-09-11,americanfootball_ncaaf,db698f29983406d35dea606edfdc5922,Rutgers Scarlet Knights,Boston College Eagles,21,28,ml,away,Rutgers Scarlet Knights,136,0.1501,0.3251,strong,0.5615,loss,-1.0,2026-09-12T15:58:06
