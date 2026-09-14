@@ -1,0 +1,401 @@
+{
+  "generated_at": "2026-09-14T18:19:33.313539+00:00",
+  "date": "2026-09-14",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "2a828119814add28306d706ccb802ac3",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-14T22:41:00Z",
+      "home_team": "Cleveland Guardians",
+      "away_team": "Chicago White Sox",
+      "home_odds": -154,
+      "away_odds": 130,
+      "spread": {
+        "point": -1.5,
+        "price": 146
+      },
+      "total": {
+        "line": 6.5,
+        "over": -134,
+        "under": 110
+      },
+      "model_home_prob": 0.4774,
+      "model_away_prob": 0.5226,
+      "home_no_vig_prob": 0.5824,
+      "away_no_vig_prob": 0.4176,
+      "home_edge": -0.105,
+      "away_edge": 0.105,
+      "home_ev": -0.2126,
+      "away_ev": 0.202,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0388,
+      "best_bet": {
+        "side": "away",
+        "team": "Chicago White Sox",
+        "odds": 130,
+        "edge": 0.105,
+        "ev": 0.202,
+        "strength": "moderate"
+      },
+      "home_pitcher": "Gavin Williams",
+      "away_pitcher": "Sean Newcomb",
+      "justification": "Chicago White Sox are 3-7 in their last 10 (Cleveland Guardians 6-4); season records 76-73 vs 76-74. Chicago White Sox's avg run differential is -1.9 vs Cleveland Guardians's +1.0 over the last 10 games. Sean Newcomb (ERA 2.77) has a meaningful ERA advantage over Gavin Williams (ERA 3.78)."
+    },
+    {
+      "id": "fd0c792d70a4325cb16c03c7af9a089a",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-14T22:41:00Z",
+      "home_team": "Cincinnati Reds",
+      "away_team": "Los Angeles Dodgers",
+      "home_odds": 180,
+      "away_odds": -215,
+      "spread": {
+        "point": 1.5,
+        "price": 105
+      },
+      "total": {
+        "line": 7.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.4067,
+      "model_away_prob": 0.5933,
+      "home_no_vig_prob": 0.3435,
+      "away_no_vig_prob": 0.6565,
+      "home_edge": 0.0632,
+      "away_edge": -0.0632,
+      "home_ev": 0.1388,
+      "away_ev": -0.1307,
+      "home_kelly": 0.0193,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Nick Lodolo",
+      "away_pitcher": "Tarik Skubal"
+    },
+    {
+      "id": "b2124bf9ac2a7c068e866541e3d9bebe",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-14T23:08:00Z",
+      "home_team": "Toronto Blue Jays",
+      "away_team": "Detroit Tigers",
+      "home_odds": -138,
+      "away_odds": 118,
+      "spread": {
+        "point": -1.5,
+        "price": 158
+      },
+      "total": {
+        "line": 7.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.4678,
+      "model_away_prob": 0.5322,
+      "home_no_vig_prob": 0.5583,
+      "away_no_vig_prob": 0.4417,
+      "home_edge": -0.0905,
+      "away_edge": 0.0905,
+      "home_ev": -0.1932,
+      "away_ev": 0.1602,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0339,
+      "best_bet": null,
+      "home_pitcher": "Jos\u00e9 Soriano",
+      "away_pitcher": "Troy Melton",
+      "justification": "Detroit Tigers are 6-4 in their last 10 (Toronto Blue Jays 6-4); season records 70-79 vs 75-75. Detroit Tigers's avg run differential is -2.8 vs Toronto Blue Jays's -2.3 over the last 10 games. Troy Melton (ERA 2.42) has a meaningful ERA advantage over Jos\u00e9 Soriano (ERA 3.48)."
+    },
+    {
+      "id": "6f154c72fa0631ec5a970f84c1492463",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-14T23:11:00Z",
+      "home_team": "New York Mets",
+      "away_team": "Baltimore Orioles",
+      "home_odds": -122,
+      "away_odds": 105,
+      "spread": {
+        "point": 1.5,
+        "price": -205
+      },
+      "total": {
+        "line": 7.5,
+        "over": -128,
+        "under": 104
+      },
+      "model_home_prob": 0.5211,
+      "model_away_prob": 0.4789,
+      "home_no_vig_prob": 0.5298,
+      "away_no_vig_prob": 0.4702,
+      "home_edge": -0.0087,
+      "away_edge": 0.0087,
+      "home_ev": -0.0518,
+      "away_ev": -0.0183,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Jonah Tong",
+      "away_pitcher": "Brandon Young"
+    },
+    {
+      "id": "99d391c2ac7a5942710858c928ac73f8",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-14T23:41:00Z",
+      "home_team": "Chicago Cubs",
+      "away_team": "Atlanta Braves",
+      "home_odds": -134,
+      "away_odds": 116,
+      "spread": {
+        "point": -1.5,
+        "price": 146
+      },
+      "total": {
+        "line": 9.5,
+        "over": -106,
+        "under": -114
+      },
+      "model_home_prob": 0.4846,
+      "model_away_prob": 0.5154,
+      "home_no_vig_prob": 0.553,
+      "away_no_vig_prob": 0.447,
+      "home_edge": -0.0684,
+      "away_edge": 0.0684,
+      "home_ev": -0.1538,
+      "away_ev": 0.1133,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0244,
+      "best_bet": null,
+      "home_pitcher": "David Peterson",
+      "away_pitcher": "Reynaldo L\u00f3pez"
+    },
+    {
+      "id": "68721959a546157007d97eeca5682379",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-14T23:41:00Z",
+      "home_team": "Minnesota Twins",
+      "away_team": "New York Yankees",
+      "home_odds": 106,
+      "away_odds": -124,
+      "spread": {
+        "point": 1.5,
+        "price": -160
+      },
+      "total": {
+        "line": 8.5,
+        "over": 100,
+        "under": -122
+      },
+      "model_home_prob": 0.477,
+      "model_away_prob": 0.523,
+      "home_no_vig_prob": 0.4672,
+      "away_no_vig_prob": 0.5328,
+      "home_edge": 0.0098,
+      "away_edge": -0.0098,
+      "home_ev": -0.0174,
+      "away_ev": -0.0552,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Dean Kremer",
+      "away_pitcher": "Will Warren"
+    },
+    {
+      "id": "0df8abb4425b8b10d8e3a0599974813f",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-14T23:46:00Z",
+      "home_team": "St. Louis Cardinals",
+      "away_team": "San Francisco Giants",
+      "home_odds": -138,
+      "away_odds": 122,
+      "spread": {
+        "point": -1.5,
+        "price": 152
+      },
+      "total": {
+        "line": 7.5,
+        "over": -124,
+        "under": 102
+      },
+      "model_home_prob": 0.5083,
+      "model_away_prob": 0.4917,
+      "home_no_vig_prob": 0.5628,
+      "away_no_vig_prob": 0.4372,
+      "home_edge": -0.0545,
+      "away_edge": 0.0545,
+      "home_ev": -0.1234,
+      "away_ev": 0.0916,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0188,
+      "best_bet": null,
+      "home_pitcher": "Quinn Mathews",
+      "away_pitcher": "Landen Roupp"
+    },
+    {
+      "id": "20dfbbb1031896904e98bed3182f9fc4",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-15T00:41:00Z",
+      "home_team": "Colorado Rockies",
+      "away_team": "San Diego Padres",
+      "home_odds": 170,
+      "away_odds": -198,
+      "spread": {
+        "point": 1.5,
+        "price": 110
+      },
+      "total": {
+        "line": 10.5,
+        "over": -128,
+        "under": 104
+      },
+      "model_home_prob": 0.4105,
+      "model_away_prob": 0.5895,
+      "home_no_vig_prob": 0.3579,
+      "away_no_vig_prob": 0.6421,
+      "home_edge": 0.0526,
+      "away_edge": -0.0526,
+      "home_ev": 0.1083,
+      "away_ev": -0.1128,
+      "home_kelly": 0.0159,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Tomoyuki Sugano",
+      "away_pitcher": "Casey Mize"
+    },
+    {
+      "id": "9c0b5b3f819915fa2cd982a14186b77d",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-15T01:39:00Z",
+      "home_team": "Los Angeles Angels",
+      "away_team": "Seattle Mariners",
+      "home_odds": -102,
+      "away_odds": -114,
+      "spread": {
+        "point": 1.5,
+        "price": -182
+      },
+      "total": {
+        "line": 7.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.5444,
+      "model_away_prob": 0.4556,
+      "home_no_vig_prob": 0.4866,
+      "away_no_vig_prob": 0.5134,
+      "home_edge": 0.0578,
+      "away_edge": -0.0578,
+      "home_ev": 0.0781,
+      "away_ev": -0.1448,
+      "home_kelly": 0.0199,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Reid Detmers",
+      "away_pitcher": "Kade Anderson"
+    },
+    {
+      "id": "d468d51c641b469172b3c59500fa2d49",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-15T01:41:00Z",
+      "home_team": "Arizona Diamondbacks",
+      "away_team": "Miami Marlins",
+      "home_odds": -132,
+      "away_odds": 112,
+      "spread": {
+        "point": -1.5,
+        "price": 158
+      },
+      "total": {
+        "line": 8.5,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.6226,
+      "model_away_prob": 0.3774,
+      "home_no_vig_prob": 0.5467,
+      "away_no_vig_prob": 0.4533,
+      "home_edge": 0.0759,
+      "away_edge": -0.0759,
+      "home_ev": 0.0943,
+      "away_ev": -0.1999,
+      "home_kelly": 0.0311,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Corbin Burnes",
+      "away_pitcher": "Sandy Alcantara"
+    },
+    {
+      "id": "5ad8135dc2b5f27de0b777acd317855a",
+      "sport": "americanfootball_nfl",
+      "sport_label": "NFL",
+      "commence_time": "2026-09-15T00:15:00Z",
+      "home_team": "Kansas City Chiefs",
+      "away_team": "Denver Broncos",
+      "home_odds": -130,
+      "away_odds": 114,
+      "spread": {
+        "point": -2.5,
+        "price": -108
+      },
+      "total": {
+        "line": 43.5,
+        "over": -108,
+        "under": -112
+      },
+      "model_home_prob": 0.4129,
+      "model_away_prob": 0.5871,
+      "home_no_vig_prob": 0.5474,
+      "away_no_vig_prob": 0.4526,
+      "home_edge": -0.1345,
+      "away_edge": 0.1345,
+      "home_ev": -0.2695,
+      "away_ev": 0.2564,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0562,
+      "best_bet": {
+        "side": "away",
+        "team": "Denver Broncos",
+        "odds": 114,
+        "edge": 0.1345,
+        "ev": 0.2564,
+        "strength": "strong"
+      },
+      "justification": "Denver Broncos's QB has a +0.211 EPA/attempt advantage over Kansas City Chiefs (-0.389) over the last 4 weeks. Model prices Denver Broncos at 58.7% \u2014 a +13.5% edge over the market.",
+      "home_injury_score": 0.0,
+      "away_injury_score": 0.0,
+      "home_qb_injury_impact": 0.0,
+      "away_qb_injury_impact": 0.0,
+      "model_predicted_total": 39.1,
+      "totals": {
+        "market_line": 43.5,
+        "predicted_total": 39.1,
+        "p_over": 0.3768,
+        "p_under": 0.6232,
+        "market_over_nv": 0.4957,
+        "market_under_nv": 0.5043,
+        "over_edge": -0.1189,
+        "under_edge": 0.1189,
+        "over_ev": -0.2163,
+        "under_ev": 0.3212,
+        "best_ou_bet": {
+          "side": "under",
+          "odds": -112,
+          "edge": 0.1189,
+          "ev": 0.3212,
+          "strength": "strong"
+        }
+      },
+      "data_notes": [
+        "No current injury report available"
+      ]
+    }
+  ]
+}
