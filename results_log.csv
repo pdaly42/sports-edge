@@ -141,3 +141,6 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-09-13,baseball_mlb,83d0a9d067e7d1abba253a527eb4257f,Colorado Rockies,Detroit Tigers,1,8,ml,away,Colorado Rockies,300,0.1824,0.6784,strong,0.4196,loss,-1.0,2026-09-14T18:19:34
 2026-09-13,americanfootball_nfl,c1d3fcec25aaeb06ebd2244d33d338e0,New Orleans Saints,Detroit Lions,30,31,ml,away,New Orleans Saints,275,0.195,0.701,strong,0.4536,loss,-1.0,2026-09-14T18:19:34
 2026-09-13,americanfootball_nfl,1edfa5ceaa1ad2cb57df1c1b908731f6,Arizona Cardinals,Los Angeles Chargers,26,14,ml,away,Arizona Cardinals,385,0.1994,0.9288,strong,0.3977,win,3.85,2026-09-14T18:19:34
+2026-09-14,baseball_mlb,2a828119814add28306d706ccb802ac3,Chicago White Sox,Cleveland Guardians,7,3,ml,away,Chicago White Sox,130,0.105,0.202,moderate,0.5226,win,1.3,2026-09-15T10:47:34
+2026-09-14,americanfootball_nfl,5ad8135dc2b5f27de0b777acd317855a,Denver Broncos,Kansas City Chiefs,10,31,ml,away,Denver Broncos,114,0.1345,0.2564,strong,0.5871,loss,-1.0,2026-09-15T10:47:34
+2026-09-14,americanfootball_nfl,5ad8135dc2b5f27de0b777acd317855a,Denver Broncos,Kansas City Chiefs,10,31,ou,under,43.5,-112,0.1189,0.3212,strong,0.6232,win,1.12,2026-09-15T10:47:34
