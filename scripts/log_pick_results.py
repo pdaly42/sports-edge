@@ -169,6 +169,25 @@ def _resolve_ou(pick: dict, totals: dict, score: dict) -> tuple[str, float]:
     return ("win", _payout_units(pick["odds"])) if won else ("loss", -1.0)
 
 
+def _resolve_ats(pick: dict, spread_analysis: dict, score: dict) -> tuple[str, float]:
+    """
+    Return (outcome, pnl_units) for an against-the-spread pick.
+    spread_analysis["line"] is the HOME team's line (negative if home is favored).
+    A pick's "side" is "home" or "away"; a home pick wins if
+    (home_score - away_score) + home_line > 0.
+    """
+    home_line = spread_analysis.get("line")
+    if home_line is None:
+        return ("push", 0.0)
+    home_margin_ats = (score["home_score"] - score["away_score"]) + float(home_line)
+    if abs(home_margin_ats) < 1e-9:
+        return ("push", 0.0)
+    home_covers = home_margin_ats > 0
+    is_home_pick = pick["side"] == "home"
+    won = (home_covers and is_home_pick) or ((not home_covers) and (not is_home_pick))
+    return ("win", _payout_units(pick["odds"])) if won else ("loss", -1.0)
+
+
 def _iter_predictions_files() -> list[Path]:
     """Prediction JSONs within SCAN_DAYS_BACK, sorted oldest → newest."""
     files = sorted(REPO_ROOT.glob("predictions_*.json"))
@@ -238,6 +257,31 @@ def process() -> int:
                         "ev": ou.get("ev"), "strength": ou.get("strength"),
                         "model_prob": totals.get("p_over") if ou["side"] == "over"
                                        else totals.get("p_under"),
+                        "outcome": outcome, "pnl_units": round(pnl, 4),
+                        "logged_at": datetime.utcnow().isoformat(timespec="seconds"),
+                    })
+
+            # ── Against-the-spread pick ────────────────────────────────────
+            sa  = game.get("spread_analysis") or {}
+            ats = sa.get("best_ats_bet")
+            # Use "ats-home"/"ats-away" for the dedup key so an ATS + ML pick
+            # on the same side of the same game don't collide.
+            ats_side_key = f"ats-{ats['side']}" if ats else None
+            if ats and (date_str, gid, ats_side_key) not in existing:
+                score = _match_completed_game(game, sport_key, date_str, score_cache)
+                if score:
+                    outcome, pnl = _resolve_ats(ats, sa, score)
+                    new_rows.append({
+                        "date": date_str, "sport": sport_key, "game_id": gid,
+                        "away_team": game["away_team"], "home_team": game["home_team"],
+                        "away_score": score["away_score"], "home_score": score["home_score"],
+                        "pick_type": "ats",
+                        "side": ats_side_key,
+                        "team_or_line": f"{ats.get('team','?')} {ats.get('line','?'):+}",
+                        "odds": ats["odds"], "edge": ats.get("edge"),
+                        "ev": ats.get("ev"), "strength": ats.get("strength"),
+                        "model_prob": sa.get("model_p_home_covers") if ats["side"] == "home"
+                                       else sa.get("model_p_away_covers"),
                         "outcome": outcome, "pnl_units": round(pnl, 4),
                         "logged_at": datetime.utcnow().isoformat(timespec="seconds"),
                     })
