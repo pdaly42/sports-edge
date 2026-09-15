@@ -1172,6 +1172,46 @@ function renderCard(game, threshold) {
         </div>`;
       })() : ''}
 
+      ${pred?.spread_analysis?.model_p_home_covers != null ? (() => {
+        const s = pred.spread_analysis;
+        const hLine = s.line;
+        const aLine = hLine != null ? -hLine : null;
+        const fmtSp = (x) => x >= 0 ? `+${x}` : `${x}`;
+        const hEdge = s.home_edge, aEdge = s.away_edge;
+        const fmtEdgePct = (e) => e == null ? '—' : (e >= 0 ? '+' : '') + (e*100).toFixed(1) + '%';
+        const hCls = hEdge == null ? 'neutral' : (hEdge > 0.03 ? 'positive' : hEdge < -0.03 ? 'negative' : 'neutral');
+        const aCls = aEdge == null ? 'neutral' : (aEdge > 0.03 ? 'positive' : aEdge < -0.03 ? 'negative' : 'neutral');
+        const atsLean = hEdge > aEdge ? 'home' : aEdge > hEdge ? 'away' : null;
+        const bat = s.best_ats_bet;
+        return `
+        <div style="margin-top:8px;padding:10px 12px;background:#f8fafc;border-radius:8px;">
+          <div style="color:var(--muted);font-weight:700;letter-spacing:0.06em;text-transform:uppercase;font-size:0.62rem;margin-bottom:6px">
+            Against the Spread
+          </div>
+          <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;text-align:center;font-variant-numeric:tabular-nums;align-items:end">
+            <div>
+              <div style="font-size:0.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em">Home covers ${fmtSp(hLine)}</div>
+              <div style="font-size:1.15rem;font-weight:700;color:var(--blue);line-height:1.1">${(s.model_p_home_covers*100).toFixed(0)}%</div>
+              <div style="font-size:0.7rem"><span class="edge-val ${hCls}">${fmtEdgePct(hEdge)}</span>${atsLean === 'home' ? '<span style="color:var(--green);font-size:0.65rem;margin-left:4px">← model</span>' : ''}</div>
+            </div>
+            <div>
+              <div style="font-size:0.6rem;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em">Away covers ${fmtSp(aLine)}</div>
+              <div style="font-size:1.15rem;font-weight:700;color:var(--blue);line-height:1.1">${(s.model_p_away_covers*100).toFixed(0)}%</div>
+              <div style="font-size:0.7rem">${atsLean === 'away' ? '<span style="color:var(--green);font-size:0.65rem;margin-right:4px">model →</span>' : ''}<span class="edge-val ${aCls}">${fmtEdgePct(aEdge)}</span></div>
+            </div>
+          </div>
+          ${bat ? `
+          <div style="margin-top:8px;padding:8px 10px;background:${bat.strength==='strong'?'#dcfce7':'#fef9c3'};border-radius:6px;font-size:0.78rem;display:flex;justify-content:space-between;align-items:center">
+            <span style="font-weight:700;color:${bat.strength==='strong'?'#15803d':'#854d0e'}">
+              ${bat.strength === 'strong' ? '★ STRONG ATS' : '◆ MODERATE ATS'} · ${bat.team} ${fmtSp(bat.line)} ${fmtOdds(bat.odds)}
+            </span>
+            <span style="color:${bat.strength==='strong'?'#15803d':'#854d0e'};font-weight:600">
+              EV ${bat.ev >= 0 ? '+' : ''}${(bat.ev*100).toFixed(1)}%
+            </span>
+          </div>` : ''}
+        </div>`;
+      })() : ''}
+
       ${book ? `<div style="margin-top:6px;font-size:0.68rem;color:var(--muted);text-align:right">via ${book.title}</div>` : ''}
     </div>
   </div>`;

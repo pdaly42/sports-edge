@@ -35,6 +35,40 @@ from utils.odds import remove_vig, expected_value, kelly_fraction as kelly_calc
 # ─────────────────────────────────────────────────────────────
 
 
+_ATS_MARGIN_SIGMA = {
+    "americanfootball_nfl":    13.5,   # empirical std(actual_margin - closing_spread) for NFL
+    "americanfootball_ncaaf":  16.5,   # CFB has more per-game variance
+}
+
+
+def _ats_cover_probs(model_home_prob: float | None, home_spread: float | None,
+                      sport_key: str) -> tuple[float | None, float | None]:
+    """
+    Convert a moneyline win-probability into a P(cover the spread) using the
+    standard normal-margin approach:
+      mean_home_margin = sigma × Phi^-1(model_home_prob)
+      P(home covers) = P(margin_home > -home_spread) = 1 - Phi((-spread - margin) / sigma)
+
+    Sigma is the empirical stdev of (actual_margin − closing_spread), sport-
+    dependent. Returns (None, None) when the sport isn't supported or inputs
+    are missing.
+    """
+    if model_home_prob is None or home_spread is None:
+        return None, None
+    sigma = _ATS_MARGIN_SIGMA.get(sport_key)
+    if sigma is None:
+        return None, None
+    try:
+        from scipy.stats import norm
+        p = min(max(float(model_home_prob), 1e-6), 1 - 1e-6)
+        mean_margin = sigma * norm.ppf(p)
+        threshold = -float(home_spread)
+        p_home = float(1 - norm.cdf((threshold - mean_margin) / sigma))
+        return round(p_home, 4), round(1 - p_home, 4)
+    except Exception:
+        return None, None
+
+
 def _local_date(iso_utc: str) -> str:
     """
     Convert an ISO-8601 UTC timestamp (with 'Z' or '+00:00') to a YYYY-MM-DD
@@ -520,6 +554,56 @@ def build_game_prediction(game: dict, model_home_prob,
                     "edge":     round(best_edge, 4),
                     "ev":       out["home_ev"] if side == "home" else out["away_ev"],
                     "strength": "strong" if best_edge >= 0.12 else "moderate",
+                }
+
+    # ── Against-the-spread analysis (football only) ─────────────────────────
+    # Football spreads are close to -110/-110 markets, so a small edge is
+    # actually bettable. And unlike moneylines, small changes in model prob
+    # translate to small changes in cover prob → ATS is naturally more
+    # constrained around 50/50, more robust to the tree-classifier tail
+    # miscalibration that plagues moneylines on big favorites/dogs.
+    home_spread = (out.get("spread") or {}).get("point")
+    spread_price = (out.get("spread") or {}).get("price")
+    if model_home_prob is not None and home_spread is not None \
+            and sport in _ATS_MARGIN_SIGMA:
+        p_h_cov, p_a_cov = _ats_cover_probs(model_home_prob, home_spread, sport)
+        if p_h_cov is not None:
+            # Standard ATS market prices near -110 both sides → 50/50 no-vig
+            # after strip. Use exact strip if we have both prices, else assume 50%.
+            ats_h_nv = 0.5  # good approximation for -110/-110
+            ats_a_nv = 0.5
+            h_ats_edge = round(p_h_cov - ats_h_nv, 4)
+            a_ats_edge = round(p_a_cov - ats_a_nv, 4)
+            # ATS odds default to -110 when not present in the odds feed
+            ats_odds = int(spread_price) if spread_price else -110
+            ats_payout = abs(ats_odds)/100 if ats_odds < 0 else ats_odds/100
+            out["spread_analysis"] = {
+                "line":                home_spread,
+                "odds":                ats_odds,
+                "model_p_home_covers": p_h_cov,
+                "model_p_away_covers": p_a_cov,
+                "home_edge":           h_ats_edge,
+                "away_edge":           a_ats_edge,
+                "home_ev":             round(p_h_cov * ats_payout - (1 - p_h_cov), 4),
+                "away_ev":             round(p_a_cov * ats_payout - (1 - p_a_cov), 4),
+                "best_ats_bet":        None,
+            }
+            best_ats_edge = max(h_ats_edge, a_ats_edge)
+            ats_side = "home" if h_ats_edge >= a_ats_edge else "away"
+            # Gate: at least 4% edge, cap at 12% (above that = model overshoot,
+            # not a real market inefficiency). Same "market extreme" spirit as
+            # the moneyline gate — reject the huge-spread cases where model
+            # miscalibration can produce spurious 15-20% ATS edges.
+            if 0.04 <= best_ats_edge <= 0.12:
+                p_side = p_h_cov if ats_side == "home" else p_a_cov
+                out["spread_analysis"]["best_ats_bet"] = {
+                    "side":     ats_side,
+                    "team":     game["home_team"] if ats_side == "home" else game["away_team"],
+                    "line":     home_spread if ats_side == "home" else -home_spread,
+                    "odds":     ats_odds,
+                    "edge":     round(best_ats_edge, 4),
+                    "ev":       round(p_side * ats_payout - (1 - p_side), 4),
+                    "strength": "strong" if best_ats_edge >= 0.06 else "moderate",
                 }
     return out
 
@@ -1819,9 +1903,9 @@ def run(api_key: str, output_path: str = None, target_date: str = None,
         except Exception as merge_err:
             print(f"  Merge skipped ({merge_err}) — overwriting file")
 
-    # Cap at 3 best bets per day — moneyline and totals compete for the same
-    # 3 slots ranked by EV. A single game can contribute both a moneyline pick
-    # and an O/U pick, each evaluated independently.
+    # Cap at 3 best bets per day — moneyline, totals, and against-the-spread
+    # compete for the same 3 slots ranked by EV. A single game can contribute
+    # all three pick types independently.
     MAX_BEST_BETS = 3
     candidates: list[dict] = []
     for g in all_games:
@@ -1831,10 +1915,14 @@ def run(api_key: str, output_path: str = None, target_date: str = None,
         ou = (g.get("totals") or {}).get("best_ou_bet")
         if ou and ou.get("ev") is not None:
             candidates.append({"gid": id(g), "kind": "ou", "ev": ou["ev"]})
+        ats = (g.get("spread_analysis") or {}).get("best_ats_bet")
+        if ats and ats.get("ev") is not None:
+            candidates.append({"gid": id(g), "kind": "ats", "ev": ats["ev"]})
     candidates.sort(key=lambda c: c["ev"], reverse=True)
     kept = candidates[:MAX_BEST_BETS]
-    kept_ml_ids = {c["gid"] for c in kept if c["kind"] == "ml"}
-    kept_ou_ids = {c["gid"] for c in kept if c["kind"] == "ou"}
+    kept_ml_ids  = {c["gid"] for c in kept if c["kind"] == "ml"}
+    kept_ou_ids  = {c["gid"] for c in kept if c["kind"] == "ou"}
+    kept_ats_ids = {c["gid"] for c in kept if c["kind"] == "ats"}
 
     for g in all_games:
         if g.get("best_bet") and id(g) not in kept_ml_ids:
@@ -1842,6 +1930,9 @@ def run(api_key: str, output_path: str = None, target_date: str = None,
         tot = g.get("totals")
         if tot and tot.get("best_ou_bet") and id(g) not in kept_ou_ids:
             tot["best_ou_bet"] = None
+        sa = g.get("spread_analysis")
+        if sa and sa.get("best_ats_bet") and id(g) not in kept_ats_ids:
+            sa["best_ats_bet"] = None
 
     odds_available = any(g.get("home_odds") is not None for g in all_games)
 
@@ -1861,11 +1952,14 @@ def run(api_key: str, output_path: str = None, target_date: str = None,
         n += sum(1 for g in all_games
                  if (g.get("totals") or {}).get("best_ou_bet") and
                  g["totals"]["best_ou_bet"].get("strength") == strength)
+        n += sum(1 for g in all_games
+                 if (g.get("spread_analysis") or {}).get("best_ats_bet") and
+                 g["spread_analysis"]["best_ats_bet"].get("strength") == strength)
         return n
     strong   = _cnt("strong")
     moderate = _cnt("moderate")
     print(f"\nWrote {len(all_games)} predictions to {output_path}")
-    print(f"Strong edges: {strong}  |  Moderate edges: {moderate} (capped at {MAX_BEST_BETS} total, ML+O/U)")
+    print(f"Strong edges: {strong}  |  Moderate edges: {moderate} (capped at {MAX_BEST_BETS} total, ML+O/U+ATS)")
     if sport_errors:
         print(f"Sport errors this run: {sport_errors}")
 
