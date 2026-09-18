@@ -150,3 +150,5 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-09-16,baseball_mlb,6e2eb2cc19ebcdb2b0405dff792ab529,San Francisco Giants,St. Louis Cardinals,6,5,ml,away,San Francisco Giants,145,0.1015,0.2025,moderate,0.4908,win,1.45,2026-09-17T17:25:25
 2026-09-16,baseball_mlb,c7ac677f643c3e4fb40bee1678ce2808,Los Angeles Dodgers,Cincinnati Reds,2,6,ml,home,Cincinnati Reds,180,0.1246,0.3107,strong,0.4681,win,1.8,2026-09-17T17:25:25
 2026-09-16,baseball_mlb,f915c125897694acec2531632a1231ff,Philadelphia Phillies,Washington Nationals,3,0,ml,home,Washington Nationals,165,0.1101,0.2537,moderate,0.4731,loss,-1.0,2026-09-17T17:25:25
+2026-09-17,americanfootball_nfl,56e8897681915f7ec92baeee952bb1ae,Detroit Lions,Buffalo Bills,31,41,ml,away,Detroit Lions,210,0.2116,0.6204,strong,0.5227,loss,-1.0,2026-09-18T16:53:16
+2026-09-17,americanfootball_nfl,56e8897681915f7ec92baeee952bb1ae,Detroit Lions,Buffalo Bills,31,41,ou,under,54.5,100,0.1286,0.2136,strong,0.6068,loss,-1.0,2026-09-18T16:53:16
