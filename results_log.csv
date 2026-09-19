@@ -152,3 +152,6 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-09-16,baseball_mlb,f915c125897694acec2531632a1231ff,Philadelphia Phillies,Washington Nationals,3,0,ml,home,Washington Nationals,165,0.1101,0.2537,moderate,0.4731,loss,-1.0,2026-09-17T17:25:25
 2026-09-17,americanfootball_nfl,56e8897681915f7ec92baeee952bb1ae,Detroit Lions,Buffalo Bills,31,41,ml,away,Detroit Lions,210,0.2116,0.6204,strong,0.5227,loss,-1.0,2026-09-18T16:53:16
 2026-09-17,americanfootball_nfl,56e8897681915f7ec92baeee952bb1ae,Detroit Lions,Buffalo Bills,31,41,ou,under,54.5,100,0.1286,0.2136,strong,0.6068,loss,-1.0,2026-09-18T16:53:16
+2026-09-18,baseball_mlb,ba420794fe974233579a5168b03e3743,Kansas City Royals,Pittsburgh Pirates,5,8,ml,away,Kansas City Royals,160,0.1593,0.3759,strong,0.5292,loss,-1.0,2026-09-19T16:11:46
+2026-09-18,baseball_mlb,82ab22dcd4b5a9fd457f4a06b2e93579,Boston Red Sox,Tampa Bay Rays,4,2,ml,away,Boston Red Sox,115,0.1003,0.1827,moderate,0.5501,win,1.15,2026-09-19T16:11:46
+2026-09-18,baseball_mlb,ceb78c18c34b6f6922ac73e4cb32b373,San Francisco Giants,Los Angeles Dodgers,2,8,ml,away,San Francisco Giants,250,0.0858,0.266,moderate,0.3617,loss,-1.0,2026-09-19T16:11:46
