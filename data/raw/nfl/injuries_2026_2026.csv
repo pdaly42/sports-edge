@@ -60,9 +60,108 @@ season,week,team,full_name,position,report_status
 2026,1,TB,Sean Tucker,RB,Doubtful
 2026,1,TB,Jalen McMillan,WR,Doubtful
 2026,1,TEN,Cedric Gray,LB,Out
+2026,2,ARI,Isaac Seumalo,G,Questionable
+2026,2,ARI,Andrew Billings,DT,Questionable
+2026,2,ARI,Roy Lopez,DT,Questionable
+2026,2,ARI,Garrett Williams,CB,Out
+2026,2,ARI,Max Melton,CB,Questionable
+2026,2,ARI,Isaiah Adams,G,Questionable
+2026,2,ARI,Dadrion Taylor-Demerson,S,Questionable
+2026,2,ATL,Chris Lindstrom,G,Questionable
+2026,2,ATL,Tua Tagovailoa,QB,Doubtful
+2026,2,ATL,A.J. Terrell,CB,Questionable
+2026,2,ATL,Michael Penix Jr.,QB,Out
+2026,2,ATL,Billy Bowman Jr.,CB,Out
+2026,2,BAL,Ronnie Stanley,T,Questionable
+2026,2,BAL,Trey Hendrickson,LB,Questionable
+2026,2,BAL,Nnamdi Madubuike,DT,Out
+2026,2,BAL,John Simpson,G,Questionable
+2026,2,BAL,Zay Flowers,WR,Doubtful
+2026,2,BAL,T.J. Tampa,CB,Out
+2026,2,BAL,Teddye Buchanan,LB,Out
 2026,2,BUF,Ty Johnson,RB,Questionable
 2026,2,BUF,Cole Bishop,S,Questionable
 2026,2,BUF,T.J. Sanders,DE,Questionable
+2026,2,CAR,Bobby Brown III,DT,Out
+2026,2,CAR,Patrick Jones II,LB,Questionable
+2026,2,CIN,B.J. Hill,DT,Questionable
+2026,2,CIN,Joe Burrow,QB,Questionable
+2026,2,CLE,Noah Igbinoghene,CB,Questionable
+2026,2,CLE,Teven Jenkins,G,Out
+2026,2,CLE,Tyson Campbell,CB,Questionable
+2026,2,DAL,Malik Hooker,S,Out
+2026,2,DAL,DeMarvion Overshown,LB,Out
+2026,2,DEN,Marvin Mims Jr.,WR,Out
+2026,2,DEN,RJ Harvey,RB,Questionable
 2026,2,DET,D.J. Reed,CB,Questionable
 2026,2,DET,Christian Mahogany,G,Out
 2026,2,DET,Blake Miller,T,Out
+2026,2,GB,Javon Hargrave,DT,Doubtful
+2026,2,GB,Aaron Banks,G,Questionable
+2026,2,GB,Benjamin St-Juste,CB,Questionable
+2026,2,GB,Zach Bako-Bewele,T,Questionable
+2026,2,GB,Lukas Van Ness,LB,Questionable
+2026,2,GB,Warren Brinson,DT,Out
+2026,2,HOU,Jadeveon Clowney,DE,Out
+2026,2,HOU,Nico Collins,WR,Out
+2026,2,HOU,Jacob Hummel,LB,Out
+2026,2,HOU,Ed Ingram,G,Out
+2026,2,IND,Ashton Dulin,WR,Out
+2026,2,IND,DJ Giddens,RB,Questionable
+2026,2,KC,Chris Jones,DT,Questionable
+2026,2,KC,Chamarri Conner,S,Out
+2026,2,KC,Josh Simmons,T,Out
+2026,2,KC,Mansoor Delane,CB,Questionable
+2026,2,LA,Puka Nacua,WR,Questionable
+2026,2,LA,Jordan Whittington,WR,Doubtful
+2026,2,LA,Kamren Kinchens,S,Out
+2026,2,LAC,Trey Pipkins,T,Out
+2026,2,LAC,Elijah Molden,S,Out
+2026,2,LAC,Deane Leonard,CB,Questionable
+2026,2,LAC,Ladd McConkey,WR,Questionable
+2026,2,LV,Aidan O'Connell,QB,Questionable
+2026,2,LV,Brock Bowers,TE,Doubtful
+2026,2,LV,Darien Porter,CB,Out
+2026,2,MIA,Ronnie Harrison,LB,Out
+2026,2,MIA,Tucker Addington,LS,Questionable
+2026,2,MIA,Chop Robinson,LB,Out
+2026,2,MIN,Brian O'Neill,T,Questionable
+2026,2,MIN,Kyler Murray,QB,Out
+2026,2,MIN,Jauan Jennings,WR,Out
+2026,2,NE,Carlton Davis III,CB,Out
+2026,2,NE,Dre'Mont Jones,LB,Questionable
+2026,2,NE,Ben Brown,C,Questionable
+2026,2,NE,Dametrious Crownover,T,Out
+2026,2,NO,Zach Wood,LS,Out
+2026,2,NO,Chase Young,LB,Questionable
+2026,2,NO,Chris Olave,WR,Questionable
+2026,2,NO,Isaiah Stalbird,LB,Doubtful
+2026,2,NO,Christen Miller,DT,Questionable
+2026,2,NYG,Micah McFadden,LB,Questionable
+2026,2,NYG,Deonte Banks,CB,Questionable
+2026,2,NYJ,Minkah Fitzpatrick,S,Out
+2026,2,NYJ,Kene Nwangwu,RB,Out
+2026,2,NYJ,Joseph Ossai,DE,Out
+2026,2,NYJ,Will McDonald IV,DE,Questionable
+2026,2,NYJ,Omar Cooper Jr.,WR,Out
+2026,2,PHI,Jonathan Greenard,LB,Out
+2026,2,PHI,Andrew Mukuba,S,Questionable
+2026,2,PIT,Michael Pittman,WR,Questionable
+2026,2,PIT,Joey Porter Jr.,CB,Out
+2026,2,PIT,Troy Fautanu,T,Questionable
+2026,2,SEA,Sam Darnold,QB,Out
+2026,2,SEA,Ty Okada,S,Out
+2026,2,SEA,Anthony Bradford,G,Out
+2026,2,SEA,Nick Emmanwori,S,Questionable
+2026,2,SF,Eddy Pineiro,K,Questionable
+2026,2,SF,De'Zhaun Stribling,WR,Out
+2026,2,SF,Kaelon Black,RB,Questionable
+2026,2,TB,Miles Killebrew,S,Questionable
+2026,2,TB,Jalen McMillan,WR,Questionable
+2026,2,TB,Jacob Parrish,CB,Questionable
+2026,2,TEN,Cordale Flott,CB,Questionable
+2026,2,TEN,James Williams,LB,Questionable
+2026,2,TEN,Cedric Gray,LB,Questionable
+2026,2,WAS,Frankie Luvu,LB,Out
+2026,2,WAS,Javon Kinlaw,DT,Questionable
+2026,2,WAS,Chig Okonkwo,TE,Out
