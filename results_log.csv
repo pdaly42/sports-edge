@@ -155,3 +155,5 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-09-18,baseball_mlb,ba420794fe974233579a5168b03e3743,Kansas City Royals,Pittsburgh Pirates,5,8,ml,away,Kansas City Royals,160,0.1593,0.3759,strong,0.5292,loss,-1.0,2026-09-19T16:11:46
 2026-09-18,baseball_mlb,82ab22dcd4b5a9fd457f4a06b2e93579,Boston Red Sox,Tampa Bay Rays,4,2,ml,away,Boston Red Sox,115,0.1003,0.1827,moderate,0.5501,win,1.15,2026-09-19T16:11:46
 2026-09-18,baseball_mlb,ceb78c18c34b6f6922ac73e4cb32b373,San Francisco Giants,Los Angeles Dodgers,2,8,ml,away,San Francisco Giants,250,0.0858,0.266,moderate,0.3617,loss,-1.0,2026-09-19T16:11:46
+2026-09-19,baseball_mlb,e9aa9f3f95397e0ea42fbde233eb3e3b,San Francisco Giants,Los Angeles Dodgers,4,10,ml,away,San Francisco Giants,320,0.1533,0.6073,strong,0.3827,loss,-1.0,2026-09-20T16:40:32
+2026-09-19,americanfootball_ncaaf,d3b7a8be0f6c9e50f7afd4005990228b,BYU Cougars,Colorado State Rams,41,23,ml,home,Colorado State Rams,760,0.128,1.076,strong,0.2414,loss,-1.0,2026-09-20T16:40:32
