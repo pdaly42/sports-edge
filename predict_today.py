@@ -41,6 +41,33 @@ _ATS_MARGIN_SIGMA = {
 }
 
 
+def _is_early_football_week(sport: str, target_date: str | None) -> bool:
+    """
+    Are we in the first ~4 weeks of NFL / CFB when model calibration is worst?
+    Trained on prior-season data, model has weak signal for how current-year
+    teams differ from expectations. Two gates (see build_game_prediction):
+      • Higher edge threshold (12% vs 8%) — reject marginal picks
+      • Market-alignment requirement — reject "model fades big favorite"
+        picks unless the edge is modest, since Week 1 data shows model is
+        systematically 15-22 pts under-confident on true favorites.
+    Date-based heuristic (roughly Weeks 1-4):
+      NFL: Sept 1 → Oct 5
+      CFB: Aug 20 → Sept 30
+    """
+    if sport not in ("americanfootball_nfl", "americanfootball_ncaaf") or not target_date:
+        return False
+    try:
+        d = datetime.fromisoformat(target_date).date()
+    except (ValueError, TypeError):
+        return False
+    m, day = d.month, d.day
+    if sport == "americanfootball_nfl":
+        return (m == 9) or (m == 10 and day <= 5)
+    if sport == "americanfootball_ncaaf":
+        return (m == 8 and day >= 20) or (m == 9)
+    return False
+
+
 def _ats_cover_probs(model_home_prob: float | None, home_spread: float | None,
                       sport_key: str) -> tuple[float | None, float | None]:
     """
@@ -481,8 +508,14 @@ def generate_justification(home: str, away: str, feat: dict,
 
 def build_game_prediction(game: dict, model_home_prob,
                            home_odds: float | None, away_odds: float | None,
-                           sport: str, sport_label: str) -> dict:
-    """Assemble the full prediction dict for one game."""
+                           sport: str, sport_label: str,
+                           target_date: str | None = None) -> dict:
+    """Assemble the full prediction dict for one game.
+
+    target_date: passed by the sport-specific predict_XXX() to enable the
+    early-football-season gates (see _is_early_football_week). Optional so
+    older callers keep working, but should always be provided for football.
+    """
     out = {
         "id":             game["id"],
         "sport":          sport,
@@ -545,8 +578,24 @@ def build_game_prediction(game: dict, model_home_prob,
             #    said 14.1%, produced a fake +616% EV). Skipping picks at
             #    market extremes eliminates that class of false positive.
             market_extreme = h_nv < 0.10 or h_nv > 0.90
-            if best_edge >= 0.08 and side_prob <= 0.70 and best_edge <= 0.30 \
-                    and not market_extreme:
+
+            # ── Early-season football gates (Rec A + B from Week 1 review) ─
+            # Model is trained on prior seasons + minimal current-year data
+            # during Weeks 1-4. It's systematically under-confident on true
+            # favorites (Week 1 pattern: 15-22 pt gap vs market), which
+            # produces spurious "fade the big favorite" ML picks.
+            #   Rec A: reject picks that fade the market's favorite if the
+            #          edge is > 12% (large fade = likely calibration failure)
+            #   Rec B: raise minimum edge threshold from 8% → 12% for early
+            #          football, so only the strongest signals clear the gate
+            early_football = _is_early_football_week(sport, target_date)
+            min_edge = 0.12 if early_football else 0.08
+            market_favorite = "home" if h_nv >= 0.5 else "away"
+            is_fade         = side != market_favorite
+            large_fade_reject = early_football and is_fade and best_edge > 0.12
+
+            if best_edge >= min_edge and side_prob <= 0.70 and best_edge <= 0.30 \
+                    and not market_extreme and not large_fade_reject:
                 out["best_bet"] = {
                     "side":     side,
                     "team":     game["home_team"] if side == "home" else game["away_team"],
@@ -694,7 +743,7 @@ def predict_nba(api_key: str, target_date: str) -> list:
         pred = build_game_prediction(
             game, prob_home,
             best_line(game, "home"), best_line(game, "away"),
-            "basketball_nba", "NBA"
+            "basketball_nba", "NBA", target_date=target_date
         )
         if pred.get("best_bet") and feat:
             pred["justification"] = generate_justification(
@@ -823,7 +872,7 @@ def predict_mlb(api_key: str, target_date: str) -> list:
         pred = build_game_prediction(
             game, prob_home,
             best_line(game, "home"), best_line(game, "away"),
-            "baseball_mlb", "MLB"
+            "baseball_mlb", "MLB", target_date=target_date
         )
         pred["home_pitcher"] = home_pitcher_name
         pred["away_pitcher"] = away_pitcher_name
@@ -1216,7 +1265,7 @@ def predict_nfl(api_key: str, target_date: str) -> list:
         pred = build_game_prediction(
             game, prob_home,
             best_line(game, "home"), best_line(game, "away"),
-            "americanfootball_nfl", "NFL"
+            "americanfootball_nfl", "NFL", target_date=target_date
         )
         if pred.get("best_bet") and feat and prob_home is not None:
             pred["justification"] = _nfl_justification(
@@ -1531,7 +1580,7 @@ def predict_cfb(api_key: str, target_date: str) -> list:
         pred = build_game_prediction(
             game, prob_home,
             best_line(game, "home"), best_line(game, "away"),
-            "americanfootball_ncaaf", "CFB"
+            "americanfootball_ncaaf", "CFB", target_date=target_date
         )
         if pred.get("best_bet") and feat and prob_home is not None:
             pred["justification"] = _cfb_justification(
