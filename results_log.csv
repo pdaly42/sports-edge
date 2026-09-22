@@ -157,3 +157,5 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-09-18,baseball_mlb,ceb78c18c34b6f6922ac73e4cb32b373,San Francisco Giants,Los Angeles Dodgers,2,8,ml,away,San Francisco Giants,250,0.0858,0.266,moderate,0.3617,loss,-1.0,2026-09-19T16:11:46
 2026-09-19,baseball_mlb,e9aa9f3f95397e0ea42fbde233eb3e3b,San Francisco Giants,Los Angeles Dodgers,4,10,ml,away,San Francisco Giants,320,0.1533,0.6073,strong,0.3827,loss,-1.0,2026-09-20T16:40:32
 2026-09-19,americanfootball_ncaaf,d3b7a8be0f6c9e50f7afd4005990228b,BYU Cougars,Colorado State Rams,41,23,ml,home,Colorado State Rams,760,0.128,1.076,strong,0.2414,loss,-1.0,2026-09-20T16:40:32
+2026-09-21,americanfootball_nfl,32367f882fac1a0c20a6335619922025,New York Giants,Los Angeles Rams,6,28,ou,over,47.5,-110,0.1806,0.4292,strong,0.6806,loss,-1.0,2026-09-22T17:29:42
+2026-09-21,americanfootball_nfl,32367f882fac1a0c20a6335619922025,New York Giants,Los Angeles Rams,6,28,ats,ats-away,New York Giants +6.5,-115,0.0992,0.2883,strong,0.5992,loss,-1.0,2026-09-22T17:29:42
