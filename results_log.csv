@@ -159,3 +159,6 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-09-19,americanfootball_ncaaf,d3b7a8be0f6c9e50f7afd4005990228b,BYU Cougars,Colorado State Rams,41,23,ml,home,Colorado State Rams,760,0.128,1.076,strong,0.2414,loss,-1.0,2026-09-20T16:40:32
 2026-09-21,americanfootball_nfl,32367f882fac1a0c20a6335619922025,New York Giants,Los Angeles Rams,6,28,ou,over,47.5,-110,0.1806,0.4292,strong,0.6806,loss,-1.0,2026-09-22T17:29:42
 2026-09-21,americanfootball_nfl,32367f882fac1a0c20a6335619922025,New York Giants,Los Angeles Rams,6,28,ats,ats-away,New York Giants +6.5,-115,0.0992,0.2883,strong,0.5992,loss,-1.0,2026-09-22T17:29:42
+2026-09-22,baseball_mlb,388cb001ef45b493163b9d37cf60f606,St. Louis Cardinals,Pittsburgh Pirates,0,2,ml,away,St. Louis Cardinals,145,0.1324,0.2855,strong,0.5247,loss,-1.0,2026-09-23T17:39:20
+2026-09-22,baseball_mlb,ebb664c5095200280fa1b15540c2c88b,Chicago White Sox,Kansas City Royals,14,11,ml,home,Kansas City Royals,104,0.156,0.2876,strong,0.6312,loss,-1.0,2026-09-23T17:39:20
+2026-09-22,baseball_mlb,afbac30624ec674873fd96ac159f69ad,Arizona Diamondbacks,Colorado Rockies,7,2,ml,home,Colorado Rockies,165,0.0896,0.2015,moderate,0.4534,loss,-1.0,2026-09-23T17:39:20
