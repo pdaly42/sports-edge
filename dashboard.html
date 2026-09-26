@@ -443,6 +443,8 @@
       <div class="summary-label">Lifetime P/L (log)</div>
       <div class="summary-value" id="stat-lifetime-pnl">—</div>
       <div class="summary-sub" id="stat-lifetime-sub">1u per pick · from results_log.csv</div>
+      <div class="summary-sub" id="stat-lifetime-30d" style="margin-top:6px;padding-top:6px;border-top:1px solid var(--border);"></div>
+      <div class="summary-sub" id="stat-lifetime-sports" style="margin-top:4px;line-height:1.5;"></div>
     </div>
   </div>
 
@@ -633,41 +635,119 @@ function shiftDay(delta) {
 // ─────────────────────────────────────────
 // Lifetime results (server-side CSV log)
 // ─────────────────────────────────────────
+// Groups sports into three roll-up buckets for the tile breakdown.
+// Everything unknown falls into "Other" so we never drop rows silently.
+const SPORT_GROUPS = {
+  baseball_mlb:          { label: 'MLB',      icon: '⚾' },
+  americanfootball_nfl:  { label: 'Football', icon: '🏈' },
+  americanfootball_ncaaf:{ label: 'Football', icon: '🏈' },
+  basketball_nba:        { label: 'NBA',      icon: '🏀' },
+  soccer_fifa_world_cup: { label: 'Soccer',   icon: '⚽' },
+};
+
 async function loadLifetimeResults() {
-  const pnlEl = document.getElementById('stat-lifetime-pnl');
-  const subEl = document.getElementById('stat-lifetime-sub');
+  const pnlEl        = document.getElementById('stat-lifetime-pnl');
+  const subEl        = document.getElementById('stat-lifetime-sub');
+  const el30d        = document.getElementById('stat-lifetime-30d');
+  const elSports     = document.getElementById('stat-lifetime-sports');
   try {
     const res = await fetch(`results_log.csv?t=${Date.now()}`);
     if (!res.ok) return;
     const text = await res.text();
-    const lines = text.trim().split('\n');
-    if (lines.length < 2) return;   // header only
+    // trim() strips outer whitespace but not interior \r from CRLF lines;
+    // splitting on \n leaves \r glued to the last field of each row. That's
+    // safe today (last field logged_at is only read for the 30-day cutoff
+    // below and Date.parse handles the trailing \r), but strip defensively.
+    const lines = text.trim().split('\n').map(l => l.replace(/\r$/, ''));
+    if (lines.length < 2) return;
     const header = lines[0].split(',');
     const idx = k => header.indexOf(k);
-    const iOutcome = idx('outcome'), iPnl = idx('pnl_units'), iSport = idx('sport');
+    const iOutcome = idx('outcome'), iPnl = idx('pnl_units'),
+          iSport = idx('sport'),     iDate = idx('date');
+
+    // 30-day cutoff (inclusive of today - 30d)
+    const cutoff = new Date();
+    cutoff.setDate(cutoff.getDate() - 30);
+    const cutoffISO = cutoff.toISOString().slice(0, 10);
+
     let wins = 0, losses = 0, pushes = 0, pnl = 0;
-    const bySport = {};
+    let w30 = 0, l30 = 0, p30 = 0, pnl30 = 0;
+    const byGroup = {};
     for (let i = 1; i < lines.length; i++) {
       const cells = lines[i].split(',');
+      if (cells.length < header.length) continue;
       const outcome = cells[iOutcome];
-      const p = parseFloat(cells[iPnl]) || 0;
-      const s = cells[iSport] || '?';
-      if (outcome === 'win') wins++;
+      const p       = parseFloat(cells[iPnl]) || 0;
+      const s       = cells[iSport] || '?';
+      const d       = cells[iDate]  || '';
+      if (outcome === 'win')       wins++;
       else if (outcome === 'loss') losses++;
       else if (outcome === 'push') pushes++;
       pnl += p;
-      if (!bySport[s]) bySport[s] = { w:0, l:0, p:0, pnl:0 };
-      if (outcome === 'win') bySport[s].w++;
-      else if (outcome === 'loss') bySport[s].l++;
-      else if (outcome === 'push') bySport[s].p++;
-      bySport[s].pnl += p;
+
+      if (d >= cutoffISO) {
+        if (outcome === 'win')       w30++;
+        else if (outcome === 'loss') l30++;
+        else if (outcome === 'push') p30++;
+        pnl30 += p;
+      }
+
+      const grp = (SPORT_GROUPS[s] || { label: 'Other', icon: '·' });
+      const key = grp.label;
+      if (!byGroup[key]) byGroup[key] = { icon: grp.icon, w:0, l:0, p:0, pnl:0 };
+      if (outcome === 'win')       byGroup[key].w++;
+      else if (outcome === 'loss') byGroup[key].l++;
+      else if (outcome === 'push') byGroup[key].p++;
+      byGroup[key].pnl += p;
     }
+
+    // ── Headline number ──
     const resolved = wins + losses;
     const roi = resolved > 0 ? (pnl / resolved * 100) : 0;
-    pnlEl.textContent = (pnl >= 0 ? '+' : '') + pnl.toFixed(1) + 'u';
-    pnlEl.style.color = pnl >= 0 ? 'var(--green)' : 'var(--red)';
-    subEl.textContent = `${wins}-${losses}` + (pushes ? `-${pushes}` : '') +
-                        ` · ${roi >= 0 ? '+' : ''}${roi.toFixed(1)}% ROI`;
+    pnlEl.textContent  = (pnl >= 0 ? '+' : '') + pnl.toFixed(1) + 'u';
+    pnlEl.style.color  = pnl >= 0 ? 'var(--green)' : 'var(--red)';
+    subEl.textContent  = `${wins}-${losses}` + (pushes ? `-${pushes}` : '') +
+                         ` · ${roi >= 0 ? '+' : ''}${roi.toFixed(1)}% ROI`;
+
+    // ── Last 30 days ──
+    const resolved30 = w30 + l30;
+    const roi30 = resolved30 > 0 ? (pnl30 / resolved30 * 100) : 0;
+    if (el30d) {
+      if (resolved30 === 0) {
+        el30d.textContent = 'Last 30d: no resolved picks';
+      } else {
+        const sign30 = pnl30 >= 0 ? '+' : '';
+        const color30 = pnl30 >= 0 ? 'var(--green)' : 'var(--red)';
+        el30d.innerHTML =
+          `Last 30d: <span style="color:${color30};font-weight:600">` +
+          `${sign30}${pnl30.toFixed(1)}u</span> · ${w30}-${l30}` +
+          (p30 ? `-${p30}` : '') +
+          ` · ${roi30 >= 0 ? '+' : ''}${roi30.toFixed(1)}% ROI`;
+      }
+    }
+
+    // ── Per-sport breakdown ──
+    if (elSports) {
+      // Order: MLB, Football, NBA, Soccer, Other — but only show groups that
+      // have any resolved picks
+      const order = ['MLB', 'Football', 'NBA', 'Soccer', 'Other'];
+      const parts = [];
+      for (const key of order) {
+        const g = byGroup[key];
+        if (!g || (g.w + g.l + g.p) === 0) continue;
+        const gRes = g.w + g.l;
+        const gRoi = gRes > 0 ? (g.pnl / gRes * 100) : 0;
+        const gColor = g.pnl >= 0 ? 'var(--green)' : 'var(--red)';
+        const sign   = g.pnl >= 0 ? '+' : '';
+        parts.push(
+          `<div style="display:flex;justify-content:space-between;gap:6px">` +
+          `<span>${g.icon} ${key} <span style="opacity:0.7">${g.w}-${g.l}${g.p ? '-'+g.p : ''}</span></span>` +
+          `<span style="color:${gColor};font-variant-numeric:tabular-nums">${sign}${g.pnl.toFixed(1)}u <span style="opacity:0.55;font-size:0.9em">(${gRoi >= 0 ? '+' : ''}${gRoi.toFixed(0)}%)</span></span>` +
+          `</div>`
+        );
+      }
+      elSports.innerHTML = parts.join('');
+    }
   } catch (e) {
     // results_log.csv doesn't exist yet — that's fine, tile stays "—"
   }

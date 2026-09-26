@@ -1894,10 +1894,59 @@ def predict_soccer(api_key: str, target_date: str) -> list:
 # Main
 # ─────────────────────────────────────────────────────────────
 
+def _past_date_write_blocked(output_path: str, target_date: str, force: bool) -> bool:
+    """
+    Guard: refuse to overwrite predictions_YYYY-MM-DD.json when target_date is
+    in the past AND the file already exists AND contains flagged picks.
+
+    Rationale: the dashboard's record tile is built from results_log.csv, but
+    someone clicking into a past date should see the picks that produced those
+    logged results. Silent overwrites (e.g., a same-day re-run after a
+    gate/threshold change, or an accidental re-dispatch of an older date)
+    were breaking that provenance — the CSV had 3 losses for Sept 22 while
+    the current JSON showed zero flagged picks.
+
+    Overriding: pass `--force`, or set env PREDICT_FORCE=1 in the workflow
+    when you *do* want to overwrite (e.g., rebuilding after a bug fix).
+    """
+    if force:
+        return False
+    try:
+        today_utc = date.today().isoformat()
+        if target_date >= today_utc:
+            return False  # today or future — always fine to overwrite
+        p = Path(output_path)
+        if not p.exists():
+            return False  # nothing to protect
+        try:
+            data = json.loads(p.read_text())
+        except Exception:
+            return False  # unreadable file — let the run overwrite it
+        games = data.get("games") or []
+        has_picks = any(
+            g.get("best_bet")
+            or (g.get("totals") or {}).get("best_ou_bet")
+            or (g.get("spread_analysis") or {}).get("best_ats_bet")
+            for g in games
+        )
+        return has_picks
+    except Exception:
+        # Never let the guard itself crash the run
+        return False
+
+
 def run(api_key: str, output_path: str = None, target_date: str = None,
-        sports: list = None, merge: bool = False) -> None:
+        sports: list = None, merge: bool = False, force: bool = False) -> None:
     target_date = target_date or date.today().isoformat()
     output_path = output_path or f"predictions_{target_date}.json"
+
+    # Provenance guard — do this BEFORE any expensive fetches so a
+    # mis-dispatched past-date run exits cheaply.
+    if _past_date_write_blocked(output_path, target_date, force):
+        print(f"Refusing to overwrite {output_path}: target_date {target_date} "
+              f"is in the past and existing file has flagged picks. "
+              f"Pass --force or set PREDICT_FORCE=1 to override.")
+        return
     # NBA and NFL are out of season — re-enable when seasons resume
     sports = sports or ["mlb", "soccer"]
 
@@ -2019,7 +2068,13 @@ if __name__ == "__main__":
     parser.add_argument("--date",    default=None,  help="YYYY-MM-DD (defaults to today)")
     parser.add_argument("--output",  default=None,  help="Output file (defaults to predictions_YYYY-MM-DD.json)")
     parser.add_argument("--sport",   default=None,  help="nba or mlb (defaults to both)")
+    parser.add_argument("--force",   action="store_true",
+                        help="Overwrite an existing past-date predictions_*.json. "
+                             "Also honors PREDICT_FORCE=1 env var so the workflow "
+                             "can override when explicitly rebuilding old files.")
     args = parser.parse_args()
+
+    force = args.force or os.getenv("PREDICT_FORCE", "").strip() in ("1", "true", "yes")
 
     if not args.api_key:
         print("Warning: no ODDS_API_KEY — will use ESPN for game list, no odds data")
@@ -2032,7 +2087,7 @@ if __name__ == "__main__":
     merge = bool(args.sport)
 
     try:
-        run(args.api_key, output_path, target_date, sports, merge=merge)
+        run(args.api_key, output_path, target_date, sports, merge=merge, force=force)
     except Exception as e:
         print(f"Pipeline error: {e}")
         import traceback; traceback.print_exc()
