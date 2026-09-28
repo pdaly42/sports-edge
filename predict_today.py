@@ -970,6 +970,17 @@ def _get_nfl_current_week(target_date: str) -> tuple[int, int]:
     """
     Return (season, week) for a given date by loading the NFL schedule.
     Falls back to current calendar year and week 1 if not determinable.
+
+    Algorithm: NFL weeks span Thursday-through-Monday (five calendar days),
+    so we use the [min_game_date, max_game_date] window per week and pick
+    the week whose window contains target_date. If none contains it
+    (unusual — bye-week gap, off-season, etc.), fall back to the nearest
+    window edge. The prior implementation used only min(gameday) and
+    nearest-min, which mis-classified Sunday-night games as *next* week
+    when the next week's Thursday game was closer than the current week's
+    Thursday game (e.g., Sun Sep 28 → Thu Oct 1 is 3 days, whereas
+    Thu Sep 25 → Sun Sep 28 is also 3 days but the min-comparison chose
+    Oct 1 because Sep 25 was 4 days *from the min* Sep 24).
     """
     try:
         import nflreadpy as nfl   # successor to archived nfl_data_py
@@ -980,11 +991,21 @@ def _get_nfl_current_week(target_date: str) -> tuple[int, int]:
         sched = nfl.load_schedules(seasons=[season]).to_pandas()
         sched = sched[sched["game_type"] == "REG"].copy()
         sched["gameday"] = pd.to_datetime(sched["gameday"])
-        # Find the week whose games are closest to target_date
-        week_dates = sched.groupby("week")["gameday"].min().reset_index()
-        week_dates["delta"] = (week_dates["gameday"] - target_dt).abs()
-        week = int(week_dates.loc[week_dates["delta"].idxmin(), "week"])
-        return season, week
+        week_ranges = sched.groupby("week")["gameday"].agg(["min", "max"]).reset_index()
+
+        # 1) week whose [min, max] window contains target_date
+        contains = week_ranges[
+            (week_ranges["min"] <= target_dt) & (target_dt <= week_ranges["max"])
+        ]
+        if not contains.empty:
+            return season, int(contains.iloc[0]["week"])
+
+        # 2) fall back to nearest window edge (min or max, whichever is closer)
+        week_ranges["delta"] = pd.concat([
+            (week_ranges["min"] - target_dt).abs(),
+            (week_ranges["max"] - target_dt).abs(),
+        ], axis=1).min(axis=1)
+        return season, int(week_ranges.loc[week_ranges["delta"].idxmin(), "week"])
     except Exception:
         return pd.Timestamp.now().year, 1
 

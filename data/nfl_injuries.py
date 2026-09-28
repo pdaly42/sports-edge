@@ -156,6 +156,13 @@ def get_current_injury_scores(season: int, week: int) -> dict[str, dict]:
       { team_abbr: {"injury_score": float, "qb_injury_impact": float} }
 
     Busts the cache so we always get the latest report during the week.
+
+    Fallback behavior: if the requested week has no data (nflverse
+    typically publishes Wednesday-Thursday of the game week; Sunday-morning
+    predictions for a Monday-night game may briefly miss this window,
+    and week 1 predictions on a Tuesday will always miss), fall back to
+    the most recent prior week with data in the same season. Better to
+    show last week's injury signal than none at all.
     """
     cache_path = NFL_RAW / f"injuries_{season}_{season}.csv"
     if cache_path.exists():
@@ -163,9 +170,21 @@ def get_current_injury_scores(season: int, week: int) -> dict[str, dict]:
 
     raw = fetch_injury_reports([season])
     this_week = raw[(raw["season"] == season) & (raw["week"] == week)]
+
     if this_week.empty:
-        print(f"  No injury data for {season} week {week}")
-        return {}
+        # Fall back to the most recent prior week that DOES have data
+        available_weeks = sorted(
+            w for w in raw.loc[raw["season"] == season, "week"].dropna().unique()
+            if w < week
+        )
+        if available_weeks:
+            fallback_week = int(available_weeks[-1])
+            print(f"  Injury report for {season} week {week} not yet published — "
+                  f"falling back to week {fallback_week}")
+            this_week = raw[(raw["season"] == season) & (raw["week"] == fallback_week)]
+        else:
+            print(f"  No injury data for {season} week {week}")
+            return {}
 
     result = {}
     for (_, _, team), group in this_week.groupby(["season", "week", "team"]):
