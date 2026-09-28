@@ -1,0 +1,75 @@
+{
+  "generated_at": "2026-09-28T19:57:53.559118+00:00",
+  "date": "2026-09-28",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "47dc7baa254659f3beb2ed2b38c207b6",
+      "sport": "americanfootball_nfl",
+      "sport_label": "NFL",
+      "commence_time": "2026-09-29T00:15:00Z",
+      "home_team": "Chicago Bears",
+      "away_team": "Philadelphia Eagles",
+      "home_odds": 175,
+      "away_odds": -185,
+      "spread": {
+        "point": 3.5,
+        "price": -110
+      },
+      "total": {
+        "line": 41.5,
+        "over": -115,
+        "under": -105
+      },
+      "model_home_prob": 0.5723,
+      "model_away_prob": 0.4277,
+      "home_no_vig_prob": 0.3591,
+      "away_no_vig_prob": 0.6409,
+      "home_edge": 0.2132,
+      "away_edge": -0.2132,
+      "home_ev": 0.5738,
+      "away_ev": -0.3411,
+      "home_kelly": 0.082,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "spread_analysis": {
+        "line": 3.5,
+        "odds": -110,
+        "model_p_home_covers": 0.6705,
+        "model_p_away_covers": 0.3295,
+        "home_edge": 0.1705,
+        "away_edge": -0.1705,
+        "home_ev": 0.4081,
+        "away_ev": -0.308,
+        "best_ats_bet": null
+      },
+      "home_injury_score": 0.0,
+      "away_injury_score": 0.0,
+      "home_qb_injury_impact": 0.0,
+      "away_qb_injury_impact": 0.0,
+      "model_predicted_total": 56.3,
+      "totals": {
+        "market_line": 41.5,
+        "predicted_total": 56.3,
+        "p_over": 0.8498,
+        "p_under": 0.1502,
+        "market_over_nv": 0.5108,
+        "market_under_nv": 0.4892,
+        "over_edge": 0.339,
+        "under_edge": -0.339,
+        "over_ev": 0.8271,
+        "under_ev": -0.6921,
+        "best_ou_bet": {
+          "side": "over",
+          "odds": -115,
+          "edge": 0.339,
+          "ev": 0.8271,
+          "strength": "strong"
+        }
+      },
+      "data_notes": [
+        "No current injury report available"
+      ]
+    }
+  ]
+}
