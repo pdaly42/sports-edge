@@ -1,0 +1,66 @@
+name: Log Pick Results
+
+# Standalone logger workflow — runs several times per day to close out picks
+# whose games finish long after the 9am ET daily_predictions cron. Previous
+# behavior: NFL Sunday afternoon games (ET) finished ~8pm, but the logger
+# didn't run again until Monday 9am ET, so anyone checking the dashboard
+# Sunday night or Monday morning saw missing rows.
+#
+# The three additional runs below cover:
+#   - 03:00 UTC (11pm ET) → catches all same-day MLB (finish by ~11pm ET),
+#     CFB Saturday afternoons, NFL Sunday afternoons.
+#   - 07:00 UTC (3am ET)  → catches NFL Sunday/Monday night games and any
+#     late West-Coast MLB.
+#   - 11:00 UTC (7am ET)  → last chance before daily_predictions kicks in
+#     at 13:00 UTC, so the dashboard is caught up when people start looking.
+#
+# This workflow does NOT regenerate predictions. It only reads existing
+# predictions_*.json files, resolves any newly-completed picks against
+# ESPN, and appends to results_log.csv. Idempotent — safe to overlap
+# with the daily cron.
+
+on:
+  schedule:
+    - cron: '0 3 * * *'    # 11pm ET
+    - cron: '0 7 * * *'    # 3am ET
+    - cron: '0 11 * * *'   # 7am ET
+  workflow_dispatch: {}
+
+permissions:
+  contents: write
+
+jobs:
+  log:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install minimal dependencies
+        # log_pick_results.py only needs `requests` — avoid the full
+        # requirements.txt (xgboost, nflreadpy, etc.) so this workflow
+        # starts and finishes in under a minute.
+        run: pip install requests
+
+      - name: Resolve completed picks
+        run: python3 scripts/log_pick_results.py
+
+      - name: Commit results_log.csv (if changed)
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add results_log.csv
+          if git diff --staged --quiet; then
+            echo "No new results to log."
+            exit 0
+          fi
+          git commit -m "log-results: $(date -u '+%Y-%m-%d %H:%M') UTC"
+          # Small chance the daily_predictions job pushed between our
+          # checkout and push — rebase and retry once.
+          git pull --rebase origin main
+          git push
