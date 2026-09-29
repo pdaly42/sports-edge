@@ -1,0 +1,143 @@
+{
+  "generated_at": "2026-09-29T18:25:37.226278+00:00",
+  "date": "2026-09-29",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "401907965",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-29T18:00Z",
+      "home_team": "Atlanta Braves",
+      "away_team": "Philadelphia Phillies",
+      "home_odds": -192,
+      "away_odds": 158,
+      "spread": {
+        "point": 1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 6.5,
+        "over": -121,
+        "under": 100
+      },
+      "model_home_prob": 0.5121,
+      "model_away_prob": 0.4879,
+      "home_no_vig_prob": 0.6291,
+      "away_no_vig_prob": 0.3709,
+      "home_edge": -0.117,
+      "away_edge": 0.117,
+      "home_ev": -0.2212,
+      "away_ev": 0.2588,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0409,
+      "best_bet": {
+        "side": "away",
+        "team": "Philadelphia Phillies",
+        "odds": 158,
+        "edge": 0.117,
+        "ev": 0.2588,
+        "strength": "moderate"
+      },
+      "home_pitcher": "Chris Sale",
+      "away_pitcher": "Jes\u00fas Luzardo",
+      "justification": "Philadelphia Phillies are 4-6 in their last 10 (Atlanta Braves 5-5); season records 88-74 vs 94-68. Philadelphia Phillies's avg run differential is +0.9 vs Atlanta Braves's +3.2 over the last 10 games. Model prices Philadelphia Phillies at 48.8% \u2014 a +11.7% edge over the market line."
+    },
+    {
+      "id": "401907896",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-29T21:00Z",
+      "home_team": "Houston Astros",
+      "away_team": "Chicago White Sox",
+      "home_odds": -123,
+      "away_odds": 102,
+      "spread": {
+        "point": 1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 8.0,
+        "over": -118,
+        "under": -102
+      },
+      "model_home_prob": 0.483,
+      "model_away_prob": 0.517,
+      "home_no_vig_prob": 0.527,
+      "away_no_vig_prob": 0.473,
+      "home_edge": -0.044,
+      "away_edge": 0.044,
+      "home_ev": -0.1243,
+      "away_ev": 0.0443,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0109,
+      "best_bet": null,
+      "home_pitcher": "AJ Blubaugh",
+      "away_pitcher": "Hagen Smith"
+    },
+    {
+      "id": "401907924",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-30T00:00Z",
+      "home_team": "New York Yankees",
+      "away_team": "Boston Red Sox",
+      "home_odds": -140,
+      "away_odds": 116,
+      "spread": {
+        "point": 1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 6.0,
+        "over": -116,
+        "under": -104
+      },
+      "model_home_prob": 0.5712,
+      "model_away_prob": 0.4288,
+      "home_no_vig_prob": 0.5575,
+      "away_no_vig_prob": 0.4425,
+      "home_edge": 0.0137,
+      "away_edge": -0.0137,
+      "home_ev": -0.0208,
+      "away_ev": -0.0738,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Cam Schlittler",
+      "away_pitcher": "Payton Tolle"
+    },
+    {
+      "id": "401907974",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-30T02:00Z",
+      "home_team": "San Diego Padres",
+      "away_team": "Chicago Cubs",
+      "home_odds": -124,
+      "away_odds": 103,
+      "spread": {
+        "point": -1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 7.5,
+        "over": 100,
+        "under": -120
+      },
+      "model_home_prob": 0.5731,
+      "model_away_prob": 0.4269,
+      "home_no_vig_prob": 0.5291,
+      "away_no_vig_prob": 0.4709,
+      "home_edge": 0.044,
+      "away_edge": -0.044,
+      "home_ev": 0.0353,
+      "away_ev": -0.1334,
+      "home_kelly": 0.0109,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Michael King",
+      "away_pitcher": "Matthew Boyd"
+    }
+  ]
+}
