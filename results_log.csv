@@ -251,3 +251,4 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-09-27,baseball_mlb,25a8aaae97deb4871e535ab5842a6aae,Los Angeles Dodgers,San Francisco Giants,5,1,ml,home,San Francisco Giants,210,0.2379,0.7028,strong,0.5493,loss,-1.0,2026-09-28T12:07:44
 2026-09-27,americanfootball_nfl,0339a0e41bcee12820eb3e64bb5fadb4,Kansas City Chiefs,Miami Dolphins,24,10,ou,under,48.5,-112,0.3026,0.6907,strong,0.7975,win,1.12,2026-09-28T12:07:44
 2026-09-27,americanfootball_nfl,17a730b7d399feeab6a78c30767c29d2,Houston Texans,Indianapolis Colts,17,19,ou,over,39.5,-115,0.3601,0.8491,strong,0.8601,loss,-1.0,2026-09-28T12:07:44
+2026-09-28,americanfootball_nfl,47dc7baa254659f3beb2ed2b38c207b6,Philadelphia Eagles,Chicago Bears,7,27,ou,over,42.5,-108,0.3413,0.741,strong,0.837,loss,-1.0,2026-09-29T09:36:53
