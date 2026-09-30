@@ -1,0 +1,143 @@
+{
+  "generated_at": "2026-09-30T18:15:07.784825+00:00",
+  "date": "2026-09-30",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "401907972",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-30T18:00Z",
+      "home_team": "Atlanta Braves",
+      "away_team": "Philadelphia Phillies",
+      "home_odds": -103,
+      "away_odds": -117,
+      "spread": {
+        "point": -1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 7.0,
+        "over": -119,
+        "under": -102
+      },
+      "model_home_prob": 0.487,
+      "model_away_prob": 0.513,
+      "home_no_vig_prob": 0.4848,
+      "away_no_vig_prob": 0.5152,
+      "home_edge": 0.0022,
+      "away_edge": -0.0022,
+      "home_ev": -0.0402,
+      "away_ev": -0.0485,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Tyler Mahle",
+      "away_pitcher": "Cristopher S\u00e1nchez"
+    },
+    {
+      "id": "401907897",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-09-30T21:00Z",
+      "home_team": "Houston Astros",
+      "away_team": "Chicago White Sox",
+      "home_odds": -155,
+      "away_odds": 129,
+      "spread": {
+        "point": 1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 7.5,
+        "over": -108,
+        "under": -112
+      },
+      "model_home_prob": 0.5247,
+      "model_away_prob": 0.4753,
+      "home_no_vig_prob": 0.5819,
+      "away_no_vig_prob": 0.4181,
+      "home_edge": -0.0572,
+      "away_edge": 0.0572,
+      "home_ev": -0.1368,
+      "away_ev": 0.0884,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0171,
+      "best_bet": null,
+      "home_pitcher": "Hunter Brown",
+      "away_pitcher": "Sean Burke"
+    },
+    {
+      "id": "401907963",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-10-01T00:00Z",
+      "home_team": "New York Yankees",
+      "away_team": "Boston Red Sox",
+      "home_odds": -129,
+      "away_odds": 107,
+      "spread": {
+        "point": 1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 6.5,
+        "over": -122,
+        "under": 101
+      },
+      "model_home_prob": 0.5372,
+      "model_away_prob": 0.4628,
+      "home_no_vig_prob": 0.5383,
+      "away_no_vig_prob": 0.4617,
+      "home_edge": -0.0011,
+      "away_edge": 0.0011,
+      "home_ev": -0.0464,
+      "away_ev": -0.042,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Max Fried",
+      "away_pitcher": "Sonny Gray"
+    },
+    {
+      "id": "401907975",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-10-01T02:00Z",
+      "home_team": "San Diego Padres",
+      "away_team": "Chicago Cubs",
+      "home_odds": -149,
+      "away_odds": 123,
+      "spread": {
+        "point": 1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 7.0,
+        "over": -126,
+        "under": 104
+      },
+      "model_home_prob": 0.6715,
+      "model_away_prob": 0.3285,
+      "home_no_vig_prob": 0.5716,
+      "away_no_vig_prob": 0.4284,
+      "home_edge": 0.0999,
+      "away_edge": -0.0999,
+      "home_ev": 0.1222,
+      "away_ev": -0.2674,
+      "home_kelly": 0.0455,
+      "away_kelly": 0.0,
+      "best_bet": {
+        "side": "home",
+        "team": "San Diego Padres",
+        "odds": -149,
+        "edge": 0.0999,
+        "ev": 0.1222,
+        "strength": "moderate"
+      },
+      "home_pitcher": "Nick Pivetta",
+      "away_pitcher": "Kevin Gausman",
+      "justification": "San Diego Padres are 8-2 in their last 10 (Chicago Cubs 5-5); season records 91-71 vs 89-73. San Diego Padres's avg run differential is +0.6 vs Chicago Cubs's +1.2 over the last 10 games. Nick Pivetta (ERA 2.86) has a meaningful ERA advantage over Kevin Gausman (ERA 4.51)."
+    }
+  ]
+}
