@@ -1,0 +1,106 @@
+{
+  "generated_at": "2026-10-01T18:40:39.656732+00:00",
+  "date": "2026-10-01",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "5524c44b05e28aa899909c9e001184ec",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-10-02T00:11:00Z",
+      "home_team": "Atlanta Braves",
+      "away_team": "Philadelphia Phillies",
+      "home_odds": -106,
+      "away_odds": -110,
+      "spread": {
+        "point": 1.5,
+        "price": -192
+      },
+      "total": {
+        "line": 7.5,
+        "over": -104,
+        "under": -118
+      },
+      "model_home_prob": 0.6205,
+      "model_away_prob": 0.3795,
+      "home_no_vig_prob": 0.4955,
+      "away_no_vig_prob": 0.5045,
+      "home_edge": 0.125,
+      "away_edge": -0.125,
+      "home_ev": 0.2059,
+      "away_ev": -0.2755,
+      "home_kelly": 0.0546,
+      "away_kelly": 0.0,
+      "best_bet": {
+        "side": "home",
+        "team": "Atlanta Braves",
+        "odds": -106,
+        "edge": 0.125,
+        "ev": 0.2059,
+        "strength": "strong"
+      },
+      "home_pitcher": "Ray Kerr",
+      "away_pitcher": "Aaron Nola",
+      "justification": "Atlanta Braves are 5-5 in their last 10 (Philadelphia Phillies 4-6); season records 94-68 vs 88-74. Atlanta Braves's avg run differential is +3.2 vs Philadelphia Phillies's +0.9 over the last 10 games. Ray Kerr (ERA 1.47) has a meaningful ERA advantage over Aaron Nola (ERA 4.67)."
+    },
+    {
+      "id": "d55cb69fed50a09170560b5b75d8de86",
+      "sport": "americanfootball_nfl",
+      "sport_label": "NFL",
+      "commence_time": "2026-10-02T00:15:00Z",
+      "home_team": "Cleveland Browns",
+      "away_team": "Pittsburgh Steelers",
+      "home_odds": 125,
+      "away_odds": -142,
+      "spread": {
+        "point": 2.5,
+        "price": 100
+      },
+      "total": {
+        "line": 38.5,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.4147,
+      "model_away_prob": 0.5853,
+      "home_no_vig_prob": 0.431,
+      "away_no_vig_prob": 0.569,
+      "home_edge": -0.0163,
+      "away_edge": 0.0163,
+      "home_ev": -0.0669,
+      "away_ev": -0.0025,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "spread_analysis": {
+        "line": 2.5,
+        "odds": 100,
+        "model_p_home_covers": 0.4879,
+        "model_p_away_covers": 0.5121,
+        "home_edge": -0.0121,
+        "away_edge": 0.0121,
+        "home_ev": -0.0242,
+        "away_ev": 0.0242,
+        "best_ats_bet": null
+      },
+      "home_injury_score": 0.0,
+      "away_injury_score": 0.0,
+      "home_qb_injury_impact": 0.0,
+      "away_qb_injury_impact": 0.0,
+      "model_predicted_total": 38.4,
+      "totals": {
+        "market_line": 38.5,
+        "predicted_total": 38.4,
+        "p_over": 0.4984,
+        "p_under": 0.5016,
+        "market_over_nv": 0.4892,
+        "market_under_nv": 0.5108,
+        "over_edge": 0.0092,
+        "under_edge": -0.0092,
+        "over_ev": 0.0217,
+        "under_ev": 0.0784,
+        "best_ou_bet": null
+      }
+    }
+  ]
+}
