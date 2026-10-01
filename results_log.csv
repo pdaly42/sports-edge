@@ -253,3 +253,4 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-09-27,americanfootball_nfl,17a730b7d399feeab6a78c30767c29d2,Houston Texans,Indianapolis Colts,17,19,ou,over,39.5,-115,0.3601,0.8491,strong,0.8601,loss,-1.0,2026-09-28T12:07:44
 2026-09-28,americanfootball_nfl,47dc7baa254659f3beb2ed2b38c207b6,Philadelphia Eagles,Chicago Bears,7,27,ou,over,42.5,-108,0.3413,0.741,strong,0.837,loss,-1.0,2026-09-29T09:36:53
 2026-09-29,baseball_mlb,401907965,Philadelphia Phillies,Atlanta Braves,3,5,ml,away,Philadelphia Phillies,158,0.117,0.2588,moderate,0.4879,loss,-1.0,2026-09-30T09:28:58
+2026-09-30,baseball_mlb,401907975,Chicago Cubs,San Diego Padres,1,4,ml,home,San Diego Padres,-149,0.0999,0.1222,moderate,0.6715,win,1.49,2026-10-01T09:55:12
