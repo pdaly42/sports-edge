@@ -1,0 +1,101 @@
+{
+  "generated_at": "2026-10-02T18:10:40.161896+00:00",
+  "date": "2026-10-02",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "e61c74f0e28b46ad83270a6234b425f4",
+      "sport": "americanfootball_ncaaf",
+      "sport_label": "CFB",
+      "commence_time": "2026-10-02T23:00:00Z",
+      "home_team": "Virginia Tech Hokies",
+      "away_team": "Pittsburgh Panthers",
+      "home_odds": -130,
+      "away_odds": 110,
+      "spread": {
+        "point": -2.5,
+        "price": -105
+      },
+      "total": {
+        "line": 54.5,
+        "over": -112,
+        "under": -108
+      },
+      "model_home_prob": 0.6904,
+      "model_away_prob": 0.3096,
+      "home_no_vig_prob": 0.5427,
+      "away_no_vig_prob": 0.4573,
+      "home_edge": 0.1477,
+      "away_edge": -0.1477,
+      "home_ev": 0.2215,
+      "away_ev": -0.3498,
+      "home_kelly": 0.072,
+      "away_kelly": 0.0,
+      "best_bet": {
+        "side": "home",
+        "team": "Virginia Tech Hokies",
+        "odds": -130,
+        "edge": 0.1477,
+        "ev": 0.2215,
+        "strength": "strong"
+      },
+      "spread_analysis": {
+        "line": -2.5,
+        "odds": -105,
+        "model_p_home_covers": 0.6352,
+        "model_p_away_covers": 0.3648,
+        "home_edge": 0.1352,
+        "away_edge": -0.1352,
+        "home_ev": 0.3022,
+        "away_ev": -0.2522,
+        "best_ats_bet": null
+      },
+      "justification": "Virginia Tech avg +7.5 pt diff over last 6 vs Pittsburgh's +4.2. Model prices Virginia Tech at 69.0% \u2014 a +14.8% edge over market.",
+      "home_ranked": false,
+      "away_ranked": false
+    },
+    {
+      "id": "0469a451e58ca81723a7760d4bede173",
+      "sport": "americanfootball_ncaaf",
+      "sport_label": "CFB",
+      "commence_time": "2026-10-03T00:00:00Z",
+      "home_team": "Northwestern Wildcats",
+      "away_team": "Penn State Nittany Lions",
+      "home_odds": 118,
+      "away_odds": -135,
+      "spread": {
+        "point": 2.5,
+        "price": -102
+      },
+      "total": {
+        "line": 45.5,
+        "over": -115,
+        "under": -105
+      },
+      "model_home_prob": 0.2009,
+      "model_away_prob": 0.7991,
+      "home_no_vig_prob": 0.444,
+      "away_no_vig_prob": 0.556,
+      "home_edge": -0.2431,
+      "away_edge": 0.2431,
+      "home_ev": -0.562,
+      "away_ev": 0.391,
+      "home_kelly": 0.0,
+      "away_kelly": 0.132,
+      "best_bet": null,
+      "spread_analysis": {
+        "line": 2.5,
+        "odds": -102,
+        "model_p_home_covers": 0.246,
+        "model_p_away_covers": 0.754,
+        "home_edge": -0.254,
+        "away_edge": 0.254,
+        "home_ev": -0.5031,
+        "away_ev": 0.5231,
+        "best_ats_bet": null
+      },
+      "home_ranked": false,
+      "away_ranked": false
+    }
+  ]
+}
