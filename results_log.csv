@@ -256,3 +256,6 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-09-30,baseball_mlb,401907975,Chicago Cubs,San Diego Padres,1,4,ml,home,San Diego Padres,-149,0.0999,0.1222,moderate,0.6715,win,1.49,2026-10-01T09:55:12
 2026-10-01,baseball_mlb,5524c44b05e28aa899909c9e001184ec,Philadelphia Phillies,Atlanta Braves,2,6,ml,home,Atlanta Braves,-106,0.125,0.2059,strong,0.6205,win,1.06,2026-10-02T09:31:54
 2026-10-02,americanfootball_ncaaf,e61c74f0e28b46ad83270a6234b425f4,Pittsburgh Panthers,Virginia Tech Hokies,35,33,ml,home,Virginia Tech Hokies,-130,0.1477,0.2215,strong,0.6904,loss,-1.0,2026-10-03T08:59:20
+2026-10-03,americanfootball_ncaaf,7bdd5ae18979fa3af61625a21d757987,West Virginia Mountaineers,Iowa State Cyclones,42,45,ml,away,West Virginia Mountaineers,220,0.0987,0.2822,moderate,0.4007,loss,-1.0,2026-10-04T09:31:09
+2026-10-03,americanfootball_ncaaf,46e1be6476ed577d1b5194b46b27c643,Vanderbilt Commodores,Georgia Bulldogs,14,38,ats,ats-away,Vanderbilt Commodores +25.5,-118,0.0801,0.2646,strong,0.5801,win,1.18,2026-10-04T09:31:09
+2026-10-03,americanfootball_ncaaf,ff98b80b07e2f42c76c2c255e6611247,Arkansas Razorbacks,Texas A&M Aggies,7,34,ats,ats-home,Texas A&M Aggies -13.5,-118,0.0926,0.2919,strong,0.5926,win,1.18,2026-10-04T09:31:09
