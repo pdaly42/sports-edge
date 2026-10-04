@@ -2022,36 +2022,99 @@ def run(api_key: str, output_path: str = None, target_date: str = None,
         except Exception as merge_err:
             print(f"  Merge skipped ({merge_err}) — overwriting file")
 
+    # Sticky-flag protection: load any picks already flagged by a prior same-day
+    # run so the EV cap below cannot silently drop a pick someone may have
+    # already bet. Oct 3 bug: Kentucky ATS was flagged in the 10:58am run and
+    # dropped by the 12:56pm cap when a new WVU ML candidate edged it out on
+    # EV — the dashboard showed Kentucky all morning, but the logger never
+    # recorded it because by game time it was no longer in the file.
+    #
+    # Keyed on game id + pick kind (not Python id(g), which doesn't survive
+    # file round-trips) and compared against the id of each live game object.
+    previously_flagged: dict[tuple, dict] = {}
+    if Path(output_path).exists() and not force:
+        try:
+            prev = json.loads(Path(output_path).read_text())
+            for pg in prev.get("games", []):
+                pgid = pg.get("id")
+                if pg.get("best_bet"):
+                    previously_flagged[(pgid, "ml")] = pg["best_bet"]
+                p_tot = pg.get("totals") or {}
+                if p_tot.get("best_ou_bet"):
+                    previously_flagged[(pgid, "ou")] = p_tot["best_ou_bet"]
+                p_sa = pg.get("spread_analysis") or {}
+                if p_sa.get("best_ats_bet"):
+                    previously_flagged[(pgid, "ats")] = p_sa["best_ats_bet"]
+        except Exception as sticky_err:
+            print(f"  Sticky-flag load skipped ({sticky_err})")
+
     # Cap at 3 best bets per day — moneyline, totals, and against-the-spread
     # compete for the same 3 slots ranked by EV. A single game can contribute
-    # all three pick types independently.
+    # all three pick types independently. Previously-flagged picks are
+    # exempt from the cap: they pass through automatically, and the cap
+    # applies only to NEW candidates ranked by EV.
     MAX_BEST_BETS = 3
+    sticky_slots = 0
+    for g in all_games:
+        gid = g.get("id")
+        if (gid, "ml") in previously_flagged and not g.get("best_bet"):
+            # Prior run flagged this ML but this run didn't produce one
+            # (odds vanished, game dropped from the slate, etc.) — restore
+            # the prior pick so the record stays truthful. Same for ou/ats.
+            g["best_bet"] = previously_flagged[(gid, "ml")]
+        if (gid, "ml") in previously_flagged:
+            sticky_slots += 1
+        tot = g.get("totals")
+        if tot and (gid, "ou") in previously_flagged and not tot.get("best_ou_bet"):
+            tot["best_ou_bet"] = previously_flagged[(gid, "ou")]
+        if tot and (gid, "ou") in previously_flagged:
+            sticky_slots += 1
+        sa = g.get("spread_analysis")
+        if sa and (gid, "ats") in previously_flagged and not sa.get("best_ats_bet"):
+            sa["best_ats_bet"] = previously_flagged[(gid, "ats")]
+        if sa and (gid, "ats") in previously_flagged:
+            sticky_slots += 1
+
     candidates: list[dict] = []
     for g in all_games:
+        gid = g.get("id")
         ml = g.get("best_bet")
-        if ml and ml.get("ev") is not None:
+        if ml and ml.get("ev") is not None and (gid, "ml") not in previously_flagged:
             candidates.append({"gid": id(g), "kind": "ml", "ev": ml["ev"]})
         ou = (g.get("totals") or {}).get("best_ou_bet")
-        if ou and ou.get("ev") is not None:
+        if ou and ou.get("ev") is not None and (gid, "ou") not in previously_flagged:
             candidates.append({"gid": id(g), "kind": "ou", "ev": ou["ev"]})
         ats = (g.get("spread_analysis") or {}).get("best_ats_bet")
-        if ats and ats.get("ev") is not None:
+        if ats and ats.get("ev") is not None and (gid, "ats") not in previously_flagged:
             candidates.append({"gid": id(g), "kind": "ats", "ev": ats["ev"]})
+
+    # Cap applies to NEW candidates only, with remaining slots after sticky picks.
+    # If sticky picks already fill or exceed MAX_BEST_BETS, no new candidates
+    # get added (the day is "full").
+    remaining = max(0, MAX_BEST_BETS - sticky_slots)
     candidates.sort(key=lambda c: c["ev"], reverse=True)
-    kept = candidates[:MAX_BEST_BETS]
+    kept = candidates[:remaining]
     kept_ml_ids  = {c["gid"] for c in kept if c["kind"] == "ml"}
     kept_ou_ids  = {c["gid"] for c in kept if c["kind"] == "ou"}
     kept_ats_ids = {c["gid"] for c in kept if c["kind"] == "ats"}
 
     for g in all_games:
-        if g.get("best_bet") and id(g) not in kept_ml_ids:
+        gid = g.get("id")
+        if g.get("best_bet") and id(g) not in kept_ml_ids \
+                and (gid, "ml") not in previously_flagged:
             g["best_bet"] = None
         tot = g.get("totals")
-        if tot and tot.get("best_ou_bet") and id(g) not in kept_ou_ids:
+        if tot and tot.get("best_ou_bet") and id(g) not in kept_ou_ids \
+                and (gid, "ou") not in previously_flagged:
             tot["best_ou_bet"] = None
         sa = g.get("spread_analysis")
-        if sa and sa.get("best_ats_bet") and id(g) not in kept_ats_ids:
+        if sa and sa.get("best_ats_bet") and id(g) not in kept_ats_ids \
+                and (gid, "ats") not in previously_flagged:
             sa["best_ats_bet"] = None
+
+    if sticky_slots:
+        print(f"  Sticky-flag preserved {sticky_slots} prior pick(s); "
+              f"new candidate slots available: {remaining}")
 
     odds_available = any(g.get("home_odds") is not None for g in all_games)
 

@@ -60,8 +60,19 @@ FIELDNAMES = [
 
 
 def _payout_units(odds: float) -> float:
-    """Profit on a 1-unit stake at American odds."""
-    return abs(odds) / 100 if odds < 0 else odds / 100
+    """
+    Profit on a 1-unit stake at American odds.
+
+    For positive odds (+N): risk 100 to win N → 1u stake profits N/100.
+    For negative odds (-N): risk  N  to win 100 → 1u stake profits 100/N.
+
+    The original implementation returned abs(odds)/100 for negative odds,
+    which flipped the ratio — a -150 win was recorded as +1.500u instead
+    of the correct +0.667u. Over 48 negative-odds wins this had inflated
+    the logged lifetime P/L by +18.42u. The CSV was rewritten with
+    correct values when this bug was fixed (Oct 4).
+    """
+    return 100.0 / abs(odds) if odds < 0 else odds / 100.0
 
 
 def _load_existing_keys() -> set[tuple]:
