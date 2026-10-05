@@ -260,3 +260,6 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-10-03,americanfootball_ncaaf,46e1be6476ed577d1b5194b46b27c643,Vanderbilt Commodores,Georgia Bulldogs,14,38,ats,ats-away,Vanderbilt Commodores +25.5,-118,0.0801,0.2646,strong,0.5801,win,0.8475,2026-10-04T09:31:09
 2026-10-03,americanfootball_ncaaf,ff98b80b07e2f42c76c2c255e6611247,Arkansas Razorbacks,Texas A&M Aggies,7,34,ats,ats-home,Texas A&M Aggies -13.5,-118,0.0926,0.2919,strong,0.5926,win,0.8475,2026-10-04T09:31:09
 2026-10-03,americanfootball_ncaaf,59abc1d6262d2ea6a72c4daad4c83af2,Kentucky Wildcats,South Carolina Gamecocks,35,34,ats,ats-away,Kentucky Wildcats +2.5,-112,0.07,0.2084,strong,0.57,win,0.8929,2026-10-04T10:58:55
+2026-10-04,americanfootball_nfl,2ea94ddf20f66432b9024fe2e2eaba5f,Jacksonville Jaguars,Cincinnati Bengals,22,17,ou,over,45.5,-118,0.3568,0.8833,strong,0.8639,loss,-1.0,2026-10-05T10:11:31
+2026-10-04,americanfootball_nfl,1b4f2e60ce83fa1d63a5dff83769d27c,Los Angeles Rams,Philadelphia Eagles,24,20,ou,over,44.5,-107,0.3268,0.6779,strong,0.8106,loss,-1.0,2026-10-05T10:11:31
+2026-10-04,americanfootball_nfl,e0cbd266dcf997089203a1b33ba0333d,Kansas City Chiefs,Las Vegas Raiders,30,27,ou,under,47.5,-105,0.3088,0.6358,strong,0.7979,loss,-1.0,2026-10-05T10:11:31
