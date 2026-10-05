@@ -1597,7 +1597,7 @@ async function loadYesterdayResults() {
       const predictedTeam = pred.best_bet.side === 'home' ? game.home_team : game.away_team;
       const hit = normalizeTeamName(predictedTeam) === normalizeTeamName(actualWinner);
       outcomeClass = hit ? 'correct' : 'wrong';
-      outcomeLabel = hit ? 'CORRECT' : 'WRONG';
+      outcomeLabel = hit ? 'CORRECT ML' : 'WRONG ML';
     }
 
     const time = new Date(game.commence_time).toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
@@ -1669,14 +1669,55 @@ async function loadYesterdayResults() {
   const { correct: mc, wrong: mw } = groupRecord(groups.moderate);
   recordDayResults(dateISO, sc, sw, mc, mw);
 
-  const total = totalCorrect + totalWrong;
-  const pct   = total > 0 ? Math.round((totalCorrect / total) * 100) : 0;
-  const recordStr = total > 0 ? `${totalCorrect}–${totalWrong}` : '—';
-  statRecord.textContent = recordStr;
-  statRecord.style.color = pct >= 55 ? 'var(--green)' : pct < 45 && total > 0 ? 'var(--red)' : 'var(--text)';
-  statRecordSub.textContent = total > 0
-    ? `${pct}% on edge picks · ${yesterday.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`
-    : `no edge picks · ${yesterday.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`;
+  // ── Yesterday's Record tile ──────────────────────────────────────────
+  // Pull from results_log.csv (server-side source of truth that covers
+  // ML, O/U, and ATS picks together) instead of the ML-only ESPN-match
+  // logic above. Oct 3 had 3 ATS picks + 1 ML pick; the old code only
+  // saw the ML pick (and even that could fail on team-name normalization)
+  // so the tile was showing "no edge picks" even though 3 of 4 won.
+  try {
+    const res = await fetch(`results_log.csv?t=${Date.now()}`);
+    if (!res.ok) throw new Error('no csv');
+    const text = await res.text();
+    const lines = text.trim().split(/\r?\n/);
+    const header = lines[0].split(',');
+    const iDate    = header.indexOf('date');
+    const iOutcome = header.indexOf('outcome');
+    const iPnl     = header.indexOf('pnl_units');
+    let wins = 0, losses = 0, pushes = 0, pnl = 0;
+    for (let i = 1; i < lines.length; i++) {
+      const cells = lines[i].split(',');
+      if (cells[iDate] !== dateISO) continue;
+      const o = cells[iOutcome];
+      if (o === 'win')   wins++;
+      else if (o === 'loss')  losses++;
+      else if (o === 'push')  pushes++;
+      pnl += parseFloat(cells[iPnl]) || 0;
+    }
+    const resolved = wins + losses;
+    const pct = resolved > 0 ? Math.round((wins / resolved) * 100) : 0;
+    if (resolved + pushes > 0) {
+      const recStr = `${wins}–${losses}` + (pushes ? `–${pushes}` : '');
+      statRecord.textContent = recStr;
+      statRecord.style.color = pct >= 55 ? 'var(--green)' : pct < 45 ? 'var(--red)' : 'var(--text)';
+      const pnlStr = (pnl >= 0 ? '+' : '') + pnl.toFixed(2) + 'u';
+      statRecordSub.textContent =
+        `${pct}% · ${pnlStr} · ${yesterday.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`;
+    } else {
+      statRecord.textContent = '—';
+      statRecordSub.textContent = `no picks logged · ${yesterday.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`;
+    }
+  } catch (e) {
+    // Fall back to the ML-only ESPN-match calculation if the CSV isn't reachable
+    const total = totalCorrect + totalWrong;
+    const pct   = total > 0 ? Math.round((totalCorrect / total) * 100) : 0;
+    const recordStr = total > 0 ? `${totalCorrect}–${totalWrong}` : '—';
+    statRecord.textContent = recordStr;
+    statRecord.style.color = pct >= 55 ? 'var(--green)' : pct < 45 && total > 0 ? 'var(--red)' : 'var(--text)';
+    statRecordSub.textContent = total > 0
+      ? `${pct}% on ML picks · ${yesterday.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`
+      : `no ML picks · ${yesterday.toLocaleDateString('en-US', { month: 'short', day: 'numeric' })}`;
+  }
 }
 </script>
 </body>
