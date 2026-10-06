@@ -263,3 +263,5 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-10-04,americanfootball_nfl,2ea94ddf20f66432b9024fe2e2eaba5f,Jacksonville Jaguars,Cincinnati Bengals,22,17,ou,over,45.5,-118,0.3568,0.8833,strong,0.8639,loss,-1.0,2026-10-05T10:11:31
 2026-10-04,americanfootball_nfl,1b4f2e60ce83fa1d63a5dff83769d27c,Los Angeles Rams,Philadelphia Eagles,24,20,ou,over,44.5,-107,0.3268,0.6779,strong,0.8106,loss,-1.0,2026-10-05T10:11:31
 2026-10-04,americanfootball_nfl,e0cbd266dcf997089203a1b33ba0333d,Kansas City Chiefs,Las Vegas Raiders,30,27,ou,under,47.5,-105,0.3088,0.6358,strong,0.7979,loss,-1.0,2026-10-05T10:11:31
+2026-10-05,americanfootball_nfl,8bd90781e17e6d97df3941063cedae1e,Atlanta Falcons,New Orleans Saints,45,24,ou,under,47.5,-102,0.2624,0.505,strong,0.745,loss,-1.0,2026-10-06T09:55:46
+2026-10-05,americanfootball_nfl,8bd90781e17e6d97df3941063cedae1e,Atlanta Falcons,New Orleans Saints,45,24,ats,ats-home,New Orleans Saints -1.5,-108,0.0624,0.1698,strong,0.5624,loss,-1.0,2026-10-06T09:55:46
