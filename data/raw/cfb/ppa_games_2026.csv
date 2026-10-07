@@ -680,3 +680,5 @@ season,week,team,opponent,cfb_off_epa_per_play,cfb_off_pass_epa,cfb_off_rush_epa
 2026,5,West Virginia,Iowa State,0.37,0.37,0.36,0.34
 2026,5,Wisconsin,Michigan State,0.26,0.43,0.23,-0.33
 2026,5,Wyoming,North Dakota State,-0.3,-0.87,-0.04,0.21
+2026,6,Southern Miss,Troy,0.18,0.39,0.26,0.5
+2026,6,Troy,Southern Miss,0.5,0.59,0.46,0.18
