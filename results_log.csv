@@ -267,3 +267,4 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-10-05,americanfootball_nfl,8bd90781e17e6d97df3941063cedae1e,Atlanta Falcons,New Orleans Saints,45,24,ats,ats-home,New Orleans Saints -1.5,-108,0.0624,0.1698,strong,0.5624,loss,-1.0,2026-10-06T09:55:46
 2026-10-06,baseball_mlb,62d8e1c18355ab6b3913d7a28fa677c2,Milwaukee Brewers,San Diego Padres,3,4,ml,home,San Diego Padres,-135,0.1023,0.1499,moderate,0.6606,win,0.7407,2026-10-07T10:02:52
 2026-10-07,baseball_mlb,2f041c00e4bddc69bd1bbfbd40cc3c09,Los Angeles Dodgers,Atlanta Braves,4,1,ml,home,Atlanta Braves,129,0.0812,0.1505,moderate,0.5024,loss,-1.0,2026-10-08T10:14:37
+2026-10-08,americanfootball_nfl,259b5df9aa0d10257f56de78523495e0,Tampa Bay Buccaneers,Dallas Cowboys,24,16,ml,away,Tampa Bay Buccaneers,400,0.259,1.2625,strong,0.4525,win,4.0,2026-10-09T10:15:49
