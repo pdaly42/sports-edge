@@ -269,3 +269,6 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-10-07,baseball_mlb,2f041c00e4bddc69bd1bbfbd40cc3c09,Los Angeles Dodgers,Atlanta Braves,4,1,ml,home,Atlanta Braves,129,0.0812,0.1505,moderate,0.5024,loss,-1.0,2026-10-08T10:14:37
 2026-10-08,americanfootball_nfl,259b5df9aa0d10257f56de78523495e0,Tampa Bay Buccaneers,Dallas Cowboys,24,16,ml,away,Tampa Bay Buccaneers,400,0.259,1.2625,strong,0.4525,win,4.0,2026-10-09T10:15:49
 2026-10-09,americanfootball_ncaaf,a168f1bed30ce7d56dc2b77dbfe37705,Iowa Hawkeyes,Washington Huskies,41,24,ml,away,Iowa Hawkeyes,126,0.1724,0.3519,strong,0.5982,win,1.26,2026-10-10T09:36:05
+2026-10-10,americanfootball_ncaaf,416ce0307b7b9d97f5365a29c1729339,Wake Forest Demon Deacons,NC State Wolfpack,38,14,ml,away,Wake Forest Demon Deacons,-102,0.2078,0.3635,strong,0.6885,win,0.9804,2026-10-11T09:48:55
+2026-10-10,americanfootball_ncaaf,9f633922d2cc5fa338aa22d1fcb83099,Virginia Tech Hokies,California Golden Bears,20,25,ats,ats-away,Virginia Tech Hokies -9.5,-105,0.1127,0.256,strong,0.6127,loss,-1.0,2026-10-11T09:48:55
+2026-10-10,americanfootball_ncaaf,d9b77825d169fdd683f8efa7c1948a8e,Ole Miss Rebels,Vanderbilt Commodores,52,17,ml,home,Vanderbilt Commodores,280,0.2555,0.9437,strong,0.5115,loss,-1.0,2026-10-11T09:48:55
