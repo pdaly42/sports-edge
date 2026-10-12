@@ -272,3 +272,6 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-10-10,americanfootball_ncaaf,416ce0307b7b9d97f5365a29c1729339,Wake Forest Demon Deacons,NC State Wolfpack,38,14,ml,away,Wake Forest Demon Deacons,-102,0.2078,0.3635,strong,0.6885,win,0.9804,2026-10-11T09:48:55
 2026-10-10,americanfootball_ncaaf,9f633922d2cc5fa338aa22d1fcb83099,Virginia Tech Hokies,California Golden Bears,20,25,ats,ats-away,Virginia Tech Hokies -9.5,-105,0.1127,0.256,strong,0.6127,loss,-1.0,2026-10-11T09:48:55
 2026-10-10,americanfootball_ncaaf,d9b77825d169fdd683f8efa7c1948a8e,Ole Miss Rebels,Vanderbilt Commodores,52,17,ml,home,Vanderbilt Commodores,280,0.2555,0.9437,strong,0.5115,loss,-1.0,2026-10-11T09:48:55
+2026-10-11,americanfootball_nfl,9db4ed15fe34fca1fb62f040cd244591,Cleveland Browns,New York Jets,12,17,ml,away,Cleveland Browns,176,0.1018,0.3383,moderate,0.4849,loss,-1.0,2026-10-12T10:29:02
+2026-10-11,americanfootball_nfl,c4647ca1201e6768501877267ca8251b,Cincinnati Bengals,Miami Dolphins,31,24,ml,home,Miami Dolphins,340,0.2261,0.9492,strong,0.443,loss,-1.0,2026-10-12T10:29:02
+2026-10-11,americanfootball_nfl,c4647ca1201e6768501877267ca8251b,Cincinnati Bengals,Miami Dolphins,31,24,ou,under,50.5,-118,0.1699,0.4737,strong,0.676,loss,-1.0,2026-10-12T10:29:02
