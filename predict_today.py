@@ -680,7 +680,9 @@ def build_game_prediction(game: dict, model_home_prob,
             a_ats_edge = round(p_a_cov - ats_a_nv, 4)
             # ATS odds default to -110 when not present in the odds feed
             ats_odds = int(spread_price) if spread_price else -110
-            ats_payout = abs(ats_odds)/100 if ats_odds < 0 else ats_odds/100
+            # Correct payout formula (Oct 17 fix — was abs/100 for negative
+            # odds, inflating EVs on standard -110 ATS prices).
+            ats_payout = _payout_units_correct(ats_odds)
             out["spread_analysis"] = {
                 "line":                home_spread,
                 "odds":                ats_odds,
@@ -995,9 +997,42 @@ NFL_DOME_HOME_TEAMS = {
 }
 
 
+# O/U picks are DISABLED pending a rebuild of the totals model.
+# Oct 17, 2026 audit of 13 logged O/U picks showed the totals model has
+# a mean absolute error of 17.7 points per game — essentially no
+# predictive signal. Specifically:
+#   OVER picks:  mean error +19.9 pts (model predicts way too high, over loses)
+#   UNDER picks: mean error -15.2 pts (model predicts way too low, over hits)
+# The model's "big edges" are artifacts of its own bad point predictions,
+# not real market inefficiencies. Record: 2-11 lifetime, 1-10 last 30 days.
+#
+# When fixed: (a) retrain totals regression with better features (currently
+# over-indexes on combined scoring averages which are noisy early-season);
+# (b) use the LIVE RMSE (~20 pts) as sigma for over_under_probs instead of
+# the training RMSE (~10 pts), which is making the probability outputs
+# overconfident; (c) consider shrinking predicted_total toward market_line
+# the same way we shrink ML probs toward market.
+OU_PICKS_DISABLED = True
+OU_DISABLED_REASON = ("totals model MAE = 17.7 pts (Oct 17 audit); 2-11 lifetime. "
+                      "Disabled pending model rebuild — see predict_today.py comments.")
+
+
+def _payout_units_correct(odds: float) -> float:
+    """Profit on a 1-unit stake at American odds. Negative-odds-safe."""
+    return 100.0 / abs(odds) if odds < 0 else odds / 100.0
+
+
 def _best_ou_bet(line: float, predicted: float, p_over: float, p_under: float,
                  over_odds, under_odds, edge_over, edge_under) -> dict | None:
-    """Flag an O/U best bet when edge >= 4% and predicted total is >= 3 pts from line."""
+    """Flag an O/U best bet when edge >= 4% and predicted total is >= 3 pts from line.
+
+    Returns None unconditionally while OU_PICKS_DISABLED is True (see comment
+    block above for rationale). The totals block still populates predicted_total,
+    p_over/p_under, and edges — so the dashboard can show what the model would
+    say — just no best_ou_bet badge or inclusion in the 3-pick cap.
+    """
+    if OU_PICKS_DISABLED:
+        return None
     if abs(predicted - line) < 3.0:
         return None
     candidates = []
@@ -1008,9 +1043,11 @@ def _best_ou_bet(line: float, predicted: float, p_over: float, p_under: float,
     if not candidates:
         return None
     side, prob, odds, edge = max(candidates, key=lambda x: x[3])
-    # EV is included so O/U picks can be ranked on the same scale as
-    # moneyline picks when the daily best-bet cap is applied.
-    payout = abs(odds)/100 if odds < 0 else odds/100
+    # EV included so O/U picks can be ranked on the same scale as moneyline
+    # picks when the daily best-bet cap is applied. Payout formula was
+    # inverted here for negative odds until Oct 17 fix (same bug fixed in
+    # log_pick_results.py on Oct 4).
+    payout = _payout_units_correct(odds)
     ev = prob * payout - (1 - prob)
     return {
         "side":     side,
@@ -1401,7 +1438,10 @@ def predict_nfl(api_key: str, target_date: str) -> list:
                     def _ou_ev(model_p, odds):
                         if odds is None:
                             return None
-                        payout = abs(odds)/100 if odds < 0 else odds/100
+                        # Correct payout formula (Oct 17 fix — was abs/100 for
+                        # negative odds, inflating EVs by ~2x on standard
+                        # -110 to -120 totals markets).
+                        payout = _payout_units_correct(odds)
                         return round(model_p * payout - (1 - model_p), 4)
 
                     pred["totals"] = {
@@ -1419,6 +1459,11 @@ def predict_nfl(api_key: str, target_date: str) -> list:
                             line, predicted_total, p_over, p_under,
                             over_odds, under_odds, ou_edge_over, ou_edge_under
                         ),
+                        # Transparency: expose the disable state so the dashboard
+                        # can show a "picks disabled" badge instead of silently
+                        # hiding O/U recommendations.
+                        "picks_disabled": OU_PICKS_DISABLED,
+                        "disabled_reason": OU_DISABLED_REASON if OU_PICKS_DISABLED else None,
                     }
                 elif not totals_suppressed:
                     pred["totals"] = {"predicted_total": round(predicted_total, 1)}

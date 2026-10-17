@@ -1249,6 +1249,11 @@ function renderCard(game, threshold) {
               EV ${ou.ev >= 0 ? '+' : ''}${(ou.ev*100).toFixed(1)}%
             </span>
           </div>` : ''}
+
+          ${!suppressed && t.picks_disabled ? `
+          <div style="margin-top:8px;padding:6px 10px;background:#f1f5f9;border:1px dashed #cbd5e1;border-radius:6px;font-size:0.72rem;color:#64748b;text-align:center;font-style:italic">
+            O/U picks disabled — totals model under review (MAE too high)
+          </div>` : ''}
         </div>`;
       })() : ''}
 
