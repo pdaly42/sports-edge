@@ -506,6 +506,41 @@ def generate_justification(home: str, away: str, feat: dict,
     return ". ".join(parts[:3]) + "."
 
 
+# ── Bayesian shrinkage toward market no-vig probability ────────────────────
+# 30-day football audit (Oct 17, 2026): raw model probabilities produced
+# edges that were inversely correlated with win rate — picks with 10-15%
+# edge went 1-6 (14%), picks with >20% edge went 3-9 (25%), while picks
+# with <10% edge went 6-4 (60%). The model's "big edge" opinions are
+# where it's most wrong; the market is pricing those games correctly.
+#
+# Shrinkage blends model probability with the market's no-vig probability
+# before edges are computed. Preserves direction (if model says >50%,
+# blended still > 50%) but attenuates magnitude. Equivalent to a Bayesian
+# posterior where the market is a strong prior.
+#
+# SHRINKAGE_MODEL_WEIGHT = 0.3 means edges become 30% as large as before.
+# A raw +20% edge becomes +6% blended. A raw +5% edge becomes +1.5%
+# (will fall below the 8% ML gate and not flag). This is aggressive but
+# the data supports it: if the model had real edge, bigger numbers should
+# win more often, not less.
+#
+# Does NOT shrink totals (O/U) in this pass — totals go through a totally
+# different probability path (over_under_probs from predicted_total +
+# RMSE); they're shrunk inside that function instead if we decide to
+# turn it on. Current data (1-10 O/U in 30d) suggests totals should
+# probably be killed outright rather than shrunk; left as-is pending
+# further analysis.
+SHRINKAGE_MODEL_WEIGHT = 0.3   # 0.0 = pure market, 1.0 = pure model (prior behavior)
+
+
+def _shrink_prob(model_prob: float | None, market_nv_prob: float | None) -> float | None:
+    """Blend model probability with market no-vig probability."""
+    if model_prob is None or market_nv_prob is None:
+        return model_prob
+    return SHRINKAGE_MODEL_WEIGHT * float(model_prob) + \
+           (1.0 - SHRINKAGE_MODEL_WEIGHT) * float(market_nv_prob)
+
+
 def build_game_prediction(game: dict, model_home_prob,
                            home_odds: float | None, away_odds: float | None,
                            sport: str, sport_label: str,
@@ -529,6 +564,10 @@ def build_game_prediction(game: dict, model_home_prob,
         "total":          get_total(game),
         "model_home_prob": None,
         "model_away_prob": None,
+        # Shrunk probs: blended model + market no-vig; what edges are computed from.
+        # The raw model_* fields above remain for dashboard transparency.
+        "model_home_prob_shrunk": None,
+        "model_away_prob_shrunk": None,
         "home_no_vig_prob": None,
         "away_no_vig_prob": None,
         "home_edge":  None, "away_edge":  None,
@@ -551,8 +590,18 @@ def build_game_prediction(game: dict, model_home_prob,
         out["away_no_vig_prob"] = round(a_nv, 4)
 
         if model_home_prob is not None:
-            prob_h = float(out["model_home_prob"])
-            prob_a = float(out["model_away_prob"])
+            # Raw model probabilities — shown on dashboard so you can see
+            # what the model "thinks" uncorrected
+            prob_h_raw = float(out["model_home_prob"])
+            prob_a_raw = float(out["model_away_prob"])
+
+            # Shrink toward market for edge/EV/Kelly calculations. This is
+            # what the gates below operate on and what gets stored as the
+            # "edge" the dashboard displays.
+            prob_h = _shrink_prob(prob_h_raw, h_nv)
+            prob_a = 1.0 - prob_h  # keep symmetry; a = _shrink(prob_a_raw, a_nv) is identical by linearity
+            out["model_home_prob_shrunk"] = round(prob_h, 4)
+            out["model_away_prob_shrunk"] = round(prob_a, 4)
 
             h_edge = round(prob_h - h_nv, 4)
             a_edge = round(prob_a - a_nv, 4)
@@ -615,7 +664,13 @@ def build_game_prediction(game: dict, model_home_prob,
     spread_price = (out.get("spread") or {}).get("price")
     if model_home_prob is not None and home_spread is not None \
             and sport in _ATS_MARGIN_SIGMA:
-        p_h_cov, p_a_cov = _ats_cover_probs(model_home_prob, home_spread, sport)
+        # ATS cover probs are derived from model_home_prob via a normal-margin
+        # assumption. Feeding the shrunk probability (when market odds exist)
+        # keeps ATS edges honest with the same market-anchored prior the ML
+        # edges use. When odds are missing we fall back to raw model prob —
+        # better than nothing, same behavior as before.
+        ats_input_prob = out.get("model_home_prob_shrunk") or model_home_prob
+        p_h_cov, p_a_cov = _ats_cover_probs(ats_input_prob, home_spread, sport)
         if p_h_cov is not None:
             # Standard ATS market prices near -110 both sides → 50/50 no-vig
             # after strip. Use exact strip if we have both prices, else assume 50%.

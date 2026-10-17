@@ -200,23 +200,48 @@ def select_features(df: pd.DataFrame) -> list[str]:
 def compute_recency_weights(df: pd.DataFrame, current_year: int | None = None,
                              week_col: str = "week") -> np.ndarray:
     """
-    Per-sample training weights that emphasize the current and most-recent
-    completed seasons over older data. Reflects the reality that roster
-    turnover, coaching changes, and rule tweaks make older games less
-    representative of the current environment.
+    Per-sample training weights that emphasize current and most-recent
+    completed seasons. Historical turnover + rule changes make older games
+    less representative of the current environment.
 
-    Weighting scheme:
-      • Current season   → 2.0  (or 0.75 if fewer than 4 weeks played yet,
-                                   so a tiny in-season sample doesn't
-                                   overwhelm the model)
-      • Prior season     → 1.0  (1.5 during early current-season)
-      • 2 seasons back   → 0.5  (1.0 during early current-season)
-      • Older            → 0.25 (safety net for anything else that leaks in)
+    Weighting scheme (TARGET-based, auto-scaled by sample size):
 
-    The early-season boost effectively acts as a mild Bayesian prior:
-    when the current season has almost no data, the prior season carries
-    the model. As the current season fills in (Week 4+), it takes over.
+      Early (<4 weeks of current):
+        • Current → 0.75   (tiny sample; don't let noise dominate)
+        • Prior   → 1.5    (last year carries the model)
+        • 2 back  → 1.0
+        • Older   → 0.25
+
+      Mid/late season (≥4 weeks of current):
+        • Current → DYNAMIC — multiplier is auto-computed so current-season
+          games contribute ~50% of total training weight. At 5 weeks of
+          2026 (~80 games) the multiplier works out to ~4.4x; at week 10
+          (~160 games) it drops to ~2.2x; at season-end it approaches ~1.3x
+          and dominates by raw sample size alone.
+          Clamped to [1.5, 8.0] to prevent extreme multipliers if the
+          current-season sample is unusually small.
+        • Prior   → 1.0
+        • 2 back  → 0.3    (reduced from 0.5 — two years is often a
+                             different coaching staff / rule environment)
+        • Older   → 0.1
+
+    Why auto-scale: the prior scheme fixed current=2.0, which looked like
+    strong recency bias but gave 2026 only ~28% effective weight once we
+    actually counted games (272 2024 games + 272 2025 games vs 80 2026
+    games). The retrain was correctly pulling fresh data but the model
+    was still predominantly a 2025 model with 2026 flavoring. Auto-scaling
+    guarantees current-year signal reaches roughly parity by week 4-5 and
+    dominates by season end.
+
+    The TARGET_CURRENT_SHARE constant can be tuned if we want to be more
+    or less aggressive about trusting the current season.
     """
+    TARGET_CURRENT_SHARE = 0.50   # target effective weight share for current year
+    W_PRIOR = 1.0
+    W_TWO_BACK = 0.3
+    W_OLDER = 0.1
+    MULTIPLIER_CLAMP = (1.5, 8.0)
+
     weights = np.ones(len(df), dtype=float)
     if "season" not in df.columns:
         return weights
@@ -235,16 +260,41 @@ def compute_recency_weights(df: pd.DataFrame, current_year: int | None = None,
             weeks_current = 0
     early_season = weeks_current < 4
 
+    # Count samples per season bucket
+    n_current  = int(current_mask.sum())
+    n_prior    = int((seasons == current_year - 1).sum())
+    n_two_back = int((seasons == current_year - 2).sum())
+
+    if early_season or n_current == 0:
+        w_current  = 0.75
+        w_prior    = 1.5
+        w_two_back = 1.0
+        w_older    = 0.25
+    else:
+        # Solve: n_current * w_current / (n_current * w_current + prior_contrib)
+        #        = TARGET_CURRENT_SHARE
+        # → w_current = TARGET * prior_contrib / (n_current * (1 - TARGET))
+        prior_contrib = n_prior * W_PRIOR + n_two_back * W_TWO_BACK
+        if prior_contrib > 0:
+            raw_mult = (TARGET_CURRENT_SHARE * prior_contrib /
+                        (n_current * (1 - TARGET_CURRENT_SHARE)))
+        else:
+            raw_mult = MULTIPLIER_CLAMP[1]
+        w_current = max(MULTIPLIER_CLAMP[0], min(MULTIPLIER_CLAMP[1], raw_mult))
+        w_prior    = W_PRIOR
+        w_two_back = W_TWO_BACK
+        w_older    = W_OLDER
+
     for s in np.unique(seasons):
         mask = seasons == s
         if s == current_year:
-            weights[mask] = 0.75 if early_season else 2.0
+            weights[mask] = w_current
         elif s == current_year - 1:
-            weights[mask] = 1.5 if early_season else 1.0
+            weights[mask] = w_prior
         elif s == current_year - 2:
-            weights[mask] = 1.0 if early_season else 0.5
+            weights[mask] = w_two_back
         else:
-            weights[mask] = 0.25
+            weights[mask] = w_older
 
     return weights
 
