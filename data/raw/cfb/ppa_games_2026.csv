@@ -25,7 +25,7 @@ season,week,team,opponent,cfb_off_epa_per_play,cfb_off_pass_epa,cfb_off_rush_epa
 2026,1,Coastal Carolina,West Virginia,0.17,0.45,-0.34,0.13
 2026,1,Colorado,Georgia Tech,0.05,0.07,0.02,0.07
 2026,1,Colorado State,Wyoming,0.3,0.54,0.06,-0.13
-2026,1,Delaware,Merrimack,0.34,0.52,0.24,0.0
+2026,1,Delaware,Merrimack,0.35,0.52,0.27,0.0
 2026,1,Duke,Tulane,-0.13,-0.3,0.06,-0.13
 2026,1,East Carolina,Alabama,-0.2,-0.04,-0.38,0.24
 2026,1,Eastern Michigan,San José State,-0.17,-0.11,0.0,0.07
@@ -256,7 +256,7 @@ season,week,team,opponent,cfb_off_epa_per_play,cfb_off_pass_epa,cfb_off_rush_epa
 2026,2,Ole Miss,Charlotte,0.34,0.46,0.5,-0.02
 2026,2,Oregon,Oklahoma State,-0.08,-0.09,-0.14,-0.04
 2026,2,Oregon State,Texas Tech,0.17,0.25,-0.1,0.2
-2026,2,Penn State,Temple,0.21,0.49,-0.05,0.09
+2026,2,Penn State,Temple,0.21,0.49,-0.04,0.09
 2026,2,Pittsburgh,UCF,-0.04,0.25,-0.23,-0.25
 2026,2,Purdue,Wake Forest,0.29,0.41,0.12,0.36
 2026,2,Rice,Notre Dame,-0.32,0.19,-0.61,0.43
