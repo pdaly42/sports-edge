@@ -279,3 +279,6 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-10-12,americanfootball_nfl,e6d00eedd87d367e510314bd8cab8f6f,Buffalo Bills,Los Angeles Rams,37,34,ou,under,54.5,-102,0.1549,0.2879,strong,0.6376,loss,-1.0,2026-10-13T10:18:50
 2026-10-12,americanfootball_nfl,e6d00eedd87d367e510314bd8cab8f6f,Buffalo Bills,Los Angeles Rams,37,34,ats,ats-away,Buffalo Bills +3.5,-102,0.0671,0.1455,strong,0.5671,win,0.9804,2026-10-13T10:18:50
 2026-10-15,americanfootball_nfl,855f58fad5f0f14b239f4f63df27998b,Seattle Seahawks,Denver Broncos,14,17,ats,ats-away,Seattle Seahawks -2.5,-108,0.0591,0.1629,moderate,0.5591,loss,-1.0,2026-10-16T08:00:01
+2026-10-17,americanfootball_ncaaf,490b66058b6c826a08589c471698ce50,Florida Gators,Texas Longhorns,27,24,ml,away,Florida Gators,400,0.0923,0.4229,moderate,0.4999,win,4.0,2026-10-18T07:53:30
+2026-10-17,americanfootball_ncaaf,eb7db3ae999676aa80dd5cf7dfa32c1a,Rutgers Scarlet Knights,Maryland Terrapins,37,30,ml,away,Rutgers Scarlet Knights,180,0.1682,0.43,strong,0.2823,win,1.8,2026-10-18T07:53:30
+2026-10-17,americanfootball_ncaaf,9e7a1e65bd6ffb3ff108db2a5e125170,North Carolina Tar Heels,Duke Blue Devils,24,20,ml,away,North Carolina Tar Heels,130,0.1904,0.397,strong,0.4413,win,1.3,2026-10-18T07:53:30
