@@ -1,0 +1,104 @@
+{
+  "generated_at": "2026-10-19T18:57:14.090859+00:00",
+  "date": "2026-10-19",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "be50f6c59c20efa430eec6f146a0fcb1",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-10-20T00:10:00Z",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "Cleveland Guardians",
+      "home_odds": -154,
+      "away_odds": 130,
+      "spread": {
+        "point": -1.5,
+        "price": 152
+      },
+      "total": {
+        "line": 6.5,
+        "over": -128,
+        "under": 104
+      },
+      "model_home_prob": 0.5823,
+      "model_away_prob": 0.4177,
+      "model_home_prob_shrunk": 0.5824,
+      "model_away_prob_shrunk": 0.4176,
+      "home_no_vig_prob": 0.5824,
+      "away_no_vig_prob": 0.4176,
+      "home_edge": -0.0,
+      "away_edge": 0.0,
+      "home_ev": -0.0395,
+      "away_ev": -0.0394,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Freddy Peralta",
+      "away_pitcher": "Shawn Armstrong"
+    },
+    {
+      "id": "f122527f003276d3bca19efa48c902c1",
+      "sport": "americanfootball_nfl",
+      "sport_label": "NFL",
+      "commence_time": "2026-10-20T00:15:00Z",
+      "home_team": "San Francisco 49ers",
+      "away_team": "Washington Commanders",
+      "home_odds": -380,
+      "away_odds": 320,
+      "spread": {
+        "point": -7.5,
+        "price": -108
+      },
+      "total": {
+        "line": 51.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.5932,
+      "model_away_prob": 0.4068,
+      "model_home_prob_shrunk": 0.7161,
+      "model_away_prob_shrunk": 0.2839,
+      "home_no_vig_prob": 0.7688,
+      "away_no_vig_prob": 0.2312,
+      "home_edge": -0.0527,
+      "away_edge": 0.0527,
+      "home_ev": -0.0954,
+      "away_ev": 0.1923,
+      "home_kelly": 0.0,
+      "away_kelly": 0.015,
+      "best_bet": null,
+      "spread_analysis": {
+        "line": -7.5,
+        "odds": -108,
+        "model_p_home_covers": 0.5063,
+        "model_p_away_covers": 0.4937,
+        "home_edge": 0.0063,
+        "away_edge": -0.0063,
+        "home_ev": -0.0249,
+        "away_ev": -0.0492,
+        "best_ats_bet": null
+      },
+      "home_injury_score": 1.5719,
+      "away_injury_score": 1.5314,
+      "home_qb_injury_impact": 0,
+      "away_qb_injury_impact": 1.0,
+      "model_predicted_total": 46.4,
+      "totals": {
+        "market_line": 51.5,
+        "predicted_total": 46.4,
+        "p_over": 0.3591,
+        "p_under": 0.6409,
+        "market_over_nv": 0.5,
+        "market_under_nv": 0.5,
+        "over_edge": -0.1409,
+        "under_edge": 0.1409,
+        "over_ev": -0.3144,
+        "under_ev": 0.2235,
+        "best_ou_bet": null,
+        "picks_disabled": true,
+        "disabled_reason": "totals model MAE = 17.7 pts (Oct 17 audit); 2-11 lifetime. Disabled pending model rebuild \u2014 see predict_today.py comments."
+      }
+    }
+  ]
+}
