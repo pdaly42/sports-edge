@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-10-20T17:43:35.765651+00:00",
+  "date": "2026-10-20",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "26b036ff107f3c658258eaf4a6f26228",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-20T19:00:00Z",
+      "home_team": "Detroit Pistons",
+      "away_team": "Boston Celtics",
+      "home_odds": 105,
+      "away_odds": -120,
+      "spread": {
+        "point": 1.5,
+        "price": -108
+      },
+      "total": {
+        "line": 221.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.5684,
+      "model_away_prob": 0.4316,
+      "model_home_prob_shrunk": 0.501,
+      "model_away_prob_shrunk": 0.499,
+      "home_no_vig_prob": 0.4721,
+      "away_no_vig_prob": 0.5279,
+      "home_edge": 0.0289,
+      "away_edge": -0.0289,
+      "home_ev": 0.027,
+      "away_ev": -0.0852,
+      "home_kelly": 0.0064,
+      "away_kelly": 0.0,
+      "best_bet": null
+    },
+    {
+      "id": "2b042ddad3d3c6c6fe5b7005dc26c775",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-20T23:00:00Z",
+      "home_team": "New York Knicks",
+      "away_team": "Philadelphia 76ers",
+      "home_odds": -180,
+      "away_odds": 156,
+      "spread": {
+        "point": -4.5,
+        "price": -115
+      },
+      "total": {
+        "line": 232.5,
+        "over": -102,
+        "under": -120
+      },
+      "model_home_prob": 0.7469,
+      "model_away_prob": 0.2531,
+      "model_home_prob_shrunk": 0.6595,
+      "model_away_prob_shrunk": 0.3405,
+      "home_no_vig_prob": 0.622,
+      "away_no_vig_prob": 0.378,
+      "home_edge": 0.0375,
+      "away_edge": -0.0375,
+      "home_ev": 0.0259,
+      "away_ev": -0.1283,
+      "home_kelly": 0.0116,
+      "away_kelly": 0.0,
+      "best_bet": null
+    },
+    {
+      "id": "bccd283de56915e29af1788beb0abfc9",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-21T01:30:00Z",
+      "home_team": "San Antonio Spurs",
+      "away_team": "Oklahoma City Thunder",
+      "home_odds": -112,
+      "away_odds": -102,
+      "spread": {
+        "point": -1.5,
+        "price": -108
+      },
+      "total": {
+        "line": 231.5,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.4182,
+      "model_away_prob": 0.5818,
+      "model_home_prob_shrunk": 0.4834,
+      "model_away_prob_shrunk": 0.5166,
+      "home_no_vig_prob": 0.5113,
+      "away_no_vig_prob": 0.4887,
+      "home_edge": -0.0279,
+      "away_edge": 0.0279,
+      "home_ev": -0.085,
+      "away_ev": 0.0231,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0059,
+      "best_bet": null
+    }
+  ]
+}
