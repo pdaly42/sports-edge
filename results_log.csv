@@ -285,3 +285,5 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-10-18,americanfootball_nfl,3729ac6d2a66b642850caf2044cdc658,Arizona Cardinals,Los Angeles Rams,18,16,ats,ats-away,Arizona Cardinals +12.5,-112,0.0493,0.0397,moderate,0.5493,win,0.8929,2026-10-19T08:38:32
 2026-10-18,americanfootball_nfl,20fefae8c296247460ba5773caa42218,Los Angeles Chargers,Kansas City Chiefs,6,22,ml,away,Los Angeles Chargers,333,0.12,0.4934,strong,0.6249,loss,-1.0,2026-10-19T08:38:32
 2026-10-18,americanfootball_nfl,82fd5a159fa130e67abab93a9537f70b,Dallas Cowboys,Green Bay Packers,13,23,ats,ats-away,Dallas Cowboys +1.5,-102,0.0789,0.1464,strong,0.5789,loss,-1.0,2026-10-19T08:38:32
+2026-10-21,basketball_nba,60431a347feac3f1c7ed925b8b769ec5,Chicago Bulls,Toronto Raptors,92,135,ml,away,Chicago Bulls,340,0.1332,0.5524,strong,0.6637,loss,-1.0,2026-10-22T08:26:02
+2026-10-21,basketball_nba,e6769c813dd625b622df94c14a562ce2,Utah Jazz,Memphis Grizzlies,103,123,ml,home,Memphis Grizzlies,-118,0.0852,0.1291,moderate,0.8099,win,0.8475,2026-10-22T08:26:02
