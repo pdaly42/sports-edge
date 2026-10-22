@@ -1,0 +1,150 @@
+{
+  "generated_at": "2026-10-22T17:49:33.835802+00:00",
+  "date": "2026-10-22",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "110e33c79c5ec8c0377702aff685f83b",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-22T23:10:00Z",
+      "home_team": "Philadelphia 76ers",
+      "away_team": "Cleveland Cavaliers",
+      "home_odds": -142,
+      "away_odds": 124,
+      "spread": {
+        "point": -2.5,
+        "price": -110
+      },
+      "total": {
+        "line": 236.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.2336,
+      "model_away_prob": 0.7664,
+      "model_home_prob_shrunk": 0.4676,
+      "model_away_prob_shrunk": 0.5324,
+      "home_no_vig_prob": 0.5679,
+      "away_no_vig_prob": 0.4321,
+      "home_edge": -0.1003,
+      "away_edge": 0.1003,
+      "home_ev": -0.2031,
+      "away_ev": 0.1925,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0388,
+      "best_bet": {
+        "side": "away",
+        "team": "Cleveland Cavaliers",
+        "odds": 124,
+        "edge": 0.1003,
+        "ev": 0.1925,
+        "strength": "moderate"
+      },
+      "justification": "Cleveland Cavaliers's avg point differential is +11.2 vs Philadelphia 76ers's -9.8 over the last 10 games. Philadelphia 76ers have a 1-day rest edge over Cleveland Cavaliers. Model prices Cleveland Cavaliers at 76.6% \u2014 a +10.0% edge over the market line."
+    },
+    {
+      "id": "223b2883b9b05a67329ef246384b85f1",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-23T01:40:00Z",
+      "home_team": "Oklahoma City Thunder",
+      "away_team": "Denver Nuggets",
+      "home_odds": -320,
+      "away_odds": 270,
+      "spread": {
+        "point": -8.5,
+        "price": -105
+      },
+      "total": {
+        "line": 236.5,
+        "over": -108,
+        "under": -112
+      },
+      "model_home_prob": 0.7033,
+      "model_away_prob": 0.2967,
+      "model_home_prob_shrunk": 0.7277,
+      "model_away_prob_shrunk": 0.2723,
+      "home_no_vig_prob": 0.7382,
+      "away_no_vig_prob": 0.2618,
+      "home_edge": -0.0105,
+      "away_edge": 0.0105,
+      "home_ev": -0.0449,
+      "away_ev": 0.0075,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0007,
+      "best_bet": null
+    },
+    {
+      "id": "ffebea881c1d7b2dfb85b3e590c35985",
+      "sport": "americanfootball_nfl",
+      "sport_label": "NFL",
+      "commence_time": "2026-10-23T00:15:00Z",
+      "home_team": "Chicago Bears",
+      "away_team": "New England Patriots",
+      "home_odds": -155,
+      "away_odds": 134,
+      "spread": {
+        "point": -3.0,
+        "price": -102
+      },
+      "total": {
+        "line": 50.5,
+        "over": -118,
+        "under": -102
+      },
+      "model_home_prob": 0.426,
+      "model_away_prob": 0.574,
+      "model_home_prob_shrunk": 0.5388,
+      "model_away_prob_shrunk": 0.4612,
+      "home_no_vig_prob": 0.5872,
+      "away_no_vig_prob": 0.4128,
+      "home_edge": -0.0484,
+      "away_edge": 0.0484,
+      "home_ev": -0.1135,
+      "away_ev": 0.0792,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0148,
+      "best_bet": null,
+      "spread_analysis": {
+        "line": -3.0,
+        "odds": -102,
+        "model_p_home_covers": 0.4503,
+        "model_p_away_covers": 0.5497,
+        "home_edge": -0.0497,
+        "away_edge": 0.0497,
+        "home_ev": -0.1082,
+        "away_ev": 0.0886,
+        "best_ats_bet": {
+          "side": "away",
+          "team": "New England Patriots",
+          "line": 3.0,
+          "odds": -102,
+          "edge": 0.0497,
+          "ev": 0.0886,
+          "strength": "moderate"
+        }
+      },
+      "home_injury_score": 0.802,
+      "away_injury_score": 1.3664,
+      "home_qb_injury_impact": 0,
+      "away_qb_injury_impact": 0,
+      "model_predicted_total": 59.7,
+      "totals": {
+        "market_line": 50.5,
+        "predicted_total": 59.7,
+        "p_over": 0.7417,
+        "p_under": 0.2583,
+        "market_over_nv": 0.5174,
+        "market_under_nv": 0.4826,
+        "over_edge": 0.2244,
+        "under_edge": -0.2244,
+        "over_ev": 0.3703,
+        "under_ev": -0.4885,
+        "best_ou_bet": null,
+        "picks_disabled": true,
+        "disabled_reason": "totals model MAE = 17.7 pts (Oct 17 audit); 2-11 lifetime. Disabled pending model rebuild \u2014 see predict_today.py comments."
+      }
+    }
+  ]
+}
