@@ -290,3 +290,6 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-10-22,basketball_nba,110e33c79c5ec8c0377702aff685f83b,Cleveland Cavaliers,Philadelphia 76ers,106,114,ml,away,Cleveland Cavaliers,124,0.1003,0.1925,moderate,0.7664,loss,-1.0,2026-10-23T08:22:08
 2026-10-22,americanfootball_nfl,ffebea881c1d7b2dfb85b3e590c35985,New England Patriots,Chicago Bears,24,30,ats,ats-away,New England Patriots +3.0,-102,0.0497,0.0886,moderate,0.5497,loss,-1.0,2026-10-23T08:22:09
 2026-10-23,basketball_nba,93ae924d3fc473aadfa50b26a9a2115b,Portland Trail Blazers,Sacramento Kings,128,120,ml,home,Sacramento Kings,360,0.1054,0.4676,moderate,0.5649,loss,-1.0,2026-10-24T07:58:49
+2026-10-24,basketball_nba,a66da208d3609b028970dfe2b5d7973f,Milwaukee Bucks,Philadelphia 76ers,116,127,ml,away,Milwaukee Bucks,490,0.144,0.8198,strong,0.6444,loss,-1.0,2026-10-25T08:14:26
+2026-10-24,basketball_nba,efb2248ad964f84921b3e700125e404b,San Antonio Spurs,Dallas Mavericks,122,106,ml,home,Dallas Mavericks,490,0.1307,0.7453,strong,0.6008,loss,-1.0,2026-10-25T08:14:26
+2026-10-24,americanfootball_ncaaf,04db3b581ae63446a409f2ad30868e20,Virginia Tech Hokies,Clemson Tigers,20,16,ml,away,Virginia Tech Hokies,130,0.1008,0.191,moderate,0.753,win,1.3,2026-10-25T08:14:26
