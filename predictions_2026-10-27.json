@@ -1,0 +1,169 @@
+{
+  "generated_at": "2026-10-27T18:31:26.944353+00:00",
+  "date": "2026-10-27",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "9ad8cc650802c0c5c3c23a1f32c3e0f6",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-27T23:40:00Z",
+      "home_team": "Boston Celtics",
+      "away_team": "Brooklyn Nets",
+      "home_odds": -625,
+      "away_odds": 500,
+      "spread": {
+        "point": -12.5,
+        "price": -114
+      },
+      "total": {
+        "line": 222.5,
+        "over": -114,
+        "under": -106
+      },
+      "model_home_prob": 0.7768,
+      "model_away_prob": 0.2232,
+      "model_home_prob_shrunk": 0.8196,
+      "model_away_prob_shrunk": 0.1804,
+      "home_no_vig_prob": 0.838,
+      "away_no_vig_prob": 0.162,
+      "home_edge": -0.0184,
+      "away_edge": 0.0184,
+      "home_ev": -0.0492,
+      "away_ev": 0.0822,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0041,
+      "best_bet": null
+    },
+    {
+      "id": "bde272846214fd6cf197e14c278c12f2",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-28T00:10:00Z",
+      "home_team": "New York Knicks",
+      "away_team": "Detroit Pistons",
+      "home_odds": -166,
+      "away_odds": 142,
+      "spread": {
+        "point": -4.5,
+        "price": -106
+      },
+      "total": {
+        "line": 218.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.6876,
+      "model_away_prob": 0.3124,
+      "model_home_prob_shrunk": 0.6274,
+      "model_away_prob_shrunk": 0.3726,
+      "home_no_vig_prob": 0.6016,
+      "away_no_vig_prob": 0.3984,
+      "home_edge": 0.0258,
+      "away_edge": -0.0258,
+      "home_ev": 0.0054,
+      "away_ev": -0.0984,
+      "home_kelly": 0.0022,
+      "away_kelly": 0.0,
+      "best_bet": null
+    },
+    {
+      "id": "7a640609d2c74cbbfd05008d0875455b",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-28T00:10:00Z",
+      "home_team": "San Antonio Spurs",
+      "away_team": "Sacramento Kings",
+      "home_odds": -1650,
+      "away_odds": 1100,
+      "spread": {
+        "point": -18.5,
+        "price": -110
+      },
+      "total": {
+        "line": 232.5,
+        "over": -106,
+        "under": -114
+      },
+      "model_home_prob": 0.5095,
+      "model_away_prob": 0.4905,
+      "model_home_prob_shrunk": 0.796,
+      "model_away_prob_shrunk": 0.204,
+      "home_no_vig_prob": 0.9188,
+      "away_no_vig_prob": 0.0812,
+      "home_edge": -0.1228,
+      "away_edge": 0.1228,
+      "home_ev": -0.1558,
+      "away_ev": 1.4479,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0329,
+      "best_bet": null
+    },
+    {
+      "id": "82afe4e028b0fbbd9f6cf92697bec6fc",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-28T03:10:00Z",
+      "home_team": "Los Angeles Lakers",
+      "away_team": "Portland Trail Blazers",
+      "home_odds": -125,
+      "away_odds": 110,
+      "spread": {
+        "point": -2.5,
+        "price": -104
+      },
+      "total": {
+        "line": 234.5,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.6632,
+      "model_away_prob": 0.3368,
+      "model_home_prob_shrunk": 0.5759,
+      "model_away_prob_shrunk": 0.4241,
+      "home_no_vig_prob": 0.5385,
+      "away_no_vig_prob": 0.4615,
+      "home_edge": 0.0374,
+      "away_edge": -0.0374,
+      "home_ev": 0.0366,
+      "away_ev": -0.1094,
+      "home_kelly": 0.0114,
+      "away_kelly": 0.0,
+      "best_bet": null
+    },
+    {
+      "id": "e03ea0f98bdd5fa277a34fbfe1a47efa",
+      "sport": "baseball_mlb",
+      "sport_label": "MLB",
+      "commence_time": "2026-10-28T00:00:00Z",
+      "home_team": "Tampa Bay Rays",
+      "away_team": "Milwaukee Brewers",
+      "home_odds": 106,
+      "away_odds": -124,
+      "spread": {
+        "point": 1.5,
+        "price": -164
+      },
+      "total": {
+        "line": 7.5,
+        "over": 110,
+        "under": -134
+      },
+      "model_home_prob": 0.5464,
+      "model_away_prob": 0.4536,
+      "model_home_prob_shrunk": 0.491,
+      "model_away_prob_shrunk": 0.509,
+      "home_no_vig_prob": 0.4672,
+      "away_no_vig_prob": 0.5328,
+      "home_edge": 0.0238,
+      "away_edge": -0.0238,
+      "home_ev": 0.0114,
+      "away_ev": -0.0805,
+      "home_kelly": 0.0027,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "home_pitcher": "Griffin Jax",
+      "away_pitcher": "TBD"
+    }
+  ]
+}
