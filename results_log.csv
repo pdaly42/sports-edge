@@ -296,3 +296,4 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-10-25,americanfootball_nfl,2bba7fde6f97d0e54403d53676e4ab63,New York Giants,Houston Texans,27,21,ats,ats-away,New York Giants +10.0,-110,0.0457,0.0418,moderate,0.5457,win,0.9091,2026-10-26T08:41:02
 2026-10-25,americanfootball_nfl,f3992ad4496724baf7dcd1ef58245d6b,Indianapolis Colts,Minnesota Vikings,10,16,ml,away,Indianapolis Colts,270,0.084,0.2769,moderate,0.541,loss,-1.0,2026-10-26T08:41:02
 2026-10-25,americanfootball_nfl,be5dd120ca08b43d647b6caa8953500a,Miami Dolphins,New York Jets,28,25,ml,away,Miami Dolphins,180,0.0814,0.2068,moderate,0.6209,win,1.8,2026-10-26T08:41:02
+2026-10-26,americanfootball_nfl,4853610e63c246f2027a6a248e642c9a,Dallas Cowboys,Philadelphia Eagles,38,21,ats,ats-home,Philadelphia Eagles +4.5,-112,0.0449,0.0314,moderate,0.5449,loss,-1.0,2026-10-27T08:47:25
