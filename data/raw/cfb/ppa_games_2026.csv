@@ -28,16 +28,16 @@ season,week,team,opponent,cfb_off_epa_per_play,cfb_off_pass_epa,cfb_off_rush_epa
 2026,1,Delaware,Merrimack,0.35,0.52,0.27,0.0
 2026,1,Duke,Tulane,-0.13,-0.3,0.06,-0.13
 2026,1,East Carolina,Alabama,-0.2,-0.04,-0.38,0.24
+2026,1,Eastern Michigan,Sacramento State,0.06,0.28,-0.23,0.25
+2026,1,Eastern Michigan,Sacramento State,0.06,0.28,-0.23,-0.12
 2026,1,Eastern Michigan,San José State,-0.17,-0.11,0.0,0.21
 2026,1,Eastern Michigan,San José State,-0.17,-0.11,0.0,0.07
-2026,1,Eastern Michigan,Sacramento State,0.06,0.28,-0.23,-0.12
-2026,1,Eastern Michigan,Sacramento State,0.06,0.28,-0.23,0.25
 2026,1,Florida,Florida Atlantic,0.61,0.88,0.45,-0.01
 2026,1,Florida Atlantic,Florida,-0.01,0.01,-0.05,0.61
 2026,1,Florida International,South Florida,-0.12,0.01,-0.37,-0.06
-2026,1,Florida State,SMU,0.14,0.25,0.07,0.36
 2026,1,Florida State,New Mexico State,0.27,0.38,0.33,0.37
 2026,1,Florida State,New Mexico State,0.27,0.38,0.33,0.11
+2026,1,Florida State,SMU,0.14,0.25,0.07,0.36
 2026,1,Fresno State,USC,-0.35,-0.08,-0.28,0.23
 2026,1,Fresno State,USC,-0.35,-0.08,-0.28,0.34
 2026,1,Georgia,Tennessee State,0.73,0.76,0.69,0.0
@@ -53,9 +53,9 @@ season,week,team,opponent,cfb_off_epa_per_play,cfb_off_pass_epa,cfb_off_rush_epa
 2026,1,Indiana,North Texas,0.65,1.64,0.13,0.05
 2026,1,Iowa,Northern Illinois,0.03,0.04,0.18,-0.42
 2026,1,Iowa State,Southeast Missouri State,0.24,0.39,0.18,0.0
-2026,1,Jacksonville State,Eastern Kentucky,0.53,1.05,0.23,0.0
 2026,1,Jacksonville State,North Dakota State,-0.38,-0.43,-0.31,0.26
 2026,1,Jacksonville State,North Dakota State,-0.38,-0.43,-0.31,0.16
+2026,1,Jacksonville State,Eastern Kentucky,0.53,1.05,0.23,0.0
 2026,1,James Madison,Liberty,0.28,0.39,0.21,-0.02
 2026,1,Kansas,Long Island University,0.55,1.09,0.32,0.0
 2026,1,Kansas State,Nicholls,0.55,0.81,0.39,0.0
@@ -89,12 +89,12 @@ season,week,team,opponent,cfb_off_epa_per_play,cfb_off_pass_epa,cfb_off_rush_epa
 2026,1,Nevada,Western Kentucky,0.5,0.23,0.57,0.03
 2026,1,New Mexico,Central Michigan,0.22,0.07,0.34,-0.18
 2026,1,New Mexico State,Mercyhurst,0.37,0.76,0.19,0.0
-2026,1,New Mexico State,Florida State,0.11,0.32,-0.07,0.14
 2026,1,New Mexico State,Florida State,0.11,0.32,-0.07,0.27
+2026,1,New Mexico State,Florida State,0.11,0.32,-0.07,0.14
 2026,1,North Carolina,TCU,-0.01,0.27,-0.35,-0.07
 2026,1,North Dakota State,Fordham,0.26,0.38,0.14,0.0
-2026,1,North Dakota State,Jacksonville State,0.16,0.41,0.11,0.53
 2026,1,North Dakota State,Jacksonville State,0.16,0.41,0.11,-0.38
+2026,1,North Dakota State,Jacksonville State,0.16,0.41,0.11,0.53
 2026,1,Northern Illinois,Iowa,-0.42,-0.15,-0.47,0.03
 2026,1,North Texas,Indiana,0.05,0.15,0.0,0.65
 2026,1,Northwestern,South Dakota State,0.48,0.47,0.52,0.0
@@ -112,17 +112,17 @@ season,week,team,opponent,cfb_off_epa_per_play,cfb_off_pass_epa,cfb_off_rush_epa
 2026,1,Purdue,Indiana State,0.33,0.63,0.17,0.0
 2026,1,Rice,Houston Christian,0.19,-0.2,0.31,0.0
 2026,1,Rutgers,Massachusetts,-0.02,0.19,-0.56,0.33
-2026,1,Sacramento State,Eastern Michigan,-0.12,-0.14,-0.05,-0.17
-2026,1,Sacramento State,Eastern Michigan,-0.12,-0.14,-0.05,0.06
 2026,1,Sacramento State,Mississippi Valley State,0.25,0.61,0.13,0.0
+2026,1,Sacramento State,Eastern Michigan,-0.12,-0.14,-0.05,0.06
+2026,1,Sacramento State,Eastern Michigan,-0.12,-0.14,-0.05,-0.17
 2026,1,Sam Houston,Troy,0.07,0.23,-0.33,0.16
 2026,1,San Diego State,Portland State,0.13,0.28,0.18,0.0
 2026,1,San José State,USC,0.21,0.32,0.06,0.23
 2026,1,San José State,USC,0.21,0.32,0.06,0.34
-2026,1,San José State,Eastern Michigan,0.07,0.36,-0.12,-0.17
 2026,1,San José State,Eastern Michigan,0.07,0.36,-0.12,0.06
-2026,1,SMU,Florida State,0.36,0.56,0.13,0.14
+2026,1,San José State,Eastern Michigan,0.07,0.36,-0.12,-0.17
 2026,1,SMU,Florida State,0.36,0.56,0.13,0.27
+2026,1,SMU,Florida State,0.36,0.56,0.13,0.14
 2026,1,South Alabama,SE Louisiana,0.09,0.08,0.15,0.0
 2026,1,South Carolina,Kent State,0.68,0.87,0.5,-0.08
 2026,1,Southern Miss,Alcorn State,0.35,0.13,0.46,0.0
@@ -1030,6 +1030,10 @@ season,week,team,opponent,cfb_off_epa_per_play,cfb_off_pass_epa,cfb_off_rush_epa
 2026,8,Wisconsin,USC,0.03,-0.06,0.07,-0.18
 2026,8,Wyoming,Air Force,0.38,0.37,0.39,0.07
 2026,9,Delaware,Western Kentucky,0.3,0.72,-0.27,0.04
+2026,9,Jacksonville State,New Mexico State,0.19,-0.25,0.36,-0.16
+2026,9,Kennesaw State,Middle Tennessee,0.08,0.22,-0.03,-0.17
+2026,9,Middle Tennessee,Kennesaw State,-0.17,-0.41,0.13,0.08
 2026,9,Missouri State,Sam Houston,0.18,0.37,0.04,-0.07
+2026,9,New Mexico State,Jacksonville State,-0.16,-1.01,0.31,0.19
 2026,9,Sam Houston,Missouri State,-0.07,-0.06,-0.1,0.18
 2026,9,Western Kentucky,Delaware,0.04,-0.31,0.59,0.3

@@ -1,0 +1,182 @@
+{
+  "generated_at": "2026-10-29T18:46:12.470877+00:00",
+  "date": "2026-10-29",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "b123d92eb8046e43fabf95a33a676634",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-30T00:10:00Z",
+      "home_team": "Atlanta Hawks",
+      "away_team": "Cleveland Cavaliers",
+      "home_odds": -108,
+      "away_odds": -105,
+      "spread": {
+        "point": -1.5,
+        "price": -105
+      },
+      "total": {
+        "line": 237.5,
+        "over": -108,
+        "under": -112
+      },
+      "model_home_prob": 0.3995,
+      "model_away_prob": 0.6005,
+      "model_home_prob_shrunk": 0.4722,
+      "model_away_prob_shrunk": 0.5278,
+      "home_no_vig_prob": 0.5034,
+      "away_no_vig_prob": 0.4966,
+      "home_edge": -0.0312,
+      "away_edge": 0.0312,
+      "home_ev": -0.0905,
+      "away_ev": 0.0304,
+      "home_kelly": 0.0,
+      "away_kelly": 0.008,
+      "best_bet": null
+    },
+    {
+      "id": "f91d27cc050b1b85073d745372c73833",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-30T00:10:00Z",
+      "home_team": "New Orleans Pelicans",
+      "away_team": "Sacramento Kings",
+      "home_odds": -235,
+      "away_odds": 200,
+      "spread": {
+        "point": -5.5,
+        "price": -120
+      },
+      "total": {
+        "line": 236.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.2472,
+      "model_away_prob": 0.7528,
+      "model_home_prob_shrunk": 0.5487,
+      "model_away_prob_shrunk": 0.4513,
+      "home_no_vig_prob": 0.6779,
+      "away_no_vig_prob": 0.3221,
+      "home_edge": -0.1292,
+      "away_edge": 0.1292,
+      "home_ev": -0.2178,
+      "away_ev": 0.354,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0442,
+      "best_bet": {
+        "side": "away",
+        "team": "Sacramento Kings",
+        "odds": 200,
+        "edge": 0.1292,
+        "ev": 0.354,
+        "strength": "strong"
+      },
+      "justification": "Sacramento Kings's avg point differential is +2.6 vs New Orleans Pelicans's -12.0 over the last 10 games. Sacramento Kings have a 3-day rest edge over New Orleans Pelicans. Model prices Sacramento Kings at 75.3% \u2014 a +12.9% edge over the market line."
+    },
+    {
+      "id": "ba667ca1b0b042f0661cb9d9af56c165",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-30T02:10:00Z",
+      "home_team": "Portland Trail Blazers",
+      "away_team": "Memphis Grizzlies",
+      "home_odds": -278,
+      "away_odds": 245,
+      "spread": {
+        "point": -7.5,
+        "price": -115
+      },
+      "total": {
+        "line": 232.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.5867,
+      "model_away_prob": 0.4133,
+      "model_home_prob_shrunk": 0.6781,
+      "model_away_prob_shrunk": 0.3219,
+      "home_no_vig_prob": 0.7173,
+      "away_no_vig_prob": 0.2827,
+      "home_edge": -0.0392,
+      "away_edge": 0.0392,
+      "home_ev": -0.078,
+      "away_ev": 0.1105,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0113,
+      "best_bet": null
+    },
+    {
+      "id": "ab2865e9f2d4b012de8bc6fb6de11a7c",
+      "sport": "americanfootball_nfl",
+      "sport_label": "NFL",
+      "commence_time": "2026-10-30T00:15:00Z",
+      "home_team": "Green Bay Packers",
+      "away_team": "Carolina Panthers",
+      "home_odds": -185,
+      "away_odds": 166,
+      "spread": {
+        "point": -3.5,
+        "price": -112
+      },
+      "total": {
+        "line": 46.5,
+        "over": -120,
+        "under": 100
+      },
+      "model_home_prob": 0.3961,
+      "model_away_prob": 0.6039,
+      "model_home_prob_shrunk": 0.5621,
+      "model_away_prob_shrunk": 0.4379,
+      "home_no_vig_prob": 0.6333,
+      "away_no_vig_prob": 0.3667,
+      "home_edge": -0.0711,
+      "away_edge": 0.0711,
+      "home_ev": -0.1341,
+      "away_ev": 0.1648,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0248,
+      "best_bet": null,
+      "spread_analysis": {
+        "line": -3.5,
+        "odds": -112,
+        "model_p_home_covers": 0.459,
+        "model_p_away_covers": 0.541,
+        "home_edge": -0.041,
+        "away_edge": 0.041,
+        "home_ev": -0.1312,
+        "away_ev": 0.024,
+        "best_ats_bet": {
+          "side": "away",
+          "team": "Carolina Panthers",
+          "line": 3.5,
+          "odds": -112,
+          "edge": 0.041,
+          "ev": 0.024,
+          "strength": "moderate"
+        }
+      },
+      "home_injury_score": 0.9796,
+      "away_injury_score": 0.982,
+      "home_qb_injury_impact": 0,
+      "away_qb_injury_impact": 0,
+      "model_predicted_total": 50.5,
+      "totals": {
+        "market_line": 46.5,
+        "predicted_total": 50.5,
+        "p_over": 0.6138,
+        "p_under": 0.3862,
+        "market_over_nv": 0.5217,
+        "market_under_nv": 0.4783,
+        "over_edge": 0.0921,
+        "under_edge": -0.0921,
+        "over_ev": 0.1253,
+        "under_ev": -0.2276,
+        "best_ou_bet": null,
+        "picks_disabled": true,
+        "disabled_reason": "totals model MAE = 17.7 pts (Oct 17 audit); 2-11 lifetime. Disabled pending model rebuild \u2014 see predict_today.py comments."
+      }
+    }
+  ]
+}
