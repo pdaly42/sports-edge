@@ -1,0 +1,372 @@
+{
+  "generated_at": "2026-10-30T18:22:15.952143+00:00",
+  "date": "2026-10-30",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "45ebc54751ef3e435192eaeb0470acfb",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-30T23:10:00Z",
+      "home_team": "Washington Wizards",
+      "away_team": "Charlotte Hornets",
+      "home_odds": -105,
+      "away_odds": -108,
+      "spread": {
+        "point": 1.5,
+        "price": -112
+      },
+      "total": {
+        "line": 218.5,
+        "over": -112,
+        "under": -108
+      },
+      "model_home_prob": 0.3766,
+      "model_away_prob": 0.6234,
+      "model_home_prob_shrunk": 0.4606,
+      "model_away_prob_shrunk": 0.5394,
+      "home_no_vig_prob": 0.4966,
+      "away_no_vig_prob": 0.5034,
+      "home_edge": -0.036,
+      "away_edge": 0.036,
+      "home_ev": -0.1007,
+      "away_ev": 0.0389,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0105,
+      "best_bet": null
+    },
+    {
+      "id": "036a93ca33d6261c21d4bfa6e0d02568",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-30T23:40:00Z",
+      "home_team": "Boston Celtics",
+      "away_team": "Chicago Bulls",
+      "home_odds": -900,
+      "away_odds": 610,
+      "spread": {
+        "point": -14.5,
+        "price": -115
+      },
+      "total": {
+        "line": 235.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.774,
+      "model_away_prob": 0.226,
+      "model_home_prob_shrunk": 0.8375,
+      "model_away_prob_shrunk": 0.1625,
+      "home_no_vig_prob": 0.8647,
+      "away_no_vig_prob": 0.1353,
+      "home_edge": -0.0272,
+      "away_edge": 0.0272,
+      "home_ev": -0.0695,
+      "away_ev": 0.1539,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0063,
+      "best_bet": null
+    },
+    {
+      "id": "64df299b882ea19ad5f8cb0ed5516a6f",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-30T23:40:00Z",
+      "home_team": "Brooklyn Nets",
+      "away_team": "Detroit Pistons",
+      "home_odds": 265,
+      "away_odds": -325,
+      "spread": {
+        "point": 8.5,
+        "price": -115
+      },
+      "total": {
+        "line": 222.5,
+        "over": -108,
+        "under": -112
+      },
+      "model_home_prob": 0.3431,
+      "model_away_prob": 0.6569,
+      "model_home_prob_shrunk": 0.2876,
+      "model_away_prob_shrunk": 0.7124,
+      "home_no_vig_prob": 0.2638,
+      "away_no_vig_prob": 0.7362,
+      "home_edge": 0.0238,
+      "away_edge": -0.0238,
+      "home_ev": 0.0496,
+      "away_ev": -0.0684,
+      "home_kelly": 0.0047,
+      "away_kelly": 0.0,
+      "best_bet": null
+    },
+    {
+      "id": "96a166bbd49782dbd9a61c2fb9069787",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-30T23:40:00Z",
+      "home_team": "Philadelphia 76ers",
+      "away_team": "New York Knicks",
+      "home_odds": 110,
+      "away_odds": -125,
+      "spread": {
+        "point": 1.5,
+        "price": -105
+      },
+      "total": {
+        "line": 226.5,
+        "over": -112,
+        "under": -108
+      },
+      "model_home_prob": 0.279,
+      "model_away_prob": 0.721,
+      "model_home_prob_shrunk": 0.4068,
+      "model_away_prob_shrunk": 0.5932,
+      "home_no_vig_prob": 0.4615,
+      "away_no_vig_prob": 0.5385,
+      "home_edge": -0.0548,
+      "away_edge": 0.0548,
+      "home_ev": -0.1458,
+      "away_ev": 0.0678,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0212,
+      "best_bet": null
+    },
+    {
+      "id": "a0f5d89a4fc51e52edd0e70d1e4cbaf2",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-30T23:40:00Z",
+      "home_team": "Toronto Raptors",
+      "away_team": "Orlando Magic",
+      "home_odds": -210,
+      "away_odds": 180,
+      "spread": {
+        "point": -5.5,
+        "price": -115
+      },
+      "total": {
+        "line": 227.5,
+        "over": -108,
+        "under": -112
+      },
+      "model_home_prob": 0.4329,
+      "model_away_prob": 0.5671,
+      "model_home_prob_shrunk": 0.5882,
+      "model_away_prob_shrunk": 0.4118,
+      "home_no_vig_prob": 0.6548,
+      "away_no_vig_prob": 0.3452,
+      "home_edge": -0.0666,
+      "away_edge": 0.0666,
+      "home_ev": -0.1317,
+      "away_ev": 0.153,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0212,
+      "best_bet": null
+    },
+    {
+      "id": "b9778d0e3a26167eb49901dcae7eeb98",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-31T00:10:00Z",
+      "home_team": "Dallas Mavericks",
+      "away_team": "Houston Rockets",
+      "home_odds": 195,
+      "away_odds": -230,
+      "spread": {
+        "point": 6.5,
+        "price": -110
+      },
+      "total": {
+        "line": 223.5,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.3624,
+      "model_away_prob": 0.6376,
+      "model_home_prob_shrunk": 0.3378,
+      "model_away_prob_shrunk": 0.6622,
+      "home_no_vig_prob": 0.3272,
+      "away_no_vig_prob": 0.6728,
+      "home_edge": 0.0106,
+      "away_edge": -0.0106,
+      "home_ev": -0.0036,
+      "away_ev": -0.0498,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null
+    },
+    {
+      "id": "c3a424e24d426af94a693e06a33e3037",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-31T00:10:00Z",
+      "home_team": "Miami Heat",
+      "away_team": "Indiana Pacers",
+      "home_odds": -300,
+      "away_odds": 260,
+      "spread": {
+        "point": -8.5,
+        "price": -115
+      },
+      "total": {
+        "line": 237.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.5799,
+      "model_away_prob": 0.4201,
+      "model_home_prob_shrunk": 0.6848,
+      "model_away_prob_shrunk": 0.3152,
+      "home_no_vig_prob": 0.7297,
+      "away_no_vig_prob": 0.2703,
+      "home_edge": -0.0449,
+      "away_edge": 0.0449,
+      "home_ev": -0.087,
+      "away_ev": 0.1348,
+      "home_kelly": 0.0,
+      "away_kelly": 0.013,
+      "best_bet": null
+    },
+    {
+      "id": "cac1461f5983a88fac612685395aa897",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-31T00:10:00Z",
+      "home_team": "Minnesota Timberwolves",
+      "away_team": "Los Angeles Clippers",
+      "home_odds": -260,
+      "away_odds": 225,
+      "spread": {
+        "point": -7.5,
+        "price": -102
+      },
+      "total": {
+        "line": 223.5,
+        "over": -112,
+        "under": -108
+      },
+      "model_home_prob": 0.6862,
+      "model_away_prob": 0.3138,
+      "model_home_prob_shrunk": 0.6967,
+      "model_away_prob_shrunk": 0.3033,
+      "home_no_vig_prob": 0.7012,
+      "away_no_vig_prob": 0.2988,
+      "home_edge": -0.0045,
+      "away_edge": 0.0045,
+      "home_ev": -0.0353,
+      "away_ev": -0.0144,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null
+    },
+    {
+      "id": "9ae108f7a23e86e8102237053dd9e58d",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-31T02:10:00Z",
+      "home_team": "Phoenix Suns",
+      "away_team": "Denver Nuggets",
+      "home_odds": 152,
+      "away_odds": -180,
+      "spread": {
+        "point": 4.5,
+        "price": -115
+      },
+      "total": {
+        "line": 231.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.5855,
+      "model_away_prob": 0.4145,
+      "model_home_prob_shrunk": 0.4428,
+      "model_away_prob_shrunk": 0.5572,
+      "home_no_vig_prob": 0.3817,
+      "away_no_vig_prob": 0.6183,
+      "home_edge": 0.0611,
+      "away_edge": -0.0611,
+      "home_ev": 0.1159,
+      "away_ev": -0.1333,
+      "home_kelly": 0.0191,
+      "away_kelly": 0.0,
+      "best_bet": null
+    },
+    {
+      "id": "761c15cdefb5a94e34f234e11d6e57ad",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-10-31T02:10:00Z",
+      "home_team": "Golden State Warriors",
+      "away_team": "Los Angeles Lakers",
+      "home_odds": 126,
+      "away_odds": -148,
+      "spread": {
+        "point": 3.5,
+        "price": -115
+      },
+      "total": {
+        "line": 234.5,
+        "over": -108,
+        "under": -112
+      },
+      "model_home_prob": 0.5698,
+      "model_away_prob": 0.4302,
+      "model_home_prob_shrunk": 0.469,
+      "model_away_prob_shrunk": 0.531,
+      "home_no_vig_prob": 0.4258,
+      "away_no_vig_prob": 0.5742,
+      "home_edge": 0.0432,
+      "away_edge": -0.0432,
+      "home_ev": 0.0599,
+      "away_ev": -0.1102,
+      "home_kelly": 0.0119,
+      "away_kelly": 0.0,
+      "best_bet": null
+    },
+    {
+      "id": "44ee19d31b9288ad402868d6df737595",
+      "sport": "americanfootball_ncaaf",
+      "sport_label": "CFB",
+      "commence_time": "2026-10-30T23:30:00Z",
+      "home_team": "UCF Knights",
+      "away_team": "Baylor Bears",
+      "home_odds": 105,
+      "away_odds": -120,
+      "spread": {
+        "point": 2.5,
+        "price": -114
+      },
+      "total": {
+        "line": 48.5,
+        "over": -115,
+        "under": -105
+      },
+      "model_home_prob": 0.3596,
+      "model_away_prob": 0.6404,
+      "model_home_prob_shrunk": 0.4384,
+      "model_away_prob_shrunk": 0.5616,
+      "home_no_vig_prob": 0.4721,
+      "away_no_vig_prob": 0.5279,
+      "home_edge": -0.0338,
+      "away_edge": 0.0338,
+      "home_ev": -0.1014,
+      "away_ev": 0.0297,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0089,
+      "best_bet": null,
+      "spread_analysis": {
+        "line": 2.5,
+        "odds": -114,
+        "model_p_home_covers": 0.4986,
+        "model_p_away_covers": 0.5014,
+        "home_edge": -0.0014,
+        "away_edge": 0.0014,
+        "home_ev": -0.064,
+        "away_ev": -0.0588,
+        "best_ats_bet": null
+      },
+      "home_ranked": false,
+      "away_ranked": false
+    }
+  ]
+}
