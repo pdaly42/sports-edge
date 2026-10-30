@@ -300,3 +300,5 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-10-28,basketball_nba,5997ee5c9fbdc53f9c86732b02f58158,Philadelphia 76ers,Indiana Pacers,114,109,ml,home,Indiana Pacers,225,0.1296,0.3922,strong,0.7308,loss,-1.0,2026-10-29T09:39:26
 2026-10-28,basketball_nba,7b9e02686c886a54c9a91dd3f3879326,New York Knicks,Chicago Bulls,133,127,ml,home,Chicago Bulls,225,0.109,0.3182,moderate,0.6599,loss,-1.0,2026-10-29T09:39:26
 2026-10-28,basketball_nba,e74d54621abaed183e569394f935c362,San Antonio Spurs,Utah Jazz,117,111,ml,home,Utah Jazz,500,0.0974,0.5519,moderate,0.4858,loss,-1.0,2026-10-29T09:39:26
+2026-10-29,basketball_nba,f91d27cc050b1b85073d745372c73833,Sacramento Kings,New Orleans Pelicans,120,132,ml,away,Sacramento Kings,200,0.1292,0.354,strong,0.7528,loss,-1.0,2026-10-30T09:45:43
+2026-10-29,americanfootball_nfl,ab2865e9f2d4b012de8bc6fb6de11a7c,Carolina Panthers,Green Bay Packers,19,27,ats,ats-away,Carolina Panthers +3.5,-112,0.041,0.024,moderate,0.541,loss,-1.0,2026-10-30T09:45:43
