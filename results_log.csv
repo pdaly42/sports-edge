@@ -302,3 +302,6 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-10-28,basketball_nba,e74d54621abaed183e569394f935c362,San Antonio Spurs,Utah Jazz,117,111,ml,home,Utah Jazz,500,0.0974,0.5519,moderate,0.4858,loss,-1.0,2026-10-29T09:39:26
 2026-10-29,basketball_nba,f91d27cc050b1b85073d745372c73833,Sacramento Kings,New Orleans Pelicans,120,132,ml,away,Sacramento Kings,200,0.1292,0.354,strong,0.7528,loss,-1.0,2026-10-30T09:45:43
 2026-10-29,americanfootball_nfl,ab2865e9f2d4b012de8bc6fb6de11a7c,Carolina Panthers,Green Bay Packers,19,27,ats,ats-away,Carolina Panthers +3.5,-112,0.041,0.024,moderate,0.541,loss,-1.0,2026-10-30T09:45:43
+2026-10-31,basketball_nba,06a03fb0ce0f81a970c6000fb71fdc6d,Minnesota Timberwolves,San Antonio Spurs,111,121,ml,away,Minnesota Timberwolves,480,0.119,0.6667,moderate,0.5651,loss,-1.0,2026-11-01T10:15:01
+2026-10-31,americanfootball_ncaaf,07da1e37f1e37363a71d35f2298f01d9,Illinois Fighting Illini,Maryland Terrapins,20,17,ml,away,Illinois Fighting Illini,105,0.0887,0.1942,moderate,0.7895,win,1.05,2026-11-01T10:15:02
+2026-10-31,americanfootball_ncaaf,d19dbab4071552441b056ccd2e23ca59,Kansas State Wildcats,Colorado Buffaloes,24,27,ml,away,Kansas State Wildcats,130,0.089,0.1711,moderate,0.7169,loss,-1.0,2026-11-01T10:15:02
