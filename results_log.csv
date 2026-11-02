@@ -305,3 +305,6 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-10-31,basketball_nba,06a03fb0ce0f81a970c6000fb71fdc6d,Minnesota Timberwolves,San Antonio Spurs,111,121,ml,away,Minnesota Timberwolves,480,0.119,0.6667,moderate,0.5651,loss,-1.0,2026-11-01T10:15:01
 2026-10-31,americanfootball_ncaaf,07da1e37f1e37363a71d35f2298f01d9,Illinois Fighting Illini,Maryland Terrapins,20,17,ml,away,Illinois Fighting Illini,105,0.0887,0.1942,moderate,0.7895,win,1.05,2026-11-01T10:15:02
 2026-10-31,americanfootball_ncaaf,d19dbab4071552441b056ccd2e23ca59,Kansas State Wildcats,Colorado Buffaloes,24,27,ml,away,Kansas State Wildcats,130,0.089,0.1711,moderate,0.7169,loss,-1.0,2026-11-01T10:15:02
+2026-11-01,americanfootball_nfl,9c5d8f57e0ba0fbd9ef436c1f0898f99,Tennessee Titans,Cincinnati Bengals,36,43,ats,ats-away,Tennessee Titans +12.5,-117,0.0459,0.0125,moderate,0.5459,win,0.8547,2026-11-02T10:44:23
+2026-11-01,americanfootball_nfl,b9c60db63b1a19ad319f24b33c0defe8,Philadelphia Eagles,Washington Commanders,10,27,ml,away,Philadelphia Eagles,220,0.0941,0.2607,moderate,0.6136,loss,-1.0,2026-11-02T10:44:23
+2026-11-01,americanfootball_nfl,b9c60db63b1a19ad319f24b33c0defe8,Philadelphia Eagles,Washington Commanders,10,27,ats,ats-away,Philadelphia Eagles +6.0,-112,0.0697,0.0784,strong,0.5697,loss,-1.0,2026-11-02T10:44:23
