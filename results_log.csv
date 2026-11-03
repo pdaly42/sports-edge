@@ -308,3 +308,5 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-11-01,americanfootball_nfl,9c5d8f57e0ba0fbd9ef436c1f0898f99,Tennessee Titans,Cincinnati Bengals,36,43,ats,ats-away,Tennessee Titans +12.5,-117,0.0459,0.0125,moderate,0.5459,win,0.8547,2026-11-02T10:44:23
 2026-11-01,americanfootball_nfl,b9c60db63b1a19ad319f24b33c0defe8,Philadelphia Eagles,Washington Commanders,10,27,ml,away,Philadelphia Eagles,220,0.0941,0.2607,moderate,0.6136,loss,-1.0,2026-11-02T10:44:23
 2026-11-01,americanfootball_nfl,b9c60db63b1a19ad319f24b33c0defe8,Philadelphia Eagles,Washington Commanders,10,27,ats,ats-away,Philadelphia Eagles +6.0,-112,0.0697,0.0784,strong,0.5697,loss,-1.0,2026-11-02T10:44:23
+2026-11-02,basketball_nba,53ad3f78c949e79381b5e90a70293ac6,Atlanta Hawks,Indiana Pacers,108,104,ml,home,Indiana Pacers,340,0.0889,0.3573,moderate,0.5159,loss,-1.0,2026-11-03T10:37:11
+2026-11-02,basketball_nba,0a808d8f7afab3c0e249ca284c470806,Chicago Bulls,Philadelphia 76ers,107,126,ml,away,Chicago Bulls,396,0.1763,0.8458,strong,0.7834,loss,-1.0,2026-11-03T10:37:11
