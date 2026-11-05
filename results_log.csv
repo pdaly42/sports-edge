@@ -310,3 +310,6 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-11-01,americanfootball_nfl,b9c60db63b1a19ad319f24b33c0defe8,Philadelphia Eagles,Washington Commanders,10,27,ats,ats-away,Philadelphia Eagles +6.0,-112,0.0697,0.0784,strong,0.5697,loss,-1.0,2026-11-02T10:44:23
 2026-11-02,basketball_nba,53ad3f78c949e79381b5e90a70293ac6,Atlanta Hawks,Indiana Pacers,108,104,ml,home,Indiana Pacers,340,0.0889,0.3573,moderate,0.5159,loss,-1.0,2026-11-03T10:37:11
 2026-11-02,basketball_nba,0a808d8f7afab3c0e249ca284c470806,Chicago Bulls,Philadelphia 76ers,107,126,ml,away,Chicago Bulls,396,0.1763,0.8458,strong,0.7834,loss,-1.0,2026-11-03T10:37:11
+2026-11-04,basketball_nba,87d2b814c3f0d3691e9cebbf2de76295,Chicago Bulls,New York Knicks,105,135,ml,away,Chicago Bulls,450,0.0985,0.5062,moderate,0.5037,loss,-1.0,2026-11-05T10:33:37
+2026-11-04,basketball_nba,6b25f3932db93d4c5ad7658def2645bf,Dallas Mavericks,San Antonio Spurs,111,112,ml,away,Dallas Mavericks,430,0.0827,0.3995,moderate,0.4571,loss,-1.0,2026-11-05T10:33:37
+2026-11-04,basketball_nba,29988f1011d7738962e13e0a0beb693f,Los Angeles Lakers,Sacramento Kings,116,103,ml,home,Sacramento Kings,454,0.1401,0.7416,strong,0.6412,loss,-1.0,2026-11-05T10:33:37
