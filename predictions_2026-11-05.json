@@ -1,0 +1,150 @@
+{
+  "generated_at": "2026-11-05T20:27:16.340743+00:00",
+  "date": "2026-11-05",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "2a76b31e02d1416de069a995589515fc",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-06T02:10:00Z",
+      "home_team": "Phoenix Suns",
+      "away_team": "Orlando Magic",
+      "home_odds": -108,
+      "away_odds": -104,
+      "spread": {
+        "point": -1.5,
+        "price": -105
+      },
+      "total": {
+        "line": 221.5,
+        "over": -106,
+        "under": -114
+      },
+      "model_home_prob": 0.552,
+      "model_away_prob": 0.448,
+      "model_home_prob_shrunk": 0.5188,
+      "model_away_prob_shrunk": 0.4812,
+      "home_no_vig_prob": 0.5046,
+      "away_no_vig_prob": 0.4954,
+      "home_edge": 0.0142,
+      "away_edge": -0.0142,
+      "home_ev": -0.0008,
+      "away_ev": -0.0561,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null
+    },
+    {
+      "id": "ac38449dd3dfbe1c9b48164b6a41aa83",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-06T03:10:00Z",
+      "home_team": "Golden State Warriors",
+      "away_team": "Miami Heat",
+      "home_odds": -260,
+      "away_odds": 220,
+      "spread": {
+        "point": -6.5,
+        "price": -116
+      },
+      "total": {
+        "line": 232.5,
+        "over": -113,
+        "under": -107
+      },
+      "model_home_prob": 0.3768,
+      "model_away_prob": 0.6232,
+      "model_home_prob_shrunk": 0.6016,
+      "model_away_prob_shrunk": 0.3984,
+      "home_no_vig_prob": 0.698,
+      "away_no_vig_prob": 0.302,
+      "home_edge": -0.0964,
+      "away_edge": 0.0964,
+      "home_ev": -0.167,
+      "away_ev": 0.2748,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0312,
+      "best_bet": {
+        "side": "away",
+        "team": "Miami Heat",
+        "odds": 220,
+        "edge": 0.0964,
+        "ev": 0.2748,
+        "strength": "moderate"
+      },
+      "justification": "Miami Heat's avg point differential is +0.7 vs Golden State Warriors's -3.5 over the last 10 games. Model prices Miami Heat at 62.3% \u2014 a +9.6% edge over the market line."
+    },
+    {
+      "id": "c75744790b7acf6260c78ba5e739c0e5",
+      "sport": "americanfootball_nfl",
+      "sport_label": "NFL",
+      "commence_time": "2026-11-06T01:15:00Z",
+      "home_team": "Baltimore Ravens",
+      "away_team": "Jacksonville Jaguars",
+      "home_odds": 410,
+      "away_odds": -500,
+      "spread": {
+        "point": 10.0,
+        "price": -115
+      },
+      "total": {
+        "line": 39.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.4548,
+      "model_away_prob": 0.5452,
+      "model_home_prob_shrunk": 0.2698,
+      "model_away_prob_shrunk": 0.7302,
+      "home_no_vig_prob": 0.1905,
+      "away_no_vig_prob": 0.8095,
+      "home_edge": 0.0793,
+      "away_edge": -0.0793,
+      "home_ev": 0.3758,
+      "away_ev": -0.1237,
+      "home_kelly": 0.0229,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "spread_analysis": {
+        "line": 10.0,
+        "odds": -115,
+        "model_p_home_covers": 0.5507,
+        "model_p_away_covers": 0.4493,
+        "home_edge": 0.0507,
+        "away_edge": -0.0507,
+        "home_ev": 0.0296,
+        "away_ev": -0.16,
+        "best_ats_bet": {
+          "side": "home",
+          "team": "Baltimore Ravens",
+          "line": 10.0,
+          "odds": -115,
+          "edge": 0.0507,
+          "ev": 0.0296,
+          "strength": "moderate"
+        }
+      },
+      "home_injury_score": 0.457,
+      "away_injury_score": 0.21,
+      "home_qb_injury_impact": 1.6,
+      "away_qb_injury_impact": 0,
+      "model_predicted_total": 56.3,
+      "totals": {
+        "market_line": 39.5,
+        "predicted_total": 56.3,
+        "p_over": 0.8918,
+        "p_under": 0.1082,
+        "market_over_nv": 0.5,
+        "market_under_nv": 0.5,
+        "over_edge": 0.3918,
+        "under_edge": -0.3918,
+        "over_ev": 0.7026,
+        "under_ev": -0.7935,
+        "best_ou_bet": null,
+        "picks_disabled": true,
+        "disabled_reason": "totals model MAE = 17.7 pts (Oct 17 audit); 2-11 lifetime. Disabled pending model rebuild \u2014 see predict_today.py comments."
+      }
+    }
+  ]
+}
