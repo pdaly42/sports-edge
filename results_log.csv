@@ -313,3 +313,5 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-11-04,basketball_nba,87d2b814c3f0d3691e9cebbf2de76295,Chicago Bulls,New York Knicks,105,135,ml,away,Chicago Bulls,450,0.0985,0.5062,moderate,0.5037,loss,-1.0,2026-11-05T10:33:37
 2026-11-04,basketball_nba,6b25f3932db93d4c5ad7658def2645bf,Dallas Mavericks,San Antonio Spurs,111,112,ml,away,Dallas Mavericks,430,0.0827,0.3995,moderate,0.4571,loss,-1.0,2026-11-05T10:33:37
 2026-11-04,basketball_nba,29988f1011d7738962e13e0a0beb693f,Los Angeles Lakers,Sacramento Kings,116,103,ml,home,Sacramento Kings,454,0.1401,0.7416,strong,0.6412,loss,-1.0,2026-11-05T10:33:37
+2026-11-05,basketball_nba,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,100,120,ml,away,Miami Heat,220,0.0964,0.2748,moderate,0.6232,loss,-1.0,2026-11-06T10:36:42
+2026-11-05,americanfootball_nfl,c75744790b7acf6260c78ba5e739c0e5,Jacksonville Jaguars,Baltimore Ravens,33,10,ats,ats-home,Baltimore Ravens +10.0,-115,0.0507,0.0296,moderate,0.5507,loss,-1.0,2026-11-06T10:36:42
