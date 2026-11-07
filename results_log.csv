@@ -315,3 +315,6 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-11-04,basketball_nba,29988f1011d7738962e13e0a0beb693f,Los Angeles Lakers,Sacramento Kings,116,103,ml,home,Sacramento Kings,454,0.1401,0.7416,strong,0.6412,loss,-1.0,2026-11-05T10:33:37
 2026-11-05,basketball_nba,ac38449dd3dfbe1c9b48164b6a41aa83,Miami Heat,Golden State Warriors,100,120,ml,away,Miami Heat,220,0.0964,0.2748,moderate,0.6232,loss,-1.0,2026-11-06T10:36:42
 2026-11-05,americanfootball_nfl,c75744790b7acf6260c78ba5e739c0e5,Jacksonville Jaguars,Baltimore Ravens,33,10,ats,ats-home,Baltimore Ravens +10.0,-115,0.0507,0.0296,moderate,0.5507,loss,-1.0,2026-11-06T10:36:42
+2026-11-06,basketball_nba,85869b2fdc16ef10d3e2582bf05ead95,Philadelphia 76ers,Cleveland Cavaliers,95,119,ml,home,Cleveland Cavaliers,125,0.1005,0.1959,moderate,0.766,win,1.25,2026-11-07T09:47:20
+2026-11-06,americanfootball_ncaaf,11da04c7d3fba48caf11a5d8b66b8ccd,Virginia Tech Hokies,SMU Mustangs,28,51,ats,ats-home,SMU Mustangs -6.5,-105,0.0526,0.0789,moderate,0.5526,win,0.9524,2026-11-07T09:47:21
+2026-11-06,americanfootball_ncaaf,722ed661705df150a38e7786949ce241,TCU Horned Frogs,Arizona Wildcats,28,29,ats,ats-home,Arizona Wildcats -7.0,-105,0.0837,0.1396,strong,0.5837,loss,-1.0,2026-11-07T09:47:21
