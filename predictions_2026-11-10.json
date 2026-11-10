@@ -1,0 +1,199 @@
+{
+  "generated_at": "2026-11-10T20:10:11.290659+00:00",
+  "date": "2026-11-10",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "3689d555c9a1c81e3d300375b4c80530",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-11T00:40:00Z",
+      "home_team": "New York Knicks",
+      "away_team": "Milwaukee Bucks",
+      "home_odds": -1040,
+      "away_odds": 750,
+      "spread": {
+        "point": -15.5,
+        "price": -110
+      },
+      "total": {
+        "line": 221.5,
+        "over": -115,
+        "under": -105
+      },
+      "model_home_prob": 0.6458,
+      "model_away_prob": 0.3542,
+      "model_home_prob_shrunk": 0.8138,
+      "model_away_prob_shrunk": 0.1862,
+      "home_no_vig_prob": 0.8858,
+      "away_no_vig_prob": 0.1142,
+      "home_edge": -0.072,
+      "away_edge": 0.072,
+      "home_ev": -0.108,
+      "away_ev": 0.5829,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0194,
+      "best_bet": null
+    },
+    {
+      "id": "cfa503c66cd505776a910921875ef7dd",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-11T01:10:00Z",
+      "home_team": "Philadelphia 76ers",
+      "away_team": "Boston Celtics",
+      "home_odds": 105,
+      "away_odds": -117,
+      "spread": {
+        "point": 1.5,
+        "price": -108
+      },
+      "total": {
+        "line": 217.5,
+        "over": -106,
+        "under": -114
+      },
+      "model_home_prob": 0.2296,
+      "model_away_prob": 0.7704,
+      "model_home_prob_shrunk": 0.4014,
+      "model_away_prob_shrunk": 0.5986,
+      "home_no_vig_prob": 0.475,
+      "away_no_vig_prob": 0.525,
+      "home_edge": -0.0736,
+      "away_edge": 0.0736,
+      "home_ev": -0.1772,
+      "away_ev": 0.1103,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0323,
+      "best_bet": null
+    },
+    {
+      "id": "8178ff2ec61f604b61dfe6d7b8d71103",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-11T02:10:00Z",
+      "home_team": "Phoenix Suns",
+      "away_team": "Los Angeles Clippers",
+      "home_odds": -167,
+      "away_odds": 142,
+      "spread": {
+        "point": -3.5,
+        "price": -115
+      },
+      "total": {
+        "line": 224.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.5674,
+      "model_away_prob": 0.4326,
+      "model_home_prob_shrunk": 0.5917,
+      "model_away_prob_shrunk": 0.4083,
+      "home_no_vig_prob": 0.6022,
+      "away_no_vig_prob": 0.3978,
+      "home_edge": -0.0104,
+      "away_edge": 0.0104,
+      "home_ev": -0.0539,
+      "away_ev": -0.012,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null
+    },
+    {
+      "id": "9ac02cb22adf276b325b1e9c9c6c588e",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-11T02:10:00Z",
+      "home_team": "Utah Jazz",
+      "away_team": "Miami Heat",
+      "home_odds": 341,
+      "away_odds": -430,
+      "spread": {
+        "point": 9.5,
+        "price": -108
+      },
+      "total": {
+        "line": 227.5,
+        "over": -115,
+        "under": -105
+      },
+      "model_home_prob": 0.4281,
+      "model_away_prob": 0.5719,
+      "model_home_prob_shrunk": 0.2813,
+      "model_away_prob_shrunk": 0.7187,
+      "home_no_vig_prob": 0.2184,
+      "away_no_vig_prob": 0.7816,
+      "home_edge": 0.0629,
+      "away_edge": -0.0629,
+      "home_ev": 0.2407,
+      "away_ev": -0.1142,
+      "home_kelly": 0.0176,
+      "away_kelly": 0.0,
+      "best_bet": null
+    },
+    {
+      "id": "78ab42ddb22b68903fd53a384d0fc616",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-11T03:10:00Z",
+      "home_team": "Sacramento Kings",
+      "away_team": "Orlando Magic",
+      "home_odds": 215,
+      "away_odds": -237,
+      "spread": {
+        "point": 6.5,
+        "price": -106
+      },
+      "total": {
+        "line": 222.5,
+        "over": -115,
+        "under": -105
+      },
+      "model_home_prob": 0.5655,
+      "model_away_prob": 0.4345,
+      "model_home_prob_shrunk": 0.3874,
+      "model_away_prob_shrunk": 0.6126,
+      "home_no_vig_prob": 0.311,
+      "away_no_vig_prob": 0.689,
+      "home_edge": 0.0763,
+      "away_edge": -0.0763,
+      "home_ev": 0.2202,
+      "away_ev": -0.1289,
+      "home_kelly": 0.0256,
+      "away_kelly": 0.0,
+      "best_bet": null
+    },
+    {
+      "id": "f5477c781c94e09e85374bbf9149c0f1",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-11T04:10:00Z",
+      "home_team": "Portland Trail Blazers",
+      "away_team": "Oklahoma City Thunder",
+      "home_odds": 114,
+      "away_odds": -125,
+      "spread": {
+        "point": 1.5,
+        "price": -105
+      },
+      "total": {
+        "line": 226.5,
+        "over": -108,
+        "under": -112
+      },
+      "model_home_prob": 0.457,
+      "model_away_prob": 0.543,
+      "model_home_prob_shrunk": 0.4569,
+      "model_away_prob_shrunk": 0.5431,
+      "home_no_vig_prob": 0.4569,
+      "away_no_vig_prob": 0.5431,
+      "home_edge": 0.0,
+      "away_edge": -0.0,
+      "home_ev": -0.0222,
+      "away_ev": -0.0224,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null
+    }
+  ]
+}

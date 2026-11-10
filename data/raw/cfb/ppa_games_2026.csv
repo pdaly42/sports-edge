@@ -6,8 +6,8 @@ season,week,team,opponent,cfb_off_epa_per_play,cfb_off_pass_epa,cfb_off_rush_epa
 2026,1,Arizona,Northern Arizona,0.16,0.23,0.18,0.0
 2026,1,Arizona State,Morgan State,0.65,0.87,0.43,0.0
 2026,1,Arkansas,North Alabama,0.09,0.49,-0.16,0.0
-2026,1,Arkansas State,Memphis,0.09,0.17,0.21,0.22
 2026,1,Arkansas State,Memphis,0.09,0.17,0.21,0.43
+2026,1,Arkansas State,Memphis,0.09,0.17,0.21,0.22
 2026,1,Army,Bryant,0.69,-0.03,0.85,0.0
 2026,1,Auburn,Baylor,-0.04,0.01,-0.14,-0.01
 2026,1,Ball State,Ohio State,-0.33,-0.36,-0.27,0.61
@@ -28,26 +28,26 @@ season,week,team,opponent,cfb_off_epa_per_play,cfb_off_pass_epa,cfb_off_rush_epa
 2026,1,Delaware,Merrimack,0.35,0.52,0.27,0.0
 2026,1,Duke,Tulane,-0.13,-0.3,0.06,-0.13
 2026,1,East Carolina,Alabama,-0.2,-0.04,-0.38,0.24
-2026,1,Eastern Michigan,San José State,-0.17,-0.11,0.0,0.07
 2026,1,Eastern Michigan,San José State,-0.17,-0.11,0.0,0.21
-2026,1,Eastern Michigan,Sacramento State,0.06,0.28,-0.23,-0.12
+2026,1,Eastern Michigan,San José State,-0.17,-0.11,0.0,0.07
 2026,1,Eastern Michigan,Sacramento State,0.06,0.28,-0.23,0.25
+2026,1,Eastern Michigan,Sacramento State,0.06,0.28,-0.23,-0.12
 2026,1,Florida,Florida Atlantic,0.61,0.88,0.45,-0.01
 2026,1,Florida Atlantic,Florida,-0.01,0.01,-0.05,0.61
 2026,1,Florida International,South Florida,-0.12,0.01,-0.37,-0.06
-2026,1,Florida State,SMU,0.14,0.25,0.07,0.36
-2026,1,Florida State,New Mexico State,0.27,0.38,0.33,0.37
 2026,1,Florida State,New Mexico State,0.27,0.38,0.33,0.11
+2026,1,Florida State,New Mexico State,0.27,0.38,0.33,0.37
+2026,1,Florida State,SMU,0.14,0.25,0.07,0.36
 2026,1,Fresno State,USC,-0.35,-0.08,-0.28,0.34
 2026,1,Fresno State,USC,-0.35,-0.08,-0.28,0.23
 2026,1,Georgia,Tennessee State,0.73,0.76,0.69,0.0
 2026,1,Georgia Southern,Charleston Southern,0.18,0.35,-0.08,0.0
 2026,1,Georgia State,North Carolina A&T,0.51,0.51,0.5,0.0
 2026,1,Georgia Tech,Colorado,0.07,0.43,-0.26,0.05
-2026,1,Hawai'i,Stanford,0.05,0.14,-0.08,0.01
 2026,1,Hawai'i,Stanford,0.05,0.14,-0.08,0.31
-2026,1,Hawai'i,UNLV,-0.08,-0.07,0.12,0.02
+2026,1,Hawai'i,Stanford,0.05,0.14,-0.08,0.01
 2026,1,Hawai'i,UNLV,-0.08,-0.07,0.12,0.07
+2026,1,Hawai'i,UNLV,-0.08,-0.07,0.12,0.02
 2026,1,Houston,Oregon State,0.28,0.41,0.14,0.06
 2026,1,Illinois,UAB,0.46,0.89,0.11,0.14
 2026,1,Indiana,North Texas,0.65,1.64,0.13,0.05
@@ -70,11 +70,11 @@ season,week,team,opponent,cfb_off_epa_per_play,cfb_off_pass_epa,cfb_off_rush_epa
 2026,1,Marshall,Penn State,-0.37,0.07,-0.73,0.42
 2026,1,Maryland,Hampton,0.48,0.44,0.54,0.0
 2026,1,Massachusetts,Rutgers,0.33,0.65,0.17,-0.02
-2026,1,Memphis,UNLV,0.22,0.41,0.06,0.02
-2026,1,Memphis,UNLV,0.22,0.41,0.06,0.07
 2026,1,Memphis,Arkansas State,0.43,0.96,0.38,0.09
-2026,1,Miami,Stanford,0.46,1.1,-0.03,0.01
+2026,1,Memphis,UNLV,0.22,0.41,0.06,0.07
+2026,1,Memphis,UNLV,0.22,0.41,0.06,0.02
 2026,1,Miami,Stanford,0.46,1.1,-0.03,0.31
+2026,1,Miami,Stanford,0.46,1.1,-0.03,0.01
 2026,1,Miami (OH),Pittsburgh,0.07,0.26,-0.14,0.42
 2026,1,Michigan,Western Michigan,0.15,0.13,0.16,-0.04
 2026,1,Michigan State,Toledo,0.01,0.34,-0.18,0.1
@@ -88,9 +88,9 @@ season,week,team,opponent,cfb_off_epa_per_play,cfb_off_pass_epa,cfb_off_rush_epa
 2026,1,Nebraska,Ohio,0.46,0.37,0.53,0.06
 2026,1,Nevada,Western Kentucky,0.5,0.23,0.57,0.03
 2026,1,New Mexico,Central Michigan,0.22,0.07,0.34,-0.18
-2026,1,New Mexico State,Mercyhurst,0.37,0.76,0.19,0.0
-2026,1,New Mexico State,Florida State,0.11,0.32,-0.07,0.14
 2026,1,New Mexico State,Florida State,0.11,0.32,-0.07,0.27
+2026,1,New Mexico State,Florida State,0.11,0.32,-0.07,0.14
+2026,1,New Mexico State,Mercyhurst,0.37,0.76,0.19,0.0
 2026,1,North Carolina,TCU,-0.01,0.27,-0.35,-0.07
 2026,1,North Dakota State,Jacksonville State,0.16,0.41,0.11,0.53
 2026,1,North Dakota State,Jacksonville State,0.16,0.41,0.11,-0.38
@@ -112,24 +112,24 @@ season,week,team,opponent,cfb_off_epa_per_play,cfb_off_pass_epa,cfb_off_rush_epa
 2026,1,Purdue,Indiana State,0.33,0.63,0.17,0.0
 2026,1,Rice,Houston Christian,0.19,-0.2,0.31,0.0
 2026,1,Rutgers,Massachusetts,-0.02,0.19,-0.56,0.33
+2026,1,Sacramento State,Mississippi Valley State,0.25,0.61,0.13,0.0
 2026,1,Sacramento State,Eastern Michigan,-0.12,-0.14,-0.05,-0.17
 2026,1,Sacramento State,Eastern Michigan,-0.12,-0.14,-0.05,0.06
-2026,1,Sacramento State,Mississippi Valley State,0.25,0.61,0.13,0.0
 2026,1,Sam Houston,Troy,0.07,0.23,-0.33,0.16
 2026,1,San Diego State,Portland State,0.13,0.28,0.18,0.0
-2026,1,San José State,Eastern Michigan,0.07,0.36,-0.12,-0.17
-2026,1,San José State,Eastern Michigan,0.07,0.36,-0.12,0.06
 2026,1,San José State,USC,0.21,0.32,0.06,0.34
 2026,1,San José State,USC,0.21,0.32,0.06,0.23
-2026,1,SMU,Florida State,0.36,0.56,0.13,0.14
+2026,1,San José State,Eastern Michigan,0.07,0.36,-0.12,-0.17
+2026,1,San José State,Eastern Michigan,0.07,0.36,-0.12,0.06
 2026,1,SMU,Florida State,0.36,0.56,0.13,0.27
+2026,1,SMU,Florida State,0.36,0.56,0.13,0.14
 2026,1,South Alabama,SE Louisiana,0.09,0.08,0.15,0.0
 2026,1,South Carolina,Kent State,0.68,0.87,0.5,-0.08
 2026,1,Southern Miss,Alcorn State,0.35,0.13,0.46,0.0
 2026,1,South Florida,Florida International,-0.06,0.16,-0.1,-0.12
-2026,1,Stanford,Miami,0.01,0.07,-0.08,0.46
 2026,1,Stanford,Hawai'i,0.31,0.38,0.22,0.05
 2026,1,Stanford,Hawai'i,0.31,0.38,0.22,-0.08
+2026,1,Stanford,Miami,0.01,0.07,-0.08,0.46
 2026,1,Syracuse,New Hampshire,0.35,0.41,0.33,0.0
 2026,1,TCU,North Carolina,-0.07,-0.04,-0.03,-0.01
 2026,1,Temple,Rhode Island,0.17,0.27,0.15,0.0
@@ -147,12 +147,12 @@ season,week,team,opponent,cfb_off_epa_per_play,cfb_off_pass_epa,cfb_off_rush_epa
 2026,1,UCLA,California,0.41,0.01,0.75,-0.06
 2026,1,UConn,Lafayette,0.55,0.69,0.47,0.0
 2026,1,UL Monroe,Mississippi State,-0.08,-0.06,-0.06,0.64
-2026,1,UNLV,Memphis,0.02,-0.06,0.19,0.22
-2026,1,UNLV,Memphis,0.02,-0.06,0.19,0.43
 2026,1,UNLV,Hawai'i,0.07,-0.41,0.32,0.05
 2026,1,UNLV,Hawai'i,0.07,-0.41,0.32,-0.08
-2026,1,USC,San José State,0.34,0.28,0.39,0.07
+2026,1,UNLV,Memphis,0.02,-0.06,0.19,0.43
+2026,1,UNLV,Memphis,0.02,-0.06,0.19,0.22
 2026,1,USC,San José State,0.34,0.28,0.39,0.21
+2026,1,USC,San José State,0.34,0.28,0.39,0.07
 2026,1,USC,Fresno State,0.23,1.28,-0.53,-0.35
 2026,1,Utah,Idaho,0.51,0.68,0.45,0.0
 2026,1,Utah State,Idaho State,-0.06,-0.12,-0.03,0.0
@@ -1141,27 +1141,128 @@ season,week,team,opponent,cfb_off_epa_per_play,cfb_off_pass_epa,cfb_off_rush_epa
 2026,9,Western Kentucky,Delaware,0.04,-0.31,0.59,0.3
 2026,9,Western Michigan,Bowling Green,-0.06,0.13,-0.16,-0.16
 2026,9,Wisconsin,Iowa,-0.18,0.0,-0.47,0.08
-2026,10,Akron,Ohio,-0.09,-0.2,0.02,0.21
+2026,10,Air Force,Army,0.11,1.04,-0.03,0.05
+2026,10,Akron,Ohio,-0.08,-0.2,0.02,0.21
+2026,10,Alabama,LSU,0.19,0.41,-0.02,-0.12
+2026,10,App State,Georgia State,0.03,0.1,-0.11,0.23
 2026,10,Arizona,TCU,0.16,0.23,0.07,0.07
-2026,10,Ball State,Massachusetts,0.17,0.13,0.21,0.28
-2026,10,Buffalo,Miami (OH),0.09,0.15,0.04,0.17
+2026,10,Arizona State,Colorado,0.09,0.62,-0.22,-0.09
+2026,10,Arkansas,Auburn,0.12,0.09,0.21,0.16
+2026,10,Arkansas State,UL Monroe,0.06,-0.01,0.22,0.24
+2026,10,Army,Air Force,0.05,0.22,0.12,0.11
+2026,10,Auburn,Arkansas,0.16,0.33,0.02,0.12
+2026,10,Ball State,Massachusetts,0.17,0.13,0.21,0.36
+2026,10,Baylor,Iowa State,0.28,0.32,0.26,0.22
+2026,10,Boise State,Colorado State,0.8,1.24,0.62,0.43
+2026,10,Boston College,Florida State,0.09,0.12,0.14,0.22
+2026,10,Buffalo,Miami (OH),0.08,0.14,0.04,0.17
+2026,10,BYU,Utah,0.04,-0.05,0.14,0.07
 2026,10,Central Michigan,Eastern Michigan,0.25,0.4,0.29,-0.08
+2026,10,Charlotte,UAB,-0.11,-0.1,-0.17,-0.08
+2026,10,Cincinnati,Houston,0.17,0.41,-0.06,0.38
+2026,10,Clemson,Syracuse,0.07,0.04,0.16,0.19
+2026,10,Coastal Carolina,Old Dominion,-0.31,0.0,-0.73,-0.08
+2026,10,Colorado,Arizona State,-0.09,0.24,-0.36,0.09
+2026,10,Colorado State,Boise State,0.43,0.51,0.37,0.8
+2026,10,Delaware,Kennesaw State,0.06,0.2,-0.11,0.11
+2026,10,Duke,NC State,0.29,0.29,0.34,-0.14
 2026,10,East Carolina,South Florida,0.11,0.24,-0.05,0.12
 2026,10,Eastern Michigan,Central Michigan,-0.08,0.13,-0.16,0.25
-2026,10,Florida Atlantic,UTSA,0.38,0.67,0.21,0.17
+2026,10,Florida,Oklahoma,-0.06,-0.11,-0.01,0.23
+2026,10,Florida Atlantic,UTSA,0.41,0.75,0.21,0.17
+2026,10,Florida International,Missouri State,0.13,0.21,0.09,-0.1
+2026,10,Florida State,Boston College,0.22,0.16,0.25,0.09
+2026,10,Fresno State,Utah State,-0.05,0.4,-0.73,-0.04
+2026,10,Georgia,Ole Miss,0.45,0.74,0.34,-0.08
+2026,10,Georgia Southern,Marshall,0.36,0.57,0.17,-0.07
+2026,10,Georgia State,App State,0.23,0.47,0.16,0.03
+2026,10,Georgia Tech,Louisville,-0.14,-0.13,0.02,0.37
+2026,10,Hawai'i,UTEP,0.15,0.38,-0.16,0.01
+2026,10,Houston,Cincinnati,0.38,0.61,0.22,0.17
 2026,10,Illinois,Nebraska,0.18,0.4,-0.12,0.13
-2026,10,James Madison,Southern Miss,0.39,0.63,0.19,0.02
-2026,10,Massachusetts,Ball State,0.28,0.56,0.04,0.17
-2026,10,Miami (OH),Buffalo,0.17,0.16,0.19,0.09
+2026,10,Iowa,Northwestern,0.04,0.08,0.0,-0.15
+2026,10,Iowa State,Baylor,0.22,0.18,0.25,0.28
+2026,10,Jacksonville State,Sam Houston,0.26,0.11,0.42,0.0
+2026,10,James Madison,Southern Miss,0.44,0.63,0.28,0.02
+2026,10,Kansas,UCF,0.15,0.22,0.11,0.09
+2026,10,Kansas State,Oklahoma State,-0.19,-0.32,-0.13,0.44
+2026,10,Kennesaw State,Delaware,0.11,-0.04,0.35,0.06
+2026,10,Kentucky,Tennessee,-0.07,-0.04,-0.07,0.39
+2026,10,Liberty,New Mexico State,0.37,0.56,0.21,0.0
+2026,10,Louisiana,South Alabama,0.31,-0.45,0.58,0.21
+2026,10,Louisiana Tech,Troy,0.18,0.51,-0.08,-0.22
+2026,10,Louisville,Georgia Tech,0.37,0.49,0.3,-0.14
+2026,10,LSU,Alabama,-0.12,-0.2,0.05,0.19
+2026,10,Marshall,Georgia Southern,-0.07,-0.36,0.13,0.36
+2026,10,Maryland,Purdue,0.44,0.75,0.22,0.16
+2026,10,Massachusetts,Ball State,0.36,0.56,0.18,0.17
+2026,10,Miami,Notre Dame,0.08,0.14,0.0,0.27
+2026,10,Miami (OH),Buffalo,0.17,0.16,0.19,0.08
+2026,10,Michigan,Michigan State,-0.15,-0.24,-0.02,-0.06
+2026,10,Michigan State,Michigan,-0.06,-0.06,-0.13,-0.15
+2026,10,Middle Tennessee,Western Kentucky,0.4,0.47,0.3,0.42
+2026,10,Minnesota,UCLA,0.09,0.21,-0.05,0.17
+2026,10,Mississippi State,Vanderbilt,-0.02,0.0,-0.08,0.07
+2026,10,Missouri,Texas,0.04,0.1,-0.11,0.1
+2026,10,Missouri State,Florida International,-0.1,-0.02,-0.2,0.13
+2026,10,Navy,Temple,0.1,0.84,0.13,-0.02
+2026,10,NC State,Duke,-0.14,0.03,-0.4,0.29
 2026,10,Nebraska,Illinois,0.13,0.07,0.24,0.18
-2026,10,Nevada,New Mexico,-0.28,-0.09,-0.71,0.15
-2026,10,New Mexico,Nevada,0.15,0.13,0.17,-0.28
-2026,10,Ohio,Akron,0.21,0.45,0.0,-0.09
-2026,10,Sacramento State,Toledo,-0.21,-0.16,-0.29,-0.09
+2026,10,Nevada,New Mexico,-0.28,-0.09,-0.71,0.21
+2026,10,New Mexico,Nevada,0.21,0.13,0.28,-0.28
+2026,10,New Mexico State,Liberty,0.0,0.25,-0.4,0.37
+2026,10,North Carolina,UConn,0.26,0.31,0.21,-0.14
+2026,10,Northern Illinois,San José State,-0.02,-0.11,0.13,0.13
+2026,10,North Texas,Rice,0.49,0.43,0.54,0.18
+2026,10,Northwestern,Iowa,-0.15,-0.26,-0.03,0.04
+2026,10,Notre Dame,Miami,0.27,0.38,0.05,0.08
+2026,10,Ohio,Akron,0.21,0.45,0.0,-0.08
+2026,10,Ohio State,Oregon,0.03,0.03,0.27,0.15
+2026,10,Oklahoma,Florida,0.23,0.41,0.06,-0.06
+2026,10,Oklahoma State,Kansas State,0.44,0.68,0.23,-0.19
+2026,10,Old Dominion,Coastal Carolina,-0.08,-0.04,-0.09,-0.31
+2026,10,Ole Miss,Georgia,-0.08,-0.11,-0.05,0.45
+2026,10,Oregon,Ohio State,0.15,0.42,-0.16,0.03
+2026,10,Oregon State,Texas State,0.05,0.14,0.18,0.36
+2026,10,Penn State,Washington,0.25,0.29,0.2,0.14
+2026,10,Purdue,Maryland,0.16,0.08,0.24,0.44
+2026,10,Rice,North Texas,0.18,-0.08,0.22,0.49
+2026,10,Rutgers,Wisconsin,-0.05,-0.08,-0.01,0.3
+2026,10,Sacramento State,Toledo,-0.21,-0.16,-0.29,-0.07
+2026,10,Sam Houston,Jacksonville State,0.0,0.18,-0.09,0.26
+2026,10,San José State,Northern Illinois,0.13,0.32,0.01,-0.02
 2026,10,SMU,Virginia Tech,0.42,0.41,0.44,0.25
-2026,10,Southern Miss,James Madison,0.02,0.07,-0.02,0.39
+2026,10,South Alabama,Louisiana,0.21,0.43,0.15,0.31
+2026,10,South Carolina,Texas A&M,0.13,0.37,-0.16,0.09
+2026,10,Southern Miss,James Madison,0.02,0.07,-0.02,0.44
 2026,10,South Florida,East Carolina,0.12,0.21,-0.01,0.11
+2026,10,Syracuse,Clemson,0.19,0.31,0.05,0.07
 2026,10,TCU,Arizona,0.07,0.05,0.12,0.16
-2026,10,Toledo,Sacramento State,-0.09,-0.53,0.11,-0.21
-2026,10,UTSA,Florida Atlantic,0.17,0.4,-0.08,0.38
+2026,10,Temple,Navy,-0.02,0.02,-0.08,0.1
+2026,10,Tennessee,Kentucky,0.39,0.37,0.39,-0.07
+2026,10,Texas,Missouri,0.1,0.31,-0.16,0.04
+2026,10,Texas A&M,South Carolina,0.09,0.12,0.02,0.13
+2026,10,Texas State,Oregon State,0.36,0.33,0.32,0.05
+2026,10,Texas Tech,West Virginia,0.41,0.86,0.14,0.28
+2026,10,Toledo,Sacramento State,-0.07,-0.51,0.11,-0.21
+2026,10,Troy,Louisiana Tech,-0.22,-0.12,-0.33,0.18
+2026,10,Tulane,Tulsa,-0.26,-0.32,-0.22,0.47
+2026,10,Tulsa,Tulane,0.47,0.64,0.36,-0.26
+2026,10,UAB,Charlotte,-0.08,0.15,-0.02,-0.11
+2026,10,UCF,Kansas,0.09,0.33,-0.17,0.15
+2026,10,UCLA,Minnesota,0.17,1.0,-0.17,0.09
+2026,10,UConn,North Carolina,-0.14,-0.27,0.03,0.26
+2026,10,UL Monroe,Arkansas State,0.24,0.0,0.33,0.06
+2026,10,UNLV,Wyoming,0.03,-0.13,0.19,0.18
+2026,10,Utah,BYU,0.07,0.3,-0.08,0.04
+2026,10,Utah State,Fresno State,-0.04,0.29,-0.08,-0.05
+2026,10,UTEP,Hawai'i,0.01,0.15,-0.07,0.15
+2026,10,UTSA,Florida Atlantic,0.17,0.4,-0.08,0.41
+2026,10,Vanderbilt,Mississippi State,0.07,0.37,-0.12,-0.02
 2026,10,Virginia Tech,SMU,0.25,0.09,0.49,0.42
+2026,10,Wake Forest,Merrimack,0.74,0.88,0.56,0.0
+2026,10,Washington,Penn State,0.14,0.2,0.11,0.25
+2026,10,Western Kentucky,Middle Tennessee,0.42,0.44,0.44,0.4
+2026,10,West Virginia,Texas Tech,0.28,0.72,0.18,0.41
+2026,10,Wisconsin,Rutgers,0.3,0.7,-0.06,-0.05
+2026,10,Wyoming,UNLV,0.18,0.19,0.18,0.03
