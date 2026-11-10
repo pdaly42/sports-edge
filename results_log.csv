@@ -324,3 +324,5 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-11-08,basketball_nba,a5d2d9c68b7446860de658aa4bc33c5b,Philadelphia 76ers,Chicago Bulls,127,121,ml,home,Chicago Bulls,329,0.1778,0.7407,strong,0.8206,loss,-1.0,2026-11-09T11:08:16
 2026-11-08,basketball_nba,98eae523edadc7d4d42ab37222eb2c88,Boston Celtics,Milwaukee Bucks,117,97,ml,home,Milwaukee Bucks,530,0.0822,0.4855,moderate,0.4277,loss,-1.0,2026-11-09T11:08:16
 2026-11-08,americanfootball_nfl,fe93e6ab1e553c0169936a0a983c324f,New York Giants,Philadelphia Eagles,19,11,ats,ats-home,Philadelphia Eagles +3.5,-116,0.0569,0.037,moderate,0.5569,loss,-1.0,2026-11-09T11:08:16
+2026-11-09,basketball_nba,929b863acedecaf614c6312e28a44837,Washington Wizards,Detroit Pistons,111,122,ml,away,Washington Wizards,394,0.0846,0.3948,moderate,0.4798,loss,-1.0,2026-11-10T10:53:16
+2026-11-09,basketball_nba,dc4eb6ae9979b3d3418c35b4210f0c72,San Antonio Spurs,Phoenix Suns,122,96,ml,home,Phoenix Suns,300,0.121,0.4473,strong,0.6442,loss,-1.0,2026-11-10T10:53:16
