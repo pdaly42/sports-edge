@@ -40,7 +40,7 @@ season,week,team,full_name,position,report_status
 2026,1,NE,TreVeyon Henderson,RB,Out
 2026,1,NO,Cameron Jordan,LB,Out
 2026,1,NO,Alvin Kamara,RB,Questionable
-2026,1,NO,Audric Estimé,RB,Out
+2026,1,NO,Audric Estime,RB,Out
 2026,1,NO,Oscar Delp,TE,Out
 2026,1,NYG,Malik Nabers,WR,Questionable
 2026,1,NYJ,Tim Patrick,WR,Out
@@ -1220,3 +1220,9 @@ season,week,team,full_name,position,report_status
 2026,9,WAS,Dyami Brown,WR,Out
 2026,9,WAS,Treylon Burks,WR,Out
 2026,9,WAS,Jer'Zhan Newton,DT,Questionable
+2026,10,NE,Carlton Davis III,CB,Out
+2026,10,NE,Ben Brown,C,Out
+2026,10,NE,TreVeyon Henderson,RB,Out
+2026,10,NYG,Malik Harrison,LB,Questionable
+2026,10,WAS,Lucas Patrick,C,Out
+2026,10,WAS,Colson Yankoff,TE,Out

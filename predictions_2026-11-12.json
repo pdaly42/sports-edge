@@ -1,0 +1,206 @@
+{
+  "generated_at": "2026-11-12T20:38:01.667159+00:00",
+  "date": "2026-11-12",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "d5c5ae8d56762b45d1ec4b85337878f3",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-13T00:10:00Z",
+      "home_team": "Washington Wizards",
+      "away_team": "Detroit Pistons",
+      "home_odds": 360,
+      "away_odds": -438,
+      "spread": {
+        "point": 10.5,
+        "price": -114
+      },
+      "total": {
+        "line": 220.5,
+        "over": -114,
+        "under": -106
+      },
+      "model_home_prob": 0.2905,
+      "model_away_prob": 0.7095,
+      "model_home_prob_shrunk": 0.2347,
+      "model_away_prob_shrunk": 0.7653,
+      "home_no_vig_prob": 0.2107,
+      "away_no_vig_prob": 0.7893,
+      "home_edge": 0.0239,
+      "away_edge": -0.0239,
+      "home_ev": 0.0795,
+      "away_ev": -0.0599,
+      "home_kelly": 0.0055,
+      "away_kelly": 0.0,
+      "best_bet": null
+    },
+    {
+      "id": "a98ff1ab79feb59277d989c656f16144",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-13T00:10:00Z",
+      "home_team": "Philadelphia 76ers",
+      "away_team": "Toronto Raptors",
+      "home_odds": -269,
+      "away_odds": 230,
+      "spread": {
+        "point": -7.5,
+        "price": -106
+      },
+      "total": {
+        "line": 223.5,
+        "over": -114,
+        "under": -106
+      },
+      "model_home_prob": 0.3282,
+      "model_away_prob": 0.6718,
+      "model_home_prob_shrunk": 0.5929,
+      "model_away_prob_shrunk": 0.4071,
+      "home_no_vig_prob": 0.7064,
+      "away_no_vig_prob": 0.2936,
+      "home_edge": -0.1135,
+      "away_edge": 0.1135,
+      "home_ev": -0.1867,
+      "away_ev": 0.3434,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0373,
+      "best_bet": {
+        "side": "away",
+        "team": "Toronto Raptors",
+        "odds": 230,
+        "edge": 0.1135,
+        "ev": 0.3434,
+        "strength": "moderate"
+      },
+      "justification": "Toronto Raptors's avg point differential is +4.6 vs Philadelphia 76ers's -9.8 over the last 10 games. Philadelphia 76ers have a 1-day rest edge over Toronto Raptors. Model prices Toronto Raptors at 67.2% \u2014 a +11.3% edge over the market line."
+    },
+    {
+      "id": "3c93e4724d36d796aed71c0ca4055b1b",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-13T01:10:00Z",
+      "home_team": "Minnesota Timberwolves",
+      "away_team": "Dallas Mavericks",
+      "home_odds": -220,
+      "away_odds": 188,
+      "spread": {
+        "point": -5.5,
+        "price": -112
+      },
+      "total": {
+        "line": 226.5,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.7396,
+      "model_away_prob": 0.2604,
+      "model_home_prob_shrunk": 0.687,
+      "model_away_prob_shrunk": 0.313,
+      "home_no_vig_prob": 0.6644,
+      "away_no_vig_prob": 0.3356,
+      "home_edge": 0.0226,
+      "away_edge": -0.0226,
+      "home_ev": -0.0008,
+      "away_ev": -0.0985,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null
+    },
+    {
+      "id": "f3f429e773bfb2340ba2bb90f2b9dd1e",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-13T02:10:00Z",
+      "home_team": "Phoenix Suns",
+      "away_team": "Charlotte Hornets",
+      "home_odds": -229,
+      "away_odds": 195,
+      "spread": {
+        "point": -6.5,
+        "price": -110
+      },
+      "total": {
+        "line": 214.5,
+        "over": -108,
+        "under": -112
+      },
+      "model_home_prob": 0.5929,
+      "model_away_prob": 0.4071,
+      "model_home_prob_shrunk": 0.6486,
+      "model_away_prob_shrunk": 0.3514,
+      "home_no_vig_prob": 0.6725,
+      "away_no_vig_prob": 0.3275,
+      "home_edge": -0.0239,
+      "away_edge": 0.0239,
+      "home_ev": -0.0681,
+      "away_ev": 0.0366,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0047,
+      "best_bet": null
+    },
+    {
+      "id": "74d39e19225caf211ad2c8eb4110179f",
+      "sport": "americanfootball_nfl",
+      "sport_label": "NFL",
+      "commence_time": "2026-11-13T01:15:00Z",
+      "home_team": "New York Giants",
+      "away_team": "Washington Commanders",
+      "home_odds": -125,
+      "away_odds": 112,
+      "spread": {
+        "point": -2.5,
+        "price": -110
+      },
+      "total": {
+        "line": 40.5,
+        "over": -115,
+        "under": -105
+      },
+      "model_home_prob": 0.6111,
+      "model_away_prob": 0.3889,
+      "model_home_prob_shrunk": 0.5619,
+      "model_away_prob_shrunk": 0.4381,
+      "home_no_vig_prob": 0.5408,
+      "away_no_vig_prob": 0.4592,
+      "home_edge": 0.0211,
+      "away_edge": -0.0211,
+      "home_ev": 0.0114,
+      "away_ev": -0.0712,
+      "home_kelly": 0.0036,
+      "away_kelly": 0.0,
+      "best_bet": null,
+      "spread_analysis": {
+        "line": -2.5,
+        "odds": -110,
+        "model_p_home_covers": 0.4883,
+        "model_p_away_covers": 0.5117,
+        "home_edge": -0.0117,
+        "away_edge": 0.0117,
+        "home_ev": -0.0678,
+        "away_ev": -0.0231,
+        "best_ats_bet": null
+      },
+      "home_injury_score": 0.091,
+      "away_injury_score": 0.48,
+      "home_qb_injury_impact": 0,
+      "away_qb_injury_impact": 0,
+      "model_predicted_total": 46.2,
+      "totals": {
+        "market_line": 40.5,
+        "predicted_total": 46.2,
+        "p_over": 0.6632,
+        "p_under": 0.3368,
+        "market_over_nv": 0.5108,
+        "market_under_nv": 0.4892,
+        "over_edge": 0.1524,
+        "under_edge": -0.1524,
+        "over_ev": 0.24,
+        "under_ev": -0.3425,
+        "best_ou_bet": null,
+        "picks_disabled": true,
+        "disabled_reason": "totals model MAE = 17.7 pts (Oct 17 audit); 2-11 lifetime. Disabled pending model rebuild \u2014 see predict_today.py comments."
+      }
+    }
+  ]
+}
