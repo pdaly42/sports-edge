@@ -329,3 +329,5 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-11-11,basketball_nba,8e0fdbf07b1f288b00ec5b370f6c1e2d,San Antonio Spurs,Chicago Bulls,124,119,ml,home,Chicago Bulls,750,0.2067,1.7182,strong,0.8022,loss,-1.0,2026-11-12T10:47:48
 2026-11-11,basketball_nba,c04e54e9e028676cd8b23259bb4364ff,Los Angeles Lakers,Milwaukee Bucks,123,112,ml,home,Milwaukee Bucks,590,0.1526,1.0214,strong,0.649,loss,-1.0,2026-11-12T10:47:48
 2026-11-12,basketball_nba,a98ff1ab79feb59277d989c656f16144,Toronto Raptors,Philadelphia 76ers,112,123,ml,away,Toronto Raptors,230,0.1135,0.3434,moderate,0.6718,loss,-1.0,2026-11-13T10:43:29
+2026-11-13,basketball_nba,1fae7f34ec6035dffa74feb148ee26c7,Golden State Warriors,San Antonio Spurs,85,123,ml,away,Golden State Warriors,500,0.092,0.5167,moderate,0.4675,loss,-1.0,2026-11-14T09:57:35
+2026-11-13,basketball_nba,a51c350318d7570c2b74af08eedb9fcd,Portland Trail Blazers,Sacramento Kings,120,107,ml,home,Sacramento Kings,370,0.1079,0.4717,moderate,0.5649,loss,-1.0,2026-11-14T09:57:35
