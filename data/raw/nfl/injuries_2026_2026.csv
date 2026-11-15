@@ -1220,9 +1220,174 @@ season,week,team,full_name,position,report_status
 2026,9,WAS,Dyami Brown,WR,Out
 2026,9,WAS,Treylon Burks,WR,Out
 2026,9,WAS,Jer'Zhan Newton,DT,Questionable
+2026,10,ARI,Hjalte Froholdt,C,Out
+2026,10,ARI,Andrew Wingard,S,Questionable
+2026,10,ARI,Roy Lopez,DT,Questionable
+2026,10,ARI,Hunter Long,TE,Questionable
+2026,10,ARI,Zachary Carter,DT,Out
+2026,10,ARI,Jon Gaines II,G,Out
+2026,10,ARI,Max Melton,CB,Questionable
+2026,10,ARI,Darius Robinson,DT,Questionable
+2026,10,ARI,Jayden Williams,T,Questionable
+2026,10,ATL,Josh Woods,LB,Questionable
+2026,10,ATL,Divine Deablo,LB,Doubtful
+2026,10,ATL,Gervon Dexter Sr.,DT,Questionable
+2026,10,ATL,James Pearce Jr.,DE,Questionable
+2026,10,ATL,Zachariah Branch,WR,Out
+2026,10,BAL,Jaylinn Hawkins,S,Out
+2026,10,BAL,Adam Randall,RB,Questionable
+2026,10,BUF,Sam Franklin Jr.,S,Questionable
+2026,10,BUF,Spencer Brown,T,Doubtful
+2026,10,BUF,Christian Benford,CB,Questionable
+2026,10,BUF,Tyrell Shavers,WR,Questionable
+2026,10,BUF,Jordan Hancock,CB,Questionable
+2026,10,CAR,Mike Jackson,CB,Doubtful
+2026,10,CAR,Bobby Okereke,LB,Out
+2026,10,CAR,Jaelan Phillips,LB,Questionable
+2026,10,CAR,Brady Christensen,G,Questionable
+2026,10,CAR,Xavier Legette,WR,Questionable
+2026,10,CAR,Jonathon Brooks,RB,Doubtful
+2026,10,CAR,Will Lee III,CB,Questionable
+2026,10,CIN,Jalen Davis,CB,Doubtful
+2026,10,CIN,Kyle Dugger,S,Out
+2026,10,CIN,Andrei Iosivas,WR,Doubtful
+2026,10,CIN,Brian Parker II,G,Doubtful
+2026,10,CLE,Michael Burton,FB,Out
+2026,10,CLE,Ronnie Hickman Jr.,S,Out
+2026,10,CLE,Denzel Boston,WR,Questionable
+2026,10,DAL,Jonathan Bullard,DT,Questionable
+2026,10,DAL,P.J. Locke,S,Out
+2026,10,DAL,Tyler Goodson,RB,Out
+2026,10,DAL,DaRon Bland,CB,Questionable
+2026,10,DAL,Juanyeh Thomas,S,Doubtful
+2026,10,DAL,Jake Ferguson,TE,Out
+2026,10,DAL,Jonathan Mingo,WR,Out
+2026,10,DAL,Joey Porter Jr.,CB,Questionable
+2026,10,DAL,Alijah Clark,S,Questionable
+2026,10,DAL,Donovan Ezeiruaku,LB,Out
+2026,10,DAL,Devin Moore,CB,Questionable
+2026,10,DET,D.J. Reed,CB,Out
+2026,10,DET,Amon-Ra St. Brown,WR,Questionable
+2026,10,DET,Cade Mays,C,Out
+2026,10,DET,Kerby Joseph,S,Out
+2026,10,DET,Sione Vaki,RB,Questionable
+2026,10,GB,Kevin Zeitler,G,Questionable
+2026,10,GB,Zaire Franklin,LB,Doubtful
+2026,10,GB,Josh Jacobs,RB,Out
+2026,10,GB,Xavier McKinney,S,Questionable
+2026,10,GB,Micah Parsons,LB,Out
+2026,10,GB,Sean Rhyan,C,Out
+2026,10,GB,Skyy Moore,WR,Questionable
+2026,10,GB,Josh Whyle,TE,Out
+2026,10,GB,Chris Brooks,RB,Questionable
+2026,10,GB,Lukas Van Ness,LB,Questionable
+2026,10,GB,Travis Glover,G,Questionable
+2026,10,GB,Javon Bullard,S,Questionable
+2026,10,HOU,Danielle Hunter,DE,Out
+2026,10,HOU,Trent Brown,T,Questionable
+2026,10,HOU,Wyatt Teller,G,Questionable
+2026,10,HOU,Azeez Al-Shaair,LB,Out
+2026,10,HOU,David Montgomery,RB,Questionable
+2026,10,HOU,Brevin Jordan,TE,Out
+2026,10,HOU,Jacob Hummel,LB,Questionable
+2026,10,HOU,Will Anderson Jr.,DE,Questionable
+2026,10,HOU,Marvin Harrison Jr.,WR,Out
+2026,10,HOU,Jaylin Smith,CB,Questionable
+2026,10,HOU,Keylan Rutledge,G,Out
+2026,10,IND,Luke Rhodes,LS,Out
+2026,10,IND,Mo Alie-Cox,TE,Out
+2026,10,IND,Jerry Tillery,DT,Out
+2026,10,IND,Akeem Davis-Gaither,LB,Out
+2026,10,IND,Will Mallory,TE,Questionable
+2026,10,IND,Jaylon Carlies,LB,Out
+2026,10,IND,Jalen Travis,T,Out
+2026,10,JAX,Jessie Bates,S,Out
+2026,10,JAX,Robert Hainsey,C,Questionable
+2026,10,JAX,Jordan Davis,DT,Out
+2026,10,JAX,BJ Green II,DE,Out
+2026,10,KC,Jaylon Moore,T,Out
+2026,10,KC,Kenneth Walker III,RB,Questionable
+2026,10,KC,Omarr Norman-Lott,DT,Out
+2026,10,KC,Jaydn Ott,RB,Questionable
+2026,10,KC,Mansoor Delane,CB,Questionable
+2026,10,KC,Peter Woods,DT,Out
+2026,10,LA,Joe Cardona,LS,Questionable
+2026,10,LA,Myles Garrett,LB,Questionable
+2026,10,LA,Kam Curl,S,Questionable
+2026,10,LA,Trent McDuffie,CB,Questionable
+2026,10,LA,Steve Avila,G,Out
+2026,10,LA,Davis Allen,TE,Questionable
+2026,10,LA,Terrance Ferguson,TE,Out
+2026,10,LAC,Denzel Perryman,LB,Questionable
+2026,10,LAC,David Njoku,TE,Questionable
+2026,10,LAC,Trey Pipkins,T,Questionable
+2026,10,LAC,Kayode Awosika,G,Questionable
+2026,10,LAC,Kendall Williamson,S,Out
+2026,10,LAC,Justin Eboigbe,DE,Questionable
+2026,10,LAC,Ladd McConkey,WR,Questionable
+2026,10,LAC,Isas Waxter,CB,Out
+2026,10,LAC,Branson Taylor,G,Out
+2026,10,LAC,Brenen Thompson,WR,Doubtful
+2026,10,LV,Thomas Booker,DT,Questionable
+2026,10,LV,Dont'e Thornton Jr.,WR,Questionable
+2026,10,MIA,Aaron Brewer,C,Out
+2026,10,MIA,Darrell Baker Jr.,CB,Questionable
+2026,10,MIA,Jared Wayne,WR,Out
+2026,10,MIA,Chris Bell,WR,Doubtful
+2026,10,MIN,Kyle Van Noy,LB,Questionable
+2026,10,MIN,Kyler Murray,QB,Out
+2026,10,MIN,T.J. Hockenson,TE,Out
+2026,10,MIN,Blake Cashman,LB,Out
+2026,10,MIN,Jauan Jennings,WR,Out
+2026,10,MIN,Josh Metellus,S,Questionable
+2026,10,MIN,Jordan Addison,WR,Questionable
+2026,10,MIN,Tyrion Ingram-Dawkins,DT,Out
+2026,10,NE,Greg Van Roten,G,Questionable
+2026,10,NE,Kevin Byard,S,Questionable
 2026,10,NE,Carlton Davis III,CB,Out
+2026,10,NE,A.J. Brown,WR,Questionable
+2026,10,NE,Reggie Gilliam,FB,Questionable
+2026,10,NE,Rhamondre Stevenson,RB,Questionable
+2026,10,NE,Brenden Schooler,S,Questionable
 2026,10,NE,Ben Brown,C,Out
+2026,10,NE,Cameron Latu,TE,Questionable
+2026,10,NE,Charles Woods,CB,Questionable
+2026,10,NE,Walter Rouse,T,Questionable
 2026,10,NE,TreVeyon Henderson,RB,Out
+2026,10,NO,Erik McCoy,C,Out
+2026,10,NO,Travis Etienne,RB,Questionable
+2026,10,NO,Martin Emerson,CB,Questionable
+2026,10,NO,Taliese Fuaga,T,Out
+2026,10,NO,CJ Donaldson,RB,Out
+2026,10,NO,Christen Miller,DT,Out
 2026,10,NYG,Malik Harrison,LB,Questionable
+2026,10,NYJ,Harrison Phillips,DT,Questionable
+2026,10,NYJ,Joseph Ossai,DE,Questionable
+2026,10,NYJ,Nahshon Wright,CB,Questionable
+2026,10,NYJ,Garrett Wilson,WR,Questionable
+2026,10,NYJ,Trevin Wallace,LB,Out
+2026,10,NYJ,Jarvis Brownlee Jr.,CB,Questionable
+2026,10,NYJ,Adonai Mitchell,WR,Questionable
+2026,10,NYJ,VJ Payne,S,Questionable
+2026,10,NYJ,Omar Cooper Jr.,WR,Questionable
+2026,10,PIT,Derrick Harmon,DT,Questionable
+2026,10,SEA,Leonard Williams,DT,Out
+2026,10,SEA,Quenton Nelson,G,Out
+2026,10,SEA,Sam Darnold,QB,Out
+2026,10,SEA,Charles Cross,T,Out
+2026,10,SF,Trent Williams,T,Questionable
+2026,10,SF,Mike Evans,WR,Out
+2026,10,SF,Dre Greenlaw,LB,Questionable
+2026,10,SF,Deommodore Lenoir,CB,Questionable
+2026,10,SF,Nate Hobbs,CB,Questionable
+2026,10,SF,Renardo Green,CB,Questionable
+2026,10,SF,Upton Stout,CB,Questionable
+2026,10,SF,C.J. West,DT,Questionable
+2026,10,TEN,Cody Barton,LB,Out
+2026,10,TEN,Tommy Townsend,P,Out
+2026,10,TEN,Tyjae Spears,RB,Questionable
+2026,10,TEN,Peter Skoronski,G,Out
+2026,10,TEN,Carnell Tate,WR,Out
+2026,10,TEN,Anthony Hill Jr.,LB,Out
 2026,10,WAS,Lucas Patrick,C,Out
 2026,10,WAS,Colson Yankoff,TE,Out
