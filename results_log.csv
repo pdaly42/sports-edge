@@ -331,3 +331,6 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-11-12,basketball_nba,a98ff1ab79feb59277d989c656f16144,Toronto Raptors,Philadelphia 76ers,112,123,ml,away,Toronto Raptors,230,0.1135,0.3434,moderate,0.6718,loss,-1.0,2026-11-13T10:43:29
 2026-11-13,basketball_nba,1fae7f34ec6035dffa74feb148ee26c7,Golden State Warriors,San Antonio Spurs,85,123,ml,away,Golden State Warriors,500,0.092,0.5167,moderate,0.4675,loss,-1.0,2026-11-14T09:57:35
 2026-11-13,basketball_nba,a51c350318d7570c2b74af08eedb9fcd,Portland Trail Blazers,Sacramento Kings,120,107,ml,home,Sacramento Kings,370,0.1079,0.4717,moderate,0.5649,loss,-1.0,2026-11-14T09:57:35
+2026-11-14,basketball_nba,2cc2c254049b0bd0a6219f70cbb0b69a,Dallas Mavericks,Cleveland Cavaliers,117,127,ml,home,Cleveland Cavaliers,164,0.1092,0.2554,moderate,0.7303,win,1.64,2026-11-15T10:33:50
+2026-11-14,americanfootball_ncaaf,8982b0a852d112b25310aa03f0f104b6,UNLV Rebels,New Mexico Lobos,21,17,ml,away,UNLV Rebels,720,0.0844,0.6707,moderate,0.4007,win,7.2,2026-11-15T10:33:50
+2026-11-14,americanfootball_ncaaf,8982b0a852d112b25310aa03f0f104b6,UNLV Rebels,New Mexico Lobos,21,17,ats,ats-away,UNLV Rebels +17.5,-110,0.0918,0.1298,strong,0.5918,win,0.9091,2026-11-15T10:33:50
