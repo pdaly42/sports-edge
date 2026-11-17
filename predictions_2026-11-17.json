@@ -1,0 +1,167 @@
+{
+  "generated_at": "2026-11-17T21:28:57.316089+00:00",
+  "date": "2026-11-17",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "5ff20ee6933177d35e4f8c875842a0b4",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-18T00:40:00Z",
+      "home_team": "Toronto Raptors",
+      "away_team": "New York Knicks",
+      "home_odds": 150,
+      "away_odds": -176,
+      "spread": {
+        "point": 4.5,
+        "price": -114
+      },
+      "total": {
+        "line": 214.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.487,
+      "model_away_prob": 0.513,
+      "model_home_prob_shrunk": 0.4159,
+      "model_away_prob_shrunk": 0.5841,
+      "home_no_vig_prob": 0.3855,
+      "away_no_vig_prob": 0.6145,
+      "home_edge": 0.0305,
+      "away_edge": -0.0305,
+      "home_ev": 0.0398,
+      "away_ev": -0.0841,
+      "home_kelly": 0.0066,
+      "away_kelly": 0.0,
+      "best_bet": null
+    },
+    {
+      "id": "69f0b70d1185e537c5ae4be43ebf2c9f",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-18T01:10:00Z",
+      "home_team": "San Antonio Spurs",
+      "away_team": "Detroit Pistons",
+      "home_odds": -437,
+      "away_odds": 350,
+      "spread": {
+        "point": -9.5,
+        "price": -114
+      },
+      "total": {
+        "line": 221.5,
+        "over": -112,
+        "under": -108
+      },
+      "model_home_prob": 0.5759,
+      "model_away_prob": 0.4241,
+      "model_home_prob_shrunk": 0.7226,
+      "model_away_prob_shrunk": 0.2774,
+      "home_no_vig_prob": 0.7855,
+      "away_no_vig_prob": 0.2145,
+      "home_edge": -0.0629,
+      "away_edge": 0.0629,
+      "home_ev": -0.112,
+      "away_ev": 0.2482,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0177,
+      "best_bet": null
+    },
+    {
+      "id": "f1c9f0cd022cd864154413efbd9d9522",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-18T01:10:00Z",
+      "home_team": "Minnesota Timberwolves",
+      "away_team": "Portland Trail Blazers",
+      "home_odds": -145,
+      "away_odds": 124,
+      "spread": {
+        "point": -3.5,
+        "price": -106
+      },
+      "total": {
+        "line": 224.5,
+        "over": -114,
+        "under": -106
+      },
+      "model_home_prob": 0.7313,
+      "model_away_prob": 0.2687,
+      "model_home_prob_shrunk": 0.6184,
+      "model_away_prob_shrunk": 0.3816,
+      "home_no_vig_prob": 0.57,
+      "away_no_vig_prob": 0.43,
+      "home_edge": 0.0484,
+      "away_edge": -0.0484,
+      "home_ev": 0.0449,
+      "away_ev": -0.1452,
+      "home_kelly": 0.0163,
+      "away_kelly": 0.0,
+      "best_bet": null
+    },
+    {
+      "id": "e7343c795f16a5a2a6fd93dbc58499a6",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-18T03:40:00Z",
+      "home_team": "Los Angeles Clippers",
+      "away_team": "Utah Jazz",
+      "home_odds": -235,
+      "away_odds": 197,
+      "spread": {
+        "point": -6.5,
+        "price": -106
+      },
+      "total": {
+        "line": 225.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.835,
+      "model_away_prob": 0.165,
+      "model_home_prob_shrunk": 0.7235,
+      "model_away_prob_shrunk": 0.2765,
+      "home_no_vig_prob": 0.6757,
+      "away_no_vig_prob": 0.3243,
+      "home_edge": 0.0478,
+      "away_edge": -0.0478,
+      "home_ev": 0.0313,
+      "away_ev": -0.1787,
+      "home_kelly": 0.0184,
+      "away_kelly": 0.0,
+      "best_bet": null
+    },
+    {
+      "id": "bed6147c75f3706f25e25f5bdfeaf1ec",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-18T04:10:00Z",
+      "home_team": "Los Angeles Lakers",
+      "away_team": "Charlotte Hornets",
+      "home_odds": -289,
+      "away_odds": 240,
+      "spread": {
+        "point": -7.5,
+        "price": -108
+      },
+      "total": {
+        "line": 220.5,
+        "over": -112,
+        "under": -108
+      },
+      "model_home_prob": 0.7175,
+      "model_away_prob": 0.2825,
+      "model_home_prob_shrunk": 0.7167,
+      "model_away_prob_shrunk": 0.2833,
+      "home_no_vig_prob": 0.7164,
+      "away_no_vig_prob": 0.2836,
+      "home_edge": 0.0003,
+      "away_edge": -0.0003,
+      "home_ev": -0.0353,
+      "away_ev": -0.0369,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null
+    }
+  ]
+}
