@@ -1,0 +1,222 @@
+{
+  "generated_at": "2026-11-19T21:08:33.147378+00:00",
+  "date": "2026-11-19",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "3c082b72aa002131c276ff5e24bada1b",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-20T01:10:00Z",
+      "home_team": "Memphis Grizzlies",
+      "away_team": "Golden State Warriors",
+      "home_odds": -215,
+      "away_odds": 180,
+      "spread": {
+        "point": -5.5,
+        "price": -114
+      },
+      "total": {
+        "line": 224.5,
+        "over": -108,
+        "under": -112
+      },
+      "model_home_prob": 0.5699,
+      "model_away_prob": 0.4301,
+      "model_home_prob_shrunk": 0.6305,
+      "model_away_prob_shrunk": 0.3695,
+      "home_no_vig_prob": 0.6565,
+      "away_no_vig_prob": 0.3435,
+      "home_edge": -0.026,
+      "away_edge": 0.026,
+      "home_ev": -0.0762,
+      "away_ev": 0.0346,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0048,
+      "best_bet": null
+    },
+    {
+      "id": "20fa5e2d73cec494c113790161a89aec",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-20T01:10:00Z",
+      "home_team": "San Antonio Spurs",
+      "away_team": "Los Angeles Clippers",
+      "home_odds": -1000,
+      "away_odds": 675,
+      "spread": {
+        "point": -15.5,
+        "price": -112
+      },
+      "total": {
+        "line": 225.5,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.5181,
+      "model_away_prob": 0.4819,
+      "model_home_prob_shrunk": 0.7684,
+      "model_away_prob_shrunk": 0.2316,
+      "home_no_vig_prob": 0.8757,
+      "away_no_vig_prob": 0.1243,
+      "home_edge": -0.1073,
+      "away_edge": 0.1073,
+      "home_ev": -0.1547,
+      "away_ev": 0.7947,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0294,
+      "best_bet": {
+        "side": "away",
+        "team": "Los Angeles Clippers",
+        "odds": 675,
+        "edge": 0.1073,
+        "ev": 0.7947,
+        "strength": "moderate"
+      },
+      "justification": "Los Angeles Clippers's avg point differential is +5.1 vs San Antonio Spurs's -9.7 over the last 10 games. Model prices Los Angeles Clippers at 48.2% \u2014 a +10.7% edge over the market line."
+    },
+    {
+      "id": "006df00e5e48650d849d1bb4cd81565d",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-20T01:10:00Z",
+      "home_team": "Milwaukee Bucks",
+      "away_team": "Portland Trail Blazers",
+      "home_odds": 400,
+      "away_odds": -494,
+      "spread": {
+        "point": 11.5,
+        "price": -114
+      },
+      "total": {
+        "line": 230.5,
+        "over": -105,
+        "under": -115
+      },
+      "model_home_prob": 0.5393,
+      "model_away_prob": 0.4607,
+      "model_home_prob_shrunk": 0.2975,
+      "model_away_prob_shrunk": 0.7025,
+      "home_no_vig_prob": 0.1939,
+      "away_no_vig_prob": 0.8061,
+      "home_edge": 0.1036,
+      "away_edge": -0.1036,
+      "home_ev": 0.4875,
+      "away_ev": -0.1553,
+      "home_kelly": 0.0305,
+      "away_kelly": 0.0,
+      "best_bet": {
+        "side": "home",
+        "team": "Milwaukee Bucks",
+        "odds": 400,
+        "edge": 0.1036,
+        "ev": 0.4875,
+        "strength": "moderate"
+      },
+      "justification": "Milwaukee Bucks's avg point differential is +1.8 vs Portland Trail Blazers's -5.7 over the last 10 games. Model prices Milwaukee Bucks at 53.9% \u2014 a +10.4% edge over the market line."
+    },
+    {
+      "id": "5ee4efd00c1daaebd8249ff44fd6ac9d",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-20T01:10:00Z",
+      "home_team": "Minnesota Timberwolves",
+      "away_team": "New York Knicks",
+      "home_odds": -104,
+      "away_odds": -110,
+      "spread": {
+        "point": 1.5,
+        "price": -114
+      },
+      "total": {
+        "line": 215.5,
+        "over": -115,
+        "under": -105
+      },
+      "model_home_prob": 0.7385,
+      "model_away_prob": 0.2615,
+      "model_home_prob_shrunk": 0.5668,
+      "model_away_prob_shrunk": 0.4332,
+      "home_no_vig_prob": 0.4932,
+      "away_no_vig_prob": 0.5068,
+      "home_edge": 0.0736,
+      "away_edge": -0.0736,
+      "home_ev": 0.1118,
+      "away_ev": -0.173,
+      "home_kelly": 0.0291,
+      "away_kelly": 0.0,
+      "best_bet": null
+    },
+    {
+      "id": "66f9e83cf025d58acee12bce18661fb3",
+      "sport": "americanfootball_nfl",
+      "sport_label": "NFL",
+      "commence_time": "2026-11-20T01:15:00Z",
+      "home_team": "Houston Texans",
+      "away_team": "Indianapolis Colts",
+      "home_odds": -690,
+      "away_odds": 570,
+      "spread": {
+        "point": -12.5,
+        "price": -106
+      },
+      "total": {
+        "line": 44.5,
+        "over": -104,
+        "under": -116
+      },
+      "model_home_prob": 0.6468,
+      "model_away_prob": 0.3532,
+      "model_home_prob_shrunk": 0.7919,
+      "model_away_prob_shrunk": 0.2081,
+      "home_no_vig_prob": 0.8541,
+      "away_no_vig_prob": 0.1459,
+      "home_edge": -0.0622,
+      "away_edge": 0.0622,
+      "home_ev": -0.0934,
+      "away_ev": 0.3944,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0173,
+      "best_bet": null,
+      "spread_analysis": {
+        "line": -12.5,
+        "odds": -106,
+        "model_p_home_covers": 0.4551,
+        "model_p_away_covers": 0.5449,
+        "home_edge": -0.0449,
+        "away_edge": 0.0449,
+        "home_ev": -0.1156,
+        "away_ev": 0.059,
+        "best_ats_bet": {
+          "side": "away",
+          "team": "Indianapolis Colts",
+          "line": 12.5,
+          "odds": -106,
+          "edge": 0.0449,
+          "ev": 0.059,
+          "strength": "moderate"
+        }
+      },
+      "home_injury_score": 1.533,
+      "away_injury_score": 1.6015,
+      "home_qb_injury_impact": 0,
+      "away_qb_injury_impact": 0,
+      "model_predicted_total": 48.6,
+      "totals": {
+        "market_line": 44.5,
+        "predicted_total": 48.6,
+        "p_over": 0.6172,
+        "p_under": 0.3828,
+        "market_over_nv": 0.487,
+        "market_under_nv": 0.513,
+        "over_edge": 0.1302,
+        "under_edge": -0.1302,
+        "over_ev": 0.2106,
+        "under_ev": -0.2871,
+        "best_ou_bet": null,
+        "picks_disabled": true,
+        "disabled_reason": "totals model MAE = 17.7 pts (Oct 17 audit); 2-11 lifetime. Disabled pending model rebuild \u2014 see predict_today.py comments."
+      }
+    }
+  ]
+}
