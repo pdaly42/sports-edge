@@ -337,3 +337,6 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-11-15,americanfootball_nfl,28800df7e768ecec14f116454d560f9b,Jacksonville Jaguars,Tennessee Titans,40,23,ml,home,Tennessee Titans,630,0.0858,0.6229,moderate,0.4226,loss,-1.0,2026-11-16T10:49:46
 2026-11-15,americanfootball_nfl,be0e03cc42fbc9b6962467b22c7bf9dd,Houston Texans,Cleveland Browns,24,27,ml,home,Cleveland Browns,600,0.0916,0.6001,moderate,0.4423,win,6.0,2026-11-16T10:49:46
 2026-11-15,americanfootball_nfl,1057d50949844ddf483da9c8c20354be,Buffalo Bills,New York Jets,31,12,ml,home,New York Jets,700,0.1049,0.7932,moderate,0.4689,loss,-1.0,2026-11-16T10:49:46
+2026-11-18,basketball_nba,f9ae24215832bbc1703c9836d0c96751,Houston Rockets,Indiana Pacers,119,104,ml,home,Indiana Pacers,250,0.0926,0.2895,moderate,0.5844,loss,-1.0,2026-11-19T11:19:58
+2026-11-18,basketball_nba,6a72c23de4887e73345dde9bdc64eabe,Chicago Bulls,Brooklyn Nets,137,107,ml,away,Chicago Bulls,120,0.1048,0.1909,moderate,0.7859,win,1.2,2026-11-19T11:19:58
+2026-11-18,basketball_nba,4bdafbab228335fd29f62006a4bc932d,Phoenix Suns,Sacramento Kings,128,107,ml,home,Sacramento Kings,221,0.0841,0.2373,moderate,0.5817,loss,-1.0,2026-11-19T11:19:58
