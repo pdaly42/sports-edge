@@ -1409,4 +1409,6 @@ season,week,team,opponent,cfb_off_epa_per_play,cfb_off_pass_epa,cfb_off_rush_epa
 2026,12,Massachusetts,Akron,0.08,0.33,0.1,0.07
 2026,12,Miami (OH),Kent State,0.28,0.61,0.22,-0.01
 2026,12,Ohio,Ball State,0.35,0.45,0.32,0.21
+2026,12,Rice,Temple,0.24,0.39,0.17,0.28
+2026,12,Temple,Rice,0.28,0.34,0.24,0.24
 2026,12,Western Michigan,Eastern Michigan,0.17,0.02,0.25,-0.03
