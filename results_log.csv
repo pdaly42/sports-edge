@@ -342,3 +342,5 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-11-18,basketball_nba,4bdafbab228335fd29f62006a4bc932d,Phoenix Suns,Sacramento Kings,128,107,ml,home,Sacramento Kings,221,0.0841,0.2373,moderate,0.5817,loss,-1.0,2026-11-19T11:19:58
 2026-11-19,basketball_nba,006df00e5e48650d849d1bb4cd81565d,Portland Trail Blazers,Milwaukee Bucks,124,114,ml,home,Milwaukee Bucks,400,0.1036,0.4875,moderate,0.5393,loss,-1.0,2026-11-20T11:07:22
 2026-11-19,americanfootball_nfl,66f9e83cf025d58acee12bce18661fb3,Indianapolis Colts,Houston Texans,3,26,ats,ats-away,Indianapolis Colts +12.5,-106,0.0449,0.059,moderate,0.5449,loss,-1.0,2026-11-20T11:07:22
+2026-11-20,americanfootball_ncaaf,c62889a44c822eaf71b9cd24f4eee875,Iowa State Cyclones,UCF Knights,17,48,ats,ats-home,UCF Knights +1.5,-115,0.0917,0.1062,strong,0.5917,win,0.8696,2026-11-21T10:47:44
+2026-11-20,americanfootball_ncaaf,59cb6c9beeb879b864784348e3803ff8,Oregon Ducks,Michigan State Spartans,45,7,ats,ats-home,Michigan State Spartans +17.5,-108,0.045,0.0496,moderate,0.545,loss,-1.0,2026-11-21T10:47:44
