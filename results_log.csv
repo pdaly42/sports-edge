@@ -344,3 +344,6 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-11-19,americanfootball_nfl,66f9e83cf025d58acee12bce18661fb3,Indianapolis Colts,Houston Texans,3,26,ats,ats-away,Indianapolis Colts +12.5,-106,0.0449,0.059,moderate,0.5449,loss,-1.0,2026-11-20T11:07:22
 2026-11-20,americanfootball_ncaaf,c62889a44c822eaf71b9cd24f4eee875,Iowa State Cyclones,UCF Knights,17,48,ats,ats-home,UCF Knights +1.5,-115,0.0917,0.1062,strong,0.5917,win,0.8696,2026-11-21T10:47:44
 2026-11-20,americanfootball_ncaaf,59cb6c9beeb879b864784348e3803ff8,Oregon Ducks,Michigan State Spartans,45,7,ats,ats-home,Michigan State Spartans +17.5,-108,0.045,0.0496,moderate,0.545,loss,-1.0,2026-11-21T10:47:44
+2026-11-21,basketball_nba,b754a1bf84af81d45d4a3a16398daa44,Boston Celtics,Sacramento Kings,96,97,ml,home,Sacramento Kings,570,0.0852,0.5354,moderate,0.428,win,5.7,2026-11-22T10:55:26
+2026-11-21,americanfootball_ncaaf,ce564e264da03668e25badeb960753cc,Northwestern Wildcats,Minnesota Golden Gophers,17,20,ml,away,Northwestern Wildcats,650,0.1503,1.1531,strong,0.6377,loss,-1.0,2026-11-22T10:55:26
+2026-11-21,americanfootball_ncaaf,1f59b6d72003ce254b32c815e73b252d,North Carolina Tar Heels,Virginia Cavaliers,24,41,ml,away,North Carolina Tar Heels,680,0.0902,0.6562,moderate,0.4229,loss,-1.0,2026-11-22T10:55:26
