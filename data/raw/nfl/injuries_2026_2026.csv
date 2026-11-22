@@ -1391,6 +1391,54 @@ season,week,team,full_name,position,report_status
 2026,10,TEN,Anthony Hill Jr.,LB,Out
 2026,10,WAS,Lucas Patrick,C,Out
 2026,10,WAS,Colson Yankoff,TE,Out
+2026,11,ARI,Zachary Carter,DT,Out
+2026,11,ARI,Jon Gaines II,G,Out
+2026,11,ARI,Carson Beck,QB,Questionable
+2026,11,BAL,Marlon Humphrey,CB,Out
+2026,11,BAL,Nnamdi Madubuike,DT,Out
+2026,11,BAL,Jaylinn Hawkins,S,Out
+2026,11,BUF,Damar Hamlin,S,Questionable
+2026,11,BUF,Christian Benford,CB,Out
+2026,11,BUF,Dorian Williams,LB,Out
+2026,11,BUF,Dalton Kincaid,TE,Doubtful
+2026,11,BUF,Jackson Hawes,TE,Questionable
+2026,11,BUF,T.J. Sanders,DE,Questionable
+2026,11,CAR,Darren Waller,TE,Questionable
+2026,11,CAR,Mike Jackson,CB,Questionable
+2026,11,CAR,Bobby Okereke,LB,Out
+2026,11,CAR,Isaiah Simmons,S,Out
+2026,11,CAR,Brady Christensen,G,Questionable
+2026,11,CAR,Tommy Tremble,TE,Questionable
+2026,11,CAR,Jonathon Brooks,RB,Questionable
+2026,11,CHI,Kyler Gordon,CB,Out
+2026,11,CHI,Zavion Thomas,WR,Questionable
+2026,11,CIN,Jalen Davis,CB,Doubtful
+2026,11,CIN,Oren Burks,LB,Out
+2026,11,CIN,Dalton Risner,G,Out
+2026,11,CIN,Kyle Dugger,S,Questionable
+2026,11,CIN,Daxton Hill,CB,Questionable
+2026,11,CIN,Andrei Iosivas,WR,Doubtful
+2026,11,CIN,Swayze Bozeman,LB,Questionable
+2026,11,CIN,Dylan Fairchild,G,Questionable
+2026,11,CIN,Brian Parker II,G,Questionable
+2026,11,DAL,P.J. Locke,S,Out
+2026,11,DAL,Jalen Thompson,S,Questionable
+2026,11,DAL,DaRon Bland,CB,Out
+2026,11,DAL,Jake Ferguson,TE,Out
+2026,11,DAL,Luke Schoonmaker,TE,Questionable
+2026,11,DAL,Jonathan Mingo,WR,Out
+2026,11,DAL,Tyler Booker,G,Out
+2026,11,DAL,Jaishawn Barham,LB,Questionable
+2026,11,DAL,Devin Moore,CB,Questionable
+2026,11,DEN,Brandon Jones,S,Questionable
+2026,11,DEN,Caleb Lohner,TE,Out
+2026,11,DET,D.J. Reed,CB,Questionable
+2026,11,DET,Joe Bachie,LB,Questionable
+2026,11,DET,Khalil Dorsey,CB,Questionable
+2026,11,DET,Cade Mays,C,Out
+2026,11,DET,Tyler Lacy,DE,Questionable
+2026,11,DET,Sione Vaki,RB,Questionable
+2026,11,DET,Ennis Rakestraw Jr.,CB,Questionable
 2026,11,HOU,Danielle Hunter,DE,Out
 2026,11,HOU,Wyatt Teller,G,Questionable
 2026,11,HOU,Brevin Jordan,TE,Out
@@ -1406,3 +1454,83 @@ season,week,team,full_name,position,report_status
 2026,11,IND,Will Mallory,TE,Out
 2026,11,IND,Anthony Gould,WR,Questionable
 2026,11,IND,Jalen Travis,T,Out
+2026,11,JAX,Matt Dickerson,DT,Questionable
+2026,11,JAX,Robert Hainsey,C,Out
+2026,11,JAX,BJ Green II,DE,Out
+2026,11,JAX,Danny Striggow,DE,Questionable
+2026,11,KC,Jaylon Moore,T,Out
+2026,11,KC,Trey Smith,G,Out
+2026,11,KC,Kenneth Walker III,RB,Out
+2026,11,KC,Omarr Norman-Lott,DT,Questionable
+2026,11,KC,Peter Woods,DT,Questionable
+2026,11,LAC,Trey Pipkins,T,Questionable
+2026,11,LAC,Charlie Kolar,TE,Questionable
+2026,11,LAC,Kendall Williamson,S,Out
+2026,11,LAC,Daiyan Henley,LB,Out
+2026,11,LAC,Tarheeb Still,CB,Questionable
+2026,11,LAC,Ladd McConkey,WR,Questionable
+2026,11,LAC,Isas Waxter,CB,Questionable
+2026,11,LAC,Rodney Shelley,CB,Out
+2026,11,LAC,Brenen Thompson,WR,Doubtful
+2026,11,LV,Foley Fatukasi,DT,Questionable
+2026,11,LV,Matt Gay,K,Questionable
+2026,11,LV,Brock Bowers,TE,Questionable
+2026,11,LV,Tonka Hemingway,DT,Out
+2026,11,MIA,Bradley Pinion,P,Out
+2026,11,MIA,Aaron Brewer,C,Questionable
+2026,11,MIA,Darrell Baker Jr.,CB,Questionable
+2026,11,MIA,Jared Wayne,WR,Out
+2026,11,MIA,Jaylin Simpson,CB,Doubtful
+2026,11,MIA,Marcellas Dial Jr.,CB,Questionable
+2026,11,MIA,Dante Trader Jr.,S,Doubtful
+2026,11,MIN,Kyler Murray,QB,Out
+2026,11,MIN,Isaiah Rodgers,CB,Questionable
+2026,11,MIN,Jay Ward,S,Questionable
+2026,11,MIN,Jordan Addison,WR,Out
+2026,11,NO,Justin Reid,S,Out
+2026,11,NO,Erik McCoy,C,Out
+2026,11,NO,Pete Werner,LB,Questionable
+2026,11,NO,Martin Emerson,CB,Out
+2026,11,NO,Asim Richards,T,Out
+2026,11,NO,Taliese Fuaga,T,Out
+2026,11,NO,Decamerion Richardson,CB,Questionable
+2026,11,NYJ,David Onyemata,DT,Out
+2026,11,NYJ,Harrison Phillips,DT,Questionable
+2026,11,NYJ,Joseph Ossai,DE,Questionable
+2026,11,NYJ,Dylan Parham,G,Questionable
+2026,11,NYJ,Trevin Wallace,LB,Questionable
+2026,11,NYJ,Isaiah Williams,WR,Out
+2026,11,NYJ,Omar Cooper Jr.,WR,Out
+2026,11,PHI,Zack Baun,LB,Out
+2026,11,PHI,Dontayvion Wicks,WR,Out
+2026,11,PHI,Will Shipley,RB,Questionable
+2026,11,PHI,Smael Mondon Jr.,LB,Doubtful
+2026,11,PIT,DeShon Elliott,S,Questionable
+2026,11,PIT,Michael Pittman,WR,Questionable
+2026,11,PIT,Patrick Queen,LB,Questionable
+2026,11,PIT,Nick Herbig,LB,Questionable
+2026,11,PIT,Roman Wilson,WR,Questionable
+2026,11,PIT,Gennings Dunker,G,Questionable
+2026,11,SF,Mike Evans,WR,Questionable
+2026,11,SF,Dre Greenlaw,LB,Questionable
+2026,11,SF,Luke Gifford,LB,Questionable
+2026,11,SF,Khalid Kareem,DE,Questionable
+2026,11,SF,Nate Hobbs,CB,Questionable
+2026,11,SF,Mac Jones,QB,Questionable
+2026,11,SF,Upton Stout,CB,Questionable
+2026,11,SF,Jordan James,RB,Questionable
+2026,11,SF,C.J. West,DT,Questionable
+2026,11,TB,Baker Mayfield,QB,Questionable
+2026,11,TB,Antoine Winfield Jr.,S,Out
+2026,11,TB,Josh Hayes,CB,Out
+2026,11,TB,Yaya Diaby,LB,Questionable
+2026,11,TEN,Tony Adams,S,Questionable
+2026,11,TEN,Tyjae Spears,RB,Questionable
+2026,11,TEN,Micah Robinson,CB,Questionable
+2026,11,TEN,Fernando Carmona,G,Out
+2026,11,TEN,Carnell Tate,WR,Questionable
+2026,11,TEN,Anthony Hill Jr.,LB,Questionable
+2026,11,WAS,Lucas Patrick,C,Questionable
+2026,11,WAS,Amik Robertson,CB,Questionable
+2026,11,WAS,Rachaad White,RB,Questionable
+2026,11,WAS,Jacory Croskey-Merritt,RB,Questionable
