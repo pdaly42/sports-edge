@@ -347,3 +347,6 @@ date,sport,game_id,away_team,home_team,away_score,home_score,pick_type,side,team
 2026-11-21,basketball_nba,b754a1bf84af81d45d4a3a16398daa44,Boston Celtics,Sacramento Kings,96,97,ml,home,Sacramento Kings,570,0.0852,0.5354,moderate,0.428,win,5.7,2026-11-22T10:55:26
 2026-11-21,americanfootball_ncaaf,ce564e264da03668e25badeb960753cc,Northwestern Wildcats,Minnesota Golden Gophers,17,20,ml,away,Northwestern Wildcats,650,0.1503,1.1531,strong,0.6377,loss,-1.0,2026-11-22T10:55:26
 2026-11-21,americanfootball_ncaaf,1f59b6d72003ce254b32c815e73b252d,North Carolina Tar Heels,Virginia Cavaliers,24,41,ml,away,North Carolina Tar Heels,680,0.0902,0.6562,moderate,0.4229,loss,-1.0,2026-11-22T10:55:26
+2026-11-22,basketball_nba,15a079f55e23d26237844224f258c972,Denver Nuggets,Chicago Bulls,151,145,ml,home,Chicago Bulls,360,0.1466,0.6443,strong,0.6996,loss,-1.0,2026-11-23T12:00:20
+2026-11-22,americanfootball_nfl,41e2dd69bddd65d7e823d9ed61cc2afc,Tampa Bay Buccaneers,Detroit Lions,21,31,ml,away,Tampa Bay Buccaneers,376,0.1004,0.4364,moderate,0.5361,loss,-1.0,2026-11-23T12:00:20
+2026-11-22,americanfootball_nfl,41e2dd69bddd65d7e823d9ed61cc2afc,Tampa Bay Buccaneers,Detroit Lions,21,31,ats,ats-away,Tampa Bay Buccaneers +11.5,-104,0.0742,0.1263,strong,0.4849,loss,-1.0,2026-11-23T12:00:20
