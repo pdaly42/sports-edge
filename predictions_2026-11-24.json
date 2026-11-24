@@ -1,0 +1,103 @@
+{
+  "generated_at": "2026-11-24T00:32:18.944855+00:00",
+  "date": "2026-11-24",
+  "odds_available": true,
+  "games": [
+    {
+      "id": "42f48a4769eab3d1472d76aac0fd0fa7",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-25T00:10:00Z",
+      "home_team": "Orlando Magic",
+      "away_team": "Detroit Pistons",
+      "home_odds": 108,
+      "away_odds": -125,
+      "spread": {
+        "point": 1.5,
+        "price": -110
+      },
+      "total": {
+        "line": 214.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.6687,
+      "model_away_prob": 0.3313,
+      "model_home_prob_shrunk": 0.5254,
+      "model_away_prob_shrunk": 0.4746,
+      "home_no_vig_prob": 0.4639,
+      "away_no_vig_prob": 0.5361,
+      "home_edge": 0.0614,
+      "away_edge": -0.0614,
+      "home_ev": 0.0927,
+      "away_ev": -0.1456,
+      "home_kelly": 0.0215,
+      "away_kelly": 0.0,
+      "best_bet": null
+    },
+    {
+      "id": "3167a4072c65c9314c71d0fe49be8e28",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-25T01:10:00Z",
+      "home_team": "Washington Wizards",
+      "away_team": "Boston Celtics",
+      "home_odds": 351,
+      "away_odds": -450,
+      "spread": {
+        "point": 10.5,
+        "price": -110
+      },
+      "total": {
+        "line": 216.5,
+        "over": -110,
+        "under": -110
+      },
+      "model_home_prob": 0.2009,
+      "model_away_prob": 0.7991,
+      "model_home_prob_shrunk": 0.2095,
+      "model_away_prob_shrunk": 0.7905,
+      "home_no_vig_prob": 0.2132,
+      "away_no_vig_prob": 0.7868,
+      "home_edge": -0.0037,
+      "away_edge": 0.0037,
+      "home_ev": -0.055,
+      "away_ev": -0.0339,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0,
+      "best_bet": null
+    },
+    {
+      "id": "6bfadbd22ed8a054cf82ec1b12b78243",
+      "sport": "basketball_nba",
+      "sport_label": "NBA",
+      "commence_time": "2026-11-25T03:10:00Z",
+      "home_team": "Denver Nuggets",
+      "away_team": "Dallas Mavericks",
+      "home_odds": -330,
+      "away_odds": 265,
+      "spread": {
+        "point": -8.5,
+        "price": -110
+      },
+      "total": {
+        "line": 231.5,
+        "over": -108,
+        "under": -112
+      },
+      "model_home_prob": 0.6601,
+      "model_away_prob": 0.3399,
+      "model_home_prob_shrunk": 0.7139,
+      "model_away_prob_shrunk": 0.2861,
+      "home_no_vig_prob": 0.7369,
+      "away_no_vig_prob": 0.2631,
+      "home_edge": -0.023,
+      "away_edge": 0.023,
+      "home_ev": -0.0698,
+      "away_ev": 0.0444,
+      "home_kelly": 0.0,
+      "away_kelly": 0.0042,
+      "best_bet": null
+    }
+  ]
+}
