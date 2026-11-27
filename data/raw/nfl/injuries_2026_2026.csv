@@ -1551,7 +1551,9 @@ season,week,team,full_name,position,report_status
 2026,12,DAL,Tyler Booker,G,Out
 2026,12,DAL,Devin Moore,CB,Questionable
 2026,12,DEN,Taylor Rapp,S,Out
+2026,12,DEN,Tyler Badie,RB,Questionable
 2026,12,DEN,Sai'vion Jones,DE,Out
+2026,12,DEN,Caleb Lohner,TE,Out
 2026,12,DET,Chuck Clark,S,Questionable
 2026,12,DET,DJ Wonnum,DE,Questionable
 2026,12,DET,Ennis Rakestraw Jr.,CB,Out
@@ -1574,3 +1576,7 @@ season,week,team,full_name,position,report_status
 2026,12,LA,Terrance Ferguson,TE,Out
 2026,12,PHI,Jonathan Jones,CB,Out
 2026,12,PHI,Arnold Ebiketie,LB,Out
+2026,12,PIT,Cole Holcomb,LB,Questionable
+2026,12,PIT,Alex Highsmith,LB,Out
+2026,12,PIT,Ben Skowronek,WR,Out
+2026,12,PIT,Gennings Dunker,G,Out
